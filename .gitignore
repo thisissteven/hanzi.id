@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+cedict_db
+sw.js
+sw.js.map
+workbox-*.js
+workbox-*.js.map

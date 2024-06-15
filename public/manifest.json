@@ -1,0 +1,16 @@
+{
+  "name": "Focus",
+  "short_name": "Focus",
+  "theme_color": "#050a0e",
+  "background_color": "#050a0e",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    }
+  ]
+}
