@@ -12,6 +12,7 @@
     "@ducanh2912/next-pwa": "^10.2.7",
     "axios": "^1.7.2",
     "framer-motion": "^11.2.10",
+    "lucide-react": "^0.395.0",
     "next": "14.2.4",
     "next-themes": "^0.3.0",
     "react": "^18",
