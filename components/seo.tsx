@@ -115,7 +115,7 @@ const favicons: Array<Favicons> = [
     rel: "icon",
     type: "image/x-icon",
     sizes: "16x16",
-    href: "/favicon/favicon.ico",
+    href: "/favicon/favicon-96x96.png",
   },
   {
     rel: "manifest",
