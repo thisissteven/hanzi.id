@@ -14,7 +14,7 @@ export function ContinueButton({ isEnd, onClick }: ContinueButtonProps) {
         className={cn(
           "mt-4 ease duration-500 py-2 px-4 rounded-md",
           isEnd ? "opacity-100" : "opacity-0",
-          "duration-300 hover:bg-hovered",
+          "duration-300 hover:bg-hovered active:bg-hovered",
           "flex items-center"
         )}
         aria-label="Continue"
