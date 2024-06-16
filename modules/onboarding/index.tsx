@@ -1,7 +1,9 @@
 import React from "react";
-import { useRouter } from "next/navigation";
-import { cn } from "@/utils";
 import { Line } from "./line";
+import { ContinueButton } from "./continue-button";
+import { Layout } from "../layout";
+
+export * from "./use-onboarded";
 
 const texts = [
   "Welcome to Flow.",
@@ -11,8 +13,8 @@ const texts = [
   "Don't worry. You can always come back to read your thought process.",
 ];
 
-export function Onboarding() {
-  const [currentSentenceIndex, setCurrentSentenceIndex] = React.useState(-1);
+export function Onboarding({ onContinue }: { onContinue: () => void }) {
+  const [currentSentenceIndex, setCurrentSentenceIndex] = React.useState(4);
 
   React.useEffect(() => {
     const timeout = setTimeout(() => {
@@ -50,67 +52,57 @@ export function Onboarding() {
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
-  const router = useRouter();
-
   return (
-    <article className="relative">
-      <h1 className="text-3xl font-bold">Onboarding</h1>
+    <Layout>
+      <article className="relative">
+        <h1 className="text-3xl font-bold">Onboarding</h1>
 
-      <hr className="w-full h-[1px] bg-[#282828] border-none my-4" />
+        <hr className="w-full h-[1px] bg-[#282828] border-none my-4" />
 
-      <ul
-        onMouseLeave={() => {
-          ref.current.style.transitionProperty = "opacity";
-          ref.current.style.opacity = "0";
-        }}
-        className="relative md:text-lg list-none"
-      >
-        <div
-          ref={ref}
-          className="absolute w-full bg-[#242424] rounded-lg ease duration-[200ms] will-change-transform"
-        ></div>
+        <ul
+          onMouseLeave={() => {
+            ref.current.style.transitionProperty = "opacity";
+            ref.current.style.opacity = "0";
+          }}
+          className="relative md:text-lg list-none"
+        >
+          <div
+            ref={ref}
+            className="absolute opacity-0 w-full bg-[#242424] rounded-lg ease duration-[200ms] will-change-transform"
+          ></div>
 
-        {texts.map((text, index) => {
-          return (
-            <Line
-              key={index}
-              isLast={index === texts.length - 1}
-              currentSentenceIndex={currentSentenceIndex}
-              index={index}
-              onMouseEnter={(e) => {
-                if (index > currentSentenceIndex) {
-                  ref.current.style.opacity = "0";
-                } else {
-                  const justEntered = ref.current.style.opacity === "0";
-                  if (justEntered) {
-                    ref.current.style.transitionProperty = "opacity";
+          {texts.map((text, index) => {
+            return (
+              <Line
+                key={index}
+                isLast={index === texts.length - 1}
+                currentSentenceIndex={currentSentenceIndex}
+                index={index}
+                onMouseEnter={(e) => {
+                  if (index > currentSentenceIndex) {
+                    ref.current.style.opacity = "0";
                   } else {
-                    ref.current.style.transitionProperty = "transform, height, opacity";
+                    const justEntered = ["0", ""].includes(ref.current.style.opacity);
+                    if (justEntered) {
+                      ref.current.style.transitionProperty = "opacity";
+                    } else {
+                      ref.current.style.transitionProperty = "transform, height, opacity";
+                    }
+
+                    ref.current.style.transform = `translateY(${e.currentTarget.offsetTop}px)`;
+                    ref.current.style.height = `${e.currentTarget.offsetHeight}px`;
+                    ref.current.style.opacity = "1";
                   }
+                }}
+              >
+                {text}
+              </Line>
+            );
+          })}
+        </ul>
 
-                  ref.current.style.transform = `translateY(${e.currentTarget.offsetTop}px)`;
-                  ref.current.style.height = `${e.currentTarget.offsetHeight}px`;
-                  ref.current.style.opacity = "1";
-                }
-              }}
-            >
-              {text}
-            </Line>
-          );
-        })}
-      </ul>
-
-      <button
-        onClick={() => router.push("/read/1")}
-        className={cn(
-          "mt-4 w-9 h-9 grid place-items-center ease duration-500 text-white pb-2.5 pt-1.5 px-2 rounded-md",
-          isEnd ? "opacity-100" : "opacity-0",
-          "duration-300 hover:bg-[#242424]"
-        )}
-        aria-label="Continue"
-      >
-        &#8594;
-      </button>
-    </article>
+        <ContinueButton isEnd={isEnd} onClick={onContinue} />
+      </article>
+    </Layout>
   );
 }
