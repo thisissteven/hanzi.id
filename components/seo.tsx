@@ -53,7 +53,7 @@ export function Seo(props: SeoProps) {
         <link key={linkProps.href} {...linkProps} />
       ))}
 
-      <meta name="theme-color" content="#222" />
+      <meta name="theme-color" content="#050a0e" />
     </Head>
   );
 }
