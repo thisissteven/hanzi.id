@@ -3,50 +3,71 @@ import { CameraIcon } from "lucide-react";
 import React from "react";
 import { buttons, NewReadingProps, ReadingType } from "./constants";
 import { useFormContext } from "react-hook-form";
-import { uploadImage } from "@/utils";
+import { cn, uploadImage } from "@/utils";
 import Image from "next/image";
+import { Loader } from "./loader";
 
 export function NewReadingOnboarding({ onSelected }: { onSelected: (type: ReadingType) => void }) {
-  const { register, setValue } = useFormContext<NewReadingProps>();
+  const { register, setValue, watch } = useFormContext<NewReadingProps>();
 
-  const [source, setSource] = React.useState<string | null>(null);
+  const [source, setSource] = React.useState<string | null>(watch("image")?.source || null);
+  const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
   return (
     <Layout>
       <div className="mt-4 flex max-md:flex-col gap-4">
         <div>
-          <div className="w-full aspect-square sm:w-48 bg-transparent border border-gray border-dashed hover:bg-stone-500/5 active:bg-subtle/40 duration-[200ms] rounded-md grid place-items-center relative">
-            <CameraIcon size={32} className="text-secondary" />
+          <div className="w-full aspect-square sm:w-48 bg-transparent border border-gray border-dashed group rounded-md relative overflow-hidden">
             {source && (
-              <div className="absolute inset-0 w-full h-full">
-                <Image src={source} width={92} height={92} alt="cover" className="object-cover w-full h-full" />
+              <div
+                className={cn(
+                  "absolute inset-0 w-full h-full group-hover:opacity-50 group-active:opacity-50 duration-[200ms]",
+                  isLoading ? "opacity-50" : "opacity-100"
+                )}
+              >
+                <Image src={source} width={184} height={184} alt="cover" className="object-cover w-full h-full" />
               </div>
             )}
+
+            <div
+              className={cn(
+                "absolute inset-0 w-full h-full pointer-events-none group-hover:bg-stone-500/5 group-active:bg-subtle/40 duration-[200ms] grid place-items-center",
+                source && !isLoading && "opacity-0 group-hover:opacity-100 group-active:opacity-100"
+              )}
+            >
+              {isLoading ? <Loader /> : <CameraIcon size={32} className="text-secondary" />}
+            </div>
+
             <input
               type="file"
               accept="image/jpeg, image/png, image/gif"
               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
               onChange={async (e) => {
-                if (e.target.files) {
-                  const file = e.target.files[0];
-                  const formData = new FormData();
-                  formData.append("file", file);
-                  const { source, width, height } = await uploadImage({
-                    formData,
-                  });
+                setIsLoading(true);
+                try {
+                  if (e.target.files) {
+                    const file = e.target.files[0];
+                    const formData = new FormData();
+                    formData.append("file", file);
+                    const { source, width, height } = await uploadImage({
+                      formData,
+                    });
 
-                  const smallUrl = source.replace("w_430", "h_92,w_92");
-                  const mediumUrl = source.replace("w_430", "h_184,w_184");
+                    const smallUrl = source.replace("w_430", "h_92,w_92");
+                    const mediumUrl = source.replace("w_430", "h_184,w_184");
 
-                  setValue("image", {
-                    smallUrl,
-                    mediumUrl,
-                    source,
-                    width,
-                    height,
-                  });
+                    setValue("image", {
+                      smallUrl,
+                      mediumUrl,
+                      source,
+                      width,
+                      height,
+                    });
 
-                  setSource(smallUrl);
+                    setSource(source);
+                  }
+                } finally {
+                  setIsLoading(false);
                 }
               }}
             />

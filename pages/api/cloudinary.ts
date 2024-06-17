@@ -11,9 +11,10 @@ cl.config({
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const timestamp = Math.round(new Date().getTime() / 1000);
+
   const signature = cl.utils.api_sign_request(
     {
-      folder: `${process.env.NEXT_PUBLIC_CLOUDINARY_FOLDER}/${req.query.user_id}`,
+      folder: `${process.env.NEXT_PUBLIC_CLOUDINARY_FOLDER}/${req.query.folder_name}`,
       timestamp,
     },
     process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET as string

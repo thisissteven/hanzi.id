@@ -5,7 +5,7 @@ import { ImageResponse, MediaAttributes, UploadFileProps } from "./types";
 export const uploadImage = async ({ formData, onUploadProgress }: UploadFileProps): Promise<MediaAttributes> => {
   const folderName = "focus-web-app";
   const { timestamp, signature } = await axios
-    .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cloudinary?folder=${folderName}`)
+    .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cloudinary?folder_name=${folderName}`)
     .then((res) => res.data);
 
   const fd = new FormData();
