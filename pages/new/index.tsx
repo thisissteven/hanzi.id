@@ -1,6 +1,5 @@
 import { NewReadingOnboarding, NewReadingProps } from "@/modules/new";
 import { useStepOneData } from "@/modules/new/store";
-import { AnimatePresence } from "framer-motion";
 import { Layout } from "@/modules/layout";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -21,7 +20,13 @@ export default function New() {
     <Layout>
       <FormProvider {...methods}>
         <form className="max-md:px-4">
-          <NewReadingOnboarding onSelected={(type) => router.push(`/new/${type}`)} />
+          <NewReadingOnboarding
+            onSelected={(type) =>
+              router.push(`/new/${type}`, {
+                scroll: false,
+              })
+            }
+          />
         </form>
       </FormProvider>
     </Layout>

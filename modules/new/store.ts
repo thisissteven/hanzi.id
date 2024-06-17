@@ -8,6 +8,21 @@ const stepVariant = {
 
 type setDataType = { step: 1; data: StepOneData | null } | { step: 2; data: StepTwoData | null };
 
+const defaultStepOneData: StepOneData = {
+  title: "",
+  description: "",
+  image: null,
+};
+
+const defaultStepTwoData: StepTwoData = {
+  chapters: [
+    {
+      title: "",
+      content: "",
+    },
+  ],
+};
+
 export type StepFormSlice = {
   stepOne: StepOneData | null;
   stepTwo: StepTwoData | null;
@@ -18,11 +33,11 @@ export type StepFormSlice = {
 };
 
 export const useStepFormStore = create<StepFormSlice>()((set) => ({
-  stepOne: null,
-  stepTwo: null,
+  stepOne: defaultStepOneData,
+  stepTwo: defaultStepTwoData,
   actions: {
     setData: ({ step, data }) => set({ [stepVariant[step]]: data }),
-    clearData: () => set({ stepOne: null, stepTwo: null }),
+    clearData: () => set({ stepOne: defaultStepOneData, stepTwo: defaultStepTwoData }),
   },
 }));
 
