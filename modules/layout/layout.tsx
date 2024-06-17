@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export function Layout({ children, duration = 0.25 }: { children: React.ReactNode; duration?: number }) {
+export function Layout({ children, duration = 0.2 }: { children: React.ReactNode; duration?: number }) {
   return (
     <motion.div
       className="flex-grow antialiased"

@@ -13,6 +13,7 @@ export type StepFormSlice = {
   stepTwo: StepTwoData | null;
   actions: {
     setData: ({ step, data }: setDataType) => void;
+    clearData: () => void;
   };
 };
 
@@ -21,11 +22,12 @@ export const useStepFormStore = create<StepFormSlice>()((set) => ({
   stepTwo: null,
   actions: {
     setData: ({ step, data }) => set({ [stepVariant[step]]: data }),
+    clearData: () => set({ stepOne: null, stepTwo: null }),
   },
 }));
 
-export const useStepOne = () => useStepFormStore((state) => state.stepOne);
+export const useStepOneData = () => useStepFormStore((state) => state.stepOne);
 
-export const useStepTwo = () => useStepFormStore((state) => state.stepTwo);
+export const useStepTwoData = () => useStepFormStore((state) => state.stepTwo);
 
 export const useStepFormActions = () => useStepFormStore((state) => state.actions);

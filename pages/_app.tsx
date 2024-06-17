@@ -7,8 +7,10 @@ import type { AppProps } from "next/app";
 import { Seo } from "@/components";
 import { apiClient } from "@/utils";
 import { AnimatePresence } from "framer-motion";
+import { NewReadingLayout } from "@/modules/layout";
 
 export default function App({ Component, pageProps, router }: AppProps) {
+  const isNewReading = router.pathname.startsWith("/new");
   return (
     <ThemeProvider forcedTheme="dark">
       <Seo />
@@ -21,7 +23,13 @@ export default function App({ Component, pageProps, router }: AppProps) {
         }}
       >
         <AnimatePresence mode="wait">
-          <Component key={router.pathname} {...pageProps} />
+          {isNewReading ? (
+            <NewReadingLayout>
+              <Component key={router.pathname} {...pageProps} />
+            </NewReadingLayout>
+          ) : (
+            <Component key={router.pathname} {...pageProps} />
+          )}
         </AnimatePresence>
       </SWRConfig>
     </ThemeProvider>
