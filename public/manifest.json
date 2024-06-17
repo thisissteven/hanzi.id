@@ -8,8 +8,8 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icons/android-icon-192x192.png",
-      "sizes": "192x192",
+      "src": "/icons/android-icon-384x384.png",
+      "sizes": "384x384",
       "type": "image/png",
       "purpose": "any maskable"
     }
