@@ -1,6 +1,7 @@
 import { Layout } from "@/modules/layout";
-import { NewReading, NewReadingOnboarding, NewReadingProps, ReadingType } from "@/modules/new";
+import { NewReadingContent, NewReadingOnboarding, NewReadingProps, ReadingType } from "@/modules/new";
 import { AnimatePresence } from "framer-motion";
+import { title } from "process";
 import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
@@ -11,7 +12,12 @@ export default function New() {
     defaultValues: {
       title: "",
       description: "",
-      content: [],
+      chapters: [
+        {
+          title: "",
+          content: "",
+        },
+      ],
       image: null,
     },
   });
@@ -32,7 +38,7 @@ export default function New() {
             <form onSubmit={handleSubmit} className="max-md:px-4">
               <AnimatePresence mode="wait" initial={false}>
                 {readingType ? (
-                  <NewReading key="new" type={readingType} onReturn={() => setReadingType(null)} />
+                  <NewReadingContent key="new" type={readingType} onReturn={() => setReadingType(null)} />
                 ) : (
                   <NewReadingOnboarding onSelected={(type) => setReadingType(type)} />
                 )}

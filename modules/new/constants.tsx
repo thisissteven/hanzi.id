@@ -15,7 +15,10 @@ export type StepOneData = {
 };
 
 export type StepTwoData = {
-  content: Array<string>;
+  chapters: Array<{
+    title: string;
+    content: string;
+  }>;
 };
 
 export type NewReadingProps = StepOneData & StepTwoData;

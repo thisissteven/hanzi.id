@@ -17,7 +17,7 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
     <Layout>
       <div className="mt-4 flex max-md:flex-col gap-4">
         <div>
-          <div className="w-full aspect-square sm:w-48 bg-transparent border border-gray border-dashed group rounded-md relative overflow-hidden">
+          <div className="w-full aspect-square sm:w-48 bg-transparent border border-smoke border-dashed group rounded-md relative overflow-hidden">
             {source && (
               <div
                 className={cn(
@@ -76,7 +76,7 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
         <div className="flex flex-col gap-4 flex-1">
           <input
             {...register("title")}
-            className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-gray focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full"
+            className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full"
             type="text"
             placeholder="What is the title of this reading?"
             required
@@ -84,7 +84,8 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
 
           <textarea
             {...register("description")}
-            className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-gray focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full h-[8.5rem]"
+            spellCheck="false"
+            className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full h-[8.5rem]"
             placeholder="What is this reading about?"
             maxLength={500}
           />

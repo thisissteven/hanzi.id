@@ -3,8 +3,9 @@ import React from "react";
 import { NewReadingProps, ReadingType } from "./constants";
 import { cn } from "@/utils";
 import { useFormContext } from "react-hook-form";
+import { ExtractFromImage, ExtractFromPDF, TypeOrPasteText } from "./create";
 
-export function NewReading({ type, onReturn }: { type: ReadingType; onReturn: () => void }) {
+export function NewReadingContent({ type, onReturn }: { type: ReadingType; onReturn: () => void }) {
   const { register } = useFormContext<NewReadingProps>();
 
   return (
@@ -23,7 +24,9 @@ export function NewReading({ type, onReturn }: { type: ReadingType; onReturn: ()
       </button>
 
       <div>
-        <button>submit</button>
+        {type === "pdf" && <ExtractFromPDF />}
+        {type === "text" && <TypeOrPasteText />}
+        {type === "image" && <ExtractFromImage />}
       </div>
     </Layout>
   );
