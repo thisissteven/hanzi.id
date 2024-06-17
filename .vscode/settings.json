@@ -1,8 +1,0 @@
-{
-  "workbench.editor.customLabels.patterns": {
-    "**/components/**": "components",
-    "**/modules/**": "modules",
-    "**/pages/**": "pages",
-    "**/utils/**": "utils"
-  }
-}

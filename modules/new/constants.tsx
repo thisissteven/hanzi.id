@@ -1,5 +1,24 @@
 import { FileTextIcon, ImageUpIcon, TypeIcon } from "lucide-react";
+
 export type ReadingType = "pdf" | "text" | "image";
+
+export type StepOneData = {
+  title: string;
+  description?: string;
+  image: {
+    smallUrl: string;
+    mediumUrl: string;
+    source: string;
+    width: number;
+    height: number;
+  } | null;
+};
+
+export type StepTwoData = {
+  content: Array<string>;
+};
+
+export type NewReadingProps = StepOneData & StepTwoData;
 
 export const buttons: Array<{
   icon: React.ReactNode;
