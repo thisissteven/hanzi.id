@@ -20,8 +20,8 @@ export function NewReadingContent({
           onClick={onReturn}
           type="button"
           className={cn(
-            "mt-4 ease duration-500 py-2 pl-3 pr-4 rounded-md",
-            "duration-300 hover:bg-hovered active:bg-hovered",
+            "mt-4 py-2 pl-3 pr-4 rounded-md",
+            "duration-[200ms] hover:bg-hovered active:bg-hovered",
             "flex items-center gap-2"
           )}
           aria-label="Continue"
@@ -33,8 +33,8 @@ export function NewReadingContent({
           onClick={onPreview}
           type="button"
           className={cn(
-            "mt-4 ease duration-500 py-2 pl-4 pr-3 rounded-md",
-            "duration-300 hover:bg-hovered active:bg-hovered",
+            "mt-4 py-2 pl-4 pr-3 rounded-md",
+            "duration-300 hover:[200ms]-hovered active:bg-hovered",
             "flex items-center gap-2"
           )}
           aria-label="Preview"

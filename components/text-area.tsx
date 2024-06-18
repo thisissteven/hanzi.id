@@ -61,6 +61,7 @@ export const FormTextarea = React.forwardRef(function FormTextarea(
   ref: React.Ref<HTMLTextAreaElement>
 ) {
   const textAreaRef = React.useRef() as React.MutableRefObject<HTMLTextAreaElement>;
+  const [focused, setFocused] = React.useState(false);
 
   React.useEffect(() => {
     const textArea = textAreaRef.current;
@@ -79,20 +80,39 @@ export const FormTextarea = React.forwardRef(function FormTextarea(
     };
   }, [onEscape]);
 
+  const value = (rest.value ?? "") as string;
+  const displayedValue = focused ? rest.value : value.slice(0, 300) + (value.length > 300 ? "..." : "");
+
+  React.useEffect(() => {
+    if (focused) {
+      textAreaRef.current.style.height = "auto";
+      textAreaRef.current.style.height = `${textAreaRef.current.scrollHeight}px`;
+    } else {
+      textAreaRef.current.style.height = minHeight;
+    }
+  }, [focused, minHeight]);
+
   return (
     <textarea
+      {...rest}
       ref={textAreaRef}
       onChange={(e) => {
         if (onChange) onChange(e);
         textAreaRef.current.style.height = "auto";
         textAreaRef.current.style.height = `${textAreaRef.current.scrollHeight}px`;
       }}
+      onFocus={(e) => {
+        setFocused(true);
+      }}
+      onBlur={(e) => {
+        setFocused(false);
+      }}
       style={{
         minHeight,
       }}
       className="relative bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full h-[8.5rem] peer resize-none scrollbar-none"
       spellCheck={false}
-      {...rest}
+      value={displayedValue}
     />
   );
 });

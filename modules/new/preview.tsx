@@ -40,15 +40,15 @@ export function PreviewContent() {
       <div className="mt-2">
         <div className="flex max-md:flex-col max-md:items-center items-end gap-4">
           {image && (
-            <div className="relative w-48 rounded-md overflow-hidden aspect-square">
+            <div className="relative w-48 rounded-md overflow-hidden aspect-square shrink-0">
               <Image src={image.source} width={430} height={430} alt="cover" className="object-cover w-full h-full" />
             </div>
           )}
 
           <div className="max-md:text-center">
             <h1 className="text-2xl font-bold mt-4">{title}</h1>
-            <p className="max-md:mt-2 text-secondary">{description}</p>
-            <div className="max-md:mt-4 mt-2 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-400/10 px-2 py-1 font-medium text-blue-400 ring-1 ring-inset ring-blue-400/20">
+            <p className="mt-2 text-secondary">{description}</p>
+            <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-400/10 px-2 py-1 font-medium text-blue-400 ring-1 ring-inset ring-blue-400/20">
               {chapters.length} chapters
             </div>
           </div>

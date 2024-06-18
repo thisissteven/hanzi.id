@@ -2,13 +2,14 @@ import { Layout } from "@/modules/layout";
 import { CameraIcon } from "lucide-react";
 import React from "react";
 import { buttons, NewReadingProps, ReadingType } from "./constants";
-import { useFormContext } from "react-hook-form";
+import { Controller, useFormContext } from "react-hook-form";
 import { cn, uploadImage } from "@/utils";
 import Image from "next/image";
 import { Loader } from "./loader";
+import { FormTextarea } from "@/components/text-area";
 
 export function NewReadingOnboarding({ onSelected }: { onSelected: (type: ReadingType) => void }) {
-  const { register, setValue, watch, getValues } = useFormContext<NewReadingProps>();
+  const { register, setValue, watch, control } = useFormContext<NewReadingProps>();
 
   const [source, setSource] = React.useState<string | null>(watch("image")?.source || null);
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
@@ -25,7 +26,14 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
                   isLoading ? "opacity-50" : "opacity-100"
                 )}
               >
-                <Image src={source} width={184} height={184} alt="cover" className="object-cover w-full h-full" />
+                <Image
+                  src={source}
+                  width={184}
+                  height={184}
+                  alt="cover"
+                  className="object-cover w-full h-full"
+                  priority
+                />
               </div>
             )}
 
@@ -82,13 +90,15 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
             required
           />
 
-          <textarea
-            {...register("description")}
-            spellCheck="false"
-            className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full h-[8.5rem]"
-            placeholder="What is this reading about?"
-            maxLength={500}
-          />
+          <div>
+            <Controller
+              control={control}
+              name="description"
+              render={({ field }) => (
+                <FormTextarea {...field} spellCheck={false} placeholder="What is this reading about?" maxLength={200} />
+              )}
+            />
+          </div>
         </div>
       </div>
       <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
@@ -104,7 +114,7 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
             >
               <span className="absolute left-3 top-2 text-secondary text-xs">{index + 1}</span>
               {button.icon}
-              <span className="text-secondary">{button.text}</span>
+              <span className="text-secondary">{button.text} &#8594;</span>
             </button>
           );
         })}

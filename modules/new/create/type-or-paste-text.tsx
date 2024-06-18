@@ -5,6 +5,7 @@ import { readingTime } from "reading-time-estimator";
 import { franc } from "franc";
 import { EraserIcon } from "lucide-react";
 import { FormTextarea } from "@/components/text-area";
+import { useScrollToTop } from "./use-scroll-to-top";
 
 function ContentStats({ index }: { index: number }) {
   const { watch } = useFormContext<NewReadingProps>();
@@ -39,6 +40,8 @@ export function TypeOrPasteText() {
     control,
     name: "chapters",
   });
+
+  useScrollToTop();
 
   return (
     <div>
