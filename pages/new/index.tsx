@@ -1,21 +1,12 @@
 import { NewReadingOnboarding } from "@/modules/new";
 import { Layout } from "@/modules/layout";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function New() {
-  const router = useRouter();
-
   return (
     <Layout>
       <form className="max-md:px-4">
-        <NewReadingOnboarding
-          onSelected={(type) =>
-            router.push(`/new/${type}`, {
-              scroll: false,
-            })
-          }
-        />
+        <NewReadingOnboarding />
       </form>
     </Layout>
   );

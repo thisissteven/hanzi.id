@@ -18,6 +18,7 @@ const config: Config = {
         secondary: "#d0d0d0",
         smoke: "#3a3d3f",
         hovered: "#242424",
+        // hovered: "#0e1a26",
         subtle: "#282828",
       },
     },

@@ -7,8 +7,9 @@ import { cn, uploadImage } from "@/utils";
 import Image from "next/image";
 import { Loader } from "./loader";
 import { FormTextarea } from "@/components/text-area";
+import { CustomRouteButton } from "@/components";
 
-export function NewReadingOnboarding({ onSelected }: { onSelected: (type: ReadingType) => void }) {
+export function NewReadingOnboarding() {
   const { register, setValue, watch, control } = useFormContext<NewReadingProps>();
 
   const [source, setSource] = React.useState<string | null>(watch("image")?.source || null);
@@ -48,7 +49,7 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
 
             <input
               type="file"
-              accept="image/jpeg, image/png, image/gif"
+              accept="image/jpeg, image/png, image/gif, image/webp"
               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
               onChange={async (e) => {
                 setIsLoading(true);
@@ -95,7 +96,7 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
               control={control}
               name="description"
               render={({ field }) => (
-                <FormTextarea {...field} spellCheck={false} placeholder="What is this reading about?" maxLength={200} />
+                <FormTextarea {...field} spellCheck={false} placeholder="What is this reading about?" maxLength={300} />
               )}
             />
           </div>
@@ -104,18 +105,16 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
       <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
         {buttons.map((button, index) => {
           return (
-            <button
+            <CustomRouteButton
               key={button.type}
               type="button"
-              onClick={() => {
-                onSelected(button.type);
-              }}
-              className="relative disabled:cursor-not-allowed flex flex-col items-center text-left gap-2 border border-subtle hover:bg-hovered p-4 rounded-lg duration-[200ms]"
+              path={`/new/${button.type}`}
+              className="relative flex flex-col items-center text-left gap-2 border border-subtle hover:bg-hovered p-4 rounded-lg duration-[200ms]"
             >
               <span className="absolute left-3 top-2 text-secondary text-xs">{index + 1}</span>
               {button.icon}
               <span className="text-secondary">{button.text} &#8594;</span>
-            </button>
+            </CustomRouteButton>
           );
         })}
       </div>

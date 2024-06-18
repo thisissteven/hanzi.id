@@ -1,11 +1,11 @@
 import { Layout } from "@/modules/layout";
 import React from "react";
-import { cn } from "@/utils";
 import { useRouter } from "next/navigation";
 import { useFormContext } from "react-hook-form";
 import { NewReadingProps } from "./constants";
 import Image from "next/image";
-import { Divider } from "@/components";
+import { BackRouteButton, Divider } from "@/components";
+import { cn } from "@/utils";
 
 function PlayIcon() {
   return (
@@ -16,37 +16,39 @@ function PlayIcon() {
 }
 
 export function PreviewContent() {
-  const router = useRouter();
-
   const { getValues } = useFormContext<NewReadingProps>();
 
-  const { title, description, image, chapters } = getValues();
+  const values = getValues();
+
+  const title = values?.title || "Untitled";
+  const description = values?.description || "No description";
+  const source = values?.image?.source || "/placeholder.png";
+
+  const chapters = values.chapters.map((chapter) => {
+    return {
+      title: chapter.title || "Untitled",
+      content: chapter.content || "-",
+    };
+  });
 
   return (
     <Layout>
-      <button
-        onClick={() => router.back()}
-        type="button"
-        className={cn(
-          "mt-4 ease duration-500 py-2 pl-3 pr-4 rounded-md",
-          "duration-300 hover:bg-hovered active:bg-hovered",
-          "flex items-center gap-2"
-        )}
-        aria-label="Continue"
-      >
-        <div className="mb-[3px]">&#8592;</div> Return
-      </button>
+      <BackRouteButton />
 
-      <div className="mt-2">
-        <div className="flex max-md:flex-col max-md:items-center items-end gap-4">
-          {image && (
-            <div className="relative w-48 rounded-md overflow-hidden aspect-square shrink-0">
-              <Image src={image.source} width={430} height={430} alt="cover" className="object-cover w-full h-full" />
+      <div className="mt-4">
+        <div className="flex max-md:flex-col max-md:items-center items-end gap-4 md:gap-6">
+          <div className="relative w-48 aspect-square shrink-0">
+            <div
+              className={cn("absolute inset-0 w-full h-full", "shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
+              aria-hidden
+            ></div>
+            <div className="relative rounded-xl overflow-hidden w-full h-full ring-4 ring-blue-400/20">
+              <Image src={source} width={430} height={430} alt="cover" className="object-cover w-full h-full" />
             </div>
-          )}
+          </div>
 
           <div className="max-md:text-center">
-            <h1 className="text-2xl font-bold mt-4">{title}</h1>
+            <h1 className="text-2xl md:text-3xl font-bold mt-4">{title}</h1>
             <p className="mt-2 text-secondary">{description}</p>
             <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-400/10 px-2 py-1 font-medium text-blue-400 ring-1 ring-inset ring-blue-400/20">
               {chapters.length} chapters

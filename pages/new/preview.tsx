@@ -1,11 +1,8 @@
 import { Layout } from "@/modules/layout";
 import { PreviewContent } from "@/modules/new/preview";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Preview() {
-  const router = useRouter();
-
   return (
     <Layout>
       <form className="max-md:px-4">
