@@ -1,10 +1,9 @@
-import { Layout } from "@/modules/layout";
+import { Layout, useConfetti } from "@/modules/layout";
 import React from "react";
-import { useRouter } from "next/navigation";
 import { useFormContext } from "react-hook-form";
 import { NewReadingProps } from "./constants";
 import Image from "next/image";
-import { BackRouteButton, Divider } from "@/components";
+import { BackRouteButton, CustomRouteButton, Divider } from "@/components";
 import { cn } from "@/utils";
 
 function PlayIcon() {
@@ -76,20 +75,27 @@ export function PreviewContent() {
                 <PlayIcon />
                 <span aria-hidden="true">Read</span>
               </button>
-              {/* <span aria-hidden="true" className="text-sm font-bold text-secondary">
-                /
-              </span>
-              <a
-                className="flex duration-[200ms] items-center text-sm font-bold leading-6 text-blue-400 hover:text-blue-500 active:text-blue-500"
-                aria-label="Show notes for episode 2: Hank Scorpio"
-                href="/2"
-              >
-                Show notes
-              </a> */}
             </div>
           </div>
         ))}
+
+        <PublishButton />
       </div>
     </Layout>
+  );
+}
+
+function PublishButton() {
+  const { party } = useConfetti();
+  return (
+    <div className="mt-8 flex justify-end">
+      <button
+        type="button"
+        onClick={party}
+        className="rounded-md max-md:w-full p-3 md:py-2 md:px-4 duration-[200ms] bg-blue-500 active:bg-blue-600"
+      >
+        Publish
+      </button>
+    </div>
   );
 }

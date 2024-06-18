@@ -7,7 +7,7 @@ import { cn, uploadImage } from "@/utils";
 import Image from "next/image";
 import { Loader } from "./loader";
 import { FormTextarea } from "@/components/text-area";
-import { CustomRouteButton } from "@/components";
+import { BackRouteButton, CustomRouteButton } from "@/components";
 
 export function NewReadingOnboarding() {
   const { register, setValue, watch, control } = useFormContext<NewReadingProps>();
@@ -17,6 +17,8 @@ export function NewReadingOnboarding() {
 
   return (
     <Layout>
+      <BackRouteButton />
+
       <div className="mt-4 flex max-md:flex-col gap-4">
         <div>
           <div className="w-full aspect-square sm:w-48 bg-transparent border border-smoke border-dashed group rounded-md relative overflow-hidden">

@@ -40,7 +40,6 @@ export function RouteButton({ children, path }: { children: React.ReactNode; pat
       }}
       type="button"
       className={cn("mt-4 py-2 pl-4 pr-3 rounded-md", "duration-[200ms] active:bg-hovered", "flex items-center gap-2")}
-      aria-label="Preview"
     >
       {children}
     </button>
@@ -49,6 +48,7 @@ export function RouteButton({ children, path }: { children: React.ReactNode; pat
 
 export function CustomRouteButton({
   children,
+  onClick,
   path,
   ...rest
 }: React.ComponentPropsWithoutRef<"button"> & { path: string }) {

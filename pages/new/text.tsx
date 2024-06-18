@@ -1,6 +1,5 @@
 import { Layout } from "@/modules/layout";
 import { NewReadingContent } from "@/modules/new";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Text() {
