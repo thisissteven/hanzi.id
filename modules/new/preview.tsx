@@ -88,13 +88,13 @@ export function PreviewContent() {
 function PublishButton() {
   const { party } = useConfetti();
   return (
-    <div className="mt-8 flex justify-end">
+    <div className="sticky bottom-4 mt-4 flex justify-end">
       <button
         type="button"
         onClick={party}
-        className="rounded-md max-md:w-full p-3 md:py-2 md:px-4 duration-[200ms] bg-blue-500 active:bg-blue-600"
+        className="rounded-md font-medium max-md:w-full p-2.5 md:py-2 md:px-4 duration-[200ms] bg-blue-500 active:bg-blue-600"
       >
-        Publish
+        Publish &#8594;
       </button>
     </div>
   );

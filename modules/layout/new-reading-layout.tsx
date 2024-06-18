@@ -59,7 +59,7 @@ export function NewReadingLayout({ children }: { children: React.ReactNode }) {
   return (
     <Layout>
       <div className="min-h-dvh">
-        <main className="max-w-[960px] mx-auto md:px-8 pb-8">
+        <main className="max-w-[960px] mx-auto md:px-8 pb-4">
           <div className="max-md:sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 max-md:px-4 pb-4 border-b-[1.5px] border-b-subtle">
             <h1 className="text-2xl md:text-3xl font-bold">New Reading</h1>
           </div>
@@ -94,7 +94,7 @@ export function ConfettiProvider({ children }: { children: React.ReactNode }) {
         party: () => setParty(true),
       }}
     >
-      <div className="fixed top-0 h-screen w-screen pointer-events-none">
+      <div className="fixed z-50 top-0 h-screen w-screen pointer-events-none">
         <Confetti
           width={width}
           height={height}
