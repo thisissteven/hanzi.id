@@ -1,4 +1,4 @@
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Layout } from "./layout";
 import { FormProvider, useForm } from "react-hook-form";
 import { NewReadingProps } from "../new";
@@ -6,6 +6,7 @@ import { NewReadingProps } from "../new";
 import React from "react";
 import Confetti from "react-confetti";
 import { useWindowSize } from "@/utils";
+import { usePathname } from "next/navigation";
 
 const defaultValues = {
   title: "",
@@ -53,15 +54,34 @@ const dummyDefaultValues = {
 
 export function NewReadingLayout({ children }: { children: React.ReactNode }) {
   const methods = useForm<NewReadingProps>({
-    defaultValues: dummyDefaultValues,
+    defaultValues: defaultValues,
   });
+
+  const pathname = usePathname();
+
+  const isStepOne = pathname === "/new";
+  const isStepTwo = ["/new/text", "/new/image", "/new/pdf"].includes(pathname);
+  const isPreview = pathname === "/new/preview";
 
   return (
     <Layout>
       <div className="min-h-dvh">
         <main className="max-w-[960px] mx-auto md:px-8 pb-4">
           <div className="max-md:sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 max-md:px-4 pb-4 border-b-[1.5px] border-b-subtle">
-            <h1 className="text-2xl md:text-3xl font-bold">New Reading</h1>
+            <AnimatePresence mode="wait">
+              <motion.h1
+                key={pathname}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ type: "tween", duration: 0.2 }}
+                className="text-2xl md:text-3xl font-bold"
+              >
+                {isStepOne && "Metadata"}
+                {isStepTwo && "Add content"}
+                {isPreview && "Preview"}
+              </motion.h1>
+            </AnimatePresence>
           </div>
 
           <FormProvider {...methods}>

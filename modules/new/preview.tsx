@@ -38,7 +38,7 @@ export function PreviewContent() {
         <div className="flex max-md:flex-col max-md:items-center items-end gap-4 md:gap-6">
           <div className="relative w-56 md:w-52 aspect-square shrink-0">
             <div
-              className={cn("absolute inset-0 w-full h-full", "shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
+              className={cn("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
               aria-hidden
             ></div>
             <div className="relative rounded-xl overflow-hidden w-full h-full ring-4 ring-blue-400/20">
@@ -49,8 +49,8 @@ export function PreviewContent() {
           <div className="max-md:text-center">
             <h1 className="text-2xl md:text-3xl font-bold mt-2">{title}</h1>
             <p className="mt-2 text-secondary">{description}</p>
-            <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-400/10 px-2 py-1 font-medium text-blue-400 ring-1 ring-inset ring-blue-400/20">
-              {chapters.length} chapters
+            <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20">
+              {chapters.length} {chapters.length > 1 ? "chapters" : "chapter"}
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ export function PreviewContent() {
               <button
                 type="button"
                 aria-label="Play episode 2: Hank Scorpio"
-                className="flex duration-[200ms] items-center gap-x-3 text-sm font-bold leading-6 text-blue-400 hover:text-blue-500 active:text-blue-500"
+                className="flex duration-[200ms] items-center gap-x-3 text-sm font-bold leading-6 text-blue-500 active:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 dark:active:text-blue-500"
               >
                 <PlayIcon />
                 <span aria-hidden="true">Read</span>
@@ -92,7 +92,7 @@ function PublishButton() {
       <button
         type="button"
         onClick={party}
-        className="rounded-md font-medium max-md:w-full p-2.5 md:py-2 md:px-4 duration-[200ms] bg-blue-500 active:bg-blue-600"
+        className="rounded-md font-medium max-md:w-full text-black dark:text-white p-2.5 md:py-2 md:px-4 duration-[200ms] bg-blue-500 active:bg-blue-600"
       >
         Publish &#8594;
       </button>

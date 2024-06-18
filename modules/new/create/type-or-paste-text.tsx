@@ -6,6 +6,7 @@ import { franc } from "franc";
 import { EraserIcon } from "lucide-react";
 import { FormTextarea } from "@/components/text-area";
 import { useScrollToTop } from "./use-scroll-to-top";
+import { cn } from "@/utils";
 
 function ContentStats({ index }: { index: number }) {
   const { watch } = useFormContext<NewReadingProps>();
@@ -46,14 +47,14 @@ export function TypeOrPasteText() {
   return (
     <div>
       <div className="mt-4">
-        <div className="text-secondary flex flex-wrap w-fit items-center gap-x-1.5 rounded-md px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray-800">
-          <svg className="h-1.5 w-1.5 fill-blue-400" viewBox="0 0 6 6" aria-hidden="true">
+        <div className="text-secondary flex flex-wrap w-fit items-center gap-x-1.5 rounded-md px-2 py-1 text-sm font-medium ring-1 ring-inset dark:ring-gray-800 ring-gray-200 bg-gray-100 dark:bg-transparent">
+          <svg className="h-1.5 w-1.5 fill-blue-500 dark:fill-blue-400" viewBox="0 0 6 6" aria-hidden="true">
             <circle cx={3} cy={3} r={3} />
           </svg>
           Tip:
           <span>
-            Pressing <span className="font-mono text-blue-200">Enter</span> on the current caret position will split the
-            current chapter into two.
+            Pressing <span className="font-mono text-blue-500 dark:text-blue-200">Enter</span> on the current caret
+            position will split the current chapter into two.
           </span>
         </div>
       </div>
@@ -115,7 +116,11 @@ export function TypeOrPasteText() {
                         if (fields.length > 1) remove(index);
                       }}
                       title="remove chapter"
-                      className="rounded-md max-md:w-full max-md:py-2 disabled:pointer-events-none disabled:opacity-50 duration-[200ms] border border-rose-700/20 bg-rose-800/20 active:bg-rose-800/30 text-rose-700 active:text-rose-600 w-12 h-full grid place-items-center"
+                      className={cn(
+                        "rounded-md max-md:w-full max-md:py-2 disabled:pointer-events-none disabled:opacity-50 duration-[200ms] border w-12 h-full grid place-items-center",
+                        "border-rose-500/20 bg-rose-500/20 active:bg-rose-500/30 text-rose-500 active:text-rose-600",
+                        "dark:border-rose-700/20 dark:bg-rose-800/20 dark:active:bg-rose-800/30 dark:text-rose-700 dark:active:text-rose-600"
+                      )}
                     >
                       <EraserIcon />
                     </button>

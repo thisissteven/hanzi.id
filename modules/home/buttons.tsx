@@ -1,7 +1,7 @@
 import Link, { LinkProps } from "next/link";
 import { cn } from "@/utils";
 
-const buttonClassNames = "group duration-[200ms] hover:bg-hovered shadow-md p-4 rounded-lg";
+const buttonClassNames = "group duration-[200ms] hover:bg-hovered border dark:border-black p-4 rounded-lg";
 
 type AdditionalProps = {
   title: string;

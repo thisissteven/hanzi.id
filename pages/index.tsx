@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <Layout>
       <div className="min-h-dvh">
-        <main className="max-w-[960px] mx-auto px-4 md:px-8 pt-32 pb-8">
+        <main className="max-w-[960px] mx-auto px-4 md:px-8 pt-32 pb-6">
           <AnimatePresence mode="wait">
             {isOnboarded ? (
               <Home key="home" />

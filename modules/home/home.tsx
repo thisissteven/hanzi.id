@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "../layout";
 import { HomeTodo } from "./todo";
-import { LastRead } from "./last-read";
+import { Explore } from "./explore";
 
 export function Home() {
   return (
@@ -9,7 +9,7 @@ export function Home() {
       <HomeTodo />
 
       <div className="mt-12">
-        <LastRead />
+        <Explore />
       </div>
     </Layout>
   );

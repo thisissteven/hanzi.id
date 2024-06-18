@@ -5,6 +5,22 @@
 @layer base {
   :root {
     text-rendering: optimizeLegibility;
+
+    --black: #fdfdfd; /* white */
+    --white: #101010; /* black */
+    --secondary: #3a3d3f;
+    --smoke: #d0d0d0;
+    --hovered: #f3f3f3;
+    --subtle: #e0e0e0;
+  }
+
+  .dark {
+    --black: #101010;
+    --white: #fefefe;
+    --secondary: #d0d0d0;
+    --smoke: #3a3d3f;
+    --hovered: #242424;
+    --subtle: #282828;
   }
 
   html {
@@ -12,7 +28,7 @@
   }
 
   button {
-    select: none;
+    user-select: none;
   }
 }
 

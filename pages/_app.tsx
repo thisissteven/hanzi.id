@@ -13,7 +13,7 @@ import React from "react";
 export default function App({ Component, pageProps, router }: AppProps) {
   const isNewReading = router.pathname.startsWith("/new");
   return (
-    <ThemeProvider forcedTheme="dark">
+    <ThemeProvider forcedTheme="dark" attribute="class">
       <Seo />
       <SWRConfig
         value={{
