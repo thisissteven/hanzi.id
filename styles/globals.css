@@ -6,21 +6,21 @@
   :root {
     text-rendering: optimizeLegibility;
 
-    --black: #fdfdfd; /* white */
-    --white: #101010; /* black */
-    --secondary: #3a3d3f;
-    --smoke: #d0d0d0;
-    --hovered: #f3f3f3;
-    --subtle: #e0e0e0;
+    --black: 253 253 253; /* white */
+    --white: 16 16 16; /* black */
+    --secondary: 58 61 63;
+    --smoke: 208 208 208;
+    --hovered: 243 243 243;
+    --subtle: 224 224 224;
   }
 
   .dark {
-    --black: #101010;
-    --white: #fefefe;
-    --secondary: #d0d0d0;
-    --smoke: #3a3d3f;
-    --hovered: #242424;
-    --subtle: #282828;
+    --black: 16 16 16;
+    --white: 254 254 254;
+    --secondary: 208 208 208;
+    --smoke: 58 61 63;
+    --hovered: 36 36 36;
+    --subtle: 40 40 40;
   }
 
   html {
