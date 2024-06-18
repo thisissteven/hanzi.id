@@ -1,32 +1,24 @@
 import { Layout } from "@/modules/layout";
-import { NewReadingContent, NewReadingProps } from "@/modules/new";
-import { useStepTwoData } from "@/modules/new/store";
+import { NewReadingContent } from "@/modules/new";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { FormProvider, useForm } from "react-hook-form";
 
-export default function Type() {
-  const stepTwoData = useStepTwoData();
-
-  const methods = useForm<NewReadingProps>({
-    defaultValues: {
-      ...stepTwoData,
-    },
-  });
-
-  const handleSubmit = methods.handleSubmit((data) => {
-    console.log(data);
-  });
-
+export default function Text() {
   const router = useRouter();
 
   return (
     <Layout>
-      <FormProvider {...methods}>
-        <form className="max-md:px-4" onSubmit={handleSubmit}>
-          <NewReadingContent key="new" type="text" onReturn={() => router.back()} />
-        </form>
-      </FormProvider>
+      <form className="max-md:px-4">
+        <NewReadingContent
+          type="text"
+          onReturn={() => router.back()}
+          onPreview={() =>
+            router.push("/new/preview", {
+              scroll: false,
+            })
+          }
+        />
+      </form>
     </Layout>
   );
 }

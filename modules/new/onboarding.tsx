@@ -6,15 +6,12 @@ import { useFormContext } from "react-hook-form";
 import { cn, uploadImage } from "@/utils";
 import Image from "next/image";
 import { Loader } from "./loader";
-import { useStepFormActions } from "./store";
 
 export function NewReadingOnboarding({ onSelected }: { onSelected: (type: ReadingType) => void }) {
   const { register, setValue, watch, getValues } = useFormContext<NewReadingProps>();
 
   const [source, setSource] = React.useState<string | null>(watch("image")?.source || null);
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
-
-  const { setData } = useStepFormActions();
 
   return (
     <Layout>
@@ -102,10 +99,6 @@ export function NewReadingOnboarding({ onSelected }: { onSelected: (type: Readin
               type="button"
               onClick={() => {
                 onSelected(button.type);
-                setData({
-                  step: 1,
-                  data: getValues(),
-                });
               }}
               className="relative disabled:cursor-not-allowed flex flex-col items-center text-left gap-2 border border-subtle hover:bg-hovered p-4 rounded-lg duration-[200ms]"
             >

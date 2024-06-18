@@ -27,3 +27,16 @@
   -o-transition-property: all;
   -o-transition-timing-function: ease;
 }
+
+/* Hide Scrollbar */
+.scrollbar-none::-webkit-scrollbar {
+  /* WebKit: Chrome, Safari */
+  display: none;
+}
+
+.scrollbar-none {
+  /* IE 10+ */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}

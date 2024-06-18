@@ -1,7 +1,57 @@
 import { AnimatePresence } from "framer-motion";
 import { Layout } from "./layout";
+import { FormProvider, useForm } from "react-hook-form";
+import { NewReadingProps } from "../new";
+
+const defaultValues = {
+  title: "",
+  description: "",
+  image: null,
+  chapters: [
+    {
+      title: "",
+      content: "",
+    },
+  ],
+};
+
+const dummyDefaultValues = {
+  title: "Their Side",
+  description: "Conversations with the most tragically misunderstood people of our time.",
+  image: {
+    smallUrl:
+      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
+    mediumUrl:
+      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_184,w_184/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
+    source:
+      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
+    width: 960,
+    height: 960,
+  },
+  chapters: [
+    {
+      title: "Skeletor",
+      content:
+        "You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton. You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton. You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton.",
+    },
+    {
+      title: "Hank Scorpio",
+      content:
+        "What looks to outsiders like a malicious plan to conquer the east coast, was actually a story of liberation and freedom if you get it straight from the source. You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton. You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton.",
+    },
+    {
+      title: "The Wet Bandits",
+      content:
+        "The Christmas of 1989 wasn't the first time Harry and Marv crossed paths with the McCallisters. The real story starts in 1973, when Peter tripped Marv in the highschool locker room. You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton. You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton.",
+    },
+  ],
+};
 
 export function NewReadingLayout({ children }: { children: React.ReactNode }) {
+  const methods = useForm<NewReadingProps>({
+    defaultValues: dummyDefaultValues,
+  });
+
   return (
     <Layout>
       <div className="min-h-dvh">
@@ -9,8 +59,9 @@ export function NewReadingLayout({ children }: { children: React.ReactNode }) {
           <div className="max-md:sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 max-md:px-4 pb-4 border-b-[1.5px] border-b-subtle">
             <h1 className="text-2xl md:text-3xl font-bold">New Reading</h1>
           </div>
-
-          <AnimatePresence mode="wait">{children}</AnimatePresence>
+          <FormProvider {...methods}>
+            <AnimatePresence mode="wait">{children}</AnimatePresence>
+          </FormProvider>
         </main>
       </div>
     </Layout>

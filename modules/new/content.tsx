@@ -1,27 +1,47 @@
 import { Layout } from "@/modules/layout";
 import React from "react";
-import { NewReadingProps, ReadingType } from "./constants";
+import { ReadingType } from "./constants";
 import { cn } from "@/utils";
-import { useFormContext } from "react-hook-form";
 import { ExtractFromImage, ExtractFromPDF, TypeOrPasteText } from "./create";
 
-export function NewReadingContent({ type, onReturn }: { type: ReadingType; onReturn: () => void }) {
-  const { register } = useFormContext<NewReadingProps>();
-
+export function NewReadingContent({
+  type,
+  onReturn,
+  onPreview,
+}: {
+  type: ReadingType;
+  onReturn: () => void;
+  onPreview: () => void;
+}) {
   return (
     <Layout>
-      <button
-        onClick={onReturn}
-        type="button"
-        className={cn(
-          "mt-4 ease duration-500 py-2 pl-3 pr-4 rounded-md",
-          "duration-300 hover:bg-hovered active:bg-hovered",
-          "flex items-center gap-2"
-        )}
-        aria-label="Continue"
-      >
-        <div className="mb-[3px]">&#8592;</div> Return
-      </button>
+      <div className="flex justify-between">
+        <button
+          onClick={onReturn}
+          type="button"
+          className={cn(
+            "mt-4 ease duration-500 py-2 pl-3 pr-4 rounded-md",
+            "duration-300 hover:bg-hovered active:bg-hovered",
+            "flex items-center gap-2"
+          )}
+          aria-label="Continue"
+        >
+          <div className="mb-[3px]">&#8592;</div> Return
+        </button>
+
+        <button
+          onClick={onPreview}
+          type="button"
+          className={cn(
+            "mt-4 ease duration-500 py-2 pl-4 pr-3 rounded-md",
+            "duration-300 hover:bg-hovered active:bg-hovered",
+            "flex items-center gap-2"
+          )}
+          aria-label="Preview"
+        >
+          Preview <div className="mb-[3px]">&#8594;</div>
+        </button>
+      </div>
 
       <div>
         {type === "pdf" && <ExtractFromPDF />}

@@ -1,17 +1,19 @@
-import { NewReadingOnboarding } from "@/modules/new";
 import { Layout } from "@/modules/layout";
+import { NewReadingContent } from "@/modules/new";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-export default function New() {
+export default function PDF() {
   const router = useRouter();
 
   return (
     <Layout>
       <form className="max-md:px-4">
-        <NewReadingOnboarding
-          onSelected={(type) =>
-            router.push(`/new/${type}`, {
+        <NewReadingContent
+          type="text"
+          onReturn={() => router.back()}
+          onPreview={() =>
+            router.push("/new/preview", {
               scroll: false,
             })
           }
