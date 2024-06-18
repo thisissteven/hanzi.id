@@ -37,7 +37,7 @@ export function PreviewContent() {
 
       <div className="mt-4">
         <div className="flex max-md:flex-col max-md:items-center items-end gap-4 md:gap-6">
-          <div className="relative w-48 aspect-square shrink-0">
+          <div className="relative w-56 md:w-52 aspect-square shrink-0">
             <div
               className={cn("absolute inset-0 w-full h-full", "shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
               aria-hidden
@@ -48,7 +48,7 @@ export function PreviewContent() {
           </div>
 
           <div className="max-md:text-center">
-            <h1 className="text-2xl md:text-3xl font-bold mt-4">{title}</h1>
+            <h1 className="text-2xl md:text-3xl font-bold mt-2">{title}</h1>
             <p className="mt-2 text-secondary">{description}</p>
             <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-400/10 px-2 py-1 font-medium text-blue-400 ring-1 ring-inset ring-blue-400/20">
               {chapters.length} chapters

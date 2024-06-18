@@ -19,7 +19,7 @@ function ContentStats({ index }: { index: number }) {
 
   const result = readingTime(field.content, 150, localeMapping[locale] || "en");
   return (
-    <div className="absolute right-2 bottom-[3.75rem] md:right-16 md:bottom-2 pointer-events-none peer-focus:opacity-50">
+    <div className="absolute right-2 bottom-16 md:right-16 md:bottom-2 pointer-events-none peer-focus:opacity-50">
       <div className="flex gap-2 items-center w-fit text-xs">
         <span className="inline-flex items-center rounded-md backdrop-blur-sm bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
           {result.words} words

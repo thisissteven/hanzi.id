@@ -13,7 +13,7 @@ const config: Config = {
         sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        black: "#050a0e",
+        black: "#101010",
         white: "#fefefe",
         secondary: "#d0d0d0",
         smoke: "#3a3d3f",
