@@ -59,11 +59,9 @@ export function HSKLayout({ children }: { children: React.ReactNode }) {
                 <div className="mb-[3px]">&#8592;</div> Return
               </ReplaceRouteButton>
             </header>
-            <div className="bg-black text-smokewhite">
-              <div className="mx-auto max-w-[1440px] flex gap-4">
-                <DesktopSidebar />
-                {children}
-              </div>
+            <div className="mx-auto text-smokewhite max-w-[1440px] flex gap-4">
+              <DesktopSidebar />
+              {children}
             </div>
           </Layout>
         </AnimatePresence>

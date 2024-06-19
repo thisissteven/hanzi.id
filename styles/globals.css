@@ -12,6 +12,19 @@
     --smoke: 208 208 208;
     --hovered: 243 243 243;
     --subtle: 224 224 224;
+
+    --softblack: 240 240 240;
+    --zinc: 224 224 224;
+    --softzinc: 206 206 206;
+    --wheat: 68 68 68;
+    --mossgreen: 137 154 92;
+    --empty: 175 175 175;
+    --border: 200 200 200;
+    --smokewhite: 25 25 25;
+    --light-smokewhite: 30 30 30;
+    --lightgray: 136 136 136;
+
+    --spinner-color: #646464;
   }
 
   .dark {
@@ -21,6 +34,19 @@
     --smoke: 58 61 63;
     --hovered: 36 36 36;
     --subtle: 40 40 40;
+
+    --softblack: 24 24 24;
+    --zinc: 32 32 32;
+    --softzinc: 50 50 50;
+    --wheat: 188 185 138;
+    --mossgreen: 137 154 92;
+    --empty: 80 80 80;
+    --border: 54 54 54;
+    --smokewhite: 229 229 229;
+    --light-smokewhite: 224 224 224;
+    --lightgray: 136 136 136;
+
+    --spinner-color: #e8e8e8;
   }
 
   html {

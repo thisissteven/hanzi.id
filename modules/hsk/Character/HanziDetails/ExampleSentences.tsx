@@ -22,7 +22,7 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
 
   if (lessons.length === 0) {
     return (
-      <p className="ml-4 text-gray">
+      <p className="ml-4 text-lightgray">
         No example sentences found for <span className="text-xl text-smokewhite">{hanzi}</span>
       </p>
     );

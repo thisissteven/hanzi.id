@@ -50,7 +50,7 @@ export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziA
                       </Popover.Content>
                     </Popover>
                   </div>
-                  <p className="text-sm sm:text-base text-gray">{idiom.definition}</p>
+                  <p className="text-sm sm:text-base text-lightgray">{idiom.definition}</p>
                 </li>
               );
             })}

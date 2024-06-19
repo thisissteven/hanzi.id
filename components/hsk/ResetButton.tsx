@@ -9,7 +9,7 @@ export function ResetButton({ level, disabled }: { level: Level; disabled: boole
   return (
     <Dialog>
       <Dialog.Trigger asChild>
-        <button className="text-gray disabled:opacity-50" disabled={disabled}>
+        <button className="text-lightgray disabled:opacity-50" disabled={disabled}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

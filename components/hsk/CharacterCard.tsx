@@ -71,7 +71,7 @@ export function CharacterCard({
             <div
               className={clsx(
                 "absolute top-2 right-2 transition p-2 rounded-md",
-                !isCompleted ? "text-gray/50 active:bg-zinc" : "active:bg-mossgreen/10"
+                !isCompleted ? "text-lightgray/50 active:bg-zinc" : "active:bg-mossgreen/10"
               )}
             >
               <Link

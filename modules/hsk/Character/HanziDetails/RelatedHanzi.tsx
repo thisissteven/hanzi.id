@@ -36,7 +36,7 @@ export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: Hanzi
                       </Popover.Content>
                     </Popover>
                   </div>
-                  <p className="text-sm sm:text-base text-gray">{hanzi.definition}</p>
+                  <p className="text-sm sm:text-base text-lightgray">{hanzi.definition}</p>
                 </li>
               );
             })}
