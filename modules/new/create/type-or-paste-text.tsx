@@ -67,7 +67,7 @@ export function TypeOrPasteText() {
                 <div className="relative">
                   <input
                     {...register(`chapters.${index}.title`)}
-                    className="bg-transparent pl-3 pr-10 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 text-secondary focus:text-white transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full"
+                    className="bg-transparent pl-3 pr-10 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 text-secondary focus:text-white transition-shadow duration-200 placeholder:text-secondary/50 focus:outline-none w-full"
                     type="text"
                     placeholder="Chapter name"
                     required
@@ -117,7 +117,7 @@ export function TypeOrPasteText() {
                       }}
                       title="remove chapter"
                       className={cn(
-                        "rounded-md max-md:w-full max-md:py-2 disabled:pointer-events-none disabled:opacity-50 duration-[200ms] border w-12 h-full grid place-items-center",
+                        "rounded-md max-md:w-full max-md:py-2 disabled:pointer-events-none disabled:opacity-50 duration-200 border w-12 h-full grid place-items-center",
                         "border-rose-500/20 bg-rose-500/20 active:bg-rose-500/30 text-rose-500 active:text-rose-600",
                         "dark:border-rose-700/20 dark:bg-rose-800/20 dark:active:bg-rose-800/30 dark:text-rose-700 dark:active:text-rose-600"
                       )}

@@ -12,6 +12,12 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
+        chinese: ["var(--font-chinese)", ...defaultTheme.fontFamily.sans],
+      },
+      boxShadow: {
+        b: "0 4px 0",
+        "b-small": "0 2px 0",
+        "t-small": "0 -2px 0",
       },
       colors: {
         black: "rgb(var(--black) / <alpha-value>)",
@@ -20,9 +26,21 @@ const config: Config = {
         smoke: "rgb(var(--smoke) / <alpha-value>)",
         hovered: "rgb(var(--hovered) / <alpha-value>)",
         subtle: "rgb(var(--subtle) / <alpha-value>)",
+
+        // black: "#242424",
+        softblack: "#181818",
+        zinc: "#202020",
+        softzinc: "#323232",
+        wheat: "#bcb98a",
+        mossgreen: "#899a5c",
+        empty: "#505050",
+        border: "#363636",
+        smokewhite: "#e5e5e5",
+        "light-smokewhite": "#e0e0e0",
+        gray: "#888888",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

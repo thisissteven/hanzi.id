@@ -70,7 +70,7 @@ export function PreviewContent() {
               <button
                 type="button"
                 aria-label="Play episode 2: Hank Scorpio"
-                className="flex duration-[200ms] items-center gap-x-3 text-sm font-bold leading-6 text-blue-500 active:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 dark:active:text-blue-500"
+                className="flex duration-200 items-center gap-x-3 text-sm font-bold leading-6 text-blue-500 active:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 dark:active:text-blue-500"
               >
                 <PlayIcon />
                 <span aria-hidden="true">Read</span>
@@ -92,7 +92,7 @@ function PublishButton() {
       <button
         type="button"
         onClick={party}
-        className="rounded-md font-medium max-md:w-full text-black dark:text-white p-2.5 md:py-2 md:px-4 duration-[200ms] bg-blue-500 active:bg-blue-600"
+        className="rounded-md font-medium max-md:w-full text-black dark:text-white p-2.5 md:py-2 md:px-4 duration-200 bg-blue-500 active:bg-blue-600"
       >
         Publish &#8594;
       </button>

@@ -25,7 +25,7 @@ export function NewReadingOnboarding() {
             {source && (
               <div
                 className={cn(
-                  "absolute inset-0 w-full h-full group-hover:opacity-50 group-active:opacity-50 duration-[200ms]",
+                  "absolute inset-0 w-full h-full group-hover:opacity-50 group-active:opacity-50 duration-200",
                   isLoading ? "opacity-50" : "opacity-100"
                 )}
               >
@@ -42,7 +42,7 @@ export function NewReadingOnboarding() {
 
             <div
               className={cn(
-                "absolute inset-0 w-full h-full pointer-events-none group-hover:bg-stone-500/5 group-active:bg-subtle/40 duration-[200ms] grid place-items-center",
+                "absolute inset-0 w-full h-full pointer-events-none group-hover:bg-stone-500/5 group-active:bg-subtle/40 duration-200 grid place-items-center",
                 source && !isLoading && "opacity-0 group-hover:opacity-100 group-active:opacity-100"
               )}
             >
@@ -87,7 +87,7 @@ export function NewReadingOnboarding() {
         <div className="flex flex-col gap-4 flex-1">
           <input
             {...register("title")}
-            className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] placeholder:text-secondary/50 focus:outline-none w-full"
+            className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-200 placeholder:text-secondary/50 focus:outline-none w-full"
             type="text"
             placeholder="What is the title of this reading?"
             required
@@ -111,7 +111,7 @@ export function NewReadingOnboarding() {
               key={button.type}
               type="button"
               path={`/new/${button.type}`}
-              className="relative flex flex-col items-center text-left gap-2 border border-subtle hover:bg-hovered p-4 rounded-lg duration-[200ms]"
+              className="relative flex flex-col items-center text-left gap-2 border border-subtle hover:bg-hovered p-4 rounded-lg duration-200"
             >
               <span className="absolute left-3 top-2 text-secondary text-xs">{index + 1}</span>
               {button.icon}

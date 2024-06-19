@@ -1,0 +1,10335 @@
+[
+  {
+    "id": "2246",
+    "hanzi": "阿姨",
+    "pinyin": "ā yí",
+    "translations": [
+      "maternal aunt",
+      "step-mother",
+      "childcare worker",
+      "nursemaid",
+      "woman of similar age to one’s parents (term of address used by child)"
+    ]
+  },
+  {
+    "id": "2247",
+    "hanzi": "啊",
+    "pinyin": "a",
+    "translations": [
+      "modal particle ending sentence, showing affirmation, approval, or consent"
+    ]
+  },
+  {
+    "id": "2248",
+    "hanzi": "矮",
+    "pinyin": "ǎi",
+    "translations": [
+      "low",
+      "short (in length)"
+    ]
+  },
+  {
+    "id": "2249",
+    "hanzi": "矮小",
+    "pinyin": "ǎi xiǎo",
+    "translations": [
+      "short and small",
+      "low and small",
+      "undersized"
+    ]
+  },
+  {
+    "id": "2250",
+    "hanzi": "爱国",
+    "pinyin": "ài guó",
+    "translations": [
+      "to love one’s country",
+      "patriotic"
+    ]
+  },
+  {
+    "id": "2251",
+    "hanzi": "爱护",
+    "pinyin": "ài hù",
+    "translations": [
+      "to cherish",
+      "to treasure",
+      "to take care of",
+      "to love and protect"
+    ]
+  },
+  {
+    "id": "2252",
+    "hanzi": "安",
+    "pinyin": "ān",
+    "translations": [
+      "content",
+      "calm",
+      "still",
+      "quiet",
+      "safe",
+      "secure",
+      "in good health",
+      "to find a place for",
+      "to install",
+      "to fix",
+      "to fit",
+      "to bring (a charge against sb)",
+      "to pacify",
+      "to harbor (good intentions)",
+      "security",
+      "safety",
+      "peace",
+      "ampere"
+    ]
+  },
+  {
+    "id": "2253",
+    "hanzi": "安置",
+    "pinyin": "ān zhì",
+    "translations": [
+      "to find a place for",
+      "to help settle down",
+      "to arrange for",
+      "to get into bed",
+      "placement"
+    ]
+  },
+  {
+    "id": "2254",
+    "hanzi": "按时",
+    "pinyin": "àn shí",
+    "translations": [
+      "on time",
+      "before deadline",
+      "on schedule"
+    ]
+  },
+  {
+    "id": "2255",
+    "hanzi": "暗",
+    "pinyin": "àn",
+    "translations": [
+      "dark",
+      "gloomy",
+      "hidden",
+      "secret",
+      "muddled",
+      "obscure",
+      "in the dark"
+    ]
+  },
+  {
+    "id": "2256",
+    "hanzi": "暗示",
+    "pinyin": "àn shì",
+    "translations": [
+      "to hint",
+      "to suggest",
+      "suggestion",
+      "hint"
+    ]
+  },
+  {
+    "id": "2257",
+    "hanzi": "巴士",
+    "pinyin": "bā shì",
+    "translations": [
+      "bus (loanword)",
+      "motor coach"
+    ]
+  },
+  {
+    "id": "2258",
+    "hanzi": "百货",
+    "pinyin": "bǎi huò",
+    "translations": [
+      "general merchandise"
+    ]
+  },
+  {
+    "id": "2259",
+    "hanzi": "摆",
+    "pinyin": "bǎi",
+    "translations": [
+      "to arrange",
+      "to exhibit",
+      "to move to and fro",
+      "a pendulum"
+    ]
+  },
+  {
+    "id": "2260",
+    "hanzi": "摆动",
+    "pinyin": "bǎi dòng",
+    "translations": [
+      "to sway",
+      "to swing",
+      "to move back and forth",
+      "to oscillate"
+    ]
+  },
+  {
+    "id": "2261",
+    "hanzi": "摆脱",
+    "pinyin": "bǎi tuō",
+    "translations": [
+      "to break away from",
+      "to cast off (old ideas etc)",
+      "to get rid of",
+      "to break away (from)",
+      "to break out (of)",
+      "to free oneself from",
+      "to extricate oneself"
+    ]
+  },
+  {
+    "id": "2262",
+    "hanzi": "败",
+    "pinyin": "bài",
+    "translations": [
+      "to defeat",
+      "to damage",
+      "to lose (to an opponent)",
+      "to fail",
+      "to wither"
+    ]
+  },
+  {
+    "id": "2263",
+    "hanzi": "办事",
+    "pinyin": "bàn shì",
+    "translations": [
+      "to handle (affairs)",
+      "to work"
+    ]
+  },
+  {
+    "id": "2264",
+    "hanzi": "包裹",
+    "pinyin": "bāo guǒ",
+    "translations": [
+      "to wrap up",
+      "to bind up",
+      "bundle",
+      "parcel",
+      "package"
+    ]
+  },
+  {
+    "id": "2265",
+    "hanzi": "包含",
+    "pinyin": "bāo hán",
+    "translations": [
+      "to contain",
+      "to embody",
+      "to include"
+    ]
+  },
+  {
+    "id": "2266",
+    "hanzi": "包括",
+    "pinyin": "bāo kuò",
+    "translations": [
+      "to comprise",
+      "to include",
+      "to involve",
+      "to incorporate",
+      "to consist of"
+    ]
+  },
+  {
+    "id": "2267",
+    "hanzi": "薄",
+    "pinyin": "báo",
+    "translations": [
+      "thin",
+      "cold in manner",
+      "indifferent",
+      "weak",
+      "light",
+      "infertile"
+    ]
+  },
+  {
+    "id": "2268",
+    "hanzi": "宝",
+    "pinyin": "bǎo",
+    "translations": [
+      "jewel",
+      "gem",
+      "treasure",
+      "precious"
+    ]
+  },
+  {
+    "id": "2269",
+    "hanzi": "宝宝",
+    "pinyin": "bǎo bǎo",
+    "translations": [
+      "darling",
+      "baby"
+    ]
+  },
+  {
+    "id": "2270",
+    "hanzi": "宝贝",
+    "pinyin": "bǎo bèi",
+    "translations": [
+      "treasured object",
+      "treasure",
+      "darling",
+      "baby",
+      "cowry",
+      "good-for-nothing or queer character"
+    ]
+  },
+  {
+    "id": "2271",
+    "hanzi": "宝贵",
+    "pinyin": "bǎo guì",
+    "translations": [
+      "valuable",
+      "precious",
+      "to value",
+      "to treasure",
+      "to set store by"
+    ]
+  },
+  {
+    "id": "2272",
+    "hanzi": "宝石",
+    "pinyin": "bǎo shí",
+    "translations": [
+      "precious stone",
+      "gem"
+    ]
+  },
+  {
+    "id": "2273",
+    "hanzi": "保密",
+    "pinyin": "bǎo mì",
+    "translations": [
+      "to keep sth confidential",
+      "to maintain secrecy"
+    ]
+  },
+  {
+    "id": "2274",
+    "hanzi": "保守",
+    "pinyin": "bǎo shǒu",
+    "translations": [
+      "conservative",
+      "to guard",
+      "to keep"
+    ]
+  },
+  {
+    "id": "2275",
+    "hanzi": "抱",
+    "pinyin": "bào",
+    "translations": [
+      "to hold",
+      "to carry (in one’s arms)",
+      "to hug",
+      "to embrace",
+      "to surround",
+      "to cherish"
+    ]
+  },
+  {
+    "id": "2276",
+    "hanzi": "背景",
+    "pinyin": "bèi jǐng",
+    "translations": [
+      "background",
+      "backdrop",
+      "context",
+      "(fig.) powerful backer"
+    ]
+  },
+  {
+    "id": "2277",
+    "hanzi": "倍",
+    "pinyin": "bèi",
+    "translations": [
+      "(two, three etc) -fold",
+      "times (multiplier)",
+      "double",
+      "to increase or multiply"
+    ]
+  },
+  {
+    "id": "2278",
+    "hanzi": "被迫",
+    "pinyin": "bèi pò",
+    "translations": [
+      "to be compelled",
+      "to be forced"
+    ]
+  },
+  {
+    "id": "2279",
+    "hanzi": "本科",
+    "pinyin": "běn kē",
+    "translations": [
+      "undergraduate course",
+      "undergraduate (attributive)"
+    ]
+  },
+  {
+    "id": "2280",
+    "hanzi": "笨",
+    "pinyin": "bèn",
+    "translations": [
+      "stupid",
+      "foolish",
+      "silly",
+      "slow-witted",
+      "clumsy"
+    ]
+  },
+  {
+    "id": "2281",
+    "hanzi": "比分",
+    "pinyin": "bǐ fēn",
+    "translations": [
+      "score"
+    ]
+  },
+  {
+    "id": "2282",
+    "hanzi": "毕业",
+    "pinyin": "bì yè",
+    "translations": [
+      "graduation",
+      "to graduate",
+      "to finish school"
+    ]
+  },
+  {
+    "id": "2283",
+    "hanzi": "毕业生",
+    "pinyin": "bì yè shēng",
+    "translations": [
+      "graduate"
+    ]
+  },
+  {
+    "id": "2284",
+    "hanzi": "避",
+    "pinyin": "bì",
+    "translations": [
+      "to avoid",
+      "to shun",
+      "to flee",
+      "to escape",
+      "to keep away from",
+      "to leave",
+      "to hide from"
+    ]
+  },
+  {
+    "id": "2285",
+    "hanzi": "避免",
+    "pinyin": "bì miǎn",
+    "translations": [
+      "to avert",
+      "to prevent",
+      "to avoid",
+      "to refrain from"
+    ]
+  },
+  {
+    "id": "2286",
+    "hanzi": "编",
+    "pinyin": "biān",
+    "translations": [
+      "to weave",
+      "to plait",
+      "to organize",
+      "to group",
+      "to arrange",
+      "to edit",
+      "to compile",
+      "to write",
+      "to compose",
+      "to fabricate"
+    ]
+  },
+  {
+    "id": "2287",
+    "hanzi": "辩论",
+    "pinyin": "biàn lùn",
+    "translations": [
+      "debate",
+      "argument",
+      "to argue over"
+    ]
+  },
+  {
+    "id": "2288",
+    "hanzi": "标志",
+    "pinyin": "biāo zhì",
+    "translations": [
+      "sign",
+      "mark",
+      "symbol",
+      "logo",
+      "to symbolize",
+      "to indicate",
+      "to mark"
+    ]
+  },
+  {
+    "id": "2289",
+    "hanzi": "表情",
+    "pinyin": "biǎo qíng",
+    "translations": [
+      "(facial) expression",
+      "to express one’s feelings",
+      "expression"
+    ]
+  },
+  {
+    "id": "2290",
+    "hanzi": "表扬",
+    "pinyin": "biǎo yáng",
+    "translations": [
+      "to praise",
+      "to commend"
+    ]
+  },
+  {
+    "id": "2291",
+    "hanzi": "别",
+    "pinyin": "bié",
+    "translations": [
+      "to leave",
+      "to depart",
+      "to separate",
+      "to distinguish",
+      "to classify",
+      "to pin",
+      "to stick (sth) in"
+    ]
+  },
+  {
+    "id": "2292",
+    "hanzi": "冰",
+    "pinyin": "bīng",
+    "translations": [
+      "ice",
+      "to chill sth",
+      "(of an object or substance) to feel cold",
+      "(of a person) cold",
+      "unfriendly",
+      "(slang) methamphetamine"
+    ]
+  },
+  {
+    "id": "2293",
+    "hanzi": "冰箱",
+    "pinyin": "bīng xiāng",
+    "translations": [
+      "icebox",
+      "freezer cabinet",
+      "refrigerator"
+    ]
+  },
+  {
+    "id": "2294",
+    "hanzi": "冰雪",
+    "pinyin": "bīng xuě",
+    "translations": [
+      "ice and snow"
+    ]
+  },
+  {
+    "id": "2295",
+    "hanzi": "兵",
+    "pinyin": "bīng",
+    "translations": [
+      "soldiers",
+      "a force",
+      "an army",
+      "weapons",
+      "arms",
+      "military",
+      "warlike"
+    ]
+  },
+  {
+    "id": "2296",
+    "hanzi": "并",
+    "pinyin": "bìng",
+    "translations": [
+      "to combine",
+      "to join",
+      "to merge"
+    ]
+  },
+  {
+    "id": "2297",
+    "hanzi": "不要紧",
+    "pinyin": "bù yào jǐn",
+    "translations": [
+      "unimportant",
+      "not serious",
+      "it doesn’t matter",
+      "never mind",
+      "it looks all right, but"
+    ]
+  },
+  {
+    "id": "2298",
+    "hanzi": "不在乎",
+    "pinyin": "bù zài hu",
+    "translations": [
+      "not to care"
+    ]
+  },
+  {
+    "id": "2299",
+    "hanzi": "不管",
+    "pinyin": "bù guǎn",
+    "translations": [
+      "not to be concerned",
+      "regardless of",
+      "no matter"
+    ]
+  },
+  {
+    "id": "2300",
+    "hanzi": "不然",
+    "pinyin": "bù rán",
+    "translations": [
+      "not so",
+      "no",
+      "or else",
+      "otherwise",
+      "if not",
+      "How about …?"
+    ]
+  },
+  {
+    "id": "2301",
+    "hanzi": "布置",
+    "pinyin": "bù zhì",
+    "translations": [
+      "to put in order",
+      "to arrange",
+      "to decorate",
+      "to fix up",
+      "to deploy"
+    ]
+  },
+  {
+    "id": "2302",
+    "hanzi": "步行",
+    "pinyin": "bù xíng",
+    "translations": [
+      "to go on foot",
+      "to walk"
+    ]
+  },
+  {
+    "id": "2303",
+    "hanzi": "擦",
+    "pinyin": "cā",
+    "translations": [
+      "to wipe",
+      "to erase",
+      "rubbing (brush stroke in painting)",
+      "to clean",
+      "to polish"
+    ]
+  },
+  {
+    "id": "2304",
+    "hanzi": "才",
+    "pinyin": "cái",
+    "translations": [
+      "ability",
+      "talent",
+      "sb of a certain type",
+      "a capable individual",
+      "only",
+      "only then",
+      "just now"
+    ]
+  },
+  {
+    "id": "2305",
+    "hanzi": "材料",
+    "pinyin": "cái liào",
+    "translations": [
+      "material",
+      "data",
+      "makings",
+      "stuff"
+    ]
+  },
+  {
+    "id": "2306",
+    "hanzi": "财产",
+    "pinyin": "cái chǎn",
+    "translations": [
+      "property",
+      "assets",
+      "estate"
+    ]
+  },
+  {
+    "id": "2307",
+    "hanzi": "财富",
+    "pinyin": "cái fù",
+    "translations": [
+      "wealth",
+      "riches"
+    ]
+  },
+  {
+    "id": "2308",
+    "hanzi": "采访",
+    "pinyin": "cǎi fǎng",
+    "translations": [
+      "to interview",
+      "to gather news",
+      "to hunt for and collect",
+      "to cover"
+    ]
+  },
+  {
+    "id": "2309",
+    "hanzi": "参考",
+    "pinyin": "cān kǎo",
+    "translations": [
+      "consultation",
+      "reference",
+      "to consult",
+      "to refer"
+    ]
+  },
+  {
+    "id": "2310",
+    "hanzi": "参与",
+    "pinyin": "cān yù",
+    "translations": [
+      "to participate (in sth)"
+    ]
+  },
+  {
+    "id": "2311",
+    "hanzi": "操场",
+    "pinyin": "cāo chǎng",
+    "translations": [
+      "playground",
+      "sports field",
+      "drill ground"
+    ]
+  },
+  {
+    "id": "2312",
+    "hanzi": "操作",
+    "pinyin": "cāo zuò",
+    "translations": [
+      "to work",
+      "to operate",
+      "to manipulate"
+    ]
+  },
+  {
+    "id": "2313",
+    "hanzi": "测",
+    "pinyin": "cè",
+    "translations": [
+      "to survey",
+      "to measure",
+      "to conjecture"
+    ]
+  },
+  {
+    "id": "2314",
+    "hanzi": "测量",
+    "pinyin": "cè liáng",
+    "translations": [
+      "survey",
+      "to measure",
+      "to gauge",
+      "to determine"
+    ]
+  },
+  {
+    "id": "2315",
+    "hanzi": "测试",
+    "pinyin": "cè shì",
+    "translations": [
+      "to test (machinery etc)",
+      "to test (students)",
+      "test",
+      "quiz",
+      "exam",
+      "beta (software)"
+    ]
+  },
+  {
+    "id": "2316",
+    "hanzi": "曾",
+    "pinyin": "céng",
+    "translations": [
+      "once",
+      "already",
+      "ever (in the past)",
+      "former",
+      "previously",
+      "(past tense marker used before verb or clause)"
+    ]
+  },
+  {
+    "id": "2317",
+    "hanzi": "茶叶",
+    "pinyin": "chá yè",
+    "translations": [
+      "tea",
+      "tea leaves"
+    ]
+  },
+  {
+    "id": "2318",
+    "hanzi": "产品",
+    "pinyin": "chǎn pǐn",
+    "translations": [
+      "goods",
+      "merchandise",
+      "product"
+    ]
+  },
+  {
+    "id": "2319",
+    "hanzi": "长途",
+    "pinyin": "cháng tú",
+    "translations": [
+      "long distance"
+    ]
+  },
+  {
+    "id": "2320",
+    "hanzi": "常识",
+    "pinyin": "cháng shí",
+    "translations": [
+      "common sense",
+      "general knowledge"
+    ]
+  },
+  {
+    "id": "2321",
+    "hanzi": "唱片",
+    "pinyin": "chàng piàn",
+    "translations": [
+      "gramophone record",
+      "LP",
+      "music CD",
+      "musical album"
+    ]
+  },
+  {
+    "id": "2322",
+    "hanzi": "抄",
+    "pinyin": "chāo",
+    "translations": [
+      "to make a copy",
+      "to plagiarize",
+      "to search and seize",
+      "to raid",
+      "to grab",
+      "to go off with",
+      "to take a shortcut",
+      "to make a turning move",
+      "to fold one’s arms"
+    ]
+  },
+  {
+    "id": "2323",
+    "hanzi": "抄写",
+    "pinyin": "chāo xiě",
+    "translations": [
+      "to copy",
+      "to transcribe"
+    ]
+  },
+  {
+    "id": "2324",
+    "hanzi": "潮",
+    "pinyin": "cháo",
+    "translations": [
+      "tide",
+      "current",
+      "damp",
+      "moist",
+      "humid"
+    ]
+  },
+  {
+    "id": "2325",
+    "hanzi": "潮流",
+    "pinyin": "cháo liú",
+    "translations": [
+      "tide",
+      "current",
+      "trend"
+    ]
+  },
+  {
+    "id": "2326",
+    "hanzi": "潮湿",
+    "pinyin": "cháo shī",
+    "translations": [
+      "damp",
+      "moist"
+    ]
+  },
+  {
+    "id": "2327",
+    "hanzi": "彻底",
+    "pinyin": "chè dǐ",
+    "translations": [
+      "thorough",
+      "thoroughly",
+      "complete"
+    ]
+  },
+  {
+    "id": "2328",
+    "hanzi": "沉",
+    "pinyin": "chén",
+    "translations": [
+      "to submerge",
+      "to immerse",
+      "to sink",
+      "to keep down",
+      "to lower",
+      "to drop",
+      "deep",
+      "profound",
+      "heavy"
+    ]
+  },
+  {
+    "id": "2329",
+    "hanzi": "沉默",
+    "pinyin": "chén mò",
+    "translations": [
+      "taciturn",
+      "uncommunicative",
+      "silent"
+    ]
+  },
+  {
+    "id": "2330",
+    "hanzi": "沉重",
+    "pinyin": "chén zhòng",
+    "translations": [
+      "heavy",
+      "hard",
+      "serious",
+      "critical"
+    ]
+  },
+  {
+    "id": "2331",
+    "hanzi": "称赞",
+    "pinyin": "chēng zàn",
+    "translations": [
+      "to praise",
+      "to acclaim",
+      "to commend",
+      "to compliment"
+    ]
+  },
+  {
+    "id": "2332",
+    "hanzi": "成人",
+    "pinyin": "chéng rén",
+    "translations": [
+      "adult"
+    ]
+  },
+  {
+    "id": "2333",
+    "hanzi": "诚实",
+    "pinyin": "chéng shí",
+    "translations": [
+      "honest",
+      "honesty",
+      "honorable",
+      "truthful"
+    ]
+  },
+  {
+    "id": "2334",
+    "hanzi": "诚信",
+    "pinyin": "chéng xìn",
+    "translations": [
+      "genuine",
+      "honest",
+      "in good faith",
+      "honesty",
+      "integrity"
+    ]
+  },
+  {
+    "id": "2335",
+    "hanzi": "承担",
+    "pinyin": "chéng dān",
+    "translations": [
+      "to undertake",
+      "to assume (responsibility etc)"
+    ]
+  },
+  {
+    "id": "2336",
+    "hanzi": "承认",
+    "pinyin": "chéng rèn",
+    "translations": [
+      "to admit",
+      "to concede",
+      "to recognize",
+      "recognition (diplomatic, artistic etc)",
+      "to acknowledge"
+    ]
+  },
+  {
+    "id": "2337",
+    "hanzi": "承受",
+    "pinyin": "chéng shòu",
+    "translations": [
+      "to bear",
+      "to support",
+      "to inherit"
+    ]
+  },
+  {
+    "id": "2338",
+    "hanzi": "程序",
+    "pinyin": "chéng xù",
+    "translations": [
+      "procedures",
+      "sequence",
+      "order",
+      "computer program"
+    ]
+  },
+  {
+    "id": "2339",
+    "hanzi": "吃惊",
+    "pinyin": "chī jīng",
+    "translations": [
+      "to be startled",
+      "to be shocked",
+      "to be amazed"
+    ]
+  },
+  {
+    "id": "2340",
+    "hanzi": "迟到",
+    "pinyin": "chí dào",
+    "translations": [
+      "to arrive late"
+    ]
+  },
+  {
+    "id": "2341",
+    "hanzi": "尺",
+    "pinyin": "chǐ",
+    "translations": [
+      "a Chinese foot",
+      "one-third of a meter",
+      "a ruler",
+      "a tape-measure",
+      "one of the three acupoints for measuring pulse in Chinese medicine"
+    ]
+  },
+  {
+    "id": "2342",
+    "hanzi": "尺寸",
+    "pinyin": "chǐ cun",
+    "translations": [
+      "size",
+      "dimension",
+      "measurement"
+    ]
+  },
+  {
+    "id": "2343",
+    "hanzi": "尺子",
+    "pinyin": "chǐ zi",
+    "translations": [
+      "rule",
+      "ruler (measuring instrument)"
+    ]
+  },
+  {
+    "id": "2344",
+    "hanzi": "冲",
+    "pinyin": "chōng",
+    "translations": [
+      "(of water) to dash against",
+      "to mix with water",
+      "to infuse",
+      "to rinse",
+      "to flush",
+      "to develop (a film)",
+      "to rise in the air",
+      "to clash",
+      "to collide with"
+    ]
+  },
+  {
+    "id": "2345",
+    "hanzi": "充电",
+    "pinyin": "chōng diàn",
+    "translations": [
+      "to recharge batteries",
+      "fig. to rest and recuperate"
+    ]
+  },
+  {
+    "id": "2346",
+    "hanzi": "充电器",
+    "pinyin": "chōng diàn qì",
+    "translations": [
+      "battery charger"
+    ]
+  },
+  {
+    "id": "2347",
+    "hanzi": "充分",
+    "pinyin": "chōng fèn",
+    "translations": [
+      "ample",
+      "sufficient",
+      "adequate",
+      "full",
+      "fully",
+      "to the full"
+    ]
+  },
+  {
+    "id": "2348",
+    "hanzi": "虫子",
+    "pinyin": "chóng zi",
+    "translations": [
+      "insect",
+      "bug",
+      "worm"
+    ]
+  },
+  {
+    "id": "2349",
+    "hanzi": "抽",
+    "pinyin": "chōu",
+    "translations": [
+      "to draw out",
+      "to pull out from in between",
+      "to remove part of the whole",
+      "(of certain plants) to sprout or bud",
+      "to whip or thrash"
+    ]
+  },
+  {
+    "id": "2350",
+    "hanzi": "抽奖",
+    "pinyin": "chōu jiǎng",
+    "translations": [
+      "to draw a prize",
+      "a lottery",
+      "a raffle"
+    ]
+  },
+  {
+    "id": "2351",
+    "hanzi": "抽烟",
+    "pinyin": "chōu yān",
+    "translations": [
+      "to smoke (a cigarette, tobacco)"
+    ]
+  },
+  {
+    "id": "2352",
+    "hanzi": "出口",
+    "pinyin": "chū kǒu",
+    "translations": [
+      "an exit",
+      "to speak",
+      "to export",
+      "(of a ship) to leave port"
+    ]
+  },
+  {
+    "id": "2353",
+    "hanzi": "出色",
+    "pinyin": "chū sè",
+    "translations": [
+      "remarkable",
+      "outstanding"
+    ]
+  },
+  {
+    "id": "2354",
+    "hanzi": "出售",
+    "pinyin": "chū shòu",
+    "translations": [
+      "to sell",
+      "to offer for sale",
+      "to put on the market"
+    ]
+  },
+  {
+    "id": "2355",
+    "hanzi": "出席",
+    "pinyin": "chū xí",
+    "translations": [
+      "to attend",
+      "to participate",
+      "present"
+    ]
+  },
+  {
+    "id": "2356",
+    "hanzi": "处于",
+    "pinyin": "chǔ yú",
+    "translations": [
+      "to be in (some state, position, or condition)"
+    ]
+  },
+  {
+    "id": "2357",
+    "hanzi": "处",
+    "pinyin": "chù",
+    "translations": [
+      "place",
+      "location",
+      "spot",
+      "point",
+      "office",
+      "department",
+      "bureau",
+      "respect",
+      "classifier for locations or items of damage: spot, point"
+    ]
+  },
+  {
+    "id": "2358",
+    "hanzi": "穿上",
+    "pinyin": "chuān shang",
+    "translations": [
+      "to put on (clothes etc)"
+    ]
+  },
+  {
+    "id": "2359",
+    "hanzi": "传统",
+    "pinyin": "chuán tǒng",
+    "translations": [
+      "tradition",
+      "traditional",
+      "convention",
+      "conventional"
+    ]
+  },
+  {
+    "id": "2360",
+    "hanzi": "窗户",
+    "pinyin": "chuāng hu",
+    "translations": [
+      "window"
+    ]
+  },
+  {
+    "id": "2361",
+    "hanzi": "窗台",
+    "pinyin": "chuāng tái",
+    "translations": [
+      "window sill",
+      "window ledge"
+    ]
+  },
+  {
+    "id": "2362",
+    "hanzi": "窗子",
+    "pinyin": "chuāng zi",
+    "translations": [
+      "window"
+    ]
+  },
+  {
+    "id": "2363",
+    "hanzi": "春季",
+    "pinyin": "chūn jì",
+    "translations": [
+      "springtime"
+    ]
+  },
+  {
+    "id": "2364",
+    "hanzi": "纯",
+    "pinyin": "chún",
+    "translations": [
+      "pure",
+      "simple",
+      "unmixed",
+      "genuine"
+    ]
+  },
+  {
+    "id": "2365",
+    "hanzi": "纯净水",
+    "pinyin": "chún jìng shuǐ",
+    "translations": [
+      "purified water"
+    ]
+  },
+  {
+    "id": "2366",
+    "hanzi": "词汇",
+    "pinyin": "cí huì",
+    "translations": [
+      "vocabulary",
+      "list of words (e.g. for language teaching purposes)",
+      "word"
+    ]
+  },
+  {
+    "id": "2367",
+    "hanzi": "此",
+    "pinyin": "cǐ",
+    "translations": [
+      "this",
+      "these"
+    ]
+  },
+  {
+    "id": "2368",
+    "hanzi": "此外",
+    "pinyin": "cǐ wài",
+    "translations": [
+      "besides",
+      "in addition",
+      "moreover",
+      "furthermore"
+    ]
+  },
+  {
+    "id": "2369",
+    "hanzi": "次",
+    "pinyin": "cì",
+    "translations": [
+      "next in sequence",
+      "second",
+      "the second (day, time etc)",
+      "secondary",
+      "vice-",
+      "sub-",
+      "infra-",
+      "inferior quality",
+      "substandard",
+      "order",
+      "sequence",
+      "hypo- (chemistry)",
+      "classifier for enumerated events: time"
+    ]
+  },
+  {
+    "id": "2370",
+    "hanzi": "刺",
+    "pinyin": "cì",
+    "translations": [
+      "thorn",
+      "sting",
+      "thrust",
+      "to prick",
+      "to pierce",
+      "to stab",
+      "to assassinate",
+      "to murder"
+    ]
+  },
+  {
+    "id": "2371",
+    "hanzi": "刺激",
+    "pinyin": "cì jī",
+    "translations": [
+      "to provoke",
+      "to irritate",
+      "to upset",
+      "to stimulate",
+      "to excite",
+      "irritant"
+    ]
+  },
+  {
+    "id": "2372",
+    "hanzi": "从此",
+    "pinyin": "cóng cǐ",
+    "translations": [
+      "from now on",
+      "since then",
+      "henceforth"
+    ]
+  },
+  {
+    "id": "2373",
+    "hanzi": "粗",
+    "pinyin": "cū",
+    "translations": [
+      "coarse",
+      "rough",
+      "thick (for cylindrical objects)",
+      "unfinished",
+      "vulgar",
+      "rude",
+      "crude"
+    ]
+  },
+  {
+    "id": "2374",
+    "hanzi": "粗心",
+    "pinyin": "cū xīn",
+    "translations": [
+      "careless",
+      "thoughtless"
+    ]
+  },
+  {
+    "id": "2375",
+    "hanzi": "促进",
+    "pinyin": "cù jìn",
+    "translations": [
+      "to promote (an idea or cause)",
+      "to advance",
+      "boost"
+    ]
+  },
+  {
+    "id": "2376",
+    "hanzi": "促使",
+    "pinyin": "cù shǐ",
+    "translations": [
+      "to induce",
+      "to promote",
+      "to urge",
+      "to impel",
+      "to bring about",
+      "to provoke",
+      "to drive (sb to do sth)",
+      "to catalyze",
+      "to actuate",
+      "to contribute to (some development)"
+    ]
+  },
+  {
+    "id": "2377",
+    "hanzi": "促销",
+    "pinyin": "cù xiāo",
+    "translations": [
+      "to promote sales"
+    ]
+  },
+  {
+    "id": "2378",
+    "hanzi": "措施",
+    "pinyin": "cuò shī",
+    "translations": [
+      "measure",
+      "step"
+    ]
+  },
+  {
+    "id": "2379",
+    "hanzi": "打",
+    "pinyin": "dǎ",
+    "translations": [
+      "to beat",
+      "to strike",
+      "to hit",
+      "to break",
+      "to type",
+      "to mix up",
+      "to build",
+      "to fight",
+      "to fetch",
+      "to make",
+      "to tie up",
+      "to issue",
+      "to shoot",
+      "to calculate",
+      "to play (a game)",
+      "since",
+      "from"
+    ]
+  },
+  {
+    "id": "2380",
+    "hanzi": "答案",
+    "pinyin": "dá àn",
+    "translations": [
+      "answer",
+      "solution"
+    ]
+  },
+  {
+    "id": "2381",
+    "hanzi": "打败",
+    "pinyin": "dǎ bài",
+    "translations": [
+      "to defeat",
+      "to overpower",
+      "to beat",
+      "to be defeated"
+    ]
+  },
+  {
+    "id": "2382",
+    "hanzi": "打雷",
+    "pinyin": "dǎ léi",
+    "translations": [
+      "to rumble with thunder",
+      "clap of thunder"
+    ]
+  },
+  {
+    "id": "2383",
+    "hanzi": "打扫",
+    "pinyin": "dǎ sǎo",
+    "translations": [
+      "to clean",
+      "to sweep"
+    ]
+  },
+  {
+    "id": "2384",
+    "hanzi": "打折",
+    "pinyin": "dǎ zhé",
+    "translations": [
+      "to give a discount"
+    ]
+  },
+  {
+    "id": "2385",
+    "hanzi": "打针",
+    "pinyin": "dǎ zhēn",
+    "translations": [
+      "to give or have an injection"
+    ]
+  },
+  {
+    "id": "2386",
+    "hanzi": "大巴",
+    "pinyin": "dà bā",
+    "translations": [
+      "(coll.) large bus",
+      "coach",
+      "(abbr. for 大型巴士)"
+    ]
+  },
+  {
+    "id": "2387",
+    "hanzi": "大多",
+    "pinyin": "dà duō",
+    "translations": [
+      "for the most part",
+      "many",
+      "most",
+      "the greater part",
+      "mostly"
+    ]
+  },
+  {
+    "id": "2388",
+    "hanzi": "大方",
+    "pinyin": "dà fang",
+    "translations": [
+      "generous",
+      "magnanimous",
+      "stylish",
+      "in good taste",
+      "easy-mannered",
+      "natural and relaxed"
+    ]
+  },
+  {
+    "id": "2389",
+    "hanzi": "大哥",
+    "pinyin": "dà gē",
+    "translations": [
+      "eldest brother",
+      "big brother (polite address for a man of about the same age as oneself)",
+      "gang leader",
+      "boss"
+    ]
+  },
+  {
+    "id": "2390",
+    "hanzi": "大规模",
+    "pinyin": "dà guī mó",
+    "translations": [
+      "large scale",
+      "extensive",
+      "wide scale",
+      "broad scale"
+    ]
+  },
+  {
+    "id": "2391",
+    "hanzi": "大会",
+    "pinyin": "dà huì",
+    "translations": [
+      "general assembly",
+      "general meeting",
+      "convention"
+    ]
+  },
+  {
+    "id": "2392",
+    "hanzi": "大姐",
+    "pinyin": "dà jiě",
+    "translations": [
+      "big sister",
+      "elder sister",
+      "older sister (also polite term of address for a girl or woman slightly older than the speaker)"
+    ]
+  },
+  {
+    "id": "2393",
+    "hanzi": "大楼",
+    "pinyin": "dà lóu",
+    "translations": [
+      "building (a relatively large, multi-storey one)"
+    ]
+  },
+  {
+    "id": "2394",
+    "hanzi": "大陆",
+    "pinyin": "dà lù",
+    "translations": [
+      "continent",
+      "mainland"
+    ]
+  },
+  {
+    "id": "2395",
+    "hanzi": "大妈",
+    "pinyin": "dà mā",
+    "translations": [
+      "father’s elder brother’s wife",
+      "aunt (affectionate term for an elderly woman)"
+    ]
+  },
+  {
+    "id": "2396",
+    "hanzi": "大型",
+    "pinyin": "dà xíng",
+    "translations": [
+      "large",
+      "large-scale"
+    ]
+  },
+  {
+    "id": "2397",
+    "hanzi": "大爷",
+    "pinyin": "dà ye",
+    "translations": [
+      "(coll.) father’s older brother",
+      "uncle",
+      "term of respect for older man"
+    ]
+  },
+  {
+    "id": "2398",
+    "hanzi": "大众",
+    "pinyin": "dà zhòng",
+    "translations": [
+      "the masses",
+      "the great bulk of the population",
+      "popular (of music, science etc)",
+      "Volkswagen (automobile manufacturer)"
+    ]
+  },
+  {
+    "id": "2399",
+    "hanzi": "代替",
+    "pinyin": "dài tì",
+    "translations": [
+      "to replace",
+      "to take the place of"
+    ]
+  },
+  {
+    "id": "2400",
+    "hanzi": "待遇",
+    "pinyin": "dài yù",
+    "translations": [
+      "treatment",
+      "pay",
+      "salary",
+      "status",
+      "rank"
+    ]
+  },
+  {
+    "id": "2401",
+    "hanzi": "袋",
+    "pinyin": "dài",
+    "translations": [
+      "pouch",
+      "bag",
+      "sack",
+      "pocket"
+    ]
+  },
+  {
+    "id": "2402",
+    "hanzi": "戴",
+    "pinyin": "dài",
+    "translations": [
+      "to put on or wear (glasses, hat, gloves etc)",
+      "to respect",
+      "to bear",
+      "to support"
+    ]
+  },
+  {
+    "id": "2403",
+    "hanzi": "担保",
+    "pinyin": "dān bǎo",
+    "translations": [
+      "to guarantee",
+      "to vouch for"
+    ]
+  },
+  {
+    "id": "2404",
+    "hanzi": "担任",
+    "pinyin": "dān rèn",
+    "translations": [
+      "to hold a governmental office or post",
+      "to assume office of",
+      "to take charge of",
+      "to serve as"
+    ]
+  },
+  {
+    "id": "2405",
+    "hanzi": "担心",
+    "pinyin": "dān xīn",
+    "translations": [
+      "anxious",
+      "worried",
+      "uneasy",
+      "to worry",
+      "to be anxious"
+    ]
+  },
+  {
+    "id": "2406",
+    "hanzi": "单",
+    "pinyin": "dān",
+    "translations": [
+      "bill",
+      "list",
+      "form",
+      "single",
+      "only",
+      "sole",
+      "odd number"
+    ]
+  },
+  {
+    "id": "2407",
+    "hanzi": "单纯",
+    "pinyin": "dān chún",
+    "translations": [
+      "simple",
+      "pure",
+      "unsophisticated",
+      "merely",
+      "purely"
+    ]
+  },
+  {
+    "id": "2408",
+    "hanzi": "单调",
+    "pinyin": "dān diào",
+    "translations": [
+      "monotonous"
+    ]
+  },
+  {
+    "id": "2409",
+    "hanzi": "单独",
+    "pinyin": "dān dú",
+    "translations": [
+      "alone",
+      "by oneself",
+      "on one’s own"
+    ]
+  },
+  {
+    "id": "2410",
+    "hanzi": "淡",
+    "pinyin": "dàn",
+    "translations": [
+      "insipid",
+      "diluted",
+      "weak",
+      "mild",
+      "light in color",
+      "tasteless",
+      "fresh",
+      "indifferent",
+      "nitrogen"
+    ]
+  },
+  {
+    "id": "2411",
+    "hanzi": "导游",
+    "pinyin": "dǎo yóu",
+    "translations": [
+      "tour guide",
+      "guidebook",
+      "to conduct a tour"
+    ]
+  },
+  {
+    "id": "2412",
+    "hanzi": "导致",
+    "pinyin": "dǎo zhì",
+    "translations": [
+      "to lead to",
+      "to create",
+      "to cause",
+      "to bring about"
+    ]
+  },
+  {
+    "id": "2413",
+    "hanzi": "倒闭",
+    "pinyin": "dǎo bì",
+    "translations": [
+      "to go bankrupt",
+      "to close down"
+    ]
+  },
+  {
+    "id": "2414",
+    "hanzi": "倒车",
+    "pinyin": "dǎo chē",
+    "translations": [
+      "to change buses, trains etc"
+    ]
+  },
+  {
+    "id": "2415",
+    "hanzi": "倒车",
+    "pinyin": "dào chē",
+    "translations": [
+      "to reverse (a vehicle)",
+      "to drive backwards"
+    ]
+  },
+  {
+    "id": "2416",
+    "hanzi": "得意",
+    "pinyin": "dé yì",
+    "translations": [
+      "proud of oneself",
+      "pleased with oneself",
+      "complacent"
+    ]
+  },
+  {
+    "id": "2417",
+    "hanzi": "得",
+    "pinyin": "děi",
+    "translations": [
+      "to have to",
+      "must",
+      "ought to",
+      "to need to"
+    ]
+  },
+  {
+    "id": "2418",
+    "hanzi": "灯光",
+    "pinyin": "dēng guāng",
+    "translations": [
+      "(stage) lighting",
+      "light"
+    ]
+  },
+  {
+    "id": "2419",
+    "hanzi": "登",
+    "pinyin": "dēng",
+    "translations": [
+      "to scale (a height)",
+      "to ascend",
+      "to mount",
+      "to publish or record",
+      "to enter (e.g. in a register)",
+      "to press down with the foot",
+      "to step or tread on",
+      "to put on (shoes or trousers) (dialect)",
+      "to be gathered and taken to the threshing ground (old)"
+    ]
+  },
+  {
+    "id": "2420",
+    "hanzi": "登记",
+    "pinyin": "dēng jì",
+    "translations": [
+      "to register (one’s name)"
+    ]
+  },
+  {
+    "id": "2421",
+    "hanzi": "登录",
+    "pinyin": "dēng lù",
+    "translations": [
+      "to register",
+      "to log in"
+    ]
+  },
+  {
+    "id": "2422",
+    "hanzi": "登山",
+    "pinyin": "dēng shān",
+    "translations": [
+      "to climb a mountain",
+      "climbing",
+      "mountaineering"
+    ]
+  },
+  {
+    "id": "2423",
+    "hanzi": "的确",
+    "pinyin": "dí què",
+    "translations": [
+      "really",
+      "indeed"
+    ]
+  },
+  {
+    "id": "2424",
+    "hanzi": "敌人",
+    "pinyin": "dí rén",
+    "translations": [
+      "enemy"
+    ]
+  },
+  {
+    "id": "2425",
+    "hanzi": "底",
+    "pinyin": "dǐ",
+    "translations": [
+      "background",
+      "bottom",
+      "base",
+      "end (of the month, year etc)",
+      "remnants",
+      "(math.) radix",
+      "base"
+    ]
+  },
+  {
+    "id": "2426",
+    "hanzi": "地方",
+    "pinyin": "dì fāng",
+    "translations": [
+      "region",
+      "regional (away from the central administration)",
+      "local"
+    ]
+  },
+  {
+    "id": "2427",
+    "hanzi": "地面",
+    "pinyin": "dì miàn",
+    "translations": [
+      "floor",
+      "ground",
+      "surface"
+    ]
+  },
+  {
+    "id": "2428",
+    "hanzi": "地位",
+    "pinyin": "dì wèi",
+    "translations": [
+      "position",
+      "status",
+      "place"
+    ]
+  },
+  {
+    "id": "2429",
+    "hanzi": "地下",
+    "pinyin": "dì xià",
+    "translations": [
+      "underground",
+      "subterranean",
+      "covert"
+    ]
+  },
+  {
+    "id": "2430",
+    "hanzi": "地址",
+    "pinyin": "dì zhǐ",
+    "translations": [
+      "address"
+    ]
+  },
+  {
+    "id": "2431",
+    "hanzi": "典型",
+    "pinyin": "diǎn xíng",
+    "translations": [
+      "model",
+      "typical case",
+      "archetype",
+      "typical",
+      "representative"
+    ]
+  },
+  {
+    "id": "2432",
+    "hanzi": "点名",
+    "pinyin": "diǎn míng",
+    "translations": [
+      "roll call",
+      "to mention sb by name",
+      "(to call or praise or criticize sb) by name"
+    ]
+  },
+  {
+    "id": "2433",
+    "hanzi": "电灯",
+    "pinyin": "diàn dēng",
+    "translations": [
+      "electric light"
+    ]
+  },
+  {
+    "id": "2434",
+    "hanzi": "电动车",
+    "pinyin": "diàn dòng chē",
+    "translations": [
+      "electric scooter, electric vehicle"
+    ]
+  },
+  {
+    "id": "2435",
+    "hanzi": "电梯",
+    "pinyin": "diàn tī",
+    "translations": [
+      "elevator",
+      "escalator"
+    ]
+  },
+  {
+    "id": "2436",
+    "hanzi": "电源",
+    "pinyin": "diàn yuán",
+    "translations": [
+      "electric power source"
+    ]
+  },
+  {
+    "id": "2437",
+    "hanzi": "顶",
+    "pinyin": "dǐng",
+    "translations": [
+      "apex",
+      "crown of the head",
+      "top",
+      "roof",
+      "most",
+      "to carry on the head",
+      "to push to the top",
+      "to go against",
+      "to replace",
+      "to substitute",
+      "to be subjected to (an aerial bombing, hailstorm etc)",
+      "(slang) to “bump” a forum thread to raise its profile",
+      "classifier for headwear, hats, veils etc"
+    ]
+  },
+  {
+    "id": "2438",
+    "hanzi": "定",
+    "pinyin": "dìng",
+    "translations": [
+      "to set",
+      "to fix",
+      "to determine",
+      "to decide",
+      "to order"
+    ]
+  },
+  {
+    "id": "2439",
+    "hanzi": "冬季",
+    "pinyin": "dōng jì",
+    "translations": [
+      "winter"
+    ]
+  },
+  {
+    "id": "2440",
+    "hanzi": "动画片",
+    "pinyin": "dòng huà piàn",
+    "translations": [
+      "animated film"
+    ]
+  },
+  {
+    "id": "2441",
+    "hanzi": "动摇",
+    "pinyin": "dòng yáo",
+    "translations": [
+      "to sway",
+      "to waver",
+      "to rock",
+      "to rattle",
+      "to destabilize",
+      "to pose a challenge to"
+    ]
+  },
+  {
+    "id": "2442",
+    "hanzi": "豆腐",
+    "pinyin": "dòu fu",
+    "translations": [
+      "tofu",
+      "bean curd"
+    ]
+  },
+  {
+    "id": "2443",
+    "hanzi": "独立",
+    "pinyin": "dú lì",
+    "translations": [
+      "independent",
+      "independence",
+      "to stand alone"
+    ]
+  },
+  {
+    "id": "2444",
+    "hanzi": "独特",
+    "pinyin": "dú tè",
+    "translations": [
+      "unique",
+      "distinct",
+      "having special characteristics"
+    ]
+  },
+  {
+    "id": "2445",
+    "hanzi": "独自",
+    "pinyin": "dú zì",
+    "translations": [
+      "alone"
+    ]
+  },
+  {
+    "id": "2446",
+    "hanzi": "堵",
+    "pinyin": "dǔ",
+    "translations": [
+      "to stop up",
+      "(to feel) stifled or suffocated",
+      "wall",
+      "classifier for walls"
+    ]
+  },
+  {
+    "id": "2447",
+    "hanzi": "堵车",
+    "pinyin": "dǔ chē",
+    "translations": [
+      "traffic jam",
+      "(of traffic) to get congested"
+    ]
+  },
+  {
+    "id": "2448",
+    "hanzi": "肚子",
+    "pinyin": "dù zi",
+    "translations": [
+      "belly",
+      "abdomen",
+      "stomach"
+    ]
+  },
+  {
+    "id": "2449",
+    "hanzi": "度过",
+    "pinyin": "dù guò",
+    "translations": [
+      "to pass",
+      "to spend (time)",
+      "to survive",
+      "to get through"
+    ]
+  },
+  {
+    "id": "2450",
+    "hanzi": "锻炼",
+    "pinyin": "duàn liàn",
+    "translations": [
+      "to toughen",
+      "to temper",
+      "to engage in physical exercise",
+      "to work out",
+      "(fig.) to develop one’s skills",
+      "to train oneself"
+    ]
+  },
+  {
+    "id": "2451",
+    "hanzi": "对比",
+    "pinyin": "duì bǐ",
+    "translations": [
+      "to contrast",
+      "contrast",
+      "ratio"
+    ]
+  },
+  {
+    "id": "2452",
+    "hanzi": "对付",
+    "pinyin": "duì fu",
+    "translations": [
+      "to handle",
+      "to deal with",
+      "to cope",
+      "to get by with"
+    ]
+  },
+  {
+    "id": "2453",
+    "hanzi": "对于",
+    "pinyin": "duì yú",
+    "translations": [
+      "regarding",
+      "as far as sth is concerned",
+      "with regards to"
+    ]
+  },
+  {
+    "id": "2454",
+    "hanzi": "多次",
+    "pinyin": "duō cì",
+    "translations": [
+      "many times",
+      "repeatedly"
+    ]
+  },
+  {
+    "id": "2455",
+    "hanzi": "多年",
+    "pinyin": "duō nián",
+    "translations": [
+      "(for) many years"
+    ]
+  },
+  {
+    "id": "2456",
+    "hanzi": "多样",
+    "pinyin": "duō yàng",
+    "translations": [
+      "diverse",
+      "diversity",
+      "manifold"
+    ]
+  },
+  {
+    "id": "2457",
+    "hanzi": "多种",
+    "pinyin": "duō zhǒng",
+    "translations": [
+      "many kinds of",
+      "multiple",
+      "diverse",
+      "multi-"
+    ]
+  },
+  {
+    "id": "2458",
+    "hanzi": "恶心",
+    "pinyin": "ě xīn",
+    "translations": [
+      "nausea",
+      "to feel sick",
+      "disgust",
+      "nauseating",
+      "to embarrass (deliberately)"
+    ]
+  },
+  {
+    "id": "2459",
+    "hanzi": "儿童",
+    "pinyin": "ér tóng",
+    "translations": [
+      "child"
+    ]
+  },
+  {
+    "id": "2460",
+    "hanzi": "而",
+    "pinyin": "ér",
+    "translations": [
+      "and",
+      "as well as",
+      "and so",
+      "but (not)",
+      "yet (not)",
+      "(indicates causal relation)",
+      "(indicates change of state)",
+      "(indicates contrast)"
+    ]
+  },
+  {
+    "id": "2461",
+    "hanzi": "而是",
+    "pinyin": "ér shì",
+    "translations": [
+      "rather"
+    ]
+  },
+  {
+    "id": "2462",
+    "hanzi": "耳机",
+    "pinyin": "ěr jī",
+    "translations": [
+      "headphones",
+      "earphones",
+      "telephone receiver"
+    ]
+  },
+  {
+    "id": "2463",
+    "hanzi": "二手",
+    "pinyin": "èr shǒu",
+    "translations": [
+      "indirectly acquired",
+      "second-hand (information, equipment etc)",
+      "assistant"
+    ]
+  },
+  {
+    "id": "2464",
+    "hanzi": "发挥",
+    "pinyin": "fā huī",
+    "translations": [
+      "to display",
+      "to exhibit",
+      "to bring out implicit or innate qualities",
+      "to express (a thought or moral)",
+      "to develop (an idea)",
+      "to elaborate (on a theme)"
+    ]
+  },
+  {
+    "id": "2465",
+    "hanzi": "发票",
+    "pinyin": "fā piào",
+    "translations": [
+      "invoice",
+      "receipt or bill for purchase"
+    ]
+  },
+  {
+    "id": "2466",
+    "hanzi": "发烧",
+    "pinyin": "fā shāo",
+    "translations": [
+      "to have a high temperature (from illness)",
+      "to have a fever"
+    ]
+  },
+  {
+    "id": "2467",
+    "hanzi": "法",
+    "pinyin": "fǎ",
+    "translations": [
+      "law",
+      "method",
+      "way",
+      "Buddhist teaching",
+      "Legalist"
+    ]
+  },
+  {
+    "id": "2468",
+    "hanzi": "法官",
+    "pinyin": "fǎ guān",
+    "translations": [
+      "judge"
+    ]
+  },
+  {
+    "id": "2469",
+    "hanzi": "法律",
+    "pinyin": "fǎ lǜ",
+    "translations": [
+      "law"
+    ]
+  },
+  {
+    "id": "2470",
+    "hanzi": "法院",
+    "pinyin": "fǎ yuàn",
+    "translations": [
+      "court of law",
+      "court"
+    ]
+  },
+  {
+    "id": "2471",
+    "hanzi": "翻",
+    "pinyin": "fān",
+    "translations": [
+      "to turn over",
+      "to flip over",
+      "to overturn",
+      "to rummage through",
+      "to translate",
+      "to decode",
+      "to double",
+      "to climb over or into",
+      "to cross"
+    ]
+  },
+  {
+    "id": "2472",
+    "hanzi": "翻译",
+    "pinyin": "fān yì",
+    "translations": [
+      "to translate",
+      "to interpret",
+      "translator",
+      "interpreter",
+      "translation",
+      "interpretation"
+    ]
+  },
+  {
+    "id": "2473",
+    "hanzi": "烦",
+    "pinyin": "fán",
+    "translations": [
+      "to feel vexed",
+      "to bother",
+      "to trouble",
+      "superfluous and confusing",
+      "edgy"
+    ]
+  },
+  {
+    "id": "2474",
+    "hanzi": "反",
+    "pinyin": "fǎn",
+    "translations": [
+      "contrary",
+      "in reverse",
+      "inside out or upside down",
+      "to reverse",
+      "to return",
+      "to oppose",
+      "opposite",
+      "against",
+      "anti-",
+      "to rebel",
+      "to use analogy",
+      "instead",
+      "abbr. for 反切[fǎn qiè] phonetic system"
+    ]
+  },
+  {
+    "id": "2475",
+    "hanzi": "反而",
+    "pinyin": "fǎn ér",
+    "translations": [
+      "instead",
+      "on the contrary",
+      "contrary (to expectations)"
+    ]
+  },
+  {
+    "id": "2476",
+    "hanzi": "反映",
+    "pinyin": "fǎn yìng",
+    "translations": [
+      "to mirror",
+      "to reflect",
+      "mirror image",
+      "reflection",
+      "(fig.) to report",
+      "to make known",
+      "to render"
+    ]
+  },
+  {
+    "id": "2477",
+    "hanzi": "方",
+    "pinyin": "fāng",
+    "translations": [
+      "square",
+      "power or involution (math.)",
+      "upright",
+      "honest",
+      "fair and square",
+      "direction",
+      "side",
+      "party (to a contract, dispute etc)",
+      "place",
+      "method",
+      "prescription (medicine)",
+      "just when",
+      "only or just",
+      "classifier for square things",
+      "abbr. for square or cubic meter"
+    ]
+  },
+  {
+    "id": "2478",
+    "hanzi": "方案",
+    "pinyin": "fāng àn",
+    "translations": [
+      "plan",
+      "program (for action etc)",
+      "proposal",
+      "proposed bill"
+    ]
+  },
+  {
+    "id": "2479",
+    "hanzi": "方针",
+    "pinyin": "fāng zhēn",
+    "translations": [
+      "policy",
+      "guidelines"
+    ]
+  },
+  {
+    "id": "2480",
+    "hanzi": "放松",
+    "pinyin": "fàng sōng",
+    "translations": [
+      "to loosen",
+      "to relax"
+    ]
+  },
+  {
+    "id": "2481",
+    "hanzi": "非",
+    "pinyin": "fēi",
+    "translations": [
+      "to not be",
+      "not",
+      "wrong",
+      "incorrect",
+      "non-",
+      "un-",
+      "in-",
+      "to reproach or blame",
+      "(colloquial) to insist on",
+      "simply must"
+    ]
+  },
+  {
+    "id": "2482",
+    "hanzi": "肥",
+    "pinyin": "féi",
+    "translations": [
+      "fat",
+      "fertile",
+      "loose-fitting or large",
+      "to fertilize",
+      "to become rich by illegal means",
+      "fertilizer",
+      "manure"
+    ]
+  },
+  {
+    "id": "2483",
+    "hanzi": "分布",
+    "pinyin": "fēn bù",
+    "translations": [
+      "to scatter",
+      "to distribute",
+      "to be distributed (over an area etc)",
+      "(statistical, geographic) distribution"
+    ]
+  },
+  {
+    "id": "2484",
+    "hanzi": "分散",
+    "pinyin": "fēn sàn",
+    "translations": [
+      "to scatter",
+      "to disperse",
+      "to distribute"
+    ]
+  },
+  {
+    "id": "2485",
+    "hanzi": "分手",
+    "pinyin": "fēn shǒu",
+    "translations": [
+      "to part company",
+      "to split up",
+      "to break up"
+    ]
+  },
+  {
+    "id": "2486",
+    "hanzi": "分为",
+    "pinyin": "fēn wéi",
+    "translations": [
+      "to divide sth into (parts)",
+      "to subdivide"
+    ]
+  },
+  {
+    "id": "2487",
+    "hanzi": "分之",
+    "pinyin": "fēn zhī",
+    "translations": [
+      "(indicating a fraction)"
+    ]
+  },
+  {
+    "id": "2488",
+    "hanzi": "纷纷",
+    "pinyin": "fēn fēn",
+    "translations": [
+      "one after another",
+      "in succession",
+      "one by one",
+      "continuously",
+      "diverse",
+      "in profusion",
+      "numerous and confused",
+      "pell-mell"
+    ]
+  },
+  {
+    "id": "2489",
+    "hanzi": "奋斗",
+    "pinyin": "fèn dòu",
+    "translations": [
+      "to strive",
+      "to struggle"
+    ]
+  },
+  {
+    "id": "2490",
+    "hanzi": "风格",
+    "pinyin": "fēng gé",
+    "translations": [
+      "style"
+    ]
+  },
+  {
+    "id": "2491",
+    "hanzi": "风景",
+    "pinyin": "fēng jǐng",
+    "translations": [
+      "scenery",
+      "landscape"
+    ]
+  },
+  {
+    "id": "2492",
+    "hanzi": "风俗",
+    "pinyin": "fēng sú",
+    "translations": [
+      "social custom"
+    ]
+  },
+  {
+    "id": "2493",
+    "hanzi": "封闭",
+    "pinyin": "fēng bì",
+    "translations": [
+      "to seal",
+      "to close",
+      "to confine",
+      "to seal off",
+      "to close down",
+      "sealed",
+      "confined",
+      "closed",
+      "unreceptive"
+    ]
+  },
+  {
+    "id": "2494",
+    "hanzi": "否则",
+    "pinyin": "fǒu zé",
+    "translations": [
+      "if not",
+      "otherwise",
+      "else",
+      "or else"
+    ]
+  },
+  {
+    "id": "2495",
+    "hanzi": "夫妇",
+    "pinyin": "fū fù",
+    "translations": [
+      "a (married) couple",
+      "husband and wife"
+    ]
+  },
+  {
+    "id": "2496",
+    "hanzi": "夫妻",
+    "pinyin": "fū qī",
+    "translations": [
+      "husband and wife",
+      "married couple"
+    ]
+  },
+  {
+    "id": "2497",
+    "hanzi": "夫人",
+    "pinyin": "fū ren",
+    "translations": [
+      "lady",
+      "madam",
+      "Mrs."
+    ]
+  },
+  {
+    "id": "2498",
+    "hanzi": "符号",
+    "pinyin": "fú hào",
+    "translations": [
+      "symbol",
+      "mark",
+      "sign"
+    ]
+  },
+  {
+    "id": "2499",
+    "hanzi": "符合",
+    "pinyin": "fú hé",
+    "translations": [
+      "in keeping with",
+      "in accordance with",
+      "tallying with",
+      "in line with",
+      "to agree with",
+      "to accord with",
+      "to conform to",
+      "to correspond with",
+      "to manage",
+      "to handle"
+    ]
+  },
+  {
+    "id": "2500",
+    "hanzi": "付出",
+    "pinyin": "fù chū",
+    "translations": [
+      "to pay",
+      "to invest (energy or time in a friendship etc)"
+    ]
+  },
+  {
+    "id": "2501",
+    "hanzi": "负担",
+    "pinyin": "fù dān",
+    "translations": [
+      "burden",
+      "to bear a burden"
+    ]
+  },
+  {
+    "id": "2502",
+    "hanzi": "附近",
+    "pinyin": "fù jìn",
+    "translations": [
+      "(in the) vicinity",
+      "nearby",
+      "neighboring",
+      "next to"
+    ]
+  },
+  {
+    "id": "2503",
+    "hanzi": "复制",
+    "pinyin": "fù zhì",
+    "translations": [
+      "to duplicate",
+      "to make a copy of",
+      "to copy",
+      "to reproduce",
+      "to clone"
+    ]
+  },
+  {
+    "id": "2504",
+    "hanzi": "改善",
+    "pinyin": "gǎi shàn",
+    "translations": [
+      "to make better",
+      "to improve"
+    ]
+  },
+  {
+    "id": "2505",
+    "hanzi": "改正",
+    "pinyin": "gǎi zhèng",
+    "translations": [
+      "to correct",
+      "to amend",
+      "to put right",
+      "correction"
+    ]
+  },
+  {
+    "id": "2506",
+    "hanzi": "盖",
+    "pinyin": "gài",
+    "translations": [
+      "lid",
+      "top",
+      "cover",
+      "canopy",
+      "to cover",
+      "to conceal",
+      "to build"
+    ]
+  },
+  {
+    "id": "2507",
+    "hanzi": "概括",
+    "pinyin": "gài kuò",
+    "translations": [
+      "to summarize",
+      "to generalize",
+      "briefly"
+    ]
+  },
+  {
+    "id": "2508",
+    "hanzi": "感兴趣",
+    "pinyin": "gǎn xìng qù",
+    "translations": [
+      "to be interested"
+    ]
+  },
+  {
+    "id": "2509",
+    "hanzi": "高潮",
+    "pinyin": "gāo cháo",
+    "translations": [
+      "high tide",
+      "high water",
+      "upsurge",
+      "climax",
+      "orgasm",
+      "chorus (part of a song)"
+    ]
+  },
+  {
+    "id": "2510",
+    "hanzi": "高价",
+    "pinyin": "gāo jià",
+    "translations": [
+      "high price"
+    ]
+  },
+  {
+    "id": "2511",
+    "hanzi": "高尚",
+    "pinyin": "gāo shàng",
+    "translations": [
+      "noble",
+      "lofty",
+      "refined",
+      "exquisite"
+    ]
+  },
+  {
+    "id": "2512",
+    "hanzi": "高铁",
+    "pinyin": "gāo tiě",
+    "translations": [
+      "high speed rail"
+    ]
+  },
+  {
+    "id": "2513",
+    "hanzi": "格外",
+    "pinyin": "gé wài",
+    "translations": [
+      "especially",
+      "particularly"
+    ]
+  },
+  {
+    "id": "2514",
+    "hanzi": "隔",
+    "pinyin": "gé",
+    "translations": [
+      "to separate",
+      "to partition",
+      "to stand or lie between",
+      "at a distance from",
+      "after or at an interval of"
+    ]
+  },
+  {
+    "id": "2515",
+    "hanzi": "隔开",
+    "pinyin": "gé kāi",
+    "translations": [
+      "to separate"
+    ]
+  },
+  {
+    "id": "2516",
+    "hanzi": "个别",
+    "pinyin": "gè bié",
+    "translations": [
+      "individual",
+      "specific",
+      "respective",
+      "just one or two"
+    ]
+  },
+  {
+    "id": "2517",
+    "hanzi": "个体",
+    "pinyin": "gè tǐ",
+    "translations": [
+      "individual"
+    ]
+  },
+  {
+    "id": "2518",
+    "hanzi": "各个",
+    "pinyin": "gè gè",
+    "translations": [
+      "every",
+      "various",
+      "separately, one by one"
+    ]
+  },
+  {
+    "id": "2519",
+    "hanzi": "根",
+    "pinyin": "gēn",
+    "translations": [
+      "root",
+      "basis",
+      "classifier for long slender objects, e.g. cigarettes, guitar strings",
+      "radical (chemistry)"
+    ]
+  },
+  {
+    "id": "2520",
+    "hanzi": "根据",
+    "pinyin": "gēn jù",
+    "translations": [
+      "according to",
+      "based on",
+      "basis",
+      "foundation"
+    ]
+  },
+  {
+    "id": "2521",
+    "hanzi": "工程",
+    "pinyin": "gōng chéng",
+    "translations": [
+      "engineering",
+      "an engineering project",
+      "project",
+      "undertaking"
+    ]
+  },
+  {
+    "id": "2522",
+    "hanzi": "公元",
+    "pinyin": "gōng yuán",
+    "translations": [
+      "CE (Common Era)",
+      "Christian Era",
+      "AD (Anno Domini)"
+    ]
+  },
+  {
+    "id": "2523",
+    "hanzi": "供应",
+    "pinyin": "gōng yìng",
+    "translations": [
+      "to supply",
+      "to provide",
+      "to offer"
+    ]
+  },
+  {
+    "id": "2524",
+    "hanzi": "共",
+    "pinyin": "gòng",
+    "translations": [
+      "common",
+      "general",
+      "to share",
+      "together",
+      "total",
+      "altogether",
+      "abbr. for 共產黨|共产党[gòng chǎn dǎng], Communist party"
+    ]
+  },
+  {
+    "id": "2525",
+    "hanzi": "构成",
+    "pinyin": "gòu chéng",
+    "translations": [
+      "to constitute",
+      "to form",
+      "to compose",
+      "to make up",
+      "to configure (computing)"
+    ]
+  },
+  {
+    "id": "2526",
+    "hanzi": "构造",
+    "pinyin": "gòu zào",
+    "translations": [
+      "structure",
+      "composition",
+      "tectonic (geology)"
+    ]
+  },
+  {
+    "id": "2527",
+    "hanzi": "购买",
+    "pinyin": "gòu mǎi",
+    "translations": [
+      "to purchase",
+      "to buy"
+    ]
+  },
+  {
+    "id": "2528",
+    "hanzi": "购物",
+    "pinyin": "gòu wù",
+    "translations": [
+      "shopping"
+    ]
+  },
+  {
+    "id": "2529",
+    "hanzi": "骨头",
+    "pinyin": "gǔ tou",
+    "translations": [
+      "bone",
+      "moral character",
+      "bitterness"
+    ]
+  },
+  {
+    "id": "2530",
+    "hanzi": "固定",
+    "pinyin": "gù dìng",
+    "translations": [
+      "to fix",
+      "to fasten",
+      "to set rigidly in place",
+      "fixed",
+      "set",
+      "regular"
+    ]
+  },
+  {
+    "id": "2531",
+    "hanzi": "瓜",
+    "pinyin": "guā",
+    "translations": [
+      "melon",
+      "gourd",
+      "squash"
+    ]
+  },
+  {
+    "id": "2532",
+    "hanzi": "怪",
+    "pinyin": "guài",
+    "translations": [
+      "bewildering",
+      "odd",
+      "strange",
+      "uncanny",
+      "devil",
+      "monster",
+      "to wonder at",
+      "to blame",
+      "quite",
+      "rather"
+    ]
+  },
+  {
+    "id": "2533",
+    "hanzi": "关",
+    "pinyin": "guān",
+    "translations": [
+      "mountain pass",
+      "to close",
+      "to shut",
+      "to turn off",
+      "to concern",
+      "to involve"
+    ]
+  },
+  {
+    "id": "2534",
+    "hanzi": "关闭",
+    "pinyin": "guān bì",
+    "translations": [
+      "to close",
+      "to shut"
+    ]
+  },
+  {
+    "id": "2535",
+    "hanzi": "关于",
+    "pinyin": "guān yú",
+    "translations": [
+      "pertaining to",
+      "concerning",
+      "with regard to",
+      "about",
+      "a matter of"
+    ]
+  },
+  {
+    "id": "2536",
+    "hanzi": "官",
+    "pinyin": "guān",
+    "translations": [
+      "government official",
+      "governmental",
+      "official",
+      "public",
+      "organ of the body"
+    ]
+  },
+  {
+    "id": "2537",
+    "hanzi": "官方",
+    "pinyin": "guān fāng",
+    "translations": [
+      "government",
+      "official (approved or issued by an authority)"
+    ]
+  },
+  {
+    "id": "2538",
+    "hanzi": "光临",
+    "pinyin": "guāng lín",
+    "translations": [
+      "(formal) to honor with one’s presence",
+      "to attend"
+    ]
+  },
+  {
+    "id": "2539",
+    "hanzi": "光盘",
+    "pinyin": "guāng pán",
+    "translations": [
+      "compact disc",
+      "CD or DVD",
+      "CD ROM"
+    ]
+  },
+  {
+    "id": "2540",
+    "hanzi": "逛",
+    "pinyin": "guàng",
+    "translations": [
+      "to stroll",
+      "to visit"
+    ]
+  },
+  {
+    "id": "2541",
+    "hanzi": "归",
+    "pinyin": "guī",
+    "translations": [
+      "to return",
+      "to go back to",
+      "to give back to",
+      "(of a responsibility) to be taken care of by",
+      "to belong to",
+      "to gather together",
+      "(used between two identical verbs) despite",
+      "to marry (of a woman) (old)",
+      "division on the abacus with a one-digit divisor"
+    ]
+  },
+  {
+    "id": "2542",
+    "hanzi": "规律",
+    "pinyin": "guī lǜ",
+    "translations": [
+      "rule (e.g. of science)",
+      "law of behavior",
+      "regular pattern",
+      "rhythm",
+      "discipline"
+    ]
+  },
+  {
+    "id": "2543",
+    "hanzi": "规模",
+    "pinyin": "guī mó",
+    "translations": [
+      "scale",
+      "scope",
+      "extent"
+    ]
+  },
+  {
+    "id": "2544",
+    "hanzi": "规则",
+    "pinyin": "guī zé",
+    "translations": [
+      "rule",
+      "regulation",
+      "rules and regulations"
+    ]
+  },
+  {
+    "id": "2545",
+    "hanzi": "果实",
+    "pinyin": "guǒ shí",
+    "translations": [
+      "fruit (produced by a plant)",
+      "(fig.) fruits (of success etc)",
+      "results",
+      "gains"
+    ]
+  },
+  {
+    "id": "2546",
+    "hanzi": "过分",
+    "pinyin": "guò fèn",
+    "translations": [
+      "excessive",
+      "undue",
+      "overly"
+    ]
+  },
+  {
+    "id": "2547",
+    "hanzi": "海水",
+    "pinyin": "hǎi shuǐ",
+    "translations": [
+      "seawater"
+    ]
+  },
+  {
+    "id": "2548",
+    "hanzi": "海鲜",
+    "pinyin": "hǎi xiān",
+    "translations": [
+      "seafood"
+    ]
+  },
+  {
+    "id": "2549",
+    "hanzi": "含",
+    "pinyin": "hán",
+    "translations": [
+      "to keep",
+      "to contain",
+      "to suck (keep in your mouth without chewing)"
+    ]
+  },
+  {
+    "id": "2550",
+    "hanzi": "含量",
+    "pinyin": "hán liàng",
+    "translations": [
+      "content",
+      "quantity contained"
+    ]
+  },
+  {
+    "id": "2551",
+    "hanzi": "含义",
+    "pinyin": "hán yì",
+    "translations": [
+      "meaning (implicit in a phrase)",
+      "implied meaning",
+      "hidden meaning",
+      "hint",
+      "connotation"
+    ]
+  },
+  {
+    "id": "2552",
+    "hanzi": "含有",
+    "pinyin": "hán yǒu",
+    "translations": [
+      "to contain",
+      "including"
+    ]
+  },
+  {
+    "id": "2553",
+    "hanzi": "寒假",
+    "pinyin": "hán jià",
+    "translations": [
+      "winter vacation"
+    ]
+  },
+  {
+    "id": "2554",
+    "hanzi": "寒冷",
+    "pinyin": "hán lěng",
+    "translations": [
+      "cold (climate)",
+      "frigid",
+      "very cold"
+    ]
+  },
+  {
+    "id": "2555",
+    "hanzi": "行业",
+    "pinyin": "háng yè",
+    "translations": [
+      "industry",
+      "business"
+    ]
+  },
+  {
+    "id": "2556",
+    "hanzi": "航班",
+    "pinyin": "háng bān",
+    "translations": [
+      "scheduled flight",
+      "flight number",
+      "plane",
+      "scheduled sailing",
+      "sailing number",
+      "passenger ship"
+    ]
+  },
+  {
+    "id": "2557",
+    "hanzi": "航空",
+    "pinyin": "háng kōng",
+    "translations": [
+      "aviation"
+    ]
+  },
+  {
+    "id": "2558",
+    "hanzi": "毫米",
+    "pinyin": "háo mǐ",
+    "translations": [
+      "millimeter"
+    ]
+  },
+  {
+    "id": "2559",
+    "hanzi": "毫升",
+    "pinyin": "háo shēng",
+    "translations": [
+      "milliliter"
+    ]
+  },
+  {
+    "id": "2560",
+    "hanzi": "好友",
+    "pinyin": "hǎo yǒu",
+    "translations": [
+      "close friend",
+      "pal",
+      "(social networking website) friend"
+    ]
+  },
+  {
+    "id": "2561",
+    "hanzi": "号码",
+    "pinyin": "hào mǎ",
+    "translations": [
+      "number"
+    ]
+  },
+  {
+    "id": "2562",
+    "hanzi": "好",
+    "pinyin": "hào",
+    "translations": [
+      "to be fond of",
+      "to have a tendency to",
+      "to be prone to"
+    ]
+  },
+  {
+    "id": "2563",
+    "hanzi": "合同",
+    "pinyin": "hé tong",
+    "translations": [
+      "(business) contract"
+    ]
+  },
+  {
+    "id": "2564",
+    "hanzi": "黑暗",
+    "pinyin": "hēi àn",
+    "translations": [
+      "dark",
+      "darkly",
+      "darkness"
+    ]
+  },
+  {
+    "id": "2565",
+    "hanzi": "红包",
+    "pinyin": "hóng bāo",
+    "translations": [
+      "money wrapped in red as a gift",
+      "bonus payment",
+      "kickback",
+      "bribe"
+    ]
+  },
+  {
+    "id": "2566",
+    "hanzi": "后头",
+    "pinyin": "hòu tou",
+    "translations": [
+      "behind",
+      "the back",
+      "the rear",
+      "later",
+      "afterwards",
+      "(in) the future"
+    ]
+  },
+  {
+    "id": "2567",
+    "hanzi": "厚",
+    "pinyin": "hòu",
+    "translations": [
+      "thick",
+      "deep or profound",
+      "kind",
+      "generous",
+      "rich or strong in flavor",
+      "to favor",
+      "to stress"
+    ]
+  },
+  {
+    "id": "2568",
+    "hanzi": "呼吸",
+    "pinyin": "hū xī",
+    "translations": [
+      "to breathe"
+    ]
+  },
+  {
+    "id": "2569",
+    "hanzi": "忽视",
+    "pinyin": "hū shì",
+    "translations": [
+      "to neglect",
+      "to ignore"
+    ]
+  },
+  {
+    "id": "2570",
+    "hanzi": "户",
+    "pinyin": "hù",
+    "translations": [
+      "a household",
+      "door",
+      "family"
+    ]
+  },
+  {
+    "id": "2571",
+    "hanzi": "护士",
+    "pinyin": "hù shi",
+    "translations": [
+      "nurse"
+    ]
+  },
+  {
+    "id": "2572",
+    "hanzi": "花",
+    "pinyin": "huā",
+    "translations": [
+      "fancy pattern",
+      "florid",
+      "(coll.) lecherous",
+      "lustful"
+    ]
+  },
+  {
+    "id": "2573",
+    "hanzi": "划",
+    "pinyin": "huá",
+    "translations": [
+      "to cut",
+      "to slash",
+      "to scratch (cut into the surface of sth)",
+      "to strike (a match)",
+      "to row",
+      "to paddle",
+      "profitable",
+      "worth (the effort)",
+      "it pays (to do sth)"
+    ]
+  },
+  {
+    "id": "2574",
+    "hanzi": "划",
+    "pinyin": "huà",
+    "translations": [
+      "to delimit",
+      "to transfer",
+      "to assign",
+      "to plan",
+      "to draw (a line)",
+      "stroke of a Chinese character"
+    ]
+  },
+  {
+    "id": "2575",
+    "hanzi": "怀念",
+    "pinyin": "huái niàn",
+    "translations": [
+      "to cherish the memory of",
+      "to think of",
+      "reminisce"
+    ]
+  },
+  {
+    "id": "2576",
+    "hanzi": "怀疑",
+    "pinyin": "huái yí",
+    "translations": [
+      "to doubt (sth)",
+      "to be skeptical of",
+      "to have one’s doubts",
+      "to harbor suspicions",
+      "to suspect that"
+    ]
+  },
+  {
+    "id": "2577",
+    "hanzi": "缓解",
+    "pinyin": "huǎn jiě",
+    "translations": [
+      "to bring relief",
+      "to alleviate (a crisis)",
+      "to dull (a pain)"
+    ]
+  },
+  {
+    "id": "2578",
+    "hanzi": "黄瓜",
+    "pinyin": "huáng guā",
+    "translations": [
+      "cucumber"
+    ]
+  },
+  {
+    "id": "2579",
+    "hanzi": "黄金",
+    "pinyin": "huáng jīn",
+    "translations": [
+      "gold",
+      "golden (opportunity)",
+      "prime (time)"
+    ]
+  },
+  {
+    "id": "2580",
+    "hanzi": "回复",
+    "pinyin": "huí fù",
+    "translations": [
+      "to reply",
+      "to recover",
+      "to return (to a previous condition)",
+      "Re: in reply to (email)"
+    ]
+  },
+  {
+    "id": "2581",
+    "hanzi": "汇",
+    "pinyin": "huì",
+    "translations": [
+      "to remit",
+      "to converge (of rivers)",
+      "to exchange"
+    ]
+  },
+  {
+    "id": "2582",
+    "hanzi": "汇报",
+    "pinyin": "huì bào",
+    "translations": [
+      "to report",
+      "to give an account of",
+      "to collect information and report back",
+      "report"
+    ]
+  },
+  {
+    "id": "2583",
+    "hanzi": "汇率",
+    "pinyin": "huì lǜ",
+    "translations": [
+      "exchange rate"
+    ]
+  },
+  {
+    "id": "2584",
+    "hanzi": "婚礼",
+    "pinyin": "hūn lǐ",
+    "translations": [
+      "wedding ceremony",
+      "wedding"
+    ]
+  },
+  {
+    "id": "2585",
+    "hanzi": "火",
+    "pinyin": "huǒ",
+    "translations": [
+      "fire",
+      "urgent",
+      "ammunition",
+      "fiery or flaming",
+      "internal heat (Chinese medicine)",
+      "hot (popular)",
+      "classifier for military units (old)"
+    ]
+  },
+  {
+    "id": "2586",
+    "hanzi": "伙",
+    "pinyin": "huǒ",
+    "translations": [
+      "companion",
+      "partner",
+      "group",
+      "classifier for groups of people",
+      "to combine",
+      "together"
+    ]
+  },
+  {
+    "id": "2587",
+    "hanzi": "伙伴",
+    "pinyin": "huǒ bàn",
+    "translations": [
+      "partner",
+      "companion",
+      "comrade"
+    ]
+  },
+  {
+    "id": "2588",
+    "hanzi": "或许",
+    "pinyin": "huò xǔ",
+    "translations": [
+      "perhaps",
+      "maybe"
+    ]
+  },
+  {
+    "id": "2589",
+    "hanzi": "货",
+    "pinyin": "huò",
+    "translations": [
+      "goods",
+      "money",
+      "commodity"
+    ]
+  },
+  {
+    "id": "2590",
+    "hanzi": "获",
+    "pinyin": "huò",
+    "translations": [
+      "to catch",
+      "to obtain",
+      "to capture",
+      "to reap",
+      "to harvest"
+    ]
+  },
+  {
+    "id": "2591",
+    "hanzi": "获得",
+    "pinyin": "huò dé",
+    "translations": [
+      "to obtain",
+      "to receive",
+      "to get"
+    ]
+  },
+  {
+    "id": "2592",
+    "hanzi": "获奖",
+    "pinyin": "huò jiǎng",
+    "translations": [
+      "to win an award"
+    ]
+  },
+  {
+    "id": "2593",
+    "hanzi": "获取",
+    "pinyin": "huò qǔ",
+    "translations": [
+      "to gain",
+      "to get",
+      "to acquire"
+    ]
+  },
+  {
+    "id": "2594",
+    "hanzi": "几乎",
+    "pinyin": "jī hū",
+    "translations": [
+      "almost",
+      "nearly",
+      "practically"
+    ]
+  },
+  {
+    "id": "2595",
+    "hanzi": "机构",
+    "pinyin": "jī gòu",
+    "translations": [
+      "mechanism",
+      "structure",
+      "organization",
+      "agency",
+      "institution"
+    ]
+  },
+  {
+    "id": "2596",
+    "hanzi": "机遇",
+    "pinyin": "jī yù",
+    "translations": [
+      "opportunity",
+      "favorable circumstance",
+      "stroke of luck"
+    ]
+  },
+  {
+    "id": "2597",
+    "hanzi": "积累",
+    "pinyin": "jī lěi",
+    "translations": [
+      "to accumulate",
+      "accumulation",
+      "cumulative",
+      "cumulatively"
+    ]
+  },
+  {
+    "id": "2598",
+    "hanzi": "激动",
+    "pinyin": "jī dòng",
+    "translations": [
+      "to move emotionally",
+      "to stir up (emotions)",
+      "to excite"
+    ]
+  },
+  {
+    "id": "2599",
+    "hanzi": "激烈",
+    "pinyin": "jī liè",
+    "translations": [
+      "intense",
+      "acute",
+      "fierce"
+    ]
+  },
+  {
+    "id": "2600",
+    "hanzi": "及格",
+    "pinyin": "jí gé",
+    "translations": [
+      "to pass an exam or a test",
+      "to meet a minimum standard"
+    ]
+  },
+  {
+    "id": "2601",
+    "hanzi": "极",
+    "pinyin": "jí",
+    "translations": [
+      "extremely",
+      "pole (geography, physics)",
+      "utmost",
+      "top"
+    ]
+  },
+  {
+    "id": "2602",
+    "hanzi": "极其",
+    "pinyin": "jí qí",
+    "translations": [
+      "extremely"
+    ]
+  },
+  {
+    "id": "2603",
+    "hanzi": "即将",
+    "pinyin": "jí jiāng",
+    "translations": [
+      "on the eve of",
+      "to be about to",
+      "to be on the verge of"
+    ]
+  },
+  {
+    "id": "2604",
+    "hanzi": "急忙",
+    "pinyin": "jí máng",
+    "translations": [
+      "hastily"
+    ]
+  },
+  {
+    "id": "2605",
+    "hanzi": "集合",
+    "pinyin": "jí hé",
+    "translations": [
+      "to gather",
+      "to assemble",
+      "set (math.)"
+    ]
+  },
+  {
+    "id": "2606",
+    "hanzi": "记载",
+    "pinyin": "jì zǎi",
+    "translations": [
+      "to write down",
+      "to record",
+      "written account"
+    ]
+  },
+  {
+    "id": "2607",
+    "hanzi": "纪律",
+    "pinyin": "jì lǜ",
+    "translations": [
+      "discipline"
+    ]
+  },
+  {
+    "id": "2608",
+    "hanzi": "技巧",
+    "pinyin": "jì qiǎo",
+    "translations": [
+      "skill",
+      "technique"
+    ]
+  },
+  {
+    "id": "2609",
+    "hanzi": "系",
+    "pinyin": "jì",
+    "translations": [
+      "to tie",
+      "to fasten",
+      "to button up"
+    ]
+  },
+  {
+    "id": "2610",
+    "hanzi": "季",
+    "pinyin": "jì",
+    "translations": [
+      "season",
+      "the last month of a season",
+      "fourth or youngest amongst brothers",
+      "classifier for seasonal crop yields"
+    ]
+  },
+  {
+    "id": "2611",
+    "hanzi": "季度",
+    "pinyin": "jì dù",
+    "translations": [
+      "quarter of a year",
+      "season (sports)"
+    ]
+  },
+  {
+    "id": "2612",
+    "hanzi": "季节",
+    "pinyin": "jì jié",
+    "translations": [
+      "time",
+      "season",
+      "period"
+    ]
+  },
+  {
+    "id": "2613",
+    "hanzi": "既",
+    "pinyin": "jì",
+    "translations": [
+      "already",
+      "since",
+      "both… (and…)"
+    ]
+  },
+  {
+    "id": "2614",
+    "hanzi": "既然",
+    "pinyin": "jì rán",
+    "translations": [
+      "since",
+      "as",
+      "this being the case"
+    ]
+  },
+  {
+    "id": "2615",
+    "hanzi": "寄",
+    "pinyin": "jì",
+    "translations": [
+      "to send",
+      "to mail",
+      "to entrust",
+      "to depend on",
+      "to attach oneself to",
+      "to live (in a house)",
+      "to lodge",
+      "foster (son etc)"
+    ]
+  },
+  {
+    "id": "2616",
+    "hanzi": "加班",
+    "pinyin": "jiā bān",
+    "translations": [
+      "to work overtime"
+    ]
+  },
+  {
+    "id": "2617",
+    "hanzi": "加入",
+    "pinyin": "jiā rù",
+    "translations": [
+      "to become a member",
+      "to join",
+      "to mix into",
+      "to participate in",
+      "to add in"
+    ]
+  },
+  {
+    "id": "2618",
+    "hanzi": "加油站",
+    "pinyin": "jiā yóu zhàn",
+    "translations": [
+      "gas station"
+    ]
+  },
+  {
+    "id": "2619",
+    "hanzi": "家务",
+    "pinyin": "jiā wù",
+    "translations": [
+      "household duties",
+      "housework"
+    ]
+  },
+  {
+    "id": "2620",
+    "hanzi": "假如",
+    "pinyin": "jiǎ rú",
+    "translations": [
+      "if"
+    ]
+  },
+  {
+    "id": "2621",
+    "hanzi": "坚固",
+    "pinyin": "jiān gù",
+    "translations": [
+      "firm",
+      "firmly",
+      "hard",
+      "stable"
+    ]
+  },
+  {
+    "id": "2622",
+    "hanzi": "检测",
+    "pinyin": "jiǎn cè",
+    "translations": [
+      "to detect",
+      "to test",
+      "detection",
+      "sensing"
+    ]
+  },
+  {
+    "id": "2623",
+    "hanzi": "减",
+    "pinyin": "jiǎn",
+    "translations": [
+      "to lower",
+      "to decrease",
+      "to reduce",
+      "to subtract",
+      "to diminish"
+    ]
+  },
+  {
+    "id": "2624",
+    "hanzi": "减肥",
+    "pinyin": "jiǎn féi",
+    "translations": [
+      "to lose weight"
+    ]
+  },
+  {
+    "id": "2625",
+    "hanzi": "减少",
+    "pinyin": "jiǎn shǎo",
+    "translations": [
+      "to lessen",
+      "to decrease",
+      "to reduce",
+      "to lower"
+    ]
+  },
+  {
+    "id": "2626",
+    "hanzi": "简历",
+    "pinyin": "jiǎn lì",
+    "translations": [
+      "curriculum vitae (CV)",
+      "résumé",
+      "biographical notes"
+    ]
+  },
+  {
+    "id": "2627",
+    "hanzi": "健身",
+    "pinyin": "jiàn shēn",
+    "translations": [
+      "to exercise",
+      "to keep fit",
+      "to work out",
+      "physical exercise"
+    ]
+  },
+  {
+    "id": "2628",
+    "hanzi": "渐渐",
+    "pinyin": "jiàn jiàn",
+    "translations": [
+      "gradually"
+    ]
+  },
+  {
+    "id": "2629",
+    "hanzi": "江",
+    "pinyin": "jiāng",
+    "translations": [
+      "river"
+    ]
+  },
+  {
+    "id": "2630",
+    "hanzi": "讲究",
+    "pinyin": "jiǎng jiu",
+    "translations": [
+      "to pay particular attention to",
+      "carefully selected for quality",
+      "tastefully chosen"
+    ]
+  },
+  {
+    "id": "2631",
+    "hanzi": "讲座",
+    "pinyin": "jiǎng zuò",
+    "translations": [
+      "a course of lectures"
+    ]
+  },
+  {
+    "id": "2632",
+    "hanzi": "奖",
+    "pinyin": "jiǎng",
+    "translations": [
+      "prize",
+      "award",
+      "encouragement"
+    ]
+  },
+  {
+    "id": "2633",
+    "hanzi": "奖金",
+    "pinyin": "jiǎng jīn",
+    "translations": [
+      "premium",
+      "award money",
+      "bonus"
+    ]
+  },
+  {
+    "id": "2634",
+    "hanzi": "奖学金",
+    "pinyin": "jiǎng xué jīn",
+    "translations": [
+      "scholarship"
+    ]
+  },
+  {
+    "id": "2635",
+    "hanzi": "降",
+    "pinyin": "jiàng",
+    "translations": [
+      "to drop",
+      "to fall",
+      "to come down",
+      "to descend"
+    ]
+  },
+  {
+    "id": "2636",
+    "hanzi": "降低",
+    "pinyin": "jiàng dī",
+    "translations": [
+      "to reduce",
+      "to lower",
+      "to bring down"
+    ]
+  },
+  {
+    "id": "2637",
+    "hanzi": "降价",
+    "pinyin": "jiàng jià",
+    "translations": [
+      "to cut the price",
+      "to drive down the price",
+      "to get cheaper"
+    ]
+  },
+  {
+    "id": "2638",
+    "hanzi": "降落",
+    "pinyin": "jiàng luò",
+    "translations": [
+      "to descend",
+      "to land"
+    ]
+  },
+  {
+    "id": "2639",
+    "hanzi": "降温",
+    "pinyin": "jiàng wēn",
+    "translations": [
+      "to become cooler",
+      "to lower the temperature",
+      "cooling",
+      "(of interest, activity etc) to decline"
+    ]
+  },
+  {
+    "id": "2640",
+    "hanzi": "交换",
+    "pinyin": "jiāo huàn",
+    "translations": [
+      "to exchange",
+      "to swap",
+      "to switch (telecom)",
+      "commutative (math)",
+      "to commute"
+    ]
+  },
+  {
+    "id": "2641",
+    "hanzi": "交际",
+    "pinyin": "jiāo jì",
+    "translations": [
+      "communication",
+      "social intercourse"
+    ]
+  },
+  {
+    "id": "2642",
+    "hanzi": "教授",
+    "pinyin": "jiào shòu",
+    "translations": [
+      "professor",
+      "to instruct",
+      "to lecture on"
+    ]
+  },
+  {
+    "id": "2643",
+    "hanzi": "教训",
+    "pinyin": "jiào xun",
+    "translations": [
+      "lesson",
+      "moral",
+      "to chide sb",
+      "to lecture sb"
+    ]
+  },
+  {
+    "id": "2644",
+    "hanzi": "阶段",
+    "pinyin": "jiē duàn",
+    "translations": [
+      "stage",
+      "section",
+      "phase",
+      "period"
+    ]
+  },
+  {
+    "id": "2645",
+    "hanzi": "街道",
+    "pinyin": "jiē dào",
+    "translations": [
+      "street",
+      "subdistrict",
+      "residential district"
+    ]
+  },
+  {
+    "id": "2646",
+    "hanzi": "节省",
+    "pinyin": "jié shěng",
+    "translations": [
+      "saving",
+      "to save",
+      "to use sparingly",
+      "to cut down on"
+    ]
+  },
+  {
+    "id": "2647",
+    "hanzi": "结",
+    "pinyin": "jié",
+    "translations": [
+      "knot",
+      "sturdy",
+      "bond",
+      "to tie",
+      "to bind",
+      "to check out (of a hotel)"
+    ]
+  },
+  {
+    "id": "2648",
+    "hanzi": "结构",
+    "pinyin": "jié gòu",
+    "translations": [
+      "structure",
+      "composition",
+      "makeup",
+      "architecture"
+    ]
+  },
+  {
+    "id": "2649",
+    "hanzi": "结论",
+    "pinyin": "jié lùn",
+    "translations": [
+      "conclusion",
+      "verdict",
+      "to conclude",
+      "to reach a verdict"
+    ]
+  },
+  {
+    "id": "2650",
+    "hanzi": "姐妹",
+    "pinyin": "jiě mèi",
+    "translations": [
+      "sisters",
+      "siblings",
+      "sister (school, city etc)"
+    ]
+  },
+  {
+    "id": "2651",
+    "hanzi": "解释",
+    "pinyin": "jiě shì",
+    "translations": [
+      "explanation",
+      "to explain",
+      "to interpret",
+      "to resolve"
+    ]
+  },
+  {
+    "id": "2652",
+    "hanzi": "尽快",
+    "pinyin": "jǐn kuài",
+    "translations": [
+      "as quickly as possible",
+      "as soon as possible",
+      "with all speed"
+    ]
+  },
+  {
+    "id": "2653",
+    "hanzi": "紧密",
+    "pinyin": "jǐn mì",
+    "translations": [
+      "inseparably close"
+    ]
+  },
+  {
+    "id": "2654",
+    "hanzi": "尽力",
+    "pinyin": "jìn lì",
+    "translations": [
+      "to strive one’s hardest",
+      "to spare no effort"
+    ]
+  },
+  {
+    "id": "2655",
+    "hanzi": "进口",
+    "pinyin": "jìn kǒu",
+    "translations": [
+      "to import",
+      "imported",
+      "entrance",
+      "inlet (for the intake of air, water etc)"
+    ]
+  },
+  {
+    "id": "2656",
+    "hanzi": "近代",
+    "pinyin": "jìn dài",
+    "translations": [
+      "the not-very-distant past",
+      "modern times, excluding recent decades",
+      "(in the context of Chinese history) the period from the Opium Wars until the May 4th Movement (mid-19th century to 1919)",
+      "capitalist times (pre-1949)"
+    ]
+  },
+  {
+    "id": "2657",
+    "hanzi": "禁止",
+    "pinyin": "jìn zhǐ",
+    "translations": [
+      "to prohibit",
+      "to forbid",
+      "to ban"
+    ]
+  },
+  {
+    "id": "2658",
+    "hanzi": "经典",
+    "pinyin": "jīng diǎn",
+    "translations": [
+      "the classics",
+      "scriptures",
+      "classical",
+      "classic (example, case etc)",
+      "typical"
+    ]
+  },
+  {
+    "id": "2659",
+    "hanzi": "精力",
+    "pinyin": "jīng lì",
+    "translations": [
+      "energy"
+    ]
+  },
+  {
+    "id": "2660",
+    "hanzi": "竟然",
+    "pinyin": "jìng rán",
+    "translations": [
+      "unexpectedly",
+      "to one’s surprise",
+      "in spite of everything",
+      "in that crazy way",
+      "actually",
+      "to go as far as to"
+    ]
+  },
+  {
+    "id": "2661",
+    "hanzi": "镜头",
+    "pinyin": "jìng tóu",
+    "translations": [
+      "camera lens",
+      "camera shot (in a movie etc)",
+      "scene"
+    ]
+  },
+  {
+    "id": "2662",
+    "hanzi": "镜子",
+    "pinyin": "jìng zi",
+    "translations": [
+      "mirror"
+    ]
+  },
+  {
+    "id": "2663",
+    "hanzi": "究竟",
+    "pinyin": "jiū jìng",
+    "translations": [
+      "to go to the bottom of a matter",
+      "after all",
+      "when all is said and done",
+      "(in an interrogative sentence) finally",
+      "outcome",
+      "result"
+    ]
+  },
+  {
+    "id": "2664",
+    "hanzi": "酒吧",
+    "pinyin": "jiǔ bā",
+    "translations": [
+      "bar",
+      "pub",
+      "saloon"
+    ]
+  },
+  {
+    "id": "2665",
+    "hanzi": "居民",
+    "pinyin": "jū mín",
+    "translations": [
+      "resident",
+      "inhabitant"
+    ]
+  },
+  {
+    "id": "2666",
+    "hanzi": "居住",
+    "pinyin": "jū zhù",
+    "translations": [
+      "to reside",
+      "to dwell",
+      "to live in a place",
+      "resident in"
+    ]
+  },
+  {
+    "id": "2667",
+    "hanzi": "局",
+    "pinyin": "jú",
+    "translations": [
+      "office",
+      "situation",
+      "classifier for games: match, set, round etc"
+    ]
+  },
+  {
+    "id": "2668",
+    "hanzi": "巨大",
+    "pinyin": "jù dà",
+    "translations": [
+      "huge",
+      "immense",
+      "very large",
+      "tremendous",
+      "gigantic",
+      "enormous"
+    ]
+  },
+  {
+    "id": "2669",
+    "hanzi": "具备",
+    "pinyin": "jù bèi",
+    "translations": [
+      "to possess",
+      "to have",
+      "equipped with",
+      "able to fulfill (conditions or requirements)"
+    ]
+  },
+  {
+    "id": "2670",
+    "hanzi": "距离",
+    "pinyin": "jù lí",
+    "translations": [
+      "distance",
+      "to be apart from"
+    ]
+  },
+  {
+    "id": "2671",
+    "hanzi": "聚",
+    "pinyin": "jù",
+    "translations": [
+      "to congregate",
+      "to assemble",
+      "to mass",
+      "to gather together",
+      "to amass",
+      "to polymerize"
+    ]
+  },
+  {
+    "id": "2672",
+    "hanzi": "聚会",
+    "pinyin": "jù huì",
+    "translations": [
+      "party",
+      "gathering",
+      "to meet",
+      "to get together"
+    ]
+  },
+  {
+    "id": "2673",
+    "hanzi": "卷",
+    "pinyin": "juǎn",
+    "translations": [
+      "to roll up",
+      "roll",
+      "classifier for small rolled things (wad of paper money, movie reel etc)."
+    ]
+  },
+  {
+    "id": "2674",
+    "hanzi": "卷",
+    "pinyin": "juàn",
+    "translations": [
+      "scroll",
+      "book",
+      "volume",
+      "chapter",
+      "examination paper",
+      "classifier for books, paintings: volume, scroll"
+    ]
+  },
+  {
+    "id": "2675",
+    "hanzi": "角色",
+    "pinyin": "jué sè",
+    "translations": [
+      "role",
+      "character in a novel",
+      "persona",
+      "also pr. [jiǎo sè]"
+    ]
+  },
+  {
+    "id": "2676",
+    "hanzi": "开花",
+    "pinyin": "kāi huā",
+    "translations": [
+      "to bloom",
+      "to blossom",
+      "to flower",
+      "fig. to burst open",
+      "to feel happy or elated",
+      "new development grows out"
+    ]
+  },
+  {
+    "id": "2677",
+    "hanzi": "开水",
+    "pinyin": "kāi shuǐ",
+    "translations": [
+      "boiled water",
+      "boiling water"
+    ]
+  },
+  {
+    "id": "2678",
+    "hanzi": "看不起",
+    "pinyin": "kàn bu qǐ",
+    "translations": [
+      "to look down upon",
+      "to despise"
+    ]
+  },
+  {
+    "id": "2679",
+    "hanzi": "看来",
+    "pinyin": "kàn lai",
+    "translations": [
+      "apparently",
+      "it seems that"
+    ]
+  },
+  {
+    "id": "2680",
+    "hanzi": "看望",
+    "pinyin": "kàn wàng",
+    "translations": [
+      "to visit",
+      "to pay a call to"
+    ]
+  },
+  {
+    "id": "2681",
+    "hanzi": "考察",
+    "pinyin": "kǎo chá",
+    "translations": [
+      "to inspect",
+      "to observe and study",
+      "on-the-spot investigation"
+    ]
+  },
+  {
+    "id": "2682",
+    "hanzi": "考虑",
+    "pinyin": "kǎo lǜ",
+    "translations": [
+      "to think over",
+      "to consider",
+      "consideration"
+    ]
+  },
+  {
+    "id": "2683",
+    "hanzi": "棵",
+    "pinyin": "kē",
+    "translations": [
+      "classifier for trees, cabbages, plants etc"
+    ]
+  },
+  {
+    "id": "2684",
+    "hanzi": "可见",
+    "pinyin": "kě jiàn",
+    "translations": [
+      "it can clearly be seen (that this is the case)",
+      "it is (thus) clear",
+      "clear",
+      "visible"
+    ]
+  },
+  {
+    "id": "2685",
+    "hanzi": "空间",
+    "pinyin": "kōng jiān",
+    "translations": [
+      "space",
+      "room",
+      "(fig.) scope",
+      "leeway",
+      "(astronomy) outer space",
+      "(physics, math.) space"
+    ]
+  },
+  {
+    "id": "2686",
+    "hanzi": "空",
+    "pinyin": "kòng",
+    "translations": [
+      "to empty",
+      "vacant",
+      "unoccupied",
+      "space",
+      "leisure",
+      "free time"
+    ]
+  },
+  {
+    "id": "2687",
+    "hanzi": "口袋",
+    "pinyin": "kǒu dài",
+    "translations": [
+      "pocket",
+      "bag",
+      "sack"
+    ]
+  },
+  {
+    "id": "2688",
+    "hanzi": "口语",
+    "pinyin": "kǒu yǔ",
+    "translations": [
+      "colloquial speech",
+      "spoken language",
+      "vernacular language",
+      "slander",
+      "gossip"
+    ]
+  },
+  {
+    "id": "2689",
+    "hanzi": "苦",
+    "pinyin": "kǔ",
+    "translations": [
+      "bitter",
+      "hardship",
+      "pain",
+      "to suffer",
+      "to bring suffering to",
+      "painstakingly"
+    ]
+  },
+  {
+    "id": "2690",
+    "hanzi": "会计",
+    "pinyin": "kuài jì",
+    "translations": [
+      "accountant",
+      "accountancy",
+      "accounting"
+    ]
+  },
+  {
+    "id": "2691",
+    "hanzi": "快递",
+    "pinyin": "kuài dì",
+    "translations": [
+      "express delivery"
+    ]
+  },
+  {
+    "id": "2692",
+    "hanzi": "宽",
+    "pinyin": "kuān",
+    "translations": [
+      "lenient",
+      "wide",
+      "broad"
+    ]
+  },
+  {
+    "id": "2693",
+    "hanzi": "宽广",
+    "pinyin": "kuān guǎng",
+    "translations": [
+      "wide",
+      "broad",
+      "extensive",
+      "vast"
+    ]
+  },
+  {
+    "id": "2694",
+    "hanzi": "矿泉水",
+    "pinyin": "kuàng quán shuǐ",
+    "translations": [
+      "mineral spring water"
+    ]
+  },
+  {
+    "id": "2695",
+    "hanzi": "扩大",
+    "pinyin": "kuò dà",
+    "translations": [
+      "to expand",
+      "to enlarge",
+      "to broaden one’s scope"
+    ]
+  },
+  {
+    "id": "2696",
+    "hanzi": "扩展",
+    "pinyin": "kuò zhǎn",
+    "translations": [
+      "to extend",
+      "to expand",
+      "extension",
+      "expansion"
+    ]
+  },
+  {
+    "id": "2697",
+    "hanzi": "括号",
+    "pinyin": "kuò hào",
+    "translations": [
+      "parentheses",
+      "brackets"
+    ]
+  },
+  {
+    "id": "2698",
+    "hanzi": "垃圾",
+    "pinyin": "lā jī",
+    "translations": [
+      "trash",
+      "refuse",
+      "garbage",
+      "(coll.) of poor quality",
+      "Taiwan pr. [lè sè]"
+    ]
+  },
+  {
+    "id": "2699",
+    "hanzi": "拉开",
+    "pinyin": "lā kāi",
+    "translations": [
+      "to pull open",
+      "to pull apart",
+      "to space out",
+      "to increase"
+    ]
+  },
+  {
+    "id": "2700",
+    "hanzi": "辣",
+    "pinyin": "là",
+    "translations": [
+      "hot (spicy)",
+      "pungent"
+    ]
+  },
+  {
+    "id": "2701",
+    "hanzi": "来不及",
+    "pinyin": "lái bu jí",
+    "translations": [
+      "there’s not enough time (to do sth)",
+      "it’s too late (to do sth)"
+    ]
+  },
+  {
+    "id": "2702",
+    "hanzi": "来得及",
+    "pinyin": "lái de jí",
+    "translations": [
+      "there’s still time",
+      "able to do sth in time"
+    ]
+  },
+  {
+    "id": "2703",
+    "hanzi": "来源",
+    "pinyin": "lái yuán",
+    "translations": [
+      "source (of information etc)",
+      "origin"
+    ]
+  },
+  {
+    "id": "2704",
+    "hanzi": "老公",
+    "pinyin": "lǎo gōng",
+    "translations": [
+      "(coll.) husband"
+    ]
+  },
+  {
+    "id": "2705",
+    "hanzi": "老家",
+    "pinyin": "lǎo jiā",
+    "translations": [
+      "native place",
+      "place of origin",
+      "home state or region"
+    ]
+  },
+  {
+    "id": "2706",
+    "hanzi": "老婆",
+    "pinyin": "lǎo pó",
+    "translations": [
+      "(coll.) wife"
+    ]
+  },
+  {
+    "id": "2707",
+    "hanzi": "老实",
+    "pinyin": "lǎo shi",
+    "translations": [
+      "honest",
+      "sincere",
+      "well-behaved",
+      "open and guileless",
+      "naive"
+    ]
+  },
+  {
+    "id": "2708",
+    "hanzi": "乐趣",
+    "pinyin": "lè qù",
+    "translations": [
+      "delight",
+      "pleasure",
+      "joy"
+    ]
+  },
+  {
+    "id": "2709",
+    "hanzi": "泪",
+    "pinyin": "lèi",
+    "translations": [
+      "tears"
+    ]
+  },
+  {
+    "id": "2710",
+    "hanzi": "泪水",
+    "pinyin": "lèi shuǐ",
+    "translations": [
+      "teardrop",
+      "tears"
+    ]
+  },
+  {
+    "id": "2711",
+    "hanzi": "类型",
+    "pinyin": "lèi xíng",
+    "translations": [
+      "type",
+      "category",
+      "genre",
+      "form",
+      "style"
+    ]
+  },
+  {
+    "id": "2712",
+    "hanzi": "冷静",
+    "pinyin": "lěng jìng",
+    "translations": [
+      "calm",
+      "cool-headed"
+    ]
+  },
+  {
+    "id": "2713",
+    "hanzi": "厘米",
+    "pinyin": "lí mǐ",
+    "translations": [
+      "centimeter"
+    ]
+  },
+  {
+    "id": "2714",
+    "hanzi": "离不开",
+    "pinyin": "lí bu kāi",
+    "translations": [
+      "inseparable",
+      "inevitably linked to"
+    ]
+  },
+  {
+    "id": "2715",
+    "hanzi": "力气",
+    "pinyin": "lì qi",
+    "translations": [
+      "strength"
+    ]
+  },
+  {
+    "id": "2716",
+    "hanzi": "历史",
+    "pinyin": "lì shǐ",
+    "translations": [
+      "history"
+    ]
+  },
+  {
+    "id": "2717",
+    "hanzi": "立即",
+    "pinyin": "lì jí",
+    "translations": [
+      "immediately"
+    ]
+  },
+  {
+    "id": "2718",
+    "hanzi": "利息",
+    "pinyin": "lì xī",
+    "translations": [
+      "interest (on a loan)"
+    ]
+  },
+  {
+    "id": "2719",
+    "hanzi": "利益",
+    "pinyin": "lì yì",
+    "translations": [
+      "benefit",
+      "(in sb’s) interest"
+    ]
+  },
+  {
+    "id": "2720",
+    "hanzi": "俩",
+    "pinyin": "liǎ",
+    "translations": [
+      "two (colloquial equivalent of 兩個|两个)",
+      "both",
+      "some"
+    ]
+  },
+  {
+    "id": "2721",
+    "hanzi": "良好",
+    "pinyin": "liáng hǎo",
+    "translations": [
+      "good",
+      "favorable",
+      "well",
+      "fine"
+    ]
+  },
+  {
+    "id": "2722",
+    "hanzi": "量",
+    "pinyin": "liáng",
+    "translations": [
+      "to measure"
+    ]
+  },
+  {
+    "id": "2723",
+    "hanzi": "粮食",
+    "pinyin": "liáng shi",
+    "translations": [
+      "foodstuff",
+      "cereals"
+    ]
+  },
+  {
+    "id": "2724",
+    "hanzi": "两边",
+    "pinyin": "liǎng bian",
+    "translations": [
+      "either side",
+      "both sides"
+    ]
+  },
+  {
+    "id": "2725",
+    "hanzi": "疗养",
+    "pinyin": "liáo yǎng",
+    "translations": [
+      "to get well",
+      "to heal",
+      "to recuperate",
+      "to convalesce",
+      "convalescence",
+      "to nurse"
+    ]
+  },
+  {
+    "id": "2726",
+    "hanzi": "了不起",
+    "pinyin": "liǎo bu qǐ",
+    "translations": [
+      "amazing",
+      "terrific",
+      "extraordinary"
+    ]
+  },
+  {
+    "id": "2727",
+    "hanzi": "了解",
+    "pinyin": "liǎo jiě",
+    "translations": [
+      "to understand",
+      "to realize",
+      "to find out"
+    ]
+  },
+  {
+    "id": "2728",
+    "hanzi": "列",
+    "pinyin": "liè",
+    "translations": [
+      "to arrange",
+      "to line up",
+      "file",
+      "series",
+      "(in data tables) column",
+      "(Tw) row"
+    ]
+  },
+  {
+    "id": "2729",
+    "hanzi": "列车",
+    "pinyin": "liè chē",
+    "translations": [
+      "(railway) train"
+    ]
+  },
+  {
+    "id": "2730",
+    "hanzi": "列入",
+    "pinyin": "liè rù",
+    "translations": [
+      "to include on a list"
+    ]
+  },
+  {
+    "id": "2731",
+    "hanzi": "列为",
+    "pinyin": "liè wéi",
+    "translations": [
+      "to be classified as"
+    ]
+  },
+  {
+    "id": "2732",
+    "hanzi": "临时",
+    "pinyin": "lín shí",
+    "translations": [
+      "as the time draws near",
+      "at the last moment",
+      "temporary",
+      "interim",
+      "ad hoc"
+    ]
+  },
+  {
+    "id": "2733",
+    "hanzi": "零食",
+    "pinyin": "líng shí",
+    "translations": [
+      "between-meal nibbles",
+      "snacks"
+    ]
+  },
+  {
+    "id": "2734",
+    "hanzi": "流传",
+    "pinyin": "liú chuán",
+    "translations": [
+      "to spread",
+      "to circulate",
+      "to hand down"
+    ]
+  },
+  {
+    "id": "2735",
+    "hanzi": "楼梯",
+    "pinyin": "lóu tī",
+    "translations": [
+      "stair",
+      "staircase"
+    ]
+  },
+  {
+    "id": "2736",
+    "hanzi": "陆地",
+    "pinyin": "lù dì",
+    "translations": [
+      "dry land (as opposed to the sea)"
+    ]
+  },
+  {
+    "id": "2737",
+    "hanzi": "陆续",
+    "pinyin": "lù xù",
+    "translations": [
+      "in turn",
+      "successively",
+      "one after the other",
+      "bit by bit"
+    ]
+  },
+  {
+    "id": "2738",
+    "hanzi": "录取",
+    "pinyin": "lù qǔ",
+    "translations": [
+      "to accept an applicant (prospective student, employee etc) who passes an entrance exam",
+      "to admit (a student)",
+      "to hire (a job candidate)"
+    ]
+  },
+  {
+    "id": "2739",
+    "hanzi": "律师",
+    "pinyin": "lǜ shī",
+    "translations": [
+      "lawyer"
+    ]
+  },
+  {
+    "id": "2740",
+    "hanzi": "轮",
+    "pinyin": "lún",
+    "translations": [
+      "wheel",
+      "disk",
+      "ring",
+      "steamship",
+      "to take turns",
+      "to rotate",
+      "by turn",
+      "classifier for big round objects: disk, or recurring events: round, turn"
+    ]
+  },
+  {
+    "id": "2741",
+    "hanzi": "轮船",
+    "pinyin": "lún chuán",
+    "translations": [
+      "steamship",
+      "steamer",
+      "ocean liner",
+      "ship"
+    ]
+  },
+  {
+    "id": "2742",
+    "hanzi": "轮椅",
+    "pinyin": "lún yǐ",
+    "translations": [
+      "wheelchair"
+    ]
+  },
+  {
+    "id": "2743",
+    "hanzi": "轮子",
+    "pinyin": "lún zi",
+    "translations": [
+      "wheel"
+    ]
+  },
+  {
+    "id": "2744",
+    "hanzi": "论文",
+    "pinyin": "lùn wén",
+    "translations": [
+      "paper",
+      "treatise",
+      "thesis",
+      "to discuss a paper or thesis (old)"
+    ]
+  },
+  {
+    "id": "2745",
+    "hanzi": "落",
+    "pinyin": "luò",
+    "translations": [
+      "to fall or drop",
+      "(of the sun) to set",
+      "(of a tide) to go out",
+      "to lower",
+      "to decline or sink",
+      "to lag or fall behind",
+      "to fall onto",
+      "to rest with",
+      "to get or receive",
+      "to write down",
+      "whereabouts",
+      "settlement"
+    ]
+  },
+  {
+    "id": "2746",
+    "hanzi": "毛巾",
+    "pinyin": "máo jīn",
+    "translations": [
+      "towel"
+    ]
+  },
+  {
+    "id": "2747",
+    "hanzi": "毛衣",
+    "pinyin": "máo yī",
+    "translations": [
+      "(wool) sweater"
+    ]
+  },
+  {
+    "id": "2748",
+    "hanzi": "帽子",
+    "pinyin": "mào zi",
+    "translations": [
+      "hat",
+      "cap",
+      "(fig.) label",
+      "bad name"
+    ]
+  },
+  {
+    "id": "2749",
+    "hanzi": "没错",
+    "pinyin": "méi cuò",
+    "translations": [
+      "that’s right",
+      "sure!",
+      "rest assured!",
+      "that’s good",
+      "can’t go wrong"
+    ]
+  },
+  {
+    "id": "2750",
+    "hanzi": "没法",
+    "pinyin": "méi fǎ",
+    "translations": [
+      "at a loss",
+      "unable to do anything about it",
+      "to have no choice"
+    ]
+  },
+  {
+    "id": "2751",
+    "hanzi": "没想到",
+    "pinyin": "méi xiǎng dào",
+    "translations": [
+      "didn’t expect"
+    ]
+  },
+  {
+    "id": "2752",
+    "hanzi": "美金",
+    "pinyin": "měi jīn",
+    "translations": [
+      "US dollar",
+      "USD"
+    ]
+  },
+  {
+    "id": "2753",
+    "hanzi": "美女",
+    "pinyin": "měi nǚ",
+    "translations": [
+      "beautiful woman"
+    ]
+  },
+  {
+    "id": "2754",
+    "hanzi": "梦",
+    "pinyin": "mèng",
+    "translations": [
+      "dream",
+      "(bound form) to dream"
+    ]
+  },
+  {
+    "id": "2755",
+    "hanzi": "梦见",
+    "pinyin": "mèng jiàn",
+    "translations": [
+      "to dream about (sth or sb)",
+      "to see in a dream"
+    ]
+  },
+  {
+    "id": "2756",
+    "hanzi": "梦想",
+    "pinyin": "mèng xiǎng",
+    "translations": [
+      "(fig.) to dream of",
+      "dream"
+    ]
+  },
+  {
+    "id": "2757",
+    "hanzi": "秘密",
+    "pinyin": "mì mì",
+    "translations": [
+      "secret"
+    ]
+  },
+  {
+    "id": "2758",
+    "hanzi": "秘书",
+    "pinyin": "mì shū",
+    "translations": [
+      "secretary"
+    ]
+  },
+  {
+    "id": "2759",
+    "hanzi": "密",
+    "pinyin": "mì",
+    "translations": [
+      "secret",
+      "confidential",
+      "close",
+      "thick",
+      "dense"
+    ]
+  },
+  {
+    "id": "2760",
+    "hanzi": "密码",
+    "pinyin": "mì mǎ",
+    "translations": [
+      "secret code",
+      "ciphertext",
+      "password",
+      "PIN"
+    ]
+  },
+  {
+    "id": "2761",
+    "hanzi": "密切",
+    "pinyin": "mì qiè",
+    "translations": [
+      "close",
+      "familiar",
+      "intimate",
+      "closely (related)",
+      "to foster close ties",
+      "to pay close attention"
+    ]
+  },
+  {
+    "id": "2762",
+    "hanzi": "免费",
+    "pinyin": "miǎn fèi",
+    "translations": [
+      "free (of charge)"
+    ]
+  },
+  {
+    "id": "2763",
+    "hanzi": "面临",
+    "pinyin": "miàn lín",
+    "translations": [
+      "to face sth",
+      "to be confronted with"
+    ]
+  },
+  {
+    "id": "2764",
+    "hanzi": "面试",
+    "pinyin": "miàn shì",
+    "translations": [
+      "to be interviewed (as a candidate)",
+      "interview"
+    ]
+  },
+  {
+    "id": "2765",
+    "hanzi": "描述",
+    "pinyin": "miáo shù",
+    "translations": [
+      "to describe",
+      "description"
+    ]
+  },
+  {
+    "id": "2766",
+    "hanzi": "描写",
+    "pinyin": "miáo xiě",
+    "translations": [
+      "to describe",
+      "to depict",
+      "to portray",
+      "description"
+    ]
+  },
+  {
+    "id": "2767",
+    "hanzi": "名牌",
+    "pinyin": "míng pái",
+    "translations": [
+      "famous brand",
+      "nameplate",
+      "name tag"
+    ]
+  },
+  {
+    "id": "2768",
+    "hanzi": "名片",
+    "pinyin": "míng piàn",
+    "translations": [
+      "(business) card"
+    ]
+  },
+  {
+    "id": "2769",
+    "hanzi": "名人",
+    "pinyin": "míng rén",
+    "translations": [
+      "personage",
+      "celebrity"
+    ]
+  },
+  {
+    "id": "2770",
+    "hanzi": "摸",
+    "pinyin": "mō",
+    "translations": [
+      "to feel with the hand",
+      "to touch",
+      "to stroke",
+      "to grope",
+      "to steal",
+      "to abstract"
+    ]
+  },
+  {
+    "id": "2771",
+    "hanzi": "模特儿",
+    "pinyin": "mó tè r",
+    "translations": [
+      "(fashion) model (loanword)"
+    ]
+  },
+  {
+    "id": "2772",
+    "hanzi": "模型",
+    "pinyin": "mó xíng",
+    "translations": [
+      "model",
+      "mold",
+      "matrix",
+      "pattern"
+    ]
+  },
+  {
+    "id": "2773",
+    "hanzi": "末",
+    "pinyin": "mò",
+    "translations": [
+      "tip",
+      "end",
+      "final stage",
+      "latter part",
+      "inessential detail",
+      "powder",
+      "dust",
+      "opera role of old man"
+    ]
+  },
+  {
+    "id": "2774",
+    "hanzi": "默默",
+    "pinyin": "mò mò",
+    "translations": [
+      "in silence",
+      "not speaking"
+    ]
+  },
+  {
+    "id": "2775",
+    "hanzi": "哪怕",
+    "pinyin": "nǎ pà",
+    "translations": [
+      "even",
+      "even if",
+      "even though",
+      "no matter how"
+    ]
+  },
+  {
+    "id": "2776",
+    "hanzi": "哪",
+    "pinyin": "na",
+    "translations": [
+      "(particle equivalent to 啊 after noun ending in -n)"
+    ]
+  },
+  {
+    "id": "2777",
+    "hanzi": "男女",
+    "pinyin": "nán nǚ",
+    "translations": [
+      "male-female",
+      "male and female"
+    ]
+  },
+  {
+    "id": "2778",
+    "hanzi": "男士",
+    "pinyin": "nán shì",
+    "translations": [
+      "man",
+      "gentleman"
+    ]
+  },
+  {
+    "id": "2779",
+    "hanzi": "难免",
+    "pinyin": "nán miǎn",
+    "translations": [
+      "hard to avoid",
+      "difficult to escape from",
+      "will inevitably"
+    ]
+  },
+  {
+    "id": "2780",
+    "hanzi": "脑袋",
+    "pinyin": "nǎo dài",
+    "translations": [
+      "head",
+      "skull",
+      "brains",
+      "mental capability"
+    ]
+  },
+  {
+    "id": "2781",
+    "hanzi": "闹",
+    "pinyin": "nào",
+    "translations": [
+      "noisy",
+      "cacophonous",
+      "to make noise",
+      "to disturb",
+      "to vent (feelings)",
+      "to fall ill",
+      "to have an attack (of sickness)",
+      "to go in (for some activity)",
+      "to joke"
+    ]
+  },
+  {
+    "id": "2782",
+    "hanzi": "闹钟",
+    "pinyin": "nào zhōng",
+    "translations": [
+      "alarm clock"
+    ]
+  },
+  {
+    "id": "2783",
+    "hanzi": "内部",
+    "pinyin": "nèi bù",
+    "translations": [
+      "interior",
+      "inside (part, section)",
+      "internal"
+    ]
+  },
+  {
+    "id": "2784",
+    "hanzi": "内科",
+    "pinyin": "nèi kē",
+    "translations": [
+      "internal medicine",
+      "general medicine"
+    ]
+  },
+  {
+    "id": "2785",
+    "hanzi": "能干",
+    "pinyin": "néng gàn",
+    "translations": [
+      "capable",
+      "competent"
+    ]
+  },
+  {
+    "id": "2786",
+    "hanzi": "宁静",
+    "pinyin": "níng jìng",
+    "translations": [
+      "tranquil",
+      "tranquility",
+      "serenity"
+    ]
+  },
+  {
+    "id": "2787",
+    "hanzi": "浓",
+    "pinyin": "nóng",
+    "translations": [
+      "concentrated",
+      "dense",
+      "strong (smell etc)"
+    ]
+  },
+  {
+    "id": "2788",
+    "hanzi": "女士",
+    "pinyin": "nǚ shì",
+    "translations": [
+      "lady",
+      "madam",
+      "Miss",
+      "Ms"
+    ]
+  },
+  {
+    "id": "2789",
+    "hanzi": "暖气",
+    "pinyin": "nuǎn qì",
+    "translations": [
+      "central heating",
+      "heater",
+      "warm air"
+    ]
+  },
+  {
+    "id": "2790",
+    "hanzi": "拍照",
+    "pinyin": "pāi zhào",
+    "translations": [
+      "to take a picture"
+    ]
+  },
+  {
+    "id": "2791",
+    "hanzi": "排列",
+    "pinyin": "pái liè",
+    "translations": [
+      "to arrange in order",
+      "(math.) permutation"
+    ]
+  },
+  {
+    "id": "2792",
+    "hanzi": "牌",
+    "pinyin": "pái",
+    "translations": [
+      "mahjong tile",
+      "playing card",
+      "game pieces",
+      "signboard",
+      "plate",
+      "tablet",
+      "medal"
+    ]
+  },
+  {
+    "id": "2793",
+    "hanzi": "盘",
+    "pinyin": "pán",
+    "translations": [
+      "plate",
+      "dish",
+      "tray",
+      "board",
+      "hard drive (computing)",
+      "to build",
+      "to coil",
+      "to check",
+      "to examine",
+      "to transfer (property)",
+      "to make over",
+      "classifier for food: dish, helping",
+      "to coil",
+      "classifier for coils of wire",
+      "classifier for games of chess"
+    ]
+  },
+  {
+    "id": "2794",
+    "hanzi": "盘子",
+    "pinyin": "pán zi",
+    "translations": [
+      "tray",
+      "plate",
+      "dish"
+    ]
+  },
+  {
+    "id": "2795",
+    "hanzi": "胖子",
+    "pinyin": "pàng zi",
+    "translations": [
+      "fat person",
+      "fatty"
+    ]
+  },
+  {
+    "id": "2796",
+    "hanzi": "培训",
+    "pinyin": "péi xùn",
+    "translations": [
+      "to cultivate",
+      "to train",
+      "to groom",
+      "training"
+    ]
+  },
+  {
+    "id": "2797",
+    "hanzi": "培训班",
+    "pinyin": "péi xùn bān",
+    "translations": [
+      "training class"
+    ]
+  },
+  {
+    "id": "2798",
+    "hanzi": "培养",
+    "pinyin": "péi yǎng",
+    "translations": [
+      "to cultivate",
+      "to breed",
+      "to foster",
+      "to nurture",
+      "to educate",
+      "to groom (for a position)",
+      "education",
+      "fostering",
+      "culture (biology)"
+    ]
+  },
+  {
+    "id": "2799",
+    "hanzi": "培育",
+    "pinyin": "péi yù",
+    "translations": [
+      "to train",
+      "to breed"
+    ]
+  },
+  {
+    "id": "2800",
+    "hanzi": "批",
+    "pinyin": "pī",
+    "translations": [
+      "to ascertain",
+      "to act on",
+      "to criticize",
+      "to pass on",
+      "classifier for batches, lots, military flights",
+      "tier (for the ranking of universities and colleges)"
+    ]
+  },
+  {
+    "id": "2801",
+    "hanzi": "批",
+    "pinyin": "pī",
+    "translations": [
+      "to ascertain",
+      "to act on",
+      "to criticize",
+      "to pass on",
+      "classifier for batches, lots, military flights",
+      "tier (for the ranking of universities and colleges)"
+    ]
+  },
+  {
+    "id": "2802",
+    "hanzi": "片面",
+    "pinyin": "piàn miàn",
+    "translations": [
+      "unilateral",
+      "one-sided"
+    ]
+  },
+  {
+    "id": "2803",
+    "hanzi": "品质",
+    "pinyin": "pǐn zhì",
+    "translations": [
+      "character",
+      "intrinsic quality (of a person)",
+      "quality (of a product or service, or as in “quality of life”, “air quality” etc)"
+    ]
+  },
+  {
+    "id": "2804",
+    "hanzi": "平方",
+    "pinyin": "píng fāng",
+    "translations": [
+      "square (as in square foot, square mile, square root)"
+    ]
+  },
+  {
+    "id": "2805",
+    "hanzi": "平静",
+    "pinyin": "píng jìng",
+    "translations": [
+      "tranquil",
+      "undisturbed",
+      "serene"
+    ]
+  },
+  {
+    "id": "2806",
+    "hanzi": "平均",
+    "pinyin": "píng jūn",
+    "translations": [
+      "average",
+      "on average",
+      "evenly",
+      "in equal proportions"
+    ]
+  },
+  {
+    "id": "2807",
+    "hanzi": "平稳",
+    "pinyin": "píng wěn",
+    "translations": [
+      "smooth",
+      "steady"
+    ]
+  },
+  {
+    "id": "2808",
+    "hanzi": "迫切",
+    "pinyin": "pò qiè",
+    "translations": [
+      "urgent",
+      "pressing"
+    ]
+  },
+  {
+    "id": "2809",
+    "hanzi": "破产",
+    "pinyin": "pò chǎn",
+    "translations": [
+      "to go bankrupt",
+      "to become impoverished",
+      "bankruptcy"
+    ]
+  },
+  {
+    "id": "2810",
+    "hanzi": "妻子",
+    "pinyin": "qī zi",
+    "translations": [
+      "wife"
+    ]
+  },
+  {
+    "id": "2811",
+    "hanzi": "期待",
+    "pinyin": "qī dài",
+    "translations": [
+      "to look forward to",
+      "to await",
+      "expectation"
+    ]
+  },
+  {
+    "id": "2812",
+    "hanzi": "期间",
+    "pinyin": "qī jiān",
+    "translations": [
+      "period of time",
+      "time",
+      "time period",
+      "period"
+    ]
+  },
+  {
+    "id": "2813",
+    "hanzi": "期末",
+    "pinyin": "qī mò",
+    "translations": [
+      "end of term"
+    ]
+  },
+  {
+    "id": "2814",
+    "hanzi": "期限",
+    "pinyin": "qī xiàn",
+    "translations": [
+      "time limit",
+      "deadline",
+      "allotted time"
+    ]
+  },
+  {
+    "id": "2815",
+    "hanzi": "期中",
+    "pinyin": "qī zhōng",
+    "translations": [
+      "interim",
+      "midterm"
+    ]
+  },
+  {
+    "id": "2816",
+    "hanzi": "其余",
+    "pinyin": "qí yú",
+    "translations": [
+      "the rest",
+      "the others",
+      "remaining",
+      "remainder",
+      "apart from them"
+    ]
+  },
+  {
+    "id": "2817",
+    "hanzi": "企业",
+    "pinyin": "qǐ yè",
+    "translations": [
+      "company",
+      "firm",
+      "enterprise",
+      "corporation"
+    ]
+  },
+  {
+    "id": "2818",
+    "hanzi": "气球",
+    "pinyin": "qì qiú",
+    "translations": [
+      "balloon"
+    ]
+  },
+  {
+    "id": "2819",
+    "hanzi": "汽水",
+    "pinyin": "qì shuǐ",
+    "translations": [
+      "soda",
+      "pop"
+    ]
+  },
+  {
+    "id": "2820",
+    "hanzi": "汽油",
+    "pinyin": "qì yóu",
+    "translations": [
+      "gasoline"
+    ]
+  },
+  {
+    "id": "2821",
+    "hanzi": "器官",
+    "pinyin": "qì guān",
+    "translations": [
+      "organ (part of body tissue)",
+      "apparatus"
+    ]
+  },
+  {
+    "id": "2822",
+    "hanzi": "前头",
+    "pinyin": "qián tou",
+    "translations": [
+      "in front",
+      "at the head",
+      "ahead",
+      "above"
+    ]
+  },
+  {
+    "id": "2823",
+    "hanzi": "前途",
+    "pinyin": "qián tú",
+    "translations": [
+      "prospects",
+      "future outlook",
+      "journey"
+    ]
+  },
+  {
+    "id": "2824",
+    "hanzi": "浅",
+    "pinyin": "qiǎn",
+    "translations": [
+      "shallow",
+      "light (color)"
+    ]
+  },
+  {
+    "id": "2825",
+    "hanzi": "巧克力",
+    "pinyin": "qiǎo kè lì",
+    "translations": [
+      "chocolate (loanword)"
+    ]
+  },
+  {
+    "id": "2826",
+    "hanzi": "切",
+    "pinyin": "qiè",
+    "translations": [
+      "to cut",
+      "to slice",
+      "tangent (math)"
+    ]
+  },
+  {
+    "id": "2827",
+    "hanzi": "亲爱",
+    "pinyin": "qīn ài",
+    "translations": [
+      "dear",
+      "beloved",
+      "darling"
+    ]
+  },
+  {
+    "id": "2828",
+    "hanzi": "亲密",
+    "pinyin": "qīn mì",
+    "translations": [
+      "intimate",
+      "close"
+    ]
+  },
+  {
+    "id": "2829",
+    "hanzi": "青春",
+    "pinyin": "qīng chūn",
+    "translations": [
+      "youth",
+      "youthfulness"
+    ]
+  },
+  {
+    "id": "2830",
+    "hanzi": "轻松",
+    "pinyin": "qīng sōng",
+    "translations": [
+      "light",
+      "gentle",
+      "relaxed",
+      "effortless",
+      "uncomplicated",
+      "to relax",
+      "to take things less seriously"
+    ]
+  },
+  {
+    "id": "2831",
+    "hanzi": "轻易",
+    "pinyin": "qīng yì",
+    "translations": [
+      "easily",
+      "lightly",
+      "rashly"
+    ]
+  },
+  {
+    "id": "2832",
+    "hanzi": "清醒",
+    "pinyin": "qīng xǐng",
+    "translations": [
+      "clear-headed",
+      "sober",
+      "awake"
+    ]
+  },
+  {
+    "id": "2833",
+    "hanzi": "情景",
+    "pinyin": "qíng jǐng",
+    "translations": [
+      "scene",
+      "spectacle",
+      "circumstances",
+      "situation"
+    ]
+  },
+  {
+    "id": "2834",
+    "hanzi": "穷",
+    "pinyin": "qióng",
+    "translations": [
+      "poor",
+      "destitute",
+      "to use up",
+      "to exhaust",
+      "thoroughly",
+      "extremely",
+      "(coll.) persistently and pointlessly"
+    ]
+  },
+  {
+    "id": "2835",
+    "hanzi": "穷人",
+    "pinyin": "qióng rén",
+    "translations": [
+      "poor people",
+      "the poor"
+    ]
+  },
+  {
+    "id": "2836",
+    "hanzi": "秋季",
+    "pinyin": "qiū jì",
+    "translations": [
+      "autumn",
+      "fall"
+    ]
+  },
+  {
+    "id": "2837",
+    "hanzi": "趋势",
+    "pinyin": "qū shì",
+    "translations": [
+      "trend",
+      "tendency"
+    ]
+  },
+  {
+    "id": "2838",
+    "hanzi": "圈",
+    "pinyin": "quān",
+    "translations": [
+      "circle",
+      "ring",
+      "loop",
+      "classifier for loops, orbits, laps of race etc",
+      "to surround",
+      "to circle"
+    ]
+  },
+  {
+    "id": "2839",
+    "hanzi": "权利",
+    "pinyin": "quán lì",
+    "translations": [
+      "power",
+      "right",
+      "privilege"
+    ]
+  },
+  {
+    "id": "2840",
+    "hanzi": "却",
+    "pinyin": "què",
+    "translations": [
+      "but",
+      "yet",
+      "however",
+      "while",
+      "to go back",
+      "to decline",
+      "to retreat",
+      "nevertheless",
+      "even though"
+    ]
+  },
+  {
+    "id": "2841",
+    "hanzi": "确认",
+    "pinyin": "què rèn",
+    "translations": [
+      "to confirm",
+      "to verify",
+      "confirmation"
+    ]
+  },
+  {
+    "id": "2842",
+    "hanzi": "然而",
+    "pinyin": "rán ér",
+    "translations": [
+      "however",
+      "yet",
+      "but"
+    ]
+  },
+  {
+    "id": "2843",
+    "hanzi": "燃料",
+    "pinyin": "rán liào",
+    "translations": [
+      "fuel"
+    ]
+  },
+  {
+    "id": "2844",
+    "hanzi": "燃烧",
+    "pinyin": "rán shāo",
+    "translations": [
+      "to ignite",
+      "to combust",
+      "to burn",
+      "combustion",
+      "flaming"
+    ]
+  },
+  {
+    "id": "2845",
+    "hanzi": "热闹",
+    "pinyin": "rè nao",
+    "translations": [
+      "bustling with noise and excitement",
+      "lively"
+    ]
+  },
+  {
+    "id": "2846",
+    "hanzi": "热心",
+    "pinyin": "rè xīn",
+    "translations": [
+      "enthusiasm",
+      "zeal",
+      "zealous",
+      "zest",
+      "enthusiastic",
+      "ardent",
+      "warmhearted"
+    ]
+  },
+  {
+    "id": "2847",
+    "hanzi": "人家",
+    "pinyin": "rén jia",
+    "translations": [
+      "other people",
+      "sb else",
+      "he, she or they",
+      "I, me (referring to oneself as “one” or “people”)"
+    ]
+  },
+  {
+    "id": "2848",
+    "hanzi": "日记",
+    "pinyin": "rì jì",
+    "translations": [
+      "diary"
+    ]
+  },
+  {
+    "id": "2849",
+    "hanzi": "日历",
+    "pinyin": "rì lì",
+    "translations": [
+      "calendar"
+    ]
+  },
+  {
+    "id": "2850",
+    "hanzi": "如今",
+    "pinyin": "rú jīn",
+    "translations": [
+      "nowadays",
+      "now"
+    ]
+  },
+  {
+    "id": "2851",
+    "hanzi": "弱",
+    "pinyin": "ruò",
+    "translations": [
+      "weak",
+      "feeble",
+      "young",
+      "inferior",
+      "(following a decimal or fraction) slightly less than"
+    ]
+  },
+  {
+    "id": "2852",
+    "hanzi": "伞",
+    "pinyin": "sǎn",
+    "translations": [
+      "umbrella",
+      "parasol"
+    ]
+  },
+  {
+    "id": "2853",
+    "hanzi": "散",
+    "pinyin": "sàn",
+    "translations": [
+      "to scatter",
+      "to break up (a meeting etc)",
+      "to disperse",
+      "to disseminate",
+      "to dispel",
+      "(coll.) to sack"
+    ]
+  },
+  {
+    "id": "2854",
+    "hanzi": "扫",
+    "pinyin": "sǎo",
+    "translations": [
+      "to sweep"
+    ]
+  },
+  {
+    "id": "2855",
+    "hanzi": "色",
+    "pinyin": "sè",
+    "translations": [
+      "color",
+      "look",
+      "appearance",
+      "sex"
+    ]
+  },
+  {
+    "id": "2856",
+    "hanzi": "色彩",
+    "pinyin": "sè cǎi",
+    "translations": [
+      "tint",
+      "coloring",
+      "coloration",
+      "(fig.) flavor",
+      "character"
+    ]
+  },
+  {
+    "id": "2857",
+    "hanzi": "森林",
+    "pinyin": "sēn lín",
+    "translations": [
+      "forest"
+    ]
+  },
+  {
+    "id": "2858",
+    "hanzi": "晒",
+    "pinyin": "shài",
+    "translations": [
+      "(of the sun) to shine on",
+      "to bask in (the sunshine)",
+      "to dry (clothes, grain etc) in the sun",
+      "(fig.) to expose and share (one’s experiences and thoughts) on the Web (loanword from “share”)",
+      "(coll.) to give the cold shoulder to"
+    ]
+  },
+  {
+    "id": "2859",
+    "hanzi": "闪",
+    "pinyin": "shǎn",
+    "translations": [
+      "to dodge",
+      "to duck out of the way",
+      "to beat it",
+      "shaken (by a fall)",
+      "to sprain",
+      "to pull a muscle",
+      "lightning",
+      "spark",
+      "a flash",
+      "to flash (across one’s mind)",
+      "to leave behind",
+      "(Internet slang) (of a display of affection) “dazzlingly” saccharine"
+    ]
+  },
+  {
+    "id": "2860",
+    "hanzi": "闪电",
+    "pinyin": "shǎn diàn",
+    "translations": [
+      "lightning"
+    ]
+  },
+  {
+    "id": "2861",
+    "hanzi": "善良",
+    "pinyin": "shàn liáng",
+    "translations": [
+      "good and honest",
+      "kindhearted"
+    ]
+  },
+  {
+    "id": "2862",
+    "hanzi": "善于",
+    "pinyin": "shàn yú",
+    "translations": [
+      "to be good at",
+      "to be adept at"
+    ]
+  },
+  {
+    "id": "2863",
+    "hanzi": "伤害",
+    "pinyin": "shāng hài",
+    "translations": [
+      "to injure",
+      "to harm"
+    ]
+  },
+  {
+    "id": "2864",
+    "hanzi": "商务",
+    "pinyin": "shāng wù",
+    "translations": [
+      "commercial affairs",
+      "commercial",
+      "commerce",
+      "business"
+    ]
+  },
+  {
+    "id": "2865",
+    "hanzi": "赏",
+    "pinyin": "shǎng",
+    "translations": [
+      "to bestow (a reward)",
+      "to give (to an inferior)",
+      "to hand down",
+      "a reward (bestowed by a superior)",
+      "to appreciate (beauty)"
+    ]
+  },
+  {
+    "id": "2866",
+    "hanzi": "上个月",
+    "pinyin": "shàng gè yuè",
+    "translations": [
+      "last month"
+    ]
+  },
+  {
+    "id": "2867",
+    "hanzi": "上楼",
+    "pinyin": "shàng lóu",
+    "translations": [
+      "to go upstairs"
+    ]
+  },
+  {
+    "id": "2868",
+    "hanzi": "上门",
+    "pinyin": "shàng mén",
+    "translations": [
+      "to drop in",
+      "to visit",
+      "to lock a door",
+      "(of a shop) to close",
+      "to go and live with one’s wife’s family, in effect becoming a member of her family"
+    ]
+  },
+  {
+    "id": "2869",
+    "hanzi": "烧",
+    "pinyin": "shāo",
+    "translations": [
+      "to burn",
+      "to cook",
+      "to stew",
+      "to bake",
+      "to roast",
+      "to heat",
+      "to boil (tea, water etc)",
+      "fever",
+      "to run a temperature",
+      "(coll.) to let things go to one’s head"
+    ]
+  },
+  {
+    "id": "2870",
+    "hanzi": "设施",
+    "pinyin": "shè shī",
+    "translations": [
+      "facilities",
+      "installation"
+    ]
+  },
+  {
+    "id": "2871",
+    "hanzi": "设置",
+    "pinyin": "shè zhì",
+    "translations": [
+      "to set up",
+      "to install"
+    ]
+  },
+  {
+    "id": "2872",
+    "hanzi": "申请",
+    "pinyin": "shēn qǐng",
+    "translations": [
+      "to apply for sth",
+      "application (form etc)"
+    ]
+  },
+  {
+    "id": "2873",
+    "hanzi": "身材",
+    "pinyin": "shēn cái",
+    "translations": [
+      "stature",
+      "build (height and weight)",
+      "figure"
+    ]
+  },
+  {
+    "id": "2874",
+    "hanzi": "身份",
+    "pinyin": "shēn fèn",
+    "translations": [
+      "identity",
+      "status",
+      "capacity",
+      "dignity",
+      "position",
+      "rank"
+    ]
+  },
+  {
+    "id": "2875",
+    "hanzi": "身高",
+    "pinyin": "shēn gāo",
+    "translations": [
+      "(a person’s) height"
+    ]
+  },
+  {
+    "id": "2876",
+    "hanzi": "深厚",
+    "pinyin": "shēn hòu",
+    "translations": [
+      "deep",
+      "profound"
+    ]
+  },
+  {
+    "id": "2877",
+    "hanzi": "神话",
+    "pinyin": "shén huà",
+    "translations": [
+      "legend",
+      "fairy tale",
+      "myth",
+      "mythology"
+    ]
+  },
+  {
+    "id": "2878",
+    "hanzi": "神秘",
+    "pinyin": "shén mì",
+    "translations": [
+      "mysterious",
+      "mystery"
+    ]
+  },
+  {
+    "id": "2879",
+    "hanzi": "甚至",
+    "pinyin": "shèn zhì",
+    "translations": [
+      "even",
+      "so much so that"
+    ]
+  },
+  {
+    "id": "2880",
+    "hanzi": "失败",
+    "pinyin": "shī bài",
+    "translations": [
+      "to be defeated",
+      "to lose",
+      "to fail (e.g. experiments)",
+      "failure",
+      "defeat"
+    ]
+  },
+  {
+    "id": "2881",
+    "hanzi": "失望",
+    "pinyin": "shī wàng",
+    "translations": [
+      "disappointed",
+      "to lose hope",
+      "to despair"
+    ]
+  },
+  {
+    "id": "2882",
+    "hanzi": "失业",
+    "pinyin": "shī yè",
+    "translations": [
+      "unemployment",
+      "to lose one’s job"
+    ]
+  },
+  {
+    "id": "2883",
+    "hanzi": "诗",
+    "pinyin": "shī",
+    "translations": [
+      "poem",
+      "poetry",
+      "verse"
+    ]
+  },
+  {
+    "id": "2884",
+    "hanzi": "诗人",
+    "pinyin": "shī rén",
+    "translations": [
+      "bard",
+      "poet"
+    ]
+  },
+  {
+    "id": "2885",
+    "hanzi": "湿",
+    "pinyin": "shī",
+    "translations": [
+      "moist",
+      "wet"
+    ]
+  },
+  {
+    "id": "2886",
+    "hanzi": "实施",
+    "pinyin": "shí shī",
+    "translations": [
+      "to implement",
+      "to carry out"
+    ]
+  },
+  {
+    "id": "2887",
+    "hanzi": "实用",
+    "pinyin": "shí yòng",
+    "translations": [
+      "practical",
+      "functional",
+      "pragmatic",
+      "applied (science)"
+    ]
+  },
+  {
+    "id": "2888",
+    "hanzi": "食堂",
+    "pinyin": "shí táng",
+    "translations": [
+      "dining hall"
+    ]
+  },
+  {
+    "id": "2889",
+    "hanzi": "使劲",
+    "pinyin": "shǐ jìn",
+    "translations": [
+      "to exert all one’s strength"
+    ]
+  },
+  {
+    "id": "2890",
+    "hanzi": "士兵",
+    "pinyin": "shì bīng",
+    "translations": [
+      "soldier"
+    ]
+  },
+  {
+    "id": "2891",
+    "hanzi": "市区",
+    "pinyin": "shì qū",
+    "translations": [
+      "urban district",
+      "downtown",
+      "city center"
+    ]
+  },
+  {
+    "id": "2892",
+    "hanzi": "似的",
+    "pinyin": "shì de",
+    "translations": [
+      "seems as if",
+      "rather like",
+      "Taiwan pr. [sì de]"
+    ]
+  },
+  {
+    "id": "2893",
+    "hanzi": "事物",
+    "pinyin": "shì wù",
+    "translations": [
+      "thing",
+      "object"
+    ]
+  },
+  {
+    "id": "2894",
+    "hanzi": "事先",
+    "pinyin": "shì xiān",
+    "translations": [
+      "in advance",
+      "before the event",
+      "beforehand",
+      "prior"
+    ]
+  },
+  {
+    "id": "2895",
+    "hanzi": "试卷",
+    "pinyin": "shì juàn",
+    "translations": [
+      "examination paper",
+      "test paper"
+    ]
+  },
+  {
+    "id": "2896",
+    "hanzi": "是否",
+    "pinyin": "shì fǒu",
+    "translations": [
+      "whether (or not)",
+      "if",
+      "is or isn’t"
+    ]
+  },
+  {
+    "id": "2897",
+    "hanzi": "收回",
+    "pinyin": "shōu huí",
+    "translations": [
+      "to regain",
+      "to retake",
+      "to take back",
+      "to withdraw",
+      "to revoke"
+    ]
+  },
+  {
+    "id": "2898",
+    "hanzi": "收获",
+    "pinyin": "shōu huò",
+    "translations": [
+      "to harvest",
+      "to reap",
+      "to gain",
+      "crop",
+      "harvest",
+      "profit",
+      "gain",
+      "bonus",
+      "reward"
+    ]
+  },
+  {
+    "id": "2899",
+    "hanzi": "收益",
+    "pinyin": "shōu yì",
+    "translations": [
+      "earnings",
+      "profit"
+    ]
+  },
+  {
+    "id": "2900",
+    "hanzi": "手工",
+    "pinyin": "shǒu gōng",
+    "translations": [
+      "handwork",
+      "manual"
+    ]
+  },
+  {
+    "id": "2901",
+    "hanzi": "手里",
+    "pinyin": "shǒu lǐ",
+    "translations": [
+      "in hand",
+      "(a situation is) in sb’s hands"
+    ]
+  },
+  {
+    "id": "2902",
+    "hanzi": "手术",
+    "pinyin": "shǒu shù",
+    "translations": [
+      "(surgical) operation",
+      "surgery"
+    ]
+  },
+  {
+    "id": "2903",
+    "hanzi": "手套",
+    "pinyin": "shǒu tào",
+    "translations": [
+      "glove",
+      "mitten"
+    ]
+  },
+  {
+    "id": "2904",
+    "hanzi": "守",
+    "pinyin": "shǒu",
+    "translations": [
+      "to guard",
+      "to defend",
+      "to keep watch",
+      "to abide by the law",
+      "to observe (rules or ritual)",
+      "nearby",
+      "adjoining"
+    ]
+  },
+  {
+    "id": "2905",
+    "hanzi": "首",
+    "pinyin": "shǒu",
+    "translations": [
+      "head",
+      "chief",
+      "first (occasion, thing etc)",
+      "classifier for poems, songs etc"
+    ]
+  },
+  {
+    "id": "2906",
+    "hanzi": "受不了",
+    "pinyin": "shòu bù liǎo",
+    "translations": [
+      "unbearable",
+      "unable to endure",
+      "can’t stand"
+    ]
+  },
+  {
+    "id": "2907",
+    "hanzi": "售货员",
+    "pinyin": "shòu huò yuán",
+    "translations": [
+      "salesperson"
+    ]
+  },
+  {
+    "id": "2908",
+    "hanzi": "叔叔",
+    "pinyin": "shū shu",
+    "translations": [
+      "father’s younger brother",
+      "uncle",
+      "Taiwan pr. [shú shu]"
+    ]
+  },
+  {
+    "id": "2909",
+    "hanzi": "舒适",
+    "pinyin": "shū shì",
+    "translations": [
+      "cozy",
+      "snug"
+    ]
+  },
+  {
+    "id": "2910",
+    "hanzi": "熟练",
+    "pinyin": "shú liàn",
+    "translations": [
+      "practiced",
+      "proficient",
+      "skilled",
+      "skillful"
+    ]
+  },
+  {
+    "id": "2911",
+    "hanzi": "暑假",
+    "pinyin": "shǔ jià",
+    "translations": [
+      "summer vacation"
+    ]
+  },
+  {
+    "id": "2912",
+    "hanzi": "树林",
+    "pinyin": "shù lín",
+    "translations": [
+      "woods",
+      "grove",
+      "forest"
+    ]
+  },
+  {
+    "id": "2913",
+    "hanzi": "树叶",
+    "pinyin": "shù yè",
+    "translations": [
+      "tree leaves"
+    ]
+  },
+  {
+    "id": "2914",
+    "hanzi": "数据",
+    "pinyin": "shù jù",
+    "translations": [
+      "data",
+      "numbers",
+      "digital"
+    ]
+  },
+  {
+    "id": "2915",
+    "hanzi": "数码",
+    "pinyin": "shù mǎ",
+    "translations": [
+      "number",
+      "numerals",
+      "figures",
+      "digital",
+      "amount",
+      "numerical code"
+    ]
+  },
+  {
+    "id": "2916",
+    "hanzi": "刷",
+    "pinyin": "shuā",
+    "translations": [
+      "to brush",
+      "to paint",
+      "to daub",
+      "to paste up",
+      "to skip class (of students)",
+      "to fire from a job"
+    ]
+  },
+  {
+    "id": "2917",
+    "hanzi": "刷牙",
+    "pinyin": "shuā yá",
+    "translations": [
+      "to brush one’s teeth"
+    ]
+  },
+  {
+    "id": "2918",
+    "hanzi": "刷子",
+    "pinyin": "shuā zi",
+    "translations": [
+      "brush",
+      "scrub"
+    ]
+  },
+  {
+    "id": "2919",
+    "hanzi": "帅",
+    "pinyin": "shuài",
+    "translations": [
+      "handsome",
+      "graceful",
+      "smart",
+      "commander in chief",
+      "(coll.) cool!",
+      "sweet!"
+    ]
+  },
+  {
+    "id": "2920",
+    "hanzi": "帅哥",
+    "pinyin": "shuài gē",
+    "translations": [
+      "handsome guy",
+      "lady-killer",
+      "handsome (form of address)"
+    ]
+  },
+  {
+    "id": "2921",
+    "hanzi": "率先",
+    "pinyin": "shuài xiān",
+    "translations": [
+      "to take the lead",
+      "to show initiative"
+    ]
+  },
+  {
+    "id": "2922",
+    "hanzi": "睡着",
+    "pinyin": "shuì zháo",
+    "translations": [
+      "to fall asleep"
+    ]
+  },
+  {
+    "id": "2923",
+    "hanzi": "顺序",
+    "pinyin": "shùn xù",
+    "translations": [
+      "sequence",
+      "order"
+    ]
+  },
+  {
+    "id": "2924",
+    "hanzi": "说不定",
+    "pinyin": "shuō bu dìng",
+    "translations": [
+      "can’t say for sure",
+      "maybe"
+    ]
+  },
+  {
+    "id": "2925",
+    "hanzi": "说服",
+    "pinyin": "shuō fú",
+    "translations": [
+      "to persuade",
+      "to convince",
+      "to talk sb over",
+      "Taiwan pr. [shuì fú]"
+    ]
+  },
+  {
+    "id": "2926",
+    "hanzi": "思考",
+    "pinyin": "sī kǎo",
+    "translations": [
+      "to reflect on",
+      "to ponder over"
+    ]
+  },
+  {
+    "id": "2927",
+    "hanzi": "似乎",
+    "pinyin": "sì hū",
+    "translations": [
+      "apparently",
+      "to seem",
+      "to appear",
+      "as if",
+      "seemingly"
+    ]
+  },
+  {
+    "id": "2928",
+    "hanzi": "松",
+    "pinyin": "sōng",
+    "translations": [
+      "loose",
+      "to loosen",
+      "to relax",
+      "pine."
+    ]
+  },
+  {
+    "id": "2929",
+    "hanzi": "松树",
+    "pinyin": "sōng shù",
+    "translations": [
+      "pine",
+      "pine tree"
+    ]
+  },
+  {
+    "id": "2930",
+    "hanzi": "塑料",
+    "pinyin": "sù liào",
+    "translations": [
+      "plastics"
+    ]
+  },
+  {
+    "id": "2931",
+    "hanzi": "塑料袋",
+    "pinyin": "sù liào dài",
+    "translations": [
+      "plastic bag"
+    ]
+  },
+  {
+    "id": "2932",
+    "hanzi": "酸",
+    "pinyin": "suān",
+    "translations": [
+      "sour",
+      "tart",
+      "sick at heart",
+      "grieved",
+      "sore",
+      "aching",
+      "pedantic",
+      "impractical",
+      "to make sarcastic remarks about sb",
+      "an acid"
+    ]
+  },
+  {
+    "id": "2933",
+    "hanzi": "酸奶",
+    "pinyin": "suān nǎi",
+    "translations": [
+      "yogurt"
+    ]
+  },
+  {
+    "id": "2934",
+    "hanzi": "随手",
+    "pinyin": "suí shǒu",
+    "translations": [
+      "conveniently",
+      "without extra trouble",
+      "while doing it",
+      "in passing"
+    ]
+  },
+  {
+    "id": "2935",
+    "hanzi": "孙女",
+    "pinyin": "sūn nǚ",
+    "translations": [
+      "son’s daughter",
+      "granddaughter"
+    ]
+  },
+  {
+    "id": "2936",
+    "hanzi": "孙子",
+    "pinyin": "sūn zi",
+    "translations": [
+      "grandson",
+      "son’s son"
+    ]
+  },
+  {
+    "id": "2937",
+    "hanzi": "缩短",
+    "pinyin": "suō duǎn",
+    "translations": [
+      "to curtail",
+      "to cut down"
+    ]
+  },
+  {
+    "id": "2938",
+    "hanzi": "缩小",
+    "pinyin": "suō xiǎo",
+    "translations": [
+      "to reduce",
+      "to decrease",
+      "to shrink"
+    ]
+  },
+  {
+    "id": "2939",
+    "hanzi": "台阶",
+    "pinyin": "tái jiē",
+    "translations": [
+      "steps",
+      "flight of steps",
+      "step (over obstacle)",
+      "fig. way out of an embarrassing situation",
+      "bench (geology)"
+    ]
+  },
+  {
+    "id": "2940",
+    "hanzi": "台上",
+    "pinyin": "tái shàng",
+    "translations": [
+      "on stage"
+    ]
+  },
+  {
+    "id": "2941",
+    "hanzi": "躺",
+    "pinyin": "tǎng",
+    "translations": [
+      "to recline",
+      "to lie down"
+    ]
+  },
+  {
+    "id": "2942",
+    "hanzi": "套餐",
+    "pinyin": "tào cān",
+    "translations": [
+      "set meal",
+      "product or service package (e.g. for a cell phone subscription)"
+    ]
+  },
+  {
+    "id": "2943",
+    "hanzi": "特价",
+    "pinyin": "tè jià",
+    "translations": [
+      "special price"
+    ]
+  },
+  {
+    "id": "2944",
+    "hanzi": "特殊",
+    "pinyin": "tè shū",
+    "translations": [
+      "special",
+      "particular",
+      "unusual",
+      "extraordinary"
+    ]
+  },
+  {
+    "id": "2945",
+    "hanzi": "特征",
+    "pinyin": "tè zhēng",
+    "translations": [
+      "characteristic",
+      "diagnostic property",
+      "distinctive feature",
+      "trait"
+    ]
+  },
+  {
+    "id": "2946",
+    "hanzi": "提供",
+    "pinyin": "tí gōng",
+    "translations": [
+      "to offer",
+      "to supply",
+      "to provide",
+      "to furnish"
+    ]
+  },
+  {
+    "id": "2947",
+    "hanzi": "提醒",
+    "pinyin": "tí xǐng",
+    "translations": [
+      "to remind",
+      "to call attention to",
+      "to warn of"
+    ]
+  },
+  {
+    "id": "2948",
+    "hanzi": "体操",
+    "pinyin": "tǐ cāo",
+    "translations": [
+      "gymnastic",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "2949",
+    "hanzi": "体检",
+    "pinyin": "tǐ jiǎn",
+    "translations": [
+      "abbr. for 體格檢查|体格检查[tǐ gé jiǎn chá]"
+    ]
+  },
+  {
+    "id": "2950",
+    "hanzi": "体重",
+    "pinyin": "tǐ zhòng",
+    "translations": [
+      "body weight"
+    ]
+  },
+  {
+    "id": "2951",
+    "hanzi": "替",
+    "pinyin": "tì",
+    "translations": [
+      "to substitute for",
+      "to take the place of",
+      "to replace",
+      "for",
+      "on behalf of",
+      "to stand in for"
+    ]
+  },
+  {
+    "id": "2952",
+    "hanzi": "替代",
+    "pinyin": "tì dài",
+    "translations": [
+      "to substitute for",
+      "to replace",
+      "to supersede"
+    ]
+  },
+  {
+    "id": "2953",
+    "hanzi": "天真",
+    "pinyin": "tiān zhēn",
+    "translations": [
+      "naive",
+      "innocent",
+      "artless"
+    ]
+  },
+  {
+    "id": "2954",
+    "hanzi": "填",
+    "pinyin": "tián",
+    "translations": [
+      "to fill or stuff",
+      "(of a form etc) to fill in"
+    ]
+  },
+  {
+    "id": "2955",
+    "hanzi": "填空",
+    "pinyin": "tián kòng",
+    "translations": [
+      "to fill a job vacancy",
+      "to fill in a blank (e.g. on questionnaire or exam paper)"
+    ]
+  },
+  {
+    "id": "2956",
+    "hanzi": "挑",
+    "pinyin": "tiāo",
+    "translations": [
+      "to carry on a shoulder pole",
+      "to choose",
+      "to pick",
+      "to nitpick"
+    ]
+  },
+  {
+    "id": "2957",
+    "hanzi": "挑选",
+    "pinyin": "tiāo xuǎn",
+    "translations": [
+      "to choose",
+      "to select"
+    ]
+  },
+  {
+    "id": "2958",
+    "hanzi": "调皮",
+    "pinyin": "tiáo pí",
+    "translations": [
+      "naughty",
+      "mischievous",
+      "unruly"
+    ]
+  },
+  {
+    "id": "2959",
+    "hanzi": "挑",
+    "pinyin": "tiǎo",
+    "translations": [
+      "to raise",
+      "to dig up",
+      "to poke",
+      "to prick",
+      "to incite",
+      "to stir up"
+    ]
+  },
+  {
+    "id": "2960",
+    "hanzi": "挑战",
+    "pinyin": "tiǎo zhàn",
+    "translations": [
+      "to challenge",
+      "challenge"
+    ]
+  },
+  {
+    "id": "2961",
+    "hanzi": "贴",
+    "pinyin": "tiē",
+    "translations": [
+      "to stick",
+      "to paste",
+      "to post (e.g. on a blog)",
+      "to keep close to",
+      "to fit snugly",
+      "to subsidize",
+      "allowance (e.g. money for food or housing)",
+      "sticker",
+      "classifier for sticking plaster: strip"
+    ]
+  },
+  {
+    "id": "2962",
+    "hanzi": "停下",
+    "pinyin": "tíng xià",
+    "translations": [
+      "to stop"
+    ]
+  },
+  {
+    "id": "2963",
+    "hanzi": "挺",
+    "pinyin": "tǐng",
+    "translations": [
+      "straight",
+      "erect",
+      "to stick out (a part of the body)",
+      "to (physically) straighten up",
+      "to support",
+      "to withstand",
+      "outstanding",
+      "(coll.) quite",
+      "very",
+      "classifier for machine guns"
+    ]
+  },
+  {
+    "id": "2964",
+    "hanzi": "通知书",
+    "pinyin": "tōng zhī shū",
+    "translations": [
+      "written notice"
+    ]
+  },
+  {
+    "id": "2965",
+    "hanzi": "同情",
+    "pinyin": "tóng qíng",
+    "translations": [
+      "to sympathize with",
+      "sympathy"
+    ]
+  },
+  {
+    "id": "2966",
+    "hanzi": "童话",
+    "pinyin": "tóng huà",
+    "translations": [
+      "children’s fairy tales"
+    ]
+  },
+  {
+    "id": "2967",
+    "hanzi": "童年",
+    "pinyin": "tóng nián",
+    "translations": [
+      "childhood"
+    ]
+  },
+  {
+    "id": "2968",
+    "hanzi": "统计",
+    "pinyin": "tǒng jì",
+    "translations": [
+      "statistics",
+      "to count",
+      "to add up"
+    ]
+  },
+  {
+    "id": "2969",
+    "hanzi": "统一",
+    "pinyin": "tǒng yī",
+    "translations": [
+      "to unify",
+      "to unite",
+      "to integrate"
+    ]
+  },
+  {
+    "id": "2970",
+    "hanzi": "痛快",
+    "pinyin": "tòng kuài",
+    "translations": [
+      "delighted",
+      "to one’s heart’s content",
+      "straightforward",
+      "also pr. [tòng kuai]"
+    ]
+  },
+  {
+    "id": "2971",
+    "hanzi": "投",
+    "pinyin": "tóu",
+    "translations": [
+      "to cast",
+      "to send",
+      "to throw oneself (into the river etc)",
+      "to seek refuge",
+      "to place oneself into the hands of"
+    ]
+  },
+  {
+    "id": "2972",
+    "hanzi": "投入",
+    "pinyin": "tóu rù",
+    "translations": [
+      "to throw into",
+      "to put into",
+      "to throw oneself into",
+      "to participate in",
+      "to invest in",
+      "absorbed",
+      "engrossed"
+    ]
+  },
+  {
+    "id": "2973",
+    "hanzi": "投诉",
+    "pinyin": "tóu sù",
+    "translations": [
+      "complaint",
+      "to complain",
+      "to register a complaint (esp. as a customer)"
+    ]
+  },
+  {
+    "id": "2974",
+    "hanzi": "投资",
+    "pinyin": "tóu zī",
+    "translations": [
+      "investment",
+      "to invest"
+    ]
+  },
+  {
+    "id": "2975",
+    "hanzi": "透",
+    "pinyin": "tòu",
+    "translations": [
+      "to penetrate",
+      "to pass through",
+      "thoroughly",
+      "completely",
+      "transparent",
+      "to appear",
+      "to show"
+    ]
+  },
+  {
+    "id": "2976",
+    "hanzi": "透明",
+    "pinyin": "tòu míng",
+    "translations": [
+      "transparent",
+      "open (non-secretive)"
+    ]
+  },
+  {
+    "id": "2977",
+    "hanzi": "图案",
+    "pinyin": "tú àn",
+    "translations": [
+      "design",
+      "pattern"
+    ]
+  },
+  {
+    "id": "2978",
+    "hanzi": "途中",
+    "pinyin": "tú zhōng",
+    "translations": [
+      "en route"
+    ]
+  },
+  {
+    "id": "2979",
+    "hanzi": "土地",
+    "pinyin": "tǔ dì",
+    "translations": [
+      "land",
+      "soil",
+      "territory"
+    ]
+  },
+  {
+    "id": "2980",
+    "hanzi": "推迟",
+    "pinyin": "tuī chí",
+    "translations": [
+      "to postpone",
+      "to put off",
+      "to defer"
+    ]
+  },
+  {
+    "id": "2981",
+    "hanzi": "推销",
+    "pinyin": "tuī xiāo",
+    "translations": [
+      "to market",
+      "to sell"
+    ]
+  },
+  {
+    "id": "2982",
+    "hanzi": "脱",
+    "pinyin": "tuō",
+    "translations": [
+      "to shed",
+      "to take off",
+      "to escape",
+      "to get away from"
+    ]
+  },
+  {
+    "id": "2983",
+    "hanzi": "袜子",
+    "pinyin": "wà zi",
+    "translations": [
+      "socks",
+      "stockings"
+    ]
+  },
+  {
+    "id": "2984",
+    "hanzi": "外汇",
+    "pinyin": "wài huì",
+    "translations": [
+      "foreign (currency) exchange"
+    ]
+  },
+  {
+    "id": "2985",
+    "hanzi": "外交官",
+    "pinyin": "wài jiāo guān",
+    "translations": [
+      "diplomat"
+    ]
+  },
+  {
+    "id": "2986",
+    "hanzi": "外套",
+    "pinyin": "wài tào",
+    "translations": [
+      "coat",
+      "jacket"
+    ]
+  },
+  {
+    "id": "2987",
+    "hanzi": "弯",
+    "pinyin": "wān",
+    "translations": [
+      "to bend",
+      "bent",
+      "a bend",
+      "a turn (in the road etc)"
+    ]
+  },
+  {
+    "id": "2988",
+    "hanzi": "晚点",
+    "pinyin": "wǎn diǎn",
+    "translations": [
+      "(of trains etc) late",
+      "delayed",
+      "behind schedule",
+      "light dinner"
+    ]
+  },
+  {
+    "id": "2989",
+    "hanzi": "万一",
+    "pinyin": "wàn yī",
+    "translations": [
+      "just in case",
+      "if by any chance",
+      "contingency"
+    ]
+  },
+  {
+    "id": "2990",
+    "hanzi": "王",
+    "pinyin": "wáng",
+    "translations": [
+      "king or monarch",
+      "best or strongest of its type",
+      "grand",
+      "great"
+    ]
+  },
+  {
+    "id": "2991",
+    "hanzi": "网络",
+    "pinyin": "wǎng luò",
+    "translations": [
+      "network (computing, telecommunications, transport etc)",
+      "Internet"
+    ]
+  },
+  {
+    "id": "2992",
+    "hanzi": "网址",
+    "pinyin": "wǎng zhǐ",
+    "translations": [
+      "website",
+      "web address",
+      "URL"
+    ]
+  },
+  {
+    "id": "2993",
+    "hanzi": "微笑",
+    "pinyin": "wēi xiào",
+    "translations": [
+      "smile",
+      "to smile"
+    ]
+  },
+  {
+    "id": "2994",
+    "hanzi": "微信",
+    "pinyin": "wēi xìn",
+    "translations": [
+      "Weixin or WeChat (mobile text and voice messaging service developed by Tencent 騰訊|腾讯[téng xùn])"
+    ]
+  },
+  {
+    "id": "2995",
+    "hanzi": "围巾",
+    "pinyin": "wéi jīn",
+    "translations": [
+      "scarf",
+      "shawl"
+    ]
+  },
+  {
+    "id": "2996",
+    "hanzi": "维持",
+    "pinyin": "wéi chí",
+    "translations": [
+      "to keep",
+      "to maintain",
+      "to preserve"
+    ]
+  },
+  {
+    "id": "2997",
+    "hanzi": "维护",
+    "pinyin": "wéi hù",
+    "translations": [
+      "to defend",
+      "to safeguard",
+      "to protect",
+      "to uphold",
+      "to maintain"
+    ]
+  },
+  {
+    "id": "2998",
+    "hanzi": "维修",
+    "pinyin": "wéi xiū",
+    "translations": [
+      "maintenance (of equipment)",
+      "to protect and maintain"
+    ]
+  },
+  {
+    "id": "2999",
+    "hanzi": "尾巴",
+    "pinyin": "wěi ba",
+    "translations": [
+      "tail",
+      "colloquial pr. [yǐ ba]"
+    ]
+  },
+  {
+    "id": "3000",
+    "hanzi": "未必",
+    "pinyin": "wèi bì",
+    "translations": [
+      "not necessarily",
+      "maybe not"
+    ]
+  },
+  {
+    "id": "3001",
+    "hanzi": "未来",
+    "pinyin": "wèi lái",
+    "translations": [
+      "future",
+      "tomorrow",
+      "approaching",
+      "coming",
+      "pending"
+    ]
+  },
+  {
+    "id": "3002",
+    "hanzi": "位于",
+    "pinyin": "wèi yú",
+    "translations": [
+      "to be located at",
+      "to be situated at",
+      "to lie"
+    ]
+  },
+  {
+    "id": "3003",
+    "hanzi": "位置",
+    "pinyin": "wèi zhi",
+    "translations": [
+      "position",
+      "place",
+      "seat"
+    ]
+  },
+  {
+    "id": "3004",
+    "hanzi": "味儿",
+    "pinyin": "wèi r",
+    "translations": [
+      "taste"
+    ]
+  },
+  {
+    "id": "3005",
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "translations": [
+      "to feed"
+    ]
+  },
+  {
+    "id": "3006",
+    "hanzi": "稳",
+    "pinyin": "wěn",
+    "translations": [
+      "settled",
+      "steady",
+      "stable"
+    ]
+  },
+  {
+    "id": "3007",
+    "hanzi": "稳定",
+    "pinyin": "wěn dìng",
+    "translations": [
+      "steady",
+      "stable",
+      "stability",
+      "to stabilize",
+      "to pacify"
+    ]
+  },
+  {
+    "id": "3008",
+    "hanzi": "问候",
+    "pinyin": "wèn hòu",
+    "translations": [
+      "to give one’s respects",
+      "to send a greeting",
+      "(fig.) (coll.) to make offensive reference to (somebody dear to the person to whom one is speaking)"
+    ]
+  },
+  {
+    "id": "3009",
+    "hanzi": "无",
+    "pinyin": "wú",
+    "translations": [
+      "not to have",
+      "no",
+      "none",
+      "not",
+      "to lack",
+      "un-",
+      "-less"
+    ]
+  },
+  {
+    "id": "3010",
+    "hanzi": "无法",
+    "pinyin": "wú fǎ",
+    "translations": [
+      "unable",
+      "incapable"
+    ]
+  },
+  {
+    "id": "3011",
+    "hanzi": "无聊",
+    "pinyin": "wú liáo",
+    "translations": [
+      "bored",
+      "boring",
+      "senseless"
+    ]
+  },
+  {
+    "id": "3012",
+    "hanzi": "无论",
+    "pinyin": "wú lùn",
+    "translations": [
+      "no matter what or how",
+      "regardless of whether…"
+    ]
+  },
+  {
+    "id": "3013",
+    "hanzi": "无数",
+    "pinyin": "wú shù",
+    "translations": [
+      "countless",
+      "numberless",
+      "innumerable"
+    ]
+  },
+  {
+    "id": "3014",
+    "hanzi": "无所谓",
+    "pinyin": "wú suǒ wèi",
+    "translations": [
+      "to be indifferent",
+      "not to matter",
+      "cannot be said to be"
+    ]
+  },
+  {
+    "id": "3015",
+    "hanzi": "无限",
+    "pinyin": "wú xiàn",
+    "translations": [
+      "unlimited",
+      "unbounded"
+    ]
+  },
+  {
+    "id": "3016",
+    "hanzi": "五颜六色",
+    "pinyin": "wǔ yán liù sè",
+    "translations": [
+      "multi-colored",
+      "every color under the sun"
+    ]
+  },
+  {
+    "id": "3017",
+    "hanzi": "误会",
+    "pinyin": "wù huì",
+    "translations": [
+      "to misunderstand",
+      "to mistake",
+      "misunderstanding"
+    ]
+  },
+  {
+    "id": "3018",
+    "hanzi": "西瓜",
+    "pinyin": "xī guā",
+    "translations": [
+      "watermelon"
+    ]
+  },
+  {
+    "id": "3019",
+    "hanzi": "吸",
+    "pinyin": "xī",
+    "translations": [
+      "to breathe",
+      "to suck in",
+      "to absorb",
+      "to inhale"
+    ]
+  },
+  {
+    "id": "3020",
+    "hanzi": "吸管",
+    "pinyin": "xī guǎn",
+    "translations": [
+      "(drinking) straw",
+      "pipette",
+      "eyedropper",
+      "snorkel"
+    ]
+  },
+  {
+    "id": "3021",
+    "hanzi": "吸收",
+    "pinyin": "xī shōu",
+    "translations": [
+      "to absorb",
+      "to assimilate",
+      "to ingest",
+      "to recruit"
+    ]
+  },
+  {
+    "id": "3022",
+    "hanzi": "吸烟",
+    "pinyin": "xī yān",
+    "translations": [
+      "to smoke"
+    ]
+  },
+  {
+    "id": "3023",
+    "hanzi": "吸引",
+    "pinyin": "xī yǐn",
+    "translations": [
+      "to attract (interest, investment etc)"
+    ]
+  },
+  {
+    "id": "3024",
+    "hanzi": "喜爱",
+    "pinyin": "xǐ ài",
+    "translations": [
+      "to like",
+      "to love",
+      "to be fond of",
+      "favorite"
+    ]
+  },
+  {
+    "id": "3025",
+    "hanzi": "系列",
+    "pinyin": "xì liè",
+    "translations": [
+      "series",
+      "set"
+    ]
+  },
+  {
+    "id": "3026",
+    "hanzi": "系统",
+    "pinyin": "xì tǒng",
+    "translations": [
+      "system"
+    ]
+  },
+  {
+    "id": "3027",
+    "hanzi": "细",
+    "pinyin": "xì",
+    "translations": [
+      "thin or slender",
+      "finely particulate",
+      "thin and soft",
+      "fine",
+      "delicate",
+      "trifling",
+      "(of a sound) quiet",
+      "frugal"
+    ]
+  },
+  {
+    "id": "3028",
+    "hanzi": "细节",
+    "pinyin": "xì jié",
+    "translations": [
+      "details",
+      "particulars"
+    ]
+  },
+  {
+    "id": "3029",
+    "hanzi": "细致",
+    "pinyin": "xì zhì",
+    "translations": [
+      "delicate",
+      "fine",
+      "careful",
+      "meticulous",
+      "painstaking"
+    ]
+  },
+  {
+    "id": "3030",
+    "hanzi": "下个月",
+    "pinyin": "xià gè yuè",
+    "translations": [
+      "next month"
+    ]
+  },
+  {
+    "id": "3031",
+    "hanzi": "下降",
+    "pinyin": "xià jiàng",
+    "translations": [
+      "to decline",
+      "to drop",
+      "to fall",
+      "to go down",
+      "to decrease"
+    ]
+  },
+  {
+    "id": "3032",
+    "hanzi": "下楼",
+    "pinyin": "xià lóu",
+    "translations": [
+      "to go downstairs"
+    ]
+  },
+  {
+    "id": "3033",
+    "hanzi": "下载",
+    "pinyin": "xià zǎi",
+    "translations": [
+      "to download",
+      "also pr. [xià zài]"
+    ]
+  },
+  {
+    "id": "3034",
+    "hanzi": "夏季",
+    "pinyin": "xià jì",
+    "translations": [
+      "summer"
+    ]
+  },
+  {
+    "id": "3035",
+    "hanzi": "鲜",
+    "pinyin": "xiān",
+    "translations": [
+      "fresh",
+      "bright (in color)",
+      "delicious",
+      "tasty",
+      "delicacy",
+      "aquatic foods"
+    ]
+  },
+  {
+    "id": "3036",
+    "hanzi": "鲜花",
+    "pinyin": "xiān huā",
+    "translations": [
+      "flower",
+      "fresh flowers"
+    ]
+  },
+  {
+    "id": "3037",
+    "hanzi": "鲜明",
+    "pinyin": "xiān míng",
+    "translations": [
+      "bright",
+      "clear-cut",
+      "distinct"
+    ]
+  },
+  {
+    "id": "3038",
+    "hanzi": "咸",
+    "pinyin": "xián",
+    "translations": [
+      "salted",
+      "salty",
+      "stingy",
+      "miserly",
+      "all",
+      "everyone",
+      "each",
+      "widespread",
+      "harmonious"
+    ]
+  },
+  {
+    "id": "3039",
+    "hanzi": "显著",
+    "pinyin": "xiǎn zhù",
+    "translations": [
+      "outstanding",
+      "notable",
+      "remarkable",
+      "statistically significant"
+    ]
+  },
+  {
+    "id": "3040",
+    "hanzi": "县",
+    "pinyin": "xiàn",
+    "translations": [
+      "county"
+    ]
+  },
+  {
+    "id": "3041",
+    "hanzi": "限制",
+    "pinyin": "xiàn zhì",
+    "translations": [
+      "to restrict",
+      "to limit",
+      "to confine",
+      "restriction",
+      "limit"
+    ]
+  },
+  {
+    "id": "3042",
+    "hanzi": "相处",
+    "pinyin": "xiāng chǔ",
+    "translations": [
+      "to be in contact (with sb)",
+      "to associate",
+      "to interact",
+      "to get along (well, poorly)"
+    ]
+  },
+  {
+    "id": "3043",
+    "hanzi": "相反",
+    "pinyin": "xiāng fǎn",
+    "translations": [
+      "opposite",
+      "contrary"
+    ]
+  },
+  {
+    "id": "3044",
+    "hanzi": "箱",
+    "pinyin": "xiāng",
+    "translations": [
+      "box",
+      "trunk",
+      "chest"
+    ]
+  },
+  {
+    "id": "3045",
+    "hanzi": "箱子",
+    "pinyin": "xiāng zi",
+    "translations": [
+      "suitcase",
+      "chest",
+      "box",
+      "case",
+      "trunk"
+    ]
+  },
+  {
+    "id": "3046",
+    "hanzi": "想念",
+    "pinyin": "xiǎng niàn",
+    "translations": [
+      "to miss",
+      "to remember with longing",
+      "to long to see again"
+    ]
+  },
+  {
+    "id": "3047",
+    "hanzi": "想象",
+    "pinyin": "xiǎng xiàng",
+    "translations": [
+      "to imagine",
+      "to fancy"
+    ]
+  },
+  {
+    "id": "3048",
+    "hanzi": "项",
+    "pinyin": "xiàng",
+    "translations": [
+      "back of neck",
+      "item",
+      "thing",
+      "term (in a mathematical formula)",
+      "sum (of money)",
+      "classifier for principles, items, clauses, tasks, research projects etc"
+    ]
+  },
+  {
+    "id": "3049",
+    "hanzi": "项目",
+    "pinyin": "xiàng mù",
+    "translations": [
+      "item",
+      "project",
+      "(sports) event"
+    ]
+  },
+  {
+    "id": "3050",
+    "hanzi": "相片",
+    "pinyin": "xiàng piàn",
+    "translations": [
+      "image",
+      "photograph"
+    ]
+  },
+  {
+    "id": "3051",
+    "hanzi": "消化",
+    "pinyin": "xiāo huà",
+    "translations": [
+      "to digest",
+      "digestion",
+      "digestive"
+    ]
+  },
+  {
+    "id": "3052",
+    "hanzi": "销售",
+    "pinyin": "xiāo shòu",
+    "translations": [
+      "to sell",
+      "to market",
+      "sales (representative, agreement etc)"
+    ]
+  },
+  {
+    "id": "3053",
+    "hanzi": "小吃",
+    "pinyin": "xiǎo chī",
+    "translations": [
+      "snack",
+      "refreshments"
+    ]
+  },
+  {
+    "id": "3054",
+    "hanzi": "小伙子",
+    "pinyin": "xiǎo huǒ zi",
+    "translations": [
+      "young man",
+      "young guy",
+      "lad",
+      "youngster"
+    ]
+  },
+  {
+    "id": "3055",
+    "hanzi": "小型",
+    "pinyin": "xiǎo xíng",
+    "translations": [
+      "small scale",
+      "small size"
+    ]
+  },
+  {
+    "id": "3056",
+    "hanzi": "效率",
+    "pinyin": "xiào lǜ",
+    "translations": [
+      "efficiency"
+    ]
+  },
+  {
+    "id": "3057",
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "translations": [
+      "classifier indicating a small amount or small number greater than 1: some, a few, several"
+    ]
+  },
+  {
+    "id": "3058",
+    "hanzi": "心理",
+    "pinyin": "xīn lǐ",
+    "translations": [
+      "mental",
+      "psychological"
+    ]
+  },
+  {
+    "id": "3059",
+    "hanzi": "新郎",
+    "pinyin": "xīn láng",
+    "translations": [
+      "bridegroom",
+      "groom"
+    ]
+  },
+  {
+    "id": "3060",
+    "hanzi": "新娘",
+    "pinyin": "xīn niáng",
+    "translations": [
+      "bride"
+    ]
+  },
+  {
+    "id": "3061",
+    "hanzi": "新鲜",
+    "pinyin": "xīn xiān",
+    "translations": [
+      "fresh (experience, food etc)",
+      "freshness",
+      "novel",
+      "uncommon"
+    ]
+  },
+  {
+    "id": "3062",
+    "hanzi": "新型",
+    "pinyin": "xīn xíng",
+    "translations": [
+      "new type",
+      "new kind"
+    ]
+  },
+  {
+    "id": "3063",
+    "hanzi": "兴奋",
+    "pinyin": "xīng fèn",
+    "translations": [
+      "excited",
+      "excitement",
+      "(physiology) excitation"
+    ]
+  },
+  {
+    "id": "3064",
+    "hanzi": "形容",
+    "pinyin": "xíng róng",
+    "translations": [
+      "to describe",
+      "description",
+      "appearance",
+      "look"
+    ]
+  },
+  {
+    "id": "3065",
+    "hanzi": "形势",
+    "pinyin": "xíng shì",
+    "translations": [
+      "circumstances",
+      "situation",
+      "terrain"
+    ]
+  },
+  {
+    "id": "3066",
+    "hanzi": "型",
+    "pinyin": "xíng",
+    "translations": [
+      "mold",
+      "type",
+      "style",
+      "model"
+    ]
+  },
+  {
+    "id": "3067",
+    "hanzi": "型号",
+    "pinyin": "xíng hào",
+    "translations": [
+      "model (particular version of a manufactured article)",
+      "type (product specification in terms of color, size etc)"
+    ]
+  },
+  {
+    "id": "3068",
+    "hanzi": "醒",
+    "pinyin": "xǐng",
+    "translations": [
+      "to wake up",
+      "to be awake",
+      "to become aware",
+      "to sober up",
+      "to come to"
+    ]
+  },
+  {
+    "id": "3069",
+    "hanzi": "兴趣",
+    "pinyin": "xìng qù",
+    "translations": [
+      "interest (desire to know about sth)",
+      "interest (thing in which one is interested)",
+      "hobby"
+    ]
+  },
+  {
+    "id": "3070",
+    "hanzi": "性质",
+    "pinyin": "xìng zhì",
+    "translations": [
+      "nature",
+      "characteristic"
+    ]
+  },
+  {
+    "id": "3071",
+    "hanzi": "兄弟",
+    "pinyin": "xiōng dì",
+    "translations": [
+      "brothers",
+      "younger brother",
+      "I, me (humble term used by men in public speech)",
+      "brotherly",
+      "fraternal"
+    ]
+  },
+  {
+    "id": "3072",
+    "hanzi": "胸部",
+    "pinyin": "xiōng bù",
+    "translations": [
+      "chest",
+      "bosom"
+    ]
+  },
+  {
+    "id": "3073",
+    "hanzi": "修理",
+    "pinyin": "xiū lǐ",
+    "translations": [
+      "to repair",
+      "to fix",
+      "to prune",
+      "to trim",
+      "(coll.) to sort sb out",
+      "to fix sb"
+    ]
+  },
+  {
+    "id": "3074",
+    "hanzi": "选择",
+    "pinyin": "xuǎn zé",
+    "translations": [
+      "to select",
+      "to pick",
+      "choice",
+      "option",
+      "alternative"
+    ]
+  },
+  {
+    "id": "3075",
+    "hanzi": "学分",
+    "pinyin": "xué fēn",
+    "translations": [
+      "course credit"
+    ]
+  },
+  {
+    "id": "3076",
+    "hanzi": "学年",
+    "pinyin": "xué nián",
+    "translations": [
+      "academic year"
+    ]
+  },
+  {
+    "id": "3077",
+    "hanzi": "学时",
+    "pinyin": "xué shí",
+    "translations": [
+      "class hour",
+      "period"
+    ]
+  },
+  {
+    "id": "3078",
+    "hanzi": "学术",
+    "pinyin": "xué shù",
+    "translations": [
+      "learning",
+      "science",
+      "academic"
+    ]
+  },
+  {
+    "id": "3079",
+    "hanzi": "学问",
+    "pinyin": "xué wèn",
+    "translations": [
+      "learning",
+      "knowledge"
+    ]
+  },
+  {
+    "id": "3080",
+    "hanzi": "寻找",
+    "pinyin": "xún zhǎo",
+    "translations": [
+      "to seek",
+      "to look for"
+    ]
+  },
+  {
+    "id": "3081",
+    "hanzi": "迅速",
+    "pinyin": "xùn sù",
+    "translations": [
+      "rapid",
+      "speedy",
+      "fast"
+    ]
+  },
+  {
+    "id": "3082",
+    "hanzi": "牙",
+    "pinyin": "yá",
+    "translations": [
+      "tooth",
+      "ivory"
+    ]
+  },
+  {
+    "id": "3083",
+    "hanzi": "牙刷",
+    "pinyin": "yá shuā",
+    "translations": [
+      "toothbrush"
+    ]
+  },
+  {
+    "id": "3084",
+    "hanzi": "亚运会",
+    "pinyin": "yà yùn huì",
+    "translations": [
+      "Asian Games"
+    ]
+  },
+  {
+    "id": "3085",
+    "hanzi": "呀",
+    "pinyin": "ya",
+    "translations": [
+      "(particle equivalent to 啊 after a vowel, expressing surprise or doubt)"
+    ]
+  },
+  {
+    "id": "3086",
+    "hanzi": "延长",
+    "pinyin": "yán cháng",
+    "translations": [
+      "to prolong",
+      "to extend",
+      "to delay"
+    ]
+  },
+  {
+    "id": "3087",
+    "hanzi": "延期",
+    "pinyin": "yán qī",
+    "translations": [
+      "to delay",
+      "to extend",
+      "to postpone",
+      "to defer"
+    ]
+  },
+  {
+    "id": "3088",
+    "hanzi": "延续",
+    "pinyin": "yán xù",
+    "translations": [
+      "to continue",
+      "to go on",
+      "to last"
+    ]
+  },
+  {
+    "id": "3089",
+    "hanzi": "严",
+    "pinyin": "yán",
+    "translations": [
+      "tight (closely sealed)",
+      "stern",
+      "strict",
+      "rigorous",
+      "severe",
+      "father"
+    ]
+  },
+  {
+    "id": "3090",
+    "hanzi": "严格",
+    "pinyin": "yán gé",
+    "translations": [
+      "strict",
+      "stringent",
+      "tight",
+      "rigorous"
+    ]
+  },
+  {
+    "id": "3091",
+    "hanzi": "严重",
+    "pinyin": "yán zhòng",
+    "translations": [
+      "grave",
+      "serious",
+      "severe",
+      "critical"
+    ]
+  },
+  {
+    "id": "3092",
+    "hanzi": "研究",
+    "pinyin": "yán jiū",
+    "translations": [
+      "research",
+      "a study",
+      "to research",
+      "to look into"
+    ]
+  },
+  {
+    "id": "3093",
+    "hanzi": "研究生",
+    "pinyin": "yán jiū shēng",
+    "translations": [
+      "graduate student",
+      "postgraduate student",
+      "research student"
+    ]
+  },
+  {
+    "id": "3094",
+    "hanzi": "研制",
+    "pinyin": "yán zhì",
+    "translations": [
+      "to manufacture",
+      "to develop"
+    ]
+  },
+  {
+    "id": "3095",
+    "hanzi": "盐",
+    "pinyin": "yán",
+    "translations": [
+      "salt"
+    ]
+  },
+  {
+    "id": "3096",
+    "hanzi": "眼镜",
+    "pinyin": "yǎn jìng",
+    "translations": [
+      "spectacles",
+      "eyeglasses"
+    ]
+  },
+  {
+    "id": "3097",
+    "hanzi": "眼泪",
+    "pinyin": "yǎn lèi",
+    "translations": [
+      "tears",
+      "crying"
+    ]
+  },
+  {
+    "id": "3098",
+    "hanzi": "眼里",
+    "pinyin": "yǎn lǐ",
+    "translations": [
+      "in one’s eyes, within one’s vision, within one’s care"
+    ]
+  },
+  {
+    "id": "3099",
+    "hanzi": "演讲",
+    "pinyin": "yǎn jiǎng",
+    "translations": [
+      "lecture",
+      "to make a speech"
+    ]
+  },
+  {
+    "id": "3100",
+    "hanzi": "阳台",
+    "pinyin": "yáng tái",
+    "translations": [
+      "balcony",
+      "porch"
+    ]
+  },
+  {
+    "id": "3101",
+    "hanzi": "养成",
+    "pinyin": "yǎng chéng",
+    "translations": [
+      "to cultivate",
+      "to raise",
+      "to form (a habit)",
+      "to acquire"
+    ]
+  },
+  {
+    "id": "3102",
+    "hanzi": "腰",
+    "pinyin": "yāo",
+    "translations": [
+      "waist",
+      "lower back",
+      "pocket",
+      "middle",
+      "loins"
+    ]
+  },
+  {
+    "id": "3103",
+    "hanzi": "摇",
+    "pinyin": "yáo",
+    "translations": [
+      "to shake",
+      "to rock",
+      "to row",
+      "to crank"
+    ]
+  },
+  {
+    "id": "3104",
+    "hanzi": "药物",
+    "pinyin": "yào wù",
+    "translations": [
+      "medicaments",
+      "pharmaceuticals",
+      "medication",
+      "medicine",
+      "drug"
+    ]
+  },
+  {
+    "id": "3105",
+    "hanzi": "要",
+    "pinyin": "yào",
+    "translations": [
+      "if",
+      "either… or…"
+    ]
+  },
+  {
+    "id": "3106",
+    "hanzi": "业余",
+    "pinyin": "yè yú",
+    "translations": [
+      "in one’s spare time",
+      "outside working hours",
+      "amateur (historian etc)"
+    ]
+  },
+  {
+    "id": "3107",
+    "hanzi": "叶子",
+    "pinyin": "yè zi",
+    "translations": [
+      "foliage",
+      "leaf"
+    ]
+  },
+  {
+    "id": "3108",
+    "hanzi": "医疗",
+    "pinyin": "yī liáo",
+    "translations": [
+      "medical treatment"
+    ]
+  },
+  {
+    "id": "3109",
+    "hanzi": "医学",
+    "pinyin": "yī xué",
+    "translations": [
+      "medicine",
+      "medical science",
+      "study of medicine"
+    ]
+  },
+  {
+    "id": "3110",
+    "hanzi": "依靠",
+    "pinyin": "yī kào",
+    "translations": [
+      "to rely on sth (for support etc)",
+      "to depend on"
+    ]
+  },
+  {
+    "id": "3111",
+    "hanzi": "依然",
+    "pinyin": "yī rán",
+    "translations": [
+      "still",
+      "as before"
+    ]
+  },
+  {
+    "id": "3112",
+    "hanzi": "一律",
+    "pinyin": "yī lǜ",
+    "translations": [
+      "same",
+      "uniformly",
+      "all",
+      "without exception"
+    ]
+  },
+  {
+    "id": "3113",
+    "hanzi": "一再",
+    "pinyin": "yī zài",
+    "translations": [
+      "repeatedly"
+    ]
+  },
+  {
+    "id": "3114",
+    "hanzi": "一致",
+    "pinyin": "yī zhì",
+    "translations": [
+      "unanimous",
+      "identical (views or opinions)"
+    ]
+  },
+  {
+    "id": "3115",
+    "hanzi": "移",
+    "pinyin": "yí",
+    "translations": [
+      "to move",
+      "to shift",
+      "to change",
+      "to alter",
+      "to remove"
+    ]
+  },
+  {
+    "id": "3116",
+    "hanzi": "移动",
+    "pinyin": "yí dòng",
+    "translations": [
+      "to move",
+      "movement",
+      "migration",
+      "mobile",
+      "portable"
+    ]
+  },
+  {
+    "id": "3117",
+    "hanzi": "移民",
+    "pinyin": "yí mín",
+    "translations": [
+      "to immigrate",
+      "to migrate",
+      "emigrant",
+      "immigrant"
+    ]
+  },
+  {
+    "id": "3118",
+    "hanzi": "遗产",
+    "pinyin": "yí chǎn",
+    "translations": [
+      "heritage",
+      "legacy",
+      "inheritance",
+      "bequest"
+    ]
+  },
+  {
+    "id": "3119",
+    "hanzi": "遗传",
+    "pinyin": "yí chuán",
+    "translations": [
+      "heredity",
+      "to inherit (a trait)",
+      "to pass on (to one’s offspring)"
+    ]
+  },
+  {
+    "id": "3120",
+    "hanzi": "疑问",
+    "pinyin": "yí wèn",
+    "translations": [
+      "question",
+      "interrogation",
+      "doubt"
+    ]
+  },
+  {
+    "id": "3121",
+    "hanzi": "以及",
+    "pinyin": "yǐ jí",
+    "translations": [
+      "as well as",
+      "too",
+      "and"
+    ]
+  },
+  {
+    "id": "3122",
+    "hanzi": "以内",
+    "pinyin": "yǐ nèi",
+    "translations": [
+      "within",
+      "less than"
+    ]
+  },
+  {
+    "id": "3123",
+    "hanzi": "一般来说",
+    "pinyin": "yī bān lái shuō",
+    "translations": [
+      "generally speaking"
+    ]
+  },
+  {
+    "id": "3124",
+    "hanzi": "义务",
+    "pinyin": "yì wù",
+    "translations": [
+      "duty",
+      "obligation",
+      "volunteer (work etc)"
+    ]
+  },
+  {
+    "id": "3125",
+    "hanzi": "议论",
+    "pinyin": "yì lùn",
+    "translations": [
+      "to comment",
+      "to talk about",
+      "to discuss",
+      "discussion"
+    ]
+  },
+  {
+    "id": "3126",
+    "hanzi": "引",
+    "pinyin": "yǐn",
+    "translations": [
+      "to draw (e.g. a bow)",
+      "to pull",
+      "to stretch sth",
+      "to extend",
+      "to lengthen",
+      "to involve or implicate in",
+      "to attract",
+      "to lead",
+      "to guide",
+      "to leave",
+      "to provide evidence or justification for",
+      "old unit of distance equal to 10 丈[zhàng], one-thirtieth of a km or 33.33 meters"
+    ]
+  },
+  {
+    "id": "3127",
+    "hanzi": "引导",
+    "pinyin": "yǐn dǎo",
+    "translations": [
+      "to guide",
+      "to lead (around)",
+      "to conduct",
+      "to boot",
+      "introduction",
+      "primer"
+    ]
+  },
+  {
+    "id": "3128",
+    "hanzi": "引进",
+    "pinyin": "yǐn jìn",
+    "translations": [
+      "to recommend",
+      "to introduce (from outside)"
+    ]
+  },
+  {
+    "id": "3129",
+    "hanzi": "引起",
+    "pinyin": "yǐn qǐ",
+    "translations": [
+      "to give rise to",
+      "to lead to",
+      "to cause",
+      "to arouse"
+    ]
+  },
+  {
+    "id": "3130",
+    "hanzi": "应",
+    "pinyin": "yīng",
+    "translations": [
+      "to agree (to do sth)",
+      "should",
+      "ought to",
+      "must",
+      "(legal) shall"
+    ]
+  },
+  {
+    "id": "3131",
+    "hanzi": "英勇",
+    "pinyin": "yīng yǒng",
+    "translations": [
+      "heroic",
+      "gallant",
+      "valiant"
+    ]
+  },
+  {
+    "id": "3132",
+    "hanzi": "营业",
+    "pinyin": "yíng yè",
+    "translations": [
+      "to do business",
+      "to trade"
+    ]
+  },
+  {
+    "id": "3133",
+    "hanzi": "赢得",
+    "pinyin": "yíng dé",
+    "translations": [
+      "to win",
+      "to gain"
+    ]
+  },
+  {
+    "id": "3134",
+    "hanzi": "影子",
+    "pinyin": "yǐng zi",
+    "translations": [
+      "shadow",
+      "reflection",
+      "(fig.) hint",
+      "indication",
+      "influence"
+    ]
+  },
+  {
+    "id": "3135",
+    "hanzi": "勇敢",
+    "pinyin": "yǒng gǎn",
+    "translations": [
+      "brave",
+      "courageous"
+    ]
+  },
+  {
+    "id": "3136",
+    "hanzi": "勇气",
+    "pinyin": "yǒng qì",
+    "translations": [
+      "courage",
+      "valor"
+    ]
+  },
+  {
+    "id": "3137",
+    "hanzi": "用途",
+    "pinyin": "yòng tú",
+    "translations": [
+      "use",
+      "application"
+    ]
+  },
+  {
+    "id": "3138",
+    "hanzi": "优良",
+    "pinyin": "yōu liáng",
+    "translations": [
+      "fine",
+      "good",
+      "first-rate"
+    ]
+  },
+  {
+    "id": "3139",
+    "hanzi": "优美",
+    "pinyin": "yōu měi",
+    "translations": [
+      "graceful",
+      "fine",
+      "elegant"
+    ]
+  },
+  {
+    "id": "3140",
+    "hanzi": "优秀",
+    "pinyin": "yōu xiù",
+    "translations": [
+      "outstanding",
+      "excellent"
+    ]
+  },
+  {
+    "id": "3141",
+    "hanzi": "邮局",
+    "pinyin": "yóu jú",
+    "translations": [
+      "post office"
+    ]
+  },
+  {
+    "id": "3142",
+    "hanzi": "有劲",
+    "pinyin": "yǒu jìn",
+    "translations": [
+      "to have great strength",
+      "vigorous, energetic"
+    ]
+  },
+  {
+    "id": "3143",
+    "hanzi": "有趣",
+    "pinyin": "yǒu qù",
+    "translations": [
+      "interesting",
+      "fascinating",
+      "amusing"
+    ]
+  },
+  {
+    "id": "3144",
+    "hanzi": "有限",
+    "pinyin": "yǒu xiàn",
+    "translations": [
+      "limited",
+      "finite"
+    ]
+  },
+  {
+    "id": "3145",
+    "hanzi": "幼儿园",
+    "pinyin": "yòu ér yuán",
+    "translations": [
+      "kindergarten",
+      "nursery school"
+    ]
+  },
+  {
+    "id": "3146",
+    "hanzi": "于是",
+    "pinyin": "yú shì",
+    "translations": [
+      "thereupon",
+      "as a result",
+      "consequently",
+      "thus",
+      "hence"
+    ]
+  },
+  {
+    "id": "3147",
+    "hanzi": "语法",
+    "pinyin": "yǔ fǎ",
+    "translations": [
+      "grammar"
+    ]
+  },
+  {
+    "id": "3148",
+    "hanzi": "语音",
+    "pinyin": "yǔ yīn",
+    "translations": [
+      "speech sounds",
+      "pronunciation",
+      "colloquial (rather than literary) pronunciation of a Chinese character",
+      "phonetic",
+      "audio",
+      "voice",
+      "(Internet) to voice chat",
+      "voice message"
+    ]
+  },
+  {
+    "id": "3149",
+    "hanzi": "玉",
+    "pinyin": "yù",
+    "translations": [
+      "jade"
+    ]
+  },
+  {
+    "id": "3150",
+    "hanzi": "玉米",
+    "pinyin": "yù mǐ",
+    "translations": [
+      "corn",
+      "maize"
+    ]
+  },
+  {
+    "id": "3151",
+    "hanzi": "预测",
+    "pinyin": "yù cè",
+    "translations": [
+      "to forecast",
+      "to predict"
+    ]
+  },
+  {
+    "id": "3152",
+    "hanzi": "预订",
+    "pinyin": "yù dìng",
+    "translations": [
+      "to place an order",
+      "to book ahead"
+    ]
+  },
+  {
+    "id": "3153",
+    "hanzi": "遇",
+    "pinyin": "yù",
+    "translations": [
+      "to meet",
+      "to encounter",
+      "to treat",
+      "to receive",
+      "opportunity",
+      "chance"
+    ]
+  },
+  {
+    "id": "3154",
+    "hanzi": "遇到",
+    "pinyin": "yù dào",
+    "translations": [
+      "to meet",
+      "to run into",
+      "to come across"
+    ]
+  },
+  {
+    "id": "3155",
+    "hanzi": "遇见",
+    "pinyin": "yù jiàn",
+    "translations": [
+      "to meet"
+    ]
+  },
+  {
+    "id": "3156",
+    "hanzi": "原料",
+    "pinyin": "yuán liào",
+    "translations": [
+      "raw material"
+    ]
+  },
+  {
+    "id": "3157",
+    "hanzi": "原则",
+    "pinyin": "yuán zé",
+    "translations": [
+      "principle",
+      "doctrine"
+    ]
+  },
+  {
+    "id": "3158",
+    "hanzi": "圆",
+    "pinyin": "yuán",
+    "translations": [
+      "circle",
+      "round",
+      "circular",
+      "spherical",
+      "(of the moon) full",
+      "unit of Chinese currency (Yuan)",
+      "tactful",
+      "to justify"
+    ]
+  },
+  {
+    "id": "3159",
+    "hanzi": "圆满",
+    "pinyin": "yuán mǎn",
+    "translations": [
+      "satisfactory",
+      "consummate",
+      "perfect"
+    ]
+  },
+  {
+    "id": "3160",
+    "hanzi": "约会",
+    "pinyin": "yuē huì",
+    "translations": [
+      "appointment",
+      "engagement",
+      "date",
+      "to arrange to meet"
+    ]
+  },
+  {
+    "id": "3161",
+    "hanzi": "月底",
+    "pinyin": "yuè dǐ",
+    "translations": [
+      "end of the month"
+    ]
+  },
+  {
+    "id": "3162",
+    "hanzi": "阅读",
+    "pinyin": "yuè dú",
+    "translations": [
+      "to read",
+      "reading"
+    ]
+  },
+  {
+    "id": "3163",
+    "hanzi": "运动会",
+    "pinyin": "yùn dòng huì",
+    "translations": [
+      "sports competition"
+    ]
+  },
+  {
+    "id": "3164",
+    "hanzi": "运动员",
+    "pinyin": "yùn dòng yuán",
+    "translations": [
+      "athlete"
+    ]
+  },
+  {
+    "id": "3165",
+    "hanzi": "运气",
+    "pinyin": "yùn qi",
+    "translations": [
+      "luck (good or bad)"
+    ]
+  },
+  {
+    "id": "3166",
+    "hanzi": "运用",
+    "pinyin": "yùn yòng",
+    "translations": [
+      "to use",
+      "to put to use"
+    ]
+  },
+  {
+    "id": "3167",
+    "hanzi": "再三",
+    "pinyin": "zài sān",
+    "translations": [
+      "over and over again",
+      "again and again"
+    ]
+  },
+  {
+    "id": "3168",
+    "hanzi": "在乎",
+    "pinyin": "zài hu",
+    "translations": [
+      "to care about",
+      "equivalent of 在於|在于[zài yú]"
+    ]
+  },
+  {
+    "id": "3169",
+    "hanzi": "在于",
+    "pinyin": "zài yú",
+    "translations": [
+      "to be in",
+      "to lie in",
+      "to consist in",
+      "to depend on",
+      "to rest with"
+    ]
+  },
+  {
+    "id": "3170",
+    "hanzi": "赞成",
+    "pinyin": "zàn chéng",
+    "translations": [
+      "to approve",
+      "to endorse",
+      "(literary) to assist"
+    ]
+  },
+  {
+    "id": "3171",
+    "hanzi": "赞赏",
+    "pinyin": "zàn shǎng",
+    "translations": [
+      "to admire",
+      "to praise",
+      "to appreciate"
+    ]
+  },
+  {
+    "id": "3172",
+    "hanzi": "赞助",
+    "pinyin": "zàn zhù",
+    "translations": [
+      "to support",
+      "to assist",
+      "to sponsor"
+    ]
+  },
+  {
+    "id": "3173",
+    "hanzi": "造型",
+    "pinyin": "zào xíng",
+    "translations": [
+      "to model",
+      "to shape",
+      "appearance",
+      "style",
+      "design",
+      "form",
+      "pose"
+    ]
+  },
+  {
+    "id": "3174",
+    "hanzi": "战斗",
+    "pinyin": "zhàn dòu",
+    "translations": [
+      "to fight",
+      "to engage in combat",
+      "struggle",
+      "battle"
+    ]
+  },
+  {
+    "id": "3175",
+    "hanzi": "战胜",
+    "pinyin": "zhàn shèng",
+    "translations": [
+      "to prevail over",
+      "to defeat",
+      "to surmount"
+    ]
+  },
+  {
+    "id": "3176",
+    "hanzi": "战士",
+    "pinyin": "zhàn shì",
+    "translations": [
+      "fighter",
+      "soldier",
+      "warrior"
+    ]
+  },
+  {
+    "id": "3177",
+    "hanzi": "战争",
+    "pinyin": "zhàn zhēng",
+    "translations": [
+      "war",
+      "conflict"
+    ]
+  },
+  {
+    "id": "3178",
+    "hanzi": "丈夫",
+    "pinyin": "zhàng fu",
+    "translations": [
+      "husband"
+    ]
+  },
+  {
+    "id": "3179",
+    "hanzi": "招呼",
+    "pinyin": "zhāo hu",
+    "translations": [
+      "to call out to",
+      "to greet",
+      "to say hello to",
+      "to inform",
+      "to take care of",
+      "to take care that one does not"
+    ]
+  },
+  {
+    "id": "3180",
+    "hanzi": "着",
+    "pinyin": "zháo",
+    "translations": [
+      "to touch",
+      "to come in contact with",
+      "to feel",
+      "to be affected by",
+      "to catch fire",
+      "to burn",
+      "(coll.) to fall asleep",
+      "(after a verb) hitting the mark",
+      "succeeding in"
+    ]
+  },
+  {
+    "id": "3181",
+    "hanzi": "着火",
+    "pinyin": "zháo huǒ",
+    "translations": [
+      "to ignite",
+      "to burn"
+    ]
+  },
+  {
+    "id": "3182",
+    "hanzi": "着急",
+    "pinyin": "zháo jí",
+    "translations": [
+      "to worry",
+      "to feel anxious",
+      "Taiwan pr. [zhāo jí]"
+    ]
+  },
+  {
+    "id": "3183",
+    "hanzi": "召开",
+    "pinyin": "zhào kāi",
+    "translations": [
+      "to convene (a conference or meeting)",
+      "to convoke",
+      "to call together"
+    ]
+  },
+  {
+    "id": "3184",
+    "hanzi": "折",
+    "pinyin": "zhé",
+    "translations": [
+      "to break",
+      "to fracture",
+      "to snap",
+      "to suffer loss",
+      "to bend",
+      "to twist",
+      "to turn",
+      "to change direction",
+      "convinced",
+      "to convert into (currency)",
+      "discount",
+      "rebate",
+      "tenth (in price)",
+      "classifier for theatrical scenes",
+      "to fold",
+      "accounts book"
+    ]
+  },
+  {
+    "id": "3185",
+    "hanzi": "针",
+    "pinyin": "zhēn",
+    "translations": [
+      "needle",
+      "pin",
+      "injection",
+      "stitch"
+    ]
+  },
+  {
+    "id": "3186",
+    "hanzi": "针对",
+    "pinyin": "zhēn duì",
+    "translations": [
+      "to target",
+      "to focus on",
+      "to be aimed at or against",
+      "in response to"
+    ]
+  },
+  {
+    "id": "3187",
+    "hanzi": "阵",
+    "pinyin": "zhèn",
+    "translations": [
+      "disposition of troops",
+      "wave",
+      "spate",
+      "burst",
+      "spell",
+      "short period of time",
+      "classifier for events or states of short duration"
+    ]
+  },
+  {
+    "id": "3188",
+    "hanzi": "争论",
+    "pinyin": "zhēng lùn",
+    "translations": [
+      "to argue",
+      "to debate",
+      "to contend",
+      "argument",
+      "contention",
+      "controversy",
+      "debate"
+    ]
+  },
+  {
+    "id": "3189",
+    "hanzi": "征服",
+    "pinyin": "zhēng fú",
+    "translations": [
+      "to conquer",
+      "to subdue",
+      "to vanquish"
+    ]
+  },
+  {
+    "id": "3190",
+    "hanzi": "征求",
+    "pinyin": "zhēng qiú",
+    "translations": [
+      "to solicit",
+      "to seek",
+      "to request (opinions, feedback etc)",
+      "to petition"
+    ]
+  },
+  {
+    "id": "3191",
+    "hanzi": "政府",
+    "pinyin": "zhèng fǔ",
+    "translations": [
+      "government"
+    ]
+  },
+  {
+    "id": "3192",
+    "hanzi": "政治",
+    "pinyin": "zhèng zhì",
+    "translations": [
+      "politics",
+      "political"
+    ]
+  },
+  {
+    "id": "3193",
+    "hanzi": "之后",
+    "pinyin": "zhī hòu",
+    "translations": [
+      "afterwards",
+      "following",
+      "later",
+      "after"
+    ]
+  },
+  {
+    "id": "3194",
+    "hanzi": "之间",
+    "pinyin": "zhī jiān",
+    "translations": [
+      "between",
+      "among",
+      "inter-"
+    ]
+  },
+  {
+    "id": "3195",
+    "hanzi": "之前",
+    "pinyin": "zhī qián",
+    "translations": [
+      "before",
+      "prior to",
+      "ago",
+      "previously",
+      "beforehand"
+    ]
+  },
+  {
+    "id": "3196",
+    "hanzi": "之一",
+    "pinyin": "zhī yī",
+    "translations": [
+      "one of (sth)",
+      "one out of a multitude",
+      "one (third, quarter, percent etc)"
+    ]
+  },
+  {
+    "id": "3197",
+    "hanzi": "支",
+    "pinyin": "zhī",
+    "translations": [
+      "to support",
+      "to sustain",
+      "to erect",
+      "to raise",
+      "branch",
+      "division",
+      "to draw money",
+      "classifier for rods such as pens and guns, for army divisions and for songs or compositions"
+    ]
+  },
+  {
+    "id": "3198",
+    "hanzi": "植物",
+    "pinyin": "zhí wù",
+    "translations": [
+      "plant",
+      "vegetation"
+    ]
+  },
+  {
+    "id": "3199",
+    "hanzi": "指挥",
+    "pinyin": "zhǐ huī",
+    "translations": [
+      "to conduct",
+      "to command",
+      "to direct",
+      "conductor (of an orchestra)"
+    ]
+  },
+  {
+    "id": "3200",
+    "hanzi": "制订",
+    "pinyin": "zhì dìng",
+    "translations": [
+      "to work out",
+      "to formulate"
+    ]
+  },
+  {
+    "id": "3201",
+    "hanzi": "质量",
+    "pinyin": "zhì liàng",
+    "translations": [
+      "quality",
+      "(physics) mass"
+    ]
+  },
+  {
+    "id": "3202",
+    "hanzi": "治",
+    "pinyin": "zhì",
+    "translations": [
+      "to rule",
+      "to govern",
+      "to manage",
+      "to control",
+      "to harness (a river)",
+      "to treat (a disease)",
+      "to wipe out (a pest)",
+      "to punish",
+      "to research"
+    ]
+  },
+  {
+    "id": "3203",
+    "hanzi": "治疗",
+    "pinyin": "zhì liáo",
+    "translations": [
+      "to treat (an illness)",
+      "medical treatment",
+      "therapy"
+    ]
+  },
+  {
+    "id": "3204",
+    "hanzi": "智力",
+    "pinyin": "zhì lì",
+    "translations": [
+      "intelligence",
+      "intellect"
+    ]
+  },
+  {
+    "id": "3205",
+    "hanzi": "智能",
+    "pinyin": "zhì néng",
+    "translations": [
+      "intelligent",
+      "able",
+      "smart (phone, system, bomb etc)"
+    ]
+  },
+  {
+    "id": "3206",
+    "hanzi": "中介",
+    "pinyin": "zhōng jiè",
+    "translations": [
+      "to act as intermediary",
+      "to link",
+      "intermediate",
+      "inter-",
+      "agency",
+      "agent"
+    ]
+  },
+  {
+    "id": "3207",
+    "hanzi": "种类",
+    "pinyin": "zhǒng lèi",
+    "translations": [
+      "kind",
+      "genus",
+      "type",
+      "category",
+      "variety",
+      "species",
+      "sort",
+      "class"
+    ]
+  },
+  {
+    "id": "3208",
+    "hanzi": "中奖",
+    "pinyin": "zhòng jiǎng",
+    "translations": [
+      "to win a prize",
+      "a successful gamble"
+    ]
+  },
+  {
+    "id": "3209",
+    "hanzi": "种",
+    "pinyin": "zhòng",
+    "translations": [
+      "to plant",
+      "to grow",
+      "to cultivate"
+    ]
+  },
+  {
+    "id": "3210",
+    "hanzi": "种植",
+    "pinyin": "zhòng zhí",
+    "translations": [
+      "to plant",
+      "to grow"
+    ]
+  },
+  {
+    "id": "3211",
+    "hanzi": "重量",
+    "pinyin": "zhòng liàng",
+    "translations": [
+      "weight"
+    ]
+  },
+  {
+    "id": "3212",
+    "hanzi": "逐步",
+    "pinyin": "zhú bù",
+    "translations": [
+      "progressively",
+      "step by step"
+    ]
+  },
+  {
+    "id": "3213",
+    "hanzi": "逐渐",
+    "pinyin": "zhú jiàn",
+    "translations": [
+      "gradually"
+    ]
+  },
+  {
+    "id": "3214",
+    "hanzi": "主题",
+    "pinyin": "zhǔ tí",
+    "translations": [
+      "theme",
+      "subject"
+    ]
+  },
+  {
+    "id": "3215",
+    "hanzi": "主席",
+    "pinyin": "zhǔ xí",
+    "translations": [
+      "chairperson",
+      "premier",
+      "chairman"
+    ]
+  },
+  {
+    "id": "3216",
+    "hanzi": "祝福",
+    "pinyin": "zhù fú",
+    "translations": [
+      "blessings",
+      "to wish sb well"
+    ]
+  },
+  {
+    "id": "3217",
+    "hanzi": "著名",
+    "pinyin": "zhù míng",
+    "translations": [
+      "famous",
+      "noted",
+      "well-known",
+      "celebrated"
+    ]
+  },
+  {
+    "id": "3218",
+    "hanzi": "著作",
+    "pinyin": "zhù zuò",
+    "translations": [
+      "to write",
+      "literary work",
+      "book",
+      "article",
+      "writings"
+    ]
+  },
+  {
+    "id": "3219",
+    "hanzi": "抓紧",
+    "pinyin": "zhuā jǐn",
+    "translations": [
+      "to grasp firmly",
+      "to pay special attention to",
+      "to rush in",
+      "to make the most of"
+    ]
+  },
+  {
+    "id": "3220",
+    "hanzi": "专心",
+    "pinyin": "zhuān xīn",
+    "translations": [
+      "to concentrate",
+      "absorption",
+      "concentration",
+      "engrossed"
+    ]
+  },
+  {
+    "id": "3221",
+    "hanzi": "转动",
+    "pinyin": "zhuǎn dòng",
+    "translations": [
+      "to turn sth around",
+      "to swivel"
+    ]
+  },
+  {
+    "id": "3222",
+    "hanzi": "转告",
+    "pinyin": "zhuǎn gào",
+    "translations": [
+      "to pass on",
+      "to communicate",
+      "to transmit"
+    ]
+  },
+  {
+    "id": "3223",
+    "hanzi": "转身",
+    "pinyin": "zhuǎn shēn",
+    "translations": [
+      "(of a person) to turn round",
+      "to face about",
+      "(of a widow) to remarry (archaic)"
+    ]
+  },
+  {
+    "id": "3224",
+    "hanzi": "转弯",
+    "pinyin": "zhuǎn wān",
+    "translations": [
+      "to turn",
+      "to go around a corner"
+    ]
+  },
+  {
+    "id": "3225",
+    "hanzi": "转移",
+    "pinyin": "zhuǎn yí",
+    "translations": [
+      "to shift",
+      "to divert or distract (attention etc)",
+      "to change",
+      "to transform",
+      "metastasis (medicine)",
+      "to evacuate (people)"
+    ]
+  },
+  {
+    "id": "3226",
+    "hanzi": "装修",
+    "pinyin": "zhuāng xiū",
+    "translations": [
+      "to decorate",
+      "interior decoration",
+      "to fit up",
+      "to renovate"
+    ]
+  },
+  {
+    "id": "3227",
+    "hanzi": "装置",
+    "pinyin": "zhuāng zhì",
+    "translations": [
+      "to install",
+      "installation",
+      "equipment",
+      "system",
+      "unit",
+      "device"
+    ]
+  },
+  {
+    "id": "3228",
+    "hanzi": "追求",
+    "pinyin": "zhuī qiú",
+    "translations": [
+      "to pursue (a goal etc) stubbornly",
+      "to seek after",
+      "to woo"
+    ]
+  },
+  {
+    "id": "3229",
+    "hanzi": "准时",
+    "pinyin": "zhǔn shí",
+    "translations": [
+      "on time",
+      "punctual",
+      "on schedule"
+    ]
+  },
+  {
+    "id": "3230",
+    "hanzi": "资料",
+    "pinyin": "zī liào",
+    "translations": [
+      "material",
+      "resources",
+      "data",
+      "information",
+      "profile (Internet)"
+    ]
+  },
+  {
+    "id": "3231",
+    "hanzi": "资源",
+    "pinyin": "zī yuán",
+    "translations": [
+      "natural resource (such as water or minerals)",
+      "resource (such as manpower or tourism)"
+    ]
+  },
+  {
+    "id": "3232",
+    "hanzi": "自",
+    "pinyin": "zì",
+    "translations": [
+      "self",
+      "oneself",
+      "from",
+      "since",
+      "naturally",
+      "surely"
+    ]
+  },
+  {
+    "id": "3233",
+    "hanzi": "自信",
+    "pinyin": "zì xìn",
+    "translations": [
+      "to have confidence in oneself",
+      "self-confidence"
+    ]
+  },
+  {
+    "id": "3234",
+    "hanzi": "字母",
+    "pinyin": "zì mǔ",
+    "translations": [
+      "letter (of the alphabet)"
+    ]
+  },
+  {
+    "id": "3235",
+    "hanzi": "综合",
+    "pinyin": "zōng hé",
+    "translations": [
+      "comprehensive",
+      "composite",
+      "synthesized",
+      "mixed",
+      "to sum up",
+      "to integrate",
+      "to synthesize"
+    ]
+  },
+  {
+    "id": "3236",
+    "hanzi": "总共",
+    "pinyin": "zǒng gòng",
+    "translations": [
+      "altogether",
+      "in sum",
+      "in all",
+      "in total"
+    ]
+  },
+  {
+    "id": "3237",
+    "hanzi": "总理",
+    "pinyin": "zǒng lǐ",
+    "translations": [
+      "premier",
+      "prime minister"
+    ]
+  },
+  {
+    "id": "3238",
+    "hanzi": "总统",
+    "pinyin": "zǒng tǒng",
+    "translations": [
+      "president (of a country)"
+    ]
+  },
+  {
+    "id": "3239",
+    "hanzi": "总之",
+    "pinyin": "zǒng zhī",
+    "translations": [
+      "in a word",
+      "in short",
+      "in brief"
+    ]
+  },
+  {
+    "id": "3240",
+    "hanzi": "阻止",
+    "pinyin": "zǔ zhǐ",
+    "translations": [
+      "to prevent",
+      "to block"
+    ]
+  },
+  {
+    "id": "3241",
+    "hanzi": "嘴巴",
+    "pinyin": "zuǐ ba",
+    "translations": [
+      "mouth",
+      "slap in the face"
+    ]
+  },
+  {
+    "id": "3242",
+    "hanzi": "最初",
+    "pinyin": "zuì chū",
+    "translations": [
+      "first",
+      "primary",
+      "initial",
+      "original",
+      "at first",
+      "initially",
+      "originally"
+    ]
+  },
+  {
+    "id": "3243",
+    "hanzi": "作出",
+    "pinyin": "zuò chū",
+    "translations": [
+      "to put out",
+      "to come up with",
+      "to make (a choice, decision, proposal, response, comment etc)",
+      "to issue (a permit, statement, explanation, apology, reassurance to the public etc)",
+      "to draw (conclusion)",
+      "to deliver (speech, judgment)",
+      "to devise (explanation)",
+      "to extract"
+    ]
+  },
+  {
+    "id": "3244",
+    "hanzi": "作为",
+    "pinyin": "zuò wéi",
+    "translations": [
+      "one’s conduct",
+      "deed",
+      "activity",
+      "accomplishment",
+      "achievement",
+      "to act as",
+      "as (in the capacity of)",
+      "qua",
+      "to view as",
+      "to look upon (sth as)",
+      "to take sth to be"
+    ]
+  },
+  {
+    "id": "3245",
+    "hanzi": "做梦",
+    "pinyin": "zuò mèng",
+    "translations": [
+      "to dream",
+      "to have a dream",
+      "fig. illusion",
+      "fantasy",
+      "pipe dream"
+    ]
+  }
+]

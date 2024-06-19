@@ -110,7 +110,7 @@ export const FormTextarea = React.forwardRef(function FormTextarea(
       style={{
         minHeight,
       }}
-      className="relative bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-[200ms] text-secondary focus:text-white placeholder:text-secondary/50 focus:outline-none w-full h-[8.5rem] peer resize-none scrollbar-none"
+      className="relative bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-200 text-secondary focus:text-white placeholder:text-secondary/50 focus:outline-none w-full h-[8.5rem] peer resize-none scrollbar-none"
       spellCheck={false}
       value={displayedValue}
     />

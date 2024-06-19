@@ -67,7 +67,7 @@ export function Onboarding({ onContinue }: { onContinue: () => void }) {
         >
           <div
             ref={ref}
-            className="absolute opacity-0 w-full bg-hovered rounded-lg ease duration-[200ms] will-change-transform"
+            className="absolute opacity-0 w-full bg-hovered rounded-lg ease duration-200 will-change-transform"
           ></div>
 
           {texts.map((text, index) => {

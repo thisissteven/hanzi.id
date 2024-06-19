@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, HyperLinkButton, LinkButton } from "./buttons";
-import { GraduationCapIcon, LibraryBigIcon, MessageSquareHeartIcon, TargetIcon } from "lucide-react";
+import { GraduationCapIcon, LanguagesIcon, LibraryBigIcon, MessageSquareHeartIcon, TargetIcon } from "lucide-react";
 import { Divider } from "@/components";
 
 export function HomeTodo() {
@@ -11,12 +11,10 @@ export function HomeTodo() {
       <Divider />
 
       <div className="grid md:grid-cols-2 gap-4">
-        <HyperLinkButton
+        <LinkButton
           className="hover:bg-yellow-500/10"
-          icon={
-            <GraduationCapIcon size={48} strokeWidth={1.5} className="duration-[200ms] group-hover:text-yellow-500" />
-          }
-          href="https://learn-hsk.vercel.app"
+          icon={<GraduationCapIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-yellow-500" />}
+          href="/hsk/1"
           title="Learn HSK 1-9"
           description="Chinese HSK vocabulary lists and practice exams."
         />
@@ -24,31 +22,23 @@ export function HomeTodo() {
         <LinkButton
           href="/new"
           className="hover:bg-indigo-500/10"
-          icon={<TargetIcon size={48} strokeWidth={1.5} className="duration-[200ms] group-hover:text-indigo-500" />}
+          icon={<TargetIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-indigo-500" />}
           title="Immersed reading"
           description="Upload PDFs, texts or images to practice reading."
         />
 
         <LinkButton
-          href="/discuss"
+          href="/flashcards"
           className="hover:bg-pink-500/10"
-          icon={
-            <MessageSquareHeartIcon
-              size={48}
-              strokeWidth={1.5}
-              className="duration-[200ms] group-hover:text-pink-500"
-            />
-          }
-          title="Sharing room"
-          description="Discuss Chinese language learning with others."
+          icon={<LanguagesIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-pink-500" />}
+          title="Flashcards"
+          description="Memorize words and phrases with spaced repetition."
         />
 
         <LinkButton
           href="/library"
           className="hover:bg-emerald-500/10"
-          icon={
-            <LibraryBigIcon size={48} strokeWidth={1.5} className="duration-[200ms] group-hover:text-emerald-500" />
-          }
+          icon={<LibraryBigIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-emerald-500" />}
           title="Library"
           description="View your saved collections and continue reading."
         />

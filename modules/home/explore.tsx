@@ -143,7 +143,7 @@ export function Explore() {
                 key={chip}
                 onClick={() => setSelected(index)}
                 className={cn(
-                  "px-2 py-1 mr-2 duration-[200ms]",
+                  "px-2 py-1 mr-2 duration-200",
                   selected === index ? "underline underline-offset-4 text-emerald-400" : ""
                 )}
               >
@@ -160,7 +160,7 @@ export function Explore() {
             <li key={index}>
               <CustomRouteButton
                 path="/read/id"
-                className="text-left py-4 max-md:-ml-4 w-[calc(100%+2rem)] max-md:px-4 md:w-full md:hover:bg-hovered active:bg-hovered md:rounded-md duration-[200ms]"
+                className="text-left py-4 max-md:-ml-4 w-[calc(100%+2rem)] max-md:px-4 md:w-full md:hover:bg-hovered active:bg-hovered md:rounded-md duration-200"
               >
                 <div className="flex items-center gap-4">
                   <div className="w-4 max-md:hidden -ml-6 grid place-items-center">{index + 1}</div>
@@ -189,7 +189,7 @@ export function Explore() {
 
       <CustomRouteButton
         path="/explore"
-        className="mt-4 w-full py-3 font-medium rounded-md bg-subtle/50 active:bg-hovered duration-[200ms]"
+        className="mt-4 w-full py-3 font-medium rounded-md bg-subtle/50 active:bg-hovered duration-200"
       >
         View All
       </CustomRouteButton>

@@ -23,7 +23,7 @@ export function Line({ onMouseEnter, index, currentSentenceIndex, isLast, childr
         shouldShow && "opacity-100",
         isRevealed && !isLast && "opacity-30 duration-[2000ms]",
         isNotYetRevealed && "opacity-0",
-        isRevealed && "cursor-default hover:blur-0 hover:opacity-100 hover:delay-0 hover:duration-[200ms]"
+        isRevealed && "cursor-default hover:blur-0 hover:opacity-100 hover:delay-0 hover:duration-200"
       )}
     >
       <p className="py-2 relative pointer-events-none">{children}</p>
