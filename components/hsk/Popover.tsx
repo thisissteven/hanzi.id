@@ -26,7 +26,7 @@ export function Popover({ children }: { children: React.ReactNode }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 brightness-0 z-40"
+            className="fixed inset-0 bg-black/50 brightness-0 z-50"
           ></motion.div>
         )}
       </AnimatePresence>
@@ -52,7 +52,7 @@ Popover.Content = function PopoverContent({
         sideOffset={4}
         align={align}
         className={cn(
-          "z-40 data-[align=start]:-ml-2 data-[align=end]:ml-2 bg-softblack py-2 rounded-md duration-200 shadow-xl",
+          "z-50 data-[align=start]:-ml-2 data-[align=end]:ml-2 bg-softblack py-2 rounded-md duration-200 shadow-xl",
           "data-[state=open]:animate-in data-[state=open]:fade-in data-[state=open]:slide-in-from-top-2",
           "data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=closed]:slide-out-to-top-2 data-[state=closed]:duration-300",
           className
@@ -71,7 +71,7 @@ Popover.Trigger = function PopoverTrigger({ children, className, ...rest }: Radi
 
   const delayedOpen = useDebounce(open, 300);
   return (
-    <RadixPopover.Trigger className={cn("relative", (open || delayedOpen) && "z-40", className)} {...rest}>
+    <RadixPopover.Trigger className={cn("relative", (open || delayedOpen) && "z-50", className)} {...rest}>
       {children}
     </RadixPopover.Trigger>
   );
