@@ -1,14 +1,14 @@
 {
   "name": "Focus",
   "short_name": "Focus",
-  "theme_color": "#050a0e",
-  "background_color": "#050a0e",
+  "theme_color": "#101010",
+  "background_color": "#101010",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icons/android-icon-384x384.png",
+      "src": "/icons/splash-icon.svg",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
