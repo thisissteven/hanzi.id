@@ -19,9 +19,9 @@ export function Line({ onMouseEnter, index, currentSentenceIndex, isLast, childr
       onMouseEnter={onMouseEnter}
       className={cn(
         "relative px-3 md:px-4 ease duration-500",
-        shouldBlur && !isLast && "blur-[2px] duration-[2000ms]",
+        shouldBlur && !isLast && "blur-[2px] transition-two-thousand",
         shouldShow && "opacity-100",
-        isRevealed && !isLast && "opacity-30 duration-[2000ms]",
+        isRevealed && !isLast && "opacity-30 transition-two-thousand",
         isNotYetRevealed && "opacity-0",
         isRevealed && "cursor-default hover:blur-0 hover:opacity-100 hover:delay-0 hover:duration-200"
       )}

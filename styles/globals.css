@@ -74,6 +74,10 @@
   -webkit-box-decoration-break: clone;
 }
 
+.transition-two-thousand {
+  transition-duration: 2000ms;
+}
+
 .ease {
   transition-property: all;
   transition-timing-function: ease;

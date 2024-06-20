@@ -52,7 +52,7 @@ export function CharacterCard({
           transform: rotateY(180deg);
         }
       `}</style>
-      <div onClick={onFlip} className="select-none font-chinese text-3xl aspect-square">
+      <div onClick={onFlip} className="select-none text-3xl aspect-square">
         <div className={clsx("relative w-full h-full card", isFlipped && "card-flipped")}>
           <div
             className={clsx(
@@ -60,7 +60,7 @@ export function CharacterCard({
               isCompleted ? "border-mossgreen shadow-mossgreen text-wheat" : "border-border shadow-border"
             )}
           >
-            {hanzi}
+            <span className="font-chinese">{hanzi}</span>
 
             <MarkAsCompleted
               className={isCompleted ? "bg-transparent" : ""}

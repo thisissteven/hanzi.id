@@ -29,27 +29,25 @@ export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziA
 
               return (
                 <li key={index} className="list-none">
-                  <div className="font-chinese">
-                    <Popover>
-                      <Popover.Trigger className="text-left sm:text-lg">
-                        {splitted.map((part) => {
-                          if (part === hanzi)
-                            return (
-                              <span className="text-wheat" key={part}>
-                                {hanzi}
-                              </span>
-                            );
-                          return part;
-                        })}
-                      </Popover.Trigger>
-                      <Popover.Content
-                        align="start"
-                        className="text-xs sm:text-sm leading-5 font-chinese text-smokewhite px-2 max-w-[calc(100vw-1rem)] md:max-w-[calc(540px-1rem)]"
-                      >
-                        <p>{idiom.pinyin}</p>
-                      </Popover.Content>
-                    </Popover>
-                  </div>
+                  <Popover>
+                    <Popover.Trigger className="text-left sm:text-lg font-chinese">
+                      {splitted.map((part) => {
+                        if (part === hanzi)
+                          return (
+                            <span className="text-wheat" key={part}>
+                              {hanzi}
+                            </span>
+                          );
+                        return part;
+                      })}
+                    </Popover.Trigger>
+                    <Popover.Content
+                      align="start"
+                      className="text-xs sm:text-sm leading-5 text-smokewhite px-2 max-w-[calc(100vw-1rem)] md:max-w-[calc(540px-1rem)]"
+                    >
+                      <p>{idiom.pinyin}</p>
+                    </Popover.Content>
+                  </Popover>
                   <p className="text-sm sm:text-base text-lightgray">{idiom.definition}</p>
                 </li>
               );

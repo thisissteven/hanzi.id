@@ -34,7 +34,8 @@ const levelToHanzi = (level: string) => {
 
 export function DesktopSidebar() {
   return (
-    <aside className="pl-4 pt-20 max-md:hidden sticky top-0 h-fit min-w-64">
+    // pl-4 pt-20 max-md:hidden sticky top-0 h-fit min-w-64
+    <aside className="px-4 pb-4 pt-20 z-10 max-md:hidden sticky top-0 h-dvh overflow-y-auto min-w-64">
       <ul className="space-y-1">
         <HSKLevelItems />
       </ul>
@@ -60,8 +61,8 @@ export function MobileSidebar() {
           </button>
         </Drawer.Trigger>
 
-        <Drawer.Content className="w-full">
-          <aside className="relative h-fit">
+        <Drawer.Content className="w-full h-full max-h-dvh">
+          <aside className="relative h-full overflow-y-auto scrollbar-none">
             <ul className="space-y-2">
               <HSKLevelItems isDrawer />
             </ul>
@@ -88,7 +89,7 @@ export function SidebarItem({
   return (
     <li
       className={clsx(
-        "flex rounded-md md:rounded items-center gap-4 relative font-medium text-lg list-none",
+        "flex rounded-md md:rounded items-center gap-4 relative font-medium text-lg list-none duration-200",
         !isActive && "active:bg-softblack"
       )}
     >

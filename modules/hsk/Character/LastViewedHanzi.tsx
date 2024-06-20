@@ -27,20 +27,14 @@ export function LastViewedHanzi() {
           toast.custom(
             (t) => {
               return (
-                <div className="min-w-[300px] font-sans bg-black text-smokewhite border-2 border-blue-200/80 rounded-lg px-4 py-3 flex justify-between items-center">
+                <div className="min-w-[300px] bg-black text-smokewhite border-2 border-blue-200/80 rounded-lg px-4 py-3 flex justify-between items-center">
                   <div className="text-blue-300">
-                    {lastViewedHanzi} <span className="text-xs">(last visited)</span>
+                    {lastViewedHanzi.character} <span className="text-xs">(last visited)</span>
                   </div>
                   <button
                     className="px-2 py-1 text-sm bg-blue-500/10 active:bg-blue-500/20 transition text-blue-300 rounded-md"
                     onClick={() => {
-                      router.push(
-                        `/hsk/${router.query.level}?hanzi=${lastViewedHanzi}&page=${router.query.page ?? 1}`,
-                        undefined,
-                        {
-                          shallow: true,
-                        }
-                      );
+                      router.push(lastViewedHanzi.pathname);
                       toast.dismiss(t);
                     }}
                   >

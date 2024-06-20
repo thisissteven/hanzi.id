@@ -1,7 +1,10 @@
 import { create } from "zustand";
 
 interface LastViewedHanziState {
-  lastViewedHanzi: string | null;
+  lastViewedHanzi: {
+    character: string;
+    pathname: string;
+  } | null;
 
   actions: {
     hydrateLastViewedHanzi: () => void;
@@ -18,7 +21,7 @@ const useLastViewedHanziStore = create<LastViewedHanziState>()((set) => ({
         const lastViewedHanzi = localStorage.getItem(LAST_VIEWED_HANZI_KEY);
         if (!lastViewedHanzi) return { lastViewedHanzi: null };
         return {
-          lastViewedHanzi,
+          lastViewedHanzi: JSON.parse(lastViewedHanzi),
         };
       }),
   },

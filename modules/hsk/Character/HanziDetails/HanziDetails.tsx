@@ -49,17 +49,29 @@ export function HanziDetails({
   const pinyin = currentEntry.pinyin;
   const audioUrl = BASE_URL + `/api/audio/${encodeURI(hanzi)}?pinyin=${pinyin}`;
 
+  const isIdiom = definition.simplified.length === 4;
+
   return (
     <div ref={ref} className="overflow-y-auto flex-1 scrollbar-none py-4">
       {<span className="px-4 text-sm">HSK {currentLevel}</span>}
       <div className="space-y-2">
-        <div className="flex items-end gap-2 px-4">
-          <p className="text-6xl font-chinese">{definition.simplified}</p>
-          <div>
-            <AudioButton key={audioUrl} url={audioUrl} />
-            <p className="font-medium">{currentEntry.pinyin}</p>
+        {isIdiom ? (
+          <>
+            <p className="px-4 text-6xl font-chinese">{definition.simplified}</p>
+            <div className="flex items-end gap-2 px-4">
+              <p className="font-medium">{currentEntry.pinyin}</p>
+              <AudioButton key={audioUrl} url={audioUrl} />
+            </div>
+          </>
+        ) : (
+          <div className="flex items-end gap-2 px-4">
+            <p className="text-6xl font-chinese">{definition.simplified}</p>
+            <div>
+              <AudioButton key={audioUrl} url={audioUrl} />
+              <p className="font-medium">{currentEntry.pinyin}</p>
+            </div>
           </div>
-        </div>
+        )}
         {entryLength > 1 && (
           <div className="space-x-2 px-4">
             {definition.entries.map((_, index) => {

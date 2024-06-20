@@ -22,10 +22,17 @@ export function HanziModal() {
   const { width } = useWindowSize();
 
   React.useEffect(() => {
-    if (typeof window !== "undefined" && hanzi) {
-      localStorage.setItem(LAST_VIEWED_HANZI_KEY, hanzi);
+    const pathname = `/hsk/${router.query.level}?hanzi=${hanzi}&page=${router.query.page}`;
+    if (typeof window !== "undefined" && !pathname.includes("undefined")) {
+      localStorage.setItem(
+        LAST_VIEWED_HANZI_KEY,
+        JSON.stringify({
+          character: hanzi,
+          pathname,
+        })
+      );
     }
-  }, [hanzi]);
+  }, [hanzi, router]);
 
   const currentLevel = router.query.level as unknown as Level;
 
