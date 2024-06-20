@@ -18,9 +18,13 @@ const useLastViewedHanziStore = create<LastViewedHanziState>()((set) => ({
   lastViewedHanzi: null,
   actions: {
     handleValueMismatch: () => {
-      const lastViewedHanzi = localStorage.getItem(LAST_VIEWED_HANZI_KEY);
-      if (lastViewedHanzi) {
-        !JSON.parse(lastViewedHanzi).pathname && localStorage.removeItem(LAST_VIEWED_HANZI_KEY);
+      try {
+        const lastViewedHanzi = localStorage.getItem(LAST_VIEWED_HANZI_KEY);
+        if (lastViewedHanzi) {
+          !JSON.parse(lastViewedHanzi).pathname && localStorage.removeItem(LAST_VIEWED_HANZI_KEY);
+        }
+      } catch {
+        localStorage.removeItem(LAST_VIEWED_HANZI_KEY);
       }
     },
     hydrateLastViewedHanzi: () =>
