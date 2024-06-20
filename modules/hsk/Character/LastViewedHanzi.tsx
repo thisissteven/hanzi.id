@@ -4,16 +4,17 @@ import React from "react";
 import { Toaster, toast } from "sonner";
 
 export function LastViewedHanzi() {
-  const { hydrateLastViewedHanzi } = useLastViewedHanziActions();
+  const { handleValueMismatch, hydrateLastViewedHanzi } = useLastViewedHanziActions();
   const lastViewedHanzi = useLastViewedHanzi();
 
   const isInteracted = React.useRef(false);
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {
+      handleValueMismatch();
       hydrateLastViewedHanzi();
     }
-  }, [hydrateLastViewedHanzi]);
+  }, [handleValueMismatch, hydrateLastViewedHanzi]);
 
   const router = useRouter();
 

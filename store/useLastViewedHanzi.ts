@@ -7,6 +7,7 @@ interface LastViewedHanziState {
   } | null;
 
   actions: {
+    handleValueMismatch: () => void;
     hydrateLastViewedHanzi: () => void;
   };
 }
@@ -16,6 +17,12 @@ export const LAST_VIEWED_HANZI_KEY = "last-viewed-hanzi";
 const useLastViewedHanziStore = create<LastViewedHanziState>()((set) => ({
   lastViewedHanzi: null,
   actions: {
+    handleValueMismatch: () => {
+      const lastViewedHanzi = localStorage.getItem(LAST_VIEWED_HANZI_KEY);
+      if (lastViewedHanzi) {
+        !JSON.parse(lastViewedHanzi).pathname && localStorage.removeItem(LAST_VIEWED_HANZI_KEY);
+      }
+    },
     hydrateLastViewedHanzi: () =>
       set((_) => {
         const lastViewedHanzi = localStorage.getItem(LAST_VIEWED_HANZI_KEY);
