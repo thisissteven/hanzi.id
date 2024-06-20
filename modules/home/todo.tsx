@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, HyperLinkButton, LinkButton } from "./buttons";
-import { GraduationCapIcon, LanguagesIcon, LibraryBigIcon, MessageSquareHeartIcon, TargetIcon } from "lucide-react";
+import { Button } from "./buttons";
+import { GraduationCapIcon, LanguagesIcon, LibraryBigIcon, TargetIcon } from "lucide-react";
 import { Divider } from "@/components";
 
 export function HomeTodo() {
@@ -11,32 +11,32 @@ export function HomeTodo() {
       <Divider />
 
       <div className="grid md:grid-cols-2 gap-4">
-        <LinkButton
+        <Button
           className="hover:bg-yellow-500/10"
           icon={<GraduationCapIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-yellow-500" />}
-          href="/hsk/1"
+          path="/hsk/1"
           title="Learn HSK 1-9"
           description="Chinese HSK vocabulary lists and practice exams."
         />
 
-        <LinkButton
-          href="/new"
+        <Button
+          path="/new"
           className="hover:bg-indigo-500/10"
           icon={<TargetIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-indigo-500" />}
           title="Immersed reading"
           description="Upload PDFs, texts or images to practice reading."
         />
 
-        <LinkButton
-          href="/flashcards"
+        <Button
+          path="/flashcards"
           className="hover:bg-pink-500/10"
           icon={<LanguagesIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-pink-500" />}
           title="Flashcards"
           description="Memorize words and phrases with spaced repetition."
         />
 
-        <LinkButton
-          href="/library"
+        <Button
+          path="/library"
           className="hover:bg-emerald-500/10"
           icon={<LibraryBigIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-emerald-500" />}
           title="Library"

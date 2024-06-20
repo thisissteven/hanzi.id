@@ -1,5 +1,7 @@
 import Link, { LinkProps } from "next/link";
-import { cn } from "@/utils";
+import { cn, push } from "@/utils";
+import { useRouter } from "next/navigation";
+import React from "react";
 
 const buttonClassNames = "group duration-200 hover:bg-hovered border dark:border-black p-4 rounded-lg";
 
@@ -7,6 +9,7 @@ type AdditionalProps = {
   title: string;
   description: string;
   icon: React.ReactNode;
+  path: string;
 };
 
 type LinkButtonProps = {
@@ -53,10 +56,21 @@ export function Button({
   title,
   description,
   icon,
+  path,
+  onClick,
   ...props
 }: React.ComponentPropsWithoutRef<"button"> & AdditionalProps) {
+  const router = useRouter();
+
   return (
-    <button className={cn(buttonClassNames, "text-left", className)} {...props}>
+    <button
+      className={cn(buttonClassNames, "text-left", className)}
+      onClick={(e) => {
+        onClick?.(e);
+        push(router, path);
+      }}
+      {...props}
+    >
       <div className="flex items-center gap-4">
         {icon}
         <div className="space-y-0">

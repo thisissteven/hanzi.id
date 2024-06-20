@@ -54,7 +54,7 @@ const dummyDefaultValues = {
 
 export function NewReadingLayout({ children }: { children: React.ReactNode }) {
   const methods = useForm<NewReadingProps>({
-    defaultValues: defaultValues,
+    defaultValues: dummyDefaultValues,
   });
 
   const pathname = usePathname();

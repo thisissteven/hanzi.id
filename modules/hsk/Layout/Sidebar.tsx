@@ -35,11 +35,20 @@ const levelToHanzi = (level: string) => {
 export function DesktopSidebar() {
   return (
     // pl-4 pt-20 max-md:hidden sticky top-0 h-fit min-w-64
-    <aside className="px-4 pb-4 pt-20 z-10 max-md:hidden sticky top-0 h-dvh overflow-y-auto min-w-64">
-      <ul className="space-y-1">
-        <HSKLevelItems />
-      </ul>
-    </aside>
+    <div className="max-md:hidden">
+      <aside className="px-4 pb-4 pt-20 z-10 sticky top-0 h-[calc(100dvh-3.5rem)] overflow-y-auto min-w-64">
+        <ul className="space-y-1">
+          <HSKLevelItems />
+        </ul>
+      </aside>
+      <a
+        href="https://pandarin.net/latihan-ujian-hsk/"
+        target="_blank"
+        className="inline-block relative z-10 w-full hover:underline underline-offset-4 ml-6 mt-4"
+      >
+        Practice Exams &#8594;
+      </a>
+    </div>
   );
 }
 
@@ -61,9 +70,18 @@ export function MobileSidebar() {
           </button>
         </Drawer.Trigger>
 
-        <Drawer.Content className="w-full max-h-dvh">
-          <aside className="relative max-h-dvh pt-2 pb-10 overflow-y-auto scrollbar-none">
-            <ul className="space-y-2">
+        <Drawer.Content className="w-full max-h-dvh pb-0">
+          <aside className="relative max-h-[calc(100dvh-2rem)] pt-2 overflow-y-auto scrollbar-none">
+            <ul className="space-y-2 pb-2">
+              <li>
+                <a
+                  href="https://pandarin.net/latihan-ujian-hsk/"
+                  target="_blank"
+                  className="inline-block text-center w-full hover:underline underline-offset-4 ml-2 mt-2"
+                >
+                  Practice Exams &#8594;
+                </a>
+              </li>
               <HSKLevelItems isDrawer />
             </ul>
           </aside>
