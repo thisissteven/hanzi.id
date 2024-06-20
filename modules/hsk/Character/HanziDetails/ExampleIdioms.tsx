@@ -30,7 +30,7 @@ export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziA
               return (
                 <li key={index} className="list-none">
                   <Popover>
-                    <Popover.Trigger className="text-left sm:text-lg font-chinese">
+                    <Popover.Trigger className="text-left sm:text-lg font-medium">
                       {splitted.map((part) => {
                         if (part === hanzi)
                           return (

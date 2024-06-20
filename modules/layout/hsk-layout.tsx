@@ -1,7 +1,6 @@
 import React from "react";
 import { DesktopSidebar, LastViewedHanzi } from "@/modules/hsk";
 import { Layout } from "./layout";
-import { Noto_Sans } from "next/font/google";
 import { AnimatePresence } from "framer-motion";
 import { ReplaceRouteButton } from "@/components";
 
@@ -40,16 +39,9 @@ function AudioProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-const notoSans = Noto_Sans({ subsets: ["latin"] });
-
 export function HSKLayout({ children }: { children: React.ReactNode }) {
   return (
     <Layout>
-      <style jsx global>{`
-        :root {
-          --font-chinese: ${notoSans.style.fontFamily};
-        }
-      `}</style>
       <LastViewedHanzi />
       <AudioProvider>
         <AnimatePresence mode="wait">

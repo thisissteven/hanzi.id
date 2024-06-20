@@ -57,7 +57,7 @@ export function HanziDetails({
       <div className="space-y-2">
         {isIdiom ? (
           <>
-            <p className="px-4 text-6xl font-chinese">{definition.simplified}</p>
+            <p className="px-4 text-6xl font-medium">{definition.simplified}</p>
             <div className="flex items-end gap-2 px-4">
               <p className="font-medium">{currentEntry.pinyin}</p>
               <AudioButton key={audioUrl} url={audioUrl} />
@@ -65,7 +65,7 @@ export function HanziDetails({
           </>
         ) : (
           <div className="flex items-end gap-2 px-4">
-            <p className="text-6xl font-chinese">{definition.simplified}</p>
+            <p className="text-6xl font-medium">{definition.simplified}</p>
             <div>
               <AudioButton key={audioUrl} url={audioUrl} />
               <p className="font-medium">{currentEntry.pinyin}</p>

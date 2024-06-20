@@ -57,12 +57,12 @@ export function MobileSidebar() {
         <Drawer.Trigger asChild>
           <button className="w-14 h-14 active:translate-y-1 active:shadow-none shadow-b-small shadow-blue-200/70 border-2 border-blue-200/70 rounded-lg bg-black backdrop-blur-sm text-blue-200 active:bg-black/40 font-medium">
             <div className="text-[10px] -mb-1">HSK</div>
-            <div className="text-base font-chinese">{levelToHanzi(level)}</div>
+            <div className="text-base font-medium">{levelToHanzi(level)}</div>
           </button>
         </Drawer.Trigger>
 
-        <Drawer.Content className="w-full h-full max-h-dvh">
-          <aside className="relative h-full overflow-y-auto scrollbar-none">
+        <Drawer.Content className="w-full max-h-dvh">
+          <aside className="relative max-h-dvh pt-2 pb-10 overflow-y-auto scrollbar-none">
             <ul className="space-y-2">
               <HSKLevelItems isDrawer />
             </ul>

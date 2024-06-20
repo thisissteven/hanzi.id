@@ -12,7 +12,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
-        chinese: ["var(--font-chinese)", ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
         b: "0 4px 0",

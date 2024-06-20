@@ -35,7 +35,7 @@ export function CharacterRow({
           isCompleted ? "border-mossgreen shadow-mossgreen text-wheat" : "border-border shadow-border"
         )}
       >
-        <div className="shrink-0 font-chinese">{hanzi}</div>
+        <div className="shrink-0 font-medium">{hanzi}</div>
 
         <div className="overflow-x-hidden flex-1">
           <div className="text-sm font-medium">{pinyin}</div>

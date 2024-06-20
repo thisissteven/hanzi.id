@@ -57,7 +57,7 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
           return (
             <li key={lesson.simplified} className="list-none">
               <Popover>
-                <Popover.Trigger className="text-left sm:text-lg font-chinese">
+                <Popover.Trigger className="text-left sm:text-lg font-medium">
                   {splitted.map((part) => {
                     if (part === hanzi)
                       return (

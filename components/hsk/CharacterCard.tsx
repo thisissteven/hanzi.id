@@ -60,7 +60,7 @@ export function CharacterCard({
               isCompleted ? "border-mossgreen shadow-mossgreen text-wheat" : "border-border shadow-border"
             )}
           >
-            <span className="font-chinese">{hanzi}</span>
+            <span className="font-medium">{hanzi}</span>
 
             <MarkAsCompleted
               className={isCompleted ? "bg-transparent" : ""}
