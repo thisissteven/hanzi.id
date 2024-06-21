@@ -64,9 +64,7 @@ const useSpeech = (sentences: Array<string>) => {
               return 0;
             });
           },
-          onStateUpdate: (state: PlayingState) => {
-            setPlaybackState(state);
-          },
+          onStateUpdate: (state: PlayingState) => {},
         },
         voices.find((voice) => voice.lang === localeMapping[locale])?.name ?? voices[0]?.name
       );
@@ -86,11 +84,13 @@ const useSpeech = (sentences: Array<string>) => {
   }, [currentSentenceIdx, sentences, speechEngine]);
 
   const play = () => {
+    setPlaybackState("playing");
     isPlaying.current = true;
     speechEngine?.play();
   };
 
   const pause = () => {
+    setPlaybackState("paused");
     isPlaying.current = false;
     speechEngine?.pause();
 

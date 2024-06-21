@@ -6,7 +6,7 @@ import request from "request";
 const YABLA_URI = "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.setHeader("Cache-Control", "max-age=0, s-maxage=31536000");
+  res.setHeader("Cache-Control", "public, s-maxage=31536000, stale-while-revalidate=59");
   const hanzi = req.query.hanzi as string;
   const pinyin = req.query.pinyin as string;
 

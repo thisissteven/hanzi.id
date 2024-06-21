@@ -32,14 +32,14 @@ export function DesktopBottomBar({
 
   return (
     <div className="sticky h-dvh top-0 mx-4 z-50 right-0 rounded-lg p-4 grid place-items-center overflow-x-hidden overflow-y-auto">
-      <div>
+      <div className="space-y-4">
         <div className={clsx("flex flex-col items-start gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
           <div className="relative w-56 aspect-square shrink-0">
             <div
               className={clsx("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.6)]")}
               aria-hidden
             ></div>
-            <div className="relative rounded-xl overflow-hidden w-full h-full ring-4 ring-blue-400/20">
+            <div className="relative rounded-xl overflow-hidden w-full aspect-square ring-4 ring-blue-400/20">
               <Image
                 src={
                   "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"
@@ -58,7 +58,17 @@ export function DesktopBottomBar({
           </div>
         </div>
 
-        <div className="mt-4 grid place-items-center grid-cols-3">
+        <div className="relative mx-0.5">
+          <div className="h-[1.5px] rounded-full bg-white/10"></div>
+          <div
+            style={{
+              width: `${(currentSentenceIdx / (sentences.length - 1)) * 100}%`,
+            }}
+            className="absolute left-0 top-0 h-[1.5px] rounded-full bg-white duration-200"
+          ></div>
+        </div>
+
+        <div className="grid place-items-center grid-cols-3">
           <PrevSentenceButton disabled={currentSentenceIdx === 0} onClick={() => toSentence(currentSentenceIdx - 1)} />
           <PlayButton isPlaying={playbackState === "playing"} onClick={handlePlayPause} />
           <NextSentenceButton

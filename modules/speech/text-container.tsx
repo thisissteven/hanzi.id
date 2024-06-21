@@ -5,6 +5,7 @@ import { Line } from "./line";
 import { CurrentSentence } from "./current-sentence";
 import { cn, useDebounce } from "@/utils";
 import { Virtualizer } from "@tanstack/react-virtual";
+import useIsMobile from "@/hooks/useIsMobile";
 
 export function TextContainer({
   sentences,
@@ -22,6 +23,8 @@ export function TextContainer({
   virtualizer: Virtualizer<Window, Element>;
 }) {
   const highlightRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+
+  const isMobile = useIsMobile();
 
   const isPaused = useDebounce(paused, 200);
 
@@ -70,6 +73,7 @@ export function TextContainer({
                     }}
                     index={index}
                     onMouseEnter={(e) => {
+                      if (isMobile) return;
                       if (index > currentSentenceIdx && !paused) {
                         highlightRef.current.style.opacity = "0";
                       } else {
@@ -87,11 +91,21 @@ export function TextContainer({
                     }}
                   >
                     {index === currentSentenceIdx ? (
-                      <CurrentSentence
-                        sentence={sentence}
-                        currentSentenceIdx={currentSentenceIdx}
-                        wordRange={currentWordRange}
-                      />
+                      <>
+                        <CurrentSentence
+                          sentence={sentence}
+                          currentSentenceIdx={currentSentenceIdx}
+                          wordRange={currentWordRange}
+                        />
+                        {isMobile && (
+                          <span
+                            className={cn(
+                              "bg-red-500 w-1.5 h-1.5 rounded-full absolute top-[1.25rem] -left-4 duration-200",
+                              isPaused ? "opacity-100" : "opacity-0"
+                            )}
+                          ></span>
+                        )}
+                      </>
                     ) : (
                       sentence
                     )}
