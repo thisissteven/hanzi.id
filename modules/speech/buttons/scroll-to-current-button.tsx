@@ -31,7 +31,7 @@ export function ScrollToCurrentButton({
         });
       }}
       className={cn(
-        "fixed max-[810px]:bottom-24 bottom-4 bg-hovered/50 backdrop-blur-sm active:bg-hovered text-white w-9 h-9 grid place-items-center pb-2.5 pt-1.5 px-2 rounded-md duration-200 z-50",
+        "fixed max-[810px]:bottom-20 bottom-4 bg-hovered/50 backdrop-blur-sm active:bg-hovered text-white w-9 h-9 grid place-items-center pb-2.5 pt-1.5 px-2 rounded-md duration-200 z-50",
         isOutOfView ? "opacity-100" : "opacity-0"
       )}
     >

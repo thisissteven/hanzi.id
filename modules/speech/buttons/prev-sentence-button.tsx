@@ -13,7 +13,7 @@ export function PrevSentenceButton({
       aria-label="previous sentence"
       {...props}
     >
-      <PrevSentenceIcon className="h-6 w-6 text-tertiary group-active:text-white transition" />
+      <PrevSentenceIcon className="h-6 w-6 group-active:text-white/80 duration-200" />
     </button>
   );
 }

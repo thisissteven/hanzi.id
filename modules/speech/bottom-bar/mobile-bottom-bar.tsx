@@ -1,9 +1,8 @@
 import React from "react";
 
-import { PlayingState, useDebounce } from "@/utils";
-import clsx from "clsx";
+import { cn, PlayingState, useDebounce } from "@/utils";
 import Image from "next/image";
-import { PlayButton } from "../buttons";
+import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
 
 export function MobileBottomBar({
   currentSentenceIdx,
@@ -31,35 +30,54 @@ export function MobileBottomBar({
   const isPlaying = useDebounce(playbackState === "playing", 200);
 
   return (
-    <div className="sticky h-dvh top-0 mx-4 md:mx-8 z-50 right-0 rounded-lg p-4 grid place-items-center">
-      <div>
-        <div className={clsx("flex flex-col items-center gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
-          <div className="relative w-56 aspect-square shrink-0">
-            <div
-              className={clsx("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
-              aria-hidden
-            ></div>
-            <div className="relative rounded-xl overflow-hidden w-full h-full ring-4 ring-blue-400/20">
-              <Image
-                src={
-                  "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"
-                }
-                width={430}
-                height={430}
-                alt="cover"
-                className="object-cover w-full h-full"
-              />
-            </div>
+    <div className="fixed bottom-2 px-2 w-full">
+      <div
+        className={cn(
+          "bg-subtle/50 backdrop-blur-md h-16 rounded-lg w-full p-2 pb-2.5 duration-200 overflow-hidden",
+          isPlaying && "opacity-50"
+        )}
+      >
+        <div className="flex h-full items-center gap-3">
+          <div className="relative shrink-0 rounded-md overflow-hidden h-full aspect-square ring-4 ring-subtle/20">
+            <Image
+              src={
+                "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"
+              }
+              width={92}
+              height={92}
+              alt="cover"
+              className="object-cover w-full h-full"
+            />
           </div>
 
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mt-2">Their Side</h1>
-            <p className="mt-2 text-[rgb(208,208,208)">Chapter 1 - Aliens</p>
+          <div className="text-left flex-1 whitespace-nowrap overflow-x-auto scrollbar-none">
+            <h1 className="text-sm font-semibold">Their Side</h1>
+            <p className="text-xs text-smokewhite">Chapter 1 - Aliens</p>
+          </div>
+
+          <div className="grid place-items-center grid-cols-3 min-w-32">
+            <PrevSentenceButton
+              disabled={currentSentenceIdx === 0}
+              onClick={() => toSentence(currentSentenceIdx - 1)}
+            />
+
+            <MobilePlayButton isPlaying={playbackState === "playing"} onClick={handlePlayPause} />
+
+            <NextSentenceButton
+              disabled={currentSentenceIdx === sentences.length - 1}
+              onClick={() => toSentence(currentSentenceIdx + 1)}
+            />
           </div>
         </div>
 
-        <div className="mt-4 grid place-items-center grid-cols-3">
-          <PlayButton isPlaying={playbackState === "playing"} onClick={handlePlayPause} />
+        <div className="relative mt-2 -ml-2">
+          <div className="h-[1.5px] rounded-full bg-white/20 w-[calc(100%+1rem)]"></div>
+          <div
+            style={{
+              width: `${(currentSentenceIdx / (sentences.length - 1)) * 100}%`,
+            }}
+            className="absolute left-0 top-0 h-[1.5px] rounded-full bg-white duration-200"
+          ></div>
         </div>
       </div>
     </div>

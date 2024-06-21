@@ -31,12 +31,12 @@ export function DesktopBottomBar({
   const isPlaying = useDebounce(playbackState === "playing", 200);
 
   return (
-    <div className="sticky h-dvh top-0 mx-4 md:mx-8 z-50 right-0 rounded-lg p-4 grid place-items-center">
+    <div className="sticky h-dvh top-0 mx-4 z-50 right-0 rounded-lg p-4 grid place-items-center overflow-x-hidden overflow-y-auto">
       <div>
-        <div className={clsx("flex flex-col items-center gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
+        <div className={clsx("flex flex-col items-start gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
           <div className="relative w-56 aspect-square shrink-0">
             <div
-              className={clsx("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
+              className={clsx("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.6)]")}
               aria-hidden
             ></div>
             <div className="relative rounded-xl overflow-hidden w-full h-full ring-4 ring-blue-400/20">
@@ -52,9 +52,9 @@ export function DesktopBottomBar({
             </div>
           </div>
 
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mt-2">Their Side</h1>
-            <p className="mt-2 text-[rgb(208,208,208)">Chapter 1 - Aliens</p>
+          <div className="max-w-[224px] overflow-x-auto scrollbar-none whitespace-nowrap">
+            <h1 className="text-xl font-bold mt-2">Their Side</h1>
+            <p className="text-[rgb(208,208,208)">Chapter 1 - Aliens</p>
           </div>
         </div>
 

@@ -3,7 +3,7 @@ import { VirtualizedList } from "@/components";
 import React from "react";
 import { Line } from "./line";
 import { CurrentSentence } from "./current-sentence";
-import { useDebounce } from "@/utils";
+import { cn, useDebounce } from "@/utils";
 import { Virtualizer } from "@tanstack/react-virtual";
 
 export function TextContainer({
@@ -32,15 +32,14 @@ export function TextContainer({
           highlightRef.current.style.transitionProperty = "opacity";
           highlightRef.current.style.opacity = "0";
         }}
-        onTouchEnd={() => {
-          highlightRef.current.style.transitionProperty = "opacity";
-          highlightRef.current.style.opacity = "0";
-        }}
-        className="relative text-lg md:text-xl list-none pb-4"
+        className="relative text-lg md:text-xl list-none max-[810px]:pb-20 pb-4"
       >
         <div
           ref={highlightRef}
-          className="absolute w-full bg-[#242424] rounded-lg ease duration-200 will-change-transform"
+          className={cn(
+            "absolute w-full bg-[#242424] rounded-lg ease duration-200 will-change-transform",
+            !isPaused && "opacity-0"
+          )}
         ></div>
 
         <VirtualizedList virtualizer={virtualizer}>
