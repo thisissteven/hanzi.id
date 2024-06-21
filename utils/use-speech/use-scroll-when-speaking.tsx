@@ -8,7 +8,7 @@ export function useScrollWhenSpeaking(deps: DependencyList = []) {
       const element = currentWordRef.current;
       const elementTop = element.getBoundingClientRect().top;
       const screenHeight = window.innerHeight;
-      const targetTop = screenHeight / 2;
+      const targetTop = screenHeight / 3;
 
       window.scrollBy({
         top: elementTop - targetTop,
