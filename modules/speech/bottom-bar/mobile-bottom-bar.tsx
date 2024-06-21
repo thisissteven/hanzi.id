@@ -1,6 +1,6 @@
 import React from "react";
 
-import { cn, PlayingState, useDebounce } from "@/utils";
+import { PlayingState } from "@/utils";
 import Image from "next/image";
 import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
 
@@ -27,16 +27,9 @@ export function MobileBottomBar({
     }
   };
 
-  const isPlaying = useDebounce(playbackState === "playing", 200);
-
   return (
     <div className="fixed bottom-2 px-2 w-full">
-      <div
-        className={cn(
-          "bg-subtle/50 backdrop-blur-md h-16 rounded-lg w-full p-2 pb-2.5 duration-200 overflow-hidden",
-          isPlaying && "opacity-50"
-        )}
-      >
+      <div className="bg-subtle/50 backdrop-blur-md h-16 rounded-lg w-full p-2 pb-2.5 duration-200 overflow-hidden">
         <div className="flex h-full items-center gap-3">
           <div className="relative shrink-0 rounded-md overflow-hidden h-full aspect-square ring-4 ring-subtle/20">
             <Image

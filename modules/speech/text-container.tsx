@@ -25,6 +25,12 @@ export function TextContainer({
 
   const isPaused = useDebounce(paused, 200);
 
+  React.useEffect(() => {
+    if (isPaused) {
+      highlightRef.current.style.opacity = "0";
+    }
+  }, [isPaused]);
+
   return (
     <div className="text-semiwhite">
       <ul
