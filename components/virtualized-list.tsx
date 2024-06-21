@@ -1,26 +1,16 @@
-import { useWindowVirtualizer, VirtualItem, Virtualizer } from "@tanstack/react-virtual";
+import { VirtualItem, Virtualizer } from "@tanstack/react-virtual";
 import * as React from "react";
 
 type VirtualizedListProps<T> = {
   children: (items: VirtualItem[], virtualizer: Virtualizer<Window, Element>) => React.ReactNode;
-  data?: T[];
-  estimateSize?: (index: number) => number;
-  overscan?: number;
+  //   data?: T[];
+  //   estimateSize?: (index: number) => number;
+  //   overscan?: number;
+  virtualizer: Virtualizer<Window, Element>;
 };
 
-export function VirtualizedList<T>({
-  children,
-  data = [],
-  estimateSize = () => 100,
-  overscan = 5,
-}: VirtualizedListProps<T>) {
+export function VirtualizedList<T>({ children, virtualizer }: VirtualizedListProps<T>) {
   const listRef = React.useRef<HTMLDivElement | null>(null);
-
-  const virtualizer = useWindowVirtualizer({
-    count: data.length,
-    estimateSize,
-    overscan,
-  });
 
   const items = virtualizer.getVirtualItems();
 

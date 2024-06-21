@@ -4,6 +4,7 @@ import React from "react";
 import { Line } from "./line";
 import { CurrentSentence } from "./current-sentence";
 import { useDebounce } from "@/utils";
+import { Virtualizer } from "@tanstack/react-virtual";
 
 export function TextContainer({
   sentences,
@@ -11,12 +12,14 @@ export function TextContainer({
   toSentence,
   currentWordRange,
   paused,
+  virtualizer,
 }: {
   sentences: string[];
   currentSentenceIdx: number;
   toSentence: (index: number) => void;
   currentWordRange: number[];
   paused: boolean;
+  virtualizer: Virtualizer<Window, Element>;
 }) {
   const highlightRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -40,7 +43,7 @@ export function TextContainer({
           className="absolute w-full bg-[#242424] rounded-lg ease duration-200 will-change-transform"
         ></div>
 
-        <VirtualizedList data={sentences}>
+        <VirtualizedList virtualizer={virtualizer}>
           {(items, virtualizer) => {
             if (!sentences) return null;
 

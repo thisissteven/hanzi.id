@@ -1,52 +1,47 @@
 import React from "react";
+import throttle from "lodash.throttle";
 
 type Direction = "top" | "bottom" | null;
 
-export function useElementOutOfView(elementId: string) {
+export function useElementOutOfView(currentSentenceIndex: number) {
   const [isOutOfView, setIsOutOfView] = React.useState(false);
   const [direction, setDirection] = React.useState<Direction>(null);
-
-  const scrollToCurrentWord = React.useCallback(() => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      const elementTop = element.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
-      const targetTop = screenHeight / 2;
-
-      window.scrollBy({
-        top: elementTop - targetTop,
-        behavior: "smooth",
-      });
-    }
-  }, [elementId]);
 
   React.useEffect(() => {
     if (typeof window === "undefined") return;
 
-    function checkElementOutOfView() {}
+    const checkElementOutOfView = throttle(() => {
+      const elementExists = document.querySelector(`[data-index="${currentSentenceIndex}"]`) !== null;
 
-    window.addEventListener("scroll", () => {
-      const element = document.getElementById(elementId);
-
-      if (!element) {
+      if (!elementExists) {
         setIsOutOfView(true);
       } else {
         setIsOutOfView(false);
       }
-    });
+
+      const firstDataIndex = document.querySelector("[data-index]");
+
+      if (firstDataIndex) {
+        const sentenceIndex = firstDataIndex.getAttribute("data-index");
+
+        if (sentenceIndex) {
+          const index = parseInt(sentenceIndex, 10);
+
+          if (index < currentSentenceIndex) {
+            setDirection("bottom");
+          } else {
+            setDirection("top");
+          }
+        }
+      }
+    }, 100);
+
+    window.addEventListener("scroll", checkElementOutOfView);
 
     return () => {
-      window.removeEventListener("scroll", () => {
-        const element = document.getElementById(elementId);
-
-        if (!element) {
-          setIsOutOfView(true);
-        } else {
-          setIsOutOfView(false);
-        }
-      });
+      window.removeEventListener("scroll", checkElementOutOfView);
     };
-  }, [elementId]);
+  }, [currentSentenceIndex]);
 
-  return { isOutOfView, direction, scrollToCurrentWord };
+  return { isOutOfView, direction };
 }
