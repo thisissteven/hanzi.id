@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function AccountMenu() {
+export function AccountMenu() {
   return <div>account-menu</div>;
 }
