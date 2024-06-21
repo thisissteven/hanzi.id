@@ -1,7 +1,12 @@
 import { BackRouteButton } from "@/components";
-import { useDebounce } from "@/hooks";
-import { BottomBar, NextSentenceButton, PrevSentenceButton, TextContainer } from "@/modules/speech";
-import { cn, useElementOutOfView, useParagraphs, useSpeech } from "@/utils";
+import {
+  BottomBar,
+  NextSentenceButton,
+  PrevSentenceButton,
+  ScrollToCurrentButton,
+  TextContainer,
+} from "@/modules/speech";
+import { useParagraphs, useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import React from "react";
 
@@ -17,9 +22,6 @@ export default function Read() {
     estimateSize: () => 100,
     overscan: 5,
   });
-
-  const { isOutOfView, direction } = useElementOutOfView(currentSentenceIdx);
-  const actualDirection = useDebounce(direction, 200);
 
   return (
     <div className="min-h-dvh bg-black">
@@ -41,27 +43,15 @@ export default function Read() {
         }
       `}</style>
       <main id="container" className="relative">
-        <button
-          style={{
-            left: ref.current?.getBoundingClientRect().left + ref.current?.getBoundingClientRect().width - 32,
-          }}
-          onClick={() => {
-            virtualizer.scrollToIndex(currentSentenceIdx, {
-              behavior: "smooth",
-            });
-          }}
-          className={cn(
-            "fixed bottom-4 bg-hovered/50 backdrop-blur-sm active:bg-hovered text-white w-9 h-9 grid place-items-center pb-2.5 pt-1.5 px-2 rounded-md duration-200 z-50",
-            isOutOfView ? "opacity-100" : "opacity-0"
-          )}
-        >
-          {actualDirection === "top" && "↑"}
-          {actualDirection === "bottom" && "↓"}
-        </button>
+        <ScrollToCurrentButton
+          currentSentenceIdx={currentSentenceIdx}
+          virtualizer={virtualizer}
+          element={ref.current}
+        />
 
         <div ref={ref}>
           <div className="sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 pb-2 border-b-[1.5px] border-b-subtle">
-            <div className="flex justify-between items-end">
+            <div className="px-2 flex justify-between items-end">
               <div className="w-fit">
                 <BackRouteButton />
               </div>

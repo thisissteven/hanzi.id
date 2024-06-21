@@ -1,12 +1,11 @@
 import React from "react";
-import { PrevSentenceButton } from "./buttons/prev-sentence-button";
-import { PlayButton } from "./buttons/play-button";
-import { NextSentenceButton } from "./buttons/next-sentence-button";
+
 import { PlayingState, useDebounce } from "@/utils";
 import clsx from "clsx";
 import Image from "next/image";
+import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
 
-export function BottomBar({
+export function DesktopBottomBar({
   currentSentenceIdx,
   toSentence,
   playbackState,
