@@ -2,7 +2,7 @@ import { VirtualizedList } from "@/components";
 
 import React from "react";
 import { Line } from "./line";
-import CurrentWord from "./current-word";
+import { CurrentSentence } from "./current-sentence";
 import { useDebounce } from "@/utils";
 
 export function TextContainer({
@@ -26,6 +26,10 @@ export function TextContainer({
     <div className="text-semiwhite">
       <ul
         onMouseLeave={() => {
+          highlightRef.current.style.transitionProperty = "opacity";
+          highlightRef.current.style.opacity = "0";
+        }}
+        onTouchEnd={() => {
           highlightRef.current.style.transitionProperty = "opacity";
           highlightRef.current.style.opacity = "0";
         }}
@@ -53,6 +57,7 @@ export function TextContainer({
                     currentSentenceIndex={currentSentenceIdx}
                     onClick={() => {
                       if (index > currentSentenceIdx && !paused) return;
+                      if (index === currentSentenceIdx) return;
                       toSentence(index);
                     }}
                     index={index}
@@ -74,7 +79,7 @@ export function TextContainer({
                     }}
                   >
                     {index === currentSentenceIdx ? (
-                      <CurrentWord
+                      <CurrentSentence
                         sentence={sentence}
                         currentSentenceIdx={currentSentenceIdx}
                         wordRange={currentWordRange}

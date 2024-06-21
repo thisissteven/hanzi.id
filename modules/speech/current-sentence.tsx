@@ -1,13 +1,13 @@
 import { useScrollWhenSpeaking } from "@/utils";
 import React from "react";
 
-type CurrentWordProps = {
+type CurrentSentenceProps = {
   sentence: string;
   wordRange: number[];
   currentSentenceIdx: number;
 };
 
-export default function CurrentWord({ sentence, wordRange, currentSentenceIdx }: CurrentWordProps) {
+export function CurrentSentence({ sentence, wordRange, currentSentenceIdx }: CurrentSentenceProps) {
   const [start, end] = wordRange;
 
   const ref = useScrollWhenSpeaking([currentSentenceIdx]);
@@ -19,7 +19,7 @@ export default function CurrentWord({ sentence, wordRange, currentSentenceIdx }:
   return (
     <span>
       {sentence.slice(0, start)}
-      <span ref={ref} className="relative border-b-[1.5px] border-amber-300 py-0.5">
+      <span ref={ref} id="current-word" className="relative border-b-[1.5px] border-amber-300 py-0.5">
         {currentWord}
       </span>
       {sentence.slice(end)}

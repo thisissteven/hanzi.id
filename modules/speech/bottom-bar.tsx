@@ -32,9 +32,9 @@ export function BottomBar({
   const isPlaying = useDebounce(playbackState === "playing", 200);
 
   return (
-    <div className="sticky h-dvh top-0 mx-8 z-50 right-0 rounded-lg p-4 grid place-items-center">
+    <div className="sticky h-dvh top-0 mx-4 md:mx-8 z-50 right-0 rounded-lg p-4 grid place-items-center">
       <div>
-        <div className={clsx("flex flex-col items-center gap-4 duration-1000 ease", isPlaying && "opacity-50")}>
+        <div className={clsx("flex flex-col items-center gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
           <div className="relative w-56 aspect-square shrink-0">
             <div
               className={clsx("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
@@ -56,13 +56,10 @@ export function BottomBar({
           <div className="text-center">
             <h1 className="text-2xl font-bold mt-2">Their Side</h1>
             <p className="mt-2 text-[rgb(208,208,208)">Chapter 1 - Aliens</p>
-            <div className="mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20">
-              1 chapter
-            </div>
           </div>
         </div>
 
-        <div className="mt-8 grid place-items-center grid-cols-3">
+        <div className="mt-4 grid place-items-center grid-cols-3">
           <PrevSentenceButton disabled={currentSentenceIdx === 0} onClick={() => toSentence(currentSentenceIdx - 1)} />
           <PlayButton isPlaying={playbackState === "playing"} onClick={handlePlayPause} />
           <NextSentenceButton
