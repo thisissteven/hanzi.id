@@ -1,5 +1,6 @@
 import { cn, useElementOutOfView } from "@/utils";
 import { useDebounce, useWindowSize } from "@/hooks";
+import { Virtualizer } from "@tanstack/react-virtual";
 
 export function ScrollToCurrentButton({
   currentSentenceIdx,
@@ -7,10 +8,10 @@ export function ScrollToCurrentButton({
   element,
 }: {
   currentSentenceIdx: number;
-  virtualizer: any;
+  virtualizer: Virtualizer<Window, Element>;
   element: HTMLDivElement;
 }) {
-  const { isOutOfView, direction } = useElementOutOfView(currentSentenceIdx);
+  const { isOutOfView, direction } = useElementOutOfView(currentSentenceIdx, virtualizer.getTotalSize());
   const actualDirection = useDebounce(direction, 200);
 
   const { width } = useWindowSize();
@@ -28,6 +29,7 @@ export function ScrollToCurrentButton({
       onClick={() => {
         virtualizer.scrollToIndex(currentSentenceIdx, {
           behavior: "smooth",
+          align: "center",
         });
       }}
       className={cn(

@@ -3,7 +3,7 @@ import throttle from "lodash.throttle";
 
 type Direction = "top" | "bottom" | null;
 
-export function useElementOutOfView(currentSentenceIndex: number) {
+export function useElementOutOfView(currentSentenceIndex: number, totalSentences: number) {
   const [isOutOfView, setIsOutOfView] = React.useState(false);
   const [direction, setDirection] = React.useState<Direction>(null);
 
@@ -11,15 +11,28 @@ export function useElementOutOfView(currentSentenceIndex: number) {
     if (typeof window === "undefined") return;
 
     const checkElementOutOfView = throttle(() => {
-      const elementExists = document.querySelector(`[data-index="${currentSentenceIndex}"]`) !== null;
+      const elements = document.querySelectorAll("[data-index]");
+      const currentElement = document.querySelector(`[data-index="${currentSentenceIndex}"]`);
 
-      if (!elementExists) {
+      if (!currentElement) {
         setIsOutOfView(true);
       } else {
-        setIsOutOfView(false);
+        if (currentSentenceIndex < 5 || currentSentenceIndex >= totalSentences - 5) {
+          setIsOutOfView(false);
+          return;
+        }
+
+        if (currentElement) {
+          const index = Array.from(elements).indexOf(currentElement);
+          if (index < 2 || index >= elements.length - 4) {
+            setIsOutOfView(true);
+          } else {
+            setIsOutOfView(false);
+          }
+        }
       }
 
-      const firstDataIndex = document.querySelector("[data-index]");
+      const firstDataIndex = elements[0];
 
       if (firstDataIndex) {
         const sentenceIndex = firstDataIndex.getAttribute("data-index");
@@ -27,7 +40,7 @@ export function useElementOutOfView(currentSentenceIndex: number) {
         if (sentenceIndex) {
           const index = parseInt(sentenceIndex, 10);
 
-          if (index < currentSentenceIndex) {
+          if (index + 2 <= currentSentenceIndex) {
             setDirection("bottom");
           } else {
             setDirection("top");
@@ -41,7 +54,7 @@ export function useElementOutOfView(currentSentenceIndex: number) {
     return () => {
       window.removeEventListener("scroll", checkElementOutOfView);
     };
-  }, [currentSentenceIndex]);
+  }, [currentSentenceIndex, totalSentences]);
 
   return { isOutOfView, direction };
 }

@@ -21,7 +21,7 @@ export default function Read() {
   const virtualizer = useWindowVirtualizer({
     count: sentences.length,
     estimateSize: () => 100,
-    overscan: 5,
+    overscan: 0,
   });
 
   return (

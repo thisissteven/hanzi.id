@@ -35,7 +35,7 @@ export function TextContainer({
   }, [isPaused]);
 
   return (
-    <div className="text-semiwhite">
+    <div>
       <ul
         onMouseLeave={() => {
           highlightRef.current.style.transitionProperty = "opacity";
