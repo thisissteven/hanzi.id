@@ -10,6 +10,9 @@ import { AnimatePresence } from "framer-motion";
 import { ConfettiProvider, HSKLayout, NewReadingLayout } from "@/modules/layout";
 import React from "react";
 
+import { SessionProvider } from "next-auth/react";
+import { AuthProvider } from "@/modules/auth";
+
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
 export default function App({ Component, pageProps, router }: AppProps) {
@@ -31,6 +34,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider forcedTheme="dark" attribute="class">
       <Seo />
+
       <SWRConfig
         value={{
           fetcher: (url) => {
@@ -39,21 +43,25 @@ export default function App({ Component, pageProps, router }: AppProps) {
           },
         }}
       >
-        <ConfettiProvider>
-          <AnimatePresence mode="wait">
-            {isNewReading ? (
-              <NewReadingLayout>
-                <Component key={router.pathname} {...pageProps} />
-              </NewReadingLayout>
-            ) : isHsk ? (
-              <HSKLayout>
-                <Component key={router.pathname} {...pageProps} />
-              </HSKLayout>
-            ) : (
-              <Component key={router.pathname} {...pageProps} />
-            )}
-          </AnimatePresence>
-        </ConfettiProvider>
+        <SessionProvider session={pageProps.session}>
+          <AuthProvider>
+            <ConfettiProvider>
+              <AnimatePresence mode="wait">
+                {isNewReading ? (
+                  <NewReadingLayout>
+                    <Component key={router.pathname} {...pageProps} />
+                  </NewReadingLayout>
+                ) : isHsk ? (
+                  <HSKLayout>
+                    <Component key={router.pathname} {...pageProps} />
+                  </HSKLayout>
+                ) : (
+                  <Component key={router.pathname} {...pageProps} />
+                )}
+              </AnimatePresence>
+            </ConfettiProvider>
+          </AuthProvider>
+        </SessionProvider>
       </SWRConfig>
     </ThemeProvider>
   );

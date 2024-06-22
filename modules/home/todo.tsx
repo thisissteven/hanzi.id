@@ -2,11 +2,16 @@ import React from "react";
 import { Button } from "./buttons";
 import { GraduationCapIcon, LanguagesIcon, LibraryBigIcon, TargetIcon } from "lucide-react";
 import { Divider } from "@/components";
+import { AuthButton } from "./auth-button";
 
 export function HomeTodo() {
   return (
     <React.Fragment>
-      <h1 className="text-2xl md:text-3xl font-bold">What would you like to do today?</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl md:text-3xl font-bold">今天你有什么计划？</h1>
+
+        <AuthButton />
+      </div>
 
       <Divider />
 

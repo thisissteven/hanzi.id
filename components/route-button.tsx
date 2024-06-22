@@ -2,6 +2,8 @@ import React from "react";
 import { back, cn, push, replace } from "@/utils";
 import { useRouter } from "next/navigation";
 
+const buttonClassName = "mt-4 py-2 pl-3 pr-4 rounded-md duration-200 active:bg-hovered flex items-center gap-2";
+
 export function BackRouteButton({ defaultBack = false }: { defaultBack?: boolean }) {
   const router = useRouter();
 
@@ -21,7 +23,7 @@ export function BackRouteButton({ defaultBack = false }: { defaultBack?: boolean
         }
       }}
       type="button"
-      className={cn("mt-4 py-2 pl-3 pr-4 rounded-md", "duration-200 active:bg-hovered", "flex items-center gap-2")}
+      className={buttonClassName}
     >
       <div className="mb-[3px]">&#8592;</div> Return
     </button>
