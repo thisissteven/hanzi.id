@@ -2,7 +2,7 @@ import React from "react";
 import { back, cn, push, replace } from "@/utils";
 import { useRouter } from "next/navigation";
 
-export function BackRouteButton() {
+export function BackRouteButton({ defaultBack = false }: { defaultBack?: boolean }) {
   const router = useRouter();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLButtonElement>;
@@ -11,9 +11,13 @@ export function BackRouteButton() {
     <button
       ref={ref}
       onClick={() => {
-        if (ref.current) {
-          ref.current.disabled = true;
-          back(router);
+        if (defaultBack) {
+          router.back();
+        } else {
+          if (ref.current) {
+            ref.current.disabled = true;
+            back(router);
+          }
         }
       }}
       type="button"

@@ -46,6 +46,7 @@ export default function Read() {
         `}</style>
         <main id="container" className="relative">
           <ScrollToCurrentButton
+            totalSentences={sentences.length}
             currentSentenceIdx={currentSentenceIdx}
             virtualizer={virtualizer}
             element={ref.current}
@@ -55,7 +56,7 @@ export default function Read() {
             <div className="sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 pb-2 border-b-[1.5px] border-b-subtle">
               <div className="px-2 flex justify-between items-end">
                 <div className="w-fit">
-                  <BackRouteButton />
+                  <BackRouteButton defaultBack />
                 </div>
                 <div className="flex gap-2">
                   <PrevSentenceButton
