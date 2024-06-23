@@ -4,6 +4,8 @@ export type SpeechEngineOptions = {
   onBoundary: (e: SpeechSynthesisEvent) => void;
   onEnd: (e: SpeechSynthesisEvent) => void;
   onStateUpdate: (state: PlayingState) => void;
+  voice: SpeechSynthesisVoice;
+  rate: number;
 };
 
 export type PlayingState = "initialized" | "playing" | "paused" | "ended" | "audio-error";
@@ -24,21 +26,18 @@ export type SpeechEngine = ReturnType<typeof createSpeechEngine>;
  * This should generally be left for the candidate to use as the speech synthesis apis have a few nuances
  * that the candidate might not be familiar with.
  */
-const createSpeechEngine = (options: SpeechEngineOptions, voiceName: SpeechSynthesisVoice["name"] | null) => {
-  const voices = speechSynthesis.getVoices() ?? [];
+const createSpeechEngine = (options: SpeechEngineOptions) => {
   const state: SpeechEngineState = {
     utterance: null,
     config: {
-      rate: 1.2,
+      rate: options.rate,
+      voice: options.voice,
       volume: 1,
-      voice:
-        voices.find((voice) => voice.name === voiceName) ?? voices.find((voice) => voice.lang === "zh-CN") ?? voices[0],
     },
   };
 
   window.speechSynthesis.onvoiceschanged = (e) => {
-    state.config.voice =
-      voices.find((voice) => voice.name === voiceName) ?? voices.find((voice) => voice.lang === "zh-CN") ?? voices[0];
+    state.config.voice = options.voice;
   };
 
   const load = (text: string) => {

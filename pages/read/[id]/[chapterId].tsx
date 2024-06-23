@@ -1,12 +1,6 @@
 import { BackRouteButton } from "@/components";
-import { Layout } from "@/modules/layout";
-import {
-  BottomBar,
-  NextSentenceButton,
-  PrevSentenceButton,
-  ScrollToCurrentButton,
-  TextContainer,
-} from "@/modules/speech";
+import { Layout, useReading } from "@/modules/layout";
+import { BottomBar, ChangeSpeed, ScrollToCurrentButton, TextContainer, ToggleBlur } from "@/modules/speech";
 import { useParagraphs, useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import React from "react";
@@ -15,7 +9,11 @@ import { Toaster } from "sonner";
 export default function Read() {
   const { sentences } = useParagraphs();
 
-  const { currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech(sentences);
+  const { speed } = useReading();
+
+  const { currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech(sentences, {
+    rate: speed,
+  });
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -62,14 +60,8 @@ export default function Read() {
                   <BackRouteButton defaultBack />
                 </div>
                 <div className="flex gap-2">
-                  <PrevSentenceButton
-                    disabled={currentSentenceIdx === 0}
-                    onClick={() => toSentence(currentSentenceIdx - 1)}
-                  />
-                  <NextSentenceButton
-                    disabled={currentSentenceIdx === sentences.length - 1}
-                    onClick={() => toSentence(currentSentenceIdx + 1)}
-                  />
+                  <ToggleBlur />
+                  <ChangeSpeed />
                 </div>
               </div>
             </div>

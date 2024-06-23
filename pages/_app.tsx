@@ -7,7 +7,7 @@ import type { AppProps } from "next/app";
 import { Seo } from "@/components";
 import { apiClient } from "@/utils";
 import { AnimatePresence } from "framer-motion";
-import { ConfettiProvider, HSKLayout, NewReadingLayout } from "@/modules/layout";
+import { ConfettiProvider, HSKLayout, NewReadingLayout, ReadingLayout } from "@/modules/layout";
 import React from "react";
 
 import { SessionProvider } from "next-auth/react";
@@ -18,6 +18,7 @@ export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:30
 export default function App({ Component, pageProps, router }: AppProps) {
   const isNewReading = router.pathname.startsWith("/new");
   const isHsk = router.pathname.startsWith("/hsk");
+  const isReading = router.pathname.startsWith("/read");
 
   React.useEffect(() => {
     const timeout = setTimeout(() => {
@@ -51,6 +52,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
                   <NewReadingLayout>
                     <Component key={router.pathname} {...pageProps} />
                   </NewReadingLayout>
+                ) : isReading ? (
+                  <ReadingLayout>
+                    <Component key={router.pathname} {...pageProps} />
+                  </ReadingLayout>
                 ) : isHsk ? (
                   <HSKLayout>
                     <Component key={router.pathname} {...pageProps} />

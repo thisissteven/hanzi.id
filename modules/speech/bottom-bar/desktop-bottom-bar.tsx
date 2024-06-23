@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
 import { SoundWave } from "@/components";
+import { useThrottledClickHandler } from "@/hooks";
 
 export function DesktopBottomBar({
   currentSentenceIdx,
@@ -21,13 +22,19 @@ export function DesktopBottomBar({
   pause: () => void;
   sentences: string[];
 }) {
-  const handlePlayPause = () => {
-    if (playbackState === "playing") {
-      pause();
-    } else {
-      play();
+  const [handlePlayPause] = useThrottledClickHandler(
+    () => {
+      if (playbackState === "playing") {
+        pause();
+      } else {
+        play();
+      }
+    },
+    {
+      maxClicks: 1,
+      throttle: 300,
     }
-  };
+  );
 
   const isPlaying = useDebounce(playbackState === "playing", 200);
 

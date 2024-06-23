@@ -4,6 +4,7 @@ import { PlayingState } from "@/utils";
 import Image from "next/image";
 import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
 import { SoundWaveMobile } from "@/components";
+import { useThrottledClickHandler } from "@/hooks";
 
 export function MobileBottomBar({
   currentSentenceIdx,
@@ -20,13 +21,19 @@ export function MobileBottomBar({
   pause: () => void;
   sentences: string[];
 }) {
-  const handlePlayPause = () => {
-    if (playbackState === "playing") {
-      pause();
-    } else {
-      play();
+  const [handlePlayPause] = useThrottledClickHandler(
+    () => {
+      if (playbackState === "playing") {
+        pause();
+      } else {
+        play();
+      }
+    },
+    {
+      maxClicks: 1,
+      throttle: 300,
     }
-  };
+  );
 
   return (
     <div className="fixed bottom-2 px-2 w-full">

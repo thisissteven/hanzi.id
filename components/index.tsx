@@ -7,3 +7,4 @@ export * from "./hsk";
 export * from "./virtualized-list";
 export * from "./icons";
 export * from "./sound-wave";
+export * from "./slider";

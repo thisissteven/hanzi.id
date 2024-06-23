@@ -6,6 +6,7 @@ import { CurrentSentence } from "./current-sentence";
 import { cn, useDebounce } from "@/utils";
 import { Virtualizer } from "@tanstack/react-virtual";
 import useIsMobile from "@/hooks/useIsMobile";
+import { useReading } from "../layout";
 
 export function TextContainer({
   sentences,
@@ -27,6 +28,8 @@ export function TextContainer({
   const isMobile = useIsMobile();
 
   const isPaused = useDebounce(paused, 200);
+
+  const { blurred } = useReading();
 
   React.useEffect(() => {
     if (isPaused) {
@@ -67,14 +70,14 @@ export function TextContainer({
                     paused={isPaused}
                     currentSentenceIndex={currentSentenceIdx}
                     onClick={() => {
-                      if (index > currentSentenceIdx && !paused) return;
+                      if (index > currentSentenceIdx && !paused && blurred) return;
                       if (index === currentSentenceIdx) return;
                       toSentence(index);
                     }}
                     index={index}
                     onMouseEnter={(e) => {
                       if (isMobile) return;
-                      if (index > currentSentenceIdx && !paused) {
+                      if (index > currentSentenceIdx && !paused && blurred) {
                         highlightRef.current.style.opacity = "0";
                       } else {
                         const justEntered = highlightRef.current.style.opacity === "0";
