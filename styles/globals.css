@@ -5,6 +5,7 @@
 @layer base {
   :root {
     text-rendering: optimizeLegibility;
+    --color-error: #ff5b5b;
 
     --black: 253 253 253; /* white */
     --white: 16 16 16; /* black */
@@ -62,6 +63,27 @@
   .max-h-dialog {
     max-height: calc(100vh + 0.5rem);
     max-height: calc(100dvh + 0.5rem);
+  }
+}
+
+.indicator {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 91, 91, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 91, 91, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 91, 91, 0);
   }
 }
 

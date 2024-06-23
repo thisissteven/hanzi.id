@@ -6,3 +6,4 @@ export * from "./account-menu";
 export * from "./hsk";
 export * from "./virtualized-list";
 export * from "./icons";
+export * from "./sound-wave";

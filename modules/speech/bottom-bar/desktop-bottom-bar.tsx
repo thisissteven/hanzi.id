@@ -4,6 +4,7 @@ import { PlayingState, useDebounce } from "@/utils";
 import clsx from "clsx";
 import Image from "next/image";
 import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
+import { SoundWave } from "@/components";
 
 export function DesktopBottomBar({
   currentSentenceIdx,
@@ -32,7 +33,8 @@ export function DesktopBottomBar({
 
   return (
     <div className="sticky h-dvh top-0 mx-4 z-50 right-0 rounded-lg p-4 grid place-items-center overflow-x-hidden overflow-y-auto">
-      <div className="space-y-4">
+      <div className="relative space-y-4">
+        <SoundWave isPlaying={isPlaying} />
         <div className={clsx("flex flex-col items-start gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
           <div className="relative w-56 aspect-square shrink-0">
             <div

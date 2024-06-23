@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./buttons";
-import { GraduationCapIcon, LanguagesIcon, LibraryBigIcon, TargetIcon } from "lucide-react";
+import { FilePlus2Icon, GraduationCapIcon, LanguagesIcon, LibraryBigIcon } from "lucide-react";
 import { Divider } from "@/components";
 import { AuthButton } from "./auth-button";
 
@@ -27,8 +27,8 @@ export function HomeTodo() {
         <Button
           path="/new"
           className="hover:bg-indigo-500/10"
-          icon={<TargetIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-indigo-500" />}
-          title="Immersed reading"
+          icon={<FilePlus2Icon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-indigo-500" />}
+          title="New Reading"
           description="Upload PDFs, texts or images to practice reading."
         />
 

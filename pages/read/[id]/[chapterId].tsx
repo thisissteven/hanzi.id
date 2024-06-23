@@ -10,6 +10,7 @@ import {
 import { useParagraphs, useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import React from "react";
+import { Toaster } from "sonner";
 
 export default function Read() {
   const { sentences } = useParagraphs();
@@ -26,6 +27,8 @@ export default function Read() {
 
   return (
     <Layout>
+      <Toaster position="top-center" />
+
       <div className="min-h-dvh bg-black">
         <style jsx>{`
           #container {

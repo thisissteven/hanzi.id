@@ -3,6 +3,7 @@ import React from "react";
 import { PlayingState } from "@/utils";
 import Image from "next/image";
 import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
+import { SoundWaveMobile } from "@/components";
 
 export function MobileBottomBar({
   currentSentenceIdx,
@@ -41,6 +42,7 @@ export function MobileBottomBar({
               alt="cover"
               className="object-cover w-full h-full"
             />
+            <SoundWaveMobile isPlaying={playbackState === "playing"} />
           </div>
 
           <div className="text-left flex-1 whitespace-nowrap overflow-x-auto scrollbar-none">

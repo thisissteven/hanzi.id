@@ -6,7 +6,7 @@ export type SpeechEngineOptions = {
   onStateUpdate: (state: PlayingState) => void;
 };
 
-export type PlayingState = "initialized" | "playing" | "paused" | "ended";
+export type PlayingState = "initialized" | "playing" | "paused" | "ended" | "audio-error";
 
 export type SpeechEngineState = {
   utterance: SpeechSynthesisUtterance | null;
@@ -69,6 +69,10 @@ const createSpeechEngine = (options: SpeechEngineOptions, voiceName: SpeechSynth
     if (!state.utterance) throw new Error("No active utterance found to play");
     state.utterance.onstart = () => {
       options.onStateUpdate("playing");
+    };
+
+    state.utterance.onerror = (e) => {
+      options.onStateUpdate("audio-error");
     };
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(state.utterance);
