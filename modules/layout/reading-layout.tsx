@@ -6,22 +6,26 @@ type FontSize = "base" | "lg" | "xl" | "2xl";
 export const fontSizeMap = {
   base: {
     className: "text-base md:text-lg",
-    icon: <Heading4Icon />,
+    icon: <Heading4Icon size={20} />,
+    iconLarge: <Heading4Icon size={22} />,
     name: "base",
   },
   lg: {
     className: "text-lg md:text-xl tracking-wide",
-    icon: <Heading3Icon />,
+    icon: <Heading3Icon size={20} />,
+    iconLarge: <Heading3Icon size={22} />,
     name: "lg",
   },
   xl: {
     className: "text-xl md:text-2xl tracking-wider",
-    icon: <Heading2Icon />,
+    icon: <Heading2Icon size={20} />,
+    iconLarge: <Heading2Icon size={22} />,
     name: "xl",
   },
   "2xl": {
-    className: "text-2xl md:text-3xl leading-10 tracking-wider",
-    icon: <Heading1Icon />,
+    className: "text-2xl md:text-3xl leading-10 tracking-wide",
+    icon: <Heading1Icon size={20} />,
+    iconLarge: <Heading1Icon size={22} />,
     name: "2xl",
   },
 } as const;
@@ -32,6 +36,7 @@ const ReadingContext = React.createContext(
     fontSize: {
       className: string;
       icon: React.ReactNode;
+      iconLarge: React.ReactNode;
       name: FontSize;
     };
     speed: number;
@@ -47,7 +52,7 @@ export function useReading() {
 
 export function ReadingProvider({ children }: { children: React.ReactNode }) {
   const [blurred, setBlurred] = React.useState(true);
-  const [fontSize, setFontSize] = React.useState<(typeof fontSizeMap)[FontSize]>(fontSizeMap.lg);
+  const [fontSize, setFontSize] = React.useState<(typeof fontSizeMap)[FontSize]>(fontSizeMap.xl);
   const [speed, setSpeed] = React.useState(1.2);
 
   const toggleBlur = React.useCallback(() => {
@@ -77,10 +82,10 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
       setSpeed(parseFloat(savedSpeed));
     }
 
-    const savedBlurred = localStorage.getItem("blurred");
-    if (savedBlurred) {
-      setBlurred(JSON.parse(savedBlurred));
-    }
+    // const savedBlurred = localStorage.getItem("blurred");
+    // if (savedBlurred) {
+    //   setBlurred(JSON.parse(savedBlurred));
+    // }
   }, []);
 
   return (
