@@ -23,12 +23,14 @@ export function TextMarquee({
   titleClassName,
   subtitleClassName,
   containerClassName,
+  gradientClassName,
 }: {
   title: string;
   subtitle: string;
   titleClassName?: string;
   subtitleClassName?: string;
   containerClassName?: string;
+  gradientClassName?: string;
 }) {
   const [scope, animate] = useAnimate();
 
@@ -60,8 +62,8 @@ export function TextMarquee({
 
   return (
     <div ref={scope} className={cn("-ml-1 w-full overflow-hidden relative", containerClassName)}>
-      <div className="absolute z-10 h-1/2 bg-gradient-to-r from-subtle/50 w-2"></div>
-      <div className="absolute z-10 h-1/2 right-0 bg-gradient-to-l from-subtle/50 w-2"></div>
+      <div className={cn("absolute z-10 h-1/2 bg-gradient-to-r from-subtle/50 w-2", gradientClassName)}></div>
+      <div className={cn("absolute z-10 h-1/2 right-0 bg-gradient-to-l from-subtle/50 w-2", gradientClassName)}></div>
 
       <m.h2 ref={ref} className={cn("ml-1 text-sm font-semibold whitespace-nowrap", titleClassName)}>
         {title}

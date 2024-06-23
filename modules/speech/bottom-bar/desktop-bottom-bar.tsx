@@ -6,6 +6,7 @@ import Image from "next/image";
 import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
 import { SoundWave, TextMarquee } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
+import { ScanSearchIcon } from "lucide-react";
 
 export function DesktopBottomBar({
   currentSentenceIdx,
@@ -40,7 +41,7 @@ export function DesktopBottomBar({
 
   return (
     <div className="sticky h-dvh top-0 mx-4 z-50 right-0 rounded-lg p-4 grid place-items-center overflow-x-hidden overflow-y-auto">
-      <div className="relative space-y-4">
+      <div className="relative mt-24">
         <SoundWave isPlaying={isPlaying} />
         <div className={clsx("flex flex-col items-start gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
           <div className="relative w-56 aspect-square shrink-0">
@@ -67,10 +68,11 @@ export function DesktopBottomBar({
             titleClassName="text-xl font-bold mt-2"
             subtitleClassName="text-[rgb(208,208,208)] text-base mt-1"
             containerClassName="max-w-[224px]"
+            gradientClassName="from-[#111619]"
           />
         </div>
 
-        <div className="relative mx-0.5">
+        <div className="mt-4 relative mx-0.5">
           <div className="h-[1.5px] rounded-full bg-white/10"></div>
           <div
             style={{
@@ -80,7 +82,7 @@ export function DesktopBottomBar({
           ></div>
         </div>
 
-        <div className="grid place-items-center grid-cols-3">
+        <div className="mt-4 grid place-items-center grid-cols-3">
           <PrevSentenceButton disabled={currentSentenceIdx === 0} onClick={() => toSentence(currentSentenceIdx - 1)} />
           <PlayButton isPlaying={playbackState === "playing"} onClick={handlePlayPause} />
           <NextSentenceButton
@@ -89,6 +91,10 @@ export function DesktopBottomBar({
           />
           {/* <SelectSpeed onChange={(speed) => {}} /> */}
         </div>
+
+        <button className="mt-4 flex items-center justify-center gap-2 w-full py-3 font-medium rounded-md bg-subtle/50 active:bg-hovered duration-200 text-smokewhite">
+          <ScanSearchIcon size={24} /> View Definition
+        </button>
       </div>
     </div>
   );

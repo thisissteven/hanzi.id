@@ -6,20 +6,14 @@ import { franc } from "franc";
 import { EraserIcon } from "lucide-react";
 import { FormTextarea } from "@/components/text-area";
 import { useScrollToTop } from "./use-scroll-to-top";
-import { cn } from "@/utils";
+import { cn, getStatsFromText } from "@/utils";
 import { AnimatePresence, motion } from "framer-motion";
 
 function ContentStats({ index }: { index: number }) {
   const { watch } = useFormContext<NewReadingProps>();
 
   const field = watch(`chapters.${index}`);
-  const localeMapping = {
-    eng: "en", // English
-    cmn: "cn", // Simplified Chinese (Mandarin)
-  } as const;
-  const locale = franc(field.content) as keyof typeof localeMapping;
-
-  const result = readingTime(field.content, 150, localeMapping[locale] || "en");
+  const result = getStatsFromText(field.content);
   return (
     <div className="absolute right-2 bottom-16 md:right-16 md:bottom-2 pointer-events-none peer-focus:opacity-50">
       <div className="flex gap-2 items-center w-fit text-xs">

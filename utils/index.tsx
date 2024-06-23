@@ -10,3 +10,4 @@ export * from "./use-debounce";
 export * from "./prisma";
 export * from "./request-handler";
 export * from "./new-window";
+export * from "./getStatsFromText";
