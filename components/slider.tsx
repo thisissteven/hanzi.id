@@ -14,7 +14,7 @@ const Slider = React.forwardRef<
     {...props}
   >
     <SliderPrimitive.Track className="relative h-2 w-full grow overflow-hidden rounded-full bg-subtle">
-      <SliderPrimitive.Range className="absolute h-full bg-gradient-to-r from-rose-500 to-lime-400" />
+      <SliderPrimitive.Range className="absolute h-full bg-gradient-to-r from-red-500 to-lime-300" />
     </SliderPrimitive.Track>
     <SliderPrimitive.Thumb
       after-dynamic-value={props.value + "x"}

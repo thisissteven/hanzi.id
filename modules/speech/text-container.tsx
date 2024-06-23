@@ -29,7 +29,7 @@ export function TextContainer({
 
   const isPaused = useDebounce(paused, 200);
 
-  const { blurred } = useReading();
+  const { blurred, fontSize } = useReading();
 
   React.useEffect(() => {
     if (isPaused) {
@@ -44,7 +44,7 @@ export function TextContainer({
           highlightRef.current.style.transitionProperty = "opacity";
           highlightRef.current.style.opacity = "0";
         }}
-        className="relative text-lg md:text-xl list-none max-[810px]:pb-20 pb-4"
+        className={cn("relative list-none max-[810px]:pb-20 pb-4", fontSize.className)}
       >
         <div
           ref={highlightRef}

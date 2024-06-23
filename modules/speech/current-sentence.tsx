@@ -19,7 +19,11 @@ export function CurrentSentence({ sentence, wordRange, currentSentenceIdx }: Cur
   return (
     <span>
       {sentence.slice(0, start)}
-      <span ref={ref} className="relative border-b-[1.5px] border-amber-300 py-0.5">
+      <span
+        ref={ref}
+        // className="relative border-b-[1.5px] border-pink-300 rounded-x-full py-0.5"
+        className="relative rounded-b-md bg-indigo-300/30 rounded-t border-b-[1.5px] border-sky-300 py-0.5 box-clone"
+      >
         {currentWord}
       </span>
       {sentence.slice(end)}

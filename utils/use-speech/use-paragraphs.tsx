@@ -1661,7 +1661,13 @@ function cleanUpText(input: string) {
   // Replace newlines not followed by a Chinese punctuation mark or space with a space
   input = input.replace(/([^。！？])\n([^。！？])/g, "$1$2");
 
-  return input;
+  // Regular expression to match spaces between Chinese characters
+  const regex = /([\u4e00-\u9fa5])\s+([\u4e00-\u9fa5])/g;
+
+  // Replace spaces between Chinese characters with no space
+  const newText = input.replace(regex, "$1$2");
+
+  return newText;
 }
 
 const allPunctuation = new RegExp(

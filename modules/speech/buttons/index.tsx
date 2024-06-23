@@ -4,3 +4,4 @@ export * from "./prev-sentence-button";
 export * from "./scroll-to-current-button";
 export * from "./toggle-blur";
 export * from "./change-speed";
+export * from "./change-font-size";

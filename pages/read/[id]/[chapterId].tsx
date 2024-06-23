@@ -1,6 +1,13 @@
 import { BackRouteButton } from "@/components";
 import { Layout, useReading } from "@/modules/layout";
-import { BottomBar, ChangeSpeed, ScrollToCurrentButton, TextContainer, ToggleBlur } from "@/modules/speech";
+import {
+  BottomBar,
+  ChangeFontSize,
+  ChangeSpeed,
+  ScrollToCurrentButton,
+  TextContainer,
+  ToggleBlur,
+} from "@/modules/speech";
 import { useParagraphs, useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import React from "react";
@@ -60,7 +67,8 @@ export default function Read() {
                   <BackRouteButton defaultBack />
                 </div>
                 <div className="flex gap-2">
-                  <ToggleBlur />
+                  <ToggleBlur isPlaying={playbackState === "playing"} />
+                  <ChangeFontSize />
                   <ChangeSpeed />
                 </div>
               </div>

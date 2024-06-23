@@ -1,11 +1,11 @@
 import { useThrottledClickHandler } from "@/hooks";
 import { useReading } from "@/modules/layout";
-import { AnimatePresence } from "framer-motion";
+
 import { EyeIcon, EyeOffIcon } from "lucide-react";
 import React from "react";
-import { FadeInOut } from "./fade-in-out";
+import { cn } from "@/utils";
 
-export function ToggleBlur() {
+export function ToggleBlur({ isPlaying }: { isPlaying: boolean }) {
   const { blurred, toggleBlur } = useReading();
 
   const [onClick] = useThrottledClickHandler(toggleBlur, {
@@ -14,18 +14,14 @@ export function ToggleBlur() {
   });
 
   return (
-    <button onClick={onClick} className="active:bg-hovered text-smokewhite p-2 rounded-md duration-200">
-      <AnimatePresence mode="wait" initial={false}>
-        {blurred ? (
-          <FadeInOut key="blurred">
-            <EyeIcon size={22} />
-          </FadeInOut>
-        ) : (
-          <FadeInOut key="visible">
-            <EyeOffIcon size={22} />
-          </FadeInOut>
-        )}
-      </AnimatePresence>
+    <button
+      onClick={onClick}
+      className={cn(
+        "active:bg-hovered text-smokewhite p-2 rounded-md duration-200",
+        isPlaying ? "opacity-100" : "opacity-0"
+      )}
+    >
+      {blurred ? <EyeIcon size={22} /> : <EyeOffIcon size={22} />}
     </button>
   );
 }
