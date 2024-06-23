@@ -4,7 +4,7 @@ import { PlayingState, useDebounce } from "@/utils";
 import clsx from "clsx";
 import Image from "next/image";
 import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
-import { SoundWave } from "@/components";
+import { SoundWave, TextMarquee } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
 
 export function DesktopBottomBar({
@@ -61,10 +61,13 @@ export function DesktopBottomBar({
             </div>
           </div>
 
-          <div className="max-w-[224px] overflow-x-auto scrollbar-none whitespace-nowrap">
-            <h1 className="text-xl font-bold mt-2">Their Side</h1>
-            <p className="text-[rgb(208,208,208)">Chapter 1 - Aliens</p>
-          </div>
+          <TextMarquee
+            title="The legend of bees of thousand years ago"
+            subtitle="The legend of bees of thousand years ago"
+            titleClassName="text-xl font-bold mt-2"
+            subtitleClassName="text-[rgb(208,208,208)] text-base mt-1"
+            containerClassName="max-w-[224px]"
+          />
         </div>
 
         <div className="relative mx-0.5">

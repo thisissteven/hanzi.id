@@ -3,7 +3,7 @@ import React from "react";
 import { PlayingState } from "@/utils";
 import Image from "next/image";
 import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
-import { SoundWaveMobile } from "@/components";
+import { SoundWaveMobile, TextMarquee } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
 
 export function MobileBottomBar({
@@ -52,10 +52,10 @@ export function MobileBottomBar({
             <SoundWaveMobile isPlaying={playbackState === "playing"} />
           </div>
 
-          <div className="text-left flex-1 whitespace-nowrap overflow-x-auto scrollbar-none">
-            <h1 className="text-sm font-semibold">Their Side</h1>
-            <p className="text-xs text-smokewhite">Chapter 1 - Aliens</p>
-          </div>
+          <TextMarquee
+            title="The legend of bees of thousand years ago"
+            subtitle="The legend of bees of thousand years ago"
+          />
 
           <div className="grid place-items-center grid-cols-3 min-w-32">
             <PrevSentenceButton
