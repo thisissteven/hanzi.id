@@ -142,7 +142,7 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
 
       <div className="relative h-dvh pt-12 w-full">
         <div ref={ref} className="w-full h-full overflow-y-auto scrollbar max-sm:pb-12">
-          <div className="px-4 sm:pr-8 py-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-4">
+          <div className="sm:px-4 sm:pr-8 py-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full sm:gap-4">
             {characters.map((character) => {
               const isCompleted = currentCompletedCharacters.includes(character.id);
 

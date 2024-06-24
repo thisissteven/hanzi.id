@@ -1,7 +1,7 @@
 import { useLastViewedHanzi, useLastViewedHanziActions } from "@/store/useLastViewedHanzi";
 import { useRouter } from "next/router";
 import React from "react";
-import { Toaster, toast } from "sonner";
+import { toast } from "sonner";
 
 export function LastViewedHanzi() {
   const { handleValueMismatch, hydrateLastViewedHanzi } = useLastViewedHanziActions();
@@ -28,12 +28,13 @@ export function LastViewedHanzi() {
           toast.custom(
             (t) => {
               return (
-                <div className="min-w-[300px] bg-black text-smokewhite border-2 border-blue-200/80 rounded-lg px-4 py-3 flex justify-between items-center">
-                  <div className="text-blue-300">
+                <div className="font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-[#232323] whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
+                  <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-blue-400 indicator-blue"></div>
+                  <span className="shrink-0 flex-1">
                     {lastViewedHanzi.character} <span className="text-xs">(last visited)</span>
-                  </div>
+                  </span>
                   <button
-                    className="px-2 py-1 text-sm bg-blue-500/10 active:bg-blue-500/20 transition text-blue-300 rounded-md"
+                    className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-blue-500/10 active:bg-blue-500/20 transition text-blue-300"
                     onClick={() => {
                       router.push(lastViewedHanzi.pathname);
                       toast.dismiss(t);
@@ -57,5 +58,5 @@ export function LastViewedHanzi() {
     };
   }, [lastViewedHanzi, router]);
 
-  return <Toaster position="top-center" />;
+  return null;
 }

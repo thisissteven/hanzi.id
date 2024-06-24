@@ -12,6 +12,7 @@ import React from "react";
 
 import { SessionProvider } from "next-auth/react";
 import { AuthProvider } from "@/modules/auth";
+import { Toaster } from "sonner";
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -35,6 +36,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider forcedTheme="dark" attribute="class">
       <Seo />
+
+      <Toaster position="top-center" />
 
       <SWRConfig
         value={{

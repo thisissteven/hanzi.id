@@ -46,7 +46,10 @@ export function DesktopBottomBar({
         <div className={clsx("flex flex-col items-start gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
           <div className="relative w-56 aspect-square shrink-0">
             <div
-              className={clsx("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.6)]")}
+              className={clsx(
+                "absolute inset-0 w-full h-full"
+                // "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.6)]"
+              )}
               aria-hidden
             ></div>
             <div className="relative rounded-xl overflow-hidden w-full aspect-square ring-4 ring-blue-400/20">
@@ -68,7 +71,7 @@ export function DesktopBottomBar({
             titleClassName="text-xl font-bold mt-2"
             subtitleClassName="text-[rgb(208,208,208)] text-base mt-1"
             containerClassName="max-w-[224px]"
-            gradientClassName="from-[#111619]"
+            gradientClassName="from-black"
           />
         </div>
 

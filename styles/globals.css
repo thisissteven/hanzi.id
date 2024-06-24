@@ -6,6 +6,7 @@
   :root {
     text-rendering: optimizeLegibility;
     --color-error: #ff5b5b;
+    --color-lightblue: #93c5fb;
 
     --black: 253 253 253; /* white */
     --white: 16 16 16; /* black */
@@ -39,8 +40,8 @@
     --softblack: 24 24 24;
     --zinc: 32 32 32;
     --softzinc: 50 50 50;
-    --wheat: 188 185 138;
-    --mossgreen: 137 154 92;
+    --wheat: 138 185 218; /* light blue */
+    --mossgreen: 92 138 154; /* medium blue */
     --empty: 80 80 80;
     --border: 54 54 54;
     --smokewhite: 229 229 229;
@@ -75,6 +76,15 @@
   animation-fill-mode: none;
 }
 
+.indicator-blue {
+  animation-name: pulse-blue;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 91, 91, 0.5);
@@ -84,6 +94,18 @@
   }
   100% {
     box-shadow: 0 0 0 0 rgba(255, 91, 91, 0);
+  }
+}
+
+@keyframes pulse-blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(173, 216, 230, 0.5); /* light blue with 50% opacity */
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(173, 216, 230, 0); /* light blue with 0% opacity */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(173, 216, 230, 0); /* light blue with 0% opacity */
   }
 }
 

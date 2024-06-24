@@ -6,6 +6,7 @@ export type SpeechEngineOptions = {
   onStateUpdate: (state: PlayingState) => void;
   voice: SpeechSynthesisVoice;
   rate: number;
+  isMobile: boolean;
 };
 
 export type PlayingState = "initialized" | "playing" | "paused" | "ended" | "audio-error";
@@ -16,6 +17,7 @@ export type SpeechEngineState = {
     rate: number;
     volume: number;
     voice: SpeechSynthesisVoice;
+    isMobile: boolean;
   };
 };
 
@@ -32,6 +34,7 @@ const createSpeechEngine = (options: SpeechEngineOptions) => {
     config: {
       rate: options.rate,
       voice: options.voice,
+      isMobile: options.isMobile,
       volume: 1,
     },
   };
@@ -44,8 +47,8 @@ const createSpeechEngine = (options: SpeechEngineOptions) => {
     const utterance = new SpeechSynthesisUtterance(text);
 
     const localeMapping = {
-      eng: "en_US", // English
-      cmn: "zh_CN", // Simplified Chinese (Mandarin)
+      eng: state.config.isMobile ? "en_US" : "en-US", // English
+      cmn: state.config.isMobile ? "zh_CN" : "zh-CN", // Simplified Chinese (Mandarin)
     } as const;
     const locale = franc(text) as keyof typeof localeMapping;
 
@@ -71,7 +74,7 @@ const createSpeechEngine = (options: SpeechEngineOptions) => {
     };
 
     state.utterance.onerror = (e) => {
-      options.onStateUpdate("audio-error");
+      if (!e.error || e.error === "synthesis-failed") options.onStateUpdate("audio-error");
     };
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(state.utterance);

@@ -28,11 +28,11 @@ export function CharacterRow({
   onCompleteToggle: () => void;
 }) {
   return (
-    <div onClick={onClick} className="relative active:scale-95 transition select-none text-3xl">
+    <div onClick={onClick} className="relative group transition select-none text-3xl">
       <div
         className={clsx(
-          "pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-2 shadow-b-small rounded-lg bg-softblack",
-          isCompleted ? "border-mossgreen shadow-mossgreen text-wheat" : "border-border shadow-border"
+          "pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-t-2 border-zinc shadow-zinc shadow-b-small bg-softblack active:bg-hovered",
+          isCompleted && "bg-lime-200/10 active:bg-mossgreen/30 text-wheat"
         )}
       >
         <div className="shrink-0 font-medium">{hanzi}</div>

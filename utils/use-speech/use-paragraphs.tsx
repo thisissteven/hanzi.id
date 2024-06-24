@@ -1688,11 +1688,7 @@ export function useParagraphs() {
   const paragraphs = React.useMemo(() => {
     const sections = sentence.split("\n");
 
-    const localeMapping = {
-      eng: "en_US", // English
-      cmn: "zh_CN", // Simplified Chinese (Mandarin)
-    } as const;
-    const locale = franc(sections[0] ?? "") as keyof typeof localeMapping;
+    const locale = franc(sections[0] ?? "");
 
     const period = locale === "cmn" ? "。" : ".";
     const periodConversation = locale === "cmn" ? "。”" : ".";

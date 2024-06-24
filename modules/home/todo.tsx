@@ -17,8 +17,8 @@ export function HomeTodo() {
 
       <div className="grid md:grid-cols-2 gap-4">
         <Button
-          className="hover:bg-yellow-500/10"
-          icon={<GraduationCapIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-yellow-500" />}
+          className="hover:bg-blue-500/10"
+          icon={<GraduationCapIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-blue-500" />}
           path="/hsk/1"
           title="Learn HSK 1-9"
           description="Chinese HSK vocabulary lists and practice exams."
@@ -26,8 +26,8 @@ export function HomeTodo() {
 
         <Button
           path="/new"
-          className="hover:bg-indigo-500/10"
-          icon={<FilePlus2Icon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-indigo-500" />}
+          className="hover:bg-yellow-500/10"
+          icon={<FilePlus2Icon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-yellow-500" />}
           title="New Reading"
           description="Upload PDFs, texts or images to practice reading."
         />

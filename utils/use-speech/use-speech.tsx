@@ -99,6 +99,7 @@ const useSpeech = (
         },
         voice: voices.find((voice) => voice.lang === localeMapping[locale]) ?? voices[0],
         rate: rate,
+        isMobile,
       });
     }
 
