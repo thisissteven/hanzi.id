@@ -81,9 +81,14 @@ export function TextContainer({
                         if (!paused) {
                           pause();
                         }
-                        router.push(router.asPath + `?sentence=${sentences[currentSentenceIdx]}`, undefined, {
-                          shallow: true,
-                        });
+                        router.push(
+                          router.asPath +
+                            `?sentence=${sentences[currentSentenceIdx]}&sentenceIndex=${currentSentenceIdx}`,
+                          undefined,
+                          {
+                            shallow: true,
+                          }
+                        );
                         return;
                       }
                       if (index > currentSentenceIdx && !paused && blurred) return;

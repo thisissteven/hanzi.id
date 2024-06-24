@@ -7,9 +7,10 @@ import {
   ScrollToCurrentButton,
   TextContainer,
 } from "@/modules/speech";
-import { replaceRead, useSpeech } from "@/utils";
+import { pushRead, useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
+import { useRouter as useNavigationRouter } from "next/navigation";
 import React from "react";
 
 export default function Read() {
@@ -25,10 +26,25 @@ export default function Read() {
 
   const router = useRouter();
 
+  const id = router.query.id;
+  const chapterId = router.query.chapterId;
+  const sentenceIndex = router.query.sentenceIndex as string;
+
+  const navigationRouter = useNavigationRouter();
+
   return (
     <Layout>
       <div className="min-h-dvh bg-black">
-        <DefinitionModal />
+        <DefinitionModal
+          previousSentence={() => {
+            const index = Math.max(0, parseInt(sentenceIndex) - 1);
+            return `/read/${id}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
+          }}
+          nextSentence={() => {
+            const index = Math.min(sentences.length - 1, parseInt(sentenceIndex) + 1);
+            return `/read/${id}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
+          }}
+        />
 
         <style jsx>{`
           #container {
@@ -61,7 +77,7 @@ export default function Read() {
                 <div className="w-fit">
                   <button
                     onClick={() => {
-                      replaceRead(router, "/read/1", () => {
+                      pushRead(navigationRouter, "/read/1", () => {
                         virtualizer.scrollToIndex(0, {
                           behavior: "smooth",
                         });

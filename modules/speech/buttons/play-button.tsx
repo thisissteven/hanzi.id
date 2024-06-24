@@ -10,7 +10,7 @@ export function PlayButton({ isPlaying, onClick }: { isPlaying: boolean; onClick
   return (
     <button
       type="button"
-      className="group relative flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full hover:bg-hovered active:bg-subtle transition-colors duration-200"
+      className="group relative flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full hover:bg-hovered/50 active:bg-subtle/50 transition-colors duration-200"
       onClick={onClick}
       aria-label={isPlaying ? "Pause" : "Play"}
     >

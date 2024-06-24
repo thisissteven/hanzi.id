@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PlayingState, useDebounce } from "@/utils";
+import { cn, PlayingState, useDebounce } from "@/utils";
 import clsx from "clsx";
 import Image from "next/image";
 import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
@@ -78,7 +78,7 @@ export function DesktopBottomBar({
           />
         </div>
 
-        <div className="mt-4 relative mx-0.5">
+        <div className="mt-4 relative mx-0.5 bg-black">
           <div className="h-[1.5px] rounded-full bg-white/10"></div>
           <div
             style={{
@@ -88,7 +88,12 @@ export function DesktopBottomBar({
           ></div>
         </div>
 
-        <div className="mt-4 grid place-items-center grid-cols-3">
+        <div
+          className={cn(
+            "pt-4 grid place-items-center grid-cols-3 relative bg-black/50 duration-1000",
+            playbackState === "playing" && "backdrop-blur-sm"
+          )}
+        >
           <PrevSentenceButton disabled={currentSentenceIdx === 0} onClick={() => toSentence(currentSentenceIdx - 1)} />
           <PlayButton isPlaying={playbackState === "playing"} onClick={handlePlayPause} />
           <NextSentenceButton
@@ -104,9 +109,13 @@ export function DesktopBottomBar({
             if (playbackState === "playing") {
               pause();
             }
-            router.push(router.asPath + `?sentence=${sentences[currentSentenceIdx]}`, undefined, {
-              shallow: true,
-            });
+            router.push(
+              router.asPath + `?sentence=${sentences[currentSentenceIdx]}&sentenceIndex=${currentSentenceIdx}`,
+              undefined,
+              {
+                shallow: true,
+              }
+            );
           }}
         >
           <ScanSearchIcon size={24} /> View Definition

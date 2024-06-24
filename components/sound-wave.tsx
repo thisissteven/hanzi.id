@@ -24,12 +24,15 @@ export const SoundWave = React.memo(
     }, [isPlaying]);
 
     return (
-      <div className="pointer-events-none absolute opacity-80 w-full aspect-square grid place-items-center top-4">
+      <div className="pointer-events-none absolute opacity-80 w-full aspect-square grid place-items-center top-52">
         <div className="grid h-full grid-cols-11 justify-center gap-1.5 bg-transparent max-w-11">
           {barHeights.map((height, index) => (
             <div
               key={index}
-              className="col-span-1 mx-auto my-auto w-[2.25px] scale-125 rounded-full bg-white/80 duration-300"
+              className={cn(
+                "col-span-1 mx-auto my-auto w-[2.25px] scale-125 rounded-full",
+                height < 2 ? "opacity-0 duration-1000" : "bg-white/80 duration-300"
+              )}
               style={{ height: `${height}px` }}
             ></div>
           ))}
