@@ -12,7 +12,6 @@ export type SegmentApiResponse = {
 
 export interface SegmentedResult {
   index: number;
-  hsk?: number;
   simplified: string;
   entries?: Array<{
     pinyin: string;
@@ -70,7 +69,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Segmen
       // for hanzi
       return {
         index: currentIndex,
-        // hsk: i.hsk,
         simplified: i.simplified,
         entries,
         isPunctuation: false,

@@ -7,7 +7,7 @@ export function HanziDefinition({
   };
 }) {
   return (
-    <ul className="relative ml-8 pr-1">
+    <ul className="relative ml-8 pr-2">
       {entry.definitions.map((definition, index) => {
         return (
           <li key={index} className="list-disc">

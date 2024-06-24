@@ -51,11 +51,11 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
         </DragToScrollWrapper>
       )}
       <ul className="relative space-y-2 px-4">
-        {currentLesson.map((lesson) => {
+        {currentLesson.map((lesson, index) => {
           const splitted = lesson.simplified.split(regex);
 
           return (
-            <li key={lesson.simplified} className="list-none">
+            <li key={index} className="list-none">
               <Popover>
                 <Popover.Trigger className="text-left sm:text-lg font-medium">
                   {splitted.map((part) => {

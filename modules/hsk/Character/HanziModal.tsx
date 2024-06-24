@@ -12,6 +12,7 @@ import { useWindowSize } from "@/hooks";
 import clsx from "clsx";
 import { Level } from "@/data";
 import { useAudio } from "@/modules/layout";
+import { motion, AnimatePresence } from "framer-motion";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -87,11 +88,19 @@ export function HanziModal() {
         <div className="absolute top-8 sm:top-4 left-0 right-0 mx-4 bg-gradient-to-b from-black h-6"></div>
         <div className="absolute bottom-14 sm:bottom-12 left-0 right-0 mx-4 bg-gradient-to-t from-black h-12"></div>
 
-        {isLoading && (
-          <div className="grid place-items-center absolute inset-0 bg-black/50 mb-8">
-            {<LoadingBar className="scale-150" visible />}
-          </div>
-        )}
+        <AnimatePresence>
+          {isLoading && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ type: "tween", duration: 0.2 }}
+              className="grid place-items-center absolute inset-0 h-full z-50 bg-black/50"
+            >
+              {<LoadingBar className="scale-150" visible />}
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         <MarkAsCompleted
           className="absolute top-12 sm:top-9 right-4 sm:right-8 w-12 h-12"

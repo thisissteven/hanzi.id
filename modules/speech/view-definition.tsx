@@ -17,14 +17,21 @@ export type IdHanziMapKey = keyof typeof IdHanziMap;
 type DefinitionModalProps = {
   previousSentence: () => string;
   nextSentence: () => string;
+  previousDisabled?: boolean;
+  nextDisabled?: boolean;
 };
 
-export function DefinitionModal({ previousSentence, nextSentence }: DefinitionModalProps) {
+export function DefinitionModal({
+  previousSentence,
+  nextSentence,
+  previousDisabled,
+  nextDisabled,
+}: DefinitionModalProps) {
   const router = useRouter();
   const sentence = router.query.sentence as string;
 
   const { data, isLoading } = useSWRImmutable<SegmentApiResponse>(
-    `/segment?text=${sentence}`,
+    sentence ? `/segment?text=${sentence}` : undefined,
     async (url) => {
       const response = await fetch(`/api/${url}`);
       // Simulate loading for better UX
@@ -119,8 +126,9 @@ export function DefinitionModal({ previousSentence, nextSentence }: DefinitionMo
                 href={previousSentence()}
                 prefetch={false}
                 scroll={false}
+                aria-disabled={previousDisabled}
                 shallow
-                className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5"
+                className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
               >
                 <div className="mb-[3px]">&#8592;</div> Previous
               </Link>
@@ -128,8 +136,9 @@ export function DefinitionModal({ previousSentence, nextSentence }: DefinitionMo
                 href={nextSentence()}
                 prefetch={false}
                 scroll={false}
+                aria-disabled={nextDisabled}
                 shallow
-                className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5"
+                className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
               >
                 Next &#8594;
               </Link>

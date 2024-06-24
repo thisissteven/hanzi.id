@@ -36,6 +36,8 @@ export default function Read() {
     <Layout>
       <div className="min-h-dvh bg-black">
         <DefinitionModal
+          previousDisabled={parseInt(sentenceIndex) === 0}
+          nextDisabled={parseInt(sentenceIndex) === sentences.length - 1}
           previousSentence={() => {
             const index = Math.max(0, parseInt(sentenceIndex) - 1);
             return `/read/${id}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
