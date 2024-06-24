@@ -13,10 +13,10 @@ export function Drawer({ children, ...props }: DrawerProps) {
 function DrawerContent({ children, className, ...props }: DrawerContentProps) {
   return (
     <VaulDrawer.Portal>
-      <VaulDrawer.Overlay className="fixed z-40 inset-0 bg-black/10 backdrop-blur-sm" />
+      <VaulDrawer.Overlay className="fixed z-[999] inset-0 bg-black/10 backdrop-blur-sm" />
       <VaulDrawer.Content
         className={cn(
-          "p-3 pt-4 focus:outline-none z-40 text-light-smokewhite bg-black rounded-t-[10px] fixed bottom-0 right-0",
+          "p-3 pt-4 focus:outline-none z-[999] text-light-smokewhite bg-black rounded-t-[10px] fixed bottom-0 right-0",
           className
         )}
         {...props}

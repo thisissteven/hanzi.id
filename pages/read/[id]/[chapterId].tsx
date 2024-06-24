@@ -1,18 +1,19 @@
-import { BackRouteButton } from "@/components";
-import { Layout, useReading } from "@/modules/layout";
-import { BottomBar, ChangeFontSize, ChangeSpeed, ScrollToCurrentButton, TextContainer } from "@/modules/speech";
-import { useParagraphs, useSpeech } from "@/utils";
+import { Layout } from "@/modules/layout";
+import {
+  BottomBar,
+  ChangeFontSize,
+  ChangeSpeed,
+  DefinitionModal,
+  ScrollToCurrentButton,
+  TextContainer,
+} from "@/modules/speech";
+import { replaceRead, useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Read() {
-  const { sentences } = useParagraphs();
-
-  const { speed } = useReading();
-
-  const { currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech(sentences, {
-    rate: speed,
-  });
+  const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -22,9 +23,13 @@ export default function Read() {
     overscan: 0,
   });
 
+  const router = useRouter();
+
   return (
     <Layout>
       <div className="min-h-dvh bg-black">
+        <DefinitionModal />
+
         <style jsx>{`
           #container {
             display: grid;
@@ -50,20 +55,32 @@ export default function Read() {
             element={ref.current}
           />
 
-          <div ref={ref}>
+          <div>
             <div className="sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 pb-2 border-b-[1.5px] border-b-subtle">
               <div className="px-2 flex justify-between items-end">
                 <div className="w-fit">
-                  <BackRouteButton defaultBack />
+                  <button
+                    onClick={() => {
+                      replaceRead(router, "/read/1", () => {
+                        virtualizer.scrollToIndex(0, {
+                          behavior: "smooth",
+                        });
+                      });
+                    }}
+                    type="button"
+                    className="mt-4 py-2 pl-3 pr-4 rounded-md duration-200 active:bg-hovered flex items-center gap-2"
+                  >
+                    <div className="mb-[3px]">&#8592;</div> Return
+                  </button>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 max-[810px]:-mr-0 -mr-2">
                   <ChangeFontSize />
                   <ChangeSpeed />
                 </div>
               </div>
             </div>
 
-            <div className="relative mt-4 max-[810px]:px-4 px-2">
+            <div className="relative mt-4 max-[810px]:px-4 px-2" ref={ref}>
               <TextContainer
                 paused={playbackState === "paused"}
                 currentSentenceIdx={currentSentenceIdx}
@@ -71,6 +88,7 @@ export default function Read() {
                 sentences={sentences}
                 currentWordRange={currentWordRange}
                 virtualizer={virtualizer}
+                pause={pause}
               />
             </div>
           </div>

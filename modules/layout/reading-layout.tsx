@@ -1,3 +1,4 @@
+import { SpeechProvider } from "@/utils";
 import { Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon } from "lucide-react";
 import React from "react";
 
@@ -99,7 +100,7 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
         changeSpeed,
       }}
     >
-      {children}
+      <SpeechProvider>{children}</SpeechProvider>
     </ReadingContext.Provider>
   );
 }

@@ -53,6 +53,8 @@
 
   html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: visible !important;
+    padding-right: 0px !important;
   }
 
   button {

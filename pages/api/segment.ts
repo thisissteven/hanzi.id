@@ -14,8 +14,10 @@ export interface SegmentedResult {
   index: number;
   hsk?: number;
   simplified: string;
-  pinyin?: string;
-  translations?: string[];
+  entries?: Array<{
+    pinyin: string;
+    english: string[];
+  }>;
   isPunctuation: boolean;
 }
 
@@ -60,16 +62,17 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Segmen
           isPunctuation: true,
         };
 
-      const pinyin = i.matches[0].pinyinPretty;
-      const translations = i.matches[0].english.split("/").map((t) => t.trim());
+      const entries = i.matches.map((match) => ({
+        pinyin: match.pinyinPretty,
+        english: match.english.split("/").map((t) => t.trim()),
+      }));
 
       // for hanzi
       return {
         index: currentIndex,
         // hsk: i.hsk,
         simplified: i.simplified,
-        pinyin: pinyin,
-        translations: translations,
+        entries,
         isPunctuation: false,
       };
     });

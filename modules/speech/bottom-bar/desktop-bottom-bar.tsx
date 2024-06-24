@@ -7,6 +7,7 @@ import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
 import { SoundWave, TextMarquee } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
 import { ScanSearchIcon } from "lucide-react";
+import { useRouter } from "next/router";
 
 export function DesktopBottomBar({
   currentSentenceIdx,
@@ -39,8 +40,10 @@ export function DesktopBottomBar({
 
   const isPlaying = useDebounce(playbackState === "playing", 200);
 
+  const router = useRouter();
+
   return (
-    <div className="sticky h-dvh top-0 mx-4 z-50 right-0 rounded-lg p-4 grid place-items-center overflow-x-hidden overflow-y-auto">
+    <div className="sticky h-dvh top-0 mx-4 right-0 rounded-lg p-4 grid place-items-center overflow-x-hidden overflow-y-auto">
       <div className="relative mt-24">
         <SoundWave isPlaying={isPlaying} />
         <div className={clsx("flex flex-col items-start gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
@@ -95,7 +98,17 @@ export function DesktopBottomBar({
           {/* <SelectSpeed onChange={(speed) => {}} /> */}
         </div>
 
-        <button className="mt-4 flex items-center justify-center gap-2 w-full py-3 font-medium rounded-md bg-subtle/50 active:bg-hovered duration-200 text-smokewhite">
+        <button
+          className="mt-4 flex items-center justify-center gap-2 w-full py-3 font-medium rounded-md bg-subtle/50 active:bg-hovered duration-200 text-smokewhite"
+          onClick={() => {
+            if (playbackState === "playing") {
+              pause();
+            }
+            router.push(router.asPath + `?sentence=${sentences[currentSentenceIdx]}`, undefined, {
+              shallow: true,
+            });
+          }}
+        >
           <ScanSearchIcon size={24} /> View Definition
         </button>
       </div>

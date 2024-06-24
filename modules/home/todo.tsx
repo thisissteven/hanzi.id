@@ -3,6 +3,7 @@ import { Button } from "./buttons";
 import { FilePlus2Icon, GraduationCapIcon, LanguagesIcon, LibraryBigIcon } from "lucide-react";
 import { Divider } from "@/components";
 import { AuthButton } from "./auth-button";
+import Link from "next/link";
 
 export function HomeTodo() {
   return (
@@ -14,6 +15,8 @@ export function HomeTodo() {
       </div>
 
       <Divider />
+
+      <Link href="/read/1/1">read</Link>
 
       <div className="grid md:grid-cols-2 gap-4">
         <Button

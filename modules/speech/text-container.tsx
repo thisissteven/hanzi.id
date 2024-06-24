@@ -7,6 +7,8 @@ import { cn, useDebounce } from "@/utils";
 import { Virtualizer } from "@tanstack/react-virtual";
 import useIsMobile from "@/hooks/useIsMobile";
 import { useReading } from "../layout";
+import { useRouter } from "next/router";
+import { useWindowSize } from "@/hooks";
 
 export function TextContainer({
   sentences,
@@ -15,6 +17,7 @@ export function TextContainer({
   currentWordRange,
   paused,
   virtualizer,
+  pause,
 }: {
   sentences: string[];
   currentSentenceIdx: number;
@@ -22,6 +25,7 @@ export function TextContainer({
   currentWordRange: number[];
   paused: boolean;
   virtualizer: Virtualizer<Window, Element>;
+  pause: () => void;
 }) {
   const highlightRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -36,6 +40,9 @@ export function TextContainer({
       highlightRef.current.style.opacity = "0";
     }
   }, [isPaused]);
+
+  const { width } = useWindowSize();
+  const router = useRouter();
 
   return (
     <div>
@@ -70,8 +77,16 @@ export function TextContainer({
                     paused={isPaused}
                     currentSentenceIndex={currentSentenceIdx}
                     onClick={() => {
+                      if (index === currentSentenceIdx) {
+                        if (!paused) {
+                          pause();
+                        }
+                        router.push(router.asPath + `?sentence=${sentences[currentSentenceIdx]}`, undefined, {
+                          shallow: true,
+                        });
+                        return;
+                      }
                       if (index > currentSentenceIdx && !paused && blurred) return;
-                      if (index === currentSentenceIdx) return;
                       toSentence(index);
                     }}
                     index={index}

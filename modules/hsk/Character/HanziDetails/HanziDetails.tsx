@@ -72,6 +72,7 @@ export function HanziDetails({
             </div>
           </div>
         )}
+
         {entryLength > 1 && (
           <div className="space-x-2 px-4">
             {definition.entries.map((_, index) => {

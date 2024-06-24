@@ -74,6 +74,7 @@ const createSpeechEngine = (options: SpeechEngineOptions) => {
     };
 
     state.utterance.onerror = (e) => {
+      console.log(e.error);
       if (!e.error || e.error === "synthesis-failed") options.onStateUpdate("audio-error");
     };
     window.speechSynthesis.cancel();

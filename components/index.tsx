@@ -9,3 +9,4 @@ export * from "./icons";
 export * from "./sound-wave";
 export * from "./slider";
 export * from "./text-marquee";
+export * from "./like-button";

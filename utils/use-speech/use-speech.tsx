@@ -3,8 +3,11 @@ import { createSpeechEngine, PlayingState } from "./speech";
 import { franc } from "franc";
 import { toast } from "sonner";
 import useIsMobile from "@/hooks/useIsMobile";
+import React from "react";
+import { useParagraphs } from "./use-paragraphs";
+import { useReading } from "@/modules/layout";
 
-const useSpeech = (
+const useSpeechManager = (
   sentences: Array<string>,
   {
     rate,
@@ -155,7 +158,23 @@ const useSpeech = (
     play,
     pause,
     toSentence,
+    sentences,
   };
 };
 
-export { useSpeech };
+const SpeechContext = React.createContext({} as ReturnType<typeof useSpeechManager>);
+
+export const useSpeech = () => {
+  return React.useContext(SpeechContext);
+};
+
+export function SpeechProvider({ children }: { children: React.ReactNode }) {
+  const { sentences } = useParagraphs();
+  const { speed } = useReading();
+
+  const value = useSpeechManager(sentences, {
+    rate: speed,
+  });
+
+  return <SpeechContext.Provider value={value}>{children}</SpeechContext.Provider>;
+}
