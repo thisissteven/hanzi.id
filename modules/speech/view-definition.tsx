@@ -11,6 +11,7 @@ import { useReading } from "../layout";
 import { Divider, LoadingBar } from "@/components";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import { SaveToFlashcard } from "./save-to-flashcard";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -184,21 +185,25 @@ export function DefinitionModal({
 
                 {data && (
                   <React.Fragment>
-                    {isIdiom ? (
-                      <>
-                        <p className="mt-1 text-3xl md:text-4xl font-medium">{currentSection?.simplified}</p>
-                        <div className="flex items-end gap-2">
-                          <p className="font-medium">{currentEntry?.pinyin}</p>
-                        </div>
-                      </>
-                    ) : (
-                      <div className="mt-1 flex items-end gap-2">
-                        <p className="text-3xl md:text-4xl font-medium">{currentSection?.simplified}</p>
+                    <div className="flex justify-between">
+                      {isIdiom ? (
                         <div>
-                          <p className="font-medium">{currentEntry?.pinyin}</p>
+                          <p className="mt-1 text-3xl md:text-4xl font-medium">{currentSection?.simplified}</p>
+                          <div className="flex items-end gap-2">
+                            <p className="font-medium">{currentEntry?.pinyin}</p>
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      ) : (
+                        <div className="mt-1 flex items-end gap-2">
+                          <p className="text-3xl md:text-4xl font-medium">{currentSection?.simplified}</p>
+                          <div>
+                            <p className="font-medium">{currentEntry?.pinyin}</p>
+                          </div>
+                        </div>
+                      )}
+
+                      <SaveToFlashcard key={currentSection?.simplified} word={currentSection?.simplified} />
+                    </div>
 
                     {currentEntries.length > 1 && (
                       <div className="space-x-2 mt-2">

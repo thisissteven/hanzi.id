@@ -41,9 +41,12 @@ const ReadingContext = React.createContext(
       name: FontSize;
     };
     speed: number;
+    flashcard: Array<string>;
     toggleBlur: () => void;
     changeFontSize: (fontSize: FontSize) => void;
     changeSpeed: (speed: number) => void;
+    addToFlashcard: (word: string) => void;
+    removeFromFlashcard: (word: string) => void;
   }
 );
 
@@ -55,11 +58,14 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
   const [blurred, setBlurred] = React.useState(true);
   const [fontSize, setFontSize] = React.useState<(typeof fontSizeMap)[FontSize]>(fontSizeMap.xl);
   const [speed, setSpeed] = React.useState(1.2);
+  const [flashcard, setFlashcard] = React.useState<Array<string>>([]);
 
   const toggleBlur = React.useCallback(() => {
-    setBlurred((prev) => !prev);
-    localStorage.setItem("blurred", JSON.stringify(!blurred));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setBlurred((prev) => {
+      const blurred = !prev;
+      localStorage.setItem("blurred", JSON.stringify(blurred));
+      return blurred;
+    });
   }, []);
 
   const changeFontSize = React.useCallback((fontSize: FontSize) => {
@@ -70,6 +76,22 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
   const changeSpeed = React.useCallback((speed: number) => {
     setSpeed(speed);
     localStorage.setItem("speed", JSON.stringify(speed));
+  }, []);
+
+  const addToFlashcard = React.useCallback((word: string) => {
+    setFlashcard((prev) => {
+      const flashcard = [...prev, word];
+      localStorage.setItem("flashcard", JSON.stringify([...flashcard, word]));
+      return flashcard;
+    });
+  }, []);
+
+  const removeFromFlashcard = React.useCallback((word: string) => {
+    setFlashcard((prev) => {
+      const flashcard = prev.filter((w) => w !== word);
+      localStorage.setItem("flashcard", JSON.stringify(flashcard.filter((w) => w !== word)));
+      return flashcard;
+    });
   }, []);
 
   React.useEffect(() => {
@@ -83,10 +105,10 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
       setSpeed(parseFloat(savedSpeed));
     }
 
-    // const savedBlurred = localStorage.getItem("blurred");
-    // if (savedBlurred) {
-    //   setBlurred(JSON.parse(savedBlurred));
-    // }
+    const savedFlashcard = localStorage.getItem("flashcard");
+    if (savedFlashcard) {
+      setFlashcard(JSON.parse(savedFlashcard));
+    }
   }, []);
 
   return (
@@ -95,9 +117,12 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
         blurred,
         fontSize,
         speed,
+        flashcard,
         toggleBlur,
         changeFontSize,
         changeSpeed,
+        addToFlashcard,
+        removeFromFlashcard,
       }}
     >
       <SpeechProvider>{children}</SpeechProvider>

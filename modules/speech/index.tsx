@@ -5,3 +5,4 @@ export * from "./text-container";
 export * from "./current-sentence";
 export * from "./bottom-bar";
 export * from "./view-definition";
+export * from "./save-to-flashcard";
