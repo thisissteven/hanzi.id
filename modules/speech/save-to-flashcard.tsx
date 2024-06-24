@@ -38,14 +38,14 @@ export function SaveToFlashcard({ word }: { word?: string }) {
           }}
           exit={{
             scale: 0.9,
-            opacity: 0,
+            opacity: 0.5,
           }}
           transition={{
             duration: 0.15,
           }}
           className="flex items-center justify-center w-full h-full"
         >
-          <Icon strokeWidth={1.5} className={cn("h-7 w-7 duration-200", isSaved ? "text-sky-400" : "")} />
+          <Icon strokeWidth={1.5} className={cn("h-7 w-7", isSaved ? "text-sky-400" : "")} />
         </motion.div>
       </AnimatePresence>
     </button>

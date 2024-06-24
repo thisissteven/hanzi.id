@@ -18,6 +18,7 @@ export type IdHanziMapKey = keyof typeof IdHanziMap;
 type DefinitionModalProps = {
   previousSentence: () => string;
   nextSentence: () => string;
+  totalSentences: number;
   previousDisabled?: boolean;
   nextDisabled?: boolean;
 };
@@ -25,11 +26,13 @@ type DefinitionModalProps = {
 export function DefinitionModal({
   previousSentence,
   nextSentence,
+  totalSentences,
   previousDisabled,
   nextDisabled,
 }: DefinitionModalProps) {
   const router = useRouter();
   const sentence = router.query.sentence as string;
+  const sentenceIndex = router.query.sentenceIndex as string;
 
   const { data, isLoading } = useSWRImmutable<SegmentApiResponse>(
     sentence ? `/segment?text=${sentence}` : undefined,
@@ -82,6 +85,14 @@ export function DefinitionModal({
   const currentEntry = currentEntries[actualEntryIndex] ?? [];
 
   const { fontSize } = useReading();
+
+  const latestSentenceIndex = React.useRef(sentenceIndex);
+
+  React.useEffect(() => {
+    if (sentenceIndex) {
+      latestSentenceIndex.current = sentenceIndex;
+    }
+  }, [sentenceIndex]);
 
   return (
     <Dialog
@@ -239,7 +250,10 @@ export function DefinitionModal({
 
               <Divider />
 
-              <div className="mt-2 px-3 sm:px-4 flex justify-end">
+              <div className="mt-2 px-3 sm:px-4 flex justify-between items-end">
+                <span className="text-sm text-secondary">
+                  {parseInt(sentenceIndex ?? latestSentenceIndex.current) + 1}/{totalSentences}
+                </span>
                 <button
                   onClick={() => {
                     const pathname = router.asPath.split("?")[0];

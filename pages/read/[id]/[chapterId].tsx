@@ -36,6 +36,7 @@ export default function Read() {
     <Layout>
       <div className="min-h-dvh bg-black">
         <DefinitionModal
+          totalSentences={sentences.length}
           previousDisabled={parseInt(sentenceIndex) === 0}
           nextDisabled={parseInt(sentenceIndex) === sentences.length - 1}
           previousSentence={() => {
