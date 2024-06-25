@@ -1,10 +1,10 @@
 import React from "react";
-import { HanziRelatedApiResponse } from "../types";
+import { HanziApiResponse } from "../types";
 import { Popover, Drawer } from "@/components";
 import { useWindowSize } from "@/hooks";
 import clsx from "clsx";
 
-export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziRelatedApiResponse["idioms"] }) {
+export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziApiResponse["idioms"] }) {
   const { width } = useWindowSize();
   const isMobile = width < 640;
 

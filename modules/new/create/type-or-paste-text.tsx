@@ -1,8 +1,6 @@
 import React from "react";
 import { Controller, useFieldArray, useFormContext } from "react-hook-form";
 import { NewReadingProps } from "../constants";
-import { readingTime } from "reading-time-estimator";
-import { franc } from "franc";
 import { EraserIcon } from "lucide-react";
 import { FormTextarea } from "@/components/text-area";
 import { useScrollToTop } from "./use-scroll-to-top";

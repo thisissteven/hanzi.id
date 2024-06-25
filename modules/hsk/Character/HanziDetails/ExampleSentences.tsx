@@ -1,10 +1,10 @@
 import { DragToScrollWrapper, Popover } from "@/components";
 import React from "react";
-import { HanziRelatedApiResponse } from "../types";
 import clsx from "clsx";
 import { AudioButton } from "../AudioButton";
+import { HanziApiResponse } from "../types";
 
-export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: HanziRelatedApiResponse["lessons"] }) {
+export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: HanziApiResponse["lessons"] }) {
   const [currentLevel, setCurrentLevel] = React.useState<string | null>(null);
 
   React.useEffect(() => {

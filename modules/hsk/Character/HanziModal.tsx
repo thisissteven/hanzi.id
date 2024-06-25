@@ -4,7 +4,7 @@ import * as React from "react";
 import { LoadingBar, HSKLinkButton, MarkAsCompleted, preloadHanziDetails, Drawer } from "@/components";
 import IdHanziMap from "@/data/id-hanzi-map.json";
 import { BASE_URL } from "@/pages/_app";
-import { HanziApiResponse, HanziRelatedApiResponse } from "./types";
+import { HanziApiResponse } from "./types";
 import { HanziDetails } from "./HanziDetails";
 import { useCompletedCharacters, useCompletedCharactersActions } from "@/store";
 import { LAST_VIEWED_HANZI_KEY } from "@/store/useLastViewedHanzi";
@@ -46,7 +46,7 @@ export function HanziModal() {
 
   const { stopAudio } = useAudio();
 
-  const { data: hanziLookupData } = useSWRImmutable<HanziApiResponse>(
+  const { data, isLoading } = useSWRImmutable<HanziApiResponse>(
     hanzi ? `hanzi/${hanzi}` : null,
     async (url) => {
       const response = await fetch(`${BASE_URL}/api/${url}`);
@@ -58,24 +58,6 @@ export function HanziModal() {
     }
   );
 
-  const { data: hanziRelatedData, isLoading } = useSWRImmutable<HanziRelatedApiResponse>(
-    hanzi ? `hanzi/related/${hanzi}` : null,
-    async (url) => {
-      const response = await fetch(`${BASE_URL}/api/${url}`);
-      const data = await response.json();
-      return data;
-    },
-    {
-      keepPreviousData: true,
-    }
-  );
-
-  const data = {
-    ...hanziLookupData,
-    ...hanziRelatedData,
-  };
-
-  const hasBothData = hanziLookupData && hanziRelatedData;
   const completedCharacters = useCompletedCharacters();
   const currentCompletedCharacters = data?.definition && !isLoading ? completedCharacters[currentLevel] : null;
   const isCompleted = currentCompletedCharacters && currentCompletedCharacters.includes(currentHanziId);
@@ -101,9 +83,7 @@ export function HanziModal() {
           isMobile ? "h-[90dvh] left-0" : "h-dvh rounded-none max-w-xl w-full"
         )}
       >
-        {hasBothData && (
-          <HanziDetails currentLevel={currentLevel} currentHanzi={hanzi} {...hanziLookupData} {...hanziRelatedData} />
-        )}
+        {data && <HanziDetails currentLevel={currentLevel} currentHanzi={hanzi} {...data} />}
 
         <div className="absolute top-8 sm:top-4 left-0 right-0 mx-4 bg-gradient-to-b from-black h-6"></div>
         <div className="absolute bottom-14 sm:bottom-12 left-0 right-0 mx-4 bg-gradient-to-t from-black h-12"></div>

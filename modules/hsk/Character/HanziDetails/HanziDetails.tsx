@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HanziApiResponse, HanziRelatedApiResponse } from "../types";
+import { HanziApiResponse } from "../types";
 import { BASE_URL } from "@/pages/_app";
 import { AudioButton } from "../AudioButton";
 import clsx from "clsx";
@@ -17,11 +17,10 @@ export function HanziDetails({
   related,
   currentHanzi,
   currentLevel,
-}: HanziApiResponse &
-  HanziRelatedApiResponse & {
-    currentHanzi: IdHanziMapKey;
-    currentLevel: Level;
-  }) {
+}: HanziApiResponse & {
+  currentHanzi: IdHanziMapKey;
+  currentLevel: Level;
+}) {
   const [entryIndex, setEntryIndex] = React.useState(0);
 
   const ref = React.useRef<HTMLDivElement>(null);

@@ -1,10 +1,10 @@
 import React from "react";
-import { HanziRelatedApiResponse } from "../types";
+import { HanziApiResponse } from "../types";
 import { Popover, Drawer } from "@/components";
 import clsx from "clsx";
 import { useWindowSize } from "@/hooks";
 
-export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: HanziRelatedApiResponse["related"] }) {
+export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: HanziApiResponse["related"] }) {
   const { width } = useWindowSize();
   const isMobile = width < 640;
 

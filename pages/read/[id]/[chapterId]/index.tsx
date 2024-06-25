@@ -22,11 +22,22 @@ export default function Read() {
 
   const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
 
+  const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+
+  const virtualizer = useWindowVirtualizer({
+    count: sentences.length,
+    estimateSize: () => 100,
+    overscan: 0,
+  });
+
   const toLastRead = React.useCallback(
     (index: number) => {
       toSentence(index);
+      virtualizer.scrollToIndex(index, {
+        behavior: "smooth",
+      });
     },
-    [toSentence]
+    [toSentence, virtualizer]
   );
 
   const { updateLastRead } = useLastRead({
@@ -44,14 +55,6 @@ export default function Read() {
       });
     }
   }, [bookId, chapterId, currentSentenceIdx, updateLastRead]);
-
-  const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
-
-  const virtualizer = useWindowVirtualizer({
-    count: sentences.length,
-    estimateSize: () => 100,
-    overscan: 0,
-  });
 
   return (
     <Layout>
