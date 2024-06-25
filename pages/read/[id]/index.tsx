@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { useRouter as useNavigationRouter } from "next/navigation";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 import { PlayIcon } from "lucide-react";
+import { useScrollToTop } from "@/modules/new";
 
 function BookDetails() {
   const router = useRouter();
@@ -33,6 +34,8 @@ function BookDetails() {
   const title = data?.title;
   const description = data?.description;
   const chapters = data?.chapters || [];
+
+  useScrollToTop();
 
   return (
     <div className="mt-8 pb-8 max-md:px-4">

@@ -25,24 +25,34 @@ export async function getPaginatedBooks({
   const skip = previousCursor ? 1 : 0;
   const cursor = getCursor(previousCursor);
 
-  const threads = await prisma.book.findMany({
+  const books = await prisma.book.findMany({
     ...params,
     skip,
     cursor,
     take: TAKE,
+    include: {
+      image: true,
+      chapters: {
+        select: {
+          _count: true,
+        },
+      },
+    },
     orderBy: {
       updatedAt: "desc",
     },
   });
 
-  const lastThread = threads.length === TAKE ? threads[TAKE - 1] : null;
+  const lastThread = books.length === TAKE ? books[TAKE - 1] : null;
   const lastCursor = lastThread ? lastThread.id : null;
 
   return {
-    data: threads,
+    data: books,
     cursor: lastCursor,
   };
 }
+
+export type GetAllBooksResponse = Prisma.PromiseReturnType<typeof getPaginatedBooks>;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await requestHandler(req, res, {

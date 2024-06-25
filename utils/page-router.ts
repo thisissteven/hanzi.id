@@ -1,5 +1,3 @@
-import { Virtualizer } from "@tanstack/react-virtual";
-
 let isListenerAdded = false;
 
 export function push(

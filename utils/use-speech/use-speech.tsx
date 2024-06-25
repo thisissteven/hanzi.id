@@ -6,6 +6,9 @@ import useIsMobile from "@/hooks/useIsMobile";
 import React from "react";
 import { useParagraphs } from "./use-paragraphs";
 import { useReading } from "@/modules/layout";
+import { useRouter } from "next/router";
+import useSWRImmutable from "swr/immutable";
+import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 
 const useSpeechManager = (
   sentences: Array<string>,
@@ -29,6 +32,8 @@ const useSpeechManager = (
   const isPlaying = useRef(false);
 
   const speechEngine = useMemo(() => {
+    if (typeof window !== "undefined") window.speechSynthesis.cancel();
+
     const localeMapping = {
       eng: "en-US", // English
       cmn: "zh-CN", // Simplified Chinese (Mandarin)
@@ -67,13 +72,11 @@ const useSpeechManager = (
               lastChar.current.sentence = sentences[prev + 1];
               return prev + 1;
             }
-            // reset
-            lastChar.current = {
-              index: 0,
-              sentence: sentences[0],
-            };
+
+            // end
+            setPlaybackState("paused");
             isPlaying.current = false;
-            return 0;
+            return prev;
           });
         },
         onStateUpdate: (state: PlayingState) => {
@@ -140,16 +143,19 @@ const useSpeechManager = (
     }
   };
 
-  const toSentence = async (index: number) => {
-    setCurrentWordRange([0, 0]);
-    currentCharIndex.current = 0;
-    lastChar.current = {
-      index: 0,
-      sentence: sentences[index],
-    };
+  const toSentence = React.useCallback(
+    (index: number) => {
+      setCurrentWordRange([0, 0]);
+      currentCharIndex.current = 0;
+      lastChar.current = {
+        index: 0,
+        sentence: sentences[index],
+      };
 
-    setCurrentSentenceIdx(index);
-  };
+      setCurrentSentenceIdx(index);
+    },
+    [sentences]
+  );
 
   return {
     currentSentenceIdx,
@@ -169,10 +175,39 @@ export const useSpeech = () => {
 };
 
 export function SpeechProvider({ children }: { children: React.ReactNode }) {
-  const { sentences } = useParagraphs();
+  const router = useRouter();
+
+  const bookId = router.query.id;
+  const chapterId = router.query.chapterId;
+
+  const { data } = useSWRImmutable<GetBookByIdResponse>(
+    bookId ? `/book/${bookId}` : undefined,
+    async (url) => {
+      const response = await fetch(`/api/${url}`);
+      const data = await response.json();
+      return data;
+    },
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  const lastChapterId = React.useRef(chapterId);
+
+  React.useEffect(() => {
+    if (chapterId) {
+      lastChapterId.current = chapterId;
+    }
+  }, [chapterId]);
+
+  const chapter = data?.chapters.find((chapter) => chapter.id === lastChapterId.current);
+
+  const { sentences } = useParagraphs(chapter?.content ?? "");
   const { speed } = useReading();
 
-  const value = useSpeechManager(sentences, {
+  const readySentences = sentences.length === 0 ? [""] : sentences;
+
+  const value = useSpeechManager(readySentences, {
     rate: speed,
   });
 

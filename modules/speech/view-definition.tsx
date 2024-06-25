@@ -9,7 +9,6 @@ import { SegmentApiResponse } from "@/pages/api/segment";
 import { cn } from "@/utils";
 import { useReading } from "../layout";
 import { Divider, LoadingBar } from "@/components";
-import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { SaveToFlashcard } from "./save-to-flashcard";
 
@@ -99,10 +98,12 @@ export function DefinitionModal({
       className="relative z-[998]"
       open={Boolean(sentence)}
       onClose={() => {
-        const pathname = router.asPath.split("?")[0];
-        router.push(pathname, undefined, {
-          shallow: true,
-        });
+        // const pathname = router.asPath.split("?")[0];
+        // router.push(pathname, undefined, {
+        //   shallow: true,
+        // });
+
+        router.back();
       }}
     >
       <DialogBackdrop
@@ -134,26 +135,28 @@ export function DefinitionModal({
             </AnimatePresence>
 
             <div className="flex justify-between px-3 sm:px-4 text-secondary">
-              <Link
-                href={previousSentence()}
-                prefetch={false}
-                scroll={false}
+              <button
+                onClick={() => {
+                  router.replace(previousSentence(), undefined, {
+                    shallow: true,
+                  });
+                }}
                 aria-disabled={previousDisabled}
-                shallow
                 className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
               >
                 <div className="mb-[3px]">&#8592;</div> Previous
-              </Link>
-              <Link
-                href={nextSentence()}
-                prefetch={false}
-                scroll={false}
+              </button>
+              <button
+                onClick={() => {
+                  router.replace(nextSentence(), undefined, {
+                    shallow: true,
+                  });
+                }}
                 aria-disabled={nextDisabled}
-                shallow
                 className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
               >
                 Next &#8594;
-              </Link>
+              </button>
             </div>
 
             <Divider />
@@ -256,10 +259,12 @@ export function DefinitionModal({
                 </span>
                 <button
                   onClick={() => {
-                    const pathname = router.asPath.split("?")[0];
-                    router.push(pathname, undefined, {
-                      shallow: true,
-                    });
+                    // const pathname = router.asPath.split("?")[0];
+                    // router.push(pathname, undefined, {
+                    //   shallow: true,
+                    // });
+
+                    router.back();
                   }}
                   className="block rounded-md font-medium duration-200 text-secondary bg-hovered active:bg-subtle px-3 py-1.5"
                 >

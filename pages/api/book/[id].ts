@@ -27,8 +27,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     GET: async () => {
       const id = req.query.id as string;
 
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-
       const book = await getBookById(id);
 
       res.status(200).json(book);

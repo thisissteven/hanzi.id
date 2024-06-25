@@ -5,3 +5,4 @@ export * from "./useDebounce";
 export * from "./useDragToScroll";
 export * from "./useIsMobile";
 export * from "./useThrottledClickHandler";
+export * from "./useDelayedInfiniteSWR";

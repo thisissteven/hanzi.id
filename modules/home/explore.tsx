@@ -1,133 +1,111 @@
-import { CustomRouteButton, Divider } from "@/components";
+import { LoadMore } from "@/components";
+import { useDelayedInfiniteSWR } from "@/hooks";
+import { GetAllBooksResponse } from "@/pages/api/book";
 import { cn } from "@/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { toast } from "sonner";
 
-const books = [
-  {
-    title: "Their Side",
-    description: "Conversations with the most tragically misunderstood people of our time.",
-    image: {
-      smallUrl:
-        "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
-      mediumUrl:
-        "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_184,w_184/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
-      source:
-        "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
-      width: 960,
-      height: 960,
-    },
-    chapters: [
-      {
-        title: "Skeletor",
-        content:
-          "You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton.",
-      },
-      {
-        title: "Hank Scorpio",
-        content:
-          "What looks to outsiders like a malicious plan to conquer the east coast, was actually a story of liberation and freedom if you get it straight from the source.",
-      },
-      {
-        title: "The Wet Bandits",
-        content:
-          "The Christmas of 1989 wasn't the first time Harry and Marv crossed paths with the McCallisters. The real story starts in 1973, when Peter tripped Marv in the highschool locker room.",
-      },
-    ],
-  },
-  {
-    title: "Unseen Heroes",
-    description: "Exploring the unknown backstories of infamous characters.",
-    image: null,
-    chapters: [
-      {
-        title: "The Wicked Witch",
-        content:
-          "Before the green skin and flying monkeys, Elphaba was just a misunderstood girl with big dreams and a kind heart.",
-      },
-      {
-        title: "Darth Vader",
-        content: "Behind the mask, Anakin Skywalker struggled with loss, love, and the heavy burden of prophecy.",
-      },
-      {
-        title: "Jaws",
-        content:
-          "More than a man-eating shark, Bruce had a tale of survival and a misunderstood role in the ocean's ecosystem.",
-      },
-    ],
-  },
-  {
-    title: "Villainous Voices",
-    description: "A deep dive into the lives of the most notorious villains.",
-    image: null,
-    chapters: [
-      {
-        title: "The Joker",
-        content:
-          "From failed comedian to the Clown Prince of Crime, Arthur Fleck's story is one of tragic irony and lost sanity.",
-      },
-      {
-        title: "Maleficent",
-        content:
-          "Once a guardian of the Moors, her path to becoming a dark fairy was paved with betrayal and heartache.",
-      },
-      {
-        title: "Hannibal Lecter",
-        content:
-          "A brilliant psychiatrist with a dark secret, his journey from orphan to infamous cannibal is a haunting tale.",
-      },
-    ],
-  },
-  {
-    title: "In Their Shoes",
-    description: "Walking a mile in the shoes of history's most reviled figures.",
-    image: null,
-    chapters: [
-      {
-        title: "Medusa",
-        content:
-          "Once a beautiful maiden, Medusa's transformation into a Gorgon is a tale of divine jealousy and cruel punishment.",
-      },
-      {
-        title: "Captain Hook",
-        content: "James Hook's vendetta against Peter Pan hides a deeper story of lost love and a broken friendship.",
-      },
-      {
-        title: "Dracula",
-        content:
-          "Vlad the Impaler's evolution into the legendary vampire Dracula is steeped in history, war, and a quest for immortality.",
-      },
-    ],
-  },
-  {
-    title: "Twisted Tales",
-    description: "Reimagining the narratives of famous antagonists.",
-    image: null,
-    chapters: [
-      {
-        title: "Ursula",
-        content:
-          "The sea witch's rise to power in the underwater kingdom is a story of ambition, betrayal, and resilience.",
-      },
-      {
-        title: "Voldemort",
-        content:
-          "Tom Riddle's transformation into the Dark Lord is a tragic tale of a boy's quest for identity and acceptance.",
-      },
-      {
-        title: "The Terminator",
-        content:
-          "Originally sent to destroy, this machine's journey is one of learning, adaptation, and an unexpected alliance with humanity.",
-      },
-    ],
-  },
-];
+type LastRead = {
+  bookId: string;
+  chapterId: string;
+  lastSentenceIndex: string;
+};
+
+export function useLastRead({
+  scrollFn,
+  bookId,
+  chapterId,
+}: {
+  scrollFn: (index: number) => void;
+  bookId: string;
+  chapterId: string;
+}) {
+  React.useEffect(() => {
+    const lastRead = JSON.parse(localStorage.getItem("lastRead") ?? "[]") as LastRead[];
+    const lastReadItem = lastRead.find((read) => read.bookId === bookId && read.chapterId === chapterId) as LastRead;
+    if (lastReadItem) {
+      toast.custom(
+        (t) => {
+          return (
+            <div className="border border-secondary/20 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
+              <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
+              <span className="shrink-0 flex-1">Go to last read sentence</span>
+              <button
+                className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
+                onClick={() => {
+                  scrollFn(parseInt(lastReadItem.lastSentenceIndex));
+                  toast.dismiss(t);
+                }}
+              >
+                &#x2192;
+              </button>
+            </div>
+          );
+        },
+        {
+          id: "last-read",
+          duration: Infinity,
+        }
+      );
+    }
+  }, [bookId, chapterId, scrollFn]);
+
+  const updateLastRead = React.useCallback((args: LastRead) => {
+    const lastRead = JSON.parse(localStorage.getItem("lastRead") ?? "[]") as LastRead[];
+    const hasBook = lastRead.some((book) => book.bookId === args.bookId);
+    if (hasBook) {
+      const lastReadItem = lastRead.filter((book) => book.bookId !== args.bookId);
+      const newLastRead = [
+        {
+          bookId: args.bookId,
+          chapterId: args.chapterId,
+          lastSentenceIndex: args.lastSentenceIndex,
+        },
+        ...lastReadItem,
+      ].slice(0, 5);
+      localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+    } else {
+      const newLastRead = [
+        {
+          bookId: args.bookId,
+          chapterId: args.chapterId,
+          lastSentenceIndex: args.lastSentenceIndex,
+        },
+        ...lastRead,
+      ].slice(0, 5);
+      localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+    }
+  }, []);
+
+  return { updateLastRead };
+}
 
 export function Explore() {
   const [selected, setSelected] = React.useState(0);
 
-  const url = selected === 0 ? "/books/all" : "/books/last-read";
+  const [lastRead, setLastRead] = React.useState<LastRead[]>([]);
+
+  React.useEffect(() => {
+    const lastRead = localStorage.getItem("lastRead") ?? "[]";
+    if (lastRead) {
+      setLastRead(JSON.parse(lastRead));
+    }
+  }, []);
+
+  const key = selected === 0 ? "/book" : null;
+
+  const { data, isEnd, loadMore } = useDelayedInfiniteSWR<GetAllBooksResponse["data"]>(key, {
+    duration: 200,
+    swrInfiniteConfig: {
+      keepPreviousData: true,
+    },
+  });
+
+  const books = selected === 0 ? data : data?.filter((book) => lastRead.some((read) => read.bookId === book.id));
 
   return (
     <div className="mt-4">
@@ -146,41 +124,73 @@ export function Explore() {
         </button>
       </div>
 
-      <ul className="mt-4 border-t border-t-secondary/20">
-        {books.map((book, index) => {
-          return (
-            <li key={index} className="border-b border-b-secondary/20">
-              <CustomRouteButton
-                path="/read/id"
-                className="text-left max-md:px-4 py-4 md:w-full md:hover:bg-hovered active:bg-hovered duration-200"
-              >
-                <div className="flex gap-4">
-                  <div className="w-4 max-md:hidden -ml-6 grid place-items-center">{index + 1}</div>
-                  <div className="md:ml-2.5 relative w-20 md:w-32 aspect-square shrink-0 rounded-md overflow-hidden">
-                    <Image
-                      src={book?.image?.source || "/placeholder.png"}
-                      alt={`Cover Image: ${book.title}`}
-                      className="object-cover w-full h-full"
-                      width={92}
-                      height={92}
-                    />
-                  </div>
-                  <div className="flex flex-col flex-1">
-                    <h3 className="text-lg md:text-2xl font-semibold line-clamp-1">{book.title}</h3>
-                    <p className="max-md:text-sm text-secondary line-clamp-2 md:line-clamp-3">{book.description}</p>
-                    <div className="mt-auto max-md:mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
-                      {book.chapters.length} {book.chapters.length > 1 ? "chapters" : "chapter"}
-                    </div>
-                  </div>
-                  <div className="max-md:hidden grid place-items-center pr-4">
-                    <ChevronRight className="text-secondary" />
-                  </div>
-                </div>
-              </CustomRouteButton>
-            </li>
-          );
-        })}
-      </ul>
+      <AnimatePresence mode="wait">
+        {!books ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ type: "tween", duration: 0.2 }}
+            className="mt-4 ml-7 md:ml-8"
+          >
+            Loading all books...
+          </motion.div>
+        ) : (
+          <motion.div
+            key="books"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ type: "tween", duration: 0.2 }}
+          >
+            <ul className="mt-4 border-t border-t-secondary/20">
+              {books.map((book, index) => {
+                return (
+                  <motion.li
+                    key={book.id}
+                    transition={{ type: "tween", duration: 0.2 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="border-b border-b-secondary/20"
+                  >
+                    <Link
+                      href={`/read/${book.id}`}
+                      scroll={false}
+                      className="inline-block text-left max-md:px-4 py-4 md:w-full md:hover:bg-hovered active:bg-hovered duration-200"
+                    >
+                      <div className="flex gap-4">
+                        <div className="w-4 max-md:hidden -ml-6 grid place-items-center">{index + 1}</div>
+                        <div className="md:ml-2.5 relative w-20 md:w-32 aspect-square shrink-0 rounded-md overflow-hidden">
+                          <Image
+                            src={book?.image?.source || "/placeholder.png"}
+                            alt={`Cover Image: ${book.title}`}
+                            className="object-cover w-full h-full"
+                            width={92}
+                            height={92}
+                          />
+                        </div>
+                        <div className="flex flex-col flex-1">
+                          <h3 className="text-lg md:text-2xl font-semibold line-clamp-1">{book.title}</h3>
+                          <p className="max-md:text-sm text-secondary line-clamp-2 md:line-clamp-3">
+                            {book.description}
+                          </p>
+                          <div className="mt-auto max-md:mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
+                            {book.chapters.length} {book.chapters.length > 1 ? "chapters" : "chapter"}
+                          </div>
+                        </div>
+                        <div className="max-md:hidden grid place-items-center pr-4">
+                          <ChevronRight className="text-secondary" />
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.li>
+                );
+              })}
+            </ul>
+            <LoadMore isEnd={isEnd} whenInView={loadMore} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -7,36 +7,43 @@ import {
   ScrollToCurrentButton,
   TextContainer,
 } from "@/modules/speech";
-import { pushRead, useSpeech } from "@/utils";
+import { useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useRouter } from "next/router";
-import { useRouter as useNavigationRouter } from "next/navigation";
 import React from "react";
-import useSWRImmutable from "swr/immutable";
-import { GetBookByIdResponse } from "@/pages/api/book/[id]";
+import { useLastRead } from "@/modules/home/explore";
 
 export default function Read() {
   const router = useRouter();
 
-  const bookId = router.query.id;
-  const chapterId = router.query.chapterId;
+  const bookId = router.query.id as string;
+  const chapterId = router.query.chapterId as string;
   const sentenceIndex = router.query.sentenceIndex as string;
 
-  const { data } = useSWRImmutable<GetBookByIdResponse>(
-    bookId ? `/book/${bookId}` : undefined,
-    async (url) => {
-      const response = await fetch(`/api/${url}`);
-      const data = await response.json();
-      return data;
+  const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
+
+  const toLastRead = React.useCallback(
+    (index: number) => {
+      toSentence(index);
     },
-    {
-      keepPreviousData: true,
-    }
+    [toSentence]
   );
 
-  const chapter = data?.chapters.find((chapter) => chapter.id === chapterId);
+  const { updateLastRead } = useLastRead({
+    bookId,
+    chapterId,
+    scrollFn: toLastRead,
+  });
 
-  const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
+  React.useEffect(() => {
+    if (bookId && chapterId && currentSentenceIdx > 0) {
+      updateLastRead({
+        bookId,
+        chapterId,
+        lastSentenceIndex: currentSentenceIdx.toString(),
+      });
+    }
+  }, [bookId, chapterId, currentSentenceIdx, updateLastRead]);
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -45,8 +52,6 @@ export default function Read() {
     estimateSize: () => 100,
     overscan: 0,
   });
-
-  const navigationRouter = useNavigationRouter();
 
   return (
     <Layout>
@@ -95,14 +100,7 @@ export default function Read() {
               <div className="px-2 flex justify-between items-end">
                 <div className="w-fit">
                   <button
-                    onClick={() => {
-                      pushRead(navigationRouter, `/read/${bookId}`, () => {
-                        virtualizer.scrollToIndex(0, {
-                          behavior: "smooth",
-                        });
-                      });
-                    }}
-                    type="button"
+                    onClick={() => router.back()}
                     className="mt-4 py-2 pl-3 pr-4 rounded-md duration-200 active:bg-hovered flex items-center gap-2"
                   >
                     <div className="mb-[3px]">&#8592;</div> Return
@@ -128,7 +126,6 @@ export default function Read() {
             </div>
           </div>
 
-          {/* <HanziList currentSentence={currentSentence} currentWordRange={currentWordRange} /> */}
           <BottomBar
             sentences={sentences}
             currentSentenceIdx={currentSentenceIdx}

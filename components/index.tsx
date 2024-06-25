@@ -10,3 +10,4 @@ export * from "./sound-wave";
 export * from "./slider";
 export * from "./text-marquee";
 export * from "./like-button";
+export * from "./load-more";
