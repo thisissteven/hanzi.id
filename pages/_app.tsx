@@ -52,15 +52,15 @@ export default function App({ Component, pageProps, router }: AppProps) {
             <ConfettiProvider>
               <AnimatePresence mode="wait">
                 {isNewReading ? (
-                  <NewReadingLayout>
+                  <NewReadingLayout key={router.pathname}>
                     <Component key={router.pathname} {...pageProps} />
                   </NewReadingLayout>
                 ) : isReading ? (
-                  <ReadingLayout>
+                  <ReadingLayout key={router.pathname}>
                     <Component key={router.pathname} {...pageProps} />
                   </ReadingLayout>
                 ) : isHsk ? (
-                  <HSKLayout>
+                  <HSKLayout key={router.pathname}>
                     <Component key={router.pathname} {...pageProps} />
                   </HSKLayout>
                 ) : (

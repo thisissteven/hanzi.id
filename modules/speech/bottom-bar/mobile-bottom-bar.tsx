@@ -5,6 +5,9 @@ import Image from "next/image";
 import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
 import { SoundWaveMobile, TextMarquee } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
+import useSWRImmutable from "swr/immutable";
+import { GetBookByIdResponse } from "@/pages/api/book/[id]";
+import { useRouter } from "next/router";
 
 export function MobileBottomBar({
   currentSentenceIdx,
@@ -21,6 +24,35 @@ export function MobileBottomBar({
   pause: () => void;
   sentences: string[];
 }) {
+  const router = useRouter();
+
+  const bookId = router.query.id;
+  const chapterId = router.query.chapterId;
+
+  const { data } = useSWRImmutable<GetBookByIdResponse>(
+    bookId ? `/book/${bookId}` : undefined,
+    async (url) => {
+      const response = await fetch(`/api/${url}`);
+      const data = await response.json();
+      return data;
+    },
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  const source = data?.image?.smallUrl;
+  const title = data?.title;
+  const lastChapterId = React.useRef(chapterId);
+
+  React.useEffect(() => {
+    if (chapterId) {
+      lastChapterId.current = chapterId;
+    }
+  }, [chapterId]);
+
+  const chapter = data?.chapters.find((chapter) => chapter.id === lastChapterId.current);
+
   const [handlePlayPause] = useThrottledClickHandler(
     () => {
       if (playbackState === "playing") {
@@ -40,22 +72,11 @@ export function MobileBottomBar({
       <div className="bg-subtle/50 backdrop-blur-md h-16 rounded-lg w-full p-2 pb-2.5 duration-200 overflow-hidden">
         <div className="flex h-full items-center gap-3">
           <div className="relative shrink-0 rounded overflow-hidden h-full aspect-square ring-4 ring-subtle/20">
-            <Image
-              src={
-                "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"
-              }
-              width={92}
-              height={92}
-              alt="cover"
-              className="object-cover w-full h-full"
-            />
+            {source && <Image src={source} width={92} height={92} alt="cover" className="object-cover w-full h-full" />}
             <SoundWaveMobile isPlaying={playbackState === "playing"} />
           </div>
 
-          <TextMarquee
-            title="The legend of bees of thousand years ago"
-            subtitle="The legend of bees of thousand years ago"
-          />
+          <TextMarquee title={title} subtitle={chapter?.title} />
 
           <div className="grid place-items-center grid-cols-3 min-w-32">
             <PrevSentenceButton

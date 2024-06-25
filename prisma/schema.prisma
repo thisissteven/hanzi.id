@@ -76,12 +76,30 @@ model User {
   books    Book[]
 }
 
+model Image {
+  id String @id @default(cuid())
+
+  smallUrl  String
+  mediumUrl String
+  source    String
+  width     Int
+  height    Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  book   Book   @relation(fields: [bookId], references: [id])
+  bookId String @unique
+}
+
 model Book {
   id     String @id @default(cuid())
   userId String
 
-  title       String? @default("Untitled")
-  description String? @default("No description yet.")
+  title       String @default("Untitled")
+  description String @default("No description yet.")
+
+  image Image?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -96,10 +114,10 @@ model Chapter {
   id     String @id @default(cuid())
   bookId String
 
-  title                String? @default("Untitled")
-  content              String? @default("-")
-  wordCount            Int?    @default(0)
-  estimatedReadingTime Int?    @default(0)
+  title                String @default("Untitled")
+  content              String @default("-")
+  wordCount            Int?   @default(0)
+  estimatedReadingTime Int?   @default(0)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

@@ -8,7 +8,7 @@ import Confetti from "react-confetti";
 import { useWindowSize } from "@/utils";
 import { usePathname } from "next/navigation";
 
-const defaultValues = {
+export const defaultValues = {
   title: "",
   description: "",
   image: null,

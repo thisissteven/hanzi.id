@@ -8,6 +8,8 @@ import { SoundWave, TextMarquee } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
 import { ScanSearchIcon } from "lucide-react";
 import { useRouter } from "next/router";
+import useSWRImmutable from "swr/immutable";
+import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 
 export function DesktopBottomBar({
   currentSentenceIdx,
@@ -24,6 +26,36 @@ export function DesktopBottomBar({
   pause: () => void;
   sentences: string[];
 }) {
+  const router = useRouter();
+
+  const bookId = router.query.id;
+  const chapterId = router.query.chapterId;
+
+  const { data } = useSWRImmutable<GetBookByIdResponse>(
+    bookId ? `/book/${bookId}` : undefined,
+    async (url) => {
+      const response = await fetch(`/api/${url}`);
+      const data = await response.json();
+      return data;
+    },
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  const source = data?.image?.source;
+  const title = data?.title;
+
+  const lastChapterId = React.useRef(chapterId);
+
+  React.useEffect(() => {
+    if (chapterId) {
+      lastChapterId.current = chapterId;
+    }
+  }, [chapterId]);
+
+  const chapter = data?.chapters.find((chapter) => chapter.id === lastChapterId.current);
+
   const [handlePlayPause] = useThrottledClickHandler(
     () => {
       if (playbackState === "playing") {
@@ -40,8 +72,6 @@ export function DesktopBottomBar({
 
   const isPlaying = useDebounce(playbackState === "playing", 200);
 
-  const router = useRouter();
-
   return (
     <div className="sticky h-dvh top-0 mx-4 right-0 rounded-lg p-4 grid place-items-center overflow-x-hidden overflow-y-auto">
       <div className="relative mt-24">
@@ -56,21 +86,15 @@ export function DesktopBottomBar({
               aria-hidden
             ></div>
             <div className="relative rounded-lg overflow-hidden w-full aspect-[9/12] ring-4 ring-blue-400/20">
-              <Image
-                src={
-                  "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"
-                }
-                width={430}
-                height={430}
-                alt="cover"
-                className="object-cover w-full h-full"
-              />
+              {source && (
+                <Image src={source} width={430} height={430} alt="cover" className="object-cover w-full h-full" />
+              )}
             </div>
           </div>
 
           <TextMarquee
-            title="The legend of bees of thousand years ago"
-            subtitle="The legend of bees of thousand years ago"
+            title={title}
+            subtitle={chapter?.title}
             titleClassName="text-xl font-bold mt-2"
             subtitleClassName="text-[rgb(208,208,208)] text-base mt-1"
             containerClassName="max-w-[224px]"

@@ -52,7 +52,15 @@ export function ReplaceRouteButton({ children, path }: { children: React.ReactNo
   );
 }
 
-export function RouteButton({ children, path }: { children: React.ReactNode; path: string }) {
+export function RouteButton({
+  children,
+  path,
+  className,
+}: {
+  children: React.ReactNode;
+  path: string;
+  className?: string;
+}) {
   const router = useRouter();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLButtonElement>;
@@ -67,7 +75,12 @@ export function RouteButton({ children, path }: { children: React.ReactNode; pat
         }
       }}
       type="button"
-      className={cn("mt-4 py-2 pl-4 pr-3 rounded-md", "duration-200 active:bg-hovered", "flex items-center gap-2")}
+      className={cn(
+        "mt-4 py-2 pl-4 pr-3 rounded-md",
+        "duration-200 active:bg-hovered",
+        "flex items-center gap-2",
+        className
+      )}
     >
       {children}
     </button>

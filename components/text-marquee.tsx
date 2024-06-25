@@ -25,8 +25,8 @@ export function TextMarquee({
   containerClassName,
   gradientClassName,
 }: {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
   titleClassName?: string;
   subtitleClassName?: string;
   containerClassName?: string;

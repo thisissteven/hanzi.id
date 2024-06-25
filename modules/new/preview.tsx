@@ -1,10 +1,12 @@
-import { Layout, useConfetti } from "@/modules/layout";
+import { defaultValues, Layout, useConfetti } from "@/modules/layout";
 import React from "react";
 import { useFormContext } from "react-hook-form";
 import { NewReadingProps } from "./constants";
 import Image from "next/image";
 import { BackRouteButton, Divider } from "@/components";
-import { cn } from "@/utils";
+import { cn, push, useMutation } from "@/utils";
+import { AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 function PlayIcon() {
   return (
@@ -41,7 +43,7 @@ export function PreviewContent() {
               className={cn("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
               aria-hidden
             ></div>
-            <div className="relative rounded-xl overflow-hidden w-full h-full ring-4 ring-blue-400/20">
+            <div className="relative rounded-lg overflow-hidden w-full h-full ring-4 ring-blue-400/20">
               <Image src={source} width={430} height={430} alt="cover" className="object-cover w-full h-full" />
             </div>
           </div>
@@ -86,16 +88,45 @@ export function PreviewContent() {
 }
 
 function PublishButton() {
+  const { getValues, reset } = useFormContext<NewReadingProps>();
+
+  const { trigger, status, data } = useMutation("/book");
+
   const { party } = useConfetti();
+
+  const router = useRouter();
+
   return (
     <div className="sticky bottom-4 mt-4 flex justify-end">
-      <button
-        type="button"
-        onClick={party}
-        className="rounded-md font-medium max-md:w-full text-black dark:text-white p-2.5 md:py-2 md:px-4 duration-200 bg-blue-500 active:bg-blue-600"
-      >
-        Publish &#8594;
-      </button>
+      <AnimatePresence>
+        {status.state === "success" ? (
+          <button
+            type="button"
+            onClick={() => {
+              push(router, `/read/${data?.data?.id}`);
+            }}
+            className="rounded-md font-medium max-md:w-full text-black dark:text-white p-2.5 md:py-2 md:px-4 duration-200 bg-emerald-600 active:bg-emerald-700 disabled:opacity-50"
+          >
+            Read book &#8594;
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={async () => {
+              try {
+                await trigger(getValues());
+                party();
+              } catch {
+              } finally {
+              }
+            }}
+            disabled={status.state === "loading"}
+            className="rounded-md font-medium max-md:w-full text-black dark:text-white p-2.5 md:py-2 md:px-4 duration-200 bg-blue-500 active:bg-blue-600 disabled:opacity-50"
+          >
+            Publish &#8594;
+          </button>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

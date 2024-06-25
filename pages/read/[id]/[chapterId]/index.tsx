@@ -12,8 +12,30 @@ import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useRouter } from "next/router";
 import { useRouter as useNavigationRouter } from "next/navigation";
 import React from "react";
+import useSWRImmutable from "swr/immutable";
+import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 
 export default function Read() {
+  const router = useRouter();
+
+  const bookId = router.query.id;
+  const chapterId = router.query.chapterId;
+  const sentenceIndex = router.query.sentenceIndex as string;
+
+  const { data } = useSWRImmutable<GetBookByIdResponse>(
+    bookId ? `/book/${bookId}` : undefined,
+    async (url) => {
+      const response = await fetch(`/api/${url}`);
+      const data = await response.json();
+      return data;
+    },
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  const chapter = data?.chapters.find((chapter) => chapter.id === chapterId);
+
   const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
@@ -23,12 +45,6 @@ export default function Read() {
     estimateSize: () => 100,
     overscan: 0,
   });
-
-  const router = useRouter();
-
-  const id = router.query.id;
-  const chapterId = router.query.chapterId;
-  const sentenceIndex = router.query.sentenceIndex as string;
 
   const navigationRouter = useNavigationRouter();
 
@@ -41,11 +57,11 @@ export default function Read() {
           nextDisabled={parseInt(sentenceIndex) === sentences.length - 1}
           previousSentence={() => {
             const index = Math.max(0, parseInt(sentenceIndex) - 1);
-            return `/read/${id}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
+            return `/read/${bookId}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
           }}
           nextSentence={() => {
             const index = Math.min(sentences.length - 1, parseInt(sentenceIndex) + 1);
-            return `/read/${id}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
+            return `/read/${bookId}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
           }}
         />
 
@@ -80,7 +96,7 @@ export default function Read() {
                 <div className="w-fit">
                   <button
                     onClick={() => {
-                      pushRead(navigationRouter, "/read/1", () => {
+                      pushRead(navigationRouter, `/read/${bookId}`, () => {
                         virtualizer.scrollToIndex(0, {
                           behavior: "smooth",
                         });
