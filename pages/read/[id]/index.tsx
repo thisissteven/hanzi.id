@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "@/modules/layout";
-import { BackRouteButton, Divider } from "@/components";
+import { BackRouteButton, Divider, VirtualizedList } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -11,6 +11,8 @@ import { useRouter as useNavigationRouter } from "next/navigation";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 import { PlayIcon } from "lucide-react";
 import { useScrollToTop } from "@/modules/new";
+import { LastRead } from "@/modules/home/explore";
+import { useWindowVirtualizer } from "@tanstack/react-virtual";
 
 function BookDetails() {
   const router = useRouter();
@@ -35,7 +37,22 @@ function BookDetails() {
   const description = data?.description;
   const chapters = data?.chapters || [];
 
+  const [lastRead, setLastRead] = React.useState<LastRead[]>([]);
+
+  React.useEffect(() => {
+    const lastRead = localStorage.getItem("lastRead") ?? "[]";
+    if (lastRead) {
+      setLastRead(JSON.parse(lastRead));
+    }
+  }, []);
+
   useScrollToTop();
+
+  const virtualizer = useWindowVirtualizer({
+    count: chapters.length,
+    estimateSize: () => 350,
+    overscan: 3,
+  });
 
   return (
     <div className="mt-8 pb-8 max-md:px-4">
@@ -83,27 +100,68 @@ function BookDetails() {
 
             <h2 className="text-xl md:text-2xl font-semibold">Chapters</h2>
 
-            {chapters.map((chapter, index) => (
-              <div key={index} className="mt-8">
-                <h2 className="text-xl font-medium">
-                  {index + 1}: {chapter.title}
-                </h2>
-                <p className="mt-2 text-secondary leading-7 line-clamp-4 md:line-clamp-3">{chapter.content}</p>
+            <ul>
+              <VirtualizedList virtualizer={virtualizer}>
+                {(items, virtualizer) => {
+                  if (!chapters) return null;
 
-                <div className="mt-4 flex items-center gap-4">
-                  <button
-                    onClick={() => {
-                      push(navigationRouter, `/read/${data?.id}/${chapter.id}`);
-                    }}
-                    aria-label={`Play chapter ${index + 1}: ${chapter.title}`}
-                    className="flex duration-200 items-center gap-x-3 text-sm font-bold leading-6 text-blue-500 active:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 dark:active:text-blue-500"
-                  >
-                    <PlayIcon />
-                    <span aria-hidden="true">Read</span>
-                  </button>
-                </div>
-              </div>
-            ))}
+                  return items.map((item) => {
+                    const index = item.index;
+                    const chapter = chapters[index];
+
+                    const lastReadChapter = lastRead.find(
+                      (item) => item.bookId === data?.id && item.chapterId === chapter.id
+                    );
+                    const lastSentenceIndex = lastReadChapter?.lastSentenceIndex ?? "0";
+                    const readingProgress = ((parseInt(lastSentenceIndex) + 1) / chapter.totalSentences) * 100;
+
+                    return (
+                      <VirtualizedList.Item key={item.key} virtualizer={virtualizer} item={item}>
+                        <li key={index} className="py-5 sm:py-8 border-b border-b-secondary/20">
+                          <h2 className="text-xl font-medium">
+                            {index + 1}: {chapter.title}
+                          </h2>
+                          <p className="mt-2 text-secondary leading-7 line-clamp-4 md:line-clamp-3">
+                            {chapter.shortContent}
+                          </p>
+
+                          <div className="mt-4 flex max-sm:flex-col-reverse sm:items-center justify-between gap-4">
+                            <button
+                              onClick={() => {
+                                push(navigationRouter, `/read/${data?.id}/${chapter.id}`);
+                              }}
+                              aria-label={`Play chapter ${index + 1}: ${chapter.title}`}
+                              className="flex duration-200 items-center gap-x-3 text-sm font-bold leading-6 text-blue-500 active:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 dark:active:text-blue-500"
+                            >
+                              <PlayIcon />
+                              <span aria-hidden="true">Read</span>
+                            </button>
+
+                            <div className="flex gap-2 items-center w-fit text-xs">
+                              {chapter.wordCount && (
+                                <span className="inline-flex items-center rounded-md backdrop-blur-sm bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
+                                  {chapter.wordCount} words
+                                </span>
+                              )}
+                              {chapter.estimatedReadingTime && chapter.estimatedReadingTime > 0 && (
+                                <span className="inline-flex items-center rounded-md backdrop-blur-sm bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
+                                  {chapter.estimatedReadingTime} minutes reading time
+                                </span>
+                              )}
+                              {Math.floor(readingProgress) > 0 && (
+                                <span className="inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
+                                  {readingProgress.toFixed()} %
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        </li>
+                      </VirtualizedList.Item>
+                    );
+                  });
+                }}
+              </VirtualizedList>
+            </ul>
           </motion.div>
         )}
       </AnimatePresence>

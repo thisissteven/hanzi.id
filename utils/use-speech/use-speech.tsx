@@ -177,6 +177,8 @@ export const useSpeech = () => {
 export function SpeechProvider({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
+  const [_, rerender] = React.useReducer((s) => s + 1, 0);
+
   const bookId = router.query.id;
   const chapterId = router.query.chapterId;
 
@@ -197,6 +199,7 @@ export function SpeechProvider({ children }: { children: React.ReactNode }) {
   React.useEffect(() => {
     if (chapterId) {
       lastChapterId.current = chapterId;
+      rerender();
     }
   }, [chapterId]);
 

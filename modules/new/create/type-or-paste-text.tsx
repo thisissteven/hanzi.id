@@ -7,7 +7,7 @@ import { useScrollToTop } from "./use-scroll-to-top";
 import { cn, getStatsFromText } from "@/utils";
 import { AnimatePresence, motion } from "framer-motion";
 
-function ContentStats({ index }: { index: number }) {
+export function ContentStats({ index }: { index: number }) {
   const { watch } = useFormContext<NewReadingProps>();
 
   const field = watch(`chapters.${index}`);

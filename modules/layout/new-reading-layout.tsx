@@ -21,40 +21,30 @@ export const defaultValues = {
 };
 
 const dummyDefaultValues = {
-  title: "Their Side",
-  description: "Conversations with the most tragically misunderstood people of our time.",
+  title: "放学后 (Keigo Higashino)",
+  description:
+    'In "After School" by Keigo Higashino, a high school teacher becomes embroiled in a complex mystery involving his old friends, now adults, as they uncover secrets and face the consequences of their past.',
   image: {
-    smallUrl:
-      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
+    height: 640,
     mediumUrl:
-      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_184,w_184/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
+      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_184,w_184/dpr_2.0/v1719325046/uploads/focus-web-app/S85ad64401e7e464397194b5b4127bb949.jpg_640x640Q90.jpg__f8mfk9.webp",
+    smallUrl:
+      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1719325046/uploads/focus-web-app/S85ad64401e7e464397194b5b4127bb949.jpg_640x640Q90.jpg__f8mfk9.webp",
     source:
-      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png",
-    width: 960,
-    height: 960,
+      "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1719325046/uploads/focus-web-app/S85ad64401e7e464397194b5b4127bb949.jpg_640x640Q90.jpg__f8mfk9.webp",
+    width: 640,
   },
   chapters: [
     {
-      title: "Skeletor",
-      content:
-        "You know him as an evil supervillain, but his closest friends call him Jeff, and he's just doing his best to find his way in a world that doesn't know what to do with a talking skeleton.",
-    },
-    {
-      title: "Hank Scorpio",
-      content:
-        "What looks to outsiders like a malicious plan to conquer the east coast, was actually a story of liberation and freedom if you get it straight from the source.",
-    },
-    {
-      title: "The Wet Bandits",
-      content:
-        "The Christmas of 1989 wasn't the first time Harry and Marv crossed paths with the McCallisters. The real story starts in 1973, when Peter tripped Marv in the highschool locker room.",
+      title: "",
+      content: "",
     },
   ],
 };
 
 export function NewReadingLayout({ children }: { children: React.ReactNode }) {
   const methods = useForm<NewReadingProps>({
-    defaultValues,
+    defaultValues: dummyDefaultValues,
   });
 
   const pathname = usePathname();

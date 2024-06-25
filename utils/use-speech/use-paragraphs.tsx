@@ -48,6 +48,48 @@ const allPunctuation = new RegExp(
   "g"
 );
 
+export function getParagraphs(text: string) {
+  const sentence = cleanUpText(text).replace(/\s+/g, " ");
+
+  const sections = sentence.split("\n");
+
+  const locale = franc(sections[0] ?? "");
+
+  const period = locale === "cmn" ? "。" : ".";
+  const periodConversation = locale === "cmn" ? "。”" : ".";
+
+  const questionMark = locale === "cmn" ? "？" : "?";
+  const questionMarkConversation = locale === "cmn" ? "？”" : "?";
+
+  const exclamationMark = locale === "cmn" ? "！" : "!";
+  const exclamationMarkConversation = locale === "cmn" ? "！”" : "!";
+
+  let paragraphs = sections
+    .map((paragraph) => paragraph.split(periodConversation))
+    .map((paragraph) => {
+      return paragraph.map((sentence, index) => {
+        if (index === paragraph.length - 1) {
+          return sentence;
+        }
+        return (sentence + periodConversation).trim();
+      });
+    });
+
+  paragraphs = splitByPunctuationConversation(paragraphs, questionMarkConversation);
+
+  paragraphs = splitByPunctuationConversation(paragraphs, exclamationMarkConversation);
+
+  paragraphs = splitByQuotation(paragraphs);
+
+  paragraphs = splitByPunctuation(paragraphs, questionMark);
+
+  paragraphs = splitByPunctuation(paragraphs, period);
+
+  paragraphs = splitByPunctuation(paragraphs, exclamationMark);
+
+  return paragraphs;
+}
+
 export function removePunctuation(input: string) {
   // Replace multiple spaces with a single space
   input = input.replace(/\s+/g, " ");
@@ -59,45 +101,7 @@ export function removePunctuation(input: string) {
 
 export function useParagraphs(text: string) {
   const paragraphs = React.useMemo(() => {
-    const sentence = cleanUpText(text).replace(/\s+/g, " ");
-
-    const sections = sentence.split("\n");
-
-    const locale = franc(sections[0] ?? "");
-
-    const period = locale === "cmn" ? "。" : ".";
-    const periodConversation = locale === "cmn" ? "。”" : ".";
-
-    const questionMark = locale === "cmn" ? "？" : "?";
-    const questionMarkConversation = locale === "cmn" ? "？”" : "?";
-
-    const exclamationMark = locale === "cmn" ? "！" : "!";
-    const exclamationMarkConversation = locale === "cmn" ? "！”" : "!";
-
-    let paragraphs = sections
-      .map((paragraph) => paragraph.split(periodConversation))
-      .map((paragraph) => {
-        return paragraph.map((sentence, index) => {
-          if (index === paragraph.length - 1) {
-            return sentence;
-          }
-          return (sentence + periodConversation).trim();
-        });
-      });
-
-    paragraphs = splitByPunctuationConversation(paragraphs, questionMarkConversation);
-
-    paragraphs = splitByPunctuationConversation(paragraphs, exclamationMarkConversation);
-
-    paragraphs = splitByQuotation(paragraphs);
-
-    paragraphs = splitByPunctuation(paragraphs, questionMark);
-
-    paragraphs = splitByPunctuation(paragraphs, period);
-
-    paragraphs = splitByPunctuation(paragraphs, exclamationMark);
-
-    return paragraphs;
+    return getParagraphs(text);
   }, [text]);
 
   const sentences = React.useMemo(() => paragraphs.flat(), [paragraphs]);

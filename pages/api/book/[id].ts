@@ -10,7 +10,16 @@ async function getBookById(id: string) {
       id,
     },
     include: {
-      chapters: true,
+      chapters: {
+        select: {
+          id: true,
+          title: true,
+          shortContent: true,
+          totalSentences: true,
+          estimatedReadingTime: true,
+          wordCount: true,
+        },
+      },
       image: true,
     },
   });
@@ -22,6 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   await requestHandler(req, res, {
     allowedRoles: {
       GET: ["PUBLIC"],
+      //   DELETE: ["PUBLIC"],
     },
 
     GET: async () => {
@@ -31,5 +41,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       res.status(200).json(book);
     },
+
+    // DELETE: async () => {
+    //   const id = req.query.id as string;
+
+    //   await prisma.book.delete({
+    //     where: {
+    //       id,
+    //     },
+    //   });
+
+    //   res.status(200).json({ message: "Book deleted" });
+    // },
   });
 }

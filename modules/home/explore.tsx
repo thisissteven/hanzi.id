@@ -9,7 +9,7 @@ import Link from "next/link";
 import React from "react";
 import { toast } from "sonner";
 
-type LastRead = {
+export type LastRead = {
   bookId: string;
   chapterId: string;
   lastSentenceIndex: string;
@@ -58,7 +58,7 @@ export function useLastRead({
     const lastRead = JSON.parse(localStorage.getItem("lastRead") ?? "[]") as LastRead[];
     const hasBook = lastRead.some((book) => book.bookId === args.bookId);
     if (hasBook) {
-      const lastReadItem = lastRead.filter((book) => book.bookId !== args.bookId);
+      const lastReadItem = lastRead.filter((book) => book.bookId !== args.bookId && book.chapterId !== args.chapterId);
       const newLastRead = [
         {
           bookId: args.bookId,
@@ -171,10 +171,10 @@ export function Explore() {
                         </div>
                         <div className="flex flex-col flex-1">
                           <h3 className="text-lg md:text-2xl font-semibold line-clamp-1">{book.title}</h3>
-                          <p className="max-md:text-sm text-secondary line-clamp-2 md:line-clamp-3">
+                          <p className="mt-1 max-md:text-sm text-secondary line-clamp-2 md:line-clamp-3">
                             {book.description}
                           </p>
-                          <div className="mt-auto max-md:mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
+                          <div className="mt-2 max-md:mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
                             {book.chapters.length} {book.chapters.length > 1 ? "chapters" : "chapter"}
                           </div>
                         </div>
