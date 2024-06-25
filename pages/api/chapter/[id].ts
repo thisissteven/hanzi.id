@@ -2,11 +2,31 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
 import { getParagraphs, prisma, requestHandler } from "@/utils";
+import { Prisma } from "@prisma/client";
+
+function getChapterById(id: string) {
+  return prisma.chapter.findUnique({
+    where: {
+      id,
+    },
+  });
+}
+
+export type GetChapterByIdResponse = Prisma.PromiseReturnType<typeof getChapterById>;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await requestHandler(req, res, {
     allowedRoles: {
+      GET: ["PUBLIC"],
       PUT: ["PUBLIC"],
+    },
+
+    GET: async () => {
+      const id = req.query.id as string;
+
+      const chapter = await getChapterById(id);
+
+      res.status(200).json(chapter);
     },
 
     PUT: async () => {

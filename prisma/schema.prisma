@@ -114,6 +114,7 @@ model Chapter {
   id     String @id @default(cuid())
   bookId String
 
+  order                Int    @default(0)
   title                String @default("Untitled")
   shortContent         String @default("-")
   content              String @default("-")

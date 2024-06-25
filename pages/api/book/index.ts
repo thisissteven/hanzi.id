@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { CurrentUser, getStatsFromText, prisma, requestHandler } from "@/utils";
+import { CurrentUser, getParagraphs, getStatsFromText, prisma, requestHandler } from "@/utils";
 import { Prisma } from "@prisma/client";
 
 export function getCursor(previousCursor?: string | null) {
@@ -88,13 +88,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           },
           chapters: {
             createMany: {
-              data: chapters?.map((chapter: any) => {
+              data: chapters?.map((chapter: any, index: number) => {
+                const paragraphs = getParagraphs(chapter.content);
                 const stats = getStatsFromText(chapter.content);
                 return {
+                  order: index + 1,
                   title: chapter.title,
                   content: chapter.content,
                   wordCount: stats.words,
                   estimatedReadingTime: stats.minutes,
+                  totalSentences: paragraphs.flat().length,
+                  shortContent: paragraphs.flat().slice(0, 5).join(" "),
                 };
               }),
             },

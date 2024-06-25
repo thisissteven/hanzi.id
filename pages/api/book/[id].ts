@@ -19,6 +19,9 @@ async function getBookById(id: string) {
           estimatedReadingTime: true,
           wordCount: true,
         },
+        orderBy: {
+          order: "asc",
+        },
       },
       image: true,
     },

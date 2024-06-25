@@ -8,7 +8,7 @@ import { useParagraphs } from "./use-paragraphs";
 import { useReading } from "@/modules/layout";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
-import { GetBookByIdResponse } from "@/pages/api/book/[id]";
+import { GetChapterByIdResponse } from "@/pages/api/chapter/[id]";
 
 const useSpeechManager = (
   sentences: Array<string>,
@@ -182,8 +182,8 @@ export function SpeechProvider({ children }: { children: React.ReactNode }) {
   const bookId = router.query.id;
   const chapterId = router.query.chapterId;
 
-  const { data } = useSWRImmutable<GetBookByIdResponse>(
-    bookId ? `/book/${bookId}` : undefined,
+  const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(
+    chapterId ? `/chapter/${chapterId}` : undefined,
     async (url) => {
       const response = await fetch(`/api/${url}`);
       const data = await response.json();
@@ -203,8 +203,6 @@ export function SpeechProvider({ children }: { children: React.ReactNode }) {
     }
   }, [chapterId]);
 
-  const chapter = data?.chapters.find((chapter) => chapter.id === lastChapterId.current);
-
   const { sentences } = useParagraphs(chapter?.content ?? "");
   const { speed } = useReading();
 
@@ -213,6 +211,8 @@ export function SpeechProvider({ children }: { children: React.ReactNode }) {
   const value = useSpeechManager(readySentences, {
     rate: speed,
   });
+
+  if (!chapter && !bookId) return null;
 
   return <SpeechContext.Provider value={value}>{children}</SpeechContext.Provider>;
 }
