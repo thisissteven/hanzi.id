@@ -52,7 +52,7 @@ Popover.Content = function PopoverContent({
         sideOffset={4}
         align={align}
         className={cn(
-          "z-50 data-[align=start]:-ml-2 data-[align=end]:ml-2 bg-softblack py-2 rounded-md duration-200 shadow-xl",
+          "z-[999] data-[align=start]:-ml-2 data-[align=end]:ml-2 bg-softblack py-2 rounded-md duration-200 shadow-xl",
           "data-[state=open]:animate-in data-[state=open]:fade-in data-[state=open]:slide-in-from-top-2",
           "data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=closed]:slide-out-to-top-2 data-[state=closed]:duration-300",
           className

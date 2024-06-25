@@ -96,7 +96,7 @@ export function DefinitionModal({
 
   return (
     <Dialog
-      className="relative z-[999]"
+      className="relative z-[998]"
       open={Boolean(sentence)}
       onClose={() => {
         const pathname = router.asPath.split("?")[0];
@@ -107,10 +107,10 @@ export function DefinitionModal({
     >
       <DialogBackdrop
         transition
-        className="fixed inset-y-0 left-0 w-screen z-[999] bg-black/20 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
+        className="fixed inset-y-0 left-0 w-screen z-[998] bg-black/20 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
       />
 
-      <div className="fixed inset-y-0 left-0 z-[999] w-screen p-2 sm:p-4 overflow-y-auto">
+      <div className="fixed inset-y-0 left-0 z-[998] w-screen p-2 sm:p-4 overflow-y-auto">
         <div className="flex justify-center text-center sm:items-center">
           <DialogPanel
             transition

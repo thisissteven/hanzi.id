@@ -3,7 +3,7 @@ import React from "react";
 import { useFormContext } from "react-hook-form";
 import { NewReadingProps } from "./constants";
 import Image from "next/image";
-import { BackRouteButton, CustomRouteButton, Divider } from "@/components";
+import { BackRouteButton, Divider } from "@/components";
 import { cn } from "@/utils";
 
 function PlayIcon() {
@@ -36,7 +36,7 @@ export function PreviewContent() {
 
       <div className="mt-4">
         <div className="flex max-md:flex-col max-md:items-center items-end gap-4 md:gap-6">
-          <div className="relative w-56 md:w-52 aspect-square shrink-0">
+          <div className="relative w-56 md:w-52 aspect-[9/12] shrink-0">
             <div
               className={cn("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}
               aria-hidden

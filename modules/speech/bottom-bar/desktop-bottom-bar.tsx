@@ -47,7 +47,7 @@ export function DesktopBottomBar({
       <div className="relative mt-24">
         <SoundWave isPlaying={isPlaying} />
         <div className={clsx("flex flex-col items-start gap-4 duration-1000 ease", isPlaying && "opacity-50 blur-sm")}>
-          <div className="relative w-56 aspect-square shrink-0">
+          <div className="relative w-56 aspect-[9/12] shrink-0">
             <div
               className={clsx(
                 "absolute inset-0 w-full h-full"
@@ -55,7 +55,7 @@ export function DesktopBottomBar({
               )}
               aria-hidden
             ></div>
-            <div className="relative rounded-xl overflow-hidden w-full aspect-square ring-4 ring-blue-400/20">
+            <div className="relative rounded-xl overflow-hidden w-full aspect-[9/12] ring-4 ring-blue-400/20">
               <Image
                 src={
                   "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"
