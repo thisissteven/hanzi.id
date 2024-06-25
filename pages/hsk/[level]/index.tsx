@@ -142,7 +142,7 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
 
       <div className="relative h-dvh pt-12 w-full">
         <div ref={ref} className="w-full h-full overflow-y-auto scrollbar max-sm:pb-12">
-          <div className="px-4 sm:pr-8 py-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-4">
+          <div className="pt-5 sm:pr-1 pb-4 sm:pb-20 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-1">
             {characters.map((character) => {
               const isCompleted = currentCompletedCharacters.includes(character.id);
 
@@ -194,7 +194,7 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
             })}
           </div>
         </div>
-        <div className="fixed w-full left-0 max-w-[1440px] mx-auto px-2 md:right-4 md:px-4 bottom-2 flex justify-end mt-8 gap-2">
+        <div className="fixed w-full left-0 max-w-[1440px] mx-auto max-sm:border-t border-t-secondary/20 p-1 max-sm:bg-black bottom-0 md:right-4 md:px-4 flex justify-end mt-8 gap-1">
           <MobileSidebar />
 
           <Pagination

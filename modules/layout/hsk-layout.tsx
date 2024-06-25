@@ -46,12 +46,12 @@ export function HSKLayout({ children }: { children: React.ReactNode }) {
       <AudioProvider>
         <AnimatePresence mode="wait">
           <Layout>
-            <header className="fixed z-10 top-0 left-0 w-screen h-16 grid place-items-center bg-black">
+            <header className="fixed z-50 top-0 left-0 w-screen h-16 grid place-items-center bg-black border-b border-b-secondary/20">
               <ReplaceRouteButton path="/">
                 <div className="mb-[3px]">&#8592;</div> Return
               </ReplaceRouteButton>
             </header>
-            <div className="mx-auto text-smokewhite max-w-[1440px] flex gap-4">
+            <div className="mx-auto text-smokewhite max-w-[1440px] flex gap-1">
               <DesktopSidebar />
               {children}
             </div>

@@ -55,7 +55,7 @@ export function DesktopBottomBar({
               )}
               aria-hidden
             ></div>
-            <div className="relative rounded-xl overflow-hidden w-full aspect-[9/12] ring-4 ring-blue-400/20">
+            <div className="relative rounded-lg overflow-hidden w-full aspect-[9/12] ring-4 ring-blue-400/20">
               <Image
                 src={
                   "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"

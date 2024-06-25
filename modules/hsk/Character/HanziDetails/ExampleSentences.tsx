@@ -1,10 +1,10 @@
 import { DragToScrollWrapper, Popover } from "@/components";
 import React from "react";
-import { HanziApiResponse } from "../types";
+import { HanziRelatedApiResponse } from "../types";
 import clsx from "clsx";
 import { AudioButton } from "../AudioButton";
 
-export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: HanziApiResponse["lessons"] }) {
+export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: HanziRelatedApiResponse["lessons"] }) {
   const [currentLevel, setCurrentLevel] = React.useState<string | null>(null);
 
   React.useEffect(() => {
@@ -61,7 +61,7 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
                   {splitted.map((part) => {
                     if (part === hanzi)
                       return (
-                        <span className="text-wheat" key={part}>
+                        <span className="text-sky-400" key={part}>
                           {hanzi}
                         </span>
                       );

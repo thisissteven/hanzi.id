@@ -4,6 +4,7 @@ import { cn } from "@/utils/cn";
 import clsx from "clsx";
 import React from "react";
 import { preload } from "swr";
+import { Checkmark, MarkAsCompleted } from "./CharacterCard";
 
 async function preloadHanziDetails(hanzi: string) {
   await preload(`hanzi/${hanzi}`, async (url) => {
@@ -27,13 +28,14 @@ export function CharacterRow({
   onCompleteToggle: () => void;
 }) {
   return (
-    <div onClick={onClick} className="relative active:scale-95 transition select-none text-3xl">
-      <div
-        className={clsx(
-          "pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-2 shadow-b-small rounded-lg bg-softblack",
-          isCompleted ? "border-mossgreen shadow-mossgreen text-wheat" : "border-border shadow-border"
-        )}
-      >
+    <div
+      onClick={onClick}
+      className={clsx(
+        "relative group transition select-none text-3xl",
+        isCompleted ? "text-smokewhite" : "text-lightgray"
+      )}
+    >
+      <div className="pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-b border-b-secondary/20 bg-softblack active:bg-hovered">
         <div className="shrink-0 font-medium">{hanzi}</div>
 
         <div className="overflow-x-hidden flex-1">
@@ -50,60 +52,5 @@ export function CharacterRow({
         <div className="absolute left-4 top-3 text-xs">{id}</div>
       </div>
     </div>
-  );
-}
-
-function MarkAsCompleted({
-  className,
-  checkmarkClassName,
-  isCompleted,
-  onClick,
-}: {
-  className?: string;
-  checkmarkClassName?: string;
-  isCompleted: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <div
-      onClick={(e) => e.stopPropagation()}
-      className={cn(
-        "absolute right-2 bottom-2 w-10 h-10 grid place-items-center transition active:scale-95 hover:opacity-100 rounded-md text-sm active:bg-mossgreen/10",
-        isCompleted && "bg-mossgreen/10",
-        className
-      )}
-    >
-      <input
-        checked={isCompleted}
-        onChange={onClick}
-        type="checkbox"
-        className="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-      />
-      <Checkmark className={checkmarkClassName} />
-    </div>
-  );
-}
-
-function Checkmark({ className }: { className?: string }) {
-  return (
-    <svg
-      className={cn(
-        "h-6 w-6 text-smokewhite/20 peer-active:text-mossgreen/50 peer-checked:text-mossgreen transition pointer-events-none",
-        className
-      )}
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth="3"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M5 13l4 4L19 7"
-        pathLength="1"
-        strokeDashoffset="0px"
-        strokeDasharray="1px 1px"
-      ></path>
-    </svg>
   );
 }

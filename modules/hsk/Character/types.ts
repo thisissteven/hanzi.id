@@ -9,7 +9,9 @@ export type HanziApiResponse = {
       definitions: Array<string>;
     }>;
   } | null;
+};
 
+export type HanziRelatedApiResponse = {
   related: Array<{
     simplified: string;
     pinyin: string;

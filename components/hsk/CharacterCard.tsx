@@ -2,6 +2,7 @@ import { ChineseCharacter } from "@/data";
 import { BASE_URL } from "@/pages/_app";
 import { cn } from "@/utils/cn";
 import clsx from "clsx";
+import { LucideCheckCircle } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { preload } from "swr";
@@ -52,12 +53,14 @@ export function CharacterCard({
           transform: rotateY(180deg);
         }
       `}</style>
-      <div onClick={onFlip} className="select-none text-3xl aspect-square">
+      <div
+        onClick={onFlip}
+        className={clsx("select-none text-3xl aspect-square", isCompleted ? "text-smokewhite" : "text-lightgray")}
+      >
         <div className={clsx("relative w-full h-full card", isFlipped && "card-flipped")}>
           <div
             className={clsx(
-              "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-2 shadow-b-small rounded-lg grid place-items-center bg-softblack",
-              isCompleted ? "border-mossgreen shadow-mossgreen text-wheat" : "border-border shadow-border"
+              "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-b-[1.5px] grid place-items-center bg-softblack border-secondary/20"
             )}
           >
             <span className="font-medium">{hanzi}</span>
@@ -102,8 +105,7 @@ export function CharacterCard({
           </div>
           <div
             className={clsx(
-              "card-content absolute inset-0 border-2 shadow-b-small rounded-lg bg-softblack flex flex-col items-center justify-center text-flipped px-4",
-              isCompleted ? "border-mossgreen shadow-mossgreen text-wheat" : "border-border shadow-border"
+              "card-content absolute inset-0 border-b-[1.5px] bg-softblack flex flex-col items-center justify-center text-flipped px-4 border-secondary/20"
             )}
           >
             <div className="text-2xl">{pinyin}</div>
@@ -131,7 +133,7 @@ export function MarkAsCompleted({
       onClick={(e) => e.stopPropagation()}
       className={cn(
         "absolute right-2 bottom-2 w-10 h-10 grid place-items-center transition active:scale-95 hover:opacity-100 rounded-md text-sm active:bg-mossgreen/10",
-        isCompleted && "bg-mossgreen/10",
+        isCompleted && "bg-sky-500/10",
         className
       )}
     >
@@ -148,24 +150,11 @@ export function MarkAsCompleted({
 
 export function Checkmark({ className }: { className?: string }) {
   return (
-    <svg
+    <LucideCheckCircle
       className={cn(
-        "h-6 w-6 text-smokewhite/20 peer-active:text-mossgreen/50 peer-checked:text-mossgreen transition pointer-events-none",
+        "h-6 w-6 text-smokewhite/20 peer-active:text-sky-300/50 peer-checked:text-sky-300/90 transition pointer-events-none",
         className
       )}
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth="3"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M5 13l4 4L19 7"
-        pathLength="1"
-        strokeDashoffset="0px"
-        strokeDasharray="1px 1px"
-      ></path>
-    </svg>
+    />
   );
 }

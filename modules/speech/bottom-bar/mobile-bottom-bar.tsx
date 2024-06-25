@@ -39,7 +39,7 @@ export function MobileBottomBar({
     <div className="fixed bottom-2 px-2 w-full">
       <div className="bg-subtle/50 backdrop-blur-md h-16 rounded-lg w-full p-2 pb-2.5 duration-200 overflow-hidden">
         <div className="flex h-full items-center gap-3">
-          <div className="relative shrink-0 rounded-md overflow-hidden h-full aspect-[9/12] ring-4 ring-subtle/20">
+          <div className="relative shrink-0 rounded overflow-hidden h-full aspect-square ring-4 ring-subtle/20">
             <Image
               src={
                 "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1718698982/uploads/focus-web-app/poster_rm1k6w.png"

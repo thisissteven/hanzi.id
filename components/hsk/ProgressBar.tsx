@@ -13,7 +13,7 @@ export function ProgressBar({ value }: { value: number }) {
         style={{
           width: `${value * 100}%`,
         }}
-        className="h-full rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 transition"
+        className="h-full rounded-full bg-gradient-to-r from-sky-300 to-sky-500 transition"
       ></div>
     </div>
   );

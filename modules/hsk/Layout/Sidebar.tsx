@@ -35,7 +35,7 @@ const levelToHanzi = (level: string) => {
 export function DesktopSidebar() {
   return (
     // pl-4 pt-20 max-md:hidden sticky top-0 h-fit min-w-64
-    <div className="max-md:hidden">
+    <div className="max-md:hidden border-r border-r-secondary/20">
       <aside className="px-4 pb-4 pt-20 z-10 sticky top-0 h-[calc(100dvh-3.5rem)] overflow-y-auto min-w-64">
         <ul className="space-y-1">
           <HSKLevelItems />
@@ -64,7 +64,7 @@ export function MobileSidebar() {
     <div className="md:hidden">
       <Drawer>
         <Drawer.Trigger asChild>
-          <button className="w-14 h-14 active:translate-y-1 active:shadow-none shadow-b-small shadow-blue-200/70 border-2 border-blue-200/70 rounded-lg bg-black backdrop-blur-sm text-blue-200 active:bg-black/40 font-medium">
+          <button className="w-14 h-14 active:translate-y-1 border-b border-secondary/20 bg-softblack backdrop-blur-sm text-smokewhite active:bg-softblack/40 font-medium duration-200">
             <div className="text-[10px] -mb-1">HSK</div>
             <div className="text-base font-medium">{levelToHanzi(level)}</div>
           </button>

@@ -19,7 +19,7 @@ export function Pagination({
   nextHref,
 }: PaginationProps) {
   return (
-    <div className="max-sm:w-full flex justify-center items-center gap-2">
+    <div className="max-sm:w-full flex justify-center items-center gap-1 bg-black sm:p-1">
       <HSKLinkButton
         prefetch={false}
         shallow={currentPage !== 1}

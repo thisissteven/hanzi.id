@@ -40,8 +40,10 @@
     --softblack: 24 24 24;
     --zinc: 32 32 32;
     --softzinc: 50 50 50;
-    --wheat: 138 185 218; /* light blue */
+
+    --wheat: 113 206 250; /* light blue */
     --mossgreen: 92 138 154; /* medium blue */
+
     --empty: 80 80 80;
     --border: 54 54 54;
     --smokewhite: 229 229 229;

@@ -125,19 +125,38 @@ const books = [
 ];
 
 export function Explore() {
+  const [selected, setSelected] = React.useState(0);
+
+  const url = selected === 0 ? "/books/all" : "/books/last-read";
+
   return (
     <div className="mt-4">
-      <ul className="flex-1 rounded-xl">
+      <div className="flex gap-2 max-md:px-4 md:px-5">
+        <button
+          className={cn("px-3 duration-200", selected === 0 ? "opacity-100" : "opacity-50")}
+          onClick={() => setSelected(0)}
+        >
+          All
+        </button>
+        <button
+          className={cn("px-3 duration-200", selected === 1 ? "opacity-100" : "opacity-50")}
+          onClick={() => setSelected(1)}
+        >
+          Last Read
+        </button>
+      </div>
+
+      <ul className="mt-4 border-t border-t-secondary/20">
         {books.map((book, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="border-b border-b-secondary/20">
               <CustomRouteButton
                 path="/read/id"
-                className="text-left py-4 max-md:px-4 md:w-full md:hover:bg-hovered active:bg-hovered md:rounded-md duration-200"
+                className="text-left max-md:px-4 py-4 md:w-full md:hover:bg-hovered active:bg-hovered duration-200"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex gap-4">
                   <div className="w-4 max-md:hidden -ml-6 grid place-items-center">{index + 1}</div>
-                  <div className="md:ml-2.5 relative w-20 md:w-32 aspect-[9/12] shrink-0 rounded-md overflow-hidden">
+                  <div className="md:ml-2.5 relative w-20 md:w-32 aspect-square shrink-0 rounded-md overflow-hidden">
                     <Image
                       src={book?.image?.source || "/placeholder.png"}
                       alt={`Cover Image: ${book.title}`}
@@ -149,7 +168,7 @@ export function Explore() {
                   <div className="flex flex-col flex-1">
                     <h3 className="text-lg md:text-2xl font-semibold line-clamp-1">{book.title}</h3>
                     <p className="max-md:text-sm text-secondary line-clamp-2 md:line-clamp-3">{book.description}</p>
-                    <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
+                    <div className="mt-auto max-md:mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
                       {book.chapters.length} {book.chapters.length > 1 ? "chapters" : "chapter"}
                     </div>
                   </div>
