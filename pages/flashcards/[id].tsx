@@ -2,7 +2,6 @@ import React from "react";
 import { Flashcard, Layout, useFlashcard } from "@/modules/layout";
 import { BackRouteButton, LoadMore } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { ChevronRightIcon, LucideDownload } from "lucide-react";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
@@ -12,7 +11,7 @@ import { CardDetailsModal } from "@/modules/flashcards";
 function exportToPleco(words: string[], filename: string) {
   const element = document.createElement("a");
   const file = new Blob(
-    words.map((str) => str + "\n"),
+    [`// ${filename}`, ...words].map((str) => str + "\n"),
     { type: "text/plain" }
   );
   element.href = URL.createObjectURL(file);
