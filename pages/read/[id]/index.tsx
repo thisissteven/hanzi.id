@@ -9,7 +9,7 @@ import useSWRImmutable from "swr/immutable";
 import { useRouter } from "next/router";
 import { useRouter as useNavigationRouter } from "next/navigation";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
-import { PlayIcon } from "lucide-react";
+import { LucideBookOpen, LucidePlay, PlayIcon } from "lucide-react";
 import { useScrollToTop } from "@/modules/new";
 import { LastRead } from "@/modules/home/explore";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
@@ -20,7 +20,7 @@ function BookDetails() {
 
   const id = router.query.id as string;
 
-  const { data, isLoading } = useSWRImmutable<GetBookByIdResponse>(
+  const { data: book, isLoading } = useSWRImmutable<GetBookByIdResponse>(
     id ? `/book/${id}` : undefined,
     async (url) => {
       const response = await fetch(`/api/${url}`);
@@ -32,10 +32,10 @@ function BookDetails() {
     }
   );
 
-  const source = data?.image?.source;
-  const title = data?.title;
-  const description = data?.description;
-  const chapters = data?.chapters || [];
+  const source = book?.image?.source;
+  const title = book?.title;
+  const description = book?.description;
+  const chapters = book?.chapters || [];
 
   const [lastRead, setLastRead] = React.useState<LastRead[]>([]);
 
@@ -90,7 +90,7 @@ function BookDetails() {
               <div className="max-md:text-center">
                 <h1 className="text-2xl md:text-3xl font-bold mt-2">{title}</h1>
                 <p className="mt-2 text-secondary">{description}</p>
-                <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20">
+                <div className="max-md:mt-4 mt-3 inline-flex text-xs items-center rounded-full bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20">
                   {chapters.length} {chapters.length > 1 ? "chapters" : "chapter"}
                 </div>
               </div>
@@ -109,9 +109,10 @@ function BookDetails() {
                     const index = item.index;
                     const chapter = chapters[index];
 
-                    const lastReadChapter = lastRead.find(
-                      (item) => item.bookId === data?.id && item.chapterId === chapter.id
-                    );
+                    const lastReadChapter = lastRead
+                      .find((read) => read.bookId === book?.id)
+                      ?.chapters.find((localChapter) => localChapter.chapterId === chapter.id);
+
                     const lastSentenceIndex = lastReadChapter?.lastSentenceIndex ?? "0";
                     const readingProgress = ((parseInt(lastSentenceIndex) + 1) / chapter.totalSentences) * 100;
 
@@ -125,26 +126,15 @@ function BookDetails() {
                             {chapter.shortContent}
                           </p>
 
-                          <div className="mt-4 flex max-sm:flex-col-reverse sm:items-center justify-between gap-4">
-                            <button
-                              onClick={() => {
-                                push(navigationRouter, `/read/${data?.id}/${chapter.id}`);
-                              }}
-                              aria-label={`Play chapter ${index + 1}: ${chapter.title}`}
-                              className="flex duration-200 items-center gap-x-3 text-sm font-bold leading-6 text-blue-500 active:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 dark:active:text-blue-500"
-                            >
-                              <PlayIcon />
-                              <span aria-hidden="true">Read</span>
-                            </button>
-
+                          <div className="mt-4 flex max-sm:flex-col sm:items-center justify-between gap-4">
                             <div className="flex gap-2 items-center w-fit text-xs">
                               {chapter.wordCount && (
-                                <span className="inline-flex items-center rounded-md backdrop-blur-sm bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
+                                <span className="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
                                   {chapter.wordCount} words
                                 </span>
                               )}
                               {chapter.estimatedReadingTime && chapter.estimatedReadingTime > 0 && (
-                                <span className="inline-flex items-center rounded-md backdrop-blur-sm bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
+                                <span className="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
                                   {chapter.estimatedReadingTime} minutes reading time
                                 </span>
                               )}
@@ -154,6 +144,17 @@ function BookDetails() {
                                 </span>
                               )}
                             </div>
+
+                            <button
+                              onClick={() => {
+                                push(navigationRouter, `/read/${book?.id}/${chapter.id}`);
+                              }}
+                              aria-label={`Play chapter ${index + 1}: ${chapter.title}`}
+                              className="flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full bg-blue-400/10 px-4 py-2 font-medium text-blue-400 active:bg-blue-400/20 ring-1 ring-inset ring-blue-400/20"
+                            >
+                              <LucideBookOpen size={20} className="mt-0.5" />
+                              <span aria-hidden="true">Start Reading</span>
+                            </button>
                           </div>
                         </li>
                       </VirtualizedList.Item>

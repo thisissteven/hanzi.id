@@ -11,8 +11,10 @@ import { toast } from "sonner";
 
 export type LastRead = {
   bookId: string;
-  chapterId: string;
-  lastSentenceIndex: string;
+  chapters: Array<{
+    chapterId: string;
+    lastSentenceIndex: string;
+  }>;
 };
 
 export function useLastRead({
@@ -26,7 +28,10 @@ export function useLastRead({
 }) {
   React.useEffect(() => {
     const lastRead = JSON.parse(localStorage.getItem("lastRead") ?? "[]") as LastRead[];
-    const lastReadItem = lastRead.find((read) => read.bookId === bookId && read.chapterId === chapterId) as LastRead;
+    const lastReadItem = lastRead
+      .find((read) => read.bookId === bookId)
+      ?.chapters.find((chapter) => chapter.chapterId === chapterId);
+
     if (lastReadItem) {
       toast.custom(
         (t) => {
@@ -54,29 +59,52 @@ export function useLastRead({
     }
   }, [bookId, chapterId, scrollFn]);
 
-  const updateLastRead = React.useCallback((args: LastRead) => {
+  const updateLastRead = React.useCallback((args: { bookId: string; chapterId: string; lastSentenceIndex: string }) => {
     const lastRead = JSON.parse(localStorage.getItem("lastRead") ?? "[]") as LastRead[];
-    const hasBook = lastRead.some((book) => book.bookId === args.bookId);
-    if (hasBook) {
-      const lastReadItem = lastRead.filter((book) => book.bookId !== args.bookId && book.chapterId !== args.chapterId);
-      const newLastRead = [
-        {
-          bookId: args.bookId,
-          chapterId: args.chapterId,
-          lastSentenceIndex: args.lastSentenceIndex,
-        },
-        ...lastReadItem,
-      ].slice(0, 5);
-      localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+    const book = lastRead.find((book) => book.bookId === args.bookId);
+    const newLastReadItem = {
+      chapterId: args.chapterId,
+      lastSentenceIndex: args.lastSentenceIndex,
+    };
+
+    if (book) {
+      const lastReadItem = book.chapters.find((chapter) => chapter.chapterId === args.chapterId);
+      if (lastReadItem) {
+        const newChapters = [
+          newLastReadItem,
+          ...book.chapters.filter((chapter) => chapter.chapterId !== args.chapterId),
+        ];
+        const newLastRead = [
+          {
+            bookId: args.bookId,
+            chapters: newChapters,
+          },
+          ...lastRead.filter((book) => book.bookId !== args.bookId),
+        ];
+        localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+      } else {
+        const newChapters = [newLastReadItem, ...book.chapters];
+        const newLastRead = [
+          {
+            bookId: args.bookId,
+            chapters: newChapters,
+          },
+          ...lastRead.filter((book) => book.bookId !== args.bookId),
+        ];
+        localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+      }
     } else {
+      const newLastReadItem = {
+        chapterId: args.chapterId,
+        lastSentenceIndex: args.lastSentenceIndex,
+      };
       const newLastRead = [
         {
           bookId: args.bookId,
-          chapterId: args.chapterId,
-          lastSentenceIndex: args.lastSentenceIndex,
+          chapters: [newLastReadItem],
         },
         ...lastRead,
-      ].slice(0, 5);
+      ];
       localStorage.setItem("lastRead", JSON.stringify(newLastRead));
     }
   }, []);

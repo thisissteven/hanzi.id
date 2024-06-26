@@ -55,14 +55,14 @@ export function getParagraphs(text: string) {
 
   const locale = franc(sections[0] ?? "");
 
-  const period = locale === "cmn" ? "。" : ".";
-  const periodConversation = locale === "cmn" ? "。”" : ".";
+  const period = ["cmn", "und"].includes(locale) ? "。" : ".";
+  const periodConversation = ["cmn", "und"].includes(locale) ? "。”" : ".";
 
-  const questionMark = locale === "cmn" ? "？" : "?";
-  const questionMarkConversation = locale === "cmn" ? "？”" : "?";
+  const questionMark = ["cmn", "und"].includes(locale) ? "？" : "?";
+  const questionMarkConversation = ["cmn", "und"].includes(locale) ? "？”" : "?";
 
-  const exclamationMark = locale === "cmn" ? "！" : "!";
-  const exclamationMarkConversation = locale === "cmn" ? "！”" : "!";
+  const exclamationMark = ["cmn", "und"].includes(locale) ? "！" : "!";
+  const exclamationMarkConversation = ["cmn", "und"].includes(locale) ? "！”" : "!";
 
   let paragraphs = sections
     .map((paragraph) => paragraph.split(periodConversation))

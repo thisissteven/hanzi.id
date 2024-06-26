@@ -37,8 +37,10 @@ const useSpeechManager = (
     const localeMapping = {
       eng: "en-US", // English
       cmn: "zh-CN", // Simplified Chinese (Mandarin)
+      und: "zh-CN", // Simplified Chinese (Mandarin)
     } as const;
-    const locale = franc(sentences[0]) as keyof typeof localeMapping;
+    const sentenceToUse = sentences.find((sentence) => sentence.length > 0) ?? "";
+    const locale = franc(sentenceToUse) as keyof typeof localeMapping;
 
     if (typeof window !== "undefined") {
       const voices = speechSynthesis.getVoices() ?? [];
@@ -177,31 +179,27 @@ export const useSpeech = () => {
 export function SpeechProvider({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
-  const [_, rerender] = React.useReducer((s) => s + 1, 0);
-
-  const bookId = router.query.id;
-  const chapterId = router.query.chapterId;
-
-  const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(
-    chapterId ? `/chapter/${chapterId}` : undefined,
-    async (url) => {
-      const response = await fetch(`/api/${url}`);
-      const data = await response.json();
-      return data;
-    },
-    {
-      keepPreviousData: true,
-    }
-  );
-
-  const lastChapterId = React.useRef(chapterId);
+  const isChapterPage = router.pathname === "/read/[id]/[chapterId]" || router.asPath === "/read/[id]/[chapterId]";
 
   React.useEffect(() => {
-    if (chapterId) {
-      lastChapterId.current = chapterId;
-      rerender();
+    if (!isChapterPage && typeof window !== "undefined") {
+      window.speechSynthesis.cancel();
+      toast.dismiss("last-read");
     }
-  }, [chapterId]);
+  }, [isChapterPage]);
+
+  if (!isChapterPage) return children;
+  return <SpeechContextProvider>{children}</SpeechContextProvider>;
+}
+
+function SpeechContextProvider({ children }: { children: React.ReactNode }) {
+  const router = useRouter();
+
+  const [_, rerender] = React.useReducer((s) => s + 1, 0);
+
+  const chapterId = router.query.chapterId;
+
+  const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(chapterId ? `/chapter/${chapterId}` : undefined);
 
   const { sentences } = useParagraphs(chapter?.content ?? "");
   const { speed } = useReading();
@@ -212,7 +210,14 @@ export function SpeechProvider({ children }: { children: React.ReactNode }) {
     rate: speed,
   });
 
-  if (!chapter && !bookId) return null;
+  const lastChapterId = React.useRef(chapterId);
+
+  React.useEffect(() => {
+    if (chapterId) {
+      lastChapterId.current = chapterId;
+      rerender();
+    }
+  }, [chapterId]);
 
   return <SpeechContext.Provider value={value}>{children}</SpeechContext.Provider>;
 }

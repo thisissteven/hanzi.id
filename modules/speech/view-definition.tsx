@@ -38,7 +38,7 @@ export function DefinitionModal({
     async (url) => {
       const response = await fetch(`/api/${url}`);
       // Simulate loading for better UX
-      await new Promise((resolve) => setTimeout(resolve, 200));
+      await new Promise((resolve) => setTimeout(resolve, 150));
       return response.json();
     },
     {

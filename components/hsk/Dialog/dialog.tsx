@@ -73,14 +73,14 @@ function DialogContent({ children, className, overlayClassName }: DialogContentP
         ref={overlayRef}
         data-dialog-overlay
         data-dialog-state="initial"
-        className={cn("fixed inset-0 z-[60] w-full h-full bg-black/60 brightness-0", overlayClassName)}
+        className={cn("fixed inset-0 z-[1001] w-full h-full bg-black/60 brightness-0", overlayClassName)}
       />
       <RadixDialog.Content
         ref={contentRef}
         data-dialog-content
         data-dialog-state="initial"
         className={cn(
-          "fixed z-[60] md:top-1/2 left-1/2",
+          "fixed z-[1001] md:top-1/2 left-1/2",
           "max-h-dialog overflow-y-auto scrollbar bg-black text-smokewhite",
 
           // default

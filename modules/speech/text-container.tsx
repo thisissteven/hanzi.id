@@ -8,7 +8,6 @@ import { Virtualizer } from "@tanstack/react-virtual";
 import useIsMobile from "@/hooks/useIsMobile";
 import { useReading } from "../layout";
 import { useRouter } from "next/router";
-import { useWindowSize } from "@/hooks";
 
 export function TextContainer({
   sentences,
@@ -41,11 +40,10 @@ export function TextContainer({
     }
   }, [isPaused]);
 
-  const { width } = useWindowSize();
   const router = useRouter();
 
   return (
-    <div>
+    <div className={cn("duration-500", sentences.length > 1 ? "opacity-100" : "opacity-0")}>
       <ul
         onMouseLeave={() => {
           highlightRef.current.style.transitionProperty = "opacity";

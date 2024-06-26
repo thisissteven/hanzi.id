@@ -49,6 +49,7 @@ const createSpeechEngine = (options: SpeechEngineOptions) => {
     const localeMapping = {
       eng: state.config.isMobile ? "en_US" : "en-US", // English
       cmn: state.config.isMobile ? "zh_CN" : "zh-CN", // Simplified Chinese (Mandarin)
+      und: state.config.isMobile ? "zh_CN" : "zh-CN", // Simplified Chinese (Mandarin)
     } as const;
     const locale = franc(text) as keyof typeof localeMapping;
 

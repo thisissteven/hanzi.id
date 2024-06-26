@@ -47,14 +47,14 @@ export default function Read() {
   });
 
   React.useEffect(() => {
-    if (bookId && chapterId && currentSentenceIdx > 0) {
+    if (bookId && chapterId && currentSentenceIdx > 0 && playbackState === "playing") {
       updateLastRead({
         bookId,
         chapterId,
         lastSentenceIndex: currentSentenceIdx.toString(),
       });
     }
-  }, [bookId, chapterId, currentSentenceIdx, updateLastRead]);
+  }, [bookId, chapterId, currentSentenceIdx, updateLastRead, playbackState]);
 
   return (
     <Layout>

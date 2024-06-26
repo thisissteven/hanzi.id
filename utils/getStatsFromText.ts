@@ -5,6 +5,7 @@ export function getStatsFromText(text: string) {
   const localeMapping = {
     eng: "en", // English
     cmn: "cn", // Simplified Chinese (Mandarin)
+    und: "cn", // Simplified Chinese (Mandarin)
   } as const;
   const locale = franc(text) as keyof typeof localeMapping;
 
