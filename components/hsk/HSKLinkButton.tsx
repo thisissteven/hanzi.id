@@ -12,7 +12,7 @@ export function HSKLinkButton({ disabled = false, className, children, ...rest }
     <Link
       aria-disabled={disabled}
       className={cn(
-        "select-none inline-block h-full text-center max-sm:flex-1 bg-softblack active:bg-softblack/40 text-smokewhite px-6 py-3.5 font-medium active:shadow-none active:translate-y-1 border-b border-secondary/20 aria-disabled:pointer-events-none aria-disabled:bg-softblack/80 aria-disabled:text-smokewhite/50 aria-disabled:border-secondary/20 backdrop-blur-md duration-200",
+        "select-none inline-block h-full text-center max-sm:flex-1 bg-softblack active:bg-softblack/40 text-smokewhite px-6 py-3.5 font-medium active:shadow-none active:translate-y-1 border-b border-secondary/10 aria-disabled:pointer-events-none aria-disabled:bg-softblack/80 aria-disabled:text-smokewhite/50 aria-disabled:border-secondary/10 backdrop-blur-md duration-200",
         className
       )}
       {...rest}

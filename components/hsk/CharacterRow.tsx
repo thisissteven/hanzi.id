@@ -35,7 +35,7 @@ export function CharacterRow({
         isCompleted ? "text-smokewhite" : "text-lightgray"
       )}
     >
-      <div className="pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-b border-b-secondary/20 bg-softblack active:bg-hovered">
+      <div className="pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-b border-b-secondary/10 bg-softblack active:bg-hovered">
         <div className="shrink-0 font-medium">{hanzi}</div>
 
         <div className="overflow-x-hidden flex-1">

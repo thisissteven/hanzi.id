@@ -7,7 +7,7 @@ import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 
 import { SegmentApiResponse } from "@/pages/api/segment";
 import { cn } from "@/utils";
-import { useReading } from "../layout";
+import { useReading } from "@/modules/layout";
 import { Divider, LoadingBar } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import { SaveToFlashcard } from "./save-to-flashcard";

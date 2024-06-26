@@ -36,7 +36,7 @@ export function useLastRead({
       toast.custom(
         (t) => {
           return (
-            <div className="border border-secondary/20 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
+            <div className="border border-secondary/10 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
               <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
               <span className="shrink-0 flex-1">Go to last read sentence</span>
               <button
@@ -171,7 +171,7 @@ export function Explore() {
             exit={{ opacity: 0 }}
             transition={{ type: "tween", duration: 0.2 }}
           >
-            <ul className="mt-4 border-t border-t-secondary/20">
+            <ul className="mt-4 border-t border-t-secondary/10">
               {books.map((book, index) => {
                 return (
                   <motion.li
@@ -179,7 +179,7 @@ export function Explore() {
                     transition={{ type: "tween", duration: 0.2 }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="border-b border-b-secondary/20"
+                    className="border-b border-b-secondary/10"
                   >
                     <Link
                       href={`/read/${book.id}`}

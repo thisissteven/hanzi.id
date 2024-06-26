@@ -9,6 +9,14 @@ function getChapterById(id: string) {
     where: {
       id,
     },
+    include: {
+      book: {
+        select: {
+          id: true,
+          title: true,
+        },
+      },
+    },
   });
 }
 

@@ -111,8 +111,7 @@ model Book {
 }
 
 model Chapter {
-  id     String @id @default(cuid())
-  bookId String
+  id String @id @default(cuid())
 
   order                Int    @default(0)
   title                String @default("Untitled")
@@ -125,7 +124,8 @@ model Chapter {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  book Book @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  bookId String
+  book   Book   @relation(fields: [bookId], references: [id], onDelete: Cascade)
 
   readings Reading[]
 }

@@ -5,11 +5,12 @@ import { Layout } from "../layout";
 import { Divider } from "@/components";
 
 const texts = [
-  "Welcome to Flow.",
-  "Clear your mind through raw, unfiltered writing.",
-  "Thoughts will fade into the background to make space for new ones.",
-  "Feel free to alter your thoughts within 5 minutes, after which you can leave them to rest.",
-  "Don't worry. You can always come back to read your thought process.",
+  "Welcome to hanzi.id! 😉",
+  "This is an app to help you learn Chinese characters.",
+  "HSK 1-9 characters and their example usages are available.",
+  "You can also browse and start reading Chinese books. 📚",
+  "Your learning progress will be saved locally! 🎉",
+  "Let's get started!",
 ];
 
 export function Onboarding({ onContinue }: { onContinue: () => void }) {
@@ -40,7 +41,7 @@ export function Onboarding({ onContinue }: { onContinue: () => void }) {
       setCurrentSentenceIndex((prev) => {
         return prev + 1;
       });
-    }, length * 200 + 500);
+    }, length * 300 + 500);
 
     return () => {
       clearTimeout(timeout);

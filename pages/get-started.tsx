@@ -1,9 +1,8 @@
 import React from "react";
 import { Layout } from "@/modules/layout";
-import { Explore } from "@/modules/home/explore";
 import { BackRouteButton } from "@/components";
 
-export default function FlashcardsPage() {
+export default function GetStartedPage() {
   return (
     <Layout>
       <div className="min-h-dvh">
@@ -13,8 +12,6 @@ export default function FlashcardsPage() {
               <BackRouteButton />
             </div>
           </div>
-
-          {/* <Explore /> */}
         </main>
       </div>
     </Layout>

@@ -1,12 +1,14 @@
 import React from "react";
 
 export function useOnboarded() {
-  const [isOnboarded, setIsOnboarded] = React.useState(false);
+  const [isOnboarded, setIsOnboarded] = React.useState<boolean | null>(null);
 
   React.useEffect(() => {
     const focusOnboarded = localStorage.getItem("focus_onboarded");
     if (focusOnboarded) {
       setIsOnboarded(true);
+    } else {
+      setIsOnboarded(false);
     }
   }, []);
 

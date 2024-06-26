@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./buttons";
-import { FilePlus2Icon, GraduationCapIcon, LanguagesIcon, LibraryBigIcon } from "lucide-react";
+import { FilePlus2Icon, GraduationCapIcon, LanguagesIcon, LibraryBigIcon, TelescopeIcon } from "lucide-react";
 import { Divider } from "@/components";
 import { AuthButton } from "./auth-button";
 
@@ -50,6 +50,14 @@ export function HomeTodo() {
           icon={<LanguagesIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-pink-500" />}
           title="Flashcards"
           description="Memorize words and phrases with spaced repetition."
+        />
+
+        <Button
+          path="/get-started"
+          className="hover:bg-orange-500/10"
+          icon={<TelescopeIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-orange-500" />}
+          title="FAQs"
+          description="Some tips and tricks to get you started 👍"
         />
       </div>
     </React.Fragment>

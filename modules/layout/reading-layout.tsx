@@ -41,12 +41,12 @@ const ReadingContext = React.createContext(
       name: FontSize;
     };
     speed: number;
-    flashcard: Array<string>;
+    flashcard: Array<Flashcard>;
     toggleBlur: () => void;
     changeFontSize: (fontSize: FontSize) => void;
     changeSpeed: (speed: number) => void;
-    addToFlashcard: (word: string) => void;
-    removeFromFlashcard: (word: string) => void;
+    addToFlashcard: (chapterName: string, word: string) => void;
+    removeFromFlashcard: (chapterName: string, word: string) => void;
   }
 );
 
@@ -54,11 +54,46 @@ export function useReading() {
   return React.useContext(ReadingContext);
 }
 
+export type Flashcard = {
+  chapter: string;
+  words: Array<string>;
+};
+
+export function useFlashcardList() {
+  const [flashcard, setFlashcard] = React.useState<Array<Flashcard>>([]);
+
+  React.useEffect(() => {
+    const savedFlashcard = localStorage.getItem("flashcard");
+    if (savedFlashcard) {
+      setFlashcard(JSON.parse(savedFlashcard));
+    }
+  }, []);
+
+  return flashcard;
+}
+
+export function useFlashcard(name: string) {
+  const [flashcardItem, setFlashcardItem] = React.useState<Flashcard | null>(null);
+
+  React.useEffect(() => {
+    const savedFlashcard = localStorage.getItem("flashcard");
+    if (savedFlashcard) {
+      const flashcard = JSON.parse(savedFlashcard) as Array<Flashcard>;
+      const flashcardItem = flashcard.find((f) => f.chapter === name);
+      if (flashcardItem) {
+        setFlashcardItem(flashcardItem);
+      }
+    }
+  }, [name]);
+
+  return flashcardItem;
+}
+
 export function ReadingProvider({ children }: { children: React.ReactNode }) {
   const [blurred, setBlurred] = React.useState(true);
   const [fontSize, setFontSize] = React.useState<(typeof fontSizeMap)[FontSize]>(fontSizeMap.xl);
   const [speed, setSpeed] = React.useState(1.2);
-  const [flashcard, setFlashcard] = React.useState<Array<string>>([]);
+  const [flashcard, setFlashcard] = React.useState<Array<Flashcard>>([]);
 
   const toggleBlur = React.useCallback(() => {
     setBlurred((prev) => {
@@ -78,19 +113,58 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("speed", JSON.stringify(speed));
   }, []);
 
-  const addToFlashcard = React.useCallback((word: string) => {
+  const addToFlashcard = React.useCallback((chapterName: string, word: string) => {
     setFlashcard((prev) => {
-      const flashcard = [...prev, word];
-      localStorage.setItem("flashcard", JSON.stringify([...flashcard, word]));
-      return flashcard;
+      const flashcardItem = prev.find((f) => f.chapter === chapterName);
+      if (flashcardItem) {
+        const newWords = [...flashcardItem.words, word];
+        const newFlashcard = prev.map((f) => {
+          if (f.chapter === chapterName) {
+            return {
+              chapter: f.chapter,
+              words: newWords,
+            };
+          }
+          return f;
+        });
+
+        localStorage.setItem("flashcard", JSON.stringify(newFlashcard));
+        return newFlashcard;
+      } else {
+        const newFlashcard = [
+          ...prev,
+          {
+            chapter: chapterName,
+            words: [word],
+          },
+        ];
+
+        localStorage.setItem("flashcard", JSON.stringify(newFlashcard));
+        return newFlashcard;
+      }
     });
   }, []);
 
-  const removeFromFlashcard = React.useCallback((word: string) => {
+  const removeFromFlashcard = React.useCallback((chapterName: string, word: string) => {
     setFlashcard((prev) => {
-      const flashcard = prev.filter((w) => w !== word);
-      localStorage.setItem("flashcard", JSON.stringify(flashcard.filter((w) => w !== word)));
-      return flashcard;
+      const flashcardItem = prev.find((f) => f.chapter === chapterName);
+      if (flashcardItem) {
+        const newWords = flashcardItem.words.filter((w) => w !== word);
+        const newFlashcard = prev.map((f) => {
+          if (f.chapter === chapterName) {
+            return {
+              chapter: f.chapter,
+              words: newWords,
+            };
+          }
+          return f;
+        });
+
+        localStorage.setItem("flashcard", JSON.stringify(newFlashcard));
+        return newFlashcard;
+      }
+
+      return prev;
     });
   }, []);
 

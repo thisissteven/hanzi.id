@@ -3,13 +3,22 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CircleCheckIcon, CirclePlusIcon } from "lucide-react";
 import React from "react";
 import { useReading } from "@/modules/layout";
+import useSWRImmutable from "swr/immutable";
+import { GetChapterByIdResponse } from "@/pages/api/chapter/[id]";
+import { useRouter } from "next/router";
 
 export function SaveToFlashcard({ word }: { word?: string }) {
   const { flashcard, addToFlashcard, removeFromFlashcard } = useReading();
 
-  if (!word) return null;
+  const router = useRouter();
+  const chapterId = router.query.chapterId as string;
+  const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(chapterId ? `/chapter/${chapterId}` : undefined);
 
-  const isSaved = flashcard.includes(word);
+  const chapterName = `${chapter?.book.title}-${chapter?.title}`;
+
+  if (!word || chapterName.includes("undefined")) return null;
+
+  const isSaved = flashcard.some((item) => item.words.includes(word));
   const Icon = isSaved ? CircleCheckIcon : CirclePlusIcon;
   return (
     <button
@@ -17,9 +26,9 @@ export function SaveToFlashcard({ word }: { word?: string }) {
       className="group relative flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full transition-colors duration-200 active:bg-hovered"
       onClick={() => {
         if (isSaved) {
-          removeFromFlashcard(word);
+          removeFromFlashcard(chapterName, word);
         } else {
-          addToFlashcard(word);
+          addToFlashcard(chapterName, word);
         }
       }}
       aria-label={isSaved ? "remove from flashcard" : "save to flashcard"}

@@ -28,7 +28,7 @@ export function LastViewedHanzi() {
           toast.custom(
             (t) => {
               return (
-                <div className="border border-secondary/20 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
+                <div className="border border-secondary/10 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
                   <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
                   <span className="shrink-0 flex-1">
                     {lastViewedHanzi.character} <span className="text-xs">(last visited)</span>

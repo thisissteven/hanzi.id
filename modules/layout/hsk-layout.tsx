@@ -46,7 +46,7 @@ export function HSKLayout({ children }: { children: React.ReactNode }) {
       <AudioProvider>
         <AnimatePresence mode="wait">
           <Layout>
-            <header className="fixed z-50 top-0 left-0 w-screen h-16 grid place-items-center bg-black border-b border-b-secondary/20">
+            <header className="fixed z-50 top-0 left-0 w-screen h-16 grid place-items-center bg-black border-b border-b-secondary/10">
               <ReplaceRouteButton path="/">
                 <div className="mb-[3px]">&#8592;</div> Return
               </ReplaceRouteButton>

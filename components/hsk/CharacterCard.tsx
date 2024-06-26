@@ -60,7 +60,7 @@ export function CharacterCard({
         <div className={clsx("relative w-full h-full card", isFlipped && "card-flipped")}>
           <div
             className={clsx(
-              "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-b-[1.5px] grid place-items-center bg-softblack border-secondary/20"
+              "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-b-[1.5px] grid place-items-center bg-softblack border-secondary/10"
             )}
           >
             <span className="font-medium">{hanzi}</span>
@@ -105,7 +105,7 @@ export function CharacterCard({
           </div>
           <div
             className={clsx(
-              "card-content absolute inset-0 border-b-[1.5px] bg-softblack flex flex-col items-center justify-center text-flipped px-4 border-secondary/20"
+              "card-content absolute inset-0 border-b-[1.5px] bg-softblack flex flex-col items-center justify-center text-flipped px-4 border-secondary/10"
             )}
           >
             <div className="text-2xl">{pinyin}</div>

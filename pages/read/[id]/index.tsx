@@ -118,7 +118,7 @@ function BookDetails() {
 
                     return (
                       <VirtualizedList.Item key={item.key} virtualizer={virtualizer} item={item}>
-                        <li key={index} className="py-5 sm:py-8 border-b border-b-secondary/20">
+                        <li key={index} className="py-5 sm:py-8 border-b border-b-secondary/10">
                           <h2 className="text-xl font-medium">
                             {index + 1}: {chapter.title}
                           </h2>
@@ -150,10 +150,17 @@ function BookDetails() {
                                 push(navigationRouter, `/read/${book?.id}/${chapter.id}`);
                               }}
                               aria-label={`Play chapter ${index + 1}: ${chapter.title}`}
-                              className="flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full bg-blue-400/10 px-4 py-2 font-medium text-blue-400 active:bg-blue-400/20 ring-1 ring-inset ring-blue-400/20"
+                              className={cn(
+                                "flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full px-4 py-2 font-medium ring-1 ring-inset justify-center",
+                                readingProgress > 1
+                                  ? "ring-green-400/20 text-green-400 active:bg-green-400/20 bg-green-400/10"
+                                  : "ring-blue-400/20 text-blue-400 active:bg-blue-400/20 bg-blue-400/10"
+                              )}
                             >
                               <LucideBookOpen size={20} className="mt-0.5" />
-                              <span aria-hidden="true">Start Reading</span>
+                              <span aria-hidden="true">
+                                {readingProgress > 1 ? "Continue Reading" : "Start Reading"}
+                              </span>
                             </button>
                           </div>
                         </li>
