@@ -49,7 +49,7 @@ export function HomeTodo() {
           className="hover:bg-pink-500/10"
           icon={<LanguagesIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-pink-500" />}
           title="Flashcards"
-          description="Memorize words and phrases with spaced repetition."
+          description="Your saved words and phrases for quick review."
         />
 
         <Button

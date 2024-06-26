@@ -19,6 +19,7 @@ export default function FlashcardsPage() {
           </div>
 
           <div>
+            {flashcards.length === 0 && <div className="px-4 mt-4">Your flashcard is empty.</div>}
             <AnimatePresence mode="wait">
               {!flashcards ? (
                 <motion.div
@@ -39,7 +40,7 @@ export default function FlashcardsPage() {
                   transition={{ type: "tween", duration: 0.2 }}
                 >
                   <ul>
-                    {flashcards.map((flashcard, index) => {
+                    {flashcards.map((flashcard) => {
                       const [bookName, chapterName] = flashcard.chapter.split("-");
                       return (
                         <motion.li

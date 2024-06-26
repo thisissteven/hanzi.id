@@ -63,7 +63,7 @@ export function useFlashcardList() {
   const [flashcard, setFlashcard] = React.useState<Array<Flashcard>>([]);
 
   React.useEffect(() => {
-    const savedFlashcard = localStorage.getItem("flashcard");
+    const savedFlashcard = localStorage.getItem("flashcard-data");
     if (savedFlashcard) {
       setFlashcard(JSON.parse(savedFlashcard));
     }
@@ -76,7 +76,7 @@ export function useFlashcard(name: string) {
   const [flashcardItem, setFlashcardItem] = React.useState<Flashcard | null>(null);
 
   React.useEffect(() => {
-    const savedFlashcard = localStorage.getItem("flashcard");
+    const savedFlashcard = localStorage.getItem("flashcard-data");
     if (savedFlashcard) {
       const flashcard = JSON.parse(savedFlashcard) as Array<Flashcard>;
       const flashcardItem = flashcard.find((f) => f.chapter === name);
@@ -128,7 +128,7 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
           return f;
         });
 
-        localStorage.setItem("flashcard", JSON.stringify(newFlashcard));
+        localStorage.setItem("flashcard-data", JSON.stringify(newFlashcard));
         return newFlashcard;
       } else {
         const newFlashcard = [
@@ -139,7 +139,7 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
           },
         ];
 
-        localStorage.setItem("flashcard", JSON.stringify(newFlashcard));
+        localStorage.setItem("flashcard-data", JSON.stringify(newFlashcard));
         return newFlashcard;
       }
     });
@@ -160,7 +160,7 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
           return f;
         });
 
-        localStorage.setItem("flashcard", JSON.stringify(newFlashcard));
+        localStorage.setItem("flashcard-data", JSON.stringify(newFlashcard));
         return newFlashcard;
       }
 
@@ -179,7 +179,7 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
       setSpeed(parseFloat(savedSpeed));
     }
 
-    const savedFlashcard = localStorage.getItem("flashcard");
+    const savedFlashcard = localStorage.getItem("flashcard-data");
     if (savedFlashcard) {
       setFlashcard(JSON.parse(savedFlashcard));
     }

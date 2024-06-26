@@ -1,10 +1,26 @@
 import React from "react";
-import { Flashcard, Layout, useFlashcard, useFlashcardList } from "@/modules/layout";
-import { BackRouteButton } from "@/components";
+import { Flashcard, Layout, useFlashcard } from "@/modules/layout";
+import { BackRouteButton, LoadMore } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon, LucideDownload } from "lucide-react";
 import { useRouter } from "next/router";
+import useSWRImmutable from "swr/immutable";
+import { FlashcardedResult } from "../api/flashcard";
+import { CardDetailsModal } from "@/modules/flashcards";
+
+function exportToPleco(words: string[], filename: string) {
+  const element = document.createElement("a");
+  const file = new Blob(
+    words.map((str) => str + "\n"),
+    { type: "text/plain" }
+  );
+  element.href = URL.createObjectURL(file);
+  element.download = `${filename}.txt`;
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
 
 export default function FlashcardsDetailsPage() {
   const router = useRouter();
@@ -21,86 +37,178 @@ export default function FlashcardsDetailsPage() {
             </div>
           </div>
 
-          <div>
-            <AnimatePresence mode="wait">
-              {!flashcard ? (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ type: "tween", duration: 0.2 }}
-                  className="mt-4 ml-7 md:ml-8"
-                >
-                  Loading flashcard...
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="flashcard"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ type: "tween", duration: 0.2 }}
-                >
-                  <DisplayFlashcard flashcard={flashcard} />
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+          <AnimatePresence mode="wait">
+            {!flashcard ? (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ type: "tween", duration: 0.2 }}
+                className="mt-4 ml-7 md:ml-8"
+              >
+                Loading flashcard...
+              </motion.div>
+            ) : (
+              <motion.div
+                key="flashcard"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ type: "tween", duration: 0.2 }}
+              >
+                <DisplayFlashcard flashcard={flashcard} />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </main>
       </div>
     </Layout>
   );
 }
 
+const chunkArray = (array: string[], size: number) => {
+  const chunkedArray = [];
+  for (let i = 0; i < array.length; i += size) {
+    chunkedArray.push(array.slice(i, i + size));
+  }
+  return chunkedArray;
+};
+
+const CHUNK_SIZE = 30;
+
 function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
   const [bookName, chapterName] = flashcard.chapter.split("-");
+  const [exported, setExported] = React.useState(false);
 
-  return null;
+  const [loadingBatch, setLoadingBatch] = React.useState(-1);
+  const [cards, setCards] = React.useState<FlashcardedResult[]>([]);
+
+  const [details, setDetails] = React.useState<FlashcardedResult>();
+
+  const chunkedCards = React.useMemo(() => {
+    const cards = chunkArray(flashcard.words, CHUNK_SIZE);
+    return {
+      data: cards,
+      maxBatch: cards.length,
+    };
+  }, [flashcard.words]);
+
+  const isEnd = loadingBatch === chunkedCards.maxBatch;
+
+  const { isValidating } = useSWRImmutable<FlashcardedResult[]>(
+    !isEnd && loadingBatch > -1 ? `/flashcard?text=${chunkedCards.data[loadingBatch].join("-")}` : undefined,
+    async (url) => {
+      await new Promise((resolve) => setTimeout(resolve, 150));
+
+      const response = await fetch(`/api/${url}`);
+      const data = await response.json();
+      return data;
+    },
+    {
+      onSuccess: (data) => {
+        setCards((prev) => [...prev, ...data]);
+      },
+    }
+  );
 
   return (
-    <div>
-      <h1 className="mx-4 mt-4 text-2xl font-bold text-primary">{chapterName}</h1>
+    <>
+      <CardDetailsModal details={details} onClose={() => setDetails(undefined)} />
+      <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
       <p className="mx-4 mt-2 text-secondary text-sm">{bookName}</p>
-      <ul className="mt-4 border-t border-t-secondary/10">
-        {flashcard.words.map((card, index) => {
-          const [bookName, chapterName] = flashcard.chapter.split("-");
+
+      <ul className="mt-4 border-t border-t-secondary/10 grid sm:grid-cols-2">
+        {cards.map((card, index) => {
+          const pinyin = card?.entries?.map((entry) => entry.pinyin).join("/");
+          const translations = card?.entries?.[0].english.join(", ");
+
           return (
             <motion.li
-              key={flashcard.chapter}
+              key={index}
               transition={{ type: "tween", duration: 0.2 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="border-b border-b-secondary/10"
             >
-              <Link
-                href={`/flashcard/${flashcard.chapter}`}
-                scroll={false}
-                className="text-left p-4 w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between"
+              <button
+                onClick={() => setDetails(card)}
+                className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
               >
-                <div className="min-w-0 flex-auto">
-                  <h3 className="text-lg font-medium text-primary">{chapterName}</h3>
-                  <div className="mt-1 flex gap-2 items-center">
-                    <p className="text-secondary text-sm">{bookName}</p>
+                <div className="relative group transition select-none text-3xl w-full">
+                  <div className="pl-3 pr-4 pt-8 pb-3 flex gap-2 items-center">
+                    <div className="shrink-0 font-medium">{flashcard.words[index]}</div>
 
-                    <div className="inline-flex max-sm:hidden text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
-                      {flashcard.words.length} {flashcard.words.length > 1 ? "cards" : "card"}
+                    <div className="overflow-x-hidden flex-1">
+                      <div className="text-sm font-medium text-smokewhite">{pinyin ?? "Loading..."}</div>
+                      <div className="text-sm line-clamp-1 max-w-[95%] text-secondary">
+                        {translations ?? "Loading..."}
+                      </div>
                     </div>
+
+                    <div className="absolute left-4 top-3 text-xs text-secondary">{index + 1}</div>
                   </div>
                 </div>
 
-                <ChevronRightIcon
-                  className="h-5 w-5 shrink-0 flex-none text-secondary/50 max-sm:hidden"
-                  aria-hidden="true"
-                />
-
-                <div className="inline-flex sm:hidden text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
-                  {flashcard.words.length} {flashcard.words.length > 1 ? "cards" : "card"}
-                </div>
-              </Link>
+                <ChevronRightIcon className="h-5 w-5 shrink-0 flex-none text-secondary/50" aria-hidden="true" />
+              </button>
             </motion.li>
           );
         })}
       </ul>
-    </div>
+
+      <LoadMore
+        isEnd={isEnd}
+        whenInView={() => {
+          if (!isEnd && !isValidating) {
+            setLoadingBatch((prev) => prev + 1);
+          }
+        }}
+      />
+
+      {cards.length > 0 && (
+        <AnimatePresence mode="wait" initial={false}>
+          {exported ? (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: [1, 0],
+                transition: {
+                  delay: 2,
+                },
+              }}
+              exit={{
+                opacity: 0,
+              }}
+              transition={{ type: "tween", duration: 0.2 }}
+              className="sticky bottom-4 max-md:mx-4 flex justify-end h-0"
+            >
+              Export successful!
+            </motion.div>
+          ) : (
+            <motion.div
+              key="export"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{
+                opacity: 0,
+              }}
+              transition={{ type: "tween", duration: 0.2 }}
+              className="sticky bottom-4 mt-8 max-md:mx-4 flex justify-end"
+            >
+              <button
+                type="button"
+                onClick={() => {
+                  exportToPleco(flashcard.words, flashcard.chapter);
+                  setExported(true);
+                }}
+                className="rounded-md font-medium max-md:w-full text-black dark:text-white p-3 md:py-2.5 md:px-4 duration-200 bg-blue-500 active:bg-blue-600 disabled:opacity-50 flex items-center justify-center gap-2"
+              >
+                Export for Pleco <LucideDownload size={20} />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      )}
+    </>
   );
 }

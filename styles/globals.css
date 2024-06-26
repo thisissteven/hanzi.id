@@ -126,6 +126,10 @@
   transition-duration: 2000ms;
 }
 
+.delay-three-thousand {
+  transition-delay: 3000ms;
+}
+
 .ease {
   transition-property: all;
   transition-timing-function: ease;

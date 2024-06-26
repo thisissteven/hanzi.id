@@ -6,10 +6,6 @@ export const config = {
   maxDuration: 15,
 };
 
-export type FlashcardApiResponse = {
-  result: Array<FlashcardedResult[]>;
-};
-
 export interface FlashcardedResult {
   simplified: string;
   entries?: Array<{
@@ -30,7 +26,7 @@ type TokenizerResult = Array<{
   }>;
 }>;
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<FlashcardApiResponse>) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<FlashcardedResult[]>) {
   const text = req.query.text as string;
 
   const flashcarded = text.split("-").map((t) => segment(t));
@@ -46,8 +42,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Flashc
         simplified: i.simplified,
         entries,
       };
-    });
+    })[0];
   });
 
-  res.status(200).json({ result });
+  res.status(200).json(result);
 }

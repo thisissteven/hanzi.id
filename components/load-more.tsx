@@ -43,7 +43,7 @@ export function LoadMore({ whenInView, isEnd }: { whenInView: () => void; isEnd?
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ type: "tween", duration: 0.2 }}
-            className="grid place-items-center absolute inset-0 h-full z-50 bg-black/50"
+            className="grid place-items-center absolute inset-0 h-full bg-black/50"
           >
             {<LoadingBar visible />}
           </motion.div>
