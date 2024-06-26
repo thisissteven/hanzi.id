@@ -2,11 +2,12 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 const defaultMeta = {
-  title: "Focus",
-  siteName: "focus999.vercel.app",
-  description: "Focus, a site where you can read without distractions.",
-  url: "https://focus999.vercel.app",
-  image: "https://res.cloudinary.com/read-cv/image/upload/v1/1/marketing/og-images/og-image-posts.jpg?_a=ATO2BAA0",
+  title: "hanzi.id",
+  siteName: "hanzi.id",
+  description: "hanzi.id, learn hsk characters and read chinese books.",
+  url: "https://hanzi.id",
+  image:
+    "https://res.cloudinary.com/drjgq6umm/image/upload/v1719405836/uploads/focus-web-app/Screenshot_2024-06-26_194347_uaotxf.png",
   type: "website",
   robots: "follow, index",
 };
@@ -53,7 +54,7 @@ export function Seo(props: SeoProps) {
         <link key={linkProps.href} {...linkProps} />
       ))}
 
-      <meta name="theme-color" content="#050a0e" />
+      <meta name="theme-color" content="#101010" />
     </Head>
   );
 }

@@ -27,7 +27,7 @@ export function useLastRead({
   chapterId: string;
 }) {
   React.useEffect(() => {
-    const lastRead = JSON.parse(localStorage.getItem("lastRead") ?? "[]") as LastRead[];
+    const lastRead = JSON.parse(localStorage.getItem("lastReadData") ?? "[]") as LastRead[];
     const lastReadItem = lastRead
       .find((read) => read.bookId === bookId)
       ?.chapters.find((chapter) => chapter.chapterId === chapterId);
@@ -60,7 +60,7 @@ export function useLastRead({
   }, [bookId, chapterId, scrollFn]);
 
   const updateLastRead = React.useCallback((args: { bookId: string; chapterId: string; lastSentenceIndex: string }) => {
-    const lastRead = JSON.parse(localStorage.getItem("lastRead") ?? "[]") as LastRead[];
+    const lastRead = JSON.parse(localStorage.getItem("lastReadData") ?? "[]") as LastRead[];
     const book = lastRead.find((book) => book.bookId === args.bookId);
     const newLastReadItem = {
       chapterId: args.chapterId,
@@ -81,7 +81,7 @@ export function useLastRead({
           },
           ...lastRead.filter((book) => book.bookId !== args.bookId),
         ];
-        localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+        localStorage.setItem("lastReadData", JSON.stringify(newLastRead));
       } else {
         const newChapters = [newLastReadItem, ...book.chapters];
         const newLastRead = [
@@ -91,7 +91,7 @@ export function useLastRead({
           },
           ...lastRead.filter((book) => book.bookId !== args.bookId),
         ];
-        localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+        localStorage.setItem("lastReadData", JSON.stringify(newLastRead));
       }
     } else {
       const newLastReadItem = {
@@ -105,7 +105,7 @@ export function useLastRead({
         },
         ...lastRead,
       ];
-      localStorage.setItem("lastRead", JSON.stringify(newLastRead));
+      localStorage.setItem("lastReadData", JSON.stringify(newLastRead));
     }
   }, []);
 
@@ -118,7 +118,7 @@ export function Explore() {
   const [lastRead, setLastRead] = React.useState<LastRead[]>([]);
 
   React.useEffect(() => {
-    const lastRead = localStorage.getItem("lastRead") ?? "[]";
+    const lastRead = localStorage.getItem("lastReadData") ?? "[]";
     if (lastRead) {
       setLastRead(JSON.parse(lastRead));
     }

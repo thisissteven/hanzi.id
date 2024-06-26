@@ -40,7 +40,7 @@ function BookDetails() {
   const [lastRead, setLastRead] = React.useState<LastRead[]>([]);
 
   React.useEffect(() => {
-    const lastRead = localStorage.getItem("lastRead") ?? "[]";
+    const lastRead = localStorage.getItem("lastReadData") ?? "[]";
     if (lastRead) {
       setLastRead(JSON.parse(lastRead));
     }

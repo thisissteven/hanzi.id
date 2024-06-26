@@ -7,11 +7,11 @@ export function HanziDefinition({
   };
 }) {
   return (
-    <ul className="relative ml-8 pr-2">
+    <ul className="relative ml-8 pr-2 grid sm:grid-cols-2">
       {entry.definitions.map((definition, index) => {
         return (
           <li key={index} className="list-disc">
-            {definition}
+            <div className="pr-4">{definition}</div>
           </li>
         );
       })}
