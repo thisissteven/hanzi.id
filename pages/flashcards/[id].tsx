@@ -95,21 +95,20 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   const isEnd = loadingBatch === chunkedCards.maxBatch;
 
-  const { isValidating } = useSWRImmutable<FlashcardedResult[]>(
-    !isEnd && loadingBatch > -1 ? `/flashcard?text=${chunkedCards.data[loadingBatch].join("-")}` : undefined,
-    async (url) => {
+  const { data, isValidating } = useSWRImmutable<FlashcardedResult[]>(
+    !isEnd && loadingBatch > -1 ? `flashcard?text=${chunkedCards.data[loadingBatch].join("-")}` : undefined,
+    async (url: string) => {
       await new Promise((resolve) => setTimeout(resolve, 150));
 
       const response = await fetch(`/api/${url}`);
       const data = await response.json();
       return data;
-    },
-    {
-      onSuccess: (data) => {
-        setCards((prev) => [...prev, ...data]);
-      },
     }
   );
+
+  React.useEffect(() => {
+    if (data) setCards((prev) => [...prev, ...data]);
+  }, [data]);
 
   return (
     <>

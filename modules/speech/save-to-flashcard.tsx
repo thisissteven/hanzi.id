@@ -11,14 +11,21 @@ export function SaveToFlashcard({ word }: { word?: string }) {
   const { flashcard, addToFlashcard, removeFromFlashcard } = useReading();
 
   const router = useRouter();
+
   const chapterId = router.query.chapterId as string;
   const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(chapterId ? `/chapter/${chapterId}` : undefined);
 
   const chapterName = `${chapter?.book.title}-${chapter?.title}`;
 
-  if (!word || chapterName.includes("undefined")) return null;
+  const currentFlashcard = React.useMemo(
+    () => flashcard.find((item) => item.chapter === chapterName),
+    [chapterName, flashcard]
+  );
 
-  const isSaved = flashcard.some((item) => item.words.includes(word));
+  if (!word || chapterName.includes("undefined") || !currentFlashcard) return null;
+
+  const isSaved = currentFlashcard.words.includes(word);
+
   const Icon = isSaved ? CircleCheckIcon : CirclePlusIcon;
   return (
     <button

@@ -98,11 +98,6 @@ export function DefinitionModal({
       className="relative z-[998]"
       open={Boolean(sentence)}
       onClose={() => {
-        // const pathname = router.asPath.split("?")[0];
-        // router.push(pathname, undefined, {
-        //   shallow: true,
-        // });
-
         router.back();
       }}
     >
@@ -259,11 +254,6 @@ export function DefinitionModal({
                 </span>
                 <button
                   onClick={() => {
-                    // const pathname = router.asPath.split("?")[0];
-                    // router.push(pathname, undefined, {
-                    //   shallow: true,
-                    // });
-
                     router.back();
                   }}
                   className="block rounded-md font-medium duration-200 text-secondary bg-hovered active:bg-subtle px-3 py-1.5"
