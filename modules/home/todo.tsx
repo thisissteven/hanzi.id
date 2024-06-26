@@ -41,7 +41,7 @@ export function HomeTodo() {
           className="hover:bg-emerald-500/10"
           icon={<LibraryBigIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-emerald-500" />}
           title="Explore"
-          description="Read and listen to Chinese texts with translations."
+          description="Read and listen to Chinese books with translations."
         />
 
         <Button

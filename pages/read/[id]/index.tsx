@@ -9,7 +9,7 @@ import useSWRImmutable from "swr/immutable";
 import { useRouter } from "next/router";
 import { useRouter as useNavigationRouter } from "next/navigation";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
-import { LucideBookOpen, LucidePlay, PlayIcon } from "lucide-react";
+import { LucideBookOpen } from "lucide-react";
 import { useScrollToTop } from "@/modules/new";
 import { LastRead } from "@/modules/home/explore";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";

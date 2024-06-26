@@ -1,6 +1,5 @@
 import { SpeechProvider } from "@/utils";
 import { Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon } from "lucide-react";
-import { useRouter } from "next/router";
 import React from "react";
 
 type FontSize = "base" | "lg" | "xl" | "2xl";
@@ -111,9 +110,6 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
       setFlashcard(JSON.parse(savedFlashcard));
     }
   }, []);
-
-  const router = useRouter();
-  const chapterId = router.query.chapterId;
 
   return (
     <ReadingContext.Provider

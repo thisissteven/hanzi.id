@@ -2,7 +2,7 @@ import { cn } from "@/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { CircleCheckIcon, CirclePlusIcon } from "lucide-react";
 import React from "react";
-import { useReading } from "../layout";
+import { useReading } from "@/modules/layout";
 
 export function SaveToFlashcard({ word }: { word?: string }) {
   const { flashcard, addToFlashcard, removeFromFlashcard } = useReading();
