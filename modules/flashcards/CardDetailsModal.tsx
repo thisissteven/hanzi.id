@@ -2,8 +2,17 @@ import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { FlashcardedResult } from "@/pages/api/flashcard";
 import React from "react";
 import { cn } from "@/utils";
+import { AddOrRemoveFromFlashcard } from "../speech";
 
-export function CardDetailsModal({ details, onClose }: { details?: FlashcardedResult; onClose: () => void }) {
+export function CardDetailsModal({
+  chapterName,
+  details,
+  onClose,
+}: {
+  chapterName: string;
+  details?: FlashcardedResult;
+  onClose: () => void;
+}) {
   const latestDetails = React.useRef(details) as React.MutableRefObject<FlashcardedResult | undefined>;
 
   const [entryIndex, setEntryIndex] = React.useState(0);
@@ -70,6 +79,8 @@ export function CardDetailsModal({ details, onClose }: { details?: FlashcardedRe
                           </div>
                         </div>
                       )}
+
+                      <AddOrRemoveFromFlashcard key={hanzi} chapterName={chapterName} word={hanzi} />
                     </div>
 
                     {entries.length > 1 && (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "./line";
 import { ContinueButton } from "./continue-button";
-import { Layout } from "../layout";
+import { Layout } from "@/modules/layout";
 import { Divider } from "@/components";
 
 const texts = [

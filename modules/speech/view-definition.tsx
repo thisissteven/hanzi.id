@@ -11,6 +11,7 @@ import { useReading } from "@/modules/layout";
 import { Divider, LoadingBar } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import { SaveToFlashcard } from "./save-to-flashcard";
+import { toast } from "sonner";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -58,6 +59,7 @@ export function DefinitionModal({
     if (sentence) {
       document.body.style.overflow = "hidden";
       document.documentElement.style.scrollbarGutter = "stable";
+      toast.dismiss("last-read");
     }
 
     const timeout = setTimeout(() => {

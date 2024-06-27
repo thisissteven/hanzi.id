@@ -8,6 +8,7 @@ import { Virtualizer } from "@tanstack/react-virtual";
 import useIsMobile from "@/hooks/useIsMobile";
 import { useReading } from "../layout";
 import { useRouter } from "next/router";
+import { toast } from "sonner";
 
 export function TextContainer({
   sentences,
@@ -75,6 +76,7 @@ export function TextContainer({
                     paused={isPaused}
                     currentSentenceIndex={currentSentenceIdx}
                     onClick={() => {
+                      toast.dismiss("last-read");
                       if (index === currentSentenceIdx) {
                         if (!paused) {
                           pause();

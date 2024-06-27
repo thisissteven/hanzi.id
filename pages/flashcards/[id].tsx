@@ -6,7 +6,7 @@ import { ChevronRightIcon, LucideDownload } from "lucide-react";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import { FlashcardedResult } from "../api/flashcard";
-import { CardDetailsModal } from "@/modules/flashcards";
+import { CardDetailsModal, FlashcardProvider } from "@/modules/flashcards";
 
 function exportToPleco(words: string[], filename: string) {
   const element = document.createElement("a");
@@ -35,8 +35,8 @@ export default function FlashcardsDetailsPage() {
               <BackRouteButton />
             </div>
           </div>
-
-          <AnimatePresence mode="wait">
+          {flashcard && <DisplayFlashcard flashcard={flashcard} />}
+          {/* <AnimatePresence mode="wait">
             {!flashcard ? (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -58,7 +58,7 @@ export default function FlashcardsDetailsPage() {
                 <DisplayFlashcard flashcard={flashcard} />
               </motion.div>
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
         </main>
       </div>
     </Layout>
@@ -111,57 +111,64 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   return (
     <>
-      <CardDetailsModal details={details} onClose={() => setDetails(undefined)} />
+      <FlashcardProvider>
+        <CardDetailsModal
+          chapterName={`${bookName}-${chapterName}`}
+          details={details}
+          onClose={() => setDetails(undefined)}
+        />
+      </FlashcardProvider>
       <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
       <p className="mx-4 mt-2 text-secondary text-sm">{bookName}</p>
 
-      <ul className="mt-4 border-t border-t-secondary/10 grid sm:grid-cols-2">
-        {cards.map((card, index) => {
-          const pinyin = card?.entries?.map((entry) => entry.pinyin).join("/");
-          const translations = card?.entries?.[0].english.join(", ");
+      <div className="min-h-[calc(100dvh-22rem)]">
+        <ul className="mt-4 border-t border-t-secondary/10 grid sm:grid-cols-2">
+          {cards.map((card, index) => {
+            const pinyin = card?.entries?.map((entry) => entry.pinyin).join("/");
+            const translations = card?.entries?.[0].english.join(", ");
 
-          return (
-            <motion.li
-              key={index}
-              transition={{ type: "tween", duration: 0.2 }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="border-b border-b-secondary/10"
-            >
-              <button
-                onClick={() => setDetails(card)}
-                className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
+            return (
+              <motion.li
+                key={index}
+                // transition={{ type: "tween", duration: 0.2 }}
+                // initial={{ opacity: 0 }}
+                // animate={{ opacity: 1 }}
+                className="border-b border-b-secondary/10"
               >
-                <div className="relative group transition select-none text-3xl w-full">
-                  <div className="pl-3 pr-4 pt-8 pb-3 flex gap-2 items-center">
-                    <div className="shrink-0 font-medium">{flashcard.words[index]}</div>
+                <button
+                  onClick={() => setDetails(card)}
+                  className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
+                >
+                  <div className="relative group transition select-none text-3xl w-full">
+                    <div className="pl-3 pr-4 pt-8 pb-3 flex gap-2 items-center">
+                      <div className="shrink-0 font-medium">{flashcard.words[index]}</div>
 
-                    <div className="overflow-x-hidden flex-1">
-                      <div className="text-sm font-medium text-smokewhite">{pinyin ?? "Loading..."}</div>
-                      <div className="text-sm line-clamp-1 max-w-[95%] text-secondary">
-                        {translations ?? "Loading..."}
+                      <div className="overflow-x-hidden flex-1">
+                        <div className="text-sm font-medium text-smokewhite">{pinyin ?? "Loading..."}</div>
+                        <div className="text-sm line-clamp-1 max-w-[95%] text-secondary">
+                          {translations ?? "Loading..."}
+                        </div>
                       </div>
+
+                      <div className="absolute left-4 top-3 text-xs text-secondary">{index + 1}</div>
                     </div>
-
-                    <div className="absolute left-4 top-3 text-xs text-secondary">{index + 1}</div>
                   </div>
-                </div>
 
-                <ChevronRightIcon className="h-5 w-5 shrink-0 flex-none text-secondary/50" aria-hidden="true" />
-              </button>
-            </motion.li>
-          );
-        })}
-      </ul>
-
-      <LoadMore
-        isEnd={isEnd}
-        whenInView={() => {
-          if (!isEnd && !isValidating) {
-            setLoadingBatch((prev) => prev + 1);
-          }
-        }}
-      />
+                  <ChevronRightIcon className="h-5 w-5 shrink-0 flex-none text-secondary/50" aria-hidden="true" />
+                </button>
+              </motion.li>
+            );
+          })}
+        </ul>
+        <LoadMore
+          isEnd={isEnd}
+          whenInView={() => {
+            if (!isEnd && !isValidating) {
+              setLoadingBatch((prev) => prev + 1);
+            }
+          }}
+        />
+      </div>
 
       {cards.length > 0 && (
         <AnimatePresence mode="wait" initial={false}>
@@ -178,15 +185,13 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
                 opacity: 0,
               }}
               transition={{ type: "tween", duration: 0.2 }}
-              className="sticky bottom-4 max-md:mx-4 flex justify-end h-0"
+              className="sticky bottom-4 mt-8 max-md:mx-4 flex justify-end"
             >
               Export successful!
             </motion.div>
           ) : (
             <motion.div
               key="export"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
               exit={{
                 opacity: 0,
               }}

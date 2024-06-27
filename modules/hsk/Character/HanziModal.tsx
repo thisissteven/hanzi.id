@@ -72,7 +72,9 @@ export function HanziModal() {
       open={Boolean(hanzi)}
       onOpenChange={(open) => {
         if (!open) {
-          router.push(`/hsk/${router.query.level}?page=${router.query.page}`, undefined, { shallow: true });
+          if (Boolean(hanzi)) {
+            router.back();
+          }
           stopAudio();
         }
       }}
