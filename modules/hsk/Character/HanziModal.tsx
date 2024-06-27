@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import * as React from "react";
-import { LoadingBar, HSKLinkButton, MarkAsCompleted, preloadHanziDetails, Drawer } from "@/components";
+import { LoadingBar, HSKLinkButton, MarkAsCompleted, preloadHanziDetails, Drawer, url } from "@/components";
 import IdHanziMap from "@/data/id-hanzi-map.json";
 import { BASE_URL } from "@/pages/_app";
 import { HanziApiResponse } from "./types";
@@ -47,9 +47,9 @@ export function HanziModal() {
   const { stopAudio } = useAudio();
 
   const { data, isLoading } = useSWRImmutable<HanziApiResponse>(
-    hanzi ? `hanzi/${hanzi}` : null,
+    hanzi ? url(hanzi) : null,
     async (url) => {
-      const response = await fetch(`${BASE_URL}/api/${url}`);
+      const response = await fetch(url);
       const data = await response.json();
       return data;
     },

@@ -1,18 +1,9 @@
 import { ChineseCharacter } from "@/data";
-import { BASE_URL } from "@/pages/_app";
-import { cn } from "@/utils/cn";
+
 import clsx from "clsx";
 import React from "react";
-import { preload } from "swr";
-import { Checkmark, MarkAsCompleted } from "./CharacterCard";
 
-async function preloadHanziDetails(hanzi: string) {
-  await preload(`hanzi/${hanzi}`, async (url) => {
-    const response = await fetch(`${BASE_URL}/api/${url}`);
-    const data = await response.json();
-    return data;
-  });
-}
+import { MarkAsCompleted } from "./CharacterCard";
 
 export function CharacterRow({
   id,

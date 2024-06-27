@@ -1,5 +1,4 @@
 import { ChineseCharacter } from "@/data";
-import { BASE_URL } from "@/pages/_app";
 import { cn } from "@/utils/cn";
 import clsx from "clsx";
 import { LucideCheckCircle } from "lucide-react";
@@ -7,9 +6,11 @@ import Link from "next/link";
 import React from "react";
 import { preload } from "swr";
 
+export const url = (hanzi: string) => `https://thisissteven.github.io/character/${hanzi}.json`;
+
 export async function preloadHanziDetails(hanzi: string) {
-  await preload(`hanzi/${hanzi}`, async (url) => {
-    const response = await fetch(`${BASE_URL}/api/${url}`);
+  await preload(url(hanzi), async (url) => {
+    const response = await fetch(url);
     const data = await response.json();
     return data;
   });
