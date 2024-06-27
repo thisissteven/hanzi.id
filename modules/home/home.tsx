@@ -7,9 +7,9 @@ export function Home() {
     <Layout>
       <HomeTodo />
 
-      {/* <div className="mt-12">
-        <Explore />
-      </div> */}
+      <div className="mt-12">
+        <h2>FAQs</h2>
+      </div>
     </Layout>
   );
 }

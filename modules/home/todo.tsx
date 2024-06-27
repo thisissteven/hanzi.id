@@ -56,8 +56,8 @@ export function HomeTodo() {
           path="/get-started"
           className="hover:bg-orange-500/10"
           icon={<TelescopeIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-orange-500" />}
-          title="FAQs"
-          description="Some tips and tricks to get you started 👍"
+          title="Search ⌘K"
+          description="Quickly browse for Chinese characters and phrases."
         />
       </div>
     </React.Fragment>
