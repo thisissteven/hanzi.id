@@ -1,0 +1,21 @@
+{
+  "practice": "Mock Exams",
+  "return": "Return",
+  "lastVisited": "Last Visited",
+  "home": {
+    "hsk": {
+      "title": "Learn HSK 1-9",
+      "description": "Chinese HSK vocabulary lists and practice exams."
+    },
+    "explore": {
+      "title": "Explore",
+      "description": "Read and listen to Chinese books with translations."
+    },
+    "flashcards": {
+      "title": "Flashcards",
+      "description": "Your saved words and phrases for quick review."
+    }
+  },
+  "startReading": "Start Reading",
+  "continueReading": "Continue Reading"
+}

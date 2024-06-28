@@ -1,11 +1,13 @@
 import React from "react";
 import { back, cn, push, replace } from "@/utils";
 import { useRouter } from "next/navigation";
+import { useLocale } from "@/locales/use-locale";
 
 const buttonClassName = "mt-4 py-2 pl-3 pr-4 rounded-md duration-200 active:bg-hovered flex items-center gap-2";
 
 export function BackRouteButton({ defaultBack = false }: { defaultBack?: boolean }) {
   const router = useRouter();
+  const { t } = useLocale();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLButtonElement>;
 
@@ -25,7 +27,7 @@ export function BackRouteButton({ defaultBack = false }: { defaultBack?: boolean
       type="button"
       className={buttonClassName}
     >
-      <div className="mb-[3px]">&#8592;</div> Return
+      <div className="mb-[3px]">&#8592;</div> {t.return}
     </button>
   );
 }

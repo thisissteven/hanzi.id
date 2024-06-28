@@ -13,6 +13,7 @@ import { LucideBookOpen } from "lucide-react";
 import { useScrollToTop } from "@/modules/new";
 import { LastRead } from "@/modules/home/explore";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
+import { useLocale } from "@/locales/use-locale";
 
 function BookDetails() {
   const router = useRouter();
@@ -53,6 +54,8 @@ function BookDetails() {
     estimateSize: () => 350,
     overscan: 3,
   });
+
+  const { t } = useLocale();
 
   return (
     <div className="mt-8 pb-8 max-md:px-4">
@@ -143,7 +146,7 @@ function BookDetails() {
                             )}
                           >
                             <LucideBookOpen size={20} className="mt-0.5" />
-                            <span aria-hidden="true">{readingProgress > 1 ? "Continue Reading" : "Start Reading"}</span>
+                            <span aria-hidden="true">{readingProgress > 1 ? t.continueReading : t.startReading}</span>
                           </button>
                         </div>
                       </li>

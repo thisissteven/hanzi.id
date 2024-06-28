@@ -1,0 +1,21 @@
+{
+  "practice": "Latihan Soal",
+  "return": "Kembali",
+  "lastVisited": "Terakhir Dikunjungi",
+  "home": {
+    "hsk": {
+      "title": "Belajar HSK 1-9",
+      "description": "Daftar kosakata HSK dan latihan soal."
+    },
+    "explore": {
+      "title": "Jelajahi",
+      "description": "Baca dan dengarkan buku bahasa Cina dengan terjemahan."
+    },
+    "flashcards": {
+      "title": "Kartu Pengingat",
+      "description": "Kata dan frasa yang disimpan untuk ulasan cepat."
+    }
+  },
+  "startReading": "Mulai Membaca",
+  "continueReading": "Lanjutkan Membaca"
+}

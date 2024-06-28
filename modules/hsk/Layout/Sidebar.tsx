@@ -6,6 +6,8 @@ import { HSKLevelItems } from "./HSKLevelItems";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 import { ChangeLocaleButton, Drawer } from "@/components";
+import { useRouter } from "next/router";
+import { useLocale } from "@/locales/use-locale";
 
 const levelToHanzi = (level: string) => {
   switch (level) {
@@ -33,22 +35,23 @@ const levelToHanzi = (level: string) => {
 };
 
 export function DesktopSidebar() {
+  const { t } = useLocale();
+
   return (
-    // pl-4 pt-20 max-md:hidden sticky top-0 h-fit min-w-64
     <div className="max-md:hidden border-r border-r-secondary/10">
       <aside className="px-4 pb-4 pt-20 z-10 sticky top-0 h-[calc(100dvh-3.5rem)] overflow-y-auto min-w-64">
         <ul className="space-y-1">
           <HSKLevelItems />
         </ul>
       </aside>
-      <div className="flex">
+      <div className="flex items-end gap-2 ml-6">
         <ChangeLocaleButton />
         <a
           href="https://pandarin.net/latihan-ujian-hsk/"
           target="_blank"
-          className="inline-block flex-1 relative z-10 w-full hover:underline underline-offset-4 ml-6 mt-4"
+          className="inline-block relative z-10 hover:underline underline-offset-4 pl-4 pr-5 py-2 border border-secondary/10 bg-softblack w-fit"
         >
-          Practice Exams &#8594;
+          {t.practice} &#8594;
         </a>
       </div>
     </div>
@@ -58,6 +61,7 @@ export function DesktopSidebar() {
 export function MobileSidebar() {
   const pathname = usePathname();
   const showSidebar = pathname !== "/";
+  const { t } = useLocale();
 
   const level = pathname.split("/")[2];
 
@@ -76,14 +80,14 @@ export function MobileSidebar() {
         <Drawer.Content className="w-full max-h-dvh pb-0">
           <aside className="relative max-h-[calc(100dvh-2rem)] pt-2 overflow-y-auto scrollbar-none">
             <ul className="space-y-2 pb-2">
-              <li className="flex">
+              <li className="flex justify-center gap-2 py-1">
                 <ChangeLocaleButton />
                 <a
                   href="https://pandarin.net/latihan-ujian-hsk/"
                   target="_blank"
-                  className="inline-block flex-1 relative z-10 w-full hover:underline underline-offset-4 ml-6 mt-4"
+                  className="inline-block relative z-10 hover:underline underline-offset-4 pl-6 pr-7 py-2 border border-secondary/10 bg-softblack w-fit"
                 >
-                  Practice Exams &#8594;
+                  {t.practice} &#8594;
                 </a>
               </li>
               <HSKLevelItems isDrawer />
