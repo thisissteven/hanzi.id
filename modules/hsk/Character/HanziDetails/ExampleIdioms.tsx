@@ -31,14 +31,14 @@ export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziA
                 <li key={index} className="list-none">
                   <Popover>
                     <Popover.Trigger className="text-left sm:text-lg font-medium">
-                      {splitted.map((part) => {
+                      {splitted.map((part, index) => {
                         if (part === hanzi)
                           return (
-                            <span className="text-wheat" key={part}>
+                            <span className="text-wheat" key={index}>
                               {hanzi}
                             </span>
                           );
-                        return part;
+                        return <React.Fragment key={index}>{part}</React.Fragment>;
                       })}
                     </Popover.Trigger>
                     <Popover.Content

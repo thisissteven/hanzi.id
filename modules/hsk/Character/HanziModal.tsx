@@ -19,11 +19,12 @@ export type IdHanziMapKey = keyof typeof IdHanziMap;
 export function HanziModal() {
   const router = useRouter();
   const hanzi = router.query.hanzi as IdHanziMapKey;
+  const currentHanziId = router.query.id as string;
 
   const { width } = useWindowSize();
 
   React.useEffect(() => {
-    const pathname = `/hsk/${router.query.level}?hanzi=${hanzi}&page=${router.query.page}`;
+    const pathname = `/hsk/${router.query.level}?hanzi=${hanzi}&id=${currentHanziId}&page=${router.query.page}`;
     if (typeof window !== "undefined" && !pathname.includes("undefined")) {
       localStorage.setItem(
         LAST_VIEWED_HANZI_KEY,
@@ -33,11 +34,10 @@ export function HanziModal() {
         })
       );
     }
-  }, [hanzi, router]);
+  }, [currentHanziId, hanzi, router]);
 
   const currentLevel = router.query.level as unknown as Level;
 
-  const currentHanziId = IdHanziMap[hanzi];
   const previousHanziId = (parseInt(currentHanziId) - 1).toString() as IdHanziMapKey;
   const nextHanziId = (parseInt(currentHanziId) + 1).toString() as IdHanziMapKey;
 
@@ -130,9 +130,13 @@ export function HanziModal() {
             disabled={!previousHanzi}
             className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"
             onClick={() => {
-              router.replace(`/hsk/${router.query.level}?hanzi=${previousHanzi}&page=${router.query.page}`, undefined, {
-                shallow: true,
-              });
+              router.replace(
+                `/hsk/${router.query.level}?hanzi=${previousHanzi}&id=${previousHanziId}&page=${router.query.page}`,
+                undefined,
+                {
+                  shallow: true,
+                }
+              );
             }}
           >
             &#x2190; {previousHanzi}
@@ -144,9 +148,13 @@ export function HanziModal() {
             disabled={!nextHanzi}
             className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"
             onClick={() => {
-              router.replace(`/hsk/${router.query.level}?hanzi=${nextHanzi}&page=${router.query.page}`, undefined, {
-                shallow: true,
-              });
+              router.replace(
+                `/hsk/${router.query.level}?hanzi=${nextHanzi}&id=${nextHanziId}&page=${router.query.page}`,
+                undefined,
+                {
+                  shallow: true,
+                }
+              );
             }}
           >
             {nextHanzi} &#x2192;

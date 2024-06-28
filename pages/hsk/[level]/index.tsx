@@ -159,7 +159,7 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
                 return (
                   <CharacterCard
                     locale={router.locale as Locale}
-                    hanziHref={`/hsk/${props.currentLevel}/?hanzi=${character.hanzi}&page=${currentPage}`}
+                    hanziHref={`/hsk/${props.currentLevel}/?hanzi=${character.hanzi}&id=${character.id}&page=${currentPage}`}
                     isFlipped={flippedCard === character.id}
                     isCompleted={currentCompletedCharacters.includes(character.id)}
                     onCompleteToggle={() => {
@@ -185,9 +185,13 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
               return (
                 <CharacterRow
                   onClick={() =>
-                    router.push(`/hsk/${props.currentLevel}/?hanzi=${character.hanzi}&page=${currentPage}`, undefined, {
-                      shallow: true,
-                    })
+                    router.push(
+                      `/hsk/${props.currentLevel}/?hanzi=${character.hanzi}&id=${character.id}&page=${currentPage}`,
+                      undefined,
+                      {
+                        shallow: true,
+                      }
+                    )
                   }
                   isCompleted={currentCompletedCharacters.includes(character.id)}
                   onCompleteToggle={() => {

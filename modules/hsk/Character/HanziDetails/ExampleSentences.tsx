@@ -58,20 +58,20 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
             <li key={index} className="list-none">
               <Popover>
                 <Popover.Trigger className="text-left sm:text-lg font-medium">
-                  {splitted.map((part) => {
+                  {splitted.map((part, index) => {
                     if (part === hanzi)
                       return (
-                        <span className="text-sky-400" key={part}>
+                        <span className="text-sky-400" key={index}>
                           {hanzi}
                         </span>
                       );
-                    return part;
+                    return <React.Fragment key={index}>{part}</React.Fragment>;
                   })}
                   <AudioButton size="small" key={lesson.audioUrl} url={lesson.audioUrl} />
                 </Popover.Trigger>
                 <Popover.Content
                   align="start"
-                  className="text-xs sm:text-sm leading-5 text-smokewhite px-2 max-w-[calc(100vw-1rem)] md:max-w-[calc(540px-1rem)]"
+                  className="text-xs sm:text-sm leading-5 text-smokewhite px-2 max-[640px]:max-w-[calc(100vw-1rem)] max-w-[calc(570px-1rem)]"
                 >
                   <p>{lesson.pinyin}</p>
                 </Popover.Content>

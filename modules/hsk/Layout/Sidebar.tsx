@@ -71,9 +71,11 @@ export function MobileSidebar() {
     <div className="md:hidden">
       <Drawer>
         <Drawer.Trigger asChild>
-          <button className="w-14 h-14 active:translate-y-1 border-b border-secondary/10 bg-softblack backdrop-blur-sm text-smokewhite active:bg-softblack/40 font-medium duration-200">
-            <div className="text-[10px] -mb-1">HSK</div>
-            <div className="text-base font-medium">{levelToHanzi(level)}</div>
+          <button className="w-14 h-14 active:max-sm:translate-y-1 border-b border-secondary/10 bg-softblack backdrop-blur-sm text-smokewhite max-sm:active:bg-softblack/40 group font-medium duration-200 sm:border-black sm:h-full sm:w-16 sm:h-15 sm:bg-black sm:-mr-2 sm:p-1">
+            <div className="group-active:sm:translate-y-1 sm:bg-softblack sm:h-full sm:flex sm:flex-col sm:items-center sm:justify-center sm:border-b sm:border-b-secondary/10 duration-200">
+              <div className="text-[10px] -mb-1">HSK</div>
+              <div className="text-base font-medium">{levelToHanzi(level)}</div>
+            </div>
           </button>
         </Drawer.Trigger>
 
