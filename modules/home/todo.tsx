@@ -23,7 +23,13 @@ export function HomeTodo() {
       <div className="grid md:grid-cols-2 gap-4">
         <Button
           className="hover:bg-blue-500/10"
-          icon={<GraduationCapIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-blue-500" />}
+          icon={
+            <GraduationCapIcon
+              size={48}
+              strokeWidth={1.5}
+              className="shrink-0 duration-200 group-hover:text-blue-500"
+            />
+          }
           path="/hsk/1"
           title={t.home.hsk.title}
           description={t.home.hsk.description}
@@ -33,7 +39,13 @@ export function HomeTodo() {
           <Button
             path="/new"
             className="hover:bg-yellow-500/10"
-            icon={<FilePlus2Icon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-yellow-500" />}
+            icon={
+              <FilePlus2Icon
+                size={48}
+                strokeWidth={1.5}
+                className="shrink-0 duration-200 group-hover:text-yellow-500"
+              />
+            }
             title="New Reading"
             description="Upload PDFs, texts or images to practice reading."
           />
@@ -42,7 +54,13 @@ export function HomeTodo() {
         <Button
           path="/explore"
           className="hover:bg-emerald-500/10"
-          icon={<LibraryBigIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-emerald-500" />}
+          icon={
+            <LibraryBigIcon
+              size={48}
+              strokeWidth={1.5}
+              className="shrink-0 duration-200 group-hover:text-emerald-500"
+            />
+          }
           title={t.home.explore.title}
           description={t.home.explore.description}
         />
@@ -50,7 +68,9 @@ export function HomeTodo() {
         <Button
           path="/flashcards"
           className="hover:bg-pink-500/10"
-          icon={<LanguagesIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-pink-500" />}
+          icon={
+            <LanguagesIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-pink-500" />
+          }
           title={t.home.flashcards.title}
           description={t.home.flashcards.description}
         />
