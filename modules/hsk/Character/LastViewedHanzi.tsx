@@ -49,6 +49,7 @@ export function LastViewedHanzi() {
               );
             },
             {
+              id: "last-viewed-hanzi",
               duration: Infinity,
             }
           );
