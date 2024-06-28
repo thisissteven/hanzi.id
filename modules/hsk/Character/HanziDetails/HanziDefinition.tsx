@@ -11,7 +11,7 @@ export function HanziDefinition({
       {entry.definitions.map((definition, index) => {
         return (
           <li key={index} className="list-disc">
-            <div className="pr-4">{definition}</div>
+            <div className="pr-6">{definition}</div>
           </li>
         );
       })}

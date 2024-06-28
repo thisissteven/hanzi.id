@@ -5,7 +5,7 @@ import Link from "next/link";
 import { HSKLevelItems } from "./HSKLevelItems";
 import { usePathname } from "next/navigation";
 import * as React from "react";
-import { Drawer } from "@/components";
+import { ChangeLocaleButton, Drawer } from "@/components";
 
 const levelToHanzi = (level: string) => {
   switch (level) {
@@ -41,13 +41,16 @@ export function DesktopSidebar() {
           <HSKLevelItems />
         </ul>
       </aside>
-      <a
-        href="https://pandarin.net/latihan-ujian-hsk/"
-        target="_blank"
-        className="inline-block relative z-10 w-full hover:underline underline-offset-4 ml-6 mt-4"
-      >
-        Practice Exams &#8594;
-      </a>
+      <div className="flex">
+        <ChangeLocaleButton />
+        <a
+          href="https://pandarin.net/latihan-ujian-hsk/"
+          target="_blank"
+          className="inline-block flex-1 relative z-10 w-full hover:underline underline-offset-4 ml-6 mt-4"
+        >
+          Practice Exams &#8594;
+        </a>
+      </div>
     </div>
   );
 }
@@ -73,11 +76,12 @@ export function MobileSidebar() {
         <Drawer.Content className="w-full max-h-dvh pb-0">
           <aside className="relative max-h-[calc(100dvh-2rem)] pt-2 overflow-y-auto scrollbar-none">
             <ul className="space-y-2 pb-2">
-              <li>
+              <li className="flex">
+                <ChangeLocaleButton />
                 <a
                   href="https://pandarin.net/latihan-ujian-hsk/"
                   target="_blank"
-                  className="inline-block text-center w-full hover:underline underline-offset-4 ml-2 mt-2"
+                  className="inline-block flex-1 relative z-10 w-full hover:underline underline-offset-4 ml-6 mt-4"
                 >
                   Practice Exams &#8594;
                 </a>

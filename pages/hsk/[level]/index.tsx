@@ -6,33 +6,42 @@ import { useRouter } from "next/router";
 import * as React from "react";
 import Head from "next/head";
 import { useCompletedCharacters, useCompletedCharactersActions } from "@/store";
-import { CharacterCard, Pagination, CharacterRow } from "@/components";
+import { CharacterCard, Pagination, CharacterRow, Locale } from "@/components";
 import { MobileSidebar, HanziModal } from "@/modules/hsk";
 import { useWindowSize } from "@/hooks";
 
-async function getCharactersOnLevel(level: string | number) {
-  const file = await fs.readFile(process.cwd() + getFilePath(level), "utf8");
+async function getCharactersOnLevel(level: string | number, locale?: string) {
+  const file = await fs.readFile(process.cwd() + getFilePath(level, locale), "utf8");
   const characters: Array<ChineseCharacter> = JSON.parse(file);
   return characters;
 }
 
-export const getStaticPaths = (async () => {
+export const getStaticPaths = (async ({ locales }) => {
+  if (!locales) {
+    throw new Error("No locales provided");
+  }
   return {
-    paths: HSK_LEVELS.map((level) => ({
-      params: {
-        level: level.toString(),
-      },
-    })),
+    paths: HSK_LEVELS.map((level) => {
+      return locales.map((locale) => {
+        return {
+          params: {
+            level: level.toString(),
+          },
+          locale,
+        };
+      });
+    }).flat(),
     fallback: false,
   };
 }) satisfies GetStaticPaths;
 
-const getFilePath = (level: string | number) => `/data/hsk-level-${level}.json`;
+const getFilePath = (level: string | number, locale?: string) =>
+  `/data/${locale === "id" ? "id" : "en"}/hsk-level-${level}.json`;
 
-export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
+export const getStaticProps = async ({ params, locale }: GetStaticPropsContext) => {
   const level = params?.level as string;
 
-  const allCharacters = await getCharactersOnLevel(level);
+  const allCharacters = await getCharactersOnLevel(level, locale);
   const allPreviousLevelCharacters = await getCharactersOnLevel(parseInt(level) - 1 ? parseInt(level) - 1 : 1);
 
   const totalPages = Math.ceil(allCharacters.length / CHARACTERS_PER_PAGE);
@@ -149,6 +158,7 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
               if (width > 640) {
                 return (
                   <CharacterCard
+                    locale={router.locale as Locale}
                     hanziHref={`/hsk/${props.currentLevel}/?hanzi=${character.hanzi}&page=${currentPage}`}
                     isFlipped={flippedCard === character.id}
                     isCompleted={currentCompletedCharacters.includes(character.id)}

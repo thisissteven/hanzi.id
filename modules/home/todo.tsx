@@ -52,13 +52,13 @@ export function HomeTodo() {
           description="Your saved words and phrases for quick review."
         />
 
-        <Button
+        {/* <Button
           path="/get-started"
           className="hover:bg-orange-500/10"
           icon={<TelescopeIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-orange-500" />}
           title="Search ⌘K"
           description="Quickly browse for Chinese characters and phrases."
-        />
+        /> */}
       </div>
     </React.Fragment>
   );

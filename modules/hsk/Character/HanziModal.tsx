@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import * as React from "react";
-import { LoadingBar, HSKButton, MarkAsCompleted, preloadHanziDetails, Drawer, url } from "@/components";
+import { LoadingBar, HSKButton, MarkAsCompleted, preloadHanziDetails, Drawer, url, Locale } from "@/components";
 import IdHanziMap from "@/data/id-hanzi-map.json";
 import { HanziApiResponse } from "./types";
 import { HanziDetails } from "./HanziDetails";
@@ -45,8 +45,10 @@ export function HanziModal() {
 
   const { stopAudio } = useAudio();
 
+  const locale = router.locale as Locale;
+
   const { data, isLoading } = useSWRImmutable<HanziApiResponse>(
-    hanzi ? url(hanzi) : null,
+    hanzi ? url(hanzi, locale) : null,
     async (url) => {
       const response = await fetch(url);
       const data = await response.json();
@@ -120,7 +122,7 @@ export function HanziModal() {
         <div className="absolute flex gap-2 bottom-0 left-0 right-0 px-3 pb-3 sm:px-4 sm:pb-4">
           <HSKButton
             onMouseEnter={() => {
-              if (previousHanzi) preloadHanziDetails(previousHanzi);
+              if (previousHanzi) preloadHanziDetails(previousHanzi, locale);
             }}
             disabled={!previousHanzi}
             className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"
@@ -134,7 +136,7 @@ export function HanziModal() {
           </HSKButton>
           <HSKButton
             onMouseEnter={() => {
-              if (nextHanzi) preloadHanziDetails(nextHanzi);
+              if (nextHanzi) preloadHanziDetails(nextHanzi, locale);
             }}
             disabled={!nextHanzi}
             className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"

@@ -6,10 +6,13 @@ import Link from "next/link";
 import React from "react";
 import { preload } from "swr";
 
-export const url = (hanzi: string) => `https://thisissteven.github.io/character/en/${hanzi}.json`;
+export type Locale = "en" | "id";
 
-export async function preloadHanziDetails(hanzi: string) {
-  await preload(url(hanzi), async (url) => {
+export const url = (hanzi: string, locale: Locale) =>
+  `https://thisissteven.github.io/character/${locale}/${hanzi}.json`;
+
+export async function preloadHanziDetails(hanzi: string, locale: Locale) {
+  await preload(url(hanzi, locale), async (url) => {
     const response = await fetch(url);
     const data = await response.json();
     return data;
@@ -24,6 +27,7 @@ export function CharacterCard({
   isFlipped,
   isCompleted,
   hanziHref,
+  locale,
   onFlip,
   onCompleteToggle,
 }: ChineseCharacter & {
@@ -31,6 +35,7 @@ export function CharacterCard({
   isCompleted: boolean;
   onCompleteToggle: () => void;
   onFlip: () => void;
+  locale: Locale;
   isFlipped: boolean;
 }) {
   return (
@@ -79,7 +84,7 @@ export function CharacterCard({
               )}
             >
               <Link
-                onMouseEnter={() => preloadHanziDetails(hanzi)}
+                onMouseEnter={() => preloadHanziDetails(hanzi, locale)}
                 onClick={(e) => e.stopPropagation()}
                 href={hanziHref}
                 shallow

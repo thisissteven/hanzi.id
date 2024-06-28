@@ -1,0 +1,4043 @@
+[
+  {
+    "id": "1",
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "translations": [
+      "Cinta"
+    ]
+  },
+  {
+    "id": "10",
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "translations": [
+      "setengah"
+    ]
+  },
+  {
+    "id": "100",
+    "hanzi": "饭店",
+    "pinyin": "fàn diàn",
+    "translations": [
+      "restoran"
+    ]
+  },
+  {
+    "id": "101",
+    "hanzi": "房间",
+    "pinyin": "fáng jiān",
+    "translations": [
+      "ruang"
+    ]
+  },
+  {
+    "id": "102",
+    "hanzi": "房子",
+    "pinyin": "fáng zi",
+    "translations": [
+      "rumah"
+    ]
+  },
+  {
+    "id": "103",
+    "hanzi": "放",
+    "pinyin": "fàng",
+    "translations": [
+      "meletakkan"
+    ]
+  },
+  {
+    "id": "104",
+    "hanzi": "放假",
+    "pinyin": "fàng jià",
+    "translations": [
+      "hari libur"
+    ]
+  },
+  {
+    "id": "105",
+    "hanzi": "放学",
+    "pinyin": "fàng xué",
+    "translations": [
+      "setelah sekolah"
+    ]
+  },
+  {
+    "id": "106",
+    "hanzi": "飞",
+    "pinyin": "fēi",
+    "translations": [
+      "terbang"
+    ]
+  },
+  {
+    "id": "107",
+    "hanzi": "飞机",
+    "pinyin": "fēi jī",
+    "translations": [
+      "pesawat ； pesawat"
+    ]
+  },
+  {
+    "id": "108",
+    "hanzi": "非常",
+    "pinyin": "fēi cháng",
+    "translations": [
+      "sangat"
+    ]
+  },
+  {
+    "id": "109",
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "translations": [
+      "menit"
+    ]
+  },
+  {
+    "id": "11",
+    "hanzi": "半年",
+    "pinyin": "bàn nián",
+    "translations": [
+      "setengah tahun"
+    ]
+  },
+  {
+    "id": "110",
+    "hanzi": "风",
+    "pinyin": "fēng",
+    "translations": [
+      "angin"
+    ]
+  },
+  {
+    "id": "111",
+    "hanzi": "干",
+    "pinyin": "gàn",
+    "translations": [
+      "kering"
+    ]
+  },
+  {
+    "id": "112",
+    "hanzi": "干净",
+    "pinyin": "gān jìng",
+    "translations": [
+      "membersihkan"
+    ]
+  },
+  {
+    "id": "113",
+    "hanzi": "干",
+    "pinyin": "gàn",
+    "translations": [
+      "Mengerjakan"
+    ]
+  },
+  {
+    "id": "114",
+    "hanzi": "干什么",
+    "pinyin": "gàn shén me",
+    "translations": [
+      "apa yang harus dilakukan"
+    ]
+  },
+  {
+    "id": "115",
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "translations": [
+      "tinggi",
+      "tinggi"
+    ]
+  },
+  {
+    "id": "116",
+    "hanzi": "高兴",
+    "pinyin": "gāo xìng",
+    "translations": [
+      "senang"
+    ]
+  },
+  {
+    "id": "117",
+    "hanzi": "告诉",
+    "pinyin": "gào su",
+    "translations": [
+      "memberi tahu"
+    ]
+  },
+  {
+    "id": "118",
+    "hanzi": "哥哥",
+    "pinyin": "gē ge",
+    "translations": [
+      "kakak"
+    ]
+  },
+  {
+    "id": "119",
+    "hanzi": "歌",
+    "pinyin": "gē",
+    "translations": [
+      "lagu"
+    ]
+  },
+  {
+    "id": "12",
+    "hanzi": "半天",
+    "pinyin": "bàn tiān",
+    "translations": [
+      "setengah hari",
+      "lama"
+    ]
+  },
+  {
+    "id": "120",
+    "hanzi": "个",
+    "pinyin": "gè",
+    "translations": [
+      "(Word Ukuran Umum)"
+    ]
+  },
+  {
+    "id": "121",
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "translations": [
+      "memberi"
+    ]
+  },
+  {
+    "id": "122",
+    "hanzi": "跟",
+    "pinyin": "gēn",
+    "translations": [
+      "dengan"
+    ]
+  },
+  {
+    "id": "123",
+    "hanzi": "工人",
+    "pinyin": "gōng rén",
+    "translations": [
+      "pekerja"
+    ]
+  },
+  {
+    "id": "124",
+    "hanzi": "工作",
+    "pinyin": "gōng zuò",
+    "translations": [
+      "bekerja",
+      "pekerjaan"
+    ]
+  },
+  {
+    "id": "125",
+    "hanzi": "关",
+    "pinyin": "guān",
+    "translations": [
+      "untuk menutup",
+      "matikan"
+    ]
+  },
+  {
+    "id": "126",
+    "hanzi": "关上",
+    "pinyin": "guān shang",
+    "translations": [
+      "untuk menutup",
+      "matikan"
+    ]
+  },
+  {
+    "id": "127",
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "translations": [
+      "mahal"
+    ]
+  },
+  {
+    "id": "128",
+    "hanzi": "国",
+    "pinyin": "guó",
+    "translations": [
+      "negara"
+    ]
+  },
+  {
+    "id": "129",
+    "hanzi": "国家",
+    "pinyin": "guó jiā",
+    "translations": [
+      "negara"
+    ]
+  },
+  {
+    "id": "13",
+    "hanzi": "帮",
+    "pinyin": "bāng",
+    "translations": [
+      "untuk membantu"
+    ]
+  },
+  {
+    "id": "130",
+    "hanzi": "国外",
+    "pinyin": "guó wài",
+    "translations": [
+      "luar negeri"
+    ]
+  },
+  {
+    "id": "131",
+    "hanzi": "过",
+    "pinyin": "guò",
+    "translations": [
+      "menyeberang",
+      "melewati"
+    ]
+  },
+  {
+    "id": "132",
+    "hanzi": "还",
+    "pinyin": "hái",
+    "translations": [
+      "Juga",
+      "tetap"
+    ]
+  },
+  {
+    "id": "133",
+    "hanzi": "还是",
+    "pinyin": "hái shi",
+    "translations": [
+      "atau"
+    ]
+  },
+  {
+    "id": "134",
+    "hanzi": "还有",
+    "pinyin": "hái yǒu",
+    "translations": [
+      "dan juga"
+    ]
+  },
+  {
+    "id": "135",
+    "hanzi": "孩子",
+    "pinyin": "hái zi",
+    "translations": [
+      "anak"
+    ]
+  },
+  {
+    "id": "136",
+    "hanzi": "汉语",
+    "pinyin": "Hàn yǔ",
+    "translations": [
+      "Cina"
+    ]
+  },
+  {
+    "id": "137",
+    "hanzi": "汉字",
+    "pinyin": "Hàn zì",
+    "translations": [
+      "Karakter Cina"
+    ]
+  },
+  {
+    "id": "138",
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "translations": [
+      "Besar",
+      "Bagus"
+    ]
+  },
+  {
+    "id": "139",
+    "hanzi": "好吃",
+    "pinyin": "hào chī",
+    "translations": [
+      "lezat"
+    ]
+  },
+  {
+    "id": "14",
+    "hanzi": "帮忙",
+    "pinyin": "bāng máng",
+    "translations": [
+      "untuk membantu"
+    ]
+  },
+  {
+    "id": "140",
+    "hanzi": "好看",
+    "pinyin": "hǎo kàn",
+    "translations": [
+      "tampan"
+    ]
+  },
+  {
+    "id": "141",
+    "hanzi": "好听",
+    "pinyin": "hǎo tīng",
+    "translations": [
+      "bagus (mendengarkan)"
+    ]
+  },
+  {
+    "id": "142",
+    "hanzi": "好玩儿",
+    "pinyin": "hǎo wánr",
+    "translations": [
+      "seru"
+    ]
+  },
+  {
+    "id": "143",
+    "hanzi": "号",
+    "pinyin": "hào",
+    "translations": [
+      "nomor",
+      "tanggal"
+    ]
+  },
+  {
+    "id": "144",
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "translations": [
+      "minum"
+    ]
+  },
+  {
+    "id": "145",
+    "hanzi": "和",
+    "pinyin": "hé",
+    "translations": [
+      "dengan",
+      "Dan"
+    ]
+  },
+  {
+    "id": "146",
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "translations": [
+      "sangat"
+    ]
+  },
+  {
+    "id": "147",
+    "hanzi": "后",
+    "pinyin": "hòu",
+    "translations": [
+      "di belakang",
+      "setelah"
+    ]
+  },
+  {
+    "id": "148",
+    "hanzi": "后边",
+    "pinyin": "hòu bian",
+    "translations": [
+      "sisi belakang"
+    ]
+  },
+  {
+    "id": "149",
+    "hanzi": "后天",
+    "pinyin": "hòu tiān",
+    "translations": [
+      "Lusa"
+    ]
+  },
+  {
+    "id": "15",
+    "hanzi": "包",
+    "pinyin": "bāo",
+    "translations": [
+      "tas ； untuk mengemas"
+    ]
+  },
+  {
+    "id": "150",
+    "hanzi": "花",
+    "pinyin": "huā",
+    "translations": [
+      "bunga"
+    ]
+  },
+  {
+    "id": "151",
+    "hanzi": "话",
+    "pinyin": "huà",
+    "translations": [
+      "kata-kata"
+    ]
+  },
+  {
+    "id": "152",
+    "hanzi": "坏",
+    "pinyin": "huài",
+    "translations": [
+      "buruk",
+      "rusak"
+    ]
+  },
+  {
+    "id": "153",
+    "hanzi": "还",
+    "pinyin": "huán",
+    "translations": [
+      "kembali"
+    ]
+  },
+  {
+    "id": "154",
+    "hanzi": "回",
+    "pinyin": "huí",
+    "translations": [
+      "kembali ke"
+    ]
+  },
+  {
+    "id": "155",
+    "hanzi": "回答",
+    "pinyin": "huídá",
+    "translations": [
+      "untuk menjawab"
+    ]
+  },
+  {
+    "id": "156",
+    "hanzi": "回到",
+    "pinyin": "huí dào",
+    "translations": [
+      "kembali ke"
+    ]
+  },
+  {
+    "id": "157",
+    "hanzi": "回家",
+    "pinyin": "huí jiā",
+    "translations": [
+      "Kembali ke rumah",
+      "pulang ke rumah"
+    ]
+  },
+  {
+    "id": "158",
+    "hanzi": "回来",
+    "pinyin": "huí lái",
+    "translations": [
+      "kembali"
+    ]
+  },
+  {
+    "id": "159",
+    "hanzi": "回去",
+    "pinyin": "huí qù",
+    "translations": [
+      "kembali"
+    ]
+  },
+  {
+    "id": "16",
+    "hanzi": "包子",
+    "pinyin": "bāo zi",
+    "translations": [
+      "sanggul"
+    ]
+  },
+  {
+    "id": "160",
+    "hanzi": "会",
+    "pinyin": "huì",
+    "translations": [
+      "Bisa",
+      "mampu untuk"
+    ]
+  },
+  {
+    "id": "161",
+    "hanzi": "火车",
+    "pinyin": "huǒ chē",
+    "translations": [
+      "kereta"
+    ]
+  },
+  {
+    "id": "162",
+    "hanzi": "机场",
+    "pinyin": "jī chǎng",
+    "translations": [
+      "Bandara"
+    ]
+  },
+  {
+    "id": "163",
+    "hanzi": "机票",
+    "pinyin": "jī piào",
+    "translations": [
+      "tiket-tiket pesawat"
+    ]
+  },
+  {
+    "id": "164",
+    "hanzi": "鸡蛋",
+    "pinyin": "jī dàn",
+    "translations": [
+      "telur ayam"
+    ]
+  },
+  {
+    "id": "165",
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "translations": [
+      "Beberapa"
+    ]
+  },
+  {
+    "id": "166",
+    "hanzi": "记",
+    "pinyin": "jì",
+    "translations": [
+      "Ingat"
+    ]
+  },
+  {
+    "id": "167",
+    "hanzi": "记得",
+    "pinyin": "jì de",
+    "translations": [
+      "Ingat"
+    ]
+  },
+  {
+    "id": "168",
+    "hanzi": "记住",
+    "pinyin": "jì zhù",
+    "translations": [
+      "Ingat"
+    ]
+  },
+  {
+    "id": "169",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "translations": [
+      "keluarga",
+      "rumah"
+    ]
+  },
+  {
+    "id": "17",
+    "hanzi": "杯",
+    "pinyin": "bēi",
+    "translations": [
+      "cangkir (ukur kata)"
+    ]
+  },
+  {
+    "id": "170",
+    "hanzi": "家里",
+    "pinyin": "jiā li",
+    "translations": [
+      "di rumah"
+    ]
+  },
+  {
+    "id": "171",
+    "hanzi": "家人",
+    "pinyin": "jiā rén",
+    "translations": [
+      "keluarga"
+    ]
+  },
+  {
+    "id": "172",
+    "hanzi": "间",
+    "pinyin": "jiān",
+    "translations": [
+      "ruang"
+    ]
+  },
+  {
+    "id": "173",
+    "hanzi": "见",
+    "pinyin": "jiàn",
+    "translations": [
+      "bertemu"
+    ]
+  },
+  {
+    "id": "174",
+    "hanzi": "见面",
+    "pinyin": "jiàn miàn",
+    "translations": [
+      "bertemu"
+    ]
+  },
+  {
+    "id": "175",
+    "hanzi": "教",
+    "pinyin": "jiào",
+    "translations": [
+      "mengajar"
+    ]
+  },
+  {
+    "id": "176",
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "translations": [
+      "panggilan"
+    ]
+  },
+  {
+    "id": "177",
+    "hanzi": "教学楼",
+    "pinyin": "jiào xué lóu",
+    "translations": [
+      "bangunan kelas"
+    ]
+  },
+  {
+    "id": "178",
+    "hanzi": "姐姐",
+    "pinyin": "jiě jie",
+    "translations": [
+      "kakak perempuan"
+    ]
+  },
+  {
+    "id": "179",
+    "hanzi": "介绍",
+    "pinyin": "jiè shào",
+    "translations": [
+      "memperkenalkan",
+      "perkenalan"
+    ]
+  },
+  {
+    "id": "18",
+    "hanzi": "杯子",
+    "pinyin": "bēi zi",
+    "translations": [
+      "cangkir"
+    ]
+  },
+  {
+    "id": "180",
+    "hanzi": "今年",
+    "pinyin": "jīn nián",
+    "translations": [
+      "tahun ini"
+    ]
+  },
+  {
+    "id": "181",
+    "hanzi": "今天",
+    "pinyin": "jīn tiān",
+    "translations": [
+      "Hari ini"
+    ]
+  },
+  {
+    "id": "182",
+    "hanzi": "进",
+    "pinyin": "jìn",
+    "translations": [
+      "memasuki"
+    ]
+  },
+  {
+    "id": "183",
+    "hanzi": "进来",
+    "pinyin": "jìn lái",
+    "translations": [
+      "Silahkan masuk"
+    ]
+  },
+  {
+    "id": "184",
+    "hanzi": "进去",
+    "pinyin": "jìn qù",
+    "translations": [
+      "masuk"
+    ]
+  },
+  {
+    "id": "185",
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "translations": [
+      "sembilan"
+    ]
+  },
+  {
+    "id": "186",
+    "hanzi": "就",
+    "pinyin": "jiù",
+    "translations": [
+      "(Tunjukkan ringkasan atau hasil)"
+    ]
+  },
+  {
+    "id": "187",
+    "hanzi": "觉得",
+    "pinyin": "jué de",
+    "translations": [
+      "merasa"
+    ]
+  },
+  {
+    "id": "188",
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "translations": [
+      "membuka",
+      "menyetir"
+    ]
+  },
+  {
+    "id": "189",
+    "hanzi": "开车",
+    "pinyin": "kāi chē",
+    "translations": [
+      "menyetir"
+    ]
+  },
+  {
+    "id": "19",
+    "hanzi": "北",
+    "pinyin": "běi",
+    "translations": [
+      "utara"
+    ]
+  },
+  {
+    "id": "190",
+    "hanzi": "开会",
+    "pinyin": "kāi huì",
+    "translations": [
+      "ada rapat"
+    ]
+  },
+  {
+    "id": "191",
+    "hanzi": "开玩笑",
+    "pinyin": "kāi wán xiào",
+    "translations": [
+      "bercanda"
+    ]
+  },
+  {
+    "id": "192",
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "translations": [
+      "Lihat"
+    ]
+  },
+  {
+    "id": "193",
+    "hanzi": "看病",
+    "pinyin": "kàn bìng",
+    "translations": [
+      "Periksa ke dokter"
+    ]
+  },
+  {
+    "id": "194",
+    "hanzi": "看到",
+    "pinyin": "kàn dào",
+    "translations": [
+      "melihat"
+    ]
+  },
+  {
+    "id": "195",
+    "hanzi": "看见",
+    "pinyin": "kàn jiàn",
+    "translations": [
+      "melihat"
+    ]
+  },
+  {
+    "id": "196",
+    "hanzi": "考",
+    "pinyin": "kǎo",
+    "translations": [
+      "tes"
+    ]
+  },
+  {
+    "id": "197",
+    "hanzi": "考试",
+    "pinyin": "kǎo shì",
+    "translations": [
+      "penyelidikan"
+    ]
+  },
+  {
+    "id": "198",
+    "hanzi": "渴",
+    "pinyin": "kě",
+    "translations": [
+      "haus"
+    ]
+  },
+  {
+    "id": "199",
+    "hanzi": "课",
+    "pinyin": "kè",
+    "translations": [
+      "kelas",
+      "pelajaran"
+    ]
+  },
+  {
+    "id": "2",
+    "hanzi": "爱好",
+    "pinyin": "ài hào",
+    "translations": [
+      "hobi"
+    ]
+  },
+  {
+    "id": "20",
+    "hanzi": "北边",
+    "pinyin": "běi bian",
+    "translations": [
+      "sisi utara"
+    ]
+  },
+  {
+    "id": "200",
+    "hanzi": "课本",
+    "pinyin": "kè běn",
+    "translations": [
+      "buku pelajaran"
+    ]
+  },
+  {
+    "id": "201",
+    "hanzi": "课文",
+    "pinyin": "kè wén",
+    "translations": [
+      "teks"
+    ]
+  },
+  {
+    "id": "202",
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "translations": [
+      "mulut"
+    ]
+  },
+  {
+    "id": "203",
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "translations": [
+      "Potongan (Ukur Kata)"
+    ]
+  },
+  {
+    "id": "204",
+    "hanzi": "快",
+    "pinyin": "kuài",
+    "translations": [
+      "cepat"
+    ]
+  },
+  {
+    "id": "205",
+    "hanzi": "来",
+    "pinyin": "lái",
+    "translations": [
+      "datang"
+    ]
+  },
+  {
+    "id": "206",
+    "hanzi": "来到",
+    "pinyin": "lái dào",
+    "translations": [
+      "datang ke"
+    ]
+  },
+  {
+    "id": "207",
+    "hanzi": "老",
+    "pinyin": "lǎo",
+    "translations": [
+      "tua"
+    ]
+  },
+  {
+    "id": "208",
+    "hanzi": "老人",
+    "pinyin": "lǎo rén",
+    "translations": [
+      "orang tua"
+    ]
+  },
+  {
+    "id": "209",
+    "hanzi": "老师",
+    "pinyin": "lǎo shī",
+    "translations": [
+      "guru"
+    ]
+  },
+  {
+    "id": "21",
+    "hanzi": "北京",
+    "pinyin": "Běi jīng",
+    "translations": [
+      "Beijing"
+    ]
+  },
+  {
+    "id": "210",
+    "hanzi": "了",
+    "pinyin": "le",
+    "translations": [
+      "sudah"
+    ]
+  },
+  {
+    "id": "211",
+    "hanzi": "累",
+    "pinyin": "lèi",
+    "translations": [
+      "lelah"
+    ]
+  },
+  {
+    "id": "212",
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "translations": [
+      "dingin"
+    ]
+  },
+  {
+    "id": "213",
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "translations": [
+      "di dalam"
+    ]
+  },
+  {
+    "id": "214",
+    "hanzi": "里边",
+    "pinyin": "lǐ bian",
+    "translations": [
+      "di dalam"
+    ]
+  },
+  {
+    "id": "215",
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "translations": [
+      "dua"
+    ]
+  },
+  {
+    "id": "216",
+    "hanzi": "零",
+    "pinyin": "líng",
+    "translations": [
+      "nol"
+    ]
+  },
+  {
+    "id": "217",
+    "hanzi": "六",
+    "pinyin": "liù",
+    "translations": [
+      "enam"
+    ]
+  },
+  {
+    "id": "218",
+    "hanzi": "楼",
+    "pinyin": "lóu",
+    "translations": [
+      "lantai"
+    ]
+  },
+  {
+    "id": "219",
+    "hanzi": "楼上",
+    "pinyin": "lóu shàng",
+    "translations": [
+      "di atas"
+    ]
+  },
+  {
+    "id": "22",
+    "hanzi": "本",
+    "pinyin": "běn",
+    "translations": [
+      "(Ukur kata untuk buku)"
+    ]
+  },
+  {
+    "id": "220",
+    "hanzi": "楼下",
+    "pinyin": "lóu xià",
+    "translations": [
+      "di bawah"
+    ]
+  },
+  {
+    "id": "221",
+    "hanzi": "路",
+    "pinyin": "lù",
+    "translations": [
+      "jalan"
+    ]
+  },
+  {
+    "id": "222",
+    "hanzi": "路口",
+    "pinyin": "lù kǒu",
+    "translations": [
+      "persimpangan"
+    ]
+  },
+  {
+    "id": "223",
+    "hanzi": "路上",
+    "pinyin": "lù shang",
+    "translations": [
+      "di jalan"
+    ]
+  },
+  {
+    "id": "224",
+    "hanzi": "妈妈",
+    "pinyin": "mā ma",
+    "translations": [
+      "ibu"
+    ]
+  },
+  {
+    "id": "225",
+    "hanzi": "马路",
+    "pinyin": "mǎ lù",
+    "translations": [
+      "jalan"
+    ]
+  },
+  {
+    "id": "226",
+    "hanzi": "马上",
+    "pinyin": "mǎ shàng",
+    "translations": [
+      "langsung"
+    ]
+  },
+  {
+    "id": "227",
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "translations": [
+      "Apakah itu"
+    ]
+  },
+  {
+    "id": "228",
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "translations": [
+      "membeli"
+    ]
+  },
+  {
+    "id": "229",
+    "hanzi": "慢",
+    "pinyin": "màn",
+    "translations": [
+      "lambat"
+    ]
+  },
+  {
+    "id": "23",
+    "hanzi": "本子",
+    "pinyin": "běn zi",
+    "translations": [
+      "buku catatan"
+    ]
+  },
+  {
+    "id": "230",
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "translations": [
+      "sibuk"
+    ]
+  },
+  {
+    "id": "231",
+    "hanzi": "毛",
+    "pinyin": "máo",
+    "translations": [
+      "(Ukur kata untuk uang)"
+    ]
+  },
+  {
+    "id": "232",
+    "hanzi": "没",
+    "pinyin": "méi",
+    "translations": [
+      "bukan"
+    ]
+  },
+  {
+    "id": "233",
+    "hanzi": "没关系",
+    "pinyin": "méi guān xi",
+    "translations": [
+      "tidak apa-apa"
+    ]
+  },
+  {
+    "id": "234",
+    "hanzi": "没什么",
+    "pinyin": "méi shén me",
+    "translations": [
+      "tidak apa"
+    ]
+  },
+  {
+    "id": "235",
+    "hanzi": "没事儿",
+    "pinyin": "méi shìr",
+    "translations": [
+      "tidak apa-apa"
+    ]
+  },
+  {
+    "id": "236",
+    "hanzi": "没有",
+    "pinyin": "méi yǒu",
+    "translations": [
+      "tidak punya"
+    ]
+  },
+  {
+    "id": "237",
+    "hanzi": "妹妹",
+    "pinyin": "mèi mei",
+    "translations": [
+      "adik perempuan"
+    ]
+  },
+  {
+    "id": "238",
+    "hanzi": "门",
+    "pinyin": "mén",
+    "translations": [
+      "pintu"
+    ]
+  },
+  {
+    "id": "239",
+    "hanzi": "门口",
+    "pinyin": "mén kǒu",
+    "translations": [
+      "pintu masuk"
+    ]
+  },
+  {
+    "id": "24",
+    "hanzi": "比",
+    "pinyin": "bǐ",
+    "translations": [
+      "membandingkan"
+    ]
+  },
+  {
+    "id": "240",
+    "hanzi": "门票",
+    "pinyin": "mén piào",
+    "translations": [
+      "tiket"
+    ]
+  },
+  {
+    "id": "241",
+    "hanzi": "朋友们",
+    "pinyin": "péng you men",
+    "translations": [
+      "teman-teman"
+    ]
+  },
+  {
+    "id": "242",
+    "hanzi": "米饭",
+    "pinyin": "mǐ fàn",
+    "translations": [
+      "beras"
+    ]
+  },
+  {
+    "id": "243",
+    "hanzi": "面包",
+    "pinyin": "miàn bāo",
+    "translations": [
+      "roti"
+    ]
+  },
+  {
+    "id": "244",
+    "hanzi": "面条儿",
+    "pinyin": "miàn tiáor",
+    "translations": [
+      "Mie"
+    ]
+  },
+  {
+    "id": "245",
+    "hanzi": "名字",
+    "pinyin": "míng zi",
+    "translations": [
+      "nama depan"
+    ]
+  },
+  {
+    "id": "246",
+    "hanzi": "明白",
+    "pinyin": "míng bai",
+    "translations": [
+      "memahami"
+    ]
+  },
+  {
+    "id": "247",
+    "hanzi": "明年",
+    "pinyin": "míng nián",
+    "translations": [
+      "tahun depan"
+    ]
+  },
+  {
+    "id": "248",
+    "hanzi": "明天",
+    "pinyin": "míng tiān",
+    "translations": [
+      "besok"
+    ]
+  },
+  {
+    "id": "249",
+    "hanzi": "拿",
+    "pinyin": "ná",
+    "translations": [
+      "mengambil"
+    ]
+  },
+  {
+    "id": "25",
+    "hanzi": "别",
+    "pinyin": "bié",
+    "translations": [
+      "tidak"
+    ]
+  },
+  {
+    "id": "250",
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "translations": [
+      "yang"
+    ]
+  },
+  {
+    "id": "251",
+    "hanzi": "哪里",
+    "pinyin": "nǎ lǐ",
+    "translations": [
+      "Di mana"
+    ]
+  },
+  {
+    "id": "252",
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "translations": [
+      "Di mana"
+    ]
+  },
+  {
+    "id": "253",
+    "hanzi": "哪些",
+    "pinyin": "nǎ xiē",
+    "translations": [
+      "yang"
+    ]
+  },
+  {
+    "id": "254",
+    "hanzi": "那",
+    "pinyin": "nà",
+    "translations": [
+      "itu"
+    ]
+  },
+  {
+    "id": "255",
+    "hanzi": "那边",
+    "pinyin": "nà biān",
+    "translations": [
+      "di sana"
+    ]
+  },
+  {
+    "id": "256",
+    "hanzi": "那里",
+    "pinyin": "nà lǐ",
+    "translations": [
+      "di sana"
+    ]
+  },
+  {
+    "id": "257",
+    "hanzi": "那儿",
+    "pinyin": "nàr",
+    "translations": [
+      "di sana"
+    ]
+  },
+  {
+    "id": "258",
+    "hanzi": "那些",
+    "pinyin": "nà xiē",
+    "translations": [
+      "itu"
+    ]
+  },
+  {
+    "id": "259",
+    "hanzi": "奶",
+    "pinyin": "nǎi",
+    "translations": [
+      "susu"
+    ]
+  },
+  {
+    "id": "26",
+    "hanzi": "别的",
+    "pinyin": "bié de",
+    "translations": [
+      "lainnya"
+    ]
+  },
+  {
+    "id": "260",
+    "hanzi": "奶奶",
+    "pinyin": "nǎi nai",
+    "translations": [
+      "nenek"
+    ]
+  },
+  {
+    "id": "261",
+    "hanzi": "男",
+    "pinyin": "nán",
+    "translations": [
+      "pria"
+    ]
+  },
+  {
+    "id": "262",
+    "hanzi": "男孩儿",
+    "pinyin": "nán háir",
+    "translations": [
+      "anak laki-laki"
+    ]
+  },
+  {
+    "id": "263",
+    "hanzi": "男朋友",
+    "pinyin": "nán péng you",
+    "translations": [
+      "pacar"
+    ]
+  },
+  {
+    "id": "264",
+    "hanzi": "男人",
+    "pinyin": "nán rén",
+    "translations": [
+      "pria"
+    ]
+  },
+  {
+    "id": "265",
+    "hanzi": "男生",
+    "pinyin": "nán shēng",
+    "translations": [
+      "anak sekolah"
+    ]
+  },
+  {
+    "id": "266",
+    "hanzi": "南",
+    "pinyin": "nán",
+    "translations": [
+      "selatan"
+    ]
+  },
+  {
+    "id": "267",
+    "hanzi": "南边",
+    "pinyin": "nán bian",
+    "translations": [
+      "sisi selatan"
+    ]
+  },
+  {
+    "id": "268",
+    "hanzi": "难",
+    "pinyin": "nán",
+    "translations": [
+      "sulit"
+    ]
+  },
+  {
+    "id": "269",
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "translations": [
+      "Apa"
+    ]
+  },
+  {
+    "id": "27",
+    "hanzi": "别人",
+    "pinyin": "bié rén",
+    "translations": [
+      "orang lain"
+    ]
+  },
+  {
+    "id": "270",
+    "hanzi": "能",
+    "pinyin": "néng",
+    "translations": [
+      "Bisa"
+    ]
+  },
+  {
+    "id": "271",
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "translations": [
+      "Anda"
+    ]
+  },
+  {
+    "id": "272",
+    "hanzi": "你们",
+    "pinyin": "nǐ men",
+    "translations": [
+      "kalian"
+    ]
+  },
+  {
+    "id": "273",
+    "hanzi": "年",
+    "pinyin": "nián",
+    "translations": [
+      "tahun"
+    ]
+  },
+  {
+    "id": "274",
+    "hanzi": "您",
+    "pinyin": "nín",
+    "translations": [
+      "Anda"
+    ]
+  },
+  {
+    "id": "275",
+    "hanzi": "牛奶",
+    "pinyin": "niú nǎi",
+    "translations": [
+      "susu sapi"
+    ]
+  },
+  {
+    "id": "276",
+    "hanzi": "女",
+    "pinyin": "nǚ",
+    "translations": [
+      "perempuan"
+    ]
+  },
+  {
+    "id": "277",
+    "hanzi": "女儿",
+    "pinyin": "nǚ’ér",
+    "translations": [
+      "anak perempuan"
+    ]
+  },
+  {
+    "id": "278",
+    "hanzi": "女孩儿",
+    "pinyin": "nǚ háir",
+    "translations": [
+      "gadis"
+    ]
+  },
+  {
+    "id": "279",
+    "hanzi": "女朋友",
+    "pinyin": "nǚ péng you",
+    "translations": [
+      "pacar perempuan"
+    ]
+  },
+  {
+    "id": "28",
+    "hanzi": "病",
+    "pinyin": "bìng",
+    "translations": [
+      "sakit",
+      "penyakit"
+    ]
+  },
+  {
+    "id": "280",
+    "hanzi": "女人",
+    "pinyin": "nǚ rén",
+    "translations": [
+      "wanita"
+    ]
+  },
+  {
+    "id": "281",
+    "hanzi": "女生",
+    "pinyin": "nǚ shēng",
+    "translations": [
+      "siswi"
+    ]
+  },
+  {
+    "id": "282",
+    "hanzi": "旁边",
+    "pinyin": "páng biān",
+    "translations": [
+      "di sebelah"
+    ]
+  },
+  {
+    "id": "283",
+    "hanzi": "跑",
+    "pinyin": "pǎo",
+    "translations": [
+      "berlari"
+    ]
+  },
+  {
+    "id": "284",
+    "hanzi": "朋友",
+    "pinyin": "péng you",
+    "translations": [
+      "teman"
+    ]
+  },
+  {
+    "id": "285",
+    "hanzi": "票",
+    "pinyin": "piào",
+    "translations": [
+      "tiket"
+    ]
+  },
+  {
+    "id": "286",
+    "hanzi": "七",
+    "pinyin": "qī",
+    "translations": [
+      "tujuh"
+    ]
+  },
+  {
+    "id": "287",
+    "hanzi": "起",
+    "pinyin": "qǐ",
+    "translations": [
+      "ke atas"
+    ]
+  },
+  {
+    "id": "288",
+    "hanzi": "起床",
+    "pinyin": "qǐ chuáng",
+    "translations": [
+      "bangun"
+    ]
+  },
+  {
+    "id": "289",
+    "hanzi": "起来",
+    "pinyin": "qǐ lái",
+    "translations": [
+      "berdiri"
+    ]
+  },
+  {
+    "id": "29",
+    "hanzi": "病人",
+    "pinyin": "bìng rén",
+    "translations": [
+      "sabar"
+    ]
+  },
+  {
+    "id": "290",
+    "hanzi": "汽车",
+    "pinyin": "qì chē",
+    "translations": [
+      "mobil"
+    ]
+  },
+  {
+    "id": "291",
+    "hanzi": "前",
+    "pinyin": "qián",
+    "translations": [
+      "sebelum"
+    ]
+  },
+  {
+    "id": "292",
+    "hanzi": "前边",
+    "pinyin": "qián bian",
+    "translations": [
+      "sisi depan"
+    ]
+  },
+  {
+    "id": "293",
+    "hanzi": "前天",
+    "pinyin": "qián tiān",
+    "translations": [
+      "kemarin lusa"
+    ]
+  },
+  {
+    "id": "294",
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "translations": [
+      "uang"
+    ]
+  },
+  {
+    "id": "295",
+    "hanzi": "钱包",
+    "pinyin": "qián bāo",
+    "translations": [
+      "dompet"
+    ]
+  },
+  {
+    "id": "296",
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "translations": [
+      "Tolong"
+    ]
+  },
+  {
+    "id": "297",
+    "hanzi": "请假",
+    "pinyin": "qǐng jià",
+    "translations": [
+      "Meminta cuti"
+    ]
+  },
+  {
+    "id": "298",
+    "hanzi": "请进",
+    "pinyin": "qǐng jìn",
+    "translations": [
+      "silakan masuk"
+    ]
+  },
+  {
+    "id": "299",
+    "hanzi": "请问",
+    "pinyin": "qǐng wèn",
+    "translations": [
+      "Permisi"
+    ]
+  },
+  {
+    "id": "3",
+    "hanzi": "八",
+    "pinyin": "bā",
+    "translations": [
+      "delapan"
+    ]
+  },
+  {
+    "id": "30",
+    "hanzi": "不大",
+    "pinyin": "bú tà",
+    "translations": [
+      "tidak besar",
+      "tidak terlalu"
+    ]
+  },
+  {
+    "id": "300",
+    "hanzi": "请坐",
+    "pinyin": "qǐng zuò",
+    "translations": [
+      "silakan duduk"
+    ]
+  },
+  {
+    "id": "301",
+    "hanzi": "球",
+    "pinyin": "qiú",
+    "translations": [
+      "bola"
+    ]
+  },
+  {
+    "id": "302",
+    "hanzi": "去",
+    "pinyin": "qù",
+    "translations": [
+      "pergi"
+    ]
+  },
+  {
+    "id": "303",
+    "hanzi": "去年",
+    "pinyin": "qù nián",
+    "translations": [
+      "tahun lalu"
+    ]
+  },
+  {
+    "id": "304",
+    "hanzi": "热",
+    "pinyin": "rè",
+    "translations": [
+      "panas"
+    ]
+  },
+  {
+    "id": "305",
+    "hanzi": "人",
+    "pinyin": "rén",
+    "translations": [
+      "rakyat"
+    ]
+  },
+  {
+    "id": "306",
+    "hanzi": "认识",
+    "pinyin": "rèn shi",
+    "translations": [
+      "tahu"
+    ]
+  },
+  {
+    "id": "307",
+    "hanzi": "认真",
+    "pinyin": "rèn zhēn",
+    "translations": [
+      "serius"
+    ]
+  },
+  {
+    "id": "308",
+    "hanzi": "日",
+    "pinyin": "rì",
+    "translations": [
+      "hari"
+    ]
+  },
+  {
+    "id": "309",
+    "hanzi": "日期",
+    "pinyin": "rì qī",
+    "translations": [
+      "tanggal"
+    ]
+  },
+  {
+    "id": "31",
+    "hanzi": "不对",
+    "pinyin": "bú duì",
+    "translations": [
+      "tidak benar",
+      "salah"
+    ]
+  },
+  {
+    "id": "310",
+    "hanzi": "肉",
+    "pinyin": "ròu",
+    "translations": [
+      "daging"
+    ]
+  },
+  {
+    "id": "311",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "translations": [
+      "tiga"
+    ]
+  },
+  {
+    "id": "312",
+    "hanzi": "山",
+    "pinyin": "shān",
+    "translations": [
+      "gunung"
+    ]
+  },
+  {
+    "id": "313",
+    "hanzi": "商场",
+    "pinyin": "shāng chǎng",
+    "translations": [
+      "mall"
+    ]
+  },
+  {
+    "id": "314",
+    "hanzi": "商店",
+    "pinyin": "shāng diàn",
+    "translations": [
+      "toko"
+    ]
+  },
+  {
+    "id": "315",
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "translations": [
+      "pada"
+    ]
+  },
+  {
+    "id": "316",
+    "hanzi": "上班",
+    "pinyin": "shàng bān",
+    "translations": [
+      "pergi bekerja"
+    ]
+  },
+  {
+    "id": "317",
+    "hanzi": "上边",
+    "pinyin": "shàng bian",
+    "translations": [
+      "di atas"
+    ]
+  },
+  {
+    "id": "318",
+    "hanzi": "上车",
+    "pinyin": "shàng chē",
+    "translations": [
+      "pergi ke mobil"
+    ]
+  },
+  {
+    "id": "319",
+    "hanzi": "上次",
+    "pinyin": "shàng cì",
+    "translations": [
+      "terakhir kali"
+    ]
+  },
+  {
+    "id": "32",
+    "hanzi": "不客气",
+    "pinyin": "bú kè qì",
+    "translations": [
+      "Terima kasih kembali"
+    ]
+  },
+  {
+    "id": "320",
+    "hanzi": "上课",
+    "pinyin": "shàng kè",
+    "translations": [
+      "pergi ke kelas"
+    ]
+  },
+  {
+    "id": "321",
+    "hanzi": "上网",
+    "pinyin": "shàng wǎng",
+    "translations": [
+      "online"
+    ]
+  },
+  {
+    "id": "322",
+    "hanzi": "上午",
+    "pinyin": "shàng wǔ",
+    "translations": [
+      "Pagi"
+    ]
+  },
+  {
+    "id": "323",
+    "hanzi": "上学",
+    "pinyin": "shàng xué",
+    "translations": [
+      "pergi ke sekolah"
+    ]
+  },
+  {
+    "id": "324",
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "translations": [
+      "kecil",
+      "lebih sedikit"
+    ]
+  },
+  {
+    "id": "325",
+    "hanzi": "谁",
+    "pinyin": "shéi/shuí",
+    "translations": [
+      "WHO"
+    ]
+  },
+  {
+    "id": "326",
+    "hanzi": "身上",
+    "pinyin": "shēn shang",
+    "translations": [
+      "di tubuh"
+    ]
+  },
+  {
+    "id": "327",
+    "hanzi": "身体",
+    "pinyin": "shēn tǐ",
+    "translations": [
+      "tubuh"
+    ]
+  },
+  {
+    "id": "328",
+    "hanzi": "什么",
+    "pinyin": "shén me",
+    "translations": [
+      "Apa"
+    ]
+  },
+  {
+    "id": "329",
+    "hanzi": "生病",
+    "pinyin": "shēng bìng",
+    "translations": [
+      "sakit"
+    ]
+  },
+  {
+    "id": "33",
+    "hanzi": "不用",
+    "pinyin": "bú yòng",
+    "translations": [
+      "tidak perlu untuk"
+    ]
+  },
+  {
+    "id": "330",
+    "hanzi": "生气",
+    "pinyin": "shēng qì",
+    "translations": [
+      "marah",
+      "kesal"
+    ]
+  },
+  {
+    "id": "331",
+    "hanzi": "生日",
+    "pinyin": "shēng rì",
+    "translations": [
+      "hari ulang tahun"
+    ]
+  },
+  {
+    "id": "332",
+    "hanzi": "十",
+    "pinyin": "shí",
+    "translations": [
+      "sepuluh"
+    ]
+  },
+  {
+    "id": "333",
+    "hanzi": "时候",
+    "pinyin": "shí hou",
+    "translations": [
+      "Kapan"
+    ]
+  },
+  {
+    "id": "334",
+    "hanzi": "时间",
+    "pinyin": "shí jiān",
+    "translations": [
+      "waktu"
+    ]
+  },
+  {
+    "id": "335",
+    "hanzi": "事",
+    "pinyin": "shì",
+    "translations": [
+      "benda",
+      "perselingkuhan"
+    ]
+  },
+  {
+    "id": "336",
+    "hanzi": "试",
+    "pinyin": "shì",
+    "translations": [
+      "mencoba",
+      "tes"
+    ]
+  },
+  {
+    "id": "337",
+    "hanzi": "是",
+    "pinyin": "shì",
+    "translations": [
+      "Ya",
+      "AM/is/is"
+    ]
+  },
+  {
+    "id": "338",
+    "hanzi": "是不是",
+    "pinyin": "shì bu shì",
+    "translations": [
+      "Bukankah begitu"
+    ]
+  },
+  {
+    "id": "339",
+    "hanzi": "手",
+    "pinyin": "shǒu",
+    "translations": [
+      "tangan"
+    ]
+  },
+  {
+    "id": "34",
+    "hanzi": "不",
+    "pinyin": "bù",
+    "translations": [
+      "tidak"
+    ]
+  },
+  {
+    "id": "340",
+    "hanzi": "手机",
+    "pinyin": "shǒu jī",
+    "translations": [
+      "handphone"
+    ]
+  },
+  {
+    "id": "341",
+    "hanzi": "书",
+    "pinyin": "shū",
+    "translations": [
+      "buku"
+    ]
+  },
+  {
+    "id": "342",
+    "hanzi": "书包",
+    "pinyin": "shū bāo",
+    "translations": [
+      "tas sekolah"
+    ]
+  },
+  {
+    "id": "343",
+    "hanzi": "书店",
+    "pinyin": "shū diàn",
+    "translations": [
+      "toko buku"
+    ]
+  },
+  {
+    "id": "344",
+    "hanzi": "树",
+    "pinyin": "shù",
+    "translations": [
+      "pohon"
+    ]
+  },
+  {
+    "id": "345",
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "translations": [
+      "air"
+    ]
+  },
+  {
+    "id": "346",
+    "hanzi": "水果",
+    "pinyin": "shuǐ guǒ",
+    "translations": [
+      "buah"
+    ]
+  },
+  {
+    "id": "347",
+    "hanzi": "睡",
+    "pinyin": "shuì",
+    "translations": [
+      "tidur"
+    ]
+  },
+  {
+    "id": "348",
+    "hanzi": "睡觉",
+    "pinyin": "shuì jiào",
+    "translations": [
+      "pergi tidur"
+    ]
+  },
+  {
+    "id": "349",
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "translations": [
+      "mengatakan"
+    ]
+  },
+  {
+    "id": "35",
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "translations": [
+      "piring"
+    ]
+  },
+  {
+    "id": "350",
+    "hanzi": "说话",
+    "pinyin": "shuō huà",
+    "translations": [
+      "berbicara"
+    ]
+  },
+  {
+    "id": "351",
+    "hanzi": "四",
+    "pinyin": "sì",
+    "translations": [
+      "empat"
+    ]
+  },
+  {
+    "id": "352",
+    "hanzi": "送",
+    "pinyin": "sòng",
+    "translations": [
+      "memberi secara gratis"
+    ]
+  },
+  {
+    "id": "353",
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "translations": [
+      "tahun)"
+    ]
+  },
+  {
+    "id": "354",
+    "hanzi": "他",
+    "pinyin": "tā",
+    "translations": [
+      "Dia"
+    ]
+  },
+  {
+    "id": "355",
+    "hanzi": "他们",
+    "pinyin": "tā men",
+    "translations": [
+      "mereka"
+    ]
+  },
+  {
+    "id": "356",
+    "hanzi": "她",
+    "pinyin": "tā",
+    "translations": [
+      "dia"
+    ]
+  },
+  {
+    "id": "357",
+    "hanzi": "她们",
+    "pinyin": "tā men",
+    "translations": [
+      "mereka"
+    ]
+  },
+  {
+    "id": "358",
+    "hanzi": "太",
+    "pinyin": "tài",
+    "translations": [
+      "juga"
+    ]
+  },
+  {
+    "id": "359",
+    "hanzi": "天",
+    "pinyin": "tiān",
+    "translations": [
+      "hari"
+    ]
+  },
+  {
+    "id": "36",
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "translations": [
+      "teh"
+    ]
+  },
+  {
+    "id": "360",
+    "hanzi": "天气",
+    "pinyin": "tiān qì",
+    "translations": [
+      "cuaca"
+    ]
+  },
+  {
+    "id": "361",
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "translations": [
+      "mendengarkan"
+    ]
+  },
+  {
+    "id": "362",
+    "hanzi": "听到",
+    "pinyin": "tīng dào",
+    "translations": [
+      "mendengar"
+    ]
+  },
+  {
+    "id": "363",
+    "hanzi": "听见",
+    "pinyin": "tīng jiàn",
+    "translations": [
+      "mendengar"
+    ]
+  },
+  {
+    "id": "364",
+    "hanzi": "听写",
+    "pinyin": "tīng xiě",
+    "translations": [
+      "dikte"
+    ]
+  },
+  {
+    "id": "365",
+    "hanzi": "同学",
+    "pinyin": "tóng xué",
+    "translations": [
+      "teman sekelas"
+    ]
+  },
+  {
+    "id": "366",
+    "hanzi": "图书馆",
+    "pinyin": "tú shū guǎn",
+    "translations": [
+      "perpustakaan"
+    ]
+  },
+  {
+    "id": "367",
+    "hanzi": "外",
+    "pinyin": "wài",
+    "translations": [
+      "keluar"
+    ]
+  },
+  {
+    "id": "368",
+    "hanzi": "外边",
+    "pinyin": "wài bian",
+    "translations": [
+      "di luar"
+    ]
+  },
+  {
+    "id": "369",
+    "hanzi": "外国",
+    "pinyin": "wài guó",
+    "translations": [
+      "negara asing"
+    ]
+  },
+  {
+    "id": "37",
+    "hanzi": "差",
+    "pinyin": "chà",
+    "translations": [
+      "kurangnya",
+      "buruk"
+    ]
+  },
+  {
+    "id": "370",
+    "hanzi": "外语",
+    "pinyin": "wài yǔ",
+    "translations": [
+      "bahasa asing"
+    ]
+  },
+  {
+    "id": "371",
+    "hanzi": "玩儿",
+    "pinyin": "wánr",
+    "translations": [
+      "bermain"
+    ]
+  },
+  {
+    "id": "372",
+    "hanzi": "晚",
+    "pinyin": "wǎn",
+    "translations": [
+      "terlambat"
+    ]
+  },
+  {
+    "id": "373",
+    "hanzi": "晚饭",
+    "pinyin": "wǎn fàn",
+    "translations": [
+      "makan malam"
+    ]
+  },
+  {
+    "id": "374",
+    "hanzi": "晚上",
+    "pinyin": "wǎn shang",
+    "translations": [
+      "pada malam hari"
+    ]
+  },
+  {
+    "id": "375",
+    "hanzi": "网上",
+    "pinyin": "wǎng shang",
+    "translations": [
+      "di internet"
+    ]
+  },
+  {
+    "id": "376",
+    "hanzi": "网友",
+    "pinyin": "wǎng yǒu",
+    "translations": [
+      "Warganet"
+    ]
+  },
+  {
+    "id": "377",
+    "hanzi": "忘",
+    "pinyin": "wàng",
+    "translations": [
+      "lupa"
+    ]
+  },
+  {
+    "id": "378",
+    "hanzi": "忘记",
+    "pinyin": "wàng jì",
+    "translations": [
+      "lupa"
+    ]
+  },
+  {
+    "id": "379",
+    "hanzi": "问",
+    "pinyin": "wèn",
+    "translations": [
+      "bertanya"
+    ]
+  },
+  {
+    "id": "38",
+    "hanzi": "常",
+    "pinyin": "cháng",
+    "translations": [
+      "sering"
+    ]
+  },
+  {
+    "id": "380",
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "translations": [
+      "SAYA"
+    ]
+  },
+  {
+    "id": "381",
+    "hanzi": "我们",
+    "pinyin": "wǒ men",
+    "translations": [
+      "Kami"
+    ]
+  },
+  {
+    "id": "382",
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "translations": [
+      "lima"
+    ]
+  },
+  {
+    "id": "383",
+    "hanzi": "午饭",
+    "pinyin": "wǔ fàn",
+    "translations": [
+      "makan siang"
+    ]
+  },
+  {
+    "id": "384",
+    "hanzi": "西",
+    "pinyin": "xī",
+    "translations": [
+      "Barat"
+    ]
+  },
+  {
+    "id": "385",
+    "hanzi": "西边",
+    "pinyin": "xī bian",
+    "translations": [
+      "sisi barat"
+    ]
+  },
+  {
+    "id": "386",
+    "hanzi": "洗",
+    "pinyin": "xǐ",
+    "translations": [
+      "mencuci"
+    ]
+  },
+  {
+    "id": "387",
+    "hanzi": "洗手间",
+    "pinyin": "xǐ shǒu jiān",
+    "translations": [
+      "kamar kecil"
+    ]
+  },
+  {
+    "id": "388",
+    "hanzi": "喜欢",
+    "pinyin": "xǐ huan",
+    "translations": [
+      "menyukai"
+    ]
+  },
+  {
+    "id": "389",
+    "hanzi": "下",
+    "pinyin": "xià",
+    "translations": [
+      "di bawah",
+      "mati"
+    ]
+  },
+  {
+    "id": "39",
+    "hanzi": "常常",
+    "pinyin": "cháng cháng",
+    "translations": [
+      "sering"
+    ]
+  },
+  {
+    "id": "390",
+    "hanzi": "下班",
+    "pinyin": "xià bān",
+    "translations": [
+      "cuti"
+    ]
+  },
+  {
+    "id": "391",
+    "hanzi": "下边",
+    "pinyin": "xià bian",
+    "translations": [
+      "di bawah"
+    ]
+  },
+  {
+    "id": "392",
+    "hanzi": "下车",
+    "pinyin": "xià chē",
+    "translations": [
+      "melepaskan diri"
+    ]
+  },
+  {
+    "id": "393",
+    "hanzi": "下次",
+    "pinyin": "xià cì",
+    "translations": [
+      "lain kali"
+    ]
+  },
+  {
+    "id": "394",
+    "hanzi": "下课",
+    "pinyin": "xià kè",
+    "translations": [
+      "akhir kelas"
+    ]
+  },
+  {
+    "id": "395",
+    "hanzi": "下午",
+    "pinyin": "xià wǔ",
+    "translations": [
+      "sore"
+    ]
+  },
+  {
+    "id": "396",
+    "hanzi": "下雨",
+    "pinyin": "xià yǔ",
+    "translations": [
+      "hujan"
+    ]
+  },
+  {
+    "id": "397",
+    "hanzi": "先",
+    "pinyin": "xiān",
+    "translations": [
+      "Pertama"
+    ]
+  },
+  {
+    "id": "398",
+    "hanzi": "先生",
+    "pinyin": "xiān sheng",
+    "translations": [
+      "Tuan"
+    ]
+  },
+  {
+    "id": "399",
+    "hanzi": "现在",
+    "pinyin": "xiàn zài",
+    "translations": [
+      "sekarang"
+    ]
+  },
+  {
+    "id": "4",
+    "hanzi": "爸爸",
+    "pinyin": "bà ba",
+    "translations": [
+      "ayah"
+    ]
+  },
+  {
+    "id": "40",
+    "hanzi": "唱",
+    "pinyin": "chàng",
+    "translations": [
+      "menyanyi"
+    ]
+  },
+  {
+    "id": "400",
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "translations": [
+      "merindukan",
+      "ingin",
+      "memikirkan"
+    ]
+  },
+  {
+    "id": "401",
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "translations": [
+      "kecil"
+    ]
+  },
+  {
+    "id": "402",
+    "hanzi": "小孩儿",
+    "pinyin": "xiǎo háir",
+    "translations": [
+      "anak"
+    ]
+  },
+  {
+    "id": "403",
+    "hanzi": "小姐",
+    "pinyin": "xiǎo jiě",
+    "translations": [
+      "Merindukan"
+    ]
+  },
+  {
+    "id": "404",
+    "hanzi": "小朋友",
+    "pinyin": "xiǎo péng yǒu",
+    "translations": [
+      "anak-anak"
+    ]
+  },
+  {
+    "id": "405",
+    "hanzi": "小时",
+    "pinyin": "xiǎo shí",
+    "translations": [
+      "jam"
+    ]
+  },
+  {
+    "id": "406",
+    "hanzi": "小学",
+    "pinyin": "xiǎo xué",
+    "translations": [
+      "sekolah dasar"
+    ]
+  },
+  {
+    "id": "407",
+    "hanzi": "小学生",
+    "pinyin": "xiǎo xué shēng",
+    "translations": [
+      "Siswa Sekolah Dasar"
+    ]
+  },
+  {
+    "id": "408",
+    "hanzi": "笑",
+    "pinyin": "xiào",
+    "translations": [
+      "tertawa"
+    ]
+  },
+  {
+    "id": "409",
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "translations": [
+      "menulis"
+    ]
+  },
+  {
+    "id": "41",
+    "hanzi": "唱歌",
+    "pinyin": "chàng gē",
+    "translations": [
+      "menyanyikan lagu"
+    ]
+  },
+  {
+    "id": "410",
+    "hanzi": "谢谢",
+    "pinyin": "xiè xie",
+    "translations": [
+      "Terima kasih"
+    ]
+  },
+  {
+    "id": "411",
+    "hanzi": "新",
+    "pinyin": "xīn",
+    "translations": [
+      "baru"
+    ]
+  },
+  {
+    "id": "412",
+    "hanzi": "新年",
+    "pinyin": "xīn nián",
+    "translations": [
+      "tahun Baru"
+    ]
+  },
+  {
+    "id": "413",
+    "hanzi": "星期",
+    "pinyin": "xīng qī",
+    "translations": [
+      "pekan"
+    ]
+  },
+  {
+    "id": "414",
+    "hanzi": "星期日",
+    "pinyin": "xīng qī rì",
+    "translations": [
+      "Minggu"
+    ]
+  },
+  {
+    "id": "415",
+    "hanzi": "星期天",
+    "pinyin": "xīng qī tiān",
+    "translations": [
+      "Minggu"
+    ]
+  },
+  {
+    "id": "416",
+    "hanzi": "行",
+    "pinyin": "xíng",
+    "translations": [
+      "Oke"
+    ]
+  },
+  {
+    "id": "417",
+    "hanzi": "休息",
+    "pinyin": "xiū xi",
+    "translations": [
+      "istirahat"
+    ]
+  },
+  {
+    "id": "418",
+    "hanzi": "学",
+    "pinyin": "xué",
+    "translations": [
+      "mempelajari"
+    ]
+  },
+  {
+    "id": "419",
+    "hanzi": "学生",
+    "pinyin": "xué shēng",
+    "translations": [
+      "murid"
+    ]
+  },
+  {
+    "id": "42",
+    "hanzi": "车",
+    "pinyin": "chē",
+    "translations": [
+      "kendaraan"
+    ]
+  },
+  {
+    "id": "420",
+    "hanzi": "学习",
+    "pinyin": "xué xí",
+    "translations": [
+      "mempelajari",
+      "belajar"
+    ]
+  },
+  {
+    "id": "421",
+    "hanzi": "学校",
+    "pinyin": "xué xiào",
+    "translations": [
+      "sekolah"
+    ]
+  },
+  {
+    "id": "422",
+    "hanzi": "学院",
+    "pinyin": "xué yuàn",
+    "translations": [
+      "akademi"
+    ]
+  },
+  {
+    "id": "423",
+    "hanzi": "要",
+    "pinyin": "yào",
+    "translations": [
+      "ingin"
+    ]
+  },
+  {
+    "id": "424",
+    "hanzi": "爷爷",
+    "pinyin": "yé ye",
+    "translations": [
+      "kakek"
+    ]
+  },
+  {
+    "id": "425",
+    "hanzi": "也",
+    "pinyin": "yě",
+    "translations": [
+      "Juga"
+    ]
+  },
+  {
+    "id": "426",
+    "hanzi": "页",
+    "pinyin": "yè",
+    "translations": [
+      "halaman"
+    ]
+  },
+  {
+    "id": "427",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "translations": [
+      "satu"
+    ]
+  },
+  {
+    "id": "428",
+    "hanzi": "衣服",
+    "pinyin": "yī fu",
+    "translations": [
+      "pakaian"
+    ]
+  },
+  {
+    "id": "429",
+    "hanzi": "医生",
+    "pinyin": "yī shēng",
+    "translations": [
+      "dokter"
+    ]
+  },
+  {
+    "id": "43",
+    "hanzi": "车票",
+    "pinyin": "chē piào",
+    "translations": [
+      "Tiket bus atau kereta api"
+    ]
+  },
+  {
+    "id": "430",
+    "hanzi": "医院",
+    "pinyin": "yī yuàn",
+    "translations": [
+      "RSUD"
+    ]
+  },
+  {
+    "id": "431",
+    "hanzi": "一半",
+    "pinyin": "yí bàn",
+    "translations": [
+      "setengah"
+    ]
+  },
+  {
+    "id": "432",
+    "hanzi": "一会儿",
+    "pinyin": "yí huìr",
+    "translations": [
+      "sementara waktu"
+    ]
+  },
+  {
+    "id": "433",
+    "hanzi": "一块儿",
+    "pinyin": "yí kuàir",
+    "translations": [
+      "bersama"
+    ]
+  },
+  {
+    "id": "434",
+    "hanzi": "一下儿",
+    "pinyin": "yí xiàr",
+    "translations": [
+      "sementara waktu"
+    ]
+  },
+  {
+    "id": "435",
+    "hanzi": "一样",
+    "pinyin": "yí yàng",
+    "translations": [
+      "sama"
+    ]
+  },
+  {
+    "id": "436",
+    "hanzi": "一边",
+    "pinyin": "yì biān",
+    "translations": [
+      "ketika"
+    ]
+  },
+  {
+    "id": "437",
+    "hanzi": "一点儿",
+    "pinyin": "yì diǎnr",
+    "translations": [
+      "sedikit"
+    ]
+  },
+  {
+    "id": "438",
+    "hanzi": "一起",
+    "pinyin": "yì qǐ",
+    "translations": [
+      "bersama"
+    ]
+  },
+  {
+    "id": "439",
+    "hanzi": "一些",
+    "pinyin": "yì xiē",
+    "translations": [
+      "beberapa"
+    ]
+  },
+  {
+    "id": "44",
+    "hanzi": "车上",
+    "pinyin": "chē shang",
+    "translations": [
+      "di dalam mobil"
+    ]
+  },
+  {
+    "id": "440",
+    "hanzi": "用",
+    "pinyin": "yòng",
+    "translations": [
+      "menggunakan"
+    ]
+  },
+  {
+    "id": "441",
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "translations": [
+      "memiliki"
+    ]
+  },
+  {
+    "id": "442",
+    "hanzi": "有的",
+    "pinyin": "yǒu de",
+    "translations": [
+      "beberapa"
+    ]
+  },
+  {
+    "id": "443",
+    "hanzi": "有名",
+    "pinyin": "yǒu míng",
+    "translations": [
+      "terkenal"
+    ]
+  },
+  {
+    "id": "444",
+    "hanzi": "有时候",
+    "pinyin": "yǒu shí hou",
+    "translations": [
+      "Kadang-kadang"
+    ]
+  },
+  {
+    "id": "445",
+    "hanzi": "有些",
+    "pinyin": "yǒu xiē",
+    "translations": [
+      "beberapa"
+    ]
+  },
+  {
+    "id": "446",
+    "hanzi": "有用",
+    "pinyin": "yǒu yòng",
+    "translations": [
+      "berguna"
+    ]
+  },
+  {
+    "id": "447",
+    "hanzi": "右",
+    "pinyin": "yòu",
+    "translations": [
+      "Kanan"
+    ]
+  },
+  {
+    "id": "448",
+    "hanzi": "右边",
+    "pinyin": "yòu bian",
+    "translations": [
+      "sisi kanan"
+    ]
+  },
+  {
+    "id": "449",
+    "hanzi": "雨",
+    "pinyin": "yǔ",
+    "translations": [
+      "hujan"
+    ]
+  },
+  {
+    "id": "45",
+    "hanzi": "车站",
+    "pinyin": "chē zhàn",
+    "translations": [
+      "stasiun"
+    ]
+  },
+  {
+    "id": "450",
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "translations": [
+      "China Yuan"
+    ]
+  },
+  {
+    "id": "451",
+    "hanzi": "远",
+    "pinyin": "yuǎn",
+    "translations": [
+      "jauh"
+    ]
+  },
+  {
+    "id": "452",
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "translations": [
+      "bulan",
+      "bulan"
+    ]
+  },
+  {
+    "id": "453",
+    "hanzi": "再",
+    "pinyin": "zài",
+    "translations": [
+      "lagi"
+    ]
+  },
+  {
+    "id": "454",
+    "hanzi": "再见",
+    "pinyin": "zài jiàn",
+    "translations": [
+      "selamat tinggal"
+    ]
+  },
+  {
+    "id": "455",
+    "hanzi": "在",
+    "pinyin": "zài",
+    "translations": [
+      "di dalam"
+    ]
+  },
+  {
+    "id": "456",
+    "hanzi": "在家",
+    "pinyin": "zài jiā",
+    "translations": [
+      "di rumah"
+    ]
+  },
+  {
+    "id": "457",
+    "hanzi": "早",
+    "pinyin": "zǎo",
+    "translations": [
+      "lebih awal"
+    ]
+  },
+  {
+    "id": "458",
+    "hanzi": "早饭",
+    "pinyin": "zǎo fàn",
+    "translations": [
+      "sarapan"
+    ]
+  },
+  {
+    "id": "459",
+    "hanzi": "早上",
+    "pinyin": "zǎo shang",
+    "translations": [
+      "Pagi"
+    ]
+  },
+  {
+    "id": "46",
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "translations": [
+      "makan"
+    ]
+  },
+  {
+    "id": "460",
+    "hanzi": "怎么",
+    "pinyin": "zěn me",
+    "translations": [
+      "Bagaimana"
+    ]
+  },
+  {
+    "id": "461",
+    "hanzi": "站",
+    "pinyin": "zhàn",
+    "translations": [
+      "stasiun"
+    ]
+  },
+  {
+    "id": "462",
+    "hanzi": "找",
+    "pinyin": "zhǎo",
+    "translations": [
+      "mencari"
+    ]
+  },
+  {
+    "id": "463",
+    "hanzi": "找到",
+    "pinyin": "zhǎo dào",
+    "translations": [
+      "menemukan"
+    ]
+  },
+  {
+    "id": "464",
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "translations": [
+      "ini"
+    ]
+  },
+  {
+    "id": "465",
+    "hanzi": "这边",
+    "pinyin": "zhè biān",
+    "translations": [
+      "Di Sini"
+    ]
+  },
+  {
+    "id": "466",
+    "hanzi": "这里",
+    "pinyin": "zhè lǐ",
+    "translations": [
+      "Di Sini"
+    ]
+  },
+  {
+    "id": "467",
+    "hanzi": "这儿",
+    "pinyin": "zhèr",
+    "translations": [
+      "Di Sini"
+    ]
+  },
+  {
+    "id": "468",
+    "hanzi": "这些",
+    "pinyin": "zhè xiē",
+    "translations": [
+      "ini"
+    ]
+  },
+  {
+    "id": "469",
+    "hanzi": "着",
+    "pinyin": "zhe",
+    "translations": [
+      "dengan"
+    ]
+  },
+  {
+    "id": "47",
+    "hanzi": "吃饭",
+    "pinyin": "chī fàn",
+    "translations": [
+      "makan"
+    ]
+  },
+  {
+    "id": "470",
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "translations": [
+      "BENAR",
+      "sangat"
+    ]
+  },
+  {
+    "id": "471",
+    "hanzi": "真的",
+    "pinyin": "zhēn de",
+    "translations": [
+      "Sungguh"
+    ]
+  },
+  {
+    "id": "472",
+    "hanzi": "正",
+    "pinyin": "zhèng",
+    "translations": [
+      "makhluk"
+    ]
+  },
+  {
+    "id": "473",
+    "hanzi": "正在",
+    "pinyin": "zhèng zài",
+    "translations": [
+      "makhluk"
+    ]
+  },
+  {
+    "id": "474",
+    "hanzi": "知道",
+    "pinyin": "zhī dào",
+    "translations": [
+      "tahu"
+    ]
+  },
+  {
+    "id": "475",
+    "hanzi": "知识",
+    "pinyin": "zhī shi",
+    "translations": [
+      "pengetahuan"
+    ]
+  },
+  {
+    "id": "476",
+    "hanzi": "中",
+    "pinyin": "zhōng",
+    "translations": [
+      "tengah"
+    ]
+  },
+  {
+    "id": "477",
+    "hanzi": "中国",
+    "pinyin": "Zhōng guó",
+    "translations": [
+      "Cina"
+    ]
+  },
+  {
+    "id": "478",
+    "hanzi": "中间",
+    "pinyin": "zhōng jiān",
+    "translations": [
+      "tengah"
+    ]
+  },
+  {
+    "id": "479",
+    "hanzi": "中文",
+    "pinyin": "Zhōng wén",
+    "translations": [
+      "Cina"
+    ]
+  },
+  {
+    "id": "48",
+    "hanzi": "出",
+    "pinyin": "chū",
+    "translations": [
+      "keluar"
+    ]
+  },
+  {
+    "id": "480",
+    "hanzi": "中午",
+    "pinyin": "zhōng wǔ",
+    "translations": [
+      "siang"
+    ]
+  },
+  {
+    "id": "481",
+    "hanzi": "中学",
+    "pinyin": "zhōng xué",
+    "translations": [
+      "sekolah Menengah"
+    ]
+  },
+  {
+    "id": "482",
+    "hanzi": "中学生",
+    "pinyin": "zhōng xué shēng",
+    "translations": [
+      "Siswa Sekolah Menengah"
+    ]
+  },
+  {
+    "id": "483",
+    "hanzi": "重",
+    "pinyin": "zhòng",
+    "translations": [
+      "berat"
+    ]
+  },
+  {
+    "id": "484",
+    "hanzi": "重要",
+    "pinyin": "zhòng yào",
+    "translations": [
+      "penting"
+    ]
+  },
+  {
+    "id": "485",
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "translations": [
+      "hidup"
+    ]
+  },
+  {
+    "id": "486",
+    "hanzi": "准备",
+    "pinyin": "zhǔn bèi",
+    "translations": [
+      "mempersiapkan",
+      "rencana"
+    ]
+  },
+  {
+    "id": "487",
+    "hanzi": "桌子",
+    "pinyin": "zhuō zi",
+    "translations": [
+      "meja"
+    ]
+  },
+  {
+    "id": "488",
+    "hanzi": "字",
+    "pinyin": "zì",
+    "translations": [
+      "kata"
+    ]
+  },
+  {
+    "id": "489",
+    "hanzi": "子",
+    "pinyin": "zi",
+    "translations": [
+      "(Sufiks kata benda)"
+    ]
+  },
+  {
+    "id": "49",
+    "hanzi": "出来",
+    "pinyin": "chū lái",
+    "translations": [
+      "keluar"
+    ]
+  },
+  {
+    "id": "490",
+    "hanzi": "走",
+    "pinyin": "zǒu",
+    "translations": [
+      "berjalan",
+      "pergi"
+    ]
+  },
+  {
+    "id": "491",
+    "hanzi": "走路",
+    "pinyin": "zǒu lù",
+    "translations": [
+      "berjalan"
+    ]
+  },
+  {
+    "id": "492",
+    "hanzi": "最",
+    "pinyin": "zuì",
+    "translations": [
+      "paling"
+    ]
+  },
+  {
+    "id": "493",
+    "hanzi": "最好",
+    "pinyin": "zuì hǎo",
+    "translations": [
+      "terbaik"
+    ]
+  },
+  {
+    "id": "494",
+    "hanzi": "最后",
+    "pinyin": "zuì hòu",
+    "translations": [
+      "akhirnya"
+    ]
+  },
+  {
+    "id": "495",
+    "hanzi": "昨天",
+    "pinyin": "zuó tiān",
+    "translations": [
+      "Kemarin"
+    ]
+  },
+  {
+    "id": "496",
+    "hanzi": "左",
+    "pinyin": "zuǒ",
+    "translations": [
+      "kiri"
+    ]
+  },
+  {
+    "id": "497",
+    "hanzi": "左边",
+    "pinyin": "zuǒ biān",
+    "translations": [
+      "sisi kiri"
+    ]
+  },
+  {
+    "id": "498",
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "translations": [
+      "duduk"
+    ]
+  },
+  {
+    "id": "499",
+    "hanzi": "坐下",
+    "pinyin": "zuò xia",
+    "translations": [
+      "duduk"
+    ]
+  },
+  {
+    "id": "5",
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "translations": [
+      "(Partikel yang digunakan di akhir kalimat untuk menunjukkan saran atau instruksi)"
+    ]
+  },
+  {
+    "id": "50",
+    "hanzi": "出去",
+    "pinyin": "chū qù",
+    "translations": [
+      "keluar"
+    ]
+  },
+  {
+    "id": "500",
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "translations": [
+      "Mengerjakan"
+    ]
+  },
+  {
+    "id": "51",
+    "hanzi": "穿",
+    "pinyin": "chuān",
+    "translations": [
+      "memakai"
+    ]
+  },
+  {
+    "id": "52",
+    "hanzi": "床",
+    "pinyin": "chuáng",
+    "translations": [
+      "tempat tidur"
+    ]
+  },
+  {
+    "id": "53",
+    "hanzi": "次",
+    "pinyin": "cì",
+    "translations": [
+      "waktu"
+    ]
+  },
+  {
+    "id": "54",
+    "hanzi": "从",
+    "pinyin": "cóng",
+    "translations": [
+      "dari"
+    ]
+  },
+  {
+    "id": "55",
+    "hanzi": "错",
+    "pinyin": "cuò",
+    "translations": [
+      "salah"
+    ]
+  },
+  {
+    "id": "56",
+    "hanzi": "打",
+    "pinyin": "dǎ",
+    "translations": [
+      "memukul"
+    ]
+  },
+  {
+    "id": "57",
+    "hanzi": "打车",
+    "pinyin": "dǎ chē",
+    "translations": [
+      "naik taksi"
+    ]
+  },
+  {
+    "id": "58",
+    "hanzi": "打电话",
+    "pinyin": "dǎ diàn huà",
+    "translations": [
+      "menelpon"
+    ]
+  },
+  {
+    "id": "59",
+    "hanzi": "打开",
+    "pinyin": "dǎ kāi",
+    "translations": [
+      "membuka",
+      "menyalakan"
+    ]
+  },
+  {
+    "id": "6",
+    "hanzi": "白",
+    "pinyin": "bái",
+    "translations": [
+      "putih"
+    ]
+  },
+  {
+    "id": "60",
+    "hanzi": "打球",
+    "pinyin": "dǎ qiú",
+    "translations": [
+      "main bola"
+    ]
+  },
+  {
+    "id": "61",
+    "hanzi": "大",
+    "pinyin": "dà",
+    "translations": [
+      "besar"
+    ]
+  },
+  {
+    "id": "62",
+    "hanzi": "大学",
+    "pinyin": "dà xué",
+    "translations": [
+      "Universitas"
+    ]
+  },
+  {
+    "id": "63",
+    "hanzi": "大学生",
+    "pinyin": "dà xué shēng",
+    "translations": [
+      "mahasiswa"
+    ]
+  },
+  {
+    "id": "64",
+    "hanzi": "到",
+    "pinyin": "dào",
+    "translations": [
+      "ke",
+      "tiba",
+      "sampai"
+    ]
+  },
+  {
+    "id": "65",
+    "hanzi": "得到",
+    "pinyin": "dé dào",
+    "translations": [
+      "mendapatkan",
+      "mendapatkan"
+    ]
+  },
+  {
+    "id": "66",
+    "hanzi": "地",
+    "pinyin": "de",
+    "translations": [
+      "(Partikel yang digunakan untuk menjelaskan kata kerja)"
+    ]
+  },
+  {
+    "id": "67",
+    "hanzi": "的",
+    "pinyin": "de",
+    "translations": [
+      "(Partikel yang digunakan di belakang atributif)"
+    ]
+  },
+  {
+    "id": "68",
+    "hanzi": "等",
+    "pinyin": "děng",
+    "translations": [
+      "Tunggu"
+    ]
+  },
+  {
+    "id": "69",
+    "hanzi": "地",
+    "pinyin": "dì",
+    "translations": [
+      "tanah"
+    ]
+  },
+  {
+    "id": "7",
+    "hanzi": "白天",
+    "pinyin": "bái tiān",
+    "translations": [
+      "siang hari"
+    ]
+  },
+  {
+    "id": "70",
+    "hanzi": "地点",
+    "pinyin": "dì diǎn",
+    "translations": [
+      "Lokasi"
+    ]
+  },
+  {
+    "id": "71",
+    "hanzi": "地方",
+    "pinyin": "dì fang",
+    "translations": [
+      "tempat"
+    ]
+  },
+  {
+    "id": "72",
+    "hanzi": "地上",
+    "pinyin": "dì shang",
+    "translations": [
+      "di tanah"
+    ]
+  },
+  {
+    "id": "73",
+    "hanzi": "地图",
+    "pinyin": "dìtú",
+    "translations": [
+      "peta"
+    ]
+  },
+  {
+    "id": "74",
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "translations": [
+      "adik laki-laki"
+    ]
+  },
+  {
+    "id": "75",
+    "hanzi": "第二",
+    "pinyin": "dì èr",
+    "translations": [
+      "Kedua"
+    ]
+  },
+  {
+    "id": "76",
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "translations": [
+      "jam",
+      "titik"
+    ]
+  },
+  {
+    "id": "77",
+    "hanzi": "电",
+    "pinyin": "diàn",
+    "translations": [
+      "listrik"
+    ]
+  },
+  {
+    "id": "78",
+    "hanzi": "电话",
+    "pinyin": "diàn huà",
+    "translations": [
+      "telepon"
+    ]
+  },
+  {
+    "id": "79",
+    "hanzi": "电脑",
+    "pinyin": "diàn nǎo",
+    "translations": [
+      "komputer"
+    ]
+  },
+  {
+    "id": "8",
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "translations": [
+      "ratus"
+    ]
+  },
+  {
+    "id": "80",
+    "hanzi": "电视",
+    "pinyin": "diàn shì",
+    "translations": [
+      "televisi"
+    ]
+  },
+  {
+    "id": "81",
+    "hanzi": "电视机",
+    "pinyin": "diàn shì jī",
+    "translations": [
+      "set TV"
+    ]
+  },
+  {
+    "id": "82",
+    "hanzi": "电影",
+    "pinyin": "diàn yǐng",
+    "translations": [
+      "film"
+    ]
+  },
+  {
+    "id": "83",
+    "hanzi": "电影院",
+    "pinyin": "diàn yǐng yuàn",
+    "translations": [
+      "bioskop"
+    ]
+  },
+  {
+    "id": "84",
+    "hanzi": "东",
+    "pinyin": "dōng",
+    "translations": [
+      "timur"
+    ]
+  },
+  {
+    "id": "85",
+    "hanzi": "东边",
+    "pinyin": "dōng bian",
+    "translations": [
+      "bagian timur"
+    ]
+  },
+  {
+    "id": "86",
+    "hanzi": "东西",
+    "pinyin": "dōng xi",
+    "translations": [
+      "obyek",
+      "hal-hal"
+    ]
+  },
+  {
+    "id": "87",
+    "hanzi": "动",
+    "pinyin": "dòng",
+    "translations": [
+      "bergerak"
+    ]
+  },
+  {
+    "id": "88",
+    "hanzi": "动作",
+    "pinyin": "dòng zuò",
+    "translations": [
+      "tindakan"
+    ]
+  },
+  {
+    "id": "89",
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "translations": [
+      "semua"
+    ]
+  },
+  {
+    "id": "9",
+    "hanzi": "班",
+    "pinyin": "bān",
+    "translations": [
+      "kelas"
+    ]
+  },
+  {
+    "id": "90",
+    "hanzi": "读",
+    "pinyin": "dú",
+    "translations": [
+      "membaca"
+    ]
+  },
+  {
+    "id": "91",
+    "hanzi": "读书",
+    "pinyin": "dú shū",
+    "translations": [
+      "Untuk membaca sebuah buku"
+    ]
+  },
+  {
+    "id": "92",
+    "hanzi": "对",
+    "pinyin": "duì",
+    "translations": [
+      "benar"
+    ]
+  },
+  {
+    "id": "93",
+    "hanzi": "对不起",
+    "pinyin": "duì bu qǐ",
+    "translations": [
+      "Maaf"
+    ]
+  },
+  {
+    "id": "94",
+    "hanzi": "多",
+    "pinyin": "duō",
+    "translations": [
+      "banyak"
+    ]
+  },
+  {
+    "id": "95",
+    "hanzi": "多少",
+    "pinyin": "duō shao",
+    "translations": [
+      "berapa banyak"
+    ]
+  },
+  {
+    "id": "96",
+    "hanzi": "饿",
+    "pinyin": "è",
+    "translations": [
+      "lapar"
+    ]
+  },
+  {
+    "id": "97",
+    "hanzi": "儿子",
+    "pinyin": "ér zi",
+    "translations": [
+      "putra"
+    ]
+  },
+  {
+    "id": "98",
+    "hanzi": "二",
+    "pinyin": "èr",
+    "translations": [
+      "dua"
+    ]
+  },
+  {
+    "id": "99",
+    "hanzi": "饭",
+    "pinyin": "fàn",
+    "translations": [
+      "beras"
+    ]
+  }
+]

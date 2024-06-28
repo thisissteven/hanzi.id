@@ -7,6 +7,11 @@ const withPWA = withPWAInit({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  i18n: {
+    locales: ["en", "id"],
+    defaultLocale: "en",
+    localeDetection: false,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
