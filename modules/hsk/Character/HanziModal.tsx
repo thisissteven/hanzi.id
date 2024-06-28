@@ -1,9 +1,8 @@
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import * as React from "react";
-import { LoadingBar, HSKLinkButton, MarkAsCompleted, preloadHanziDetails, Drawer, url } from "@/components";
+import { LoadingBar, HSKButton, MarkAsCompleted, preloadHanziDetails, Drawer, url } from "@/components";
 import IdHanziMap from "@/data/id-hanzi-map.json";
-import { BASE_URL } from "@/pages/_app";
 import { HanziApiResponse } from "./types";
 import { HanziDetails } from "./HanziDetails";
 import { useCompletedCharacters, useCompletedCharactersActions } from "@/store";
@@ -119,30 +118,34 @@ export function HanziModal() {
         />
 
         <div className="absolute flex gap-2 bottom-0 left-0 right-0 px-3 pb-3 sm:px-4 sm:pb-4">
-          <HSKLinkButton
-            prefetch={false}
+          <HSKButton
             onMouseEnter={() => {
               if (previousHanzi) preloadHanziDetails(previousHanzi);
             }}
             disabled={!previousHanzi}
             className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"
-            href={`/hsk/${router.query.level}?hanzi=${previousHanzi}&page=${router.query.page}`}
-            shallow
+            onClick={() => {
+              router.replace(`/hsk/${router.query.level}?hanzi=${previousHanzi}&page=${router.query.page}`, undefined, {
+                shallow: true,
+              });
+            }}
           >
             &#x2190; {previousHanzi}
-          </HSKLinkButton>
-          <HSKLinkButton
-            prefetch={false}
+          </HSKButton>
+          <HSKButton
             onMouseEnter={() => {
               if (nextHanzi) preloadHanziDetails(nextHanzi);
             }}
             disabled={!nextHanzi}
             className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"
-            href={`/hsk/${router.query.level}?hanzi=${nextHanzi}&page=${router.query.page}`}
-            shallow
+            onClick={() => {
+              router.replace(`/hsk/${router.query.level}?hanzi=${nextHanzi}&page=${router.query.page}`, undefined, {
+                shallow: true,
+              });
+            }}
           >
             {nextHanzi} &#x2192;
-          </HSKLinkButton>
+          </HSKButton>
         </div>
       </Drawer.Content>
     </Drawer>
