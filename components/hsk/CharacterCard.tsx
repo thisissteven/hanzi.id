@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react";
 import { preload } from "swr";
 
-export const url = (hanzi: string) => `https://thisissteven.github.io/character/${hanzi}.json`;
+export const url = (hanzi: string) => `https://thisissteven.github.io/character/en/${hanzi}.json`;
 
 export async function preloadHanziDetails(hanzi: string) {
   await preload(url(hanzi), async (url) => {
