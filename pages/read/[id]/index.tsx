@@ -101,7 +101,10 @@ function BookDetails() {
                     ?.chapters.find((localChapter) => localChapter.chapterId === chapter.id);
 
                   const lastSentenceIndex = lastReadChapter?.lastSentenceIndex ?? "0";
-                  const readingProgress = ((parseInt(lastSentenceIndex) + 1) / chapter.totalSentences) * 100;
+                  const isNotRead = parseInt(lastSentenceIndex) === 0;
+                  const readingProgress = isNotRead
+                    ? 0
+                    : ((parseInt(lastSentenceIndex) + 1) / chapter.totalSentences) * 100;
 
                   const continueReading = readingProgress > 1 && parseInt(lastSentenceIndex) > 0;
 

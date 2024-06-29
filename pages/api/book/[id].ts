@@ -34,7 +34,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   await requestHandler(req, res, {
     allowedRoles: {
       GET: ["PUBLIC"],
-      //   DELETE: ["PUBLIC"],
+      // DELETE: ["PUBLIC"],
     },
 
     GET: async () => {
