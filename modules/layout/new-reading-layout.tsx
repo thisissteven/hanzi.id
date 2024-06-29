@@ -21,18 +21,18 @@ export const defaultValues = {
 };
 
 const dummyDefaultValues = {
-  title: "放学后 (Keigo Higashino)",
+  title: "《假面饭店》东野圭吾／陈系美译",
   description:
-    'In "After School" by Keigo Higashino, a high school teacher becomes embroiled in a complex mystery involving his old friends, now adults, as they uncover secrets and face the consequences of their past.',
+    "During an investigation of a serial killer in Tokyo, police are led to a hotel that may be where the next murder will take place. Detective Nitta Kosuke goes undercover and begins working at the front desk of the hotel. Yamagishi Naomi works at the front desk of the hotel.",
   image: {
-    height: 640,
+    height: 357,
     mediumUrl:
       "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_184,w_184/dpr_2.0/v1719325046/uploads/focus-web-app/S85ad64401e7e464397194b5b4127bb949.jpg_640x640Q90.jpg__f8mfk9.webp",
     smallUrl:
       "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,h_92,w_92/dpr_2.0/v1719325046/uploads/focus-web-app/S85ad64401e7e464397194b5b4127bb949.jpg_640x640Q90.jpg__f8mfk9.webp",
     source:
       "https://res.cloudinary.com/drjgq6umm/image/upload/c_limit,w_430/dpr_2.0/v1719325046/uploads/focus-web-app/S85ad64401e7e464397194b5b4127bb949.jpg_640x640Q90.jpg__f8mfk9.webp",
-    width: 640,
+    width: 500,
   },
   chapters: [
     {

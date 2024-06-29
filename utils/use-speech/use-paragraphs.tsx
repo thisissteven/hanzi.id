@@ -16,6 +16,12 @@ export const dash = "—";
 export const hyphen = "-";
 export const newline = "\n";
 
+// const startQuote = "“";
+// const endQuote = "”";
+
+const startQuote = "「";
+const endQuote = "」";
+
 export const commaRegexp = /,|，/;
 export const periodRegexp = /\.|。/;
 export const ellipsisRegexp = /…/;
@@ -56,13 +62,13 @@ export function getParagraphs(text: string) {
   const locale = franc(sections[0] ?? "");
 
   const period = ["cmn", "und"].includes(locale) ? "。" : ".";
-  const periodConversation = ["cmn", "und"].includes(locale) ? "。”" : ".";
+  const periodConversation = ["cmn", "und"].includes(locale) ? `。${endQuote}` : ".";
 
   const questionMark = ["cmn", "und"].includes(locale) ? "？" : "?";
-  const questionMarkConversation = ["cmn", "und"].includes(locale) ? "？”" : "?";
+  const questionMarkConversation = ["cmn", "und"].includes(locale) ? `？${endQuote}` : "?";
 
   const exclamationMark = ["cmn", "und"].includes(locale) ? "！" : "!";
-  const exclamationMarkConversation = ["cmn", "und"].includes(locale) ? "！”" : "!";
+  const exclamationMarkConversation = ["cmn", "und"].includes(locale) ? `！${endQuote}` : "!";
 
   let paragraphs = sections
     .map((paragraph) => paragraph.split(periodConversation))
@@ -137,28 +143,28 @@ function splitByQuotation(paragraphs: string[][]) {
       let insideQuotes = false;
 
       for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i] === "“") {
+        if (sentence[i] === startQuote) {
           if (insideQuotes) {
             // If already inside quotes, push the current part
             parts.push(currentPart.trim());
-            currentPart = "“"; // Start new part with opening quote
+            currentPart = startQuote; // Start new part with opening quote
           } else {
             // Start a new quoted section
             insideQuotes = true;
-            currentPart += "“";
+            currentPart += startQuote;
           }
-        } else if (sentence[i] === "”") {
+        } else if (sentence[i] === endQuote) {
           if (insideQuotes) {
-            currentPart += "”"; // Add closing quote to current part
+            currentPart += endQuote; // Add closing quote to current part
             // Check next character for consecutive opening quote
-            if (i < sentence.length - 1 && sentence[i + 1] === "“") {
+            if (i < sentence.length - 1 && sentence[i + 1] === startQuote) {
               // End the current part and push it
               parts.push(currentPart.trim());
               currentPart = ""; // Reset current part for next quote
               insideQuotes = false; // Exit quoted section
             }
           } else {
-            currentPart += "”"; // Outside quotes, just add to current part
+            currentPart += endQuote; // Outside quotes, just add to current part
           }
         } else {
           currentPart += sentence[i]; // Add non-quote characters to current part
@@ -179,7 +185,7 @@ function splitByPunctuation(paragraphs: string[][], punctuation: string) {
   return paragraphs.map((paragraph) => {
     return paragraph.flatMap((sentence) => {
       // Check if the sentence is wrapped with “ and ”
-      if (sentence.startsWith("“") && sentence.endsWith("”")) {
+      if (sentence.startsWith(startQuote) && sentence.endsWith(endQuote)) {
         return [sentence]; // Return the entire sentence as-is
       }
 
@@ -189,10 +195,10 @@ function splitByPunctuation(paragraphs: string[][], punctuation: string) {
       let currentPart = "";
 
       for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i] === "“") {
+        if (sentence[i] === startQuote) {
           insideQuotes = true;
           currentPart += sentence[i];
-        } else if (sentence[i] === "”") {
+        } else if (sentence[i] === endQuote) {
           insideQuotes = false;
           currentPart += sentence[i];
         } else if (insideQuotes) {
@@ -225,9 +231,9 @@ function adjustParagraph(paragraphs: string[][]) {
       for (let i = 0; i < paragraph.length; i++) {
         let current = paragraph[i];
 
-        if (current === "”" && i > 0) {
+        if (current === endQuote && i > 0) {
           adjustedParagraph[adjustedParagraph.length - 1] += current;
-        } else if (current.endsWith("”")) {
+        } else if (current.endsWith(endQuote)) {
           adjustedParagraph[adjustedParagraph.length - 1] += current;
         } else {
           adjustedParagraph.push(current);
