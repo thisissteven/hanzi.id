@@ -1,6 +1,14 @@
 import React from "react";
 import { Button } from "./buttons";
-import { FilePlus2Icon, GraduationCapIcon, LanguagesIcon, LibraryBigIcon, TelescopeIcon } from "lucide-react";
+import {
+  FilePlus2Icon,
+  GraduationCapIcon,
+  LanguagesIcon,
+  LibraryBigIcon,
+  LightbulbIcon,
+  SendIcon,
+  TelescopeIcon,
+} from "lucide-react";
 import { ChangeLocaleButton, Divider } from "@/components";
 import { AuthButton } from "./auth-button";
 import { useLocale } from "@/locales/use-locale";
@@ -38,13 +46,9 @@ export function HomeTodo() {
         {isAdmin && (
           <Button
             path="/new"
-            className="hover:bg-yellow-500/10"
+            className="hover:bg-amber-500/10"
             icon={
-              <FilePlus2Icon
-                size={48}
-                strokeWidth={1.5}
-                className="shrink-0 duration-200 group-hover:text-yellow-500"
-              />
+              <FilePlus2Icon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-amber-500" />
             }
             title="New Reading"
             description="Upload PDFs, texts or images to practice reading."
@@ -75,13 +79,15 @@ export function HomeTodo() {
           description={t.home.flashcards.description}
         />
 
-        {/* <Button
-          path="/get-started"
-          className="hover:bg-orange-500/10"
-          icon={<TelescopeIcon size={48} strokeWidth={1.5} className="duration-200 group-hover:text-orange-500" />}
-          title="Search ⌘K"
-          description="Quickly browse for Chinese characters and phrases."
-        /> */}
+        <Button
+          path="/suggestions"
+          className="hover:bg-yellow-500/10"
+          icon={
+            <LightbulbIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-yellow-500" />
+          }
+          title={t.home.suggestions.title}
+          description={t.home.suggestions.description}
+        />
       </div>
     </React.Fragment>
   );

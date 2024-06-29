@@ -60,7 +60,7 @@ export function LastViewedHanzi() {
     return () => {
       clearTimeout(timeout);
     };
-  }, [lastViewedHanzi, router]);
+  }, [lastViewedHanzi, router, text.lastVisited]);
 
   return null;
 }

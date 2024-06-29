@@ -147,3 +147,13 @@ model Reading {
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
+
+model Suggestions {
+  id String @id @default(cuid())
+
+  text     String
+  category Int    @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

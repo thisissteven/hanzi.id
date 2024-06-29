@@ -14,8 +14,24 @@
     "flashcards": {
       "title": "Kartu Pengingat",
       "description": "Kata dan frasa yang disimpan untuk ulasan cepat."
+    },
+    "suggestions": {
+      "title": "Saran",
+      "description": "Fitur baru, perbaikan, atau buku yang ingin Anda tambahkan ke situs."
     }
   },
   "startReading": "Mulai Membaca",
-  "continueReading": "Lanjutkan Membaca"
+  "continueReading": "Lanjutkan Membaca",
+  "suggestions": {
+    "buttons": ["Fitur baru", "Saran perbaikan", "Tambah buku"],
+    "successToast": "Pesan berhasil dikirim!",
+    "errorToast": "Terjadi kesalahan.",
+    "placeholders": [
+      "Deskripsikan fitur baru yang Anda inginkan...",
+      "Sampaikan saran perbaikan Anda...",
+      "Apa buku yang Anda ingin tambahkan? Sertakan juga link nya apabila tersedia :D"
+    ],
+    "submitLoading": "Mengirim...",
+    "submit": "Kirim"
+  }
 }

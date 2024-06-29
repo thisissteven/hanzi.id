@@ -75,7 +75,9 @@ export function HanziModal() {
       onOpenChange={(open) => {
         if (!open) {
           if (Boolean(hanzi)) {
-            router.back();
+            router.replace(`/hsk/${router.query.level}?page=1`, undefined, {
+              shallow: true,
+            });
           }
           stopAudio();
         } else {

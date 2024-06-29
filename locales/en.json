@@ -14,8 +14,24 @@
     "flashcards": {
       "title": "Flashcards",
       "description": "Your saved words and phrases for quick review."
+    },
+    "suggestions": {
+      "title": "Suggestions",
+      "description": "A new feature, improvements, or books you would like to be added to the site."
     }
   },
   "startReading": "Start Reading",
-  "continueReading": "Continue Reading"
+  "continueReading": "Continue Reading",
+  "suggestions": {
+    "buttons": ["New feature", "Improvements", "Request a book"],
+    "successToast": "Message sent successfully!",
+    "errorToast": "An error occurred.",
+    "placeholders": [
+      "Describe the new feature you want...",
+      "Your suggestions for improvements...",
+      "What book would you like to add? Include the link if available :D"
+    ],
+    "submitLoading": "Sending...",
+    "submit": "Send"
+  }
 }

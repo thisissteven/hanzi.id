@@ -1,7 +1,4 @@
-import { cn } from "@/utils";
-import clsx from "clsx";
 import React from "react";
-import { useFormContext, useWatch } from "react-hook-form";
 
 type TextareaProps = {
   onEscape?: (e: KeyboardEvent) => void;
@@ -45,10 +42,7 @@ export function Textarea({
           textAreaRef.current.style.height = minHeight;
           textAreaRef.current.style.height = `${textAreaRef.current.scrollHeight}px`;
         }}
-        className={cn(
-          "bg-transparent placeholder:text-span resize-none focus:outline-none font-light text-soft-primary w-full",
-          className
-        )}
+        className="relative bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 transition-shadow duration-200 text-secondary focus:text-white placeholder:text-secondary/50 focus:outline-none w-full h-[8.5rem] peer resize-none scrollbar-none"
         {...rest}
       />
     </div>
