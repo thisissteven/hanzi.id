@@ -49,14 +49,21 @@ export default function Read() {
   });
 
   React.useEffect(() => {
-    if (bookId && chapterId && currentSentenceIdx > 0 && playbackState === "playing") {
+    if (bookId && chapterId && currentSentenceIdx > 0) {
       updateLastRead({
         bookId,
         chapterId,
         lastSentenceIndex: currentSentenceIdx.toString(),
       });
     }
-  }, [bookId, chapterId, currentSentenceIdx, updateLastRead, playbackState]);
+    if (bookId && chapterId && sentenceIndex && parseInt(sentenceIndex) > 0) {
+      updateLastRead({
+        bookId,
+        chapterId,
+        lastSentenceIndex: sentenceIndex,
+      });
+    }
+  }, [bookId, chapterId, currentSentenceIdx, sentenceIndex, updateLastRead]);
 
   const { t } = useLocale();
 

@@ -1,5 +1,5205 @@
 [
   {
+    "id": "9457",
+    "hanzi": "谈论",
+    "pinyin": "tán lùn",
+    "translations": [
+      "mendiskusikan",
+      "Berbicara tentang"
+    ]
+  },
+  {
+    "id": "9458",
+    "hanzi": "谈起",
+    "pinyin": "tán qǐ",
+    "translations": [
+      "Sebutkan, bicarakan"
+    ]
+  },
+  {
+    "id": "9459",
+    "hanzi": "弹性",
+    "pinyin": "tán xìng",
+    "translations": [
+      "fleksibilitas",
+      "elastisitas"
+    ]
+  },
+  {
+    "id": "9460",
+    "hanzi": "痰",
+    "pinyin": "tán",
+    "translations": [
+      "dahak",
+      "ludah"
+    ]
+  },
+  {
+    "id": "9461",
+    "hanzi": "坦白",
+    "pinyin": "tǎn bái",
+    "translations": [
+      "jujur",
+      "akan datang",
+      "mengakui"
+    ]
+  },
+  {
+    "id": "9462",
+    "hanzi": "坦诚",
+    "pinyin": "tǎn chéng",
+    "translations": [
+      "jujur",
+      "jujur",
+      "berurusan dengan jelas"
+    ]
+  },
+  {
+    "id": "9463",
+    "hanzi": "坦克",
+    "pinyin": "tǎn kè",
+    "translations": [
+      "Tank (Kendaraan Militer) (kata pinjaman)"
+    ]
+  },
+  {
+    "id": "9464",
+    "hanzi": "坦然",
+    "pinyin": "tǎn rán",
+    "translations": [
+      "tenang",
+      "tak terganggu"
+    ]
+  },
+  {
+    "id": "9465",
+    "hanzi": "坦率",
+    "pinyin": "tǎn shuài",
+    "translations": [
+      "Frank (diskusi)",
+      "tumpul",
+      "membuka"
+    ]
+  },
+  {
+    "id": "9466",
+    "hanzi": "毯子",
+    "pinyin": "tǎn zi",
+    "translations": [
+      "selimut"
+    ]
+  },
+  {
+    "id": "9467",
+    "hanzi": "炭",
+    "pinyin": "tàn",
+    "translations": [
+      "arang kayu",
+      "batu bara"
+    ]
+  },
+  {
+    "id": "9468",
+    "hanzi": "探",
+    "pinyin": "tàn",
+    "translations": [
+      "untuk mengeksplorasi",
+      "untuk mencari",
+      "untuk mengintai",
+      "untuk mengunjungi",
+      "untuk meregangkan ke depan"
+    ]
+  },
+  {
+    "id": "9469",
+    "hanzi": "探测",
+    "pinyin": "tàn cè",
+    "translations": [
+      "untuk menyelidik",
+      "untuk mengambil bacaan",
+      "untuk mengeksplorasi",
+      "eksplorasi"
+    ]
+  },
+  {
+    "id": "9470",
+    "hanzi": "探亲",
+    "pinyin": "tàn qīn",
+    "translations": [
+      "pulang untuk mengunjungi keluarga seseorang"
+    ]
+  },
+  {
+    "id": "9471",
+    "hanzi": "探求",
+    "pinyin": "tàn qiú",
+    "translations": [
+      "mencari",
+      "untuk mengejar",
+      "menginvestigasi"
+    ]
+  },
+  {
+    "id": "9472",
+    "hanzi": "探望",
+    "pinyin": "tàn wàng",
+    "translations": [
+      "untuk mengunjungi",
+      "Untuk menelepon SB",
+      "untuk melihat -lihat"
+    ]
+  },
+  {
+    "id": "9473",
+    "hanzi": "探险",
+    "pinyin": "tàn xiǎn",
+    "translations": [
+      "untuk mengeksplorasi",
+      "untuk melakukan ekspedisi",
+      "petualangan"
+    ]
+  },
+  {
+    "id": "9474",
+    "hanzi": "碳",
+    "pinyin": "tàn",
+    "translations": [
+      "Karbon (Kimia)"
+    ]
+  },
+  {
+    "id": "9475",
+    "hanzi": "汤圆",
+    "pinyin": "tāng yuán",
+    "translations": [
+      "Bola rebus tepung beras ketan, dimakan selama festival lentera"
+    ]
+  },
+  {
+    "id": "9476",
+    "hanzi": "堂",
+    "pinyin": "táng",
+    "translations": [
+      "(aula utama",
+      "Kamar besar untuk tujuan tertentu",
+      "Hubungan antara sepupu dll di sisi ayah keluarga",
+      "dari klan yang sama",
+      "classifier untuk kelas, kuliah dll",
+      "classifier untuk set furnitur"
+    ]
+  },
+  {
+    "id": "9477",
+    "hanzi": "糖果",
+    "pinyin": "táng guǒ",
+    "translations": [
+      "Permen"
+    ]
+  },
+  {
+    "id": "9478",
+    "hanzi": "糖尿病",
+    "pinyin": "táng niào bìng",
+    "translations": [
+      "diabetes",
+      "diabetes mellitus"
+    ]
+  },
+  {
+    "id": "9479",
+    "hanzi": "倘若",
+    "pinyin": "tǎng ruò",
+    "translations": [
+      "dengan ketentuan",
+      "seandainya itu",
+      "jika"
+    ]
+  },
+  {
+    "id": "9480",
+    "hanzi": "淌",
+    "pinyin": "tǎng",
+    "translations": [
+      "untuk menetes",
+      "untuk menetes",
+      "untuk menumpahkan (air mata)"
+    ]
+  },
+  {
+    "id": "9481",
+    "hanzi": "烫",
+    "pinyin": "tàng",
+    "translations": [
+      "ke Scald",
+      "membakar (dengan mendidih)",
+      "untuk pucat (memasak)",
+      "untuk memanaskan (sth) di air panas",
+      "untuk perm",
+      "menyetrika",
+      "Panas panas"
+    ]
+  },
+  {
+    "id": "9482",
+    "hanzi": "掏钱",
+    "pinyin": "tāo qián",
+    "translations": [
+      "membayar",
+      "menghabiskan uang",
+      "untuk membayar"
+    ]
+  },
+  {
+    "id": "9483",
+    "hanzi": "滔滔不绝",
+    "pinyin": "tāo tāo bù jué",
+    "translations": [
+      "Torrent yang tidak hajar (idiom)",
+      "berbicara tanpa henti",
+      "Gabbling empat puluh sampai selusin"
+    ]
+  },
+  {
+    "id": "9484",
+    "hanzi": "逃避",
+    "pinyin": "táo bì",
+    "translations": [
+      "untuk melarikan diri",
+      "untuk menghindari",
+      "menghindari",
+      "ke Shirk"
+    ]
+  },
+  {
+    "id": "9485",
+    "hanzi": "逃生",
+    "pinyin": "táo shēng",
+    "translations": [
+      "untuk melarikan diri untuk hidup seseorang"
+    ]
+  },
+  {
+    "id": "9486",
+    "hanzi": "逃亡",
+    "pinyin": "táo wáng",
+    "translations": [
+      "melarikan diri",
+      "penerbangan (dari bahaya)",
+      "buronan"
+    ]
+  },
+  {
+    "id": "9487",
+    "hanzi": "陶瓷",
+    "pinyin": "táo cí",
+    "translations": [
+      "tembikar dan porselen",
+      "keramik"
+    ]
+  },
+  {
+    "id": "9488",
+    "hanzi": "陶冶",
+    "pinyin": "táo yě",
+    "translations": [
+      "Lit. untuk menembakkan pot dan mencium logam",
+      "ara. untuk mendidik"
+    ]
+  },
+  {
+    "id": "9489",
+    "hanzi": "陶醉",
+    "pinyin": "táo zuì",
+    "translations": [
+      "menjadi tergila -gila",
+      "untuk diminum dengan",
+      "untuk terpesona",
+      "untuk bersenang -senang"
+    ]
+  },
+  {
+    "id": "9490",
+    "hanzi": "淘",
+    "pinyin": "táo",
+    "translations": [
+      "untuk mencuci",
+      "untuk membersihkan",
+      "untuk membersihkan",
+      "untuk menghilangkan",
+      "untuk mengeruk"
+    ]
+  },
+  {
+    "id": "9491",
+    "hanzi": "淘气",
+    "pinyin": "táo qì",
+    "translations": [
+      "nakal",
+      "nakal"
+    ]
+  },
+  {
+    "id": "9492",
+    "hanzi": "淘汰",
+    "pinyin": "táo tài",
+    "translations": [
+      "untuk mencuci",
+      "eliminasi (dengan seleksi)",
+      "seleksi alam",
+      "untuk merobohkan (dalam kompetisi)",
+      "untuk mati",
+      "untuk menghapus"
+    ]
+  },
+  {
+    "id": "9493",
+    "hanzi": "讨",
+    "pinyin": "tǎo",
+    "translations": [
+      "untuk mengundang",
+      "untuk memprovokasi",
+      "untuk meminta atau meminta",
+      "untuk mengirim angkatan bersenjata untuk menekan",
+      "untuk mengecam atau mengutuk",
+      "untuk menikah (seorang wanita)",
+      "untuk membahas atau belajar"
+    ]
+  },
+  {
+    "id": "9494",
+    "hanzi": "讨好",
+    "pinyin": "tǎo hǎo",
+    "translations": [
+      "Untuk mendapatkan hasil yang diinginkan",
+      "untuk memenangkan bantuan dengan menjilat di SB",
+      "untuk mengikat bantuan dengan",
+      "hasil yang bermanfaat untuk memberi penghargaan pada tenaga kerja seseorang"
+    ]
+  },
+  {
+    "id": "9495",
+    "hanzi": "讨价还价",
+    "pinyin": "tǎo jià huán jià",
+    "translations": [
+      "untuk menawar harga"
+    ]
+  },
+  {
+    "id": "9496",
+    "hanzi": "讨人喜欢",
+    "pinyin": "tǎo rén xǐ huan",
+    "translations": [
+      "untuk menarik kasih sayang orang",
+      "menawan",
+      "menyenangkan"
+    ]
+  },
+  {
+    "id": "9497",
+    "hanzi": "特产",
+    "pinyin": "tè chǎn",
+    "translations": [
+      "Produk lokal khusus",
+      "(regional) spesialisasi"
+    ]
+  },
+  {
+    "id": "9498",
+    "hanzi": "特长",
+    "pinyin": "tè cháng",
+    "translations": [
+      "kekuatan pribadi",
+      "kemampuan khusus seseorang atau poin kuat"
+    ]
+  },
+  {
+    "id": "9499",
+    "hanzi": "特例",
+    "pinyin": "tè lì",
+    "translations": [
+      "kasus spesial",
+      "contoh terisolasi"
+    ]
+  },
+  {
+    "id": "9500",
+    "hanzi": "特权",
+    "pinyin": "tè quán",
+    "translations": [
+      "hak istimewa",
+      "hak istimewa",
+      "hak istimewa"
+    ]
+  },
+  {
+    "id": "9501",
+    "hanzi": "特邀",
+    "pinyin": "tè yāo",
+    "translations": [
+      "undangan khusus"
+    ]
+  },
+  {
+    "id": "9502",
+    "hanzi": "特制",
+    "pinyin": "tè zhì",
+    "translations": [
+      "spesial",
+      "unik"
+    ]
+  },
+  {
+    "id": "9503",
+    "hanzi": "特质",
+    "pinyin": "tè zhì",
+    "translations": [
+      "ciri",
+      "kualitas khusus"
+    ]
+  },
+  {
+    "id": "9504",
+    "hanzi": "腾",
+    "pinyin": "téng",
+    "translations": [
+      "melambung",
+      "untuk berlari",
+      "untuk berjingkrak",
+      "untuk membalik",
+      "mengosongkan",
+      "untuk membersihkan"
+    ]
+  },
+  {
+    "id": "9505",
+    "hanzi": "藤椅",
+    "pinyin": "téng yǐ",
+    "translations": [
+      "kursi rotan"
+    ]
+  },
+  {
+    "id": "9506",
+    "hanzi": "剔除",
+    "pinyin": "tī chú",
+    "translations": [
+      "menolak",
+      "untuk membuang",
+      "untuk menyingkirkan"
+    ]
+  },
+  {
+    "id": "9507",
+    "hanzi": "梯子",
+    "pinyin": "tī zi",
+    "translations": [
+      "tangga",
+      "anak tangga"
+    ]
+  },
+  {
+    "id": "9508",
+    "hanzi": "提拔",
+    "pinyin": "tí bá",
+    "translations": [
+      "untuk mempromosikan ke pekerjaan yang lebih tinggi",
+      "untuk memilih promosi"
+    ]
+  },
+  {
+    "id": "9509",
+    "hanzi": "提炼",
+    "pinyin": "tí liàn",
+    "translations": [
+      "untuk mengekstrak (bijih, mineral dll)",
+      "untuk memperbaiki",
+      "untuk memurnikan",
+      "proses"
+    ]
+  },
+  {
+    "id": "9510",
+    "hanzi": "提名",
+    "pinyin": "tí míng",
+    "translations": [
+      "untuk mencalonkan"
+    ]
+  },
+  {
+    "id": "9511",
+    "hanzi": "提速",
+    "pinyin": "tí sù",
+    "translations": [
+      "untuk meningkatkan kecepatan jelajah yang ditentukan",
+      "untuk menambah kecepatan",
+      "untuk mempercepat"
+    ]
+  },
+  {
+    "id": "9512",
+    "hanzi": "提心吊胆",
+    "pinyin": "tí xīn diào dǎn",
+    "translations": [
+      "(mengatakan) menjadi sangat takut dan gelisah"
+    ]
+  },
+  {
+    "id": "9513",
+    "hanzi": "提议",
+    "pinyin": "tí yì",
+    "translations": [
+      "usul",
+      "saran",
+      "Melamar",
+      "menyarankan"
+    ]
+  },
+  {
+    "id": "9514",
+    "hanzi": "提早",
+    "pinyin": "tí zǎo",
+    "translations": [
+      "lebih cepat dari jadwal",
+      "lebih cepat dari yang direncanakan",
+      "untuk memajukan (ke waktu sebelumnya)"
+    ]
+  },
+  {
+    "id": "9515",
+    "hanzi": "体谅",
+    "pinyin": "tǐ liàng",
+    "translations": [
+      "untuk berempati",
+      "untuk mengizinkan (untuk sth)",
+      "untuk menunjukkan pemahaman",
+      "untuk menghargai"
+    ]
+  },
+  {
+    "id": "9516",
+    "hanzi": "体面",
+    "pinyin": "tǐ miàn",
+    "translations": [
+      "harga diri",
+      "Wajah (seperti dalam \"Kehilangan Wajah\")",
+      "terhormat",
+      "dapat dikreditkan",
+      "(dari penampilan SB) RESEN",
+      "terhormat"
+    ]
+  },
+  {
+    "id": "9517",
+    "hanzi": "体能",
+    "pinyin": "tǐ néng",
+    "translations": [
+      "kemampuan fisik",
+      "daya tahan"
+    ]
+  },
+  {
+    "id": "9518",
+    "hanzi": "体贴",
+    "pinyin": "tǐ tiē",
+    "translations": [
+      "Pertimbangan (kebutuhan orang lain)"
+    ]
+  },
+  {
+    "id": "9519",
+    "hanzi": "体温",
+    "pinyin": "tǐ wēn",
+    "translations": [
+      "(suhu tubuh"
+    ]
+  },
+  {
+    "id": "9520",
+    "hanzi": "体系",
+    "pinyin": "tǐ xì",
+    "translations": [
+      "sistem",
+      "mempersiapkan"
+    ]
+  },
+  {
+    "id": "9521",
+    "hanzi": "体制",
+    "pinyin": "tǐ zhì",
+    "translations": [
+      "sistem",
+      "organisasi"
+    ]
+  },
+  {
+    "id": "9522",
+    "hanzi": "体质",
+    "pinyin": "tǐ zhì",
+    "translations": [
+      "konstitusi"
+    ]
+  },
+  {
+    "id": "9523",
+    "hanzi": "剃",
+    "pinyin": "tì",
+    "translations": [
+      "mencukur",
+      "untuk gulma"
+    ]
+  },
+  {
+    "id": "9524",
+    "hanzi": "替换",
+    "pinyin": "tì huàn",
+    "translations": [
+      "untuk menukar",
+      "untuk menggantikan",
+      "untuk mengganti",
+      "untuk menukar"
+    ]
+  },
+  {
+    "id": "9525",
+    "hanzi": "替身",
+    "pinyin": "tì shēn",
+    "translations": [
+      "menggantikan",
+      "pengganti",
+      "tubuh ganda",
+      "akrobat",
+      "kambing hitam",
+      "kambing hitam",
+      "untuk berdiri untuk SB lain"
+    ]
+  },
+  {
+    "id": "9526",
+    "hanzi": "天长地久",
+    "pinyin": "tiān cháng dì jiǔ",
+    "translations": [
+      "bertahan sementara dunia bertahan (idiom)",
+      "abadi"
+    ]
+  },
+  {
+    "id": "9527",
+    "hanzi": "天地",
+    "pinyin": "tiān dì",
+    "translations": [
+      "surga dan bumi",
+      "dunia",
+      "cakupan",
+      "bidang aktivitas"
+    ]
+  },
+  {
+    "id": "9528",
+    "hanzi": "天鹅",
+    "pinyin": "tiān é",
+    "translations": [
+      "angsa"
+    ]
+  },
+  {
+    "id": "9529",
+    "hanzi": "天分",
+    "pinyin": "tiān fèn",
+    "translations": [
+      "hadiah alami",
+      "bakat"
+    ]
+  },
+  {
+    "id": "9530",
+    "hanzi": "天赋",
+    "pinyin": "tiān fù",
+    "translations": [
+      "hadiah",
+      "keterampilan bawaan"
+    ]
+  },
+  {
+    "id": "9531",
+    "hanzi": "天经地义",
+    "pinyin": "tiān jīng dì yì",
+    "translations": [
+      "Lit. Hukum Surga dan Prinsip Bumi (Idiom)",
+      "ara. benar dan tepat",
+      "benar dan tidak dapat diubah",
+      "tentu saja"
+    ]
+  },
+  {
+    "id": "9532",
+    "hanzi": "天平",
+    "pinyin": "tiān píng",
+    "translations": [
+      "skala (untuk menimbang barang)"
+    ]
+  },
+  {
+    "id": "9533",
+    "hanzi": "天桥",
+    "pinyin": "tiān qiáo",
+    "translations": [
+      "jalan setapak di atas kepala",
+      "jembatan penyeberangan"
+    ]
+  },
+  {
+    "id": "9534",
+    "hanzi": "天生",
+    "pinyin": "tiān shēng",
+    "translations": [
+      "alam",
+      "watak",
+      "bawaan",
+      "alami"
+    ]
+  },
+  {
+    "id": "9535",
+    "hanzi": "天使",
+    "pinyin": "tiān shǐ",
+    "translations": [
+      "malaikat"
+    ]
+  },
+  {
+    "id": "9536",
+    "hanzi": "天线",
+    "pinyin": "tiān xiàn",
+    "translations": [
+      "antena",
+      "tiang kapal",
+      "Koneksi dengan pejabat tinggi"
+    ]
+  },
+  {
+    "id": "9537",
+    "hanzi": "天性",
+    "pinyin": "tiān xìng",
+    "translations": [
+      "alam",
+      "kecenderungan bawaan"
+    ]
+  },
+  {
+    "id": "9538",
+    "hanzi": "天主教",
+    "pinyin": "tiān zhǔ jiào",
+    "translations": [
+      "Katolik"
+    ]
+  },
+  {
+    "id": "9539",
+    "hanzi": "添加",
+    "pinyin": "tiān jiā",
+    "translations": [
+      "menambahkan",
+      "meningkatkan"
+    ]
+  },
+  {
+    "id": "9540",
+    "hanzi": "甜美",
+    "pinyin": "tián měi",
+    "translations": [
+      "manis",
+      "menyenangkan",
+      "senang"
+    ]
+  },
+  {
+    "id": "9541",
+    "hanzi": "甜蜜",
+    "pinyin": "tián mì",
+    "translations": [
+      "manis",
+      "senang"
+    ]
+  },
+  {
+    "id": "9542",
+    "hanzi": "甜头",
+    "pinyin": "tián tou",
+    "translations": [
+      "rasa manis (kekuatan, kesuksesan dll)",
+      "keuntungan"
+    ]
+  },
+  {
+    "id": "9543",
+    "hanzi": "填补",
+    "pinyin": "tián bǔ",
+    "translations": [
+      "untuk mengisi celah",
+      "untuk mengisi kosong (pada formulir)",
+      "untuk mengatasi kekurangan"
+    ]
+  },
+  {
+    "id": "9544",
+    "hanzi": "填充",
+    "pinyin": "tián chōng",
+    "translations": [
+      "bantalan",
+      "lapisan"
+    ]
+  },
+  {
+    "id": "9545",
+    "hanzi": "填写",
+    "pinyin": "tián xiě",
+    "translations": [
+      "untuk mengisi formulir",
+      "untuk menulis data dalam kotak (pada kuesioner atau formulir web)"
+    ]
+  },
+  {
+    "id": "9546",
+    "hanzi": "舔",
+    "pinyin": "tiǎn",
+    "translations": [
+      "menjilat",
+      "ke pangkuan"
+    ]
+  },
+  {
+    "id": "9547",
+    "hanzi": "挑剔",
+    "pinyin": "tiāo ti",
+    "translations": [
+      "pemilih",
+      "cerewet"
+    ]
+  },
+  {
+    "id": "9548",
+    "hanzi": "条款",
+    "pinyin": "tiáo kuǎn",
+    "translations": [
+      "Klausul (kontrak atau hukum)"
+    ]
+  },
+  {
+    "id": "9549",
+    "hanzi": "条例",
+    "pinyin": "tiáo lì",
+    "translations": [
+      "peraturan",
+      "aturan",
+      "Kode etik",
+      "tata cara",
+      "Statuta"
+    ]
+  },
+  {
+    "id": "9550",
+    "hanzi": "条约",
+    "pinyin": "tiáo yuē",
+    "translations": [
+      "perjanjian",
+      "pakta"
+    ]
+  },
+  {
+    "id": "9551",
+    "hanzi": "调侃",
+    "pinyin": "tiáo kǎn",
+    "translations": [
+      "untuk diejek",
+      "menggoda",
+      "mengejek",
+      "pembicaraan idle",
+      "basa basi"
+    ]
+  },
+  {
+    "id": "9552",
+    "hanzi": "调控",
+    "pinyin": "tiáo kòng",
+    "translations": [
+      "untuk mengatur",
+      "kontrol"
+    ]
+  },
+  {
+    "id": "9553",
+    "hanzi": "调料",
+    "pinyin": "tiáo liào",
+    "translations": [
+      "bumbu",
+      "bumbu",
+      "bumbu"
+    ]
+  },
+  {
+    "id": "9554",
+    "hanzi": "调试",
+    "pinyin": "tiáo shì",
+    "translations": [
+      "untuk men -debug",
+      "untuk menyesuaikan komponen selama pengujian",
+      "debugging"
+    ]
+  },
+  {
+    "id": "9555",
+    "hanzi": "挑起",
+    "pinyin": "tiǎo qǐ",
+    "translations": [
+      "untuk memprovokasi",
+      "untuk menggerakkan",
+      "untuk menghasut"
+    ]
+  },
+  {
+    "id": "9556",
+    "hanzi": "挑衅",
+    "pinyin": "tiǎo xìn",
+    "translations": [
+      "untuk memprovokasi",
+      "provokasi"
+    ]
+  },
+  {
+    "id": "9557",
+    "hanzi": "跳槽",
+    "pinyin": "tiào cáo",
+    "translations": [
+      "untuk berganti pekerjaan",
+      "pekerjaan-hopping"
+    ]
+  },
+  {
+    "id": "9558",
+    "hanzi": "跳动",
+    "pinyin": "tiào dòng",
+    "translations": [
+      "untuk berdenyut",
+      "untuk denyut nadi",
+      "memantul",
+      "untuk bergoyang",
+      "untuk melompat"
+    ]
+  },
+  {
+    "id": "9559",
+    "hanzi": "跳伞",
+    "pinyin": "tiào sǎn",
+    "translations": [
+      "untuk parasut",
+      "untuk menyelamatkan",
+      "lompatan parasut"
+    ]
+  },
+  {
+    "id": "9560",
+    "hanzi": "跳跃",
+    "pinyin": "tiào yuè",
+    "translations": [
+      "untuk melompat",
+      "untuk melompat",
+      "untuk terikat",
+      "untuk melewatkan"
+    ]
+  },
+  {
+    "id": "9561",
+    "hanzi": "贴近",
+    "pinyin": "tiē jìn",
+    "translations": [
+      "untuk menekan dekat",
+      "untuk meringkuk dekat",
+      "intim"
+    ]
+  },
+  {
+    "id": "9562",
+    "hanzi": "贴切",
+    "pinyin": "tiē qiè",
+    "translations": [
+      "pas dekat",
+      "terdekat (terjemahan)"
+    ]
+  },
+  {
+    "id": "9563",
+    "hanzi": "帖子",
+    "pinyin": "tiě zi",
+    "translations": [
+      "kartu",
+      "undangan",
+      "pesan",
+      "Posting (Forum)"
+    ]
+  },
+  {
+    "id": "9564",
+    "hanzi": "听从",
+    "pinyin": "tīng cóng",
+    "translations": [
+      "untuk mendengarkan dan mematuhi",
+      "untuk mematuhi",
+      "mengindahkan",
+      "untuk mendengarkan"
+    ]
+  },
+  {
+    "id": "9565",
+    "hanzi": "听话",
+    "pinyin": "tīng huà",
+    "translations": [
+      "untuk melakukan apa yang diceritakan",
+      "patuh"
+    ]
+  },
+  {
+    "id": "9566",
+    "hanzi": "停泊",
+    "pinyin": "tíng bó",
+    "translations": [
+      "untuk berlabuh",
+      "pelabuhan",
+      "tambatan (dari kapal)"
+    ]
+  },
+  {
+    "id": "9567",
+    "hanzi": "停车位",
+    "pinyin": "tíng chē wèi",
+    "translations": [
+      "Tempat parkir, tempat parkir"
+    ]
+  },
+  {
+    "id": "9568",
+    "hanzi": "停电",
+    "pinyin": "tíng diàn",
+    "translations": [
+      "untuk mengalami kegagalan daya",
+      "pemadaman listrik"
+    ]
+  },
+  {
+    "id": "9569",
+    "hanzi": "停顿",
+    "pinyin": "tíng dùn",
+    "translations": [
+      "untuk berhenti",
+      "untuk putus",
+      "jeda (dalam pidato)"
+    ]
+  },
+  {
+    "id": "9570",
+    "hanzi": "停放",
+    "pinyin": "tíng fàng",
+    "translations": [
+      "untuk parkir (mobil dll)",
+      "ke Moor (perahu dll)",
+      "meninggalkan sth (di suatu tempat)"
+    ]
+  },
+  {
+    "id": "9571",
+    "hanzi": "停业",
+    "pinyin": "tíng yè",
+    "translations": [
+      "untuk menghentikan perdagangan (sementara atau permanen)",
+      "untuk ditutup"
+    ]
+  },
+  {
+    "id": "9572",
+    "hanzi": "通畅",
+    "pinyin": "tōng chàng",
+    "translations": [
+      "tidak terhalang",
+      "jernih"
+    ]
+  },
+  {
+    "id": "9573",
+    "hanzi": "通车",
+    "pinyin": "tōng chē",
+    "translations": [
+      "untuk membuka lalu lintas (mis. jembatan baru, jalur kereta dll)",
+      "(dari daerah) untuk memiliki layanan transportasi",
+      "(TW) untuk bepergian"
+    ]
+  },
+  {
+    "id": "9574",
+    "hanzi": "通风",
+    "pinyin": "tōng fēng",
+    "translations": [
+      "Airy",
+      "ventilasi",
+      "untuk ventilasi",
+      "untuk mengungkapkan informasi"
+    ]
+  },
+  {
+    "id": "9575",
+    "hanzi": "通告",
+    "pinyin": "tōng gào",
+    "translations": [
+      "untuk mengumumkan",
+      "untuk memberi pemberitahuan"
+    ]
+  },
+  {
+    "id": "9576",
+    "hanzi": "通缉",
+    "pinyin": "tōng jī",
+    "translations": [
+      "untuk memerintahkan penangkapan SB sebagai penjahat",
+      "untuk mendaftar sesuai keinginan"
+    ]
+  },
+  {
+    "id": "9577",
+    "hanzi": "通顺",
+    "pinyin": "tōng shùn",
+    "translations": [
+      "mulus",
+      "jelas dan koheren"
+    ]
+  },
+  {
+    "id": "9578",
+    "hanzi": "通俗",
+    "pinyin": "tōng sú",
+    "translations": [
+      "umum",
+      "setiap hari",
+      "rata-rata"
+    ]
+  },
+  {
+    "id": "9579",
+    "hanzi": "通通",
+    "pinyin": "tōng tōng",
+    "translations": [
+      "semua",
+      "seluruh",
+      "menyelesaikan"
+    ]
+  },
+  {
+    "id": "9580",
+    "hanzi": "通往",
+    "pinyin": "tōng wǎng",
+    "translations": [
+      "untuk mengarah ke"
+    ]
+  },
+  {
+    "id": "9581",
+    "hanzi": "通宵",
+    "pinyin": "tōng xiāo",
+    "translations": [
+      "sepanjang malam",
+      "sepanjang malam"
+    ]
+  },
+  {
+    "id": "9582",
+    "hanzi": "通行证",
+    "pinyin": "tōng xíng zhèng",
+    "translations": [
+      "lulus (otoritas untuk masuk)",
+      "A laissez-passer atau perilaku aman"
+    ]
+  },
+  {
+    "id": "9583",
+    "hanzi": "同伴",
+    "pinyin": "tóng bàn",
+    "translations": [
+      "pendamping",
+      "kawan",
+      "rekan"
+    ]
+  },
+  {
+    "id": "9584",
+    "hanzi": "同步",
+    "pinyin": "tóng bù",
+    "translations": [
+      "sinkronis",
+      "untuk menyinkronkan",
+      "untuk menjaga langkah dengan"
+    ]
+  },
+  {
+    "id": "9585",
+    "hanzi": "同等",
+    "pinyin": "tóng děng",
+    "translations": [
+      "sama dengan",
+      "Memiliki kelas atau status sosial yang sama"
+    ]
+  },
+  {
+    "id": "9586",
+    "hanzi": "同感",
+    "pinyin": "tóng gǎn",
+    "translations": [
+      "(memiliki) perasaan yang sama",
+      "kesan serupa",
+      "perasaan umum"
+    ]
+  },
+  {
+    "id": "9587",
+    "hanzi": "同伙",
+    "pinyin": "tóng huǒ",
+    "translations": [
+      "kolega",
+      "co-konspirator",
+      "kaki tangan"
+    ]
+  },
+  {
+    "id": "9588",
+    "hanzi": "同类",
+    "pinyin": "tóng lèi",
+    "translations": [
+      "serupa",
+      "Tipe yang sama",
+      "sama"
+    ]
+  },
+  {
+    "id": "9589",
+    "hanzi": "同盟",
+    "pinyin": "tóng méng",
+    "translations": [
+      "persekutuan"
+    ]
+  },
+  {
+    "id": "9590",
+    "hanzi": "同年",
+    "pinyin": "tóng nián",
+    "translations": [
+      "tahun yang sama"
+    ]
+  },
+  {
+    "id": "9591",
+    "hanzi": "同人",
+    "pinyin": "tóng rén",
+    "translations": [
+      "orang dari tempat kerja atau profesi yang sama",
+      "teman sekerja",
+      "kolega",
+      "penggemar budaya pop yang membuat fiksi penggemar dll"
+    ]
+  },
+  {
+    "id": "9592",
+    "hanzi": "同志",
+    "pinyin": "tóng zhì",
+    "translations": [
+      "kawan",
+      "(bahasa gaul) homoseksual"
+    ]
+  },
+  {
+    "id": "9593",
+    "hanzi": "同舟共济",
+    "pinyin": "tóng zhōu gòng jì",
+    "translations": [
+      "melintasi sungai di kapal yang sama (idiom)",
+      "ara. memiliki kepentingan bersama",
+      "wajib berkolaborasi menuju tujuan bersama"
+    ]
+  },
+  {
+    "id": "9594",
+    "hanzi": "铜",
+    "pinyin": "tóng",
+    "translations": [
+      "Tembaga (Kimia)",
+      "Lihat juga 紅銅 | 红铜 [hóng tóng]"
+    ]
+  },
+  {
+    "id": "9595",
+    "hanzi": "统筹",
+    "pinyin": "tǒng chóu",
+    "translations": [
+      "rencana keseluruhan",
+      "untuk merencanakan seluruh proyek secara keseluruhan"
+    ]
+  },
+  {
+    "id": "9596",
+    "hanzi": "统统",
+    "pinyin": "tǒng tǒng",
+    "translations": [
+      "sama sekali"
+    ]
+  },
+  {
+    "id": "9597",
+    "hanzi": "统治",
+    "pinyin": "tǒng zhì",
+    "translations": [
+      "untuk memerintah (negara)",
+      "untuk memerintah",
+      "aturan",
+      "rezim"
+    ]
+  },
+  {
+    "id": "9598",
+    "hanzi": "捅",
+    "pinyin": "tǒng",
+    "translations": [
+      "menusuk",
+      "mencolek",
+      "untuk prod",
+      "untuk mendorong",
+      "untuk mengungkapkan"
+    ]
+  },
+  {
+    "id": "9599",
+    "hanzi": "桶",
+    "pinyin": "tǒng",
+    "translations": [
+      "keranjang",
+      "(tempat sampah",
+      "barel (minyak dll)"
+    ]
+  },
+  {
+    "id": "9600",
+    "hanzi": "筒",
+    "pinyin": "tǒng",
+    "translations": [
+      "tabung",
+      "silinder",
+      "untuk membungkus silinder STH (seperti tangan di lengan dll)"
+    ]
+  },
+  {
+    "id": "9601",
+    "hanzi": "痛",
+    "pinyin": "tòng",
+    "translations": [
+      "sakit",
+      "nyeri",
+      "duka",
+      "dalam",
+      "secara menyeluruh"
+    ]
+  },
+  {
+    "id": "9602",
+    "hanzi": "痛心",
+    "pinyin": "tòng xīn",
+    "translations": [
+      "sedih",
+      "sedih"
+    ]
+  },
+  {
+    "id": "9603",
+    "hanzi": "偷看",
+    "pinyin": "tōu kàn",
+    "translations": [
+      "untuk mengintip",
+      "mengintip",
+      "untuk mencuri pandangan"
+    ]
+  },
+  {
+    "id": "9604",
+    "hanzi": "偷窥",
+    "pinyin": "tōu kuī",
+    "translations": [
+      "untuk mengintip",
+      "mengintip",
+      "untuk bertindak sebagai voyeur"
+    ]
+  },
+  {
+    "id": "9605",
+    "hanzi": "偷懒",
+    "pinyin": "tōu lǎn",
+    "translations": [
+      "untuk melakukan kesalahan",
+      "malas"
+    ]
+  },
+  {
+    "id": "9606",
+    "hanzi": "头部",
+    "pinyin": "tóu bù",
+    "translations": [
+      "kepala"
+    ]
+  },
+  {
+    "id": "9607",
+    "hanzi": "头顶",
+    "pinyin": "tóu dǐng",
+    "translations": [
+      "Top of the Head"
+    ]
+  },
+  {
+    "id": "9608",
+    "hanzi": "头号",
+    "pinyin": "tóu hào",
+    "translations": [
+      "tingkat pertama",
+      "peringkat teratas",
+      "nomor satu"
+    ]
+  },
+  {
+    "id": "9609",
+    "hanzi": "头条",
+    "pinyin": "tóu tiáo",
+    "translations": [
+      "cerita utama (di berita)"
+    ]
+  },
+  {
+    "id": "9610",
+    "hanzi": "头头是道",
+    "pinyin": "tóu tóu shì dào",
+    "translations": [
+      "jelas dan logis"
+    ]
+  },
+  {
+    "id": "9611",
+    "hanzi": "头衔",
+    "pinyin": "tóu xián",
+    "translations": [
+      "judul",
+      "pangkat",
+      "sebutan"
+    ]
+  },
+  {
+    "id": "9612",
+    "hanzi": "头晕",
+    "pinyin": "tóu yūn",
+    "translations": [
+      "pusing"
+    ]
+  },
+  {
+    "id": "9613",
+    "hanzi": "投奔",
+    "pinyin": "tóu bèn",
+    "translations": [
+      "untuk mencari perlindungan",
+      "untuk mencari suaka"
+    ]
+  },
+  {
+    "id": "9614",
+    "hanzi": "投稿",
+    "pinyin": "tóu gǎo",
+    "translations": [
+      "untuk mengirimkan artikel untuk publikasi",
+      "untuk berkontribusi (menulis)"
+    ]
+  },
+  {
+    "id": "9615",
+    "hanzi": "投机",
+    "pinyin": "tóu jī",
+    "translations": [
+      "untuk berspekulasi (di pasar keuangan)",
+      "oportunistik",
+      "cocok",
+      "menyenangkan"
+    ]
+  },
+  {
+    "id": "9616",
+    "hanzi": "投射",
+    "pinyin": "tóu shè",
+    "translations": [
+      "untuk melempar (proyektil)",
+      "To Cast (Light)"
+    ]
+  },
+  {
+    "id": "9617",
+    "hanzi": "投身",
+    "pinyin": "tóu shēn",
+    "translations": [
+      "untuk melemparkan diri ke sth"
+    ]
+  },
+  {
+    "id": "9618",
+    "hanzi": "投降",
+    "pinyin": "tóu xiáng",
+    "translations": [
+      "Untuk menyerah",
+      "menyerah"
+    ]
+  },
+  {
+    "id": "9619",
+    "hanzi": "透彻",
+    "pinyin": "tòu chè",
+    "translations": [
+      "tembus",
+      "menyeluruh",
+      "tajam"
+    ]
+  },
+  {
+    "id": "9620",
+    "hanzi": "透过",
+    "pinyin": "tòu guò",
+    "translations": [
+      "untuk melewati",
+      "untuk menembus",
+      "melalui",
+      "melalui"
+    ]
+  },
+  {
+    "id": "9621",
+    "hanzi": "透气",
+    "pinyin": "tòu qì",
+    "translations": [
+      "mengalir dengan bebas (udara)",
+      "untuk ventilasi",
+      "untuk bernafas (kain dll)",
+      "untuk menghirup udara segar",
+      "untuk membocorkan"
+    ]
+  },
+  {
+    "id": "9622",
+    "hanzi": "透支",
+    "pinyin": "tòu zhī",
+    "translations": [
+      "(bank) cerukan"
+    ]
+  },
+  {
+    "id": "9623",
+    "hanzi": "凸",
+    "pinyin": "tū",
+    "translations": [
+      "untuk menonjol",
+      "menonjol",
+      "cembung",
+      "pria (konektor dll)",
+      "Taiwan PR. [Tú]"
+    ]
+  },
+  {
+    "id": "9624",
+    "hanzi": "凸显",
+    "pinyin": "tū xiǎn",
+    "translations": [
+      "untuk menyajikan dengan jelas",
+      "untuk memberikan keunggulan",
+      "untuk memperbesar",
+      "jelas dan jelas"
+    ]
+  },
+  {
+    "id": "9625",
+    "hanzi": "秃",
+    "pinyin": "tū",
+    "translations": [
+      "botak",
+      "tumpul"
+    ]
+  },
+  {
+    "id": "9626",
+    "hanzi": "突发",
+    "pinyin": "tū fā",
+    "translations": [
+      "Tiba -tiba meledak",
+      "ledakan tiba -tiba"
+    ]
+  },
+  {
+    "id": "9627",
+    "hanzi": "突击",
+    "pinyin": "tū jī",
+    "translations": [
+      "serangan mendadak dan kejam",
+      "menyerang",
+      "ara. pekerjaan terburu -buru",
+      "Upaya terkonsentrasi untuk menyelesaikan pekerjaan dengan cepat"
+    ]
+  },
+  {
+    "id": "9628",
+    "hanzi": "突破口",
+    "pinyin": "tū pò kǒu",
+    "translations": [
+      "Lit. celah, pelanggaran atau celah dari mana seseorang dapat merusak sesuatu, port sally",
+      "terobosan untuk suatu masalah"
+    ]
+  },
+  {
+    "id": "9629",
+    "hanzi": "突如其来",
+    "pinyin": "tū rú qí lái",
+    "translations": [
+      "muncul secara tiba -tiba",
+      "tiba -tiba tiba",
+      "terjadi tiba -tiba"
+    ]
+  },
+  {
+    "id": "9630",
+    "hanzi": "图表",
+    "pinyin": "tú biǎo",
+    "translations": [
+      "bagan",
+      "diagram"
+    ]
+  },
+  {
+    "id": "9631",
+    "hanzi": "图像",
+    "pinyin": "tú xiàng",
+    "translations": [
+      "gambar",
+      "gambar",
+      "grafis"
+    ]
+  },
+  {
+    "id": "9632",
+    "hanzi": "图形",
+    "pinyin": "tú xíng",
+    "translations": [
+      "gambar",
+      "angka",
+      "diagram",
+      "grafik",
+      "penggambaran",
+      "grafis"
+    ]
+  },
+  {
+    "id": "9633",
+    "hanzi": "图纸",
+    "pinyin": "tú zhǐ",
+    "translations": [
+      "Cetak biru",
+      "menggambar",
+      "rencana desain",
+      "kertas grafik"
+    ]
+  },
+  {
+    "id": "9634",
+    "hanzi": "徒步",
+    "pinyin": "tú bù",
+    "translations": [
+      "Menjadi berjalan kaki"
+    ]
+  },
+  {
+    "id": "9635",
+    "hanzi": "涂",
+    "pinyin": "tú",
+    "translations": [
+      "untuk menerapkan (cat dll)",
+      "untuk mengolesi",
+      "ke Daub",
+      "untuk menghapus",
+      "untuk mencoret -coret",
+      "untuk mencoreng",
+      "lumpur (sastra)",
+      "jalan"
+    ]
+  },
+  {
+    "id": "9636",
+    "hanzi": "屠杀",
+    "pinyin": "tú shā",
+    "translations": [
+      "untuk pembantaian",
+      "Pembantaian",
+      "Bloodbath",
+      "pembantaian"
+    ]
+  },
+  {
+    "id": "9637",
+    "hanzi": "土匪",
+    "pinyin": "tǔ fěi",
+    "translations": [
+      "bandit"
+    ]
+  },
+  {
+    "id": "9638",
+    "hanzi": "土壤",
+    "pinyin": "tǔ rǎng",
+    "translations": [
+      "tanah"
+    ]
+  },
+  {
+    "id": "9639",
+    "hanzi": "土生土长",
+    "pinyin": "tǔ shēng tǔ zhǎng",
+    "translations": [
+      "lahir secara lokal dan dibesarkan",
+      "asli",
+      "kandang sendiri"
+    ]
+  },
+  {
+    "id": "9640",
+    "hanzi": "团伙",
+    "pinyin": "tuán huǒ",
+    "translations": [
+      "Geng (kriminal)",
+      "anggota geng",
+      "kaki tangan",
+      "sahabat karib"
+    ]
+  },
+  {
+    "id": "9641",
+    "hanzi": "团聚",
+    "pinyin": "tuán jù",
+    "translations": [
+      "untuk bersatu kembali",
+      "untuk memiliki reuni"
+    ]
+  },
+  {
+    "id": "9642",
+    "hanzi": "团员",
+    "pinyin": "tuán yuán",
+    "translations": [
+      "anggota",
+      "anggota kelompok"
+    ]
+  },
+  {
+    "id": "9643",
+    "hanzi": "团圆",
+    "pinyin": "tuán yuán",
+    "translations": [
+      "untuk memiliki reuni"
+    ]
+  },
+  {
+    "id": "9644",
+    "hanzi": "推测",
+    "pinyin": "tuī cè",
+    "translations": [
+      "spekulasi",
+      "untuk dugaan",
+      "untuk menduga",
+      "untuk berspekulasi"
+    ]
+  },
+  {
+    "id": "9645",
+    "hanzi": "推辞",
+    "pinyin": "tuī cí",
+    "translations": [
+      "untuk menolak (janji temu, undangan dll)"
+    ]
+  },
+  {
+    "id": "9646",
+    "hanzi": "推断",
+    "pinyin": "tuī duàn",
+    "translations": [
+      "untuk menyimpulkan",
+      "untuk menyimpulkan",
+      "untuk memprediksi",
+      "untuk mengekstrapolasi"
+    ]
+  },
+  {
+    "id": "9647",
+    "hanzi": "推翻",
+    "pinyin": "tuī fān",
+    "translations": [
+      "untuk menggulingkan"
+    ]
+  },
+  {
+    "id": "9648",
+    "hanzi": "推荐",
+    "pinyin": "tuī jiàn",
+    "translations": [
+      "untuk merekomendasikan",
+      "rekomendasi"
+    ]
+  },
+  {
+    "id": "9649",
+    "hanzi": "推理",
+    "pinyin": "tuī lǐ",
+    "translations": [
+      "pemikiran",
+      "kesimpulan",
+      "untuk menyimpulkan",
+      "untuk menyimpulkan"
+    ]
+  },
+  {
+    "id": "9650",
+    "hanzi": "推敲",
+    "pinyin": "tuī qiāo",
+    "translations": [
+      "untuk memikirkannya"
+    ]
+  },
+  {
+    "id": "9651",
+    "hanzi": "推算",
+    "pinyin": "tuī suàn",
+    "translations": [
+      "menghitung",
+      "memperhitungkan",
+      "untuk mengekstrapolasi (dalam perhitungan)"
+    ]
+  },
+  {
+    "id": "9652",
+    "hanzi": "推卸",
+    "pinyin": "tuī xiè",
+    "translations": [
+      "untuk menghindari (khususnya tanggung jawab)",
+      "untuk menggeser (menyalahkan)",
+      "untuk melewati uang"
+    ]
+  },
+  {
+    "id": "9653",
+    "hanzi": "推选",
+    "pinyin": "tuī xuǎn",
+    "translations": [
+      "untuk memilih",
+      "untuk memilih",
+      "untuk mencalonkan"
+    ]
+  },
+  {
+    "id": "9654",
+    "hanzi": "推移",
+    "pinyin": "tuī yí",
+    "translations": [
+      "(waktu) untuk berlalu atau lewat",
+      "(dari suatu situasi) untuk mengembangkan atau berkembang"
+    ]
+  },
+  {
+    "id": "9655",
+    "hanzi": "颓废",
+    "pinyin": "tuí fèi",
+    "translations": [
+      "dekaden",
+      "putus asa",
+      "murung",
+      "sedih"
+    ]
+  },
+  {
+    "id": "9656",
+    "hanzi": "退回",
+    "pinyin": "tuì huí",
+    "translations": [
+      "untuk mengembalikan (item)",
+      "untuk mengirim kembali",
+      "untuk kembali"
+    ]
+  },
+  {
+    "id": "9657",
+    "hanzi": "退却",
+    "pinyin": "tuì què",
+    "translations": [
+      "untuk mundur",
+      "untuk menyusut kembali"
+    ]
+  },
+  {
+    "id": "9658",
+    "hanzi": "退让",
+    "pinyin": "tuì ràng",
+    "translations": [
+      "untuk mengesampingkan",
+      "untuk keluar dari jalan",
+      "untuk mundur",
+      "untuk mengakui"
+    ]
+  },
+  {
+    "id": "9659",
+    "hanzi": "退缩",
+    "pinyin": "tuì suō",
+    "translations": [
+      "untuk menyusut kembali",
+      "untuk meringkuk"
+    ]
+  },
+  {
+    "id": "9660",
+    "hanzi": "退休金",
+    "pinyin": "tuì xiū jīn",
+    "translations": [
+      "Pembayaran Pensiun",
+      "pensiun"
+    ]
+  },
+  {
+    "id": "9661",
+    "hanzi": "退学",
+    "pinyin": "tuì xué",
+    "translations": [
+      "untuk berhenti sekolah"
+    ]
+  },
+  {
+    "id": "9662",
+    "hanzi": "退役",
+    "pinyin": "tuì yì",
+    "translations": [
+      "untuk pensiun dari militer, olahraga dll",
+      "untuk mendemobilisasi",
+      "untuk penonaktifan",
+      "pensiun dari penggunaan"
+    ]
+  },
+  {
+    "id": "9663",
+    "hanzi": "屯",
+    "pinyin": "tún",
+    "translations": [
+      "ke stasiun (tentara)",
+      "untuk menyimpan",
+      "desa"
+    ]
+  },
+  {
+    "id": "9664",
+    "hanzi": "托付",
+    "pinyin": "tuō fù",
+    "translations": [
+      "untuk mempercayakan"
+    ]
+  },
+  {
+    "id": "9665",
+    "hanzi": "拖累",
+    "pinyin": "tuō lěi",
+    "translations": [
+      "untuk membebani",
+      "menjadi beban",
+      "untuk melibatkan"
+    ]
+  },
+  {
+    "id": "9666",
+    "hanzi": "拖欠",
+    "pinyin": "tuō qiàn",
+    "translations": [
+      "tunggakan",
+      "di belakang dalam pembayaran",
+      "untuk default atas hutang seseorang"
+    ]
+  },
+  {
+    "id": "9667",
+    "hanzi": "拖延",
+    "pinyin": "tuō yán",
+    "translations": [
+      "untuk menunda",
+      "untuk menunda",
+      "menunda"
+    ]
+  },
+  {
+    "id": "9668",
+    "hanzi": "脱节",
+    "pinyin": "tuō jié",
+    "translations": [
+      "untuk terpisah"
+    ]
+  },
+  {
+    "id": "9669",
+    "hanzi": "脱口而出",
+    "pinyin": "tuō kǒu ér chū",
+    "translations": [
+      "untuk blurt out",
+      "untuk membiarkan slip (komentar yang tidak bijaksana)"
+    ]
+  },
+  {
+    "id": "9670",
+    "hanzi": "脱落",
+    "pinyin": "tuō luò",
+    "translations": [
+      "untuk mengantar",
+      "untuk keluar",
+      "Kehilangan (rambut dll)",
+      "untuk menghilangkan (karakter saat menulis)"
+    ]
+  },
+  {
+    "id": "9671",
+    "hanzi": "脱身",
+    "pinyin": "tuō shēn",
+    "translations": [
+      "untuk pergi",
+      "untuk melarikan diri (dari kewajiban)",
+      "untuk membebaskan diri sendiri",
+      "untuk melepaskan diri"
+    ]
+  },
+  {
+    "id": "9672",
+    "hanzi": "脱颖而出",
+    "pinyin": "tuō yǐng ér chū",
+    "translations": [
+      "untuk mengungkapkan bakat seseorang (idiom)",
+      "untuk bangkit di atas orang lain",
+      "untuk membedakan diri sendiri"
+    ]
+  },
+  {
+    "id": "9673",
+    "hanzi": "驮",
+    "pinyin": "tuó",
+    "translations": [
+      "untuk membawanya."
+    ]
+  },
+  {
+    "id": "9674",
+    "hanzi": "妥",
+    "pinyin": "tuǒ",
+    "translations": [
+      "sesuai",
+      "memadai",
+      "siap",
+      "mapan"
+    ]
+  },
+  {
+    "id": "9675",
+    "hanzi": "妥当",
+    "pinyin": "tuǒ dang",
+    "translations": [
+      "sesuai",
+      "sesuai",
+      "siap"
+    ]
+  },
+  {
+    "id": "9676",
+    "hanzi": "妥善",
+    "pinyin": "tuǒ shàn",
+    "translations": [
+      "sesuai",
+      "sesuai"
+    ]
+  },
+  {
+    "id": "9677",
+    "hanzi": "妥协",
+    "pinyin": "tuǒ xié",
+    "translations": [
+      "untuk berkompromi",
+      "untuk mencapai istilah",
+      "kompromi"
+    ]
+  },
+  {
+    "id": "9678",
+    "hanzi": "拓宽",
+    "pinyin": "tuò kuān",
+    "translations": [
+      "untuk memperluas"
+    ]
+  },
+  {
+    "id": "9679",
+    "hanzi": "拓展",
+    "pinyin": "tuò zhǎn",
+    "translations": [
+      "memperluas"
+    ]
+  },
+  {
+    "id": "9680",
+    "hanzi": "唾液",
+    "pinyin": "tuò yè",
+    "translations": [
+      "air liur"
+    ]
+  },
+  {
+    "id": "9681",
+    "hanzi": "挖掘",
+    "pinyin": "wā jué",
+    "translations": [
+      "untuk menggali",
+      "untuk menggali",
+      "untuk menggali"
+    ]
+  },
+  {
+    "id": "9682",
+    "hanzi": "挖苦",
+    "pinyin": "wā kǔ",
+    "translations": [
+      "untuk berbicara dengan sinis",
+      "untuk membuat komentar pemotongan"
+    ]
+  },
+  {
+    "id": "9683",
+    "hanzi": "瓦",
+    "pinyin": "wǎ",
+    "translations": [
+      "genteng",
+      "ABBR. untuk 瓦特 [wǎ tè]"
+    ]
+  },
+  {
+    "id": "9684",
+    "hanzi": "歪",
+    "pinyin": "wǎi",
+    "translations": [
+      "miring",
+      "di sudut yang bengkok",
+      "licik",
+      "berbahaya",
+      "(Coll.) Berbaring di pihak seseorang"
+    ]
+  },
+  {
+    "id": "9685",
+    "hanzi": "歪曲",
+    "pinyin": "wāi qū",
+    "translations": [
+      "memutarbalikkan",
+      "untuk salah menggambarkan"
+    ]
+  },
+  {
+    "id": "9686",
+    "hanzi": "外表",
+    "pinyin": "wài biǎo",
+    "translations": [
+      "luar",
+      "di luar",
+      "pulasan"
+    ]
+  },
+  {
+    "id": "9687",
+    "hanzi": "外公",
+    "pinyin": "wài gōng",
+    "translations": [
+      "(Coll.) Ayah Ibu",
+      "kakek dari pihak ibu"
+    ]
+  },
+  {
+    "id": "9688",
+    "hanzi": "外行",
+    "pinyin": "wài háng",
+    "translations": [
+      "orang awam",
+      "amatir"
+    ]
+  },
+  {
+    "id": "9689",
+    "hanzi": "外号",
+    "pinyin": "wài hào",
+    "translations": [
+      "nama panggilan"
+    ]
+  },
+  {
+    "id": "9690",
+    "hanzi": "外籍",
+    "pinyin": "wài jí",
+    "translations": [
+      "Asing (mis. Kebangsaan asing)"
+    ]
+  },
+  {
+    "id": "9691",
+    "hanzi": "外贸",
+    "pinyin": "wài mào",
+    "translations": [
+      "perdagangan luar negeri"
+    ]
+  },
+  {
+    "id": "9692",
+    "hanzi": "外貌",
+    "pinyin": "wài mào",
+    "translations": [
+      "Profil",
+      "penampilan"
+    ]
+  },
+  {
+    "id": "9693",
+    "hanzi": "外婆",
+    "pinyin": "wài pó",
+    "translations": [
+      "(Coll.) Ibu Ibu",
+      "nenek dari pihak ibu"
+    ]
+  },
+  {
+    "id": "9694",
+    "hanzi": "外企",
+    "pinyin": "wài qǐ",
+    "translations": [
+      "perusahaan asing",
+      "Perusahaan yang didirikan di daratan Cina dengan investasi langsung dari entitas asing atau dari investor di Taiwan, Makau atau Hong Kong",
+      "ABBR. untuk 外資 企業 | 外资 企业"
+    ]
+  },
+  {
+    "id": "9695",
+    "hanzi": "外星人",
+    "pinyin": "wài xīng rén",
+    "translations": [
+      "Alien Luar Angkasa",
+      "Extraterrestrial"
+    ]
+  },
+  {
+    "id": "9696",
+    "hanzi": "外形",
+    "pinyin": "wài xíng",
+    "translations": [
+      "angka",
+      "membentuk",
+      "bentuk eksternal",
+      "kontur"
+    ]
+  },
+  {
+    "id": "9697",
+    "hanzi": "外援",
+    "pinyin": "wài yuán",
+    "translations": [
+      "bantuan eksternal",
+      "bantuan asing"
+    ]
+  },
+  {
+    "id": "9698",
+    "hanzi": "丸",
+    "pinyin": "wán",
+    "translations": [
+      "bola",
+      "pelet",
+      "pil"
+    ]
+  },
+  {
+    "id": "9699",
+    "hanzi": "完备",
+    "pinyin": "wán bèi",
+    "translations": [
+      "sempurna",
+      "menyelesaikan",
+      "sempurna",
+      "tidak meninggalkan apa pun yang diinginkan"
+    ]
+  },
+  {
+    "id": "9700",
+    "hanzi": "完毕",
+    "pinyin": "wán bì",
+    "translations": [
+      "menyelesaikan",
+      "untuk mengakhiri",
+      "untuk menyelesaikan"
+    ]
+  },
+  {
+    "id": "9701",
+    "hanzi": "完蛋",
+    "pinyin": "wán dàn",
+    "translations": [
+      "(coll.) Untuk dilakukan untuk"
+    ]
+  },
+  {
+    "id": "9702",
+    "hanzi": "完好",
+    "pinyin": "wán hǎo",
+    "translations": [
+      "utuh",
+      "dalam kondisi baik"
+    ]
+  },
+  {
+    "id": "9703",
+    "hanzi": "玩耍",
+    "pinyin": "wán shuǎ",
+    "translations": [
+      "bermain (seperti anak -anak)",
+      "untuk menghibur diri sendiri"
+    ]
+  },
+  {
+    "id": "9704",
+    "hanzi": "玩意儿",
+    "pinyin": "wán yì r",
+    "translations": [
+      "Varian Erhua dari 玩意 [wán yì]"
+    ]
+  },
+  {
+    "id": "9705",
+    "hanzi": "顽固",
+    "pinyin": "wán gù",
+    "translations": [
+      "keras kepala",
+      "keras kepala"
+    ]
+  },
+  {
+    "id": "9706",
+    "hanzi": "挽",
+    "pinyin": "wǎn",
+    "translations": [
+      "untuk menarik",
+      "untuk menggambar (gerobak atau busur)",
+      "untuk menggulung",
+      "untuk koil",
+      "untuk membawa lengan",
+      "untuk meratapi orang mati",
+      "(Gbr.) Menarik melawan",
+      "untuk memulihkan"
+    ]
+  },
+  {
+    "id": "9707",
+    "hanzi": "挽回",
+    "pinyin": "wǎn huí",
+    "translations": [
+      "mendapatkan kembali",
+      "untuk menebus"
+    ]
+  },
+  {
+    "id": "9708",
+    "hanzi": "挽救",
+    "pinyin": "wǎn jiù",
+    "translations": [
+      "untuk menyimpan",
+      "untuk memperbaiki",
+      "untuk menyelamatkan"
+    ]
+  },
+  {
+    "id": "9709",
+    "hanzi": "晚间",
+    "pinyin": "wǎn jiān",
+    "translations": [
+      "malam",
+      "malam"
+    ]
+  },
+  {
+    "id": "9710",
+    "hanzi": "晚年",
+    "pinyin": "wǎn nián",
+    "translations": [
+      "satu tahun berikutnya"
+    ]
+  },
+  {
+    "id": "9711",
+    "hanzi": "晚期",
+    "pinyin": "wǎn qī",
+    "translations": [
+      "periode nanti",
+      "tahap akhir",
+      "terminal"
+    ]
+  },
+  {
+    "id": "9712",
+    "hanzi": "惋惜",
+    "pinyin": "wǎn xī",
+    "translations": [
+      "menyesal",
+      "merasa sangat kasihan",
+      "merasa kasihan pada SB"
+    ]
+  },
+  {
+    "id": "9713",
+    "hanzi": "万分",
+    "pinyin": "wàn fēn",
+    "translations": [
+      "sangat banyak",
+      "sangat",
+      "satu bagian sepuluh seribu"
+    ]
+  },
+  {
+    "id": "9714",
+    "hanzi": "万古长青",
+    "pinyin": "wàn gǔ cháng qīng",
+    "translations": [
+      "tetap segar",
+      "bertahan selamanya",
+      "abadi"
+    ]
+  },
+  {
+    "id": "9715",
+    "hanzi": "万能",
+    "pinyin": "wàn néng",
+    "translations": [
+      "mahakuasa",
+      "semua tujuan",
+      "universal"
+    ]
+  },
+  {
+    "id": "9716",
+    "hanzi": "万万",
+    "pinyin": "wàn wàn",
+    "translations": [
+      "sangat",
+      "sepenuhnya"
+    ]
+  },
+  {
+    "id": "9717",
+    "hanzi": "万无一失",
+    "pinyin": "wàn wú yì shī",
+    "translations": [
+      "pasti",
+      "Benar -benar aman (idiom)"
+    ]
+  },
+  {
+    "id": "9718",
+    "hanzi": "汪洋",
+    "pinyin": "wāng yáng",
+    "translations": [
+      "Air yang sangat besar"
+    ]
+  },
+  {
+    "id": "9719",
+    "hanzi": "亡羊补牢",
+    "pinyin": "wáng yáng bǔ láo",
+    "translations": [
+      "Lit. untuk memperbaiki pena setelah domba hilang (idiom)",
+      "ara. untuk bertindak terlambat",
+      "lebih baik terlambat daripada tidak sama sekali",
+      "untuk mengunci pintu yang stabil setelah kuda melesat"
+    ]
+  },
+  {
+    "id": "9720",
+    "hanzi": "王国",
+    "pinyin": "wáng guó",
+    "translations": [
+      "kerajaan",
+      "dunia"
+    ]
+  },
+  {
+    "id": "9721",
+    "hanzi": "王牌",
+    "pinyin": "wáng pái",
+    "translations": [
+      "kartu truf"
+    ]
+  },
+  {
+    "id": "9722",
+    "hanzi": "网点",
+    "pinyin": "wǎng diǎn",
+    "translations": [
+      "simpul dalam jaringan",
+      "cabang",
+      "situs web"
+    ]
+  },
+  {
+    "id": "9723",
+    "hanzi": "网民",
+    "pinyin": "wǎng mín",
+    "translations": [
+      "Pengguna Web",
+      "Warganet"
+    ]
+  },
+  {
+    "id": "9724",
+    "hanzi": "往常",
+    "pinyin": "wǎng cháng",
+    "translations": [
+      "kebiasaan (di masa lalu)",
+      "seperti yang biasa dilakukan sebelumnya",
+      "seperti dulu"
+    ]
+  },
+  {
+    "id": "9725",
+    "hanzi": "往返",
+    "pinyin": "wǎng fǎn",
+    "translations": [
+      "untuk bolak -balik",
+      "untuk pergi ke dan fro",
+      "perjalanan pulang pergi"
+    ]
+  },
+  {
+    "id": "9726",
+    "hanzi": "往日",
+    "pinyin": "wǎng rì",
+    "translations": [
+      "masa lalu",
+      "masa lalu"
+    ]
+  },
+  {
+    "id": "9727",
+    "hanzi": "往事",
+    "pinyin": "wǎng shì",
+    "translations": [
+      "acara masa lalu",
+      "sebelumnya kejadian"
+    ]
+  },
+  {
+    "id": "9728",
+    "hanzi": "妄想",
+    "pinyin": "wàng xiǎng",
+    "translations": [
+      "untuk mencoba sia -sia",
+      "upaya sia -sia",
+      "khayalan"
+    ]
+  },
+  {
+    "id": "9729",
+    "hanzi": "忘不了",
+    "pinyin": "wàng bu liǎo",
+    "translations": [
+      "tidak bisa melupakan"
+    ]
+  },
+  {
+    "id": "9730",
+    "hanzi": "忘掉",
+    "pinyin": "wàng diào",
+    "translations": [
+      "untuk dilupakan"
+    ]
+  },
+  {
+    "id": "9731",
+    "hanzi": "旺",
+    "pinyin": "wàng",
+    "translations": [
+      "makmur",
+      "maju",
+      "(bunga) mekar",
+      "(api) menderu"
+    ]
+  },
+  {
+    "id": "9732",
+    "hanzi": "旺季",
+    "pinyin": "wàng jì",
+    "translations": [
+      "musim sibuk",
+      "periode puncak",
+      "Lihat juga 淡季 [Dàn Jì]"
+    ]
+  },
+  {
+    "id": "9733",
+    "hanzi": "旺盛",
+    "pinyin": "wàng shèng",
+    "translations": [
+      "kuat",
+      "riang"
+    ]
+  },
+  {
+    "id": "9734",
+    "hanzi": "望",
+    "pinyin": "wàng",
+    "translations": [
+      "bulan purnama",
+      "untuk berharap",
+      "untuk mengharapkan",
+      "untuk mengunjungi",
+      "untuk menatap (ke kejauhan)",
+      "untuk melihat ke arah",
+      "terhadap"
+    ]
+  },
+  {
+    "id": "9735",
+    "hanzi": "望远镜",
+    "pinyin": "wàng yuǎn jìng",
+    "translations": [
+      "teropong",
+      "teleskop"
+    ]
+  },
+  {
+    "id": "9736",
+    "hanzi": "危及",
+    "pinyin": "wēi jí",
+    "translations": [
+      "untuk membahayakan",
+      "untuk membahayakan",
+      "bahaya (kehidupan, keamanan nasional dll)"
+    ]
+  },
+  {
+    "id": "9737",
+    "hanzi": "危急",
+    "pinyin": "wēi jí",
+    "translations": [
+      "kritis",
+      "putus asa (situasi)"
+    ]
+  },
+  {
+    "id": "9738",
+    "hanzi": "威风",
+    "pinyin": "wēi fēng",
+    "translations": [
+      "mungkin",
+      "Otoritas yang menakjubkan",
+      "menakjubkan"
+    ]
+  },
+  {
+    "id": "9739",
+    "hanzi": "威力",
+    "pinyin": "wēi lì",
+    "translations": [
+      "mungkin",
+      "kekuatan yang tangguh"
+    ]
+  },
+  {
+    "id": "9740",
+    "hanzi": "威慑",
+    "pinyin": "wēi shè",
+    "translations": [
+      "untuk meringkuk dengan kekuatan militer",
+      "pencegahan"
+    ]
+  },
+  {
+    "id": "9741",
+    "hanzi": "威信",
+    "pinyin": "wēi xìn",
+    "translations": [
+      "prestise",
+      "reputasi",
+      "memercayai",
+      "kredit dengan orang -orang"
+    ]
+  },
+  {
+    "id": "9742",
+    "hanzi": "微不足道",
+    "pinyin": "wēi bù zú dào",
+    "translations": [
+      "diabaikan",
+      "tidak penting"
+    ]
+  },
+  {
+    "id": "9743",
+    "hanzi": "微观",
+    "pinyin": "wēi guān",
+    "translations": [
+      "mikro-",
+      "subatomik"
+    ]
+  },
+  {
+    "id": "9744",
+    "hanzi": "微妙",
+    "pinyin": "wēi miào",
+    "translations": [
+      "tak kentara"
+    ]
+  },
+  {
+    "id": "9745",
+    "hanzi": "微弱",
+    "pinyin": "wēi ruò",
+    "translations": [
+      "lemah",
+      "pingsan",
+      "lemah"
+    ]
+  },
+  {
+    "id": "9746",
+    "hanzi": "微型",
+    "pinyin": "wēi xíng",
+    "translations": [
+      "miniatur",
+      "mikro-",
+      "kecil"
+    ]
+  },
+  {
+    "id": "9747",
+    "hanzi": "为人",
+    "pinyin": "wéi rén",
+    "translations": [
+      "untuk melakukan diri sendiri",
+      "perilaku",
+      "mengadakan",
+      "karakter pribadi"
+    ]
+  },
+  {
+    "id": "9748",
+    "hanzi": "违背",
+    "pinyin": "wéi bèi",
+    "translations": [
+      "untuk melawan",
+      "bertentangan dengan",
+      "melanggar"
+    ]
+  },
+  {
+    "id": "9749",
+    "hanzi": "违约",
+    "pinyin": "wéi yuē",
+    "translations": [
+      "untuk melanggar janji",
+      "untuk melanggar kesepakatan",
+      "untuk default (atas pinjaman atau kontrak)"
+    ]
+  },
+  {
+    "id": "9750",
+    "hanzi": "违章",
+    "pinyin": "wéi zhāng",
+    "translations": [
+      "untuk melanggar aturan",
+      "untuk melanggar peraturan"
+    ]
+  },
+  {
+    "id": "9751",
+    "hanzi": "围墙",
+    "pinyin": "wéi qiáng",
+    "translations": [
+      "dinding perimeter",
+      "pagar"
+    ]
+  },
+  {
+    "id": "9752",
+    "hanzi": "唯",
+    "pinyin": "wéi",
+    "translations": [
+      "-aliran",
+      "hanya",
+      "sendiri"
+    ]
+  },
+  {
+    "id": "9753",
+    "hanzi": "唯独",
+    "pinyin": "wéi dú",
+    "translations": [
+      "hanya",
+      "Just (mis. Hanya itu ...)",
+      "semua kecuali",
+      "unik"
+    ]
+  },
+  {
+    "id": "9754",
+    "hanzi": "伪造",
+    "pinyin": "wěi zào",
+    "translations": [
+      "untuk membentuk",
+      "untuk memalsukan",
+      "untuk palsu"
+    ]
+  },
+  {
+    "id": "9755",
+    "hanzi": "伪装",
+    "pinyin": "wěi zhuāng",
+    "translations": [
+      "berpura -pura menjadi (tertidur dll)",
+      "untuk menyamarkan diri sebagai",
+      "sambilan",
+      "samaran",
+      "(militer) untuk menyamarkan",
+      "kamuflase"
+    ]
+  },
+  {
+    "id": "9756",
+    "hanzi": "尾气",
+    "pinyin": "wěi qì",
+    "translations": [
+      "Knalpot (mis. Limbah gas dari mesin)",
+      "emisi"
+    ]
+  },
+  {
+    "id": "9757",
+    "hanzi": "尾声",
+    "pinyin": "wěi shēng",
+    "translations": [
+      "Coda",
+      "Epilog",
+      "akhir"
+    ]
+  },
+  {
+    "id": "9758",
+    "hanzi": "纬度",
+    "pinyin": "wěi dù",
+    "translations": [
+      "Garis Lintang"
+    ]
+  },
+  {
+    "id": "9759",
+    "hanzi": "委屈",
+    "pinyin": "wěi qu",
+    "translations": [
+      "merasa dianiaya",
+      "menyebabkan SB merasa dianiaya",
+      "keluhan"
+    ]
+  },
+  {
+    "id": "9760",
+    "hanzi": "委婉",
+    "pinyin": "wěi wǎn",
+    "translations": [
+      "bijaksana",
+      "berkenaan dgn eufemisme",
+      "(suara dll) ramah tamah",
+      "lembut"
+    ]
+  },
+  {
+    "id": "9761",
+    "hanzi": "委员",
+    "pinyin": "wěi yuán",
+    "translations": [
+      "anggota Komite",
+      "komite",
+      "Dewan"
+    ]
+  },
+  {
+    "id": "9762",
+    "hanzi": "委员会",
+    "pinyin": "wěi yuán huì",
+    "translations": [
+      "komite"
+    ]
+  },
+  {
+    "id": "9763",
+    "hanzi": "萎缩",
+    "pinyin": "wěi suō",
+    "translations": [
+      "untuk layu",
+      "untuk mengering (dari tanaman)",
+      "untuk atrofi (otot, kebiasaan sosial dll)"
+    ]
+  },
+  {
+    "id": "9764",
+    "hanzi": "卫视",
+    "pinyin": "wèi shì",
+    "translations": [
+      "TV satelit (abbr. untuk 衛星 電視 | 卫星 电视 [wèi xīng diàn shì])"
+    ]
+  },
+  {
+    "id": "9765",
+    "hanzi": "未",
+    "pinyin": "wèi",
+    "translations": [
+      "Belum",
+      "tidak",
+      "sudah tidak",
+      "bukan",
+      "Cabang Bumi ke-8: 1-3 malam, bulan matahari ke-6 (7 Juli-6 Agustus), tahun domba",
+      "Titik Kompas Tiongkok Kuno: 210 °"
+    ]
+  },
+  {
+    "id": "9766",
+    "hanzi": "未成年人",
+    "pinyin": "wèi chéng nián rén",
+    "translations": [
+      "Kecil (mis. Orang di bawah 18)"
+    ]
+  },
+  {
+    "id": "9767",
+    "hanzi": "未经",
+    "pinyin": "wèi jīng",
+    "translations": [
+      "tidak mengalami",
+      "tanpa (telah melalui proses tertentu)"
+    ]
+  },
+  {
+    "id": "9768",
+    "hanzi": "未免",
+    "pinyin": "wèi miǎn",
+    "translations": [
+      "tak terhindarkan",
+      "tidak bisa membantu",
+      "Sungguh",
+      "lebih tepatnya"
+    ]
+  },
+  {
+    "id": "9769",
+    "hanzi": "未知数",
+    "pinyin": "wèi zhī shù",
+    "translations": [
+      "kuantitas yang tidak diketahui"
+    ]
+  },
+  {
+    "id": "9770",
+    "hanzi": "位子",
+    "pinyin": "wèi zi",
+    "translations": [
+      "tempat",
+      "kursi"
+    ]
+  },
+  {
+    "id": "9771",
+    "hanzi": "味精",
+    "pinyin": "wèi jīng",
+    "translations": [
+      "Monosodium glutamat (MSG)"
+    ]
+  },
+  {
+    "id": "9772",
+    "hanzi": "畏惧",
+    "pinyin": "wèi jù",
+    "translations": [
+      "takut",
+      "takut",
+      "firasat"
+    ]
+  },
+  {
+    "id": "9773",
+    "hanzi": "畏缩",
+    "pinyin": "wèi suō",
+    "translations": [
+      "untuk meringkuk",
+      "untuk tersentak",
+      "untuk puyuh",
+      "untuk mundur"
+    ]
+  },
+  {
+    "id": "9774",
+    "hanzi": "胃口",
+    "pinyin": "wèi kǒu",
+    "translations": [
+      "nafsu makan",
+      "menyukai"
+    ]
+  },
+  {
+    "id": "9775",
+    "hanzi": "喂养",
+    "pinyin": "wèi yǎng",
+    "translations": [
+      "untuk memberi makan (seorang anak, hewan domestik dll)",
+      "untuk menjaga",
+      "untuk memelihara (binatang)"
+    ]
+  },
+  {
+    "id": "9776",
+    "hanzi": "慰劳",
+    "pinyin": "wèi láo",
+    "translations": [
+      "untuk menunjukkan penghargaan (dengan kata -kata baik, hadiah kecil dll)",
+      "untuk menghibur"
+    ]
+  },
+  {
+    "id": "9777",
+    "hanzi": "温度计",
+    "pinyin": "wēn dù jì",
+    "translations": [
+      "termometer",
+      "Thermograph"
+    ]
+  },
+  {
+    "id": "9778",
+    "hanzi": "温泉",
+    "pinyin": "wēn quán",
+    "translations": [
+      "Musim semi panas",
+      "spa",
+      "onsen"
+    ]
+  },
+  {
+    "id": "9779",
+    "hanzi": "温柔",
+    "pinyin": "wēn róu",
+    "translations": [
+      "lembut dan lembut",
+      "lembut"
+    ]
+  },
+  {
+    "id": "9780",
+    "hanzi": "温室",
+    "pinyin": "wēn shì",
+    "translations": [
+      "rumah kaca"
+    ]
+  },
+  {
+    "id": "9781",
+    "hanzi": "温习",
+    "pinyin": "wēn xí",
+    "translations": [
+      "untuk meninjau (pelajaran dll)"
+    ]
+  },
+  {
+    "id": "9782",
+    "hanzi": "温馨",
+    "pinyin": "wēn xīn",
+    "translations": [
+      "kenyamanan",
+      "lembut dan harum",
+      "hangat"
+    ]
+  },
+  {
+    "id": "9783",
+    "hanzi": "瘟疫",
+    "pinyin": "wēn yì",
+    "translations": [
+      "epidemi",
+      "wabah",
+      "sampar",
+      "sakit"
+    ]
+  },
+  {
+    "id": "9784",
+    "hanzi": "文",
+    "pinyin": "wén",
+    "translations": [
+      "bahasa",
+      "budaya",
+      "menulis",
+      "resmi",
+      "sastra",
+      "lembut",
+      "(Lama) Klasifikasi untuk Koin",
+      "Kangxi Radical 67"
+    ]
+  },
+  {
+    "id": "9785",
+    "hanzi": "文具",
+    "pinyin": "wén jù",
+    "translations": [
+      "alat tulis",
+      "Item alat tulis (pena, pensil, penghapus, rautan pensil dll)"
+    ]
+  },
+  {
+    "id": "9786",
+    "hanzi": "文科",
+    "pinyin": "wén kē",
+    "translations": [
+      "Seni Liberal",
+      "sastra"
+    ]
+  },
+  {
+    "id": "9787",
+    "hanzi": "文盲",
+    "pinyin": "wén máng",
+    "translations": [
+      "buta huruf"
+    ]
+  },
+  {
+    "id": "9788",
+    "hanzi": "文凭",
+    "pinyin": "wén píng",
+    "translations": [
+      "diploma"
+    ]
+  },
+  {
+    "id": "9789",
+    "hanzi": "文人",
+    "pinyin": "wén rén",
+    "translations": [
+      "sarjana",
+      "penulis"
+    ]
+  },
+  {
+    "id": "9790",
+    "hanzi": "文物",
+    "pinyin": "wén wù",
+    "translations": [
+      "Relik Budaya",
+      "peninggalan sejarah"
+    ]
+  },
+  {
+    "id": "9791",
+    "hanzi": "文献",
+    "pinyin": "wén xiàn",
+    "translations": [
+      "dokumen"
+    ]
+  },
+  {
+    "id": "9792",
+    "hanzi": "文雅",
+    "pinyin": "wén yǎ",
+    "translations": [
+      "anggun",
+      "Dihilangkan"
+    ]
+  },
+  {
+    "id": "9793",
+    "hanzi": "闻名",
+    "pinyin": "wén míng",
+    "translations": [
+      "terkenal",
+      "terkenal",
+      "terkenal",
+      "terkenal"
+    ]
+  },
+  {
+    "id": "9794",
+    "hanzi": "蚊帐",
+    "pinyin": "wén zhàng",
+    "translations": [
+      "kawat nyamuk"
+    ]
+  },
+  {
+    "id": "9795",
+    "hanzi": "蚊子",
+    "pinyin": "wén zi",
+    "translations": [
+      "nyamuk"
+    ]
+  },
+  {
+    "id": "9796",
+    "hanzi": "吻",
+    "pinyin": "wěn",
+    "translations": [
+      "ciuman",
+      "mencium",
+      "mulut"
+    ]
+  },
+  {
+    "id": "9797",
+    "hanzi": "吻合",
+    "pinyin": "wěn hé",
+    "translations": [
+      "agar cocok",
+      "menjadi identik dengan",
+      "untuk menyesuaikan diri",
+      "mencocokkan"
+    ]
+  },
+  {
+    "id": "9798",
+    "hanzi": "紊乱",
+    "pinyin": "wěn luàn",
+    "translations": [
+      "kekacauan",
+      "kekacauan"
+    ]
+  },
+  {
+    "id": "9799",
+    "hanzi": "稳固",
+    "pinyin": "wěn gù",
+    "translations": [
+      "stabil",
+      "stabil",
+      "tegas",
+      "untuk menstabilkan"
+    ]
+  },
+  {
+    "id": "9800",
+    "hanzi": "稳健",
+    "pinyin": "wěn jiàn",
+    "translations": [
+      "tegas",
+      "stabil dan mantap"
+    ]
+  },
+  {
+    "id": "9801",
+    "hanzi": "稳妥",
+    "pinyin": "wěn tuǒ",
+    "translations": [
+      "bisa diandalkan"
+    ]
+  },
+  {
+    "id": "9802",
+    "hanzi": "稳重",
+    "pinyin": "wěn zhòng",
+    "translations": [
+      "stabil",
+      "sungguh -sungguh",
+      "tenang dan serius"
+    ]
+  },
+  {
+    "id": "9803",
+    "hanzi": "问卷",
+    "pinyin": "wèn juàn",
+    "translations": [
+      "daftar pertanyaan"
+    ]
+  },
+  {
+    "id": "9804",
+    "hanzi": "问世",
+    "pinyin": "wèn shì",
+    "translations": [
+      "untuk diterbitkan",
+      "untuk keluar"
+    ]
+  },
+  {
+    "id": "9805",
+    "hanzi": "窝",
+    "pinyin": "wō",
+    "translations": [
+      "sarang",
+      "lubang atau lubang di tubuh manusia",
+      "sarang",
+      "sarang",
+      "tempat",
+      "ke Harbour atau Shelter",
+      "untuk bertahan di cek",
+      "untuk menekuk",
+      "Classifier for Litters and Broods"
+    ]
+  },
+  {
+    "id": "9806",
+    "hanzi": "卧",
+    "pinyin": "wò",
+    "translations": [
+      "berbohong",
+      "untuk berjongkok"
+    ]
+  },
+  {
+    "id": "9807",
+    "hanzi": "污秽",
+    "pinyin": "wū huì",
+    "translations": [
+      "tidak menyenangkan",
+      "mesum",
+      "kotor"
+    ]
+  },
+  {
+    "id": "9808",
+    "hanzi": "巫婆",
+    "pinyin": "wū pó",
+    "translations": [
+      "penyihir",
+      "Penyihir",
+      "dukun wanita"
+    ]
+  },
+  {
+    "id": "9809",
+    "hanzi": "呜咽",
+    "pinyin": "wū yè",
+    "translations": [
+      "terisak",
+      "untuk merengek"
+    ]
+  },
+  {
+    "id": "9810",
+    "hanzi": "屋顶",
+    "pinyin": "wū dǐng",
+    "translations": [
+      "atap"
+    ]
+  },
+  {
+    "id": "9811",
+    "hanzi": "无比",
+    "pinyin": "wú bǐ",
+    "translations": [
+      "tak tertandingi",
+      "tak ada taranya"
+    ]
+  },
+  {
+    "id": "9812",
+    "hanzi": "无不",
+    "pinyin": "wú bù",
+    "translations": [
+      "tidak ada yang kurang",
+      "tidak ada yang hilang",
+      "semuanya ada di sana",
+      "semua orang tanpa kecuali"
+    ]
+  },
+  {
+    "id": "9813",
+    "hanzi": "无偿",
+    "pinyin": "wú cháng",
+    "translations": [
+      "bebas",
+      "gratis",
+      "tanpa biaya"
+    ]
+  },
+  {
+    "id": "9814",
+    "hanzi": "无敌",
+    "pinyin": "wú dí",
+    "translations": [
+      "tiada bandingnya",
+      "tanpa saingan",
+      "Paragon"
+    ]
+  },
+  {
+    "id": "9815",
+    "hanzi": "无恶不作",
+    "pinyin": "wú è bú zuò",
+    "translations": [
+      "tidak menyusut dari kejahatan apa pun (idiom)",
+      "untuk melakukan kesalahan yang bisa dibayangkan"
+    ]
+  },
+  {
+    "id": "9816",
+    "hanzi": "无非",
+    "pinyin": "wú fēi",
+    "translations": [
+      "hanya",
+      "tidak ada lagi"
+    ]
+  },
+  {
+    "id": "9817",
+    "hanzi": "无辜",
+    "pinyin": "wú gū",
+    "translations": [
+      "tidak bersalah",
+      "tidak bersalah",
+      "tidak bersalah (hukum)"
+    ]
+  },
+  {
+    "id": "9818",
+    "hanzi": "无故",
+    "pinyin": "wú gù",
+    "translations": [
+      "tanpa alasan atau alasan"
+    ]
+  },
+  {
+    "id": "9819",
+    "hanzi": "无关紧要",
+    "pinyin": "wú guān jǐn yào",
+    "translations": [
+      "cuek",
+      "tidak penting"
+    ]
+  },
+  {
+    "id": "9820",
+    "hanzi": "无话可说",
+    "pinyin": "wú huà kě shuō",
+    "translations": [
+      "untuk tidak mengatakan apa -apa (idiom)"
+    ]
+  },
+  {
+    "id": "9821",
+    "hanzi": "无济于事",
+    "pinyin": "wú jì yú shì",
+    "translations": [
+      "tidak berhasil",
+      "tidak ada gunanya"
+    ]
+  },
+  {
+    "id": "9822",
+    "hanzi": "无家可归",
+    "pinyin": "wú jiā kě guī",
+    "translations": [
+      "tunawisma"
+    ]
+  },
+  {
+    "id": "9823",
+    "hanzi": "无精打采",
+    "pinyin": "wú jīng dǎ cǎi",
+    "translations": [
+      "putus asa dan downcast (idiom)",
+      "lesu",
+      "dengan semangat rendah",
+      "dicuci"
+    ]
+  },
+  {
+    "id": "9824",
+    "hanzi": "无可奉告",
+    "pinyin": "wú kě fèng gào",
+    "translations": [
+      "(Idiom) \"Tidak Ada Komentar\""
+    ]
+  },
+  {
+    "id": "9825",
+    "hanzi": "无可厚非",
+    "pinyin": "wú kě hòu fēi",
+    "translations": [
+      "Lihat 未 可 厚 非 [wèi kě hòu fēi]"
+    ]
+  },
+  {
+    "id": "9826",
+    "hanzi": "无可奈何",
+    "pinyin": "wú kě nài hé",
+    "translations": [
+      "tidak ada jalan",
+      "tidak punya alternatif",
+      "ABBR. ke 無奈 | 无奈 [wú nài]"
+    ]
+  },
+  {
+    "id": "9827",
+    "hanzi": "无理",
+    "pinyin": "wú lǐ",
+    "translations": [
+      "irasional",
+      "keterlaluan"
+    ]
+  },
+  {
+    "id": "9828",
+    "hanzi": "无力",
+    "pinyin": "wú lì",
+    "translations": [
+      "tidak berdaya",
+      "kurang kekuatan"
+    ]
+  },
+  {
+    "id": "9829",
+    "hanzi": "无论如何",
+    "pinyin": "wú lùn rú hé",
+    "translations": [
+      "apapun kasusnya",
+      "dalam acara apa pun",
+      "apa pun yang terjadi",
+      "dengan segala cara yang memungkinkan"
+    ]
+  },
+  {
+    "id": "9830",
+    "hanzi": "无能",
+    "pinyin": "wú néng",
+    "translations": [
+      "ketidakmampuan",
+      "ketidakmampuan",
+      "tidak mampu",
+      "tidak berdaya"
+    ]
+  },
+  {
+    "id": "9831",
+    "hanzi": "无能为力",
+    "pinyin": "wú néng wéi lì",
+    "translations": [
+      "impoten (idiom)",
+      "tidak berdaya",
+      "tak berdaya"
+    ]
+  },
+  {
+    "id": "9832",
+    "hanzi": "无情",
+    "pinyin": "wú qíng",
+    "translations": [
+      "kejam",
+      "kejam",
+      "tanpa belas kasihan",
+      "kejam"
+    ]
+  },
+  {
+    "id": "9833",
+    "hanzi": "无情无义",
+    "pinyin": "wú qíng wú yì",
+    "translations": [
+      "Benar -benar kekurangan perasaan atau rasa keadilan (idiom)",
+      "Dingin dan kejam"
+    ]
+  },
+  {
+    "id": "9834",
+    "hanzi": "无穷",
+    "pinyin": "wú qióng",
+    "translations": [
+      "tak ada habisnya",
+      "Tanpa batas",
+      "tidak ada habisnya"
+    ]
+  },
+  {
+    "id": "9835",
+    "hanzi": "无私",
+    "pinyin": "wú sī",
+    "translations": [
+      "tanpa pamrih",
+      "tidak mementingkan diri sendiri",
+      "tidak tertarik",
+      "altruistis"
+    ]
+  },
+  {
+    "id": "9836",
+    "hanzi": "无所事事",
+    "pinyin": "wú suǒ shì shì",
+    "translations": [
+      "tidak ada hubungannya",
+      "untuk menganggur waktu (idiom)"
+    ]
+  },
+  {
+    "id": "9837",
+    "hanzi": "无所作为",
+    "pinyin": "wú suǒ zuò wéi",
+    "translations": [
+      "mencoba apa pun dan tidak mencapai apa pun (idiom)",
+      "tanpa inisiatif atau drive",
+      "lemah"
+    ]
+  },
+  {
+    "id": "9838",
+    "hanzi": "无条件",
+    "pinyin": "wú tiáo jiàn",
+    "translations": [
+      "tak bersyarat"
+    ]
+  },
+  {
+    "id": "9839",
+    "hanzi": "无微不至",
+    "pinyin": "wú wēi bú zhì",
+    "translations": [
+      "dengan segala cara yang memungkinkan (idiom)",
+      "teliti"
+    ]
+  },
+  {
+    "id": "9840",
+    "hanzi": "无线",
+    "pinyin": "wú xiàn",
+    "translations": [
+      "nirkabel"
+    ]
+  },
+  {
+    "id": "9841",
+    "hanzi": "无线电",
+    "pinyin": "wú xiàn diàn",
+    "translations": [
+      "nirkabel"
+    ]
+  },
+  {
+    "id": "9842",
+    "hanzi": "无形",
+    "pinyin": "wú xíng",
+    "translations": [
+      "Incorporeal",
+      "maya",
+      "tidak berbentuk",
+      "tak terlihat (aset)",
+      "tidak berwujud"
+    ]
+  },
+  {
+    "id": "9843",
+    "hanzi": "无形中",
+    "pinyin": "wú xíng zhōng",
+    "translations": [
+      "tidak terlihat",
+      "sebenarnya"
+    ]
+  },
+  {
+    "id": "9844",
+    "hanzi": "无须",
+    "pinyin": "wú xū",
+    "translations": [
+      "tidak butuh",
+      "tidak berkewajiban",
+      "belum tentu"
+    ]
+  },
+  {
+    "id": "9845",
+    "hanzi": "无意",
+    "pinyin": "wú yì",
+    "translations": [
+      "tidak sengaja",
+      "kebetulan",
+      "untuk tidak memiliki niat (melakukan sth)"
+    ]
+  },
+  {
+    "id": "9846",
+    "hanzi": "无忧无虑",
+    "pinyin": "wú yōu wú lǜ",
+    "translations": [
+      "riang dan tanpa kekhawatiran (idiom)"
+    ]
+  },
+  {
+    "id": "9847",
+    "hanzi": "无缘",
+    "pinyin": "wú yuán",
+    "translations": [
+      "untuk tidak memiliki kesempatan",
+      "tidak ada cara (melakukan sth)",
+      "tidak ada kesempatan",
+      "tidak ada koneksi",
+      "tidak ditempatkan (dalam kompetisi)",
+      "(dalam lirik pop) Tidak ada kesempatan cinta, tidak ada tempat untuk bersama dll"
+    ]
+  },
+  {
+    "id": "9848",
+    "hanzi": "无知",
+    "pinyin": "wú zhī",
+    "translations": [
+      "kurang pengetahuan",
+      "ketidaktahuan"
+    ]
+  },
+  {
+    "id": "9849",
+    "hanzi": "无足轻重",
+    "pinyin": "wú zú qīng zhòng",
+    "translations": [
+      "tidak penting"
+    ]
+  },
+  {
+    "id": "9850",
+    "hanzi": "五花八门",
+    "pinyin": "wǔ huā bā mén",
+    "translations": [
+      "banyak sekali",
+      "semua jenis",
+      "semua jenis"
+    ]
+  },
+  {
+    "id": "9851",
+    "hanzi": "五星级",
+    "pinyin": "wǔ xīng jí",
+    "translations": [
+      "Hotel bintang lima)"
+    ]
+  },
+  {
+    "id": "9852",
+    "hanzi": "武力",
+    "pinyin": "wǔ lì",
+    "translations": [
+      "kekuatan militer"
+    ]
+  },
+  {
+    "id": "9853",
+    "hanzi": "武装",
+    "pinyin": "wǔ zhuāng",
+    "translations": [
+      "lengan",
+      "peralatan",
+      "untuk lengan",
+      "militer",
+      "pasukan bersenjata)"
+    ]
+  },
+  {
+    "id": "9854",
+    "hanzi": "侮辱",
+    "pinyin": "wǔ rǔ",
+    "translations": [
+      "untuk menghina",
+      "untuk mempermalukan",
+      "aib"
+    ]
+  },
+  {
+    "id": "9855",
+    "hanzi": "捂",
+    "pinyin": "wǔ",
+    "translations": [
+      "melampirkan",
+      "untuk menutupi dengan tangan (mata, hidung atau telinga seseorang)",
+      "untuk menutupi (perselingkuhan)",
+      "kebalikan",
+      "bertentangan"
+    ]
+  },
+  {
+    "id": "9856",
+    "hanzi": "舞厅",
+    "pinyin": "wǔ tīng",
+    "translations": [
+      "lantai dansa",
+      "Ballroom"
+    ]
+  },
+  {
+    "id": "9857",
+    "hanzi": "勿",
+    "pinyin": "wù",
+    "translations": [
+      "tidak"
+    ]
+  },
+  {
+    "id": "9858",
+    "hanzi": "务必",
+    "pinyin": "wù bì",
+    "translations": [
+      "harus",
+      "perlu",
+      "untuk memastikan"
+    ]
+  },
+  {
+    "id": "9859",
+    "hanzi": "务实",
+    "pinyin": "wù shí",
+    "translations": [
+      "pragmatis",
+      "menangani masalah konkret"
+    ]
+  },
+  {
+    "id": "9860",
+    "hanzi": "物流",
+    "pinyin": "wù liú",
+    "translations": [
+      "distribusi (bisnis)",
+      "logistik"
+    ]
+  },
+  {
+    "id": "9861",
+    "hanzi": "物体",
+    "pinyin": "wù tǐ",
+    "translations": [
+      "obyek",
+      "tubuh",
+      "zat"
+    ]
+  },
+  {
+    "id": "9862",
+    "hanzi": "物证",
+    "pinyin": "wù zhèng",
+    "translations": [
+      "Bukti materi"
+    ]
+  },
+  {
+    "id": "9863",
+    "hanzi": "物资",
+    "pinyin": "wù zī",
+    "translations": [
+      "barang-barang",
+      "persediaan"
+    ]
+  },
+  {
+    "id": "9864",
+    "hanzi": "误差",
+    "pinyin": "wù chā",
+    "translations": [
+      "perbedaan",
+      "kesalahan",
+      "ketidaktelitian"
+    ]
+  },
+  {
+    "id": "9865",
+    "hanzi": "误导",
+    "pinyin": "wù dǎo",
+    "translations": [
+      "untuk menyesatkan",
+      "untuk menyesatkan",
+      "menyesatkan"
+    ]
+  },
+  {
+    "id": "9866",
+    "hanzi": "误区",
+    "pinyin": "wù qū",
+    "translations": [
+      "Ide yang salah",
+      "Kesalahpahaman",
+      "Kesalahan cara seseorang"
+    ]
+  },
+  {
+    "id": "9867",
+    "hanzi": "雾",
+    "pinyin": "wù",
+    "translations": [
+      "kabut",
+      "kabut"
+    ]
+  },
+  {
+    "id": "9868",
+    "hanzi": "吸纳",
+    "pinyin": "xī nà",
+    "translations": [
+      "untuk menerima",
+      "untuk menyerap",
+      "untuk mengakui",
+      "menerima"
+    ]
+  },
+  {
+    "id": "9869",
+    "hanzi": "吸取",
+    "pinyin": "xī qǔ",
+    "translations": [
+      "untuk menyerap",
+      "untuk menggambar (pelajaran, wawasan dll)",
+      "untuk mengasimilasi"
+    ]
+  },
+  {
+    "id": "9870",
+    "hanzi": "昔日",
+    "pinyin": "xī rì",
+    "translations": [
+      "dahulu",
+      "Di masa lalu"
+    ]
+  },
+  {
+    "id": "9871",
+    "hanzi": "息息相关",
+    "pinyin": "xī xī xiāng guān",
+    "translations": [
+      "terikat erat (idiom)",
+      "terkait erat"
+    ]
+  },
+  {
+    "id": "9872",
+    "hanzi": "稀",
+    "pinyin": "xī",
+    "translations": [
+      "langka",
+      "luar biasa",
+      "berair",
+      "jarang"
+    ]
+  },
+  {
+    "id": "9873",
+    "hanzi": "稀罕",
+    "pinyin": "xī han",
+    "translations": [
+      "langka",
+      "luar biasa",
+      "keanehan",
+      "untuk menghargai sebagai langka",
+      "untuk menghargai",
+      "Taiwan PR. [xī hǎn]"
+    ]
+  },
+  {
+    "id": "9874",
+    "hanzi": "稀奇",
+    "pinyin": "xī qí",
+    "translations": [
+      "langka",
+      "aneh"
+    ]
+  },
+  {
+    "id": "9875",
+    "hanzi": "稀少",
+    "pinyin": "xī shǎo",
+    "translations": [
+      "jarang",
+      "langka"
+    ]
+  },
+  {
+    "id": "9876",
+    "hanzi": "锡",
+    "pinyin": "xī",
+    "translations": [
+      "timah (kimia)",
+      "untuk menganugerahkan",
+      "untuk berunding",
+      "untuk memberikan",
+      "Taiwan PR. [xí]"
+    ]
+  },
+  {
+    "id": "9877",
+    "hanzi": "熙熙攘攘",
+    "pinyin": "xī xī rǎng rǎng",
+    "translations": [
+      "ramai dengan aktivitas (idiom)"
+    ]
+  },
+  {
+    "id": "9878",
+    "hanzi": "熄火",
+    "pinyin": "xī huǒ",
+    "translations": [
+      "(api, lampu dll) untuk keluar",
+      "untuk memadamkan (api)",
+      "(Gbr.) Untuk mereda",
+      "(dari kendaraan) untuk berhenti"
+    ]
+  },
+  {
+    "id": "9879",
+    "hanzi": "膝盖",
+    "pinyin": "xī gài",
+    "translations": [
+      "lutut",
+      "(Slang Internet) untuk berlutut (dalam kekaguman)"
+    ]
+  },
+  {
+    "id": "9880",
+    "hanzi": "嬉笑",
+    "pinyin": "xī xiào",
+    "translations": [
+      "tertawa dan bermain",
+      "untuk terkikik"
+    ]
+  },
+  {
+    "id": "9881",
+    "hanzi": "习俗",
+    "pinyin": "xí sú",
+    "translations": [
+      "kebiasaan",
+      "tradisi",
+      "tradisi lokal",
+      "Konvensi"
+    ]
+  },
+  {
+    "id": "9882",
+    "hanzi": "席",
+    "pinyin": "xí",
+    "translations": [
+      "Tiket anyaman",
+      "kursi",
+      "perjamuan",
+      "tempat di majelis demokratis",
+      "classifier untuk jamuan, percakapan dll"
+    ]
+  },
+  {
+    "id": "9883",
+    "hanzi": "席位",
+    "pinyin": "xí wèi",
+    "translations": [
+      "Kursi (di teater, stadion dll)",
+      "kursi parlemen atau kongres"
+    ]
+  },
+  {
+    "id": "9884",
+    "hanzi": "袭击",
+    "pinyin": "xí jī",
+    "translations": [
+      "serangan (khususnya serangan kejutan)",
+      "serangan",
+      "untuk menyerang"
+    ]
+  },
+  {
+    "id": "9885",
+    "hanzi": "媳妇",
+    "pinyin": "xí fù",
+    "translations": [
+      "menantu wanita",
+      "istri (pria yang lebih muda)",
+      "wanita muda yang sudah menikah",
+      "wanita muda"
+    ]
+  },
+  {
+    "id": "9886",
+    "hanzi": "洗涤剂",
+    "pinyin": "xǐ dí jì",
+    "translations": [
+      "agen pembersih",
+      "deterjen"
+    ]
+  },
+  {
+    "id": "9887",
+    "hanzi": "洗礼",
+    "pinyin": "xǐ lǐ",
+    "translations": [
+      "Baptisan (lit. atau gbr.)"
+    ]
+  },
+  {
+    "id": "9888",
+    "hanzi": "喜出望外",
+    "pinyin": "xǐ chū wàng wài",
+    "translations": [
+      "Untuk senang melampaui harapan seseorang (idiom)",
+      "sangat gembira pada pergantian peristiwa"
+    ]
+  },
+  {
+    "id": "9889",
+    "hanzi": "喜好",
+    "pinyin": "xǐ hào",
+    "translations": [
+      "menyukai",
+      "menyukai",
+      "untuk memilih",
+      "mencintai",
+      "rasanya seseorang",
+      "preferensi"
+    ]
+  },
+  {
+    "id": "9890",
+    "hanzi": "喜酒",
+    "pinyin": "xǐ jiǔ",
+    "translations": [
+      "Pesta Pernikahan",
+      "minuman keras mabuk di pesta pernikahan"
+    ]
+  },
+  {
+    "id": "9891",
+    "hanzi": "喜怒哀乐",
+    "pinyin": "xǐ nù āi lè",
+    "translations": [
+      "Empat jenis emosi manusia, yaitu: kebahagiaan 歡喜 | 欢喜 [huān xǐ], amarah 憤怒 | 愤怒 [fèn nù], kesedihan 悲哀 [bēi āi] dan sukacita 快樂 | 快乐 [Kuài lè]"
+    ]
+  },
+  {
+    "id": "9892",
+    "hanzi": "喜庆",
+    "pinyin": "xǐ qìng",
+    "translations": [
+      "sorak kegirangan",
+      "meriah"
+    ]
+  },
+  {
+    "id": "9893",
+    "hanzi": "喜事",
+    "pinyin": "xǐ shì",
+    "translations": [
+      "acara bahagia",
+      "pernikahan"
+    ]
+  },
+  {
+    "id": "9894",
+    "hanzi": "喜糖",
+    "pinyin": "xǐ táng",
+    "translations": [
+      "manis diberikan pada acara yang bahagia (khususnya pernikahan)"
+    ]
+  },
+  {
+    "id": "9895",
+    "hanzi": "喜洋洋",
+    "pinyin": "xǐ yáng yáng",
+    "translations": [
+      "bersinar dengan sukacita"
+    ]
+  },
+  {
+    "id": "9896",
+    "hanzi": "喜悦",
+    "pinyin": "xǐ yuè",
+    "translations": [
+      "senang",
+      "riang"
+    ]
+  },
+  {
+    "id": "9897",
+    "hanzi": "细腻",
+    "pinyin": "xì nì",
+    "translations": [
+      "sangat indah",
+      "teliti"
+    ]
+  },
+  {
+    "id": "9898",
+    "hanzi": "细微",
+    "pinyin": "xì wēi",
+    "translations": [
+      "kecil",
+      "menit",
+      "Bagus",
+      "tak kentara",
+      "sensitif (instrumen)"
+    ]
+  },
+  {
+    "id": "9899",
+    "hanzi": "细心",
+    "pinyin": "xì xīn",
+    "translations": [
+      "hati-hati",
+      "penuh perhatian"
+    ]
+  },
+  {
+    "id": "9900",
+    "hanzi": "虾",
+    "pinyin": "xiā",
+    "translations": [
+      "udang",
+      "udang"
+    ]
+  },
+  {
+    "id": "9901",
+    "hanzi": "瞎",
+    "pinyin": "xiā",
+    "translations": [
+      "buta",
+      "tanpa dasar",
+      "bodohnya",
+      "tanpa tujuan"
+    ]
+  },
+  {
+    "id": "9902",
+    "hanzi": "侠义",
+    "pinyin": "xiá yì",
+    "translations": [
+      "sangat sopan",
+      "kesopanan",
+      "Knight-Etranteri"
+    ]
+  },
+  {
+    "id": "9903",
+    "hanzi": "峡谷",
+    "pinyin": "xiá gǔ",
+    "translations": [
+      "ngarai",
+      "insang",
+      "jurang"
+    ]
+  },
+  {
+    "id": "9904",
+    "hanzi": "狭隘",
+    "pinyin": "xiá ài",
+    "translations": [
+      "sempit",
+      "ketat",
+      "berpikiran sempit",
+      "kurang dalam pengalaman"
+    ]
+  },
+  {
+    "id": "9905",
+    "hanzi": "狭小",
+    "pinyin": "xiá xiǎo",
+    "translations": [
+      "sempit"
+    ]
+  },
+  {
+    "id": "9906",
+    "hanzi": "狭窄",
+    "pinyin": "xiá zhǎi",
+    "translations": [
+      "sempit"
+    ]
+  },
+  {
+    "id": "9907",
+    "hanzi": "下场",
+    "pinyin": "xià chǎng",
+    "translations": [
+      "untuk pergi (panggung, ruang ujian, lapangan bermain dll)",
+      "untuk mengambil bagian dalam beberapa aktivitas",
+      "untuk mengikuti pemeriksaan (dalam sistem pemeriksaan kekaisaran)"
+    ]
+  },
+  {
+    "id": "9908",
+    "hanzi": "下跌",
+    "pinyin": "xià diē",
+    "translations": [
+      "terjatuh",
+      "untuk jatuh"
+    ]
+  },
+  {
+    "id": "9909",
+    "hanzi": "下岗",
+    "pinyin": "xià gǎng",
+    "translations": [
+      "untuk keluar dari tugas penjaga",
+      "untuk memberhentikan (seorang pekerja)",
+      "pemberhentian"
+    ]
+  },
+  {
+    "id": "9910",
+    "hanzi": "下功夫",
+    "pinyin": "xià gōng fu",
+    "translations": [
+      "Lihat 下工夫 [xià gōng fu]"
+    ]
+  },
+  {
+    "id": "9911",
+    "hanzi": "下海",
+    "pinyin": "xià hǎi",
+    "translations": [
+      "untuk pergi ke laut",
+      "untuk memasuki laut (berenang dll)",
+      "(Gbr.) Untuk mengambil risiko (mis. Tinggalkan pekerjaan yang aman, atau masukkan prostitusi dll)"
+    ]
+  },
+  {
+    "id": "9912",
+    "hanzi": "下级",
+    "pinyin": "xià jí",
+    "translations": [
+      "peringkat rendah",
+      "level rendah",
+      "kelas bawah",
+      "bawahan"
+    ]
+  },
+  {
+    "id": "9913",
+    "hanzi": "下决心",
+    "pinyin": "xià jué xīn",
+    "translations": [
+      "untuk menentukan",
+      "untuk menyelesaikan"
+    ]
+  },
+  {
+    "id": "9914",
+    "hanzi": "下令",
+    "pinyin": "xià lìng",
+    "translations": [
+      "untuk memberi perintah",
+      "untuk memerintah"
+    ]
+  },
+  {
+    "id": "9915",
+    "hanzi": "下落",
+    "pinyin": "xià luò",
+    "translations": [
+      "dimana",
+      "untuk menjatuhkan",
+      "terjatuh"
+    ]
+  },
+  {
+    "id": "9916",
+    "hanzi": "下期",
+    "pinyin": "xià qī",
+    "translations": [
+      "Episode berikutnya, masalah, atau titik"
+    ]
+  },
+  {
+    "id": "9917",
+    "hanzi": "下棋",
+    "pinyin": "xià qí",
+    "translations": [
+      "bermain catur"
+    ]
+  },
+  {
+    "id": "9918",
+    "hanzi": "下山",
+    "pinyin": "xià shān",
+    "translations": [
+      "(dari matahari) untuk terbenam"
+    ]
+  },
+  {
+    "id": "9919",
+    "hanzi": "下手",
+    "pinyin": "xià shǒu",
+    "translations": [
+      "untuk memulai",
+      "untuk meletakkan tangannya",
+      "untuk mengatur tentang",
+      "kursi di sebelah kanan tamu utama"
+    ]
+  },
+  {
+    "id": "9920",
+    "hanzi": "下属",
+    "pinyin": "xià shǔ",
+    "translations": [
+      "bawahan",
+      "bawahan"
+    ]
+  },
+  {
+    "id": "9921",
+    "hanzi": "下台",
+    "pinyin": "xià tái",
+    "translations": [
+      "untuk keluar dari panggung",
+      "jatuh dari posisi prestise",
+      "untuk mundur (dari kantor dll)",
+      "untuk melepaskan diri",
+      "untuk keluar dari kait"
+    ]
+  },
+  {
+    "id": "9922",
+    "hanzi": "下调",
+    "pinyin": "xià tiáo",
+    "translations": [
+      "untuk menyesuaikan ke bawah",
+      "untuk menurunkan (harga, upah dll)"
+    ]
+  },
+  {
+    "id": "9923",
+    "hanzi": "下乡",
+    "pinyin": "xià xiāng",
+    "translations": [
+      "untuk pergi ke pedesaan"
+    ]
+  },
+  {
+    "id": "9924",
+    "hanzi": "下旬",
+    "pinyin": "xià xún",
+    "translations": [
+      "sepertiga terakhir bulan ini"
+    ]
+  },
+  {
+    "id": "9925",
+    "hanzi": "下一代",
+    "pinyin": "xià yí dài",
+    "translations": [
+      "generasi penerus bangsa"
+    ]
+  },
+  {
+    "id": "9926",
+    "hanzi": "下意识",
+    "pinyin": "xià yì shí",
+    "translations": [
+      "pikiran bawah sadar"
+    ]
+  },
+  {
+    "id": "9927",
+    "hanzi": "下游",
+    "pinyin": "xià yóu",
+    "translations": [
+      "jangkauan bawah (dari sungai)",
+      "tingkat bawah",
+      "Eselon yang lebih rendah",
+      "hilir"
+    ]
+  },
+  {
+    "id": "9928",
+    "hanzi": "下坠",
+    "pinyin": "xià zhuì",
+    "translations": [
+      "untuk jatuh bebas",
+      "menjuntai, terkulai"
+    ]
+  },
+  {
+    "id": "9929",
+    "hanzi": "吓唬",
+    "pinyin": "xià hu",
+    "translations": [
+      "untuk menakuti",
+      "untuk menakuti"
+    ]
+  },
+  {
+    "id": "9930",
+    "hanzi": "吓人",
+    "pinyin": "xià rén",
+    "translations": [
+      "Menakutkan, seram",
+      "untuk menakuti"
+    ]
+  },
+  {
+    "id": "9931",
+    "hanzi": "夏令营",
+    "pinyin": "xià lìng yíng",
+    "translations": [
+      "Perkemahan musim panas"
+    ]
+  },
+  {
+    "id": "9932",
+    "hanzi": "仙鹤",
+    "pinyin": "xiān hè",
+    "translations": [
+      "Derek merah (Grus japonensis)"
+    ]
+  },
+  {
+    "id": "9933",
+    "hanzi": "仙女",
+    "pinyin": "xiān nǚ",
+    "translations": [
+      "peri"
+    ]
+  },
+  {
+    "id": "9934",
+    "hanzi": "先例",
+    "pinyin": "xiān lì",
+    "translations": [
+      "mendahului",
+      "preseden"
+    ]
+  },
+  {
+    "id": "9935",
+    "hanzi": "先天",
+    "pinyin": "xiān tiān",
+    "translations": [
+      "bawaan lahir",
+      "bawaan",
+      "alami"
+    ]
+  },
+  {
+    "id": "9936",
+    "hanzi": "纤维",
+    "pinyin": "xiān wéi",
+    "translations": [
+      "serat"
+    ]
+  },
+  {
+    "id": "9937",
+    "hanzi": "掀",
+    "pinyin": "xiān",
+    "translations": [
+      "untuk mengangkat (tutup)",
+      "ke Rock",
+      "untuk mengejutkan"
+    ]
+  },
+  {
+    "id": "9938",
+    "hanzi": "掀起",
+    "pinyin": "xiān qǐ",
+    "translations": [
+      "mengangkat",
+      "untuk menaikkan ketinggian",
+      "memulai",
+      "kenaikan",
+      "untuk berangkat (kampanye)"
+    ]
+  },
+  {
+    "id": "9939",
+    "hanzi": "鲜活",
+    "pinyin": "xiān huó",
+    "translations": [
+      "jelas",
+      "hidup",
+      "(bahan makanan) hidup atau segar"
+    ]
+  },
+  {
+    "id": "9940",
+    "hanzi": "鲜美",
+    "pinyin": "xiān měi",
+    "translations": [
+      "lezat",
+      "lezat"
+    ]
+  },
+  {
+    "id": "9941",
+    "hanzi": "鲜血",
+    "pinyin": "xiān xuè",
+    "translations": [
+      "darah"
+    ]
+  },
+  {
+    "id": "9942",
+    "hanzi": "弦",
+    "pinyin": "xián",
+    "translations": [
+      "string busur",
+      "serangkaian alat musik",
+      "Watchspring",
+      "Chord (segmen kurva)",
+      "sisi miring"
+    ]
+  },
+  {
+    "id": "9943",
+    "hanzi": "衔接",
+    "pinyin": "xián jiē",
+    "translations": [
+      "untuk bergabung bersama",
+      "untuk menggabungkan"
+    ]
+  },
+  {
+    "id": "9944",
+    "hanzi": "嫌弃",
+    "pinyin": "xián qì",
+    "translations": [
+      "untuk menghindari SB (tidak suka)",
+      "untuk mengembalikannya ke SB",
+      "untuk mengabaikan"
+    ]
+  },
+  {
+    "id": "9945",
+    "hanzi": "嫌疑",
+    "pinyin": "xián yí",
+    "translations": [
+      "kecurigaan",
+      "untuk memiliki kecurigaan"
+    ]
+  },
+  {
+    "id": "9946",
+    "hanzi": "显而易见",
+    "pinyin": "xiǎn ér yì jiàn",
+    "translations": [
+      "Jelas dan mudah dilihat (idiom)",
+      "jelas sekali",
+      "jelas",
+      "tak usah dikatakan lagi"
+    ]
+  },
+  {
+    "id": "9947",
+    "hanzi": "显赫",
+    "pinyin": "xiǎn hè",
+    "translations": [
+      "terkemuka",
+      "terkenal"
+    ]
+  },
+  {
+    "id": "9948",
+    "hanzi": "显示器",
+    "pinyin": "xiǎn shì qì",
+    "translations": [
+      "Monitor (komputer)"
+    ]
+  },
+  {
+    "id": "9949",
+    "hanzi": "显现",
+    "pinyin": "xiǎn xiàn",
+    "translations": [
+      "penampilan",
+      "muncul"
+    ]
+  },
+  {
+    "id": "9950",
+    "hanzi": "显眼",
+    "pinyin": "xiǎn yǎn",
+    "translations": [
+      "menyolok",
+      "eye-catching",
+      "glamor"
+    ]
+  },
+  {
+    "id": "9951",
+    "hanzi": "现成",
+    "pinyin": "xiàn chéng",
+    "translations": [
+      "siap pakai",
+      "tersedia"
+    ]
+  },
+  {
+    "id": "9952",
+    "hanzi": "现任",
+    "pinyin": "xiàn rèn",
+    "translations": [
+      "untuk menempati pos saat ini",
+      "Saat ini (Presiden dll)",
+      "petahana",
+      "(Coll.) Pacar saat ini (pacar, pasangan)"
+    ]
+  },
+  {
+    "id": "9953",
+    "hanzi": "现行",
+    "pinyin": "xiàn xíng",
+    "translations": [
+      "berlaku",
+      "terpaksa",
+      "saat ini"
+    ]
+  },
+  {
+    "id": "9954",
+    "hanzi": "限",
+    "pinyin": "xiàn",
+    "translations": [
+      "membatasi",
+      "melompat",
+      "untuk menetapkan batas (aktif)"
+    ]
+  },
+  {
+    "id": "9955",
+    "hanzi": "限定",
+    "pinyin": "xiàn dìng",
+    "translations": [
+      "untuk membatasi",
+      "membatasi"
+    ]
+  },
+  {
+    "id": "9956",
+    "hanzi": "限度",
+    "pinyin": "xiàn dù",
+    "translations": [
+      "keterbatasan",
+      "membatasi"
+    ]
+  },
+  {
+    "id": "9957",
+    "hanzi": "限于",
+    "pinyin": "xiàn yú",
+    "translations": [
+      "untuk dibatasi",
+      "untuk dibatasi"
+    ]
+  },
+  {
+    "id": "9958",
+    "hanzi": "线条",
+    "pinyin": "xiàn tiáo",
+    "translations": [
+      "garis (dalam menggambar, kaligrafi dll)",
+      "Garis atau kontur objek tiga dimensi (gaya rambut, pakaian, mobil dll)"
+    ]
+  },
+  {
+    "id": "9959",
+    "hanzi": "宪法",
+    "pinyin": "xiàn fǎ",
+    "translations": [
+      "Konstitusi (suatu negara)"
+    ]
+  },
+  {
+    "id": "9960",
+    "hanzi": "陷",
+    "pinyin": "xiàn",
+    "translations": [
+      "batu sandungan",
+      "perangkap",
+      "untuk macet",
+      "tenggelam",
+      "untuk menyerah",
+      "untuk membingkai (biaya palsu)",
+      "untuk menangkap (kota dalam pertempuran)",
+      "jatuh (ke musuh)",
+      "cacat"
+    ]
+  },
+  {
+    "id": "9961",
+    "hanzi": "陷阱",
+    "pinyin": "xiàn jǐng",
+    "translations": [
+      "batu sandungan",
+      "jerat",
+      "perangkap"
+    ]
+  },
+  {
+    "id": "9962",
+    "hanzi": "馅儿",
+    "pinyin": "xiàn r",
+    "translations": [
+      "Varian Erhua dari 餡 | 馅 [xiàn]"
+    ]
+  },
+  {
+    "id": "9963",
+    "hanzi": "羡慕",
+    "pinyin": "xiàn mù",
+    "translations": [
+      "iri",
+      "untuk mengagumi"
+    ]
+  },
+  {
+    "id": "9964",
+    "hanzi": "献血",
+    "pinyin": "xiàn xuè",
+    "translations": [
+      "untuk menyumbangkan darah"
+    ]
+  },
+  {
+    "id": "9965",
+    "hanzi": "腺",
+    "pinyin": "xiàn",
+    "translations": [
+      "kelenjar"
+    ]
+  },
+  {
+    "id": "9966",
+    "hanzi": "乡亲",
+    "pinyin": "xiāng qīn",
+    "translations": [
+      "sesama warga negara (dari desa yang sama)",
+      "orang lokal",
+      "orang desa",
+      "Orang -orang di rumah"
+    ]
+  },
+  {
+    "id": "9967",
+    "hanzi": "乡下",
+    "pinyin": "xiāng xia",
+    "translations": [
+      "pedesaan",
+      "daerah pedesaan"
+    ]
+  },
+  {
+    "id": "9968",
+    "hanzi": "相伴",
+    "pinyin": "xiāng bàn",
+    "translations": [
+      "untuk menemani SB",
+      "untuk menemani satu sama lain"
+    ]
+  },
+  {
+    "id": "9969",
+    "hanzi": "相比之下",
+    "pinyin": "xiāng bǐ zhī xià",
+    "translations": [
+      "dengan perbandingan"
+    ]
+  },
+  {
+    "id": "9970",
+    "hanzi": "相差",
+    "pinyin": "xiāng chà",
+    "translations": [
+      "untuk membedakan",
+      "perbedaan antara"
+    ]
+  },
+  {
+    "id": "9971",
+    "hanzi": "相传",
+    "pinyin": "xiāng chuán",
+    "translations": [
+      "untuk meneruskan",
+      "untuk tangan ke bawah",
+      "Tradisi memiliki itu ...",
+      "menurut legenda"
+    ]
+  },
+  {
+    "id": "9972",
+    "hanzi": "相当于",
+    "pinyin": "xiāng dāng yú",
+    "translations": [
+      "setara dengan"
+    ]
+  },
+  {
+    "id": "9973",
+    "hanzi": "相对",
+    "pinyin": "xiāng duì",
+    "translations": [
+      "relatif",
+      "di depan",
+      "untuk melawan",
+      "untuk melawan",
+      "relatif",
+      "vis-a-vis",
+      "mitra"
+    ]
+  },
+  {
+    "id": "9974",
+    "hanzi": "相对而言",
+    "pinyin": "xiāng duì ér yán",
+    "translations": [
+      "secara relatif, secara komparatif berbicara"
+    ]
+  },
+  {
+    "id": "9975",
+    "hanzi": "相辅相成",
+    "pinyin": "xiāng fǔ xiāng chéng",
+    "translations": [
+      "untuk saling melengkapi (idiom)"
+    ]
+  },
+  {
+    "id": "9976",
+    "hanzi": "相继",
+    "pinyin": "xiāng jì",
+    "translations": [
+      "secara berturut-turut",
+      "mengikuti dengan cermat"
+    ]
+  },
+  {
+    "id": "9977",
+    "hanzi": "相连",
+    "pinyin": "xiāng lián",
+    "translations": [
+      "untuk menautkan",
+      "bergabung",
+      "tautan",
+      "koneksi"
+    ]
+  },
+  {
+    "id": "9978",
+    "hanzi": "相识",
+    "pinyin": "xiāng shí",
+    "translations": [
+      "Untuk mengenal satu sama lain",
+      "kenalan"
+    ]
+  },
+  {
+    "id": "9979",
+    "hanzi": "相提并论",
+    "pinyin": "xiāng tí bìng lùn",
+    "translations": [
+      "untuk membahas dua hal yang berbeda bersama (idiom)",
+      "Untuk menyebutkan dengan istilah yang sama",
+      "untuk setara dengan",
+      "(Seringkali dengan negatif: mustahil untuk disebutkan x dalam napas yang sama seperti y)"
+    ]
+  },
+  {
+    "id": "9980",
+    "hanzi": "相通",
+    "pinyin": "xiāng tōng",
+    "translations": [
+      "saling terkait",
+      "terhubung",
+      "berkomunikasi",
+      "dalam komunikasi",
+      "akomodatif"
+    ]
+  },
+  {
+    "id": "9981",
+    "hanzi": "相依为命",
+    "pinyin": "xiāng yī wéi mìng",
+    "translations": [
+      "saling bergantung pada kehidupan (idiom)",
+      "untuk saling mengandalkan untuk bertahan hidup",
+      "saling bergantung"
+    ]
+  },
+  {
+    "id": "9982",
+    "hanzi": "相遇",
+    "pinyin": "xiāng yù",
+    "translations": [
+      "bertemu",
+      "untuk bertemu",
+      "untuk bertemu"
+    ]
+  },
+  {
+    "id": "9983",
+    "hanzi": "相约",
+    "pinyin": "xiāng yuē",
+    "translations": [
+      "untuk menyetujui (di tempat pertemuan, tanggal dll)",
+      "untuk mencapai kesepakatan",
+      "untuk membuat janji"
+    ]
+  },
+  {
+    "id": "9984",
+    "hanzi": "香料",
+    "pinyin": "xiāng liào",
+    "translations": [
+      "membumbui",
+      "bumbu",
+      "bumbu",
+      "parfum"
+    ]
+  },
+  {
+    "id": "9985",
+    "hanzi": "香水",
+    "pinyin": "xiāng shuǐ",
+    "translations": [
+      "parfum",
+      "Cologne"
+    ]
+  },
+  {
+    "id": "9986",
+    "hanzi": "香味",
+    "pinyin": "xiāng wèi",
+    "translations": [
+      "parfum",
+      "buket",
+      "bau manis"
+    ]
+  },
+  {
+    "id": "9987",
+    "hanzi": "香烟",
+    "pinyin": "xiāng yān",
+    "translations": [
+      "rokok",
+      "Asap dari Burning Incense"
+    ]
+  },
+  {
+    "id": "9988",
+    "hanzi": "香油",
+    "pinyin": "xiāng yóu",
+    "translations": [
+      "minyak wijen",
+      "minyak wangi"
+    ]
+  },
+  {
+    "id": "9989",
+    "hanzi": "镶",
+    "pinyin": "xiāng",
+    "translations": [
+      "untuk menatap",
+      "untuk menyematkan",
+      "punggung bukit",
+      "berbatasan"
+    ]
+  },
+  {
+    "id": "9990",
+    "hanzi": "镶嵌",
+    "pinyin": "xiāng qiàn",
+    "translations": [
+      "untuk menatap",
+      "untuk menyematkan",
+      "untuk mengatur (mis. permata di atas cincin)",
+      "ubin",
+      "tessellation"
+    ]
+  },
+  {
+    "id": "9991",
+    "hanzi": "详尽",
+    "pinyin": "xiáng jìn",
+    "translations": [
+      "menyeluruh dan terperinci",
+      "lengkap",
+      "detail yang membosankan secara lengkap"
+    ]
+  },
+  {
+    "id": "9992",
+    "hanzi": "祥和",
+    "pinyin": "xiáng hé",
+    "translations": [
+      "keberuntungan dan damai"
+    ]
+  },
+  {
+    "id": "9993",
+    "hanzi": "享",
+    "pinyin": "xiǎng",
+    "translations": [
+      "untuk menikmati",
+      "untuk mendapatkan manfaat",
+      "untuk menggunakan"
+    ]
+  },
+  {
+    "id": "9994",
+    "hanzi": "享有",
+    "pinyin": "xiǎng yǒu",
+    "translations": [
+      "untuk menikmati (hak, hak istimewa dll)"
+    ]
+  },
+  {
+    "id": "9995",
+    "hanzi": "响亮",
+    "pinyin": "xiǎng liàng",
+    "translations": [
+      "keras dan jelas",
+      "bergema"
+    ]
+  },
+  {
+    "id": "9996",
+    "hanzi": "响起",
+    "pinyin": "xiǎng qǐ",
+    "translations": [
+      "untuk membunyikan, bersuara, bergema dengan, (suara) untuk bangkit, untuk pergi"
+    ]
+  },
+  {
+    "id": "9997",
+    "hanzi": "响应",
+    "pinyin": "xiǎng yìng",
+    "translations": [
+      "untuk menanggapi",
+      "menjawab"
+    ]
+  },
+  {
+    "id": "9998",
+    "hanzi": "想方设法",
+    "pinyin": "xiǎng fāng shè fǎ",
+    "translations": [
+      "untuk memikirkan setiap metode yang mungkin (idiom)",
+      "untuk menyusun cara dan cara",
+      "untuk mencoba ini, itu dan yang lainnya"
+    ]
+  },
+  {
+    "id": "9999",
+    "hanzi": "向来",
+    "pinyin": "xiàng lái",
+    "translations": [
+      "selalu (sebelumnya)"
+    ]
+  },
+  {
     "id": "10000",
     "hanzi": "向往",
     "pinyin": "xiàng wǎng",
@@ -10488,5206 +15688,6 @@
     "pinyin": "zuò zhèng",
     "translations": [
       "bersaksi"
-    ]
-  },
-  {
-    "id": "9457",
-    "hanzi": "谈论",
-    "pinyin": "tán lùn",
-    "translations": [
-      "mendiskusikan",
-      "Berbicara tentang"
-    ]
-  },
-  {
-    "id": "9458",
-    "hanzi": "谈起",
-    "pinyin": "tán qǐ",
-    "translations": [
-      "Sebutkan, bicarakan"
-    ]
-  },
-  {
-    "id": "9459",
-    "hanzi": "弹性",
-    "pinyin": "tán xìng",
-    "translations": [
-      "fleksibilitas",
-      "elastisitas"
-    ]
-  },
-  {
-    "id": "9460",
-    "hanzi": "痰",
-    "pinyin": "tán",
-    "translations": [
-      "dahak",
-      "ludah"
-    ]
-  },
-  {
-    "id": "9461",
-    "hanzi": "坦白",
-    "pinyin": "tǎn bái",
-    "translations": [
-      "jujur",
-      "akan datang",
-      "mengakui"
-    ]
-  },
-  {
-    "id": "9462",
-    "hanzi": "坦诚",
-    "pinyin": "tǎn chéng",
-    "translations": [
-      "jujur",
-      "jujur",
-      "berurusan dengan jelas"
-    ]
-  },
-  {
-    "id": "9463",
-    "hanzi": "坦克",
-    "pinyin": "tǎn kè",
-    "translations": [
-      "Tank (Kendaraan Militer) (kata pinjaman)"
-    ]
-  },
-  {
-    "id": "9464",
-    "hanzi": "坦然",
-    "pinyin": "tǎn rán",
-    "translations": [
-      "tenang",
-      "tak terganggu"
-    ]
-  },
-  {
-    "id": "9465",
-    "hanzi": "坦率",
-    "pinyin": "tǎn shuài",
-    "translations": [
-      "Frank (diskusi)",
-      "tumpul",
-      "membuka"
-    ]
-  },
-  {
-    "id": "9466",
-    "hanzi": "毯子",
-    "pinyin": "tǎn zi",
-    "translations": [
-      "selimut"
-    ]
-  },
-  {
-    "id": "9467",
-    "hanzi": "炭",
-    "pinyin": "tàn",
-    "translations": [
-      "arang kayu",
-      "batu bara"
-    ]
-  },
-  {
-    "id": "9468",
-    "hanzi": "探",
-    "pinyin": "tàn",
-    "translations": [
-      "untuk mengeksplorasi",
-      "untuk mencari",
-      "untuk mengintai",
-      "untuk mengunjungi",
-      "untuk meregangkan ke depan"
-    ]
-  },
-  {
-    "id": "9469",
-    "hanzi": "探测",
-    "pinyin": "tàn cè",
-    "translations": [
-      "untuk menyelidik",
-      "untuk mengambil bacaan",
-      "untuk mengeksplorasi",
-      "eksplorasi"
-    ]
-  },
-  {
-    "id": "9470",
-    "hanzi": "探亲",
-    "pinyin": "tàn qīn",
-    "translations": [
-      "pulang untuk mengunjungi keluarga seseorang"
-    ]
-  },
-  {
-    "id": "9471",
-    "hanzi": "探求",
-    "pinyin": "tàn qiú",
-    "translations": [
-      "mencari",
-      "untuk mengejar",
-      "menginvestigasi"
-    ]
-  },
-  {
-    "id": "9472",
-    "hanzi": "探望",
-    "pinyin": "tàn wàng",
-    "translations": [
-      "untuk mengunjungi",
-      "Untuk menelepon SB",
-      "untuk melihat -lihat"
-    ]
-  },
-  {
-    "id": "9473",
-    "hanzi": "探险",
-    "pinyin": "tàn xiǎn",
-    "translations": [
-      "untuk mengeksplorasi",
-      "untuk melakukan ekspedisi",
-      "petualangan"
-    ]
-  },
-  {
-    "id": "9474",
-    "hanzi": "碳",
-    "pinyin": "tàn",
-    "translations": [
-      "Karbon (Kimia)"
-    ]
-  },
-  {
-    "id": "9475",
-    "hanzi": "汤圆",
-    "pinyin": "tāng yuán",
-    "translations": [
-      "Bola rebus tepung beras ketan, dimakan selama festival lentera"
-    ]
-  },
-  {
-    "id": "9476",
-    "hanzi": "堂",
-    "pinyin": "táng",
-    "translations": [
-      "(aula utama",
-      "Kamar besar untuk tujuan tertentu",
-      "Hubungan antara sepupu dll di sisi ayah keluarga",
-      "dari klan yang sama",
-      "classifier untuk kelas, kuliah dll",
-      "classifier untuk set furnitur"
-    ]
-  },
-  {
-    "id": "9477",
-    "hanzi": "糖果",
-    "pinyin": "táng guǒ",
-    "translations": [
-      "Permen"
-    ]
-  },
-  {
-    "id": "9478",
-    "hanzi": "糖尿病",
-    "pinyin": "táng niào bìng",
-    "translations": [
-      "diabetes",
-      "diabetes mellitus"
-    ]
-  },
-  {
-    "id": "9479",
-    "hanzi": "倘若",
-    "pinyin": "tǎng ruò",
-    "translations": [
-      "dengan ketentuan",
-      "seandainya itu",
-      "jika"
-    ]
-  },
-  {
-    "id": "9480",
-    "hanzi": "淌",
-    "pinyin": "tǎng",
-    "translations": [
-      "untuk menetes",
-      "untuk menetes",
-      "untuk menumpahkan (air mata)"
-    ]
-  },
-  {
-    "id": "9481",
-    "hanzi": "烫",
-    "pinyin": "tàng",
-    "translations": [
-      "ke Scald",
-      "membakar (dengan mendidih)",
-      "untuk pucat (memasak)",
-      "untuk memanaskan (sth) di air panas",
-      "untuk perm",
-      "menyetrika",
-      "Panas panas"
-    ]
-  },
-  {
-    "id": "9482",
-    "hanzi": "掏钱",
-    "pinyin": "tāo qián",
-    "translations": [
-      "membayar",
-      "menghabiskan uang",
-      "untuk membayar"
-    ]
-  },
-  {
-    "id": "9483",
-    "hanzi": "滔滔不绝",
-    "pinyin": "tāo tāo bù jué",
-    "translations": [
-      "Torrent yang tidak hajar (idiom)",
-      "berbicara tanpa henti",
-      "Gabbling empat puluh sampai selusin"
-    ]
-  },
-  {
-    "id": "9484",
-    "hanzi": "逃避",
-    "pinyin": "táo bì",
-    "translations": [
-      "untuk melarikan diri",
-      "untuk menghindari",
-      "menghindari",
-      "ke Shirk"
-    ]
-  },
-  {
-    "id": "9485",
-    "hanzi": "逃生",
-    "pinyin": "táo shēng",
-    "translations": [
-      "untuk melarikan diri untuk hidup seseorang"
-    ]
-  },
-  {
-    "id": "9486",
-    "hanzi": "逃亡",
-    "pinyin": "táo wáng",
-    "translations": [
-      "melarikan diri",
-      "penerbangan (dari bahaya)",
-      "buronan"
-    ]
-  },
-  {
-    "id": "9487",
-    "hanzi": "陶瓷",
-    "pinyin": "táo cí",
-    "translations": [
-      "tembikar dan porselen",
-      "keramik"
-    ]
-  },
-  {
-    "id": "9488",
-    "hanzi": "陶冶",
-    "pinyin": "táo yě",
-    "translations": [
-      "Lit. untuk menembakkan pot dan mencium logam",
-      "ara. untuk mendidik"
-    ]
-  },
-  {
-    "id": "9489",
-    "hanzi": "陶醉",
-    "pinyin": "táo zuì",
-    "translations": [
-      "menjadi tergila -gila",
-      "untuk diminum dengan",
-      "untuk terpesona",
-      "untuk bersenang -senang"
-    ]
-  },
-  {
-    "id": "9490",
-    "hanzi": "淘",
-    "pinyin": "táo",
-    "translations": [
-      "untuk mencuci",
-      "untuk membersihkan",
-      "untuk membersihkan",
-      "untuk menghilangkan",
-      "untuk mengeruk"
-    ]
-  },
-  {
-    "id": "9491",
-    "hanzi": "淘气",
-    "pinyin": "táo qì",
-    "translations": [
-      "nakal",
-      "nakal"
-    ]
-  },
-  {
-    "id": "9492",
-    "hanzi": "淘汰",
-    "pinyin": "táo tài",
-    "translations": [
-      "untuk mencuci",
-      "eliminasi (dengan seleksi)",
-      "seleksi alam",
-      "untuk merobohkan (dalam kompetisi)",
-      "untuk mati",
-      "untuk menghapus"
-    ]
-  },
-  {
-    "id": "9493",
-    "hanzi": "讨",
-    "pinyin": "tǎo",
-    "translations": [
-      "untuk mengundang",
-      "untuk memprovokasi",
-      "untuk meminta atau meminta",
-      "untuk mengirim angkatan bersenjata untuk menekan",
-      "untuk mengecam atau mengutuk",
-      "untuk menikah (seorang wanita)",
-      "untuk membahas atau belajar"
-    ]
-  },
-  {
-    "id": "9494",
-    "hanzi": "讨好",
-    "pinyin": "tǎo hǎo",
-    "translations": [
-      "Untuk mendapatkan hasil yang diinginkan",
-      "untuk memenangkan bantuan dengan menjilat di SB",
-      "untuk mengikat bantuan dengan",
-      "hasil yang bermanfaat untuk memberi penghargaan pada tenaga kerja seseorang"
-    ]
-  },
-  {
-    "id": "9495",
-    "hanzi": "讨价还价",
-    "pinyin": "tǎo jià huán jià",
-    "translations": [
-      "untuk menawar harga"
-    ]
-  },
-  {
-    "id": "9496",
-    "hanzi": "讨人喜欢",
-    "pinyin": "tǎo rén xǐ huan",
-    "translations": [
-      "untuk menarik kasih sayang orang",
-      "menawan",
-      "menyenangkan"
-    ]
-  },
-  {
-    "id": "9497",
-    "hanzi": "特产",
-    "pinyin": "tè chǎn",
-    "translations": [
-      "Produk lokal khusus",
-      "(regional) spesialisasi"
-    ]
-  },
-  {
-    "id": "9498",
-    "hanzi": "特长",
-    "pinyin": "tè cháng",
-    "translations": [
-      "kekuatan pribadi",
-      "kemampuan khusus seseorang atau poin kuat"
-    ]
-  },
-  {
-    "id": "9499",
-    "hanzi": "特例",
-    "pinyin": "tè lì",
-    "translations": [
-      "kasus spesial",
-      "contoh terisolasi"
-    ]
-  },
-  {
-    "id": "9500",
-    "hanzi": "特权",
-    "pinyin": "tè quán",
-    "translations": [
-      "hak istimewa",
-      "hak istimewa",
-      "hak istimewa"
-    ]
-  },
-  {
-    "id": "9501",
-    "hanzi": "特邀",
-    "pinyin": "tè yāo",
-    "translations": [
-      "undangan khusus"
-    ]
-  },
-  {
-    "id": "9502",
-    "hanzi": "特制",
-    "pinyin": "tè zhì",
-    "translations": [
-      "spesial",
-      "unik"
-    ]
-  },
-  {
-    "id": "9503",
-    "hanzi": "特质",
-    "pinyin": "tè zhì",
-    "translations": [
-      "ciri",
-      "kualitas khusus"
-    ]
-  },
-  {
-    "id": "9504",
-    "hanzi": "腾",
-    "pinyin": "téng",
-    "translations": [
-      "melambung",
-      "untuk berlari",
-      "untuk berjingkrak",
-      "untuk membalik",
-      "mengosongkan",
-      "untuk membersihkan"
-    ]
-  },
-  {
-    "id": "9505",
-    "hanzi": "藤椅",
-    "pinyin": "téng yǐ",
-    "translations": [
-      "kursi rotan"
-    ]
-  },
-  {
-    "id": "9506",
-    "hanzi": "剔除",
-    "pinyin": "tī chú",
-    "translations": [
-      "menolak",
-      "untuk membuang",
-      "untuk menyingkirkan"
-    ]
-  },
-  {
-    "id": "9507",
-    "hanzi": "梯子",
-    "pinyin": "tī zi",
-    "translations": [
-      "tangga",
-      "anak tangga"
-    ]
-  },
-  {
-    "id": "9508",
-    "hanzi": "提拔",
-    "pinyin": "tí bá",
-    "translations": [
-      "untuk mempromosikan ke pekerjaan yang lebih tinggi",
-      "untuk memilih promosi"
-    ]
-  },
-  {
-    "id": "9509",
-    "hanzi": "提炼",
-    "pinyin": "tí liàn",
-    "translations": [
-      "untuk mengekstrak (bijih, mineral dll)",
-      "untuk memperbaiki",
-      "untuk memurnikan",
-      "proses"
-    ]
-  },
-  {
-    "id": "9510",
-    "hanzi": "提名",
-    "pinyin": "tí míng",
-    "translations": [
-      "untuk mencalonkan"
-    ]
-  },
-  {
-    "id": "9511",
-    "hanzi": "提速",
-    "pinyin": "tí sù",
-    "translations": [
-      "untuk meningkatkan kecepatan jelajah yang ditentukan",
-      "untuk menambah kecepatan",
-      "untuk mempercepat"
-    ]
-  },
-  {
-    "id": "9512",
-    "hanzi": "提心吊胆",
-    "pinyin": "tí xīn diào dǎn",
-    "translations": [
-      "(mengatakan) menjadi sangat takut dan gelisah"
-    ]
-  },
-  {
-    "id": "9513",
-    "hanzi": "提议",
-    "pinyin": "tí yì",
-    "translations": [
-      "usul",
-      "saran",
-      "Melamar",
-      "menyarankan"
-    ]
-  },
-  {
-    "id": "9514",
-    "hanzi": "提早",
-    "pinyin": "tí zǎo",
-    "translations": [
-      "lebih cepat dari jadwal",
-      "lebih cepat dari yang direncanakan",
-      "untuk memajukan (ke waktu sebelumnya)"
-    ]
-  },
-  {
-    "id": "9515",
-    "hanzi": "体谅",
-    "pinyin": "tǐ liàng",
-    "translations": [
-      "untuk berempati",
-      "untuk mengizinkan (untuk sth)",
-      "untuk menunjukkan pemahaman",
-      "untuk menghargai"
-    ]
-  },
-  {
-    "id": "9516",
-    "hanzi": "体面",
-    "pinyin": "tǐ miàn",
-    "translations": [
-      "harga diri",
-      "Wajah (seperti dalam \"Kehilangan Wajah\")",
-      "terhormat",
-      "dapat dikreditkan",
-      "(dari penampilan SB) RESEN",
-      "terhormat"
-    ]
-  },
-  {
-    "id": "9517",
-    "hanzi": "体能",
-    "pinyin": "tǐ néng",
-    "translations": [
-      "kemampuan fisik",
-      "daya tahan"
-    ]
-  },
-  {
-    "id": "9518",
-    "hanzi": "体贴",
-    "pinyin": "tǐ tiē",
-    "translations": [
-      "Pertimbangan (kebutuhan orang lain)"
-    ]
-  },
-  {
-    "id": "9519",
-    "hanzi": "体温",
-    "pinyin": "tǐ wēn",
-    "translations": [
-      "(suhu tubuh"
-    ]
-  },
-  {
-    "id": "9520",
-    "hanzi": "体系",
-    "pinyin": "tǐ xì",
-    "translations": [
-      "sistem",
-      "mempersiapkan"
-    ]
-  },
-  {
-    "id": "9521",
-    "hanzi": "体制",
-    "pinyin": "tǐ zhì",
-    "translations": [
-      "sistem",
-      "organisasi"
-    ]
-  },
-  {
-    "id": "9522",
-    "hanzi": "体质",
-    "pinyin": "tǐ zhì",
-    "translations": [
-      "konstitusi"
-    ]
-  },
-  {
-    "id": "9523",
-    "hanzi": "剃",
-    "pinyin": "tì",
-    "translations": [
-      "mencukur",
-      "untuk gulma"
-    ]
-  },
-  {
-    "id": "9524",
-    "hanzi": "替换",
-    "pinyin": "tì huàn",
-    "translations": [
-      "untuk menukar",
-      "untuk menggantikan",
-      "untuk mengganti",
-      "untuk menukar"
-    ]
-  },
-  {
-    "id": "9525",
-    "hanzi": "替身",
-    "pinyin": "tì shēn",
-    "translations": [
-      "menggantikan",
-      "pengganti",
-      "tubuh ganda",
-      "akrobat",
-      "kambing hitam",
-      "kambing hitam",
-      "untuk berdiri untuk SB lain"
-    ]
-  },
-  {
-    "id": "9526",
-    "hanzi": "天长地久",
-    "pinyin": "tiān cháng dì jiǔ",
-    "translations": [
-      "bertahan sementara dunia bertahan (idiom)",
-      "abadi"
-    ]
-  },
-  {
-    "id": "9527",
-    "hanzi": "天地",
-    "pinyin": "tiān dì",
-    "translations": [
-      "surga dan bumi",
-      "dunia",
-      "cakupan",
-      "bidang aktivitas"
-    ]
-  },
-  {
-    "id": "9528",
-    "hanzi": "天鹅",
-    "pinyin": "tiān é",
-    "translations": [
-      "angsa"
-    ]
-  },
-  {
-    "id": "9529",
-    "hanzi": "天分",
-    "pinyin": "tiān fèn",
-    "translations": [
-      "hadiah alami",
-      "bakat"
-    ]
-  },
-  {
-    "id": "9530",
-    "hanzi": "天赋",
-    "pinyin": "tiān fù",
-    "translations": [
-      "hadiah",
-      "keterampilan bawaan"
-    ]
-  },
-  {
-    "id": "9531",
-    "hanzi": "天经地义",
-    "pinyin": "tiān jīng dì yì",
-    "translations": [
-      "Lit. Hukum Surga dan Prinsip Bumi (Idiom)",
-      "ara. benar dan tepat",
-      "benar dan tidak dapat diubah",
-      "tentu saja"
-    ]
-  },
-  {
-    "id": "9532",
-    "hanzi": "天平",
-    "pinyin": "tiān píng",
-    "translations": [
-      "skala (untuk menimbang barang)"
-    ]
-  },
-  {
-    "id": "9533",
-    "hanzi": "天桥",
-    "pinyin": "tiān qiáo",
-    "translations": [
-      "jalan setapak di atas kepala",
-      "jembatan penyeberangan"
-    ]
-  },
-  {
-    "id": "9534",
-    "hanzi": "天生",
-    "pinyin": "tiān shēng",
-    "translations": [
-      "alam",
-      "watak",
-      "bawaan",
-      "alami"
-    ]
-  },
-  {
-    "id": "9535",
-    "hanzi": "天使",
-    "pinyin": "tiān shǐ",
-    "translations": [
-      "malaikat"
-    ]
-  },
-  {
-    "id": "9536",
-    "hanzi": "天线",
-    "pinyin": "tiān xiàn",
-    "translations": [
-      "antena",
-      "tiang kapal",
-      "Koneksi dengan pejabat tinggi"
-    ]
-  },
-  {
-    "id": "9537",
-    "hanzi": "天性",
-    "pinyin": "tiān xìng",
-    "translations": [
-      "alam",
-      "kecenderungan bawaan"
-    ]
-  },
-  {
-    "id": "9538",
-    "hanzi": "天主教",
-    "pinyin": "tiān zhǔ jiào",
-    "translations": [
-      "Katolik"
-    ]
-  },
-  {
-    "id": "9539",
-    "hanzi": "添加",
-    "pinyin": "tiān jiā",
-    "translations": [
-      "menambahkan",
-      "meningkatkan"
-    ]
-  },
-  {
-    "id": "9540",
-    "hanzi": "甜美",
-    "pinyin": "tián měi",
-    "translations": [
-      "manis",
-      "menyenangkan",
-      "senang"
-    ]
-  },
-  {
-    "id": "9541",
-    "hanzi": "甜蜜",
-    "pinyin": "tián mì",
-    "translations": [
-      "manis",
-      "senang"
-    ]
-  },
-  {
-    "id": "9542",
-    "hanzi": "甜头",
-    "pinyin": "tián tou",
-    "translations": [
-      "rasa manis (kekuatan, kesuksesan dll)",
-      "keuntungan"
-    ]
-  },
-  {
-    "id": "9543",
-    "hanzi": "填补",
-    "pinyin": "tián bǔ",
-    "translations": [
-      "untuk mengisi celah",
-      "untuk mengisi kosong (pada formulir)",
-      "untuk mengatasi kekurangan"
-    ]
-  },
-  {
-    "id": "9544",
-    "hanzi": "填充",
-    "pinyin": "tián chōng",
-    "translations": [
-      "bantalan",
-      "lapisan"
-    ]
-  },
-  {
-    "id": "9545",
-    "hanzi": "填写",
-    "pinyin": "tián xiě",
-    "translations": [
-      "untuk mengisi formulir",
-      "untuk menulis data dalam kotak (pada kuesioner atau formulir web)"
-    ]
-  },
-  {
-    "id": "9546",
-    "hanzi": "舔",
-    "pinyin": "tiǎn",
-    "translations": [
-      "menjilat",
-      "ke pangkuan"
-    ]
-  },
-  {
-    "id": "9547",
-    "hanzi": "挑剔",
-    "pinyin": "tiāo ti",
-    "translations": [
-      "pemilih",
-      "cerewet"
-    ]
-  },
-  {
-    "id": "9548",
-    "hanzi": "条款",
-    "pinyin": "tiáo kuǎn",
-    "translations": [
-      "Klausul (kontrak atau hukum)"
-    ]
-  },
-  {
-    "id": "9549",
-    "hanzi": "条例",
-    "pinyin": "tiáo lì",
-    "translations": [
-      "peraturan",
-      "aturan",
-      "Kode etik",
-      "tata cara",
-      "Statuta"
-    ]
-  },
-  {
-    "id": "9550",
-    "hanzi": "条约",
-    "pinyin": "tiáo yuē",
-    "translations": [
-      "perjanjian",
-      "pakta"
-    ]
-  },
-  {
-    "id": "9551",
-    "hanzi": "调侃",
-    "pinyin": "tiáo kǎn",
-    "translations": [
-      "untuk diejek",
-      "menggoda",
-      "mengejek",
-      "pembicaraan idle",
-      "basa basi"
-    ]
-  },
-  {
-    "id": "9552",
-    "hanzi": "调控",
-    "pinyin": "tiáo kòng",
-    "translations": [
-      "untuk mengatur",
-      "kontrol"
-    ]
-  },
-  {
-    "id": "9553",
-    "hanzi": "调料",
-    "pinyin": "tiáo liào",
-    "translations": [
-      "bumbu",
-      "bumbu",
-      "bumbu"
-    ]
-  },
-  {
-    "id": "9554",
-    "hanzi": "调试",
-    "pinyin": "tiáo shì",
-    "translations": [
-      "untuk men -debug",
-      "untuk menyesuaikan komponen selama pengujian",
-      "debugging"
-    ]
-  },
-  {
-    "id": "9555",
-    "hanzi": "挑起",
-    "pinyin": "tiǎo qǐ",
-    "translations": [
-      "untuk memprovokasi",
-      "untuk menggerakkan",
-      "untuk menghasut"
-    ]
-  },
-  {
-    "id": "9556",
-    "hanzi": "挑衅",
-    "pinyin": "tiǎo xìn",
-    "translations": [
-      "untuk memprovokasi",
-      "provokasi"
-    ]
-  },
-  {
-    "id": "9557",
-    "hanzi": "跳槽",
-    "pinyin": "tiào cáo",
-    "translations": [
-      "untuk berganti pekerjaan",
-      "pekerjaan-hopping"
-    ]
-  },
-  {
-    "id": "9558",
-    "hanzi": "跳动",
-    "pinyin": "tiào dòng",
-    "translations": [
-      "untuk berdenyut",
-      "untuk denyut nadi",
-      "memantul",
-      "untuk bergoyang",
-      "untuk melompat"
-    ]
-  },
-  {
-    "id": "9559",
-    "hanzi": "跳伞",
-    "pinyin": "tiào sǎn",
-    "translations": [
-      "untuk parasut",
-      "untuk menyelamatkan",
-      "lompatan parasut"
-    ]
-  },
-  {
-    "id": "9560",
-    "hanzi": "跳跃",
-    "pinyin": "tiào yuè",
-    "translations": [
-      "untuk melompat",
-      "untuk melompat",
-      "untuk terikat",
-      "untuk melewatkan"
-    ]
-  },
-  {
-    "id": "9561",
-    "hanzi": "贴近",
-    "pinyin": "tiē jìn",
-    "translations": [
-      "untuk menekan dekat",
-      "untuk meringkuk dekat",
-      "intim"
-    ]
-  },
-  {
-    "id": "9562",
-    "hanzi": "贴切",
-    "pinyin": "tiē qiè",
-    "translations": [
-      "pas dekat",
-      "terdekat (terjemahan)"
-    ]
-  },
-  {
-    "id": "9563",
-    "hanzi": "帖子",
-    "pinyin": "tiě zi",
-    "translations": [
-      "kartu",
-      "undangan",
-      "pesan",
-      "Posting (Forum)"
-    ]
-  },
-  {
-    "id": "9564",
-    "hanzi": "听从",
-    "pinyin": "tīng cóng",
-    "translations": [
-      "untuk mendengarkan dan mematuhi",
-      "untuk mematuhi",
-      "mengindahkan",
-      "untuk mendengarkan"
-    ]
-  },
-  {
-    "id": "9565",
-    "hanzi": "听话",
-    "pinyin": "tīng huà",
-    "translations": [
-      "untuk melakukan apa yang diceritakan",
-      "patuh"
-    ]
-  },
-  {
-    "id": "9566",
-    "hanzi": "停泊",
-    "pinyin": "tíng bó",
-    "translations": [
-      "untuk berlabuh",
-      "pelabuhan",
-      "tambatan (dari kapal)"
-    ]
-  },
-  {
-    "id": "9567",
-    "hanzi": "停车位",
-    "pinyin": "tíng chē wèi",
-    "translations": [
-      "Tempat parkir, tempat parkir"
-    ]
-  },
-  {
-    "id": "9568",
-    "hanzi": "停电",
-    "pinyin": "tíng diàn",
-    "translations": [
-      "untuk mengalami kegagalan daya",
-      "pemadaman listrik"
-    ]
-  },
-  {
-    "id": "9569",
-    "hanzi": "停顿",
-    "pinyin": "tíng dùn",
-    "translations": [
-      "untuk berhenti",
-      "untuk putus",
-      "jeda (dalam pidato)"
-    ]
-  },
-  {
-    "id": "9570",
-    "hanzi": "停放",
-    "pinyin": "tíng fàng",
-    "translations": [
-      "untuk parkir (mobil dll)",
-      "ke Moor (perahu dll)",
-      "meninggalkan sth (di suatu tempat)"
-    ]
-  },
-  {
-    "id": "9571",
-    "hanzi": "停业",
-    "pinyin": "tíng yè",
-    "translations": [
-      "untuk menghentikan perdagangan (sementara atau permanen)",
-      "untuk ditutup"
-    ]
-  },
-  {
-    "id": "9572",
-    "hanzi": "通畅",
-    "pinyin": "tōng chàng",
-    "translations": [
-      "tidak terhalang",
-      "jernih"
-    ]
-  },
-  {
-    "id": "9573",
-    "hanzi": "通车",
-    "pinyin": "tōng chē",
-    "translations": [
-      "untuk membuka lalu lintas (mis. jembatan baru, jalur kereta dll)",
-      "(dari daerah) untuk memiliki layanan transportasi",
-      "(TW) untuk bepergian"
-    ]
-  },
-  {
-    "id": "9574",
-    "hanzi": "通风",
-    "pinyin": "tōng fēng",
-    "translations": [
-      "Airy",
-      "ventilasi",
-      "untuk ventilasi",
-      "untuk mengungkapkan informasi"
-    ]
-  },
-  {
-    "id": "9575",
-    "hanzi": "通告",
-    "pinyin": "tōng gào",
-    "translations": [
-      "untuk mengumumkan",
-      "untuk memberi pemberitahuan"
-    ]
-  },
-  {
-    "id": "9576",
-    "hanzi": "通缉",
-    "pinyin": "tōng jī",
-    "translations": [
-      "untuk memerintahkan penangkapan SB sebagai penjahat",
-      "untuk mendaftar sesuai keinginan"
-    ]
-  },
-  {
-    "id": "9577",
-    "hanzi": "通顺",
-    "pinyin": "tōng shùn",
-    "translations": [
-      "mulus",
-      "jelas dan koheren"
-    ]
-  },
-  {
-    "id": "9578",
-    "hanzi": "通俗",
-    "pinyin": "tōng sú",
-    "translations": [
-      "umum",
-      "setiap hari",
-      "rata-rata"
-    ]
-  },
-  {
-    "id": "9579",
-    "hanzi": "通通",
-    "pinyin": "tōng tōng",
-    "translations": [
-      "semua",
-      "seluruh",
-      "menyelesaikan"
-    ]
-  },
-  {
-    "id": "9580",
-    "hanzi": "通往",
-    "pinyin": "tōng wǎng",
-    "translations": [
-      "untuk mengarah ke"
-    ]
-  },
-  {
-    "id": "9581",
-    "hanzi": "通宵",
-    "pinyin": "tōng xiāo",
-    "translations": [
-      "sepanjang malam",
-      "sepanjang malam"
-    ]
-  },
-  {
-    "id": "9582",
-    "hanzi": "通行证",
-    "pinyin": "tōng xíng zhèng",
-    "translations": [
-      "lulus (otoritas untuk masuk)",
-      "A laissez-passer atau perilaku aman"
-    ]
-  },
-  {
-    "id": "9583",
-    "hanzi": "同伴",
-    "pinyin": "tóng bàn",
-    "translations": [
-      "pendamping",
-      "kawan",
-      "rekan"
-    ]
-  },
-  {
-    "id": "9584",
-    "hanzi": "同步",
-    "pinyin": "tóng bù",
-    "translations": [
-      "sinkronis",
-      "untuk menyinkronkan",
-      "untuk menjaga langkah dengan"
-    ]
-  },
-  {
-    "id": "9585",
-    "hanzi": "同等",
-    "pinyin": "tóng děng",
-    "translations": [
-      "sama dengan",
-      "Memiliki kelas atau status sosial yang sama"
-    ]
-  },
-  {
-    "id": "9586",
-    "hanzi": "同感",
-    "pinyin": "tóng gǎn",
-    "translations": [
-      "(memiliki) perasaan yang sama",
-      "kesan serupa",
-      "perasaan umum"
-    ]
-  },
-  {
-    "id": "9587",
-    "hanzi": "同伙",
-    "pinyin": "tóng huǒ",
-    "translations": [
-      "kolega",
-      "co-konspirator",
-      "kaki tangan"
-    ]
-  },
-  {
-    "id": "9588",
-    "hanzi": "同类",
-    "pinyin": "tóng lèi",
-    "translations": [
-      "serupa",
-      "Tipe yang sama",
-      "sama"
-    ]
-  },
-  {
-    "id": "9589",
-    "hanzi": "同盟",
-    "pinyin": "tóng méng",
-    "translations": [
-      "persekutuan"
-    ]
-  },
-  {
-    "id": "9590",
-    "hanzi": "同年",
-    "pinyin": "tóng nián",
-    "translations": [
-      "tahun yang sama"
-    ]
-  },
-  {
-    "id": "9591",
-    "hanzi": "同人",
-    "pinyin": "tóng rén",
-    "translations": [
-      "orang dari tempat kerja atau profesi yang sama",
-      "teman sekerja",
-      "kolega",
-      "penggemar budaya pop yang membuat fiksi penggemar dll"
-    ]
-  },
-  {
-    "id": "9592",
-    "hanzi": "同志",
-    "pinyin": "tóng zhì",
-    "translations": [
-      "kawan",
-      "(bahasa gaul) homoseksual"
-    ]
-  },
-  {
-    "id": "9593",
-    "hanzi": "同舟共济",
-    "pinyin": "tóng zhōu gòng jì",
-    "translations": [
-      "melintasi sungai di kapal yang sama (idiom)",
-      "ara. memiliki kepentingan bersama",
-      "wajib berkolaborasi menuju tujuan bersama"
-    ]
-  },
-  {
-    "id": "9594",
-    "hanzi": "铜",
-    "pinyin": "tóng",
-    "translations": [
-      "Tembaga (Kimia)",
-      "Lihat juga 紅銅 | 红铜 [hóng tóng]"
-    ]
-  },
-  {
-    "id": "9595",
-    "hanzi": "统筹",
-    "pinyin": "tǒng chóu",
-    "translations": [
-      "rencana keseluruhan",
-      "untuk merencanakan seluruh proyek secara keseluruhan"
-    ]
-  },
-  {
-    "id": "9596",
-    "hanzi": "统统",
-    "pinyin": "tǒng tǒng",
-    "translations": [
-      "sama sekali"
-    ]
-  },
-  {
-    "id": "9597",
-    "hanzi": "统治",
-    "pinyin": "tǒng zhì",
-    "translations": [
-      "untuk memerintah (negara)",
-      "untuk memerintah",
-      "aturan",
-      "rezim"
-    ]
-  },
-  {
-    "id": "9598",
-    "hanzi": "捅",
-    "pinyin": "tǒng",
-    "translations": [
-      "menusuk",
-      "mencolek",
-      "untuk prod",
-      "untuk mendorong",
-      "untuk mengungkapkan"
-    ]
-  },
-  {
-    "id": "9599",
-    "hanzi": "桶",
-    "pinyin": "tǒng",
-    "translations": [
-      "keranjang",
-      "(tempat sampah",
-      "barel (minyak dll)"
-    ]
-  },
-  {
-    "id": "9600",
-    "hanzi": "筒",
-    "pinyin": "tǒng",
-    "translations": [
-      "tabung",
-      "silinder",
-      "untuk membungkus silinder STH (seperti tangan di lengan dll)"
-    ]
-  },
-  {
-    "id": "9601",
-    "hanzi": "痛",
-    "pinyin": "tòng",
-    "translations": [
-      "sakit",
-      "nyeri",
-      "duka",
-      "dalam",
-      "secara menyeluruh"
-    ]
-  },
-  {
-    "id": "9602",
-    "hanzi": "痛心",
-    "pinyin": "tòng xīn",
-    "translations": [
-      "sedih",
-      "sedih"
-    ]
-  },
-  {
-    "id": "9603",
-    "hanzi": "偷看",
-    "pinyin": "tōu kàn",
-    "translations": [
-      "untuk mengintip",
-      "mengintip",
-      "untuk mencuri pandangan"
-    ]
-  },
-  {
-    "id": "9604",
-    "hanzi": "偷窥",
-    "pinyin": "tōu kuī",
-    "translations": [
-      "untuk mengintip",
-      "mengintip",
-      "untuk bertindak sebagai voyeur"
-    ]
-  },
-  {
-    "id": "9605",
-    "hanzi": "偷懒",
-    "pinyin": "tōu lǎn",
-    "translations": [
-      "untuk melakukan kesalahan",
-      "malas"
-    ]
-  },
-  {
-    "id": "9606",
-    "hanzi": "头部",
-    "pinyin": "tóu bù",
-    "translations": [
-      "kepala"
-    ]
-  },
-  {
-    "id": "9607",
-    "hanzi": "头顶",
-    "pinyin": "tóu dǐng",
-    "translations": [
-      "Top of the Head"
-    ]
-  },
-  {
-    "id": "9608",
-    "hanzi": "头号",
-    "pinyin": "tóu hào",
-    "translations": [
-      "tingkat pertama",
-      "peringkat teratas",
-      "nomor satu"
-    ]
-  },
-  {
-    "id": "9609",
-    "hanzi": "头条",
-    "pinyin": "tóu tiáo",
-    "translations": [
-      "cerita utama (di berita)"
-    ]
-  },
-  {
-    "id": "9610",
-    "hanzi": "头头是道",
-    "pinyin": "tóu tóu shì dào",
-    "translations": [
-      "jelas dan logis"
-    ]
-  },
-  {
-    "id": "9611",
-    "hanzi": "头衔",
-    "pinyin": "tóu xián",
-    "translations": [
-      "judul",
-      "pangkat",
-      "sebutan"
-    ]
-  },
-  {
-    "id": "9612",
-    "hanzi": "头晕",
-    "pinyin": "tóu yūn",
-    "translations": [
-      "pusing"
-    ]
-  },
-  {
-    "id": "9613",
-    "hanzi": "投奔",
-    "pinyin": "tóu bèn",
-    "translations": [
-      "untuk mencari perlindungan",
-      "untuk mencari suaka"
-    ]
-  },
-  {
-    "id": "9614",
-    "hanzi": "投稿",
-    "pinyin": "tóu gǎo",
-    "translations": [
-      "untuk mengirimkan artikel untuk publikasi",
-      "untuk berkontribusi (menulis)"
-    ]
-  },
-  {
-    "id": "9615",
-    "hanzi": "投机",
-    "pinyin": "tóu jī",
-    "translations": [
-      "untuk berspekulasi (di pasar keuangan)",
-      "oportunistik",
-      "cocok",
-      "menyenangkan"
-    ]
-  },
-  {
-    "id": "9616",
-    "hanzi": "投射",
-    "pinyin": "tóu shè",
-    "translations": [
-      "untuk melempar (proyektil)",
-      "To Cast (Light)"
-    ]
-  },
-  {
-    "id": "9617",
-    "hanzi": "投身",
-    "pinyin": "tóu shēn",
-    "translations": [
-      "untuk melemparkan diri ke sth"
-    ]
-  },
-  {
-    "id": "9618",
-    "hanzi": "投降",
-    "pinyin": "tóu xiáng",
-    "translations": [
-      "Untuk menyerah",
-      "menyerah"
-    ]
-  },
-  {
-    "id": "9619",
-    "hanzi": "透彻",
-    "pinyin": "tòu chè",
-    "translations": [
-      "tembus",
-      "menyeluruh",
-      "tajam"
-    ]
-  },
-  {
-    "id": "9620",
-    "hanzi": "透过",
-    "pinyin": "tòu guò",
-    "translations": [
-      "untuk melewati",
-      "untuk menembus",
-      "melalui",
-      "melalui"
-    ]
-  },
-  {
-    "id": "9621",
-    "hanzi": "透气",
-    "pinyin": "tòu qì",
-    "translations": [
-      "mengalir dengan bebas (udara)",
-      "untuk ventilasi",
-      "untuk bernafas (kain dll)",
-      "untuk menghirup udara segar",
-      "untuk membocorkan"
-    ]
-  },
-  {
-    "id": "9622",
-    "hanzi": "透支",
-    "pinyin": "tòu zhī",
-    "translations": [
-      "(bank) cerukan"
-    ]
-  },
-  {
-    "id": "9623",
-    "hanzi": "凸",
-    "pinyin": "tū",
-    "translations": [
-      "untuk menonjol",
-      "menonjol",
-      "cembung",
-      "pria (konektor dll)",
-      "Taiwan PR. [Tú]"
-    ]
-  },
-  {
-    "id": "9624",
-    "hanzi": "凸显",
-    "pinyin": "tū xiǎn",
-    "translations": [
-      "untuk menyajikan dengan jelas",
-      "untuk memberikan keunggulan",
-      "untuk memperbesar",
-      "jelas dan jelas"
-    ]
-  },
-  {
-    "id": "9625",
-    "hanzi": "秃",
-    "pinyin": "tū",
-    "translations": [
-      "botak",
-      "tumpul"
-    ]
-  },
-  {
-    "id": "9626",
-    "hanzi": "突发",
-    "pinyin": "tū fā",
-    "translations": [
-      "Tiba -tiba meledak",
-      "ledakan tiba -tiba"
-    ]
-  },
-  {
-    "id": "9627",
-    "hanzi": "突击",
-    "pinyin": "tū jī",
-    "translations": [
-      "serangan mendadak dan kejam",
-      "menyerang",
-      "ara. pekerjaan terburu -buru",
-      "Upaya terkonsentrasi untuk menyelesaikan pekerjaan dengan cepat"
-    ]
-  },
-  {
-    "id": "9628",
-    "hanzi": "突破口",
-    "pinyin": "tū pò kǒu",
-    "translations": [
-      "Lit. celah, pelanggaran atau celah dari mana seseorang dapat merusak sesuatu, port sally",
-      "terobosan untuk suatu masalah"
-    ]
-  },
-  {
-    "id": "9629",
-    "hanzi": "突如其来",
-    "pinyin": "tū rú qí lái",
-    "translations": [
-      "muncul secara tiba -tiba",
-      "tiba -tiba tiba",
-      "terjadi tiba -tiba"
-    ]
-  },
-  {
-    "id": "9630",
-    "hanzi": "图表",
-    "pinyin": "tú biǎo",
-    "translations": [
-      "bagan",
-      "diagram"
-    ]
-  },
-  {
-    "id": "9631",
-    "hanzi": "图像",
-    "pinyin": "tú xiàng",
-    "translations": [
-      "gambar",
-      "gambar",
-      "grafis"
-    ]
-  },
-  {
-    "id": "9632",
-    "hanzi": "图形",
-    "pinyin": "tú xíng",
-    "translations": [
-      "gambar",
-      "angka",
-      "diagram",
-      "grafik",
-      "penggambaran",
-      "grafis"
-    ]
-  },
-  {
-    "id": "9633",
-    "hanzi": "图纸",
-    "pinyin": "tú zhǐ",
-    "translations": [
-      "Cetak biru",
-      "menggambar",
-      "rencana desain",
-      "kertas grafik"
-    ]
-  },
-  {
-    "id": "9634",
-    "hanzi": "徒步",
-    "pinyin": "tú bù",
-    "translations": [
-      "Menjadi berjalan kaki"
-    ]
-  },
-  {
-    "id": "9635",
-    "hanzi": "涂",
-    "pinyin": "tú",
-    "translations": [
-      "untuk menerapkan (cat dll)",
-      "untuk mengolesi",
-      "ke Daub",
-      "untuk menghapus",
-      "untuk mencoret -coret",
-      "untuk mencoreng",
-      "lumpur (sastra)",
-      "jalan"
-    ]
-  },
-  {
-    "id": "9636",
-    "hanzi": "屠杀",
-    "pinyin": "tú shā",
-    "translations": [
-      "untuk pembantaian",
-      "Pembantaian",
-      "Bloodbath",
-      "pembantaian"
-    ]
-  },
-  {
-    "id": "9637",
-    "hanzi": "土匪",
-    "pinyin": "tǔ fěi",
-    "translations": [
-      "bandit"
-    ]
-  },
-  {
-    "id": "9638",
-    "hanzi": "土壤",
-    "pinyin": "tǔ rǎng",
-    "translations": [
-      "tanah"
-    ]
-  },
-  {
-    "id": "9639",
-    "hanzi": "土生土长",
-    "pinyin": "tǔ shēng tǔ zhǎng",
-    "translations": [
-      "lahir secara lokal dan dibesarkan",
-      "asli",
-      "kandang sendiri"
-    ]
-  },
-  {
-    "id": "9640",
-    "hanzi": "团伙",
-    "pinyin": "tuán huǒ",
-    "translations": [
-      "Geng (kriminal)",
-      "anggota geng",
-      "kaki tangan",
-      "sahabat karib"
-    ]
-  },
-  {
-    "id": "9641",
-    "hanzi": "团聚",
-    "pinyin": "tuán jù",
-    "translations": [
-      "untuk bersatu kembali",
-      "untuk memiliki reuni"
-    ]
-  },
-  {
-    "id": "9642",
-    "hanzi": "团员",
-    "pinyin": "tuán yuán",
-    "translations": [
-      "anggota",
-      "anggota kelompok"
-    ]
-  },
-  {
-    "id": "9643",
-    "hanzi": "团圆",
-    "pinyin": "tuán yuán",
-    "translations": [
-      "untuk memiliki reuni"
-    ]
-  },
-  {
-    "id": "9644",
-    "hanzi": "推测",
-    "pinyin": "tuī cè",
-    "translations": [
-      "spekulasi",
-      "untuk dugaan",
-      "untuk menduga",
-      "untuk berspekulasi"
-    ]
-  },
-  {
-    "id": "9645",
-    "hanzi": "推辞",
-    "pinyin": "tuī cí",
-    "translations": [
-      "untuk menolak (janji temu, undangan dll)"
-    ]
-  },
-  {
-    "id": "9646",
-    "hanzi": "推断",
-    "pinyin": "tuī duàn",
-    "translations": [
-      "untuk menyimpulkan",
-      "untuk menyimpulkan",
-      "untuk memprediksi",
-      "untuk mengekstrapolasi"
-    ]
-  },
-  {
-    "id": "9647",
-    "hanzi": "推翻",
-    "pinyin": "tuī fān",
-    "translations": [
-      "untuk menggulingkan"
-    ]
-  },
-  {
-    "id": "9648",
-    "hanzi": "推荐",
-    "pinyin": "tuī jiàn",
-    "translations": [
-      "untuk merekomendasikan",
-      "rekomendasi"
-    ]
-  },
-  {
-    "id": "9649",
-    "hanzi": "推理",
-    "pinyin": "tuī lǐ",
-    "translations": [
-      "pemikiran",
-      "kesimpulan",
-      "untuk menyimpulkan",
-      "untuk menyimpulkan"
-    ]
-  },
-  {
-    "id": "9650",
-    "hanzi": "推敲",
-    "pinyin": "tuī qiāo",
-    "translations": [
-      "untuk memikirkannya"
-    ]
-  },
-  {
-    "id": "9651",
-    "hanzi": "推算",
-    "pinyin": "tuī suàn",
-    "translations": [
-      "menghitung",
-      "memperhitungkan",
-      "untuk mengekstrapolasi (dalam perhitungan)"
-    ]
-  },
-  {
-    "id": "9652",
-    "hanzi": "推卸",
-    "pinyin": "tuī xiè",
-    "translations": [
-      "untuk menghindari (khususnya tanggung jawab)",
-      "untuk menggeser (menyalahkan)",
-      "untuk melewati uang"
-    ]
-  },
-  {
-    "id": "9653",
-    "hanzi": "推选",
-    "pinyin": "tuī xuǎn",
-    "translations": [
-      "untuk memilih",
-      "untuk memilih",
-      "untuk mencalonkan"
-    ]
-  },
-  {
-    "id": "9654",
-    "hanzi": "推移",
-    "pinyin": "tuī yí",
-    "translations": [
-      "(waktu) untuk berlalu atau lewat",
-      "(dari suatu situasi) untuk mengembangkan atau berkembang"
-    ]
-  },
-  {
-    "id": "9655",
-    "hanzi": "颓废",
-    "pinyin": "tuí fèi",
-    "translations": [
-      "dekaden",
-      "putus asa",
-      "murung",
-      "sedih"
-    ]
-  },
-  {
-    "id": "9656",
-    "hanzi": "退回",
-    "pinyin": "tuì huí",
-    "translations": [
-      "untuk mengembalikan (item)",
-      "untuk mengirim kembali",
-      "untuk kembali"
-    ]
-  },
-  {
-    "id": "9657",
-    "hanzi": "退却",
-    "pinyin": "tuì què",
-    "translations": [
-      "untuk mundur",
-      "untuk menyusut kembali"
-    ]
-  },
-  {
-    "id": "9658",
-    "hanzi": "退让",
-    "pinyin": "tuì ràng",
-    "translations": [
-      "untuk mengesampingkan",
-      "untuk keluar dari jalan",
-      "untuk mundur",
-      "untuk mengakui"
-    ]
-  },
-  {
-    "id": "9659",
-    "hanzi": "退缩",
-    "pinyin": "tuì suō",
-    "translations": [
-      "untuk menyusut kembali",
-      "untuk meringkuk"
-    ]
-  },
-  {
-    "id": "9660",
-    "hanzi": "退休金",
-    "pinyin": "tuì xiū jīn",
-    "translations": [
-      "Pembayaran Pensiun",
-      "pensiun"
-    ]
-  },
-  {
-    "id": "9661",
-    "hanzi": "退学",
-    "pinyin": "tuì xué",
-    "translations": [
-      "untuk berhenti sekolah"
-    ]
-  },
-  {
-    "id": "9662",
-    "hanzi": "退役",
-    "pinyin": "tuì yì",
-    "translations": [
-      "untuk pensiun dari militer, olahraga dll",
-      "untuk mendemobilisasi",
-      "untuk penonaktifan",
-      "pensiun dari penggunaan"
-    ]
-  },
-  {
-    "id": "9663",
-    "hanzi": "屯",
-    "pinyin": "tún",
-    "translations": [
-      "ke stasiun (tentara)",
-      "untuk menyimpan",
-      "desa"
-    ]
-  },
-  {
-    "id": "9664",
-    "hanzi": "托付",
-    "pinyin": "tuō fù",
-    "translations": [
-      "untuk mempercayakan"
-    ]
-  },
-  {
-    "id": "9665",
-    "hanzi": "拖累",
-    "pinyin": "tuō lěi",
-    "translations": [
-      "untuk membebani",
-      "menjadi beban",
-      "untuk melibatkan"
-    ]
-  },
-  {
-    "id": "9666",
-    "hanzi": "拖欠",
-    "pinyin": "tuō qiàn",
-    "translations": [
-      "tunggakan",
-      "di belakang dalam pembayaran",
-      "untuk default atas hutang seseorang"
-    ]
-  },
-  {
-    "id": "9667",
-    "hanzi": "拖延",
-    "pinyin": "tuō yán",
-    "translations": [
-      "untuk menunda",
-      "untuk menunda",
-      "menunda"
-    ]
-  },
-  {
-    "id": "9668",
-    "hanzi": "脱节",
-    "pinyin": "tuō jié",
-    "translations": [
-      "untuk terpisah"
-    ]
-  },
-  {
-    "id": "9669",
-    "hanzi": "脱口而出",
-    "pinyin": "tuō kǒu ér chū",
-    "translations": [
-      "untuk blurt out",
-      "untuk membiarkan slip (komentar yang tidak bijaksana)"
-    ]
-  },
-  {
-    "id": "9670",
-    "hanzi": "脱落",
-    "pinyin": "tuō luò",
-    "translations": [
-      "untuk mengantar",
-      "untuk keluar",
-      "Kehilangan (rambut dll)",
-      "untuk menghilangkan (karakter saat menulis)"
-    ]
-  },
-  {
-    "id": "9671",
-    "hanzi": "脱身",
-    "pinyin": "tuō shēn",
-    "translations": [
-      "untuk pergi",
-      "untuk melarikan diri (dari kewajiban)",
-      "untuk membebaskan diri sendiri",
-      "untuk melepaskan diri"
-    ]
-  },
-  {
-    "id": "9672",
-    "hanzi": "脱颖而出",
-    "pinyin": "tuō yǐng ér chū",
-    "translations": [
-      "untuk mengungkapkan bakat seseorang (idiom)",
-      "untuk bangkit di atas orang lain",
-      "untuk membedakan diri sendiri"
-    ]
-  },
-  {
-    "id": "9673",
-    "hanzi": "驮",
-    "pinyin": "tuó",
-    "translations": [
-      "untuk membawanya."
-    ]
-  },
-  {
-    "id": "9674",
-    "hanzi": "妥",
-    "pinyin": "tuǒ",
-    "translations": [
-      "sesuai",
-      "memadai",
-      "siap",
-      "mapan"
-    ]
-  },
-  {
-    "id": "9675",
-    "hanzi": "妥当",
-    "pinyin": "tuǒ dang",
-    "translations": [
-      "sesuai",
-      "sesuai",
-      "siap"
-    ]
-  },
-  {
-    "id": "9676",
-    "hanzi": "妥善",
-    "pinyin": "tuǒ shàn",
-    "translations": [
-      "sesuai",
-      "sesuai"
-    ]
-  },
-  {
-    "id": "9677",
-    "hanzi": "妥协",
-    "pinyin": "tuǒ xié",
-    "translations": [
-      "untuk berkompromi",
-      "untuk mencapai istilah",
-      "kompromi"
-    ]
-  },
-  {
-    "id": "9678",
-    "hanzi": "拓宽",
-    "pinyin": "tuò kuān",
-    "translations": [
-      "untuk memperluas"
-    ]
-  },
-  {
-    "id": "9679",
-    "hanzi": "拓展",
-    "pinyin": "tuò zhǎn",
-    "translations": [
-      "memperluas"
-    ]
-  },
-  {
-    "id": "9680",
-    "hanzi": "唾液",
-    "pinyin": "tuò yè",
-    "translations": [
-      "air liur"
-    ]
-  },
-  {
-    "id": "9681",
-    "hanzi": "挖掘",
-    "pinyin": "wā jué",
-    "translations": [
-      "untuk menggali",
-      "untuk menggali",
-      "untuk menggali"
-    ]
-  },
-  {
-    "id": "9682",
-    "hanzi": "挖苦",
-    "pinyin": "wā kǔ",
-    "translations": [
-      "untuk berbicara dengan sinis",
-      "untuk membuat komentar pemotongan"
-    ]
-  },
-  {
-    "id": "9683",
-    "hanzi": "瓦",
-    "pinyin": "wǎ",
-    "translations": [
-      "genteng",
-      "ABBR. untuk 瓦特 [wǎ tè]"
-    ]
-  },
-  {
-    "id": "9684",
-    "hanzi": "歪",
-    "pinyin": "wǎi",
-    "translations": [
-      "miring",
-      "di sudut yang bengkok",
-      "licik",
-      "berbahaya",
-      "(Coll.) Berbaring di pihak seseorang"
-    ]
-  },
-  {
-    "id": "9685",
-    "hanzi": "歪曲",
-    "pinyin": "wāi qū",
-    "translations": [
-      "memutarbalikkan",
-      "untuk salah menggambarkan"
-    ]
-  },
-  {
-    "id": "9686",
-    "hanzi": "外表",
-    "pinyin": "wài biǎo",
-    "translations": [
-      "luar",
-      "di luar",
-      "pulasan"
-    ]
-  },
-  {
-    "id": "9687",
-    "hanzi": "外公",
-    "pinyin": "wài gōng",
-    "translations": [
-      "(Coll.) Ayah Ibu",
-      "kakek dari pihak ibu"
-    ]
-  },
-  {
-    "id": "9688",
-    "hanzi": "外行",
-    "pinyin": "wài háng",
-    "translations": [
-      "orang awam",
-      "amatir"
-    ]
-  },
-  {
-    "id": "9689",
-    "hanzi": "外号",
-    "pinyin": "wài hào",
-    "translations": [
-      "nama panggilan"
-    ]
-  },
-  {
-    "id": "9690",
-    "hanzi": "外籍",
-    "pinyin": "wài jí",
-    "translations": [
-      "Asing (mis. Kebangsaan asing)"
-    ]
-  },
-  {
-    "id": "9691",
-    "hanzi": "外贸",
-    "pinyin": "wài mào",
-    "translations": [
-      "perdagangan luar negeri"
-    ]
-  },
-  {
-    "id": "9692",
-    "hanzi": "外貌",
-    "pinyin": "wài mào",
-    "translations": [
-      "Profil",
-      "penampilan"
-    ]
-  },
-  {
-    "id": "9693",
-    "hanzi": "外婆",
-    "pinyin": "wài pó",
-    "translations": [
-      "(Coll.) Ibu Ibu",
-      "nenek dari pihak ibu"
-    ]
-  },
-  {
-    "id": "9694",
-    "hanzi": "外企",
-    "pinyin": "wài qǐ",
-    "translations": [
-      "perusahaan asing",
-      "Perusahaan yang didirikan di daratan Cina dengan investasi langsung dari entitas asing atau dari investor di Taiwan, Makau atau Hong Kong",
-      "ABBR. untuk 外資 企業 | 外资 企业"
-    ]
-  },
-  {
-    "id": "9695",
-    "hanzi": "外星人",
-    "pinyin": "wài xīng rén",
-    "translations": [
-      "Alien Luar Angkasa",
-      "Extraterrestrial"
-    ]
-  },
-  {
-    "id": "9696",
-    "hanzi": "外形",
-    "pinyin": "wài xíng",
-    "translations": [
-      "angka",
-      "membentuk",
-      "bentuk eksternal",
-      "kontur"
-    ]
-  },
-  {
-    "id": "9697",
-    "hanzi": "外援",
-    "pinyin": "wài yuán",
-    "translations": [
-      "bantuan eksternal",
-      "bantuan asing"
-    ]
-  },
-  {
-    "id": "9698",
-    "hanzi": "丸",
-    "pinyin": "wán",
-    "translations": [
-      "bola",
-      "pelet",
-      "pil"
-    ]
-  },
-  {
-    "id": "9699",
-    "hanzi": "完备",
-    "pinyin": "wán bèi",
-    "translations": [
-      "sempurna",
-      "menyelesaikan",
-      "sempurna",
-      "tidak meninggalkan apa pun yang diinginkan"
-    ]
-  },
-  {
-    "id": "9700",
-    "hanzi": "完毕",
-    "pinyin": "wán bì",
-    "translations": [
-      "menyelesaikan",
-      "untuk mengakhiri",
-      "untuk menyelesaikan"
-    ]
-  },
-  {
-    "id": "9701",
-    "hanzi": "完蛋",
-    "pinyin": "wán dàn",
-    "translations": [
-      "(coll.) Untuk dilakukan untuk"
-    ]
-  },
-  {
-    "id": "9702",
-    "hanzi": "完好",
-    "pinyin": "wán hǎo",
-    "translations": [
-      "utuh",
-      "dalam kondisi baik"
-    ]
-  },
-  {
-    "id": "9703",
-    "hanzi": "玩耍",
-    "pinyin": "wán shuǎ",
-    "translations": [
-      "bermain (seperti anak -anak)",
-      "untuk menghibur diri sendiri"
-    ]
-  },
-  {
-    "id": "9704",
-    "hanzi": "玩意儿",
-    "pinyin": "wán yì r",
-    "translations": [
-      "Varian Erhua dari 玩意 [wán yì]"
-    ]
-  },
-  {
-    "id": "9705",
-    "hanzi": "顽固",
-    "pinyin": "wán gù",
-    "translations": [
-      "keras kepala",
-      "keras kepala"
-    ]
-  },
-  {
-    "id": "9706",
-    "hanzi": "挽",
-    "pinyin": "wǎn",
-    "translations": [
-      "untuk menarik",
-      "untuk menggambar (gerobak atau busur)",
-      "untuk menggulung",
-      "untuk koil",
-      "untuk membawa lengan",
-      "untuk meratapi orang mati",
-      "(Gbr.) Menarik melawan",
-      "untuk memulihkan"
-    ]
-  },
-  {
-    "id": "9707",
-    "hanzi": "挽回",
-    "pinyin": "wǎn huí",
-    "translations": [
-      "mendapatkan kembali",
-      "untuk menebus"
-    ]
-  },
-  {
-    "id": "9708",
-    "hanzi": "挽救",
-    "pinyin": "wǎn jiù",
-    "translations": [
-      "untuk menyimpan",
-      "untuk memperbaiki",
-      "untuk menyelamatkan"
-    ]
-  },
-  {
-    "id": "9709",
-    "hanzi": "晚间",
-    "pinyin": "wǎn jiān",
-    "translations": [
-      "malam",
-      "malam"
-    ]
-  },
-  {
-    "id": "9710",
-    "hanzi": "晚年",
-    "pinyin": "wǎn nián",
-    "translations": [
-      "satu tahun berikutnya"
-    ]
-  },
-  {
-    "id": "9711",
-    "hanzi": "晚期",
-    "pinyin": "wǎn qī",
-    "translations": [
-      "periode nanti",
-      "tahap akhir",
-      "terminal"
-    ]
-  },
-  {
-    "id": "9712",
-    "hanzi": "惋惜",
-    "pinyin": "wǎn xī",
-    "translations": [
-      "menyesal",
-      "merasa sangat kasihan",
-      "merasa kasihan pada SB"
-    ]
-  },
-  {
-    "id": "9713",
-    "hanzi": "万分",
-    "pinyin": "wàn fēn",
-    "translations": [
-      "sangat banyak",
-      "sangat",
-      "satu bagian sepuluh seribu"
-    ]
-  },
-  {
-    "id": "9714",
-    "hanzi": "万古长青",
-    "pinyin": "wàn gǔ cháng qīng",
-    "translations": [
-      "tetap segar",
-      "bertahan selamanya",
-      "abadi"
-    ]
-  },
-  {
-    "id": "9715",
-    "hanzi": "万能",
-    "pinyin": "wàn néng",
-    "translations": [
-      "mahakuasa",
-      "semua tujuan",
-      "universal"
-    ]
-  },
-  {
-    "id": "9716",
-    "hanzi": "万万",
-    "pinyin": "wàn wàn",
-    "translations": [
-      "sangat",
-      "sepenuhnya"
-    ]
-  },
-  {
-    "id": "9717",
-    "hanzi": "万无一失",
-    "pinyin": "wàn wú yì shī",
-    "translations": [
-      "pasti",
-      "Benar -benar aman (idiom)"
-    ]
-  },
-  {
-    "id": "9718",
-    "hanzi": "汪洋",
-    "pinyin": "wāng yáng",
-    "translations": [
-      "Air yang sangat besar"
-    ]
-  },
-  {
-    "id": "9719",
-    "hanzi": "亡羊补牢",
-    "pinyin": "wáng yáng bǔ láo",
-    "translations": [
-      "Lit. untuk memperbaiki pena setelah domba hilang (idiom)",
-      "ara. untuk bertindak terlambat",
-      "lebih baik terlambat daripada tidak sama sekali",
-      "untuk mengunci pintu yang stabil setelah kuda melesat"
-    ]
-  },
-  {
-    "id": "9720",
-    "hanzi": "王国",
-    "pinyin": "wáng guó",
-    "translations": [
-      "kerajaan",
-      "dunia"
-    ]
-  },
-  {
-    "id": "9721",
-    "hanzi": "王牌",
-    "pinyin": "wáng pái",
-    "translations": [
-      "kartu truf"
-    ]
-  },
-  {
-    "id": "9722",
-    "hanzi": "网点",
-    "pinyin": "wǎng diǎn",
-    "translations": [
-      "simpul dalam jaringan",
-      "cabang",
-      "situs web"
-    ]
-  },
-  {
-    "id": "9723",
-    "hanzi": "网民",
-    "pinyin": "wǎng mín",
-    "translations": [
-      "Pengguna Web",
-      "Warganet"
-    ]
-  },
-  {
-    "id": "9724",
-    "hanzi": "往常",
-    "pinyin": "wǎng cháng",
-    "translations": [
-      "kebiasaan (di masa lalu)",
-      "seperti yang biasa dilakukan sebelumnya",
-      "seperti dulu"
-    ]
-  },
-  {
-    "id": "9725",
-    "hanzi": "往返",
-    "pinyin": "wǎng fǎn",
-    "translations": [
-      "untuk bolak -balik",
-      "untuk pergi ke dan fro",
-      "perjalanan pulang pergi"
-    ]
-  },
-  {
-    "id": "9726",
-    "hanzi": "往日",
-    "pinyin": "wǎng rì",
-    "translations": [
-      "masa lalu",
-      "masa lalu"
-    ]
-  },
-  {
-    "id": "9727",
-    "hanzi": "往事",
-    "pinyin": "wǎng shì",
-    "translations": [
-      "acara masa lalu",
-      "sebelumnya kejadian"
-    ]
-  },
-  {
-    "id": "9728",
-    "hanzi": "妄想",
-    "pinyin": "wàng xiǎng",
-    "translations": [
-      "untuk mencoba sia -sia",
-      "upaya sia -sia",
-      "khayalan"
-    ]
-  },
-  {
-    "id": "9729",
-    "hanzi": "忘不了",
-    "pinyin": "wàng bu liǎo",
-    "translations": [
-      "tidak bisa melupakan"
-    ]
-  },
-  {
-    "id": "9730",
-    "hanzi": "忘掉",
-    "pinyin": "wàng diào",
-    "translations": [
-      "untuk dilupakan"
-    ]
-  },
-  {
-    "id": "9731",
-    "hanzi": "旺",
-    "pinyin": "wàng",
-    "translations": [
-      "makmur",
-      "maju",
-      "(bunga) mekar",
-      "(api) menderu"
-    ]
-  },
-  {
-    "id": "9732",
-    "hanzi": "旺季",
-    "pinyin": "wàng jì",
-    "translations": [
-      "musim sibuk",
-      "periode puncak",
-      "Lihat juga 淡季 [Dàn Jì]"
-    ]
-  },
-  {
-    "id": "9733",
-    "hanzi": "旺盛",
-    "pinyin": "wàng shèng",
-    "translations": [
-      "kuat",
-      "riang"
-    ]
-  },
-  {
-    "id": "9734",
-    "hanzi": "望",
-    "pinyin": "wàng",
-    "translations": [
-      "bulan purnama",
-      "untuk berharap",
-      "untuk mengharapkan",
-      "untuk mengunjungi",
-      "untuk menatap (ke kejauhan)",
-      "untuk melihat ke arah",
-      "terhadap"
-    ]
-  },
-  {
-    "id": "9735",
-    "hanzi": "望远镜",
-    "pinyin": "wàng yuǎn jìng",
-    "translations": [
-      "teropong",
-      "teleskop"
-    ]
-  },
-  {
-    "id": "9736",
-    "hanzi": "危及",
-    "pinyin": "wēi jí",
-    "translations": [
-      "untuk membahayakan",
-      "untuk membahayakan",
-      "bahaya (kehidupan, keamanan nasional dll)"
-    ]
-  },
-  {
-    "id": "9737",
-    "hanzi": "危急",
-    "pinyin": "wēi jí",
-    "translations": [
-      "kritis",
-      "putus asa (situasi)"
-    ]
-  },
-  {
-    "id": "9738",
-    "hanzi": "威风",
-    "pinyin": "wēi fēng",
-    "translations": [
-      "mungkin",
-      "Otoritas yang menakjubkan",
-      "menakjubkan"
-    ]
-  },
-  {
-    "id": "9739",
-    "hanzi": "威力",
-    "pinyin": "wēi lì",
-    "translations": [
-      "mungkin",
-      "kekuatan yang tangguh"
-    ]
-  },
-  {
-    "id": "9740",
-    "hanzi": "威慑",
-    "pinyin": "wēi shè",
-    "translations": [
-      "untuk meringkuk dengan kekuatan militer",
-      "pencegahan"
-    ]
-  },
-  {
-    "id": "9741",
-    "hanzi": "威信",
-    "pinyin": "wēi xìn",
-    "translations": [
-      "prestise",
-      "reputasi",
-      "memercayai",
-      "kredit dengan orang -orang"
-    ]
-  },
-  {
-    "id": "9742",
-    "hanzi": "微不足道",
-    "pinyin": "wēi bù zú dào",
-    "translations": [
-      "diabaikan",
-      "tidak penting"
-    ]
-  },
-  {
-    "id": "9743",
-    "hanzi": "微观",
-    "pinyin": "wēi guān",
-    "translations": [
-      "mikro-",
-      "subatomik"
-    ]
-  },
-  {
-    "id": "9744",
-    "hanzi": "微妙",
-    "pinyin": "wēi miào",
-    "translations": [
-      "tak kentara"
-    ]
-  },
-  {
-    "id": "9745",
-    "hanzi": "微弱",
-    "pinyin": "wēi ruò",
-    "translations": [
-      "lemah",
-      "pingsan",
-      "lemah"
-    ]
-  },
-  {
-    "id": "9746",
-    "hanzi": "微型",
-    "pinyin": "wēi xíng",
-    "translations": [
-      "miniatur",
-      "mikro-",
-      "kecil"
-    ]
-  },
-  {
-    "id": "9747",
-    "hanzi": "为人",
-    "pinyin": "wéi rén",
-    "translations": [
-      "untuk melakukan diri sendiri",
-      "perilaku",
-      "mengadakan",
-      "karakter pribadi"
-    ]
-  },
-  {
-    "id": "9748",
-    "hanzi": "违背",
-    "pinyin": "wéi bèi",
-    "translations": [
-      "untuk melawan",
-      "bertentangan dengan",
-      "melanggar"
-    ]
-  },
-  {
-    "id": "9749",
-    "hanzi": "违约",
-    "pinyin": "wéi yuē",
-    "translations": [
-      "untuk melanggar janji",
-      "untuk melanggar kesepakatan",
-      "untuk default (atas pinjaman atau kontrak)"
-    ]
-  },
-  {
-    "id": "9750",
-    "hanzi": "违章",
-    "pinyin": "wéi zhāng",
-    "translations": [
-      "untuk melanggar aturan",
-      "untuk melanggar peraturan"
-    ]
-  },
-  {
-    "id": "9751",
-    "hanzi": "围墙",
-    "pinyin": "wéi qiáng",
-    "translations": [
-      "dinding perimeter",
-      "pagar"
-    ]
-  },
-  {
-    "id": "9752",
-    "hanzi": "唯",
-    "pinyin": "wéi",
-    "translations": [
-      "-aliran",
-      "hanya",
-      "sendiri"
-    ]
-  },
-  {
-    "id": "9753",
-    "hanzi": "唯独",
-    "pinyin": "wéi dú",
-    "translations": [
-      "hanya",
-      "Just (mis. Hanya itu ...)",
-      "semua kecuali",
-      "unik"
-    ]
-  },
-  {
-    "id": "9754",
-    "hanzi": "伪造",
-    "pinyin": "wěi zào",
-    "translations": [
-      "untuk membentuk",
-      "untuk memalsukan",
-      "untuk palsu"
-    ]
-  },
-  {
-    "id": "9755",
-    "hanzi": "伪装",
-    "pinyin": "wěi zhuāng",
-    "translations": [
-      "berpura -pura menjadi (tertidur dll)",
-      "untuk menyamarkan diri sebagai",
-      "sambilan",
-      "samaran",
-      "(militer) untuk menyamarkan",
-      "kamuflase"
-    ]
-  },
-  {
-    "id": "9756",
-    "hanzi": "尾气",
-    "pinyin": "wěi qì",
-    "translations": [
-      "Knalpot (mis. Limbah gas dari mesin)",
-      "emisi"
-    ]
-  },
-  {
-    "id": "9757",
-    "hanzi": "尾声",
-    "pinyin": "wěi shēng",
-    "translations": [
-      "Coda",
-      "Epilog",
-      "akhir"
-    ]
-  },
-  {
-    "id": "9758",
-    "hanzi": "纬度",
-    "pinyin": "wěi dù",
-    "translations": [
-      "Garis Lintang"
-    ]
-  },
-  {
-    "id": "9759",
-    "hanzi": "委屈",
-    "pinyin": "wěi qu",
-    "translations": [
-      "merasa dianiaya",
-      "menyebabkan SB merasa dianiaya",
-      "keluhan"
-    ]
-  },
-  {
-    "id": "9760",
-    "hanzi": "委婉",
-    "pinyin": "wěi wǎn",
-    "translations": [
-      "bijaksana",
-      "berkenaan dgn eufemisme",
-      "(suara dll) ramah tamah",
-      "lembut"
-    ]
-  },
-  {
-    "id": "9761",
-    "hanzi": "委员",
-    "pinyin": "wěi yuán",
-    "translations": [
-      "anggota Komite",
-      "komite",
-      "Dewan"
-    ]
-  },
-  {
-    "id": "9762",
-    "hanzi": "委员会",
-    "pinyin": "wěi yuán huì",
-    "translations": [
-      "komite"
-    ]
-  },
-  {
-    "id": "9763",
-    "hanzi": "萎缩",
-    "pinyin": "wěi suō",
-    "translations": [
-      "untuk layu",
-      "untuk mengering (dari tanaman)",
-      "untuk atrofi (otot, kebiasaan sosial dll)"
-    ]
-  },
-  {
-    "id": "9764",
-    "hanzi": "卫视",
-    "pinyin": "wèi shì",
-    "translations": [
-      "TV satelit (abbr. untuk 衛星 電視 | 卫星 电视 [wèi xīng diàn shì])"
-    ]
-  },
-  {
-    "id": "9765",
-    "hanzi": "未",
-    "pinyin": "wèi",
-    "translations": [
-      "Belum",
-      "tidak",
-      "sudah tidak",
-      "bukan",
-      "Cabang Bumi ke-8: 1-3 malam, bulan matahari ke-6 (7 Juli-6 Agustus), tahun domba",
-      "Titik Kompas Tiongkok Kuno: 210 °"
-    ]
-  },
-  {
-    "id": "9766",
-    "hanzi": "未成年人",
-    "pinyin": "wèi chéng nián rén",
-    "translations": [
-      "Kecil (mis. Orang di bawah 18)"
-    ]
-  },
-  {
-    "id": "9767",
-    "hanzi": "未经",
-    "pinyin": "wèi jīng",
-    "translations": [
-      "tidak mengalami",
-      "tanpa (telah melalui proses tertentu)"
-    ]
-  },
-  {
-    "id": "9768",
-    "hanzi": "未免",
-    "pinyin": "wèi miǎn",
-    "translations": [
-      "tak terhindarkan",
-      "tidak bisa membantu",
-      "Sungguh",
-      "lebih tepatnya"
-    ]
-  },
-  {
-    "id": "9769",
-    "hanzi": "未知数",
-    "pinyin": "wèi zhī shù",
-    "translations": [
-      "kuantitas yang tidak diketahui"
-    ]
-  },
-  {
-    "id": "9770",
-    "hanzi": "位子",
-    "pinyin": "wèi zi",
-    "translations": [
-      "tempat",
-      "kursi"
-    ]
-  },
-  {
-    "id": "9771",
-    "hanzi": "味精",
-    "pinyin": "wèi jīng",
-    "translations": [
-      "Monosodium glutamat (MSG)"
-    ]
-  },
-  {
-    "id": "9772",
-    "hanzi": "畏惧",
-    "pinyin": "wèi jù",
-    "translations": [
-      "takut",
-      "takut",
-      "firasat"
-    ]
-  },
-  {
-    "id": "9773",
-    "hanzi": "畏缩",
-    "pinyin": "wèi suō",
-    "translations": [
-      "untuk meringkuk",
-      "untuk tersentak",
-      "untuk puyuh",
-      "untuk mundur"
-    ]
-  },
-  {
-    "id": "9774",
-    "hanzi": "胃口",
-    "pinyin": "wèi kǒu",
-    "translations": [
-      "nafsu makan",
-      "menyukai"
-    ]
-  },
-  {
-    "id": "9775",
-    "hanzi": "喂养",
-    "pinyin": "wèi yǎng",
-    "translations": [
-      "untuk memberi makan (seorang anak, hewan domestik dll)",
-      "untuk menjaga",
-      "untuk memelihara (binatang)"
-    ]
-  },
-  {
-    "id": "9776",
-    "hanzi": "慰劳",
-    "pinyin": "wèi láo",
-    "translations": [
-      "untuk menunjukkan penghargaan (dengan kata -kata baik, hadiah kecil dll)",
-      "untuk menghibur"
-    ]
-  },
-  {
-    "id": "9777",
-    "hanzi": "温度计",
-    "pinyin": "wēn dù jì",
-    "translations": [
-      "termometer",
-      "Thermograph"
-    ]
-  },
-  {
-    "id": "9778",
-    "hanzi": "温泉",
-    "pinyin": "wēn quán",
-    "translations": [
-      "Musim semi panas",
-      "spa",
-      "onsen"
-    ]
-  },
-  {
-    "id": "9779",
-    "hanzi": "温柔",
-    "pinyin": "wēn róu",
-    "translations": [
-      "lembut dan lembut",
-      "lembut"
-    ]
-  },
-  {
-    "id": "9780",
-    "hanzi": "温室",
-    "pinyin": "wēn shì",
-    "translations": [
-      "rumah kaca"
-    ]
-  },
-  {
-    "id": "9781",
-    "hanzi": "温习",
-    "pinyin": "wēn xí",
-    "translations": [
-      "untuk meninjau (pelajaran dll)"
-    ]
-  },
-  {
-    "id": "9782",
-    "hanzi": "温馨",
-    "pinyin": "wēn xīn",
-    "translations": [
-      "kenyamanan",
-      "lembut dan harum",
-      "hangat"
-    ]
-  },
-  {
-    "id": "9783",
-    "hanzi": "瘟疫",
-    "pinyin": "wēn yì",
-    "translations": [
-      "epidemi",
-      "wabah",
-      "sampar",
-      "sakit"
-    ]
-  },
-  {
-    "id": "9784",
-    "hanzi": "文",
-    "pinyin": "wén",
-    "translations": [
-      "bahasa",
-      "budaya",
-      "menulis",
-      "resmi",
-      "sastra",
-      "lembut",
-      "(Lama) Klasifikasi untuk Koin",
-      "Kangxi Radical 67"
-    ]
-  },
-  {
-    "id": "9785",
-    "hanzi": "文具",
-    "pinyin": "wén jù",
-    "translations": [
-      "alat tulis",
-      "Item alat tulis (pena, pensil, penghapus, rautan pensil dll)"
-    ]
-  },
-  {
-    "id": "9786",
-    "hanzi": "文科",
-    "pinyin": "wén kē",
-    "translations": [
-      "Seni Liberal",
-      "sastra"
-    ]
-  },
-  {
-    "id": "9787",
-    "hanzi": "文盲",
-    "pinyin": "wén máng",
-    "translations": [
-      "buta huruf"
-    ]
-  },
-  {
-    "id": "9788",
-    "hanzi": "文凭",
-    "pinyin": "wén píng",
-    "translations": [
-      "diploma"
-    ]
-  },
-  {
-    "id": "9789",
-    "hanzi": "文人",
-    "pinyin": "wén rén",
-    "translations": [
-      "sarjana",
-      "penulis"
-    ]
-  },
-  {
-    "id": "9790",
-    "hanzi": "文物",
-    "pinyin": "wén wù",
-    "translations": [
-      "Relik Budaya",
-      "peninggalan sejarah"
-    ]
-  },
-  {
-    "id": "9791",
-    "hanzi": "文献",
-    "pinyin": "wén xiàn",
-    "translations": [
-      "dokumen"
-    ]
-  },
-  {
-    "id": "9792",
-    "hanzi": "文雅",
-    "pinyin": "wén yǎ",
-    "translations": [
-      "anggun",
-      "Dihilangkan"
-    ]
-  },
-  {
-    "id": "9793",
-    "hanzi": "闻名",
-    "pinyin": "wén míng",
-    "translations": [
-      "terkenal",
-      "terkenal",
-      "terkenal",
-      "terkenal"
-    ]
-  },
-  {
-    "id": "9794",
-    "hanzi": "蚊帐",
-    "pinyin": "wén zhàng",
-    "translations": [
-      "kawat nyamuk"
-    ]
-  },
-  {
-    "id": "9795",
-    "hanzi": "蚊子",
-    "pinyin": "wén zi",
-    "translations": [
-      "nyamuk"
-    ]
-  },
-  {
-    "id": "9796",
-    "hanzi": "吻",
-    "pinyin": "wěn",
-    "translations": [
-      "ciuman",
-      "mencium",
-      "mulut"
-    ]
-  },
-  {
-    "id": "9797",
-    "hanzi": "吻合",
-    "pinyin": "wěn hé",
-    "translations": [
-      "agar cocok",
-      "menjadi identik dengan",
-      "untuk menyesuaikan diri",
-      "mencocokkan"
-    ]
-  },
-  {
-    "id": "9798",
-    "hanzi": "紊乱",
-    "pinyin": "wěn luàn",
-    "translations": [
-      "kekacauan",
-      "kekacauan"
-    ]
-  },
-  {
-    "id": "9799",
-    "hanzi": "稳固",
-    "pinyin": "wěn gù",
-    "translations": [
-      "stabil",
-      "stabil",
-      "tegas",
-      "untuk menstabilkan"
-    ]
-  },
-  {
-    "id": "9800",
-    "hanzi": "稳健",
-    "pinyin": "wěn jiàn",
-    "translations": [
-      "tegas",
-      "stabil dan mantap"
-    ]
-  },
-  {
-    "id": "9801",
-    "hanzi": "稳妥",
-    "pinyin": "wěn tuǒ",
-    "translations": [
-      "bisa diandalkan"
-    ]
-  },
-  {
-    "id": "9802",
-    "hanzi": "稳重",
-    "pinyin": "wěn zhòng",
-    "translations": [
-      "stabil",
-      "sungguh -sungguh",
-      "tenang dan serius"
-    ]
-  },
-  {
-    "id": "9803",
-    "hanzi": "问卷",
-    "pinyin": "wèn juàn",
-    "translations": [
-      "daftar pertanyaan"
-    ]
-  },
-  {
-    "id": "9804",
-    "hanzi": "问世",
-    "pinyin": "wèn shì",
-    "translations": [
-      "untuk diterbitkan",
-      "untuk keluar"
-    ]
-  },
-  {
-    "id": "9805",
-    "hanzi": "窝",
-    "pinyin": "wō",
-    "translations": [
-      "sarang",
-      "lubang atau lubang di tubuh manusia",
-      "sarang",
-      "sarang",
-      "tempat",
-      "ke Harbour atau Shelter",
-      "untuk bertahan di cek",
-      "untuk menekuk",
-      "Classifier for Litters and Broods"
-    ]
-  },
-  {
-    "id": "9806",
-    "hanzi": "卧",
-    "pinyin": "wò",
-    "translations": [
-      "berbohong",
-      "untuk berjongkok"
-    ]
-  },
-  {
-    "id": "9807",
-    "hanzi": "污秽",
-    "pinyin": "wū huì",
-    "translations": [
-      "tidak menyenangkan",
-      "mesum",
-      "kotor"
-    ]
-  },
-  {
-    "id": "9808",
-    "hanzi": "巫婆",
-    "pinyin": "wū pó",
-    "translations": [
-      "penyihir",
-      "Penyihir",
-      "dukun wanita"
-    ]
-  },
-  {
-    "id": "9809",
-    "hanzi": "呜咽",
-    "pinyin": "wū yè",
-    "translations": [
-      "terisak",
-      "untuk merengek"
-    ]
-  },
-  {
-    "id": "9810",
-    "hanzi": "屋顶",
-    "pinyin": "wū dǐng",
-    "translations": [
-      "atap"
-    ]
-  },
-  {
-    "id": "9811",
-    "hanzi": "无比",
-    "pinyin": "wú bǐ",
-    "translations": [
-      "tak tertandingi",
-      "tak ada taranya"
-    ]
-  },
-  {
-    "id": "9812",
-    "hanzi": "无不",
-    "pinyin": "wú bù",
-    "translations": [
-      "tidak ada yang kurang",
-      "tidak ada yang hilang",
-      "semuanya ada di sana",
-      "semua orang tanpa kecuali"
-    ]
-  },
-  {
-    "id": "9813",
-    "hanzi": "无偿",
-    "pinyin": "wú cháng",
-    "translations": [
-      "bebas",
-      "gratis",
-      "tanpa biaya"
-    ]
-  },
-  {
-    "id": "9814",
-    "hanzi": "无敌",
-    "pinyin": "wú dí",
-    "translations": [
-      "tiada bandingnya",
-      "tanpa saingan",
-      "Paragon"
-    ]
-  },
-  {
-    "id": "9815",
-    "hanzi": "无恶不作",
-    "pinyin": "wú è bú zuò",
-    "translations": [
-      "tidak menyusut dari kejahatan apa pun (idiom)",
-      "untuk melakukan kesalahan yang bisa dibayangkan"
-    ]
-  },
-  {
-    "id": "9816",
-    "hanzi": "无非",
-    "pinyin": "wú fēi",
-    "translations": [
-      "hanya",
-      "tidak ada lagi"
-    ]
-  },
-  {
-    "id": "9817",
-    "hanzi": "无辜",
-    "pinyin": "wú gū",
-    "translations": [
-      "tidak bersalah",
-      "tidak bersalah",
-      "tidak bersalah (hukum)"
-    ]
-  },
-  {
-    "id": "9818",
-    "hanzi": "无故",
-    "pinyin": "wú gù",
-    "translations": [
-      "tanpa alasan atau alasan"
-    ]
-  },
-  {
-    "id": "9819",
-    "hanzi": "无关紧要",
-    "pinyin": "wú guān jǐn yào",
-    "translations": [
-      "cuek",
-      "tidak penting"
-    ]
-  },
-  {
-    "id": "9820",
-    "hanzi": "无话可说",
-    "pinyin": "wú huà kě shuō",
-    "translations": [
-      "untuk tidak mengatakan apa -apa (idiom)"
-    ]
-  },
-  {
-    "id": "9821",
-    "hanzi": "无济于事",
-    "pinyin": "wú jì yú shì",
-    "translations": [
-      "tidak berhasil",
-      "tidak ada gunanya"
-    ]
-  },
-  {
-    "id": "9822",
-    "hanzi": "无家可归",
-    "pinyin": "wú jiā kě guī",
-    "translations": [
-      "tunawisma"
-    ]
-  },
-  {
-    "id": "9823",
-    "hanzi": "无精打采",
-    "pinyin": "wú jīng dǎ cǎi",
-    "translations": [
-      "putus asa dan downcast (idiom)",
-      "lesu",
-      "dengan semangat rendah",
-      "dicuci"
-    ]
-  },
-  {
-    "id": "9824",
-    "hanzi": "无可奉告",
-    "pinyin": "wú kě fèng gào",
-    "translations": [
-      "(Idiom) \"Tidak Ada Komentar\""
-    ]
-  },
-  {
-    "id": "9825",
-    "hanzi": "无可厚非",
-    "pinyin": "wú kě hòu fēi",
-    "translations": [
-      "Lihat 未 可 厚 非 [wèi kě hòu fēi]"
-    ]
-  },
-  {
-    "id": "9826",
-    "hanzi": "无可奈何",
-    "pinyin": "wú kě nài hé",
-    "translations": [
-      "tidak ada jalan",
-      "tidak punya alternatif",
-      "ABBR. ke 無奈 | 无奈 [wú nài]"
-    ]
-  },
-  {
-    "id": "9827",
-    "hanzi": "无理",
-    "pinyin": "wú lǐ",
-    "translations": [
-      "irasional",
-      "keterlaluan"
-    ]
-  },
-  {
-    "id": "9828",
-    "hanzi": "无力",
-    "pinyin": "wú lì",
-    "translations": [
-      "tidak berdaya",
-      "kurang kekuatan"
-    ]
-  },
-  {
-    "id": "9829",
-    "hanzi": "无论如何",
-    "pinyin": "wú lùn rú hé",
-    "translations": [
-      "apapun kasusnya",
-      "dalam acara apa pun",
-      "apa pun yang terjadi",
-      "dengan segala cara yang memungkinkan"
-    ]
-  },
-  {
-    "id": "9830",
-    "hanzi": "无能",
-    "pinyin": "wú néng",
-    "translations": [
-      "ketidakmampuan",
-      "ketidakmampuan",
-      "tidak mampu",
-      "tidak berdaya"
-    ]
-  },
-  {
-    "id": "9831",
-    "hanzi": "无能为力",
-    "pinyin": "wú néng wéi lì",
-    "translations": [
-      "impoten (idiom)",
-      "tidak berdaya",
-      "tak berdaya"
-    ]
-  },
-  {
-    "id": "9832",
-    "hanzi": "无情",
-    "pinyin": "wú qíng",
-    "translations": [
-      "kejam",
-      "kejam",
-      "tanpa belas kasihan",
-      "kejam"
-    ]
-  },
-  {
-    "id": "9833",
-    "hanzi": "无情无义",
-    "pinyin": "wú qíng wú yì",
-    "translations": [
-      "Benar -benar kekurangan perasaan atau rasa keadilan (idiom)",
-      "Dingin dan kejam"
-    ]
-  },
-  {
-    "id": "9834",
-    "hanzi": "无穷",
-    "pinyin": "wú qióng",
-    "translations": [
-      "tak ada habisnya",
-      "Tanpa batas",
-      "tidak ada habisnya"
-    ]
-  },
-  {
-    "id": "9835",
-    "hanzi": "无私",
-    "pinyin": "wú sī",
-    "translations": [
-      "tanpa pamrih",
-      "tidak mementingkan diri sendiri",
-      "tidak tertarik",
-      "altruistis"
-    ]
-  },
-  {
-    "id": "9836",
-    "hanzi": "无所事事",
-    "pinyin": "wú suǒ shì shì",
-    "translations": [
-      "tidak ada hubungannya",
-      "untuk menganggur waktu (idiom)"
-    ]
-  },
-  {
-    "id": "9837",
-    "hanzi": "无所作为",
-    "pinyin": "wú suǒ zuò wéi",
-    "translations": [
-      "mencoba apa pun dan tidak mencapai apa pun (idiom)",
-      "tanpa inisiatif atau drive",
-      "lemah"
-    ]
-  },
-  {
-    "id": "9838",
-    "hanzi": "无条件",
-    "pinyin": "wú tiáo jiàn",
-    "translations": [
-      "tak bersyarat"
-    ]
-  },
-  {
-    "id": "9839",
-    "hanzi": "无微不至",
-    "pinyin": "wú wēi bú zhì",
-    "translations": [
-      "dengan segala cara yang memungkinkan (idiom)",
-      "teliti"
-    ]
-  },
-  {
-    "id": "9840",
-    "hanzi": "无线",
-    "pinyin": "wú xiàn",
-    "translations": [
-      "nirkabel"
-    ]
-  },
-  {
-    "id": "9841",
-    "hanzi": "无线电",
-    "pinyin": "wú xiàn diàn",
-    "translations": [
-      "nirkabel"
-    ]
-  },
-  {
-    "id": "9842",
-    "hanzi": "无形",
-    "pinyin": "wú xíng",
-    "translations": [
-      "Incorporeal",
-      "maya",
-      "tidak berbentuk",
-      "tak terlihat (aset)",
-      "tidak berwujud"
-    ]
-  },
-  {
-    "id": "9843",
-    "hanzi": "无形中",
-    "pinyin": "wú xíng zhōng",
-    "translations": [
-      "tidak terlihat",
-      "sebenarnya"
-    ]
-  },
-  {
-    "id": "9844",
-    "hanzi": "无须",
-    "pinyin": "wú xū",
-    "translations": [
-      "tidak butuh",
-      "tidak berkewajiban",
-      "belum tentu"
-    ]
-  },
-  {
-    "id": "9845",
-    "hanzi": "无意",
-    "pinyin": "wú yì",
-    "translations": [
-      "tidak sengaja",
-      "kebetulan",
-      "untuk tidak memiliki niat (melakukan sth)"
-    ]
-  },
-  {
-    "id": "9846",
-    "hanzi": "无忧无虑",
-    "pinyin": "wú yōu wú lǜ",
-    "translations": [
-      "riang dan tanpa kekhawatiran (idiom)"
-    ]
-  },
-  {
-    "id": "9847",
-    "hanzi": "无缘",
-    "pinyin": "wú yuán",
-    "translations": [
-      "untuk tidak memiliki kesempatan",
-      "tidak ada cara (melakukan sth)",
-      "tidak ada kesempatan",
-      "tidak ada koneksi",
-      "tidak ditempatkan (dalam kompetisi)",
-      "(dalam lirik pop) Tidak ada kesempatan cinta, tidak ada tempat untuk bersama dll"
-    ]
-  },
-  {
-    "id": "9848",
-    "hanzi": "无知",
-    "pinyin": "wú zhī",
-    "translations": [
-      "kurang pengetahuan",
-      "ketidaktahuan"
-    ]
-  },
-  {
-    "id": "9849",
-    "hanzi": "无足轻重",
-    "pinyin": "wú zú qīng zhòng",
-    "translations": [
-      "tidak penting"
-    ]
-  },
-  {
-    "id": "9850",
-    "hanzi": "五花八门",
-    "pinyin": "wǔ huā bā mén",
-    "translations": [
-      "banyak sekali",
-      "semua jenis",
-      "semua jenis"
-    ]
-  },
-  {
-    "id": "9851",
-    "hanzi": "五星级",
-    "pinyin": "wǔ xīng jí",
-    "translations": [
-      "Hotel bintang lima)"
-    ]
-  },
-  {
-    "id": "9852",
-    "hanzi": "武力",
-    "pinyin": "wǔ lì",
-    "translations": [
-      "kekuatan militer"
-    ]
-  },
-  {
-    "id": "9853",
-    "hanzi": "武装",
-    "pinyin": "wǔ zhuāng",
-    "translations": [
-      "lengan",
-      "peralatan",
-      "untuk lengan",
-      "militer",
-      "pasukan bersenjata)"
-    ]
-  },
-  {
-    "id": "9854",
-    "hanzi": "侮辱",
-    "pinyin": "wǔ rǔ",
-    "translations": [
-      "untuk menghina",
-      "untuk mempermalukan",
-      "aib"
-    ]
-  },
-  {
-    "id": "9855",
-    "hanzi": "捂",
-    "pinyin": "wǔ",
-    "translations": [
-      "melampirkan",
-      "untuk menutupi dengan tangan (mata, hidung atau telinga seseorang)",
-      "untuk menutupi (perselingkuhan)",
-      "kebalikan",
-      "bertentangan"
-    ]
-  },
-  {
-    "id": "9856",
-    "hanzi": "舞厅",
-    "pinyin": "wǔ tīng",
-    "translations": [
-      "lantai dansa",
-      "Ballroom"
-    ]
-  },
-  {
-    "id": "9857",
-    "hanzi": "勿",
-    "pinyin": "wù",
-    "translations": [
-      "tidak"
-    ]
-  },
-  {
-    "id": "9858",
-    "hanzi": "务必",
-    "pinyin": "wù bì",
-    "translations": [
-      "harus",
-      "perlu",
-      "untuk memastikan"
-    ]
-  },
-  {
-    "id": "9859",
-    "hanzi": "务实",
-    "pinyin": "wù shí",
-    "translations": [
-      "pragmatis",
-      "menangani masalah konkret"
-    ]
-  },
-  {
-    "id": "9860",
-    "hanzi": "物流",
-    "pinyin": "wù liú",
-    "translations": [
-      "distribusi (bisnis)",
-      "logistik"
-    ]
-  },
-  {
-    "id": "9861",
-    "hanzi": "物体",
-    "pinyin": "wù tǐ",
-    "translations": [
-      "obyek",
-      "tubuh",
-      "zat"
-    ]
-  },
-  {
-    "id": "9862",
-    "hanzi": "物证",
-    "pinyin": "wù zhèng",
-    "translations": [
-      "Bukti materi"
-    ]
-  },
-  {
-    "id": "9863",
-    "hanzi": "物资",
-    "pinyin": "wù zī",
-    "translations": [
-      "barang-barang",
-      "persediaan"
-    ]
-  },
-  {
-    "id": "9864",
-    "hanzi": "误差",
-    "pinyin": "wù chā",
-    "translations": [
-      "perbedaan",
-      "kesalahan",
-      "ketidaktelitian"
-    ]
-  },
-  {
-    "id": "9865",
-    "hanzi": "误导",
-    "pinyin": "wù dǎo",
-    "translations": [
-      "untuk menyesatkan",
-      "untuk menyesatkan",
-      "menyesatkan"
-    ]
-  },
-  {
-    "id": "9866",
-    "hanzi": "误区",
-    "pinyin": "wù qū",
-    "translations": [
-      "Ide yang salah",
-      "Kesalahpahaman",
-      "Kesalahan cara seseorang"
-    ]
-  },
-  {
-    "id": "9867",
-    "hanzi": "雾",
-    "pinyin": "wù",
-    "translations": [
-      "kabut",
-      "kabut"
-    ]
-  },
-  {
-    "id": "9868",
-    "hanzi": "吸纳",
-    "pinyin": "xī nà",
-    "translations": [
-      "untuk menerima",
-      "untuk menyerap",
-      "untuk mengakui",
-      "menerima"
-    ]
-  },
-  {
-    "id": "9869",
-    "hanzi": "吸取",
-    "pinyin": "xī qǔ",
-    "translations": [
-      "untuk menyerap",
-      "untuk menggambar (pelajaran, wawasan dll)",
-      "untuk mengasimilasi"
-    ]
-  },
-  {
-    "id": "9870",
-    "hanzi": "昔日",
-    "pinyin": "xī rì",
-    "translations": [
-      "dahulu",
-      "Di masa lalu"
-    ]
-  },
-  {
-    "id": "9871",
-    "hanzi": "息息相关",
-    "pinyin": "xī xī xiāng guān",
-    "translations": [
-      "terikat erat (idiom)",
-      "terkait erat"
-    ]
-  },
-  {
-    "id": "9872",
-    "hanzi": "稀",
-    "pinyin": "xī",
-    "translations": [
-      "langka",
-      "luar biasa",
-      "berair",
-      "jarang"
-    ]
-  },
-  {
-    "id": "9873",
-    "hanzi": "稀罕",
-    "pinyin": "xī han",
-    "translations": [
-      "langka",
-      "luar biasa",
-      "keanehan",
-      "untuk menghargai sebagai langka",
-      "untuk menghargai",
-      "Taiwan PR. [xī hǎn]"
-    ]
-  },
-  {
-    "id": "9874",
-    "hanzi": "稀奇",
-    "pinyin": "xī qí",
-    "translations": [
-      "langka",
-      "aneh"
-    ]
-  },
-  {
-    "id": "9875",
-    "hanzi": "稀少",
-    "pinyin": "xī shǎo",
-    "translations": [
-      "jarang",
-      "langka"
-    ]
-  },
-  {
-    "id": "9876",
-    "hanzi": "锡",
-    "pinyin": "xī",
-    "translations": [
-      "timah (kimia)",
-      "untuk menganugerahkan",
-      "untuk berunding",
-      "untuk memberikan",
-      "Taiwan PR. [xí]"
-    ]
-  },
-  {
-    "id": "9877",
-    "hanzi": "熙熙攘攘",
-    "pinyin": "xī xī rǎng rǎng",
-    "translations": [
-      "ramai dengan aktivitas (idiom)"
-    ]
-  },
-  {
-    "id": "9878",
-    "hanzi": "熄火",
-    "pinyin": "xī huǒ",
-    "translations": [
-      "(api, lampu dll) untuk keluar",
-      "untuk memadamkan (api)",
-      "(Gbr.) Untuk mereda",
-      "(dari kendaraan) untuk berhenti"
-    ]
-  },
-  {
-    "id": "9879",
-    "hanzi": "膝盖",
-    "pinyin": "xī gài",
-    "translations": [
-      "lutut",
-      "(Slang Internet) untuk berlutut (dalam kekaguman)"
-    ]
-  },
-  {
-    "id": "9880",
-    "hanzi": "嬉笑",
-    "pinyin": "xī xiào",
-    "translations": [
-      "tertawa dan bermain",
-      "untuk terkikik"
-    ]
-  },
-  {
-    "id": "9881",
-    "hanzi": "习俗",
-    "pinyin": "xí sú",
-    "translations": [
-      "kebiasaan",
-      "tradisi",
-      "tradisi lokal",
-      "Konvensi"
-    ]
-  },
-  {
-    "id": "9882",
-    "hanzi": "席",
-    "pinyin": "xí",
-    "translations": [
-      "Tiket anyaman",
-      "kursi",
-      "perjamuan",
-      "tempat di majelis demokratis",
-      "classifier untuk jamuan, percakapan dll"
-    ]
-  },
-  {
-    "id": "9883",
-    "hanzi": "席位",
-    "pinyin": "xí wèi",
-    "translations": [
-      "Kursi (di teater, stadion dll)",
-      "kursi parlemen atau kongres"
-    ]
-  },
-  {
-    "id": "9884",
-    "hanzi": "袭击",
-    "pinyin": "xí jī",
-    "translations": [
-      "serangan (khususnya serangan kejutan)",
-      "serangan",
-      "untuk menyerang"
-    ]
-  },
-  {
-    "id": "9885",
-    "hanzi": "媳妇",
-    "pinyin": "xí fù",
-    "translations": [
-      "menantu wanita",
-      "istri (pria yang lebih muda)",
-      "wanita muda yang sudah menikah",
-      "wanita muda"
-    ]
-  },
-  {
-    "id": "9886",
-    "hanzi": "洗涤剂",
-    "pinyin": "xǐ dí jì",
-    "translations": [
-      "agen pembersih",
-      "deterjen"
-    ]
-  },
-  {
-    "id": "9887",
-    "hanzi": "洗礼",
-    "pinyin": "xǐ lǐ",
-    "translations": [
-      "Baptisan (lit. atau gbr.)"
-    ]
-  },
-  {
-    "id": "9888",
-    "hanzi": "喜出望外",
-    "pinyin": "xǐ chū wàng wài",
-    "translations": [
-      "Untuk senang melampaui harapan seseorang (idiom)",
-      "sangat gembira pada pergantian peristiwa"
-    ]
-  },
-  {
-    "id": "9889",
-    "hanzi": "喜好",
-    "pinyin": "xǐ hào",
-    "translations": [
-      "menyukai",
-      "menyukai",
-      "untuk memilih",
-      "mencintai",
-      "rasanya seseorang",
-      "preferensi"
-    ]
-  },
-  {
-    "id": "9890",
-    "hanzi": "喜酒",
-    "pinyin": "xǐ jiǔ",
-    "translations": [
-      "Pesta Pernikahan",
-      "minuman keras mabuk di pesta pernikahan"
-    ]
-  },
-  {
-    "id": "9891",
-    "hanzi": "喜怒哀乐",
-    "pinyin": "xǐ nù āi lè",
-    "translations": [
-      "Empat jenis emosi manusia, yaitu: kebahagiaan 歡喜 | 欢喜 [huān xǐ], amarah 憤怒 | 愤怒 [fèn nù], kesedihan 悲哀 [bēi āi] dan sukacita 快樂 | 快乐 [Kuài lè]"
-    ]
-  },
-  {
-    "id": "9892",
-    "hanzi": "喜庆",
-    "pinyin": "xǐ qìng",
-    "translations": [
-      "sorak kegirangan",
-      "meriah"
-    ]
-  },
-  {
-    "id": "9893",
-    "hanzi": "喜事",
-    "pinyin": "xǐ shì",
-    "translations": [
-      "acara bahagia",
-      "pernikahan"
-    ]
-  },
-  {
-    "id": "9894",
-    "hanzi": "喜糖",
-    "pinyin": "xǐ táng",
-    "translations": [
-      "manis diberikan pada acara yang bahagia (khususnya pernikahan)"
-    ]
-  },
-  {
-    "id": "9895",
-    "hanzi": "喜洋洋",
-    "pinyin": "xǐ yáng yáng",
-    "translations": [
-      "bersinar dengan sukacita"
-    ]
-  },
-  {
-    "id": "9896",
-    "hanzi": "喜悦",
-    "pinyin": "xǐ yuè",
-    "translations": [
-      "senang",
-      "riang"
-    ]
-  },
-  {
-    "id": "9897",
-    "hanzi": "细腻",
-    "pinyin": "xì nì",
-    "translations": [
-      "sangat indah",
-      "teliti"
-    ]
-  },
-  {
-    "id": "9898",
-    "hanzi": "细微",
-    "pinyin": "xì wēi",
-    "translations": [
-      "kecil",
-      "menit",
-      "Bagus",
-      "tak kentara",
-      "sensitif (instrumen)"
-    ]
-  },
-  {
-    "id": "9899",
-    "hanzi": "细心",
-    "pinyin": "xì xīn",
-    "translations": [
-      "hati-hati",
-      "penuh perhatian"
-    ]
-  },
-  {
-    "id": "9900",
-    "hanzi": "虾",
-    "pinyin": "xiā",
-    "translations": [
-      "udang",
-      "udang"
-    ]
-  },
-  {
-    "id": "9901",
-    "hanzi": "瞎",
-    "pinyin": "xiā",
-    "translations": [
-      "buta",
-      "tanpa dasar",
-      "bodohnya",
-      "tanpa tujuan"
-    ]
-  },
-  {
-    "id": "9902",
-    "hanzi": "侠义",
-    "pinyin": "xiá yì",
-    "translations": [
-      "sangat sopan",
-      "kesopanan",
-      "Knight-Etranteri"
-    ]
-  },
-  {
-    "id": "9903",
-    "hanzi": "峡谷",
-    "pinyin": "xiá gǔ",
-    "translations": [
-      "ngarai",
-      "insang",
-      "jurang"
-    ]
-  },
-  {
-    "id": "9904",
-    "hanzi": "狭隘",
-    "pinyin": "xiá ài",
-    "translations": [
-      "sempit",
-      "ketat",
-      "berpikiran sempit",
-      "kurang dalam pengalaman"
-    ]
-  },
-  {
-    "id": "9905",
-    "hanzi": "狭小",
-    "pinyin": "xiá xiǎo",
-    "translations": [
-      "sempit"
-    ]
-  },
-  {
-    "id": "9906",
-    "hanzi": "狭窄",
-    "pinyin": "xiá zhǎi",
-    "translations": [
-      "sempit"
-    ]
-  },
-  {
-    "id": "9907",
-    "hanzi": "下场",
-    "pinyin": "xià chǎng",
-    "translations": [
-      "untuk pergi (panggung, ruang ujian, lapangan bermain dll)",
-      "untuk mengambil bagian dalam beberapa aktivitas",
-      "untuk mengikuti pemeriksaan (dalam sistem pemeriksaan kekaisaran)"
-    ]
-  },
-  {
-    "id": "9908",
-    "hanzi": "下跌",
-    "pinyin": "xià diē",
-    "translations": [
-      "terjatuh",
-      "untuk jatuh"
-    ]
-  },
-  {
-    "id": "9909",
-    "hanzi": "下岗",
-    "pinyin": "xià gǎng",
-    "translations": [
-      "untuk keluar dari tugas penjaga",
-      "untuk memberhentikan (seorang pekerja)",
-      "pemberhentian"
-    ]
-  },
-  {
-    "id": "9910",
-    "hanzi": "下功夫",
-    "pinyin": "xià gōng fu",
-    "translations": [
-      "Lihat 下工夫 [xià gōng fu]"
-    ]
-  },
-  {
-    "id": "9911",
-    "hanzi": "下海",
-    "pinyin": "xià hǎi",
-    "translations": [
-      "untuk pergi ke laut",
-      "untuk memasuki laut (berenang dll)",
-      "(Gbr.) Untuk mengambil risiko (mis. Tinggalkan pekerjaan yang aman, atau masukkan prostitusi dll)"
-    ]
-  },
-  {
-    "id": "9912",
-    "hanzi": "下级",
-    "pinyin": "xià jí",
-    "translations": [
-      "peringkat rendah",
-      "level rendah",
-      "kelas bawah",
-      "bawahan"
-    ]
-  },
-  {
-    "id": "9913",
-    "hanzi": "下决心",
-    "pinyin": "xià jué xīn",
-    "translations": [
-      "untuk menentukan",
-      "untuk menyelesaikan"
-    ]
-  },
-  {
-    "id": "9914",
-    "hanzi": "下令",
-    "pinyin": "xià lìng",
-    "translations": [
-      "untuk memberi perintah",
-      "untuk memerintah"
-    ]
-  },
-  {
-    "id": "9915",
-    "hanzi": "下落",
-    "pinyin": "xià luò",
-    "translations": [
-      "dimana",
-      "untuk menjatuhkan",
-      "terjatuh"
-    ]
-  },
-  {
-    "id": "9916",
-    "hanzi": "下期",
-    "pinyin": "xià qī",
-    "translations": [
-      "Episode berikutnya, masalah, atau titik"
-    ]
-  },
-  {
-    "id": "9917",
-    "hanzi": "下棋",
-    "pinyin": "xià qí",
-    "translations": [
-      "bermain catur"
-    ]
-  },
-  {
-    "id": "9918",
-    "hanzi": "下山",
-    "pinyin": "xià shān",
-    "translations": [
-      "(dari matahari) untuk terbenam"
-    ]
-  },
-  {
-    "id": "9919",
-    "hanzi": "下手",
-    "pinyin": "xià shǒu",
-    "translations": [
-      "untuk memulai",
-      "untuk meletakkan tangannya",
-      "untuk mengatur tentang",
-      "kursi di sebelah kanan tamu utama"
-    ]
-  },
-  {
-    "id": "9920",
-    "hanzi": "下属",
-    "pinyin": "xià shǔ",
-    "translations": [
-      "bawahan",
-      "bawahan"
-    ]
-  },
-  {
-    "id": "9921",
-    "hanzi": "下台",
-    "pinyin": "xià tái",
-    "translations": [
-      "untuk keluar dari panggung",
-      "jatuh dari posisi prestise",
-      "untuk mundur (dari kantor dll)",
-      "untuk melepaskan diri",
-      "untuk keluar dari kait"
-    ]
-  },
-  {
-    "id": "9922",
-    "hanzi": "下调",
-    "pinyin": "xià tiáo",
-    "translations": [
-      "untuk menyesuaikan ke bawah",
-      "untuk menurunkan (harga, upah dll)"
-    ]
-  },
-  {
-    "id": "9923",
-    "hanzi": "下乡",
-    "pinyin": "xià xiāng",
-    "translations": [
-      "untuk pergi ke pedesaan"
-    ]
-  },
-  {
-    "id": "9924",
-    "hanzi": "下旬",
-    "pinyin": "xià xún",
-    "translations": [
-      "sepertiga terakhir bulan ini"
-    ]
-  },
-  {
-    "id": "9925",
-    "hanzi": "下一代",
-    "pinyin": "xià yí dài",
-    "translations": [
-      "generasi penerus bangsa"
-    ]
-  },
-  {
-    "id": "9926",
-    "hanzi": "下意识",
-    "pinyin": "xià yì shí",
-    "translations": [
-      "pikiran bawah sadar"
-    ]
-  },
-  {
-    "id": "9927",
-    "hanzi": "下游",
-    "pinyin": "xià yóu",
-    "translations": [
-      "jangkauan bawah (dari sungai)",
-      "tingkat bawah",
-      "Eselon yang lebih rendah",
-      "hilir"
-    ]
-  },
-  {
-    "id": "9928",
-    "hanzi": "下坠",
-    "pinyin": "xià zhuì",
-    "translations": [
-      "untuk jatuh bebas",
-      "menjuntai, terkulai"
-    ]
-  },
-  {
-    "id": "9929",
-    "hanzi": "吓唬",
-    "pinyin": "xià hu",
-    "translations": [
-      "untuk menakuti",
-      "untuk menakuti"
-    ]
-  },
-  {
-    "id": "9930",
-    "hanzi": "吓人",
-    "pinyin": "xià rén",
-    "translations": [
-      "Menakutkan, seram",
-      "untuk menakuti"
-    ]
-  },
-  {
-    "id": "9931",
-    "hanzi": "夏令营",
-    "pinyin": "xià lìng yíng",
-    "translations": [
-      "Perkemahan musim panas"
-    ]
-  },
-  {
-    "id": "9932",
-    "hanzi": "仙鹤",
-    "pinyin": "xiān hè",
-    "translations": [
-      "Derek merah (Grus japonensis)"
-    ]
-  },
-  {
-    "id": "9933",
-    "hanzi": "仙女",
-    "pinyin": "xiān nǚ",
-    "translations": [
-      "peri"
-    ]
-  },
-  {
-    "id": "9934",
-    "hanzi": "先例",
-    "pinyin": "xiān lì",
-    "translations": [
-      "mendahului",
-      "preseden"
-    ]
-  },
-  {
-    "id": "9935",
-    "hanzi": "先天",
-    "pinyin": "xiān tiān",
-    "translations": [
-      "bawaan lahir",
-      "bawaan",
-      "alami"
-    ]
-  },
-  {
-    "id": "9936",
-    "hanzi": "纤维",
-    "pinyin": "xiān wéi",
-    "translations": [
-      "serat"
-    ]
-  },
-  {
-    "id": "9937",
-    "hanzi": "掀",
-    "pinyin": "xiān",
-    "translations": [
-      "untuk mengangkat (tutup)",
-      "ke Rock",
-      "untuk mengejutkan"
-    ]
-  },
-  {
-    "id": "9938",
-    "hanzi": "掀起",
-    "pinyin": "xiān qǐ",
-    "translations": [
-      "mengangkat",
-      "untuk menaikkan ketinggian",
-      "memulai",
-      "kenaikan",
-      "untuk berangkat (kampanye)"
-    ]
-  },
-  {
-    "id": "9939",
-    "hanzi": "鲜活",
-    "pinyin": "xiān huó",
-    "translations": [
-      "jelas",
-      "hidup",
-      "(bahan makanan) hidup atau segar"
-    ]
-  },
-  {
-    "id": "9940",
-    "hanzi": "鲜美",
-    "pinyin": "xiān měi",
-    "translations": [
-      "lezat",
-      "lezat"
-    ]
-  },
-  {
-    "id": "9941",
-    "hanzi": "鲜血",
-    "pinyin": "xiān xuè",
-    "translations": [
-      "darah"
-    ]
-  },
-  {
-    "id": "9942",
-    "hanzi": "弦",
-    "pinyin": "xián",
-    "translations": [
-      "string busur",
-      "serangkaian alat musik",
-      "Watchspring",
-      "Chord (segmen kurva)",
-      "sisi miring"
-    ]
-  },
-  {
-    "id": "9943",
-    "hanzi": "衔接",
-    "pinyin": "xián jiē",
-    "translations": [
-      "untuk bergabung bersama",
-      "untuk menggabungkan"
-    ]
-  },
-  {
-    "id": "9944",
-    "hanzi": "嫌弃",
-    "pinyin": "xián qì",
-    "translations": [
-      "untuk menghindari SB (tidak suka)",
-      "untuk mengembalikannya ke SB",
-      "untuk mengabaikan"
-    ]
-  },
-  {
-    "id": "9945",
-    "hanzi": "嫌疑",
-    "pinyin": "xián yí",
-    "translations": [
-      "kecurigaan",
-      "untuk memiliki kecurigaan"
-    ]
-  },
-  {
-    "id": "9946",
-    "hanzi": "显而易见",
-    "pinyin": "xiǎn ér yì jiàn",
-    "translations": [
-      "Jelas dan mudah dilihat (idiom)",
-      "jelas sekali",
-      "jelas",
-      "tak usah dikatakan lagi"
-    ]
-  },
-  {
-    "id": "9947",
-    "hanzi": "显赫",
-    "pinyin": "xiǎn hè",
-    "translations": [
-      "terkemuka",
-      "terkenal"
-    ]
-  },
-  {
-    "id": "9948",
-    "hanzi": "显示器",
-    "pinyin": "xiǎn shì qì",
-    "translations": [
-      "Monitor (komputer)"
-    ]
-  },
-  {
-    "id": "9949",
-    "hanzi": "显现",
-    "pinyin": "xiǎn xiàn",
-    "translations": [
-      "penampilan",
-      "muncul"
-    ]
-  },
-  {
-    "id": "9950",
-    "hanzi": "显眼",
-    "pinyin": "xiǎn yǎn",
-    "translations": [
-      "menyolok",
-      "eye-catching",
-      "glamor"
-    ]
-  },
-  {
-    "id": "9951",
-    "hanzi": "现成",
-    "pinyin": "xiàn chéng",
-    "translations": [
-      "siap pakai",
-      "tersedia"
-    ]
-  },
-  {
-    "id": "9952",
-    "hanzi": "现任",
-    "pinyin": "xiàn rèn",
-    "translations": [
-      "untuk menempati pos saat ini",
-      "Saat ini (Presiden dll)",
-      "petahana",
-      "(Coll.) Pacar saat ini (pacar, pasangan)"
-    ]
-  },
-  {
-    "id": "9953",
-    "hanzi": "现行",
-    "pinyin": "xiàn xíng",
-    "translations": [
-      "berlaku",
-      "terpaksa",
-      "saat ini"
-    ]
-  },
-  {
-    "id": "9954",
-    "hanzi": "限",
-    "pinyin": "xiàn",
-    "translations": [
-      "membatasi",
-      "melompat",
-      "untuk menetapkan batas (aktif)"
-    ]
-  },
-  {
-    "id": "9955",
-    "hanzi": "限定",
-    "pinyin": "xiàn dìng",
-    "translations": [
-      "untuk membatasi",
-      "membatasi"
-    ]
-  },
-  {
-    "id": "9956",
-    "hanzi": "限度",
-    "pinyin": "xiàn dù",
-    "translations": [
-      "keterbatasan",
-      "membatasi"
-    ]
-  },
-  {
-    "id": "9957",
-    "hanzi": "限于",
-    "pinyin": "xiàn yú",
-    "translations": [
-      "untuk dibatasi",
-      "untuk dibatasi"
-    ]
-  },
-  {
-    "id": "9958",
-    "hanzi": "线条",
-    "pinyin": "xiàn tiáo",
-    "translations": [
-      "garis (dalam menggambar, kaligrafi dll)",
-      "Garis atau kontur objek tiga dimensi (gaya rambut, pakaian, mobil dll)"
-    ]
-  },
-  {
-    "id": "9959",
-    "hanzi": "宪法",
-    "pinyin": "xiàn fǎ",
-    "translations": [
-      "Konstitusi (suatu negara)"
-    ]
-  },
-  {
-    "id": "9960",
-    "hanzi": "陷",
-    "pinyin": "xiàn",
-    "translations": [
-      "batu sandungan",
-      "perangkap",
-      "untuk macet",
-      "tenggelam",
-      "untuk menyerah",
-      "untuk membingkai (biaya palsu)",
-      "untuk menangkap (kota dalam pertempuran)",
-      "jatuh (ke musuh)",
-      "cacat"
-    ]
-  },
-  {
-    "id": "9961",
-    "hanzi": "陷阱",
-    "pinyin": "xiàn jǐng",
-    "translations": [
-      "batu sandungan",
-      "jerat",
-      "perangkap"
-    ]
-  },
-  {
-    "id": "9962",
-    "hanzi": "馅儿",
-    "pinyin": "xiàn r",
-    "translations": [
-      "Varian Erhua dari 餡 | 馅 [xiàn]"
-    ]
-  },
-  {
-    "id": "9963",
-    "hanzi": "羡慕",
-    "pinyin": "xiàn mù",
-    "translations": [
-      "iri",
-      "untuk mengagumi"
-    ]
-  },
-  {
-    "id": "9964",
-    "hanzi": "献血",
-    "pinyin": "xiàn xuè",
-    "translations": [
-      "untuk menyumbangkan darah"
-    ]
-  },
-  {
-    "id": "9965",
-    "hanzi": "腺",
-    "pinyin": "xiàn",
-    "translations": [
-      "kelenjar"
-    ]
-  },
-  {
-    "id": "9966",
-    "hanzi": "乡亲",
-    "pinyin": "xiāng qīn",
-    "translations": [
-      "sesama warga negara (dari desa yang sama)",
-      "orang lokal",
-      "orang desa",
-      "Orang -orang di rumah"
-    ]
-  },
-  {
-    "id": "9967",
-    "hanzi": "乡下",
-    "pinyin": "xiāng xia",
-    "translations": [
-      "pedesaan",
-      "daerah pedesaan"
-    ]
-  },
-  {
-    "id": "9968",
-    "hanzi": "相伴",
-    "pinyin": "xiāng bàn",
-    "translations": [
-      "untuk menemani SB",
-      "untuk menemani satu sama lain"
-    ]
-  },
-  {
-    "id": "9969",
-    "hanzi": "相比之下",
-    "pinyin": "xiāng bǐ zhī xià",
-    "translations": [
-      "dengan perbandingan"
-    ]
-  },
-  {
-    "id": "9970",
-    "hanzi": "相差",
-    "pinyin": "xiāng chà",
-    "translations": [
-      "untuk membedakan",
-      "perbedaan antara"
-    ]
-  },
-  {
-    "id": "9971",
-    "hanzi": "相传",
-    "pinyin": "xiāng chuán",
-    "translations": [
-      "untuk meneruskan",
-      "untuk tangan ke bawah",
-      "Tradisi memiliki itu ...",
-      "menurut legenda"
-    ]
-  },
-  {
-    "id": "9972",
-    "hanzi": "相当于",
-    "pinyin": "xiāng dāng yú",
-    "translations": [
-      "setara dengan"
-    ]
-  },
-  {
-    "id": "9973",
-    "hanzi": "相对",
-    "pinyin": "xiāng duì",
-    "translations": [
-      "relatif",
-      "di depan",
-      "untuk melawan",
-      "untuk melawan",
-      "relatif",
-      "vis-a-vis",
-      "mitra"
-    ]
-  },
-  {
-    "id": "9974",
-    "hanzi": "相对而言",
-    "pinyin": "xiāng duì ér yán",
-    "translations": [
-      "secara relatif, secara komparatif berbicara"
-    ]
-  },
-  {
-    "id": "9975",
-    "hanzi": "相辅相成",
-    "pinyin": "xiāng fǔ xiāng chéng",
-    "translations": [
-      "untuk saling melengkapi (idiom)"
-    ]
-  },
-  {
-    "id": "9976",
-    "hanzi": "相继",
-    "pinyin": "xiāng jì",
-    "translations": [
-      "secara berturut-turut",
-      "mengikuti dengan cermat"
-    ]
-  },
-  {
-    "id": "9977",
-    "hanzi": "相连",
-    "pinyin": "xiāng lián",
-    "translations": [
-      "untuk menautkan",
-      "bergabung",
-      "tautan",
-      "koneksi"
-    ]
-  },
-  {
-    "id": "9978",
-    "hanzi": "相识",
-    "pinyin": "xiāng shí",
-    "translations": [
-      "Untuk mengenal satu sama lain",
-      "kenalan"
-    ]
-  },
-  {
-    "id": "9979",
-    "hanzi": "相提并论",
-    "pinyin": "xiāng tí bìng lùn",
-    "translations": [
-      "untuk membahas dua hal yang berbeda bersama (idiom)",
-      "Untuk menyebutkan dengan istilah yang sama",
-      "untuk setara dengan",
-      "(Seringkali dengan negatif: mustahil untuk disebutkan x dalam napas yang sama seperti y)"
-    ]
-  },
-  {
-    "id": "9980",
-    "hanzi": "相通",
-    "pinyin": "xiāng tōng",
-    "translations": [
-      "saling terkait",
-      "terhubung",
-      "berkomunikasi",
-      "dalam komunikasi",
-      "akomodatif"
-    ]
-  },
-  {
-    "id": "9981",
-    "hanzi": "相依为命",
-    "pinyin": "xiāng yī wéi mìng",
-    "translations": [
-      "saling bergantung pada kehidupan (idiom)",
-      "untuk saling mengandalkan untuk bertahan hidup",
-      "saling bergantung"
-    ]
-  },
-  {
-    "id": "9982",
-    "hanzi": "相遇",
-    "pinyin": "xiāng yù",
-    "translations": [
-      "bertemu",
-      "untuk bertemu",
-      "untuk bertemu"
-    ]
-  },
-  {
-    "id": "9983",
-    "hanzi": "相约",
-    "pinyin": "xiāng yuē",
-    "translations": [
-      "untuk menyetujui (di tempat pertemuan, tanggal dll)",
-      "untuk mencapai kesepakatan",
-      "untuk membuat janji"
-    ]
-  },
-  {
-    "id": "9984",
-    "hanzi": "香料",
-    "pinyin": "xiāng liào",
-    "translations": [
-      "membumbui",
-      "bumbu",
-      "bumbu",
-      "parfum"
-    ]
-  },
-  {
-    "id": "9985",
-    "hanzi": "香水",
-    "pinyin": "xiāng shuǐ",
-    "translations": [
-      "parfum",
-      "Cologne"
-    ]
-  },
-  {
-    "id": "9986",
-    "hanzi": "香味",
-    "pinyin": "xiāng wèi",
-    "translations": [
-      "parfum",
-      "buket",
-      "bau manis"
-    ]
-  },
-  {
-    "id": "9987",
-    "hanzi": "香烟",
-    "pinyin": "xiāng yān",
-    "translations": [
-      "rokok",
-      "Asap dari Burning Incense"
-    ]
-  },
-  {
-    "id": "9988",
-    "hanzi": "香油",
-    "pinyin": "xiāng yóu",
-    "translations": [
-      "minyak wijen",
-      "minyak wangi"
-    ]
-  },
-  {
-    "id": "9989",
-    "hanzi": "镶",
-    "pinyin": "xiāng",
-    "translations": [
-      "untuk menatap",
-      "untuk menyematkan",
-      "punggung bukit",
-      "berbatasan"
-    ]
-  },
-  {
-    "id": "9990",
-    "hanzi": "镶嵌",
-    "pinyin": "xiāng qiàn",
-    "translations": [
-      "untuk menatap",
-      "untuk menyematkan",
-      "untuk mengatur (mis. permata di atas cincin)",
-      "ubin",
-      "tessellation"
-    ]
-  },
-  {
-    "id": "9991",
-    "hanzi": "详尽",
-    "pinyin": "xiáng jìn",
-    "translations": [
-      "menyeluruh dan terperinci",
-      "lengkap",
-      "detail yang membosankan secara lengkap"
-    ]
-  },
-  {
-    "id": "9992",
-    "hanzi": "祥和",
-    "pinyin": "xiáng hé",
-    "translations": [
-      "keberuntungan dan damai"
-    ]
-  },
-  {
-    "id": "9993",
-    "hanzi": "享",
-    "pinyin": "xiǎng",
-    "translations": [
-      "untuk menikmati",
-      "untuk mendapatkan manfaat",
-      "untuk menggunakan"
-    ]
-  },
-  {
-    "id": "9994",
-    "hanzi": "享有",
-    "pinyin": "xiǎng yǒu",
-    "translations": [
-      "untuk menikmati (hak, hak istimewa dll)"
-    ]
-  },
-  {
-    "id": "9995",
-    "hanzi": "响亮",
-    "pinyin": "xiǎng liàng",
-    "translations": [
-      "keras dan jelas",
-      "bergema"
-    ]
-  },
-  {
-    "id": "9996",
-    "hanzi": "响起",
-    "pinyin": "xiǎng qǐ",
-    "translations": [
-      "untuk membunyikan, bersuara, bergema dengan, (suara) untuk bangkit, untuk pergi"
-    ]
-  },
-  {
-    "id": "9997",
-    "hanzi": "响应",
-    "pinyin": "xiǎng yìng",
-    "translations": [
-      "untuk menanggapi",
-      "menjawab"
-    ]
-  },
-  {
-    "id": "9998",
-    "hanzi": "想方设法",
-    "pinyin": "xiǎng fāng shè fǎ",
-    "translations": [
-      "untuk memikirkan setiap metode yang mungkin (idiom)",
-      "untuk menyusun cara dan cara",
-      "untuk mencoba ini, itu dan yang lainnya"
-    ]
-  },
-  {
-    "id": "9999",
-    "hanzi": "向来",
-    "pinyin": "xiàng lái",
-    "translations": [
-      "selalu (sebelumnya)"
     ]
   }
 ]
