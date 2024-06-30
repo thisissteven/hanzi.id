@@ -15,6 +15,7 @@ export function ToggleBlur({ isPlaying }: { isPlaying: boolean }) {
 
   return (
     <button
+      disabled={!isPlaying}
       onClick={onClick}
       className={cn(
         "active:bg-hovered text-smokewhite p-2 rounded-md duration-200",

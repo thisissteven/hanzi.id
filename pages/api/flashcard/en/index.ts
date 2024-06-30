@@ -6,6 +6,8 @@ export const config = {
   maxDuration: 15,
 };
 
+export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
+
 export interface FlashcardedResult {
   simplified: string;
   entries?: Array<{
@@ -28,9 +30,8 @@ type TokenizerResult = Array<{
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<FlashcardedResult[]>) {
   const text = req.query.text as string;
-  const locale = req.query.locale as string;
 
-  const flashcarded = text.split("-").map((t) => segment(t, locale));
+  const flashcarded = text.split("-").map((t) => segment(t));
 
   const result = flashcarded.map((item: TokenizerResult) => {
     return item.map((i) => {

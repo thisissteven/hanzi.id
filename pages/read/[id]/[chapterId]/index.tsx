@@ -6,6 +6,7 @@ import {
   DefinitionModal,
   ScrollToCurrentButton,
   TextContainer,
+  ToggleBlur,
 } from "@/modules/speech";
 import { useSpeech } from "@/utils";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
@@ -113,6 +114,7 @@ export default function Read() {
                   </button>
                 </div>
                 <div className="flex gap-2 max-[810px]:-mr-0 -mr-2">
+                  <ToggleBlur isPlaying={playbackState === "playing"} />
                   <ChangeFontSize />
                   <ChangeSpeed />
                 </div>

@@ -14,6 +14,7 @@ import { toast } from "sonner";
 
 import { useLocale } from "@/locales/use-locale";
 import { TranslateApiResponse } from "@/pages/api/translate";
+import { useDebounce } from "@/hooks";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -39,7 +40,7 @@ export function DefinitionModal({
   const { t, locale } = useLocale();
 
   const { data, isLoading } = useSWRImmutable<TranslateApiResponse>(
-    sentence ? `translate?text=${sentence}&targetLang=${locale}` : undefined,
+    sentence ? `translate/${locale}?text=${sentence}` : undefined,
     async (url) => {
       const response = await fetch(`/api/${url}`);
       return response.json();
@@ -279,13 +280,15 @@ export function DefinitionModal({
 }
 
 function TranslateSentence({ translated }: { translated: string }) {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(true);
 
   const { t } = useLocale();
 
+  const displayText = show ? t.hideTranslation : t.seeTranslation;
+
   return (
     <React.Fragment>
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {show && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
@@ -316,9 +319,9 @@ function TranslateSentence({ translated }: { translated: string }) {
         {/* Translate Sentence Button */}
         <button
           onClick={() => setShow(!show)}
-          className="grid place-items-center py-0.5 text-xs absolute top-1/2 -translate-y-[calc(50%-0.25rem)] left-1/2 -translate-x-1/2 bg-softblack active:bg-hovered duration-200 text-sky-300 rounded-full border border-secondary/10 w-[6.75rem]"
+          className="grid place-items-center px-3 py-0.5 text-xs absolute top-1/2 -translate-y-[calc(50%-0.25rem)] left-1/2 -translate-x-1/2 bg-softblack active:bg-hovered duration-200 text-sky-300 rounded-full border border-secondary/10 min-w-[6.75rem]"
         >
-          {show ? t.hideTranslation : t.seeTranslation}
+          {displayText}
         </button>
       </div>
     </React.Fragment>

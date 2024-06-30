@@ -40,9 +40,8 @@ export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<TranslateApiResponse>) {
   const text = req.query.text as string;
-  const targetLang = req.query.targetLang as string;
 
-  const translated = targetLang === "en" ? await translateToEn(text) : await translateToId(text);
+  const translated = await translateToEn(text);
 
   const splitted = text.match(punctuations) ?? [];
 

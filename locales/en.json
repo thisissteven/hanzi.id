@@ -52,5 +52,15 @@
   "loadingAllBooks": "Loading all books...",
   "chapters": "Chapters",
   "words": "words",
-  "minutesReadingTime": "minutes reading time"
+  "minutesReadingTime": "minutes reading time",
+  "goToLastReadSentence": "Go to last read sentence",
+  "onboarding": [
+    "Welcome to hanzi.id! 😉",
+    "This is an app to help you learn Chinese characters.",
+    "HSK 1-9 characters and their example usages are available.",
+    "You can also browse and start reading Chinese books. 📚",
+    "Your learning progress will be saved locally! 🎉",
+    "Let's get started!"
+  ],
+  "continue": "Continue"
 }

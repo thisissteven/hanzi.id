@@ -1,3 +1,4 @@
+import { useLocale } from "@/locales/use-locale";
 import { cn } from "@/utils";
 import React from "react";
 
@@ -7,6 +8,8 @@ type ContinueButtonProps = {
 };
 
 export function ContinueButton({ isEnd, onClick }: ContinueButtonProps) {
+  const { t } = useLocale();
+
   return (
     <div className="flex justify-end">
       <button
@@ -19,7 +22,7 @@ export function ContinueButton({ isEnd, onClick }: ContinueButtonProps) {
         )}
         aria-label="Continue"
       >
-        Continue &#8594;
+        {t.continue} &#8594;
       </button>
     </div>
   );

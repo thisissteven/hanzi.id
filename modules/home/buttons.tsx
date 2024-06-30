@@ -71,7 +71,7 @@ export function Button({
       }}
       {...props}
     >
-      <div className="flex items-center md:items-start gap-4 h-full">
+      <div className="flex items-center gap-4 h-full">
         {icon}
         <div className="space-y-0">
           <p className="text-lg font-bold">{title}</p>

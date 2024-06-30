@@ -5,9 +5,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRightIcon, LucideDownload } from "lucide-react";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
-import { FlashcardedResult } from "../api/flashcard";
+
 import { CardDetailsModal, FlashcardProvider } from "@/modules/flashcards";
 import { useLocale } from "@/locales/use-locale";
+import { FlashcardedResult } from "../api/flashcard/en";
 
 function exportToPleco(words: string[], filename: string) {
   const element = document.createElement("a");
@@ -76,9 +77,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   const { locale } = useLocale();
   const { data, isValidating } = useSWRImmutable<FlashcardedResult[]>(
-    !isEnd && loadingBatch > -1
-      ? `flashcard?text=${chunkedCards.data[loadingBatch].join("-")}&locale=${locale}`
-      : undefined,
+    !isEnd && loadingBatch > -1 ? `flashcard/${locale}?text=${chunkedCards.data[loadingBatch].join("-")}` : undefined,
     async (url: string) => {
       const response = await fetch(`/api/${url}`);
       const data = await response.json();

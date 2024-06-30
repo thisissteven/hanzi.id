@@ -42,7 +42,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Segmen
 
   const segmented = splitted.map((t) => {
     if (t.match(/[\u4e00-\u9fa5]/)) {
-      return segment(t, locale);
+      return segment(t);
     }
 
     return [{ simplified: t }];

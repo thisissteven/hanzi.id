@@ -3,17 +3,11 @@ import { Line } from "./line";
 import { ContinueButton } from "./continue-button";
 import { Layout } from "@/modules/layout";
 import { Divider } from "@/components";
-
-const texts = [
-  "Welcome to hanzi.id! 😉",
-  "This is an app to help you learn Chinese characters.",
-  "HSK 1-9 characters and their example usages are available.",
-  "You can also browse and start reading Chinese books. 📚",
-  "Your learning progress will be saved locally! 🎉",
-  "Let's get started!",
-];
+import { useLocale } from "@/locales/use-locale";
 
 export function Onboarding({ onContinue }: { onContinue: () => void }) {
+  const { t } = useLocale();
+
   const [currentSentenceIndex, setCurrentSentenceIndex] = React.useState(-1);
 
   React.useEffect(() => {
@@ -31,12 +25,12 @@ export function Onboarding({ onContinue }: { onContinue: () => void }) {
   React.useEffect(() => {
     let timeout;
 
-    if (currentSentenceIndex < 0 || currentSentenceIndex >= texts.length) {
+    if (currentSentenceIndex < 0 || currentSentenceIndex >= t.onboarding.length) {
       clearTimeout(timeout);
       return;
     }
 
-    const length = texts[currentSentenceIndex].split(" ").length ?? 5;
+    const length = t.onboarding[currentSentenceIndex].split(" ").length ?? 5;
     timeout = setTimeout(() => {
       setCurrentSentenceIndex((prev) => {
         return prev + 1;
@@ -46,9 +40,9 @@ export function Onboarding({ onContinue }: { onContinue: () => void }) {
     return () => {
       clearTimeout(timeout);
     };
-  }, [currentSentenceIndex]);
+  }, [currentSentenceIndex, t.onboarding]);
 
-  const isEnd = currentSentenceIndex >= texts.length;
+  const isEnd = currentSentenceIndex >= t.onboarding.length;
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -71,11 +65,11 @@ export function Onboarding({ onContinue }: { onContinue: () => void }) {
             className="absolute opacity-0 w-full bg-hovered rounded-lg ease duration-200 will-change-transform"
           ></div>
 
-          {texts.map((text, index) => {
+          {t.onboarding.map((text, index) => {
             return (
               <Line
                 key={index}
-                isLast={index === texts.length - 1}
+                isLast={index === t.onboarding.length - 1}
                 currentSentenceIndex={currentSentenceIndex}
                 index={index}
                 onMouseEnter={(e) => {

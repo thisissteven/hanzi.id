@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { segment } from "@/utils/tokenizer";
-import { translateToEn, translateToId } from "@/utils/translate";
+import { segmentId } from "@/utils/tokenizer/segment-id";
+import { translateToId } from "@/utils/translate";
 
 export const config = {
   maxDuration: 15,
@@ -40,15 +40,14 @@ export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<TranslateApiResponse>) {
   const text = req.query.text as string;
-  const targetLang = req.query.targetLang as string;
 
-  const translated = targetLang === "en" ? await translateToEn(text) : await translateToId(text);
+  const translated = await translateToId(text);
 
   const splitted = text.match(punctuations) ?? [];
 
   const segmented = splitted.map((t) => {
     if (t.match(/[\u4e00-\u9fa5]/)) {
-      return segment(t);
+      return segmentId(t);
     }
 
     return [{ simplified: t }];
