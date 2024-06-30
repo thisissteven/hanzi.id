@@ -85,7 +85,7 @@ function BookDetails() {
 
           <Divider className="my-6" />
 
-          <h2 className="text-xl md:text-2xl font-semibold">Chapters</h2>
+          <h2 className="text-xl md:text-2xl font-semibold">{t.chapters}</h2>
 
           <ul>
             <VirtualizedList virtualizer={virtualizer}>
@@ -122,12 +122,12 @@ function BookDetails() {
                           <div className="flex gap-2 items-center w-fit text-xs">
                             {chapter.wordCount && (
                               <span className="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
-                                {chapter.wordCount} words
+                                {chapter.wordCount} {t.words}
                               </span>
                             )}
                             {chapter.estimatedReadingTime && chapter.estimatedReadingTime > 0 && (
                               <span className="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 font-medium text-white ring-1 ring-inset ring-gray-400/20">
-                                {chapter.estimatedReadingTime} minutes reading time
+                                {chapter.estimatedReadingTime} {t.minutesReadingTime}
                               </span>
                             )}
                             {Math.floor(readingProgress) > 0 && (

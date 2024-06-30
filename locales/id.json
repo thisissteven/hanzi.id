@@ -49,5 +49,8 @@
   "exportForPleco": "Ekspor untuk Pleco",
   "loading": "Memuat...",
   "loadingBookDetails": "Memuat detail buku...",
-  "loadingAllBooks": "Memuat semua buku..."
+  "loadingAllBooks": "Memuat semua buku...",
+  "chapters": "Bab",
+  "words": "kata",
+  "minutesReadingTime": "menit waktu baca"
 }

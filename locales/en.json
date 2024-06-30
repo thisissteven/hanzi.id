@@ -49,5 +49,8 @@
   "exportForPleco": "Export for Pleco",
   "loading": "Loading...",
   "loadingBookDetails": "Loading book details...",
-  "loadingAllBooks": "Loading all books..."
+  "loadingAllBooks": "Loading all books...",
+  "chapters": "Chapters",
+  "words": "words",
+  "minutesReadingTime": "minutes reading time"
 }
