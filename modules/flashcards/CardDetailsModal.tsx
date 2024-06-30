@@ -1,8 +1,8 @@
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
-import { FlashcardedResult } from "@/pages/api/flashcard";
 import React from "react";
 import { cn } from "@/utils";
 import { AddOrRemoveFromFlashcard } from "../speech";
+import { FlashcardedResult } from "@/pages/api/flashcard/en";
 
 export function CardDetailsModal({
   chapterName,
