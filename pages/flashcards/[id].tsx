@@ -74,11 +74,12 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   const isEnd = loadingBatch === chunkedCards.maxBatch;
 
+  const { locale } = useLocale();
   const { data, isValidating } = useSWRImmutable<FlashcardedResult[]>(
-    !isEnd && loadingBatch > -1 ? `flashcard?text=${chunkedCards.data[loadingBatch].join("-")}` : undefined,
+    !isEnd && loadingBatch > -1
+      ? `flashcard?text=${chunkedCards.data[loadingBatch].join("-")}&locale=${locale}`
+      : undefined,
     async (url: string) => {
-      await new Promise((resolve) => setTimeout(resolve, 150));
-
       const response = await fetch(`/api/${url}`);
       const data = await response.json();
       return data;

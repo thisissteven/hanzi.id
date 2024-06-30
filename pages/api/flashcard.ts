@@ -26,10 +26,11 @@ type TokenizerResult = Array<{
   }>;
 }>;
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse<FlashcardedResult[]>) {
+export default function handler(req: NextApiRequest, res: NextApiResponse<FlashcardedResult[]>) {
   const text = req.query.text as string;
+  const locale = req.query.locale as string;
 
-  const flashcarded = text.split("-").map((t) => segment(t));
+  const flashcarded = text.split("-").map((t) => segment(t, locale));
 
   const result = flashcarded.map((item: TokenizerResult) => {
     return item.map((i) => {

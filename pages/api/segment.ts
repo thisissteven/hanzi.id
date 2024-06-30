@@ -36,12 +36,13 @@ const punctuations = /([\u4e00-\u9fa5]+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<SegmentApiResponse>) {
   const text = req.query.text as string;
+  const locale = req.query.locale as string;
 
   const splitted = text.match(punctuations) ?? [];
 
   const segmented = splitted.map((t) => {
     if (t.match(/[\u4e00-\u9fa5]/)) {
-      return segment(t);
+      return segment(t, locale);
     }
 
     return [{ simplified: t }];

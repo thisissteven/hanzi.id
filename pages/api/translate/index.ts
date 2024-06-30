@@ -36,6 +36,8 @@ type TokenizerResult = Array<{
 
 const punctuations = /([\u4e00-\u9fa5]+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
 
+export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse<TranslateApiResponse>) {
   const text = req.query.text as string;
   const targetLang = req.query.targetLang as string;
@@ -46,7 +48,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
   const segmented = splitted.map((t) => {
     if (t.match(/[\u4e00-\u9fa5]/)) {
-      return segment(t);
+      return segment(t, targetLang);
     }
 
     return [{ simplified: t }];

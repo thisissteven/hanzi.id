@@ -128,7 +128,7 @@ export function DefinitionModal({
                   transition={{ type: "tween", duration: 0.2 }}
                   className="flex justify-center pt-6 sm:pt-7 absolute inset-0 h-full z-50 bg-black/50"
                 >
-                  {<LoadingBar className="scale-150" visible />}
+                  {<LoadingBar visible />}
                 </motion.div>
               )}
             </AnimatePresence>
@@ -163,7 +163,7 @@ export function DefinitionModal({
             <div className="mt-2">
               <div className="px-3 sm:px-4">
                 <span className="text-sm text-secondary">{t.sentence}:</span>
-                <p className={cn(fontSize.className, "mt-1")}>
+                <p className={cn(fontSize.className, "mt-1 leading-[30px]")}>
                   {sections?.map((section, index) => {
                     const isLastIndex = sections.length - 1 === index;
                     const additionalPunctuation =
@@ -178,16 +178,18 @@ export function DefinitionModal({
                             setEntryIndex(0);
                           }
                         }}
-                        className={cn(
-                          "inline-block select-none underline-offset-4 cursor-pointer border-b-[1.5px] border-softblack",
-                          !section.isPunctuation &&
-                            "relative rounded-b-md rounded-t pb-0.5 box-clone active:bg-indigo-300/20",
-                          activeIndex === index &&
-                            !section.isPunctuation &&
-                            "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
-                        )}
+                        className={cn("inline-block select-none", "whitespace-pre-wrap")}
                       >
-                        {section.simplified} {additionalPunctuation}
+                        <span
+                          className={cn(
+                            "underline-offset-4 cursor-pointer border-b-[1.5px] border-softblack",
+                            "relative rounded-b-md rounded-t pb-0.5 box-clone active:bg-indigo-300/20",
+                            activeIndex === index && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
+                          )}
+                        >
+                          {section.simplified}
+                        </span>
+                        {additionalPunctuation}
                       </span>
                     );
                   })}

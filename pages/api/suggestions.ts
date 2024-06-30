@@ -10,8 +10,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     POST: async () => {
       const { text, category } = req.body;
 
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
       const suggestion = await prisma.suggestions.create({
         data: {
           text,
