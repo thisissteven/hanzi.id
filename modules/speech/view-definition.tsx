@@ -13,6 +13,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { SaveToFlashcard } from "./save-to-flashcard";
 import { toast } from "sonner";
 
+import { useTranslation } from "./use-translation";
+import { useLocale } from "@/locales/use-locale";
+
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
 type DefinitionModalProps = {
@@ -35,11 +38,11 @@ export function DefinitionModal({
   const sentenceIndex = router.query.sentenceIndex as string;
 
   const { data, isLoading } = useSWRImmutable<SegmentApiResponse>(
-    sentence ? `/segment?text=${sentence}` : undefined,
+    sentence ? `segment?text=${sentence}` : undefined,
     async (url) => {
       const response = await fetch(`/api/${url}`);
       // Simulate loading for better UX
-      await new Promise((resolve) => setTimeout(resolve, 150));
+      // await new Promise((resolve) => setTimeout(resolve, 150));
       return response.json();
     },
     {
@@ -108,7 +111,7 @@ export function DefinitionModal({
         className="fixed inset-y-0 left-0 w-screen z-[998] bg-black/20 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
       />
 
-      <div className="fixed inset-y-0 left-0 z-[998] w-screen p-2 sm:p-4 overflow-y-auto">
+      <div className="fixed inset-y-0 left-0 z-[998] w-screen p-2 sm:p-4 overflow-y-auto scrollbar-none">
         <div className="flex justify-center text-center sm:items-center">
           <DialogPanel
             transition
@@ -189,9 +192,9 @@ export function DefinitionModal({
                 </p>
               </div>
 
-              <Divider />
+              <TranslateSentence sentence={sentence} />
 
-              <div className="px-3 sm:px-4">
+              <div className="px-3 sm:px-4 relative bg-softblack">
                 <span className="text-sm text-secondary">Definition:</span>
 
                 {data && (
@@ -268,5 +271,52 @@ export function DefinitionModal({
         </div>
       </div>
     </Dialog>
+  );
+}
+
+function TranslateSentence({ sentence }: { sentence: string }) {
+  const [show, setShow] = React.useState(false);
+
+  const { locale } = useLocale();
+  const { data } = useTranslation(sentence, locale);
+
+  return (
+    <React.Fragment>
+      <AnimatePresence>
+        {show && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{
+              height: "auto",
+              opacity: 1,
+            }}
+            exit={{
+              height: 0,
+              opacity: 0,
+            }}
+          >
+            <div className="pt-4">
+              <div className="border-t border-t-secondary/10">
+                <div className="mt-4 px-3 sm:px-4">
+                  <span className="text-sm text-secondary">Translation:</span>
+                  <p className="mt-1">{data}</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <div className="relative w-full pt-4">
+        <Divider />
+
+        {/* Translate Sentence Button */}
+        <button
+          onClick={() => setShow(!show)}
+          className="px-3 py-0.5 text-xs absolute top-1/2 -translate-y-[calc(50%-0.75rem)] left-1/2 -translate-x-1/2 bg-softblack active:bg-hovered duration-200 text-sky-300 rounded-full border border-secondary/10"
+        >
+          {show ? "Hide Translation" : "See Translation"}
+        </button>
+      </div>
+    </React.Fragment>
   );
 }

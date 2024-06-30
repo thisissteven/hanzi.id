@@ -21,7 +21,7 @@ function BookDetails() {
   const id = router.query.id as string;
 
   const { data: book, isLoading } = useSWRImmutable<GetBookByIdResponse>(
-    id ? `/book/${id}` : undefined,
+    id ? `book/${id}` : undefined,
     async (url) => {
       const response = await fetch(`/api/${url}`);
       const data = await response.json();

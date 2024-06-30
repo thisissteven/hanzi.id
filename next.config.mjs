@@ -10,8 +10,8 @@ const nextConfig = {
   i18n: {
     locales: ["en", "id"],
     defaultLocale: "en",
-    localeDetection: false,
   },
+
   images: {
     unoptimized: true,
     remotePatterns: [
