@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import { FlashcardedResult } from "../api/flashcard";
 import { CardDetailsModal, FlashcardProvider } from "@/modules/flashcards";
+import { useLocale } from "@/locales/use-locale";
 
 function exportToPleco(words: string[], filename: string) {
   const element = document.createElement("a");
@@ -36,29 +37,6 @@ export default function FlashcardsDetailsPage() {
             </div>
           </div>
           {flashcard && <DisplayFlashcard flashcard={flashcard} />}
-          {/* <AnimatePresence mode="wait">
-            {!flashcard ? (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ type: "tween", duration: 0.2 }}
-                className="mt-4 ml-7 md:ml-8"
-              >
-                Loading flashcard...
-              </motion.div>
-            ) : (
-              <motion.div
-                key="flashcard"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ type: "tween", duration: 0.2 }}
-              >
-                <DisplayFlashcard flashcard={flashcard} />
-              </motion.div>
-            )}
-          </AnimatePresence> */}
         </main>
       </div>
     </Layout>
@@ -83,6 +61,8 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
   const [cards, setCards] = React.useState<FlashcardedResult[]>([]);
 
   const [details, setDetails] = React.useState<FlashcardedResult>();
+
+  const { t } = useLocale();
 
   const chunkedCards = React.useMemo(() => {
     const cards = chunkArray(flashcard.words, CHUNK_SIZE);
@@ -128,13 +108,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
             const translations = card?.entries?.[0].english.join(", ");
 
             return (
-              <motion.li
-                key={index}
-                // transition={{ type: "tween", duration: 0.2 }}
-                // initial={{ opacity: 0 }}
-                // animate={{ opacity: 1 }}
-                className="border-b border-b-secondary/10"
-              >
+              <li key={index} className="border-b border-b-secondary/10">
                 <button
                   onClick={() => setDetails(card)}
                   className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
@@ -144,9 +118,9 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
                       <div className="shrink-0 font-medium">{flashcard.words[index]}</div>
 
                       <div className="overflow-x-hidden flex-1">
-                        <div className="text-sm font-medium text-smokewhite">{pinyin ?? "Loading..."}</div>
+                        <div className="text-sm font-medium text-smokewhite">{pinyin ?? t.loading}</div>
                         <div className="text-sm line-clamp-1 max-w-[95%] text-secondary">
-                          {translations ?? "Loading..."}
+                          {translations ?? t.loading}
                         </div>
                       </div>
 
@@ -156,7 +130,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
                   <ChevronRightIcon className="h-5 w-5 shrink-0 flex-none text-secondary/50" aria-hidden="true" />
                 </button>
-              </motion.li>
+              </li>
             );
           })}
         </ul>
@@ -206,7 +180,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
                 }}
                 className="rounded-md font-medium max-md:w-full text-black dark:text-white p-3 md:py-2.5 md:px-4 duration-200 bg-blue-500 active:bg-blue-600 disabled:opacity-50 flex items-center justify-center gap-2"
               >
-                Export for Pleco <LucideDownload size={20} />
+                {t.exportForPleco} <LucideDownload size={20} />
               </button>
             </motion.div>
           )}

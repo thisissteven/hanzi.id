@@ -33,5 +33,21 @@
     ],
     "submitLoading": "Sending...",
     "submit": "Send"
-  }
+  },
+  "sentence": "Sentence",
+  "definition": "Definition",
+  "translation": "Translation",
+  "seeTranslation": "See Translation",
+  "hideTranslation": "Hide Translation",
+  "previous": "Previous",
+  "next": "Next",
+  "all": "All",
+  "lastRead": "Last Read",
+  "cards": "cards",
+  "cardsSingular": "card",
+  "emptyFlashcard": "Your flashcard is empty. Start reading and save unfamiliar words you encounter.",
+  "exportForPleco": "Export for Pleco",
+  "loading": "Loading...",
+  "loadingBookDetails": "Loading book details...",
+  "loadingAllBooks": "Loading all books..."
 }

@@ -4,9 +4,12 @@ import { BackRouteButton } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { ChevronRightIcon } from "lucide-react";
+import { useLocale } from "@/locales/use-locale";
 
 export default function FlashcardsPage() {
   const flashcards = useFlashcardList();
+
+  const { t } = useLocale();
 
   return (
     <Layout>
@@ -19,7 +22,7 @@ export default function FlashcardsPage() {
           </div>
 
           <div>
-            {flashcards.length === 0 && <div className="px-4 mt-4">Your flashcard is empty.</div>}
+            {flashcards.length === 0 && <div className="px-4 mt-4">{t.emptyFlashcard}</div>}
             <ul>
               {flashcards.map((flashcard) => {
                 const [bookName, chapterName] = flashcard.chapter.split("-");
@@ -42,7 +45,7 @@ export default function FlashcardsPage() {
                           <p className="text-secondary text-sm">{bookName}</p>
 
                           <div className="inline-flex max-sm:hidden text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
-                            {flashcard.words.length} {flashcard.words.length > 1 ? "cards" : "card"}
+                            {flashcard.words.length} {flashcard.words.length > 1 ? t.cards : t.cardsSingular}
                           </div>
                         </div>
                       </div>
@@ -53,36 +56,13 @@ export default function FlashcardsPage() {
                       />
 
                       <div className="inline-flex sm:hidden text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
-                        {flashcard.words.length} {flashcard.words.length > 1 ? "cards" : "card"}
+                        {flashcard.words.length} {flashcard.words.length > 1 ? t.cards : t.cardsSingular}
                       </div>
                     </Link>
                   </motion.li>
                 );
               })}
             </ul>
-            {/* <AnimatePresence mode="wait">
-              {!flashcards ? (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ type: "tween", duration: 0.2 }}
-                  className="mt-4 ml-7 md:ml-8"
-                >
-                  Loading all flashcards...
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="flashcards"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ type: "tween", duration: 0.2 }}
-                >
-                  
-                </motion.div>
-              )}
-            </AnimatePresence> */}
           </div>
         </main>
       </div>

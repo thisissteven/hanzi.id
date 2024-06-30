@@ -58,7 +58,7 @@ function BookDetails() {
 
   return (
     <div className="mt-8 pb-8 max-md:px-4">
-      {isLoading && <div>Loading book details...</div>}
+      {isLoading && <div>{t.loadingBookDetails}</div>}
       {book && (
         <motion.div transition={{ type: "tween", duration: 0.2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <div className="flex max-md:flex-col max-md:items-center items-end gap-4 md:gap-6">

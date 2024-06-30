@@ -33,5 +33,21 @@
     ],
     "submitLoading": "Mengirim...",
     "submit": "Kirim"
-  }
+  },
+  "sentence": "Kalimat",
+  "definition": "Definisi",
+  "translation": "Terjemahan",
+  "seeTranslation": "Lihat Terjemahan",
+  "hideTranslation": "Sembunyikan",
+  "previous": "Sebelumnya",
+  "next": "Selanjutnya",
+  "all": "Semua",
+  "lastRead": "Terakhir Dibaca",
+  "cards": "kartu",
+  "cardsSingular": "kartu",
+  "emptyFlashcard": "Kartu pengingat Anda kosong. Mulai membaca dan simpan kata-kata yang tidak dikenal yang Anda temui.",
+  "exportForPleco": "Ekspor untuk Pleco",
+  "loading": "Memuat...",
+  "loadingBookDetails": "Memuat detail buku...",
+  "loadingAllBooks": "Memuat semua buku..."
 }

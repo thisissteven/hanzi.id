@@ -1,5 +1,6 @@
 import { LoadMore } from "@/components";
 import { useDelayedInfiniteSWR } from "@/hooks";
+import { useLocale } from "@/locales/use-locale";
 import { GetAllBooksResponse } from "@/pages/api/book";
 import { cn } from "@/utils";
 import { AnimatePresence, motion } from "framer-motion";
@@ -135,6 +136,8 @@ export function Explore() {
 
   const books = selected === 0 ? data : data?.filter((book) => lastRead.some((read) => read.bookId === book.id));
 
+  const { t } = useLocale();
+
   return (
     <div className="mt-4">
       <div className="flex gap-2 max-md:px-4 md:px-5">
@@ -142,17 +145,17 @@ export function Explore() {
           className={cn("px-3 duration-200", selected === 0 ? "opacity-100" : "opacity-50")}
           onClick={() => setSelected(0)}
         >
-          All
+          {t.all}
         </button>
         <button
           className={cn("px-3 duration-200", selected === 1 ? "opacity-100" : "opacity-50")}
           onClick={() => setSelected(1)}
         >
-          Last Read
+          {t.lastRead}
         </button>
       </div>
 
-      {!books && <div className="ml-6 md:ml-8 mt-4">Loading all books...</div>}
+      {!books && <div className="ml-6 md:ml-8 mt-4">{t.loadingAllBooks}</div>}
 
       {books && (
         <div>

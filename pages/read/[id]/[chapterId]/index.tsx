@@ -12,6 +12,7 @@ import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useRouter } from "next/router";
 import React from "react";
 import { useLastRead } from "@/modules/home/explore";
+import { useLocale } from "@/locales/use-locale";
 
 export default function Read() {
   const router = useRouter();
@@ -55,6 +56,8 @@ export default function Read() {
       });
     }
   }, [bookId, chapterId, currentSentenceIdx, updateLastRead, playbackState]);
+
+  const { t } = useLocale();
 
   return (
     <Layout>
@@ -106,7 +109,7 @@ export default function Read() {
                     onClick={() => router.back()}
                     className="mt-4 py-2 pl-3 pr-4 rounded-md duration-200 active:bg-hovered flex items-center gap-2"
                   >
-                    <div className="mb-[3px]">&#8592;</div> Return
+                    <div className="mb-[3px]">&#8592;</div> {t.return}
                   </button>
                 </div>
                 <div className="flex gap-2 max-[810px]:-mr-0 -mr-2">

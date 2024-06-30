@@ -5,7 +5,6 @@ import IdHanziMap from "@/data/id-hanzi-map.json";
 
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 
-import { SegmentApiResponse } from "@/pages/api/segment";
 import { cn } from "@/utils";
 import { useReading } from "@/modules/layout";
 import { Divider, LoadingBar } from "@/components";
@@ -13,8 +12,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { SaveToFlashcard } from "./save-to-flashcard";
 import { toast } from "sonner";
 
-import { useTranslation } from "./use-translation";
 import { useLocale } from "@/locales/use-locale";
+import { TranslateApiResponse } from "@/pages/api/translate";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -37,12 +36,12 @@ export function DefinitionModal({
   const sentence = router.query.sentence as string;
   const sentenceIndex = router.query.sentenceIndex as string;
 
-  const { data, isLoading } = useSWRImmutable<SegmentApiResponse>(
-    sentence ? `segment?text=${sentence}` : undefined,
+  const { t, locale } = useLocale();
+
+  const { data, isLoading } = useSWRImmutable<TranslateApiResponse>(
+    sentence ? `translate?text=${sentence}&targetLang=${locale}` : undefined,
     async (url) => {
       const response = await fetch(`/api/${url}`);
-      // Simulate loading for better UX
-      // await new Promise((resolve) => setTimeout(resolve, 150));
       return response.json();
     },
     {
@@ -144,7 +143,7 @@ export function DefinitionModal({
                 aria-disabled={previousDisabled}
                 className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
               >
-                <div className="mb-[3px]">&#8592;</div> Previous
+                <div className="mb-[3px]">&#8592;</div> {t.previous}
               </button>
               <button
                 onClick={() => {
@@ -155,7 +154,7 @@ export function DefinitionModal({
                 aria-disabled={nextDisabled}
                 className="flex select-none items-center gap-1 rounded-md font-medium duration-200 active:bg-hovered px-3 py-1.5 aria-disabled:opacity-50 aria-disabled:pointer-events-none"
               >
-                Next &#8594;
+                {t.next} &#8594;
               </button>
             </div>
 
@@ -163,13 +162,13 @@ export function DefinitionModal({
 
             <div className="mt-2">
               <div className="px-3 sm:px-4">
-                <span className="text-sm text-secondary">Sentence:</span>
+                <span className="text-sm text-secondary">{t.sentence}:</span>
                 <p className={cn(fontSize.className, "mt-1")}>
                   {sections?.map((section, index) => {
                     const isLastIndex = sections.length - 1 === index;
                     const additionalPunctuation =
                       !isLastIndex && sections[index + 1].isPunctuation && sections[index + 1].simplified;
-                    if (section.isPunctuation) return null;
+                    if (section.isPunctuation && index > 0) return null;
                     return (
                       <span
                         key={index}
@@ -181,8 +180,11 @@ export function DefinitionModal({
                         }}
                         className={cn(
                           "inline-block select-none underline-offset-4 cursor-pointer border-b-[1.5px] border-softblack",
-                          "relative rounded-b-md rounded-t pb-0.5 box-clone active:bg-indigo-300/20",
-                          activeIndex === index && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
+                          !section.isPunctuation &&
+                            "relative rounded-b-md rounded-t pb-0.5 box-clone active:bg-indigo-300/20",
+                          activeIndex === index &&
+                            !section.isPunctuation &&
+                            "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
                         )}
                       >
                         {section.simplified} {additionalPunctuation}
@@ -192,10 +194,10 @@ export function DefinitionModal({
                 </p>
               </div>
 
-              <TranslateSentence sentence={sentence} />
+              <TranslateSentence translated={data?.translated ?? ""} />
 
               <div className="px-3 sm:px-4 relative bg-softblack">
-                <span className="text-sm text-secondary">Definition:</span>
+                <span className="text-sm text-secondary">{t.definition}:</span>
 
                 {data && (
                   <React.Fragment>
@@ -274,11 +276,10 @@ export function DefinitionModal({
   );
 }
 
-function TranslateSentence({ sentence }: { sentence: string }) {
+function TranslateSentence({ translated }: { translated: string }) {
   const [show, setShow] = React.useState(false);
 
-  const { locale } = useLocale();
-  const { data } = useTranslation(sentence, locale);
+  const { t } = useLocale();
 
   return (
     <React.Fragment>
@@ -298,23 +299,24 @@ function TranslateSentence({ sentence }: { sentence: string }) {
             <div className="pt-4">
               <div className="border-t border-t-secondary/10">
                 <div className="mt-4 px-3 sm:px-4">
-                  <span className="text-sm text-secondary">Translation:</span>
-                  <p className="mt-1">{data}</p>
+                  <span className="text-sm text-secondary">{t.translation}:</span>
+                  <p className="mt-1">{translated}</p>
                 </div>
               </div>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="relative w-full pt-4">
-        <Divider />
+      <div className="relative w-full pt-6">
+        {/* <Divider /> */}
+        <div className="border-t border-t-secondary/10 pt-4"></div>
 
         {/* Translate Sentence Button */}
         <button
           onClick={() => setShow(!show)}
-          className="px-3 py-0.5 text-xs absolute top-1/2 -translate-y-[calc(50%-0.75rem)] left-1/2 -translate-x-1/2 bg-softblack active:bg-hovered duration-200 text-sky-300 rounded-full border border-secondary/10"
+          className="grid place-items-center py-0.5 text-xs absolute top-1/2 -translate-y-[calc(50%-0.25rem)] left-1/2 -translate-x-1/2 bg-softblack active:bg-hovered duration-200 text-sky-300 rounded-full border border-secondary/10 w-[6.75rem]"
         >
-          {show ? "Hide Translation" : "See Translation"}
+          {show ? t.hideTranslation : t.seeTranslation}
         </button>
       </div>
     </React.Fragment>
