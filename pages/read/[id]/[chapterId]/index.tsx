@@ -76,10 +76,12 @@ export default function Read() {
           nextDisabled={parseInt(sentenceIndex) === sentences.length - 1}
           previousSentence={() => {
             const index = Math.max(0, parseInt(sentenceIndex) - 1);
+            toSentence(index);
             return `/read/${bookId}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
           }}
           nextSentence={() => {
             const index = Math.min(sentences.length - 1, parseInt(sentenceIndex) + 1);
+            toSentence(index);
             return `/read/${bookId}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
           }}
         />
