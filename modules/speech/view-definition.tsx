@@ -21,6 +21,7 @@ export type IdHanziMapKey = keyof typeof IdHanziMap;
 type DefinitionModalProps = {
   previousSentence: () => string;
   nextSentence: () => string;
+  onClose: () => void;
   totalSentences: number;
   previousDisabled?: boolean;
   nextDisabled?: boolean;
@@ -29,6 +30,7 @@ type DefinitionModalProps = {
 export function DefinitionModal({
   previousSentence,
   nextSentence,
+  onClose,
   totalSentences,
   previousDisabled,
   nextDisabled,
@@ -99,13 +101,7 @@ export function DefinitionModal({
   }, [sentenceIndex]);
 
   return (
-    <Dialog
-      className="relative z-[998]"
-      open={Boolean(sentence)}
-      onClose={() => {
-        router.back();
-      }}
-    >
+    <Dialog className="relative z-[998]" open={Boolean(sentence)} onClose={onClose}>
       <DialogBackdrop
         transition
         className="fixed inset-y-0 left-0 w-screen z-[998] bg-black/20 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"

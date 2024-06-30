@@ -71,17 +71,19 @@ export default function Read() {
     <Layout>
       <div className="min-h-dvh bg-black">
         <DefinitionModal
+          onClose={() => {
+            toSentence(parseInt(sentenceIndex));
+            router.back();
+          }}
           totalSentences={sentences.length}
           previousDisabled={parseInt(sentenceIndex) === 0}
           nextDisabled={parseInt(sentenceIndex) === sentences.length - 1}
           previousSentence={() => {
             const index = Math.max(0, parseInt(sentenceIndex) - 1);
-            toSentence(index);
             return `/read/${bookId}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
           }}
           nextSentence={() => {
             const index = Math.min(sentences.length - 1, parseInt(sentenceIndex) + 1);
-            toSentence(index);
             return `/read/${bookId}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
           }}
         />
