@@ -203,7 +203,7 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
 
   const { data: chapter } = useChapterById(bookId, chapterId);
 
-  const { sentences } = useParagraphs(chapter?.content ?? "", chapter?.book.isUnique ?? false);
+  const { sentences } = useParagraphs(chapter?.content ?? "", chapter?.book?.isUnique ?? false);
   const { speed } = useReading();
 
   const readySentences = sentences.length === 0 ? [""] : sentences;
