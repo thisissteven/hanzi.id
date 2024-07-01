@@ -8,6 +8,7 @@ import { useThrottledClickHandler } from "@/hooks";
 import useSWRImmutable from "swr/immutable";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 import { useRouter } from "next/router";
+import { useBookDetails } from "@/pages/read/[id]";
 
 export function MobileBottomBar({
   currentSentenceIdx,
@@ -26,20 +27,10 @@ export function MobileBottomBar({
 }) {
   const router = useRouter();
 
-  const bookId = router.query.id;
+  const bookId = router.query.id as string;
   const chapterId = router.query.chapterId;
 
-  const { data } = useSWRImmutable<GetBookByIdResponse>(
-    bookId ? `book/${bookId}` : undefined,
-    async (url) => {
-      const response = await fetch(`/api/${url}`);
-      const data = await response.json();
-      return data;
-    },
-    {
-      keepPreviousData: true,
-    }
-  );
+  const { data } = useBookDetails(bookId);
 
   const source = data?.image?.smallUrl;
   const title = data?.title;

@@ -10,6 +10,7 @@ import { ScanSearchIcon } from "lucide-react";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
+import { useBookDetails } from "@/pages/read/[id]";
 
 export function DesktopBottomBar({
   currentSentenceIdx,
@@ -28,20 +29,10 @@ export function DesktopBottomBar({
 }) {
   const router = useRouter();
 
-  const bookId = router.query.id;
+  const bookId = router.query.id as string;
   const chapterId = router.query.chapterId;
 
-  const { data } = useSWRImmutable<GetBookByIdResponse>(
-    bookId ? `book/${bookId}` : undefined,
-    async (url) => {
-      const response = await fetch(`/api/${url}`);
-      const data = await response.json();
-      return data;
-    },
-    {
-      keepPreviousData: true,
-    }
-  );
+  const { data } = useBookDetails(bookId);
 
   const source = data?.image?.source;
   const title = data?.title;

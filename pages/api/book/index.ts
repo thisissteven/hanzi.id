@@ -53,7 +53,22 @@ export async function getPaginatedBooks({
   };
 }
 
-export type GetAllBooksResponse = Prisma.PromiseReturnType<typeof getPaginatedBooks>;
+async function getAllBooks() {
+  return await prisma.book.findMany({
+    include: {
+      image: true,
+      chapters: {
+        select: {
+          _count: true,
+        },
+      },
+    },
+  });
+}
+
+// export type GetAllBooksResponse = Prisma.PromiseReturnType<typeof getPaginatedBooks>;
+
+export type GetAllBooksResponse = Prisma.PromiseReturnType<typeof getAllBooks>;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await requestHandler(req, res, {

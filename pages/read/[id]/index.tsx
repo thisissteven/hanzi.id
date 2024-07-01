@@ -14,23 +14,19 @@ import { LastRead } from "@/modules/home/explore";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useLocale } from "@/locales/use-locale";
 
+export function useBookDetails(bookId: string) {
+  const swrData = useSWRImmutable<GetBookByIdResponse>(`https://content.hanzi.id/books/${bookId}/metadata.json`);
+
+  return swrData;
+}
+
 function BookDetails() {
   const router = useRouter();
   const navigationRouter = useNavigationRouter();
 
   const id = router.query.id as string;
 
-  const { data: book, isLoading } = useSWRImmutable<GetBookByIdResponse>(
-    id ? `book/${id}` : undefined,
-    async (url) => {
-      const response = await fetch(`/api/${url}`);
-      const data = await response.json();
-      return data;
-    },
-    {
-      keepPreviousData: true,
-    }
-  );
+  const { data: book, isLoading } = useBookDetails(id);
 
   const source = book?.image?.source;
   const title = book?.title;

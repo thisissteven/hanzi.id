@@ -14,7 +14,6 @@ import { toast } from "sonner";
 
 import { useLocale } from "@/locales/use-locale";
 import { TranslateApiResponse } from "@/pages/api/translate";
-import { useDebounce } from "@/hooks";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -22,6 +21,7 @@ type DefinitionModalProps = {
   previousSentence: () => string;
   nextSentence: () => string;
   onClose: () => void;
+  getDefinitionUrl: (locale: string) => string;
   totalSentences: number;
   previousDisabled?: boolean;
   nextDisabled?: boolean;
@@ -31,6 +31,7 @@ export function DefinitionModal({
   previousSentence,
   nextSentence,
   onClose,
+  getDefinitionUrl,
   totalSentences,
   previousDisabled,
   nextDisabled,
@@ -42,9 +43,9 @@ export function DefinitionModal({
   const { t, locale } = useLocale();
 
   const { data, isLoading } = useSWRImmutable<TranslateApiResponse>(
-    sentence ? `translate/${locale}?text=${sentence}` : undefined,
-    async (url) => {
-      const response = await fetch(`/api/${url}`);
+    sentence ? getDefinitionUrl(locale) : undefined,
+    async () => {
+      const response = await fetch(getDefinitionUrl(locale));
       return response.json();
     },
     {

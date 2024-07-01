@@ -8,13 +8,23 @@ import { GetChapterByIdResponse } from "@/pages/api/chapter/[id]";
 import { useRouter } from "next/router";
 import { useFlashcardContext } from "@/modules/flashcards";
 
+export function useChapterById(bookId: string, chapterId: string) {
+  const swrData = useSWRImmutable<GetChapterByIdResponse>(
+    `https://content.hanzi.id/books/${bookId}/${chapterId}/content.json`
+  );
+
+  return swrData;
+}
+
 export function SaveToFlashcard({ word }: { word?: string }) {
   const { flashcard, addToFlashcard, removeFromFlashcard } = useReading();
 
   const router = useRouter();
 
+  const bookId = router.query.id as string;
   const chapterId = router.query.chapterId as string;
-  const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(chapterId ? `/chapter/${chapterId}` : undefined);
+
+  const { data: chapter } = useChapterById(bookId, chapterId);
 
   const chapterName = `${chapter?.book.title}-${chapter?.title}`;
 

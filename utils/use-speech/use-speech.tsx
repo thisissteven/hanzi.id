@@ -9,6 +9,7 @@ import { useReading } from "@/modules/layout";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import { GetChapterByIdResponse } from "@/pages/api/chapter/[id]";
+import { useChapterById } from "@/modules/speech";
 
 const useSpeechManager = (
   sentences: Array<string>,
@@ -197,9 +198,10 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
 
   const [_, rerender] = React.useReducer((s) => s + 1, 0);
 
-  const chapterId = router.query.chapterId;
+  const bookId = router.query.id as string;
+  const chapterId = router.query.chapterId as string;
 
-  const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(chapterId ? `/chapter/${chapterId}` : undefined);
+  const { data: chapter } = useChapterById(bookId, chapterId);
 
   const { sentences } = useParagraphs(chapter?.content ?? "", chapter?.book.isUnique ?? false);
   const { speed } = useReading();

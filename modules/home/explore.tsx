@@ -1,14 +1,13 @@
-import { LoadMore } from "@/components";
-import { useDelayedInfiniteSWR } from "@/hooks";
 import { useLocale } from "@/locales/use-locale";
 import { GetAllBooksResponse } from "@/pages/api/book";
 import { cn } from "@/utils";
-import { AnimatePresence, motion } from "framer-motion";
-import { ChevronRight, Divide } from "lucide-react";
+import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { toast } from "sonner";
+import useSWRImmutable from "swr/immutable";
 
 export type LastRead = {
   bookId: string;
@@ -115,6 +114,12 @@ export function useLastRead({
   return { updateLastRead };
 }
 
+function useBooks() {
+  const swrData = useSWRImmutable<{ data: GetAllBooksResponse }>("https://content.hanzi.id/books/list.json");
+
+  return swrData;
+}
+
 export function Explore() {
   const [selected, setSelected] = React.useState(0);
 
@@ -127,16 +132,10 @@ export function Explore() {
     }
   }, []);
 
-  const key = selected === 0 ? "/book" : null;
+  const { data } = useBooks();
 
-  const { data, isEnd, loadMore } = useDelayedInfiniteSWR<GetAllBooksResponse["data"]>(key, {
-    duration: 200,
-    swrInfiniteConfig: {
-      keepPreviousData: true,
-    },
-  });
-
-  const books = selected === 0 ? data : data?.filter((book) => lastRead.some((read) => read.bookId === book.id));
+  const books =
+    selected === 0 ? data?.data : data?.data?.filter((book) => lastRead.some((read) => read.bookId === book.id));
 
   const { t } = useLocale();
 
@@ -205,77 +204,8 @@ export function Explore() {
               );
             })}
           </ul>
-          <LoadMore isEnd={isEnd} whenInView={loadMore} />
         </div>
       )}
-
-      {/* <AnimatePresence mode="wait">
-        {!books ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ type: "tween", duration: 0.2 }}
-            className="mt-4 ml-7 md:ml-8"
-          >
-            Loading all books...
-          </motion.div>
-        ) : (
-          <motion.div
-            key="books"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ type: "tween", duration: 0.2 }}
-          >
-            <ul className="mt-4 border-t border-t-secondary/10">
-              {books.map((book, index) => {
-                return (
-                  <motion.li
-                    key={book.id}
-                    transition={{ type: "tween", duration: 0.2 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="border-b border-b-secondary/10"
-                  >
-                    <Link
-                      href={`/read/${book.id}`}
-                      scroll={false}
-                      className="inline-block text-left max-md:px-4 py-4 md:w-full md:hover:bg-hovered active:bg-hovered duration-200"
-                    >
-                      <div className="flex gap-4">
-                        <div className="w-4 max-md:hidden -ml-6 grid place-items-center">{index + 1}</div>
-                        <div className="md:ml-2.5 relative w-20 md:w-32 aspect-square shrink-0 rounded-md overflow-hidden">
-                          <Image
-                            src={book?.image?.source || "/placeholder.png"}
-                            alt={`Cover Image: ${book.title}`}
-                            className="object-cover w-full h-full"
-                            width={92}
-                            height={92}
-                          />
-                        </div>
-                        <div className="flex flex-col flex-1">
-                          <h3 className="text-lg md:text-2xl font-semibold line-clamp-1">{book.title}</h3>
-                          <p className="mt-1 max-md:text-sm text-secondary line-clamp-2 md:line-clamp-3">
-                            {book.description}
-                          </p>
-                          <div className="mt-2 max-md:mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
-                            {book.chapters.length} {book.chapters.length > 1 ? "chapters" : "chapter"}
-                          </div>
-                        </div>
-                        <div className="max-md:hidden grid place-items-center pr-4">
-                          <ChevronRight className="text-secondary" />
-                        </div>
-                      </div>
-                    </Link>
-                  </motion.li>
-                );
-              })}
-            </ul>
-            <LoadMore isEnd={isEnd} whenInView={loadMore} />
-          </motion.div>
-        )}
-      </AnimatePresence> */}
     </div>
   );
 }
