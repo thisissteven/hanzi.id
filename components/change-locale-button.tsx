@@ -10,7 +10,7 @@ export function ChangeLocaleButton() {
     <Link
       href={asPath}
       locale={locale === "en" ? "id" : "en"}
-      className="relative z-50 px-4 py-1.5 rounded-md text-sm bg-softblack border border-secondary/10"
+      className="relative grid place-items-center z-50 px-4 py-1.5 rounded-md text-sm bg-softblack border border-secondary/10"
     >
       {locale === "en" ? "EN" : "ID"}
     </Link>

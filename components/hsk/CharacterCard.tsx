@@ -8,8 +8,7 @@ import { preload } from "swr";
 
 export type Locale = "en" | "id";
 
-export const url = (hanzi: string, locale: Locale) =>
-  `https://thisissteven.github.io/character/${locale}/${hanzi}.json`;
+export const url = (hanzi: string, locale: Locale) => `https://content.hanzi.id/character/${locale}/${hanzi}.json`;
 
 export async function preloadHanziDetails(hanzi: string, locale: Locale) {
   await preload(url(hanzi, locale), async (url) => {

@@ -49,7 +49,7 @@ export function DesktopSidebar() {
         <a
           href="https://pandarin.net/latihan-ujian-hsk/"
           target="_blank"
-          className="inline-block relative z-10 hover:underline underline-offset-4 pl-4 pr-5 py-2 border border-secondary/10 bg-softblack w-fit"
+          className="inline-block relative z-10 hover:underline underline-offset-4 pl-4 pr-5 py-2 border border-secondary/10 bg-softblack w-fit rounded-md"
         >
           {t.practice} &#8594;
         </a>
@@ -87,7 +87,7 @@ export function MobileSidebar() {
                 <a
                   href="https://pandarin.net/latihan-ujian-hsk/"
                   target="_blank"
-                  className="inline-block relative z-10 hover:underline underline-offset-4 pl-6 pr-7 py-2 border border-secondary/10 bg-softblack w-fit"
+                  className="inline-block relative z-10 hover:underline underline-offset-4 pl-6 pr-7 py-2 border border-secondary/10 bg-softblack w-fit rounded-md"
                 >
                   {t.practice} &#8594;
                 </a>
