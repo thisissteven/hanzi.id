@@ -3,6 +3,7 @@ import React from "react";
 import { cn } from "@/utils";
 import { AddOrRemoveFromFlashcard } from "../speech";
 import { FlashcardedResult } from "@/pages/api/flashcard/en";
+import { useRouter } from "next/router";
 
 export function CardDetailsModal({
   chapterName,
@@ -16,6 +17,9 @@ export function CardDetailsModal({
   const latestDetails = React.useRef(details) as React.MutableRefObject<FlashcardedResult | undefined>;
 
   const [entryIndex, setEntryIndex] = React.useState(0);
+
+  const router = useRouter();
+  const open = router.query.open;
 
   React.useEffect(() => {
     if (details) {
@@ -42,7 +46,7 @@ export function CardDetailsModal({
   const currentEntry = entries[entryIndex];
 
   return (
-    <Dialog className="relative z-[998]" open={Boolean(details)} onClose={onClose}>
+    <Dialog className="relative z-[998]" open={Boolean(details && open)} onClose={onClose}>
       <DialogBackdrop
         transition
         className="fixed inset-y-0 left-0 w-screen z-[998] bg-black/20 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"

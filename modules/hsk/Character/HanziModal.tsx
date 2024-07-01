@@ -37,6 +37,7 @@ export function HanziModal() {
   }, [currentHanziId, hanzi, router]);
 
   const currentLevel = router.query.level as unknown as Level;
+  const from = router.query.from as string;
 
   const previousHanziId = (parseInt(currentHanziId) - 1).toString() as IdHanziMapKey;
   const nextHanziId = (parseInt(currentHanziId) + 1).toString() as IdHanziMapKey;
@@ -74,10 +75,12 @@ export function HanziModal() {
       open={Boolean(hanzi)}
       onOpenChange={(open) => {
         if (!open) {
-          if (Boolean(hanzi)) {
+          if (Boolean(from)) {
             router.replace(`/hsk/${router.query.level}?page=${router.query.page}`, undefined, {
               shallow: true,
             });
+          } else if (Boolean(hanzi)) {
+            router.back();
           }
           stopAudio();
         } else {

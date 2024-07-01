@@ -89,13 +89,18 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
     if (data) setCards((prev) => [...prev, ...data]);
   }, [data]);
 
+  const router = useRouter();
+
   return (
     <>
       <FlashcardProvider>
         <CardDetailsModal
           chapterName={`${bookName}-${chapterName}`}
           details={details}
-          onClose={() => setDetails(undefined)}
+          onClose={() => {
+            setDetails(undefined);
+            router.back();
+          }}
         />
       </FlashcardProvider>
       <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
@@ -110,7 +115,10 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
             return (
               <li key={index} className="border-b border-b-secondary/10">
                 <button
-                  onClick={() => setDetails(card)}
+                  onClick={() => {
+                    setDetails(card);
+                    router.push(router.asPath + "?open=true", undefined, { shallow: true });
+                  }}
                   className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
                 >
                   <div className="relative group transition select-none text-3xl w-full">

@@ -75,6 +75,9 @@ export default function Read() {
             toSentence(parseInt(sentenceIndex));
             router.back();
           }}
+          getDefinitionUrl={(locale) =>
+            `https://thisissteven.github.io/books/${bookId}/${chapterId}/${locale}/${sentenceIndex}.json`
+          }
           totalSentences={sentences.length}
           previousDisabled={parseInt(sentenceIndex) === 0}
           nextDisabled={parseInt(sentenceIndex) === sentences.length - 1}

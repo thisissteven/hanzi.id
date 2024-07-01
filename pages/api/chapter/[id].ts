@@ -1,8 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { getParagraphs, prisma, requestHandler } from "@/utils";
+import { prisma, requestHandler } from "@/utils";
 import { Prisma } from "@prisma/client";
+import { getParagraphs } from "@/utils/use-speech/paragraph-utils";
 
 function getChapterById(id: string) {
   return prisma.chapter.findUnique({
@@ -14,6 +15,7 @@ function getChapterById(id: string) {
         select: {
           id: true,
           title: true,
+          isUnique: true,
         },
       },
     },
@@ -26,7 +28,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   await requestHandler(req, res, {
     allowedRoles: {
       GET: ["PUBLIC"],
-      PUT: ["PUBLIC"],
+      // PUT: ["PUBLIC"],
     },
 
     GET: async () => {
@@ -37,36 +39,36 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       res.status(200).json(chapter);
     },
 
-    PUT: async () => {
-      const id = req.query.id as string;
+    // PUT: async () => {
+    //   const id = req.query.id as string;
 
-      const book = await prisma.book.findUnique({
-        where: {
-          id,
-        },
-        include: {
-          chapters: true,
-        },
-      });
+    //   const book = await prisma.book.findUnique({
+    //     where: {
+    //       id,
+    //     },
+    //     include: {
+    //       chapters: true,
+    //     },
+    //   });
 
-      if (book) {
-        await Promise.all(
-          book.chapters.map(async (chapter) => {
-            const paragraphs = getParagraphs(chapter.content);
-            await prisma.chapter.update({
-              where: {
-                id: chapter.id,
-              },
-              data: {
-                totalSentences: paragraphs.flat().length,
-                shortContent: paragraphs.flat().slice(0, 5).join(" "),
-              },
-            });
-          })
-        );
-      }
+    //   if (book) {
+    //     await Promise.all(
+    //       book.chapters.map(async (chapter) => {
+    //         const paragraphs = getParagraphs(chapter.content);
+    //         await prisma.chapter.update({
+    //           where: {
+    //             id: chapter.id,
+    //           },
+    //           data: {
+    //             totalSentences: paragraphs.flat().length,
+    //             shortContent: paragraphs.flat().slice(0, 5).join(" "),
+    //           },
+    //         });
+    //       })
+    //     );
+    //   }
 
-      res.status(200).json(book);
-    },
+    //   res.status(200).json(book);
+    // },
   });
 }

@@ -67,7 +67,7 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
                       );
                     return <React.Fragment key={index}>{part}</React.Fragment>;
                   })}
-                  <AudioButton size="small" key={lesson.audioUrl} url={lesson.audioUrl} />
+                  <AudioButton size="small" key={lesson.audioUrl} text={lesson.simplified} speed={1.3} />
                 </Popover.Trigger>
                 <Popover.Content
                   align="start"

@@ -1,13 +1,19 @@
 import { useAudio } from "@/modules/layout";
 import clsx from "clsx";
 import * as React from "react";
-import useSWRImmutable from "swr/immutable";
 
-export function AudioButton({ url, size = "normal" }: { url: string; size?: "small" | "normal" | "large" }) {
-  const { data, mutate } = useSWRImmutable<string | undefined>(url, () => undefined);
-  const [isLoading, setIsLoading] = React.useState(false);
+export function AudioButton({
+  text,
+  speed = 1,
+  size = "normal",
+}: {
+  text: string;
+  speed?: number;
+  size?: "small" | "normal" | "large";
+}) {
+  const { speak, isSpeaking, stopAudio } = useAudio();
 
-  const { playAudio, stopAudio } = useAudio();
+  const isLoading = isSpeaking.text === text;
 
   React.useEffect(() => {
     return () => {
@@ -21,27 +27,10 @@ export function AudioButton({ url, size = "normal" }: { url: string; size?: "sma
         e.stopPropagation();
         if (isLoading) {
           stopAudio();
-          setIsLoading(false);
           return;
         }
-        setIsLoading(true);
-        if (data) {
-          playAudio(data, () => {
-            setIsLoading(false);
-          });
-        } else {
-          const response = await fetch(url);
-          const blob = await response.blob();
-
-          const objectURL = URL.createObjectURL(blob);
-
-          mutate(objectURL, {
-            revalidate: false,
-          });
-
-          playAudio(objectURL, () => {
-            setIsLoading(false);
-          });
+        if (text) {
+          speak(text, speed);
         }
       }}
       className={clsx(

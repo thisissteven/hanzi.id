@@ -96,8 +96,9 @@ model Book {
   id     String @id @default(cuid())
   userId String
 
-  title       String @default("Untitled")
-  description String @default("No description yet.")
+  title       String  @default("Untitled")
+  description String  @default("No description yet.")
+  isUnique    Boolean @default(false)
 
   image Image?
 

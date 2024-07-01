@@ -201,7 +201,7 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
 
   const { data: chapter } = useSWRImmutable<GetChapterByIdResponse>(chapterId ? `/chapter/${chapterId}` : undefined);
 
-  const { sentences } = useParagraphs(chapter?.content ?? "");
+  const { sentences } = useParagraphs(chapter?.content ?? "", chapter?.book.isUnique ?? false);
   const { speed } = useReading();
 
   const readySentences = sentences.length === 0 ? [""] : sentences;
