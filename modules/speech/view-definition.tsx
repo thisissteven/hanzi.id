@@ -164,8 +164,14 @@ export function DefinitionModal({
                 <p className={cn(fontSize.className, "mt-1 leading-[30px]")}>
                   {sections?.map((section, index) => {
                     const isLastIndex = sections.length - 1 === index;
-                    const additionalPunctuation =
-                      !isLastIndex && sections[index + 1].isPunctuation && sections[index + 1].simplified;
+
+                    let additionalPunctuation = "";
+                    let nextIndex = index + 1;
+
+                    while (nextIndex < sections.length && sections[nextIndex].isPunctuation && !isLastIndex) {
+                      additionalPunctuation += sections[nextIndex].simplified;
+                      nextIndex++;
+                    }
                     if (section.isPunctuation && index > 0) return null;
                     return (
                       <span
