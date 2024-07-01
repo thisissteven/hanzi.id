@@ -5,9 +5,10 @@ import Link from "next/link";
 import { HSKLevelItems } from "./HSKLevelItems";
 import { usePathname } from "next/navigation";
 import * as React from "react";
-import { ChangeLocaleButton, Drawer } from "@/components";
+import { ChangeLocaleButton, ChangeSimplifiedTraditional, Drawer } from "@/components";
 import { useRouter } from "next/router";
 import { useLocale } from "@/locales/use-locale";
+import { toast } from "sonner";
 
 const levelToHanzi = (level: string) => {
   switch (level) {
@@ -39,20 +40,25 @@ export function DesktopSidebar() {
 
   return (
     <div className="max-md:hidden border-r border-r-secondary/10">
-      <aside className="px-4 pb-4 pt-20 z-10 sticky top-0 h-[calc(100dvh-3.5rem)] overflow-y-auto min-w-64">
+      <aside className="px-4 pb-4 pt-20 z-10 sticky top-0 h-[calc(100dvh-7rem)] overflow-y-auto min-w-64">
         <ul className="space-y-1">
           <HSKLevelItems />
         </ul>
       </aside>
-      <div className="flex items-end gap-2 ml-6">
-        <ChangeLocaleButton />
-        <a
-          href="https://pandarin.net/latihan-ujian-hsk/"
-          target="_blank"
-          className="inline-block relative z-10 hover:underline underline-offset-4 pl-4 pr-5 py-2 border border-secondary/10 bg-softblack w-fit rounded-md"
-        >
-          {t.practice} &#8594;
-        </a>
+      <div className="ml-6 space-y-2 pt-3 max-w-[180px]">
+        <div className="flex gap-2">
+          <ChangeSimplifiedTraditional />
+          <ChangeLocaleButton />
+        </div>
+        <div className="flex items-end gap-2">
+          <a
+            href="https://pandarin.net/latihan-ujian-hsk/"
+            target="_blank"
+            className="inline-block relative z-10 hover:underline underline-offset-4 pl-4 pr-5 py-2 border border-secondary/10 bg-softblack w-fit rounded-md flex-1 text-center"
+          >
+            {t.practice} &#8594;
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -71,7 +77,12 @@ export function MobileSidebar() {
     <div className="md:hidden">
       <Drawer>
         <Drawer.Trigger asChild>
-          <button className="w-14 h-14 active:max-sm:translate-y-1 border-b border-secondary/10 bg-softblack backdrop-blur-sm text-smokewhite max-sm:active:bg-softblack/40 group font-medium duration-200 sm:border-black sm:h-full sm:w-16 sm:h-15 sm:bg-black sm:-mr-2 sm:p-1">
+          <button
+            onClick={() => {
+              toast.dismiss("last-viewed-hanzi");
+            }}
+            className="w-14 h-14 active:max-sm:translate-y-1 border-b border-secondary/10 bg-softblack backdrop-blur-sm text-smokewhite max-sm:active:bg-softblack/40 group font-medium duration-200 sm:border-black sm:h-full sm:w-16 sm:h-15 sm:bg-black sm:-mr-2 sm:p-1"
+          >
             <div className="group-active:sm:translate-y-1 sm:bg-softblack sm:h-full sm:flex sm:flex-col sm:items-center sm:justify-center sm:border-b sm:border-b-secondary/10 duration-200">
               <div className="text-[10px] -mb-1">HSK</div>
               <div className="text-base font-medium">{levelToHanzi(level)}</div>
@@ -83,6 +94,7 @@ export function MobileSidebar() {
           <aside className="relative max-h-[calc(100dvh-2rem)] pt-2 overflow-y-auto scrollbar-none">
             <ul className="space-y-2 pb-2">
               <li className="flex justify-center gap-2 py-1">
+                <ChangeSimplifiedTraditional />
                 <ChangeLocaleButton />
                 <a
                   href="https://pandarin.net/latihan-ujian-hsk/"

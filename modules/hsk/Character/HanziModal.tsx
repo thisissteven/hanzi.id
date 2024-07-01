@@ -12,7 +12,6 @@ import clsx from "clsx";
 import { Level } from "@/data";
 import { useAudio } from "@/modules/layout";
 import { motion, AnimatePresence } from "framer-motion";
-import { toast } from "sonner";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -83,8 +82,6 @@ export function HanziModal() {
             router.back();
           }
           stopAudio();
-        } else {
-          toast.dismiss("last-viewed-hanzi");
         }
       }}
     >
@@ -118,7 +115,6 @@ export function HanziModal() {
           checkmarkClassName="w-8 h-8"
           isCompleted={Boolean(isCompleted)}
           onClick={() => {
-            console.log(currentLevel, currentHanziId);
             if (isCompleted) {
               removeCompletedCharacters(currentLevel, currentHanziId);
             } else {

@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import * as React from "react";
 import Head from "next/head";
 import { useCompletedCharacters, useCompletedCharactersActions } from "@/store";
-import { CharacterCard, Pagination, CharacterRow, Locale } from "@/components";
+import { CharacterCard, Pagination, CharacterRow, Locale, usePreferences } from "@/components";
 import { MobileSidebar, HanziModal } from "@/modules/hsk";
 import { useWindowSize } from "@/hooks";
 
@@ -141,6 +141,8 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
 
   const router = useRouter();
 
+  const { isSimplified } = usePreferences();
+
   return (
     <>
       <Head>
@@ -158,6 +160,7 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
               if (width > 640) {
                 return (
                   <CharacterCard
+                    character={isSimplified ? character.hanzi : character.traditional}
                     locale={router.locale as Locale}
                     hanziHref={`/hsk/${props.currentLevel}/?hanzi=${character.hanzi}&id=${character.id}&page=${currentPage}`}
                     isFlipped={flippedCard === character.id}
@@ -184,6 +187,7 @@ export default function Page(props: InferGetStaticPropsType<typeof getStaticProp
 
               return (
                 <CharacterRow
+                  character={isSimplified ? character.hanzi : character.traditional}
                   onClick={() =>
                     router.push(
                       `/hsk/${props.currentLevel}/?hanzi=${character.hanzi}&id=${character.id}&page=${currentPage}`,

@@ -12,3 +12,4 @@ export * from "./text-marquee";
 export * from "./like-button";
 export * from "./load-more";
 export * from "./change-locale-button";
+export * from "./change-sim-trad";

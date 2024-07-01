@@ -1,12 +1,14 @@
 import React from "react";
 import { HanziApiResponse } from "../types";
-import { Popover, Drawer } from "@/components";
+import { Popover, Drawer, usePreferences } from "@/components";
 import clsx from "clsx";
 import { useWindowSize } from "@/hooks";
 
 export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: HanziApiResponse["related"] }) {
   const { width } = useWindowSize();
   const isMobile = width < 640;
+
+  const { isSimplified } = usePreferences();
 
   if (!related) return null;
 
@@ -26,7 +28,9 @@ export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: Hanzi
               return (
                 <li key={index} className="list-none">
                   <Popover>
-                    <Popover.Trigger className="text-left sm:text-lg font-medium">{hanzi.simplified}</Popover.Trigger>
+                    <Popover.Trigger className="text-left sm:text-lg font-medium">
+                      {isSimplified ? hanzi.simplified : hanzi.traditional}
+                    </Popover.Trigger>
                     <Popover.Content
                       align="start"
                       className="text-xs sm:text-sm leading-5 text-smokewhite px-2 max-w-[calc(100vw-1rem)] md:max-w-[calc(540px-1rem)]"

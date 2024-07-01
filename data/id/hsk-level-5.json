@@ -6,7 +6,8 @@
     "translations": [
       "untuk menghibur",
       "menghibur"
-    ]
+    ],
+    "traditional": "安慰"
   },
   {
     "id": "3247",
@@ -17,7 +18,8 @@
       "pantai",
       "pantai",
       "pesisir"
-    ]
+    ],
+    "traditional": "岸"
   },
   {
     "id": "3248",
@@ -26,7 +28,8 @@
     "translations": [
       "ke darat",
       "di tepi sungai"
-    ]
+    ],
+    "traditional": "岸上"
   },
   {
     "id": "3249",
@@ -35,7 +38,8 @@
     "translations": [
       "pijat",
       "untuk memijat"
-    ]
+    ],
+    "traditional": "按摩"
   },
   {
     "id": "3250",
@@ -50,7 +54,8 @@
       "menonjol (di atas level)",
       "untuk melampaui",
       "untuk meraih"
-    ]
+    ],
+    "traditional": "拔"
   },
   {
     "id": "3251",
@@ -58,7 +63,8 @@
     "pinyin": "bái jiǔ",
     "translations": [
       "Baijiu, roh yang biasanya disuling dari sorgum"
-    ]
+    ],
+    "traditional": "白酒"
   },
   {
     "id": "3252",
@@ -67,7 +73,8 @@
     "translations": [
       "untuk berkunjung",
       "untuk menghubungi"
-    ]
+    ],
+    "traditional": "拜訪"
   },
   {
     "id": "3253",
@@ -79,7 +86,8 @@
       "edisi",
       "Versi: kapan",
       "halaman"
-    ]
+    ],
+    "traditional": "版"
   },
   {
     "id": "3254",
@@ -88,7 +96,8 @@
     "translations": [
       "untuk memainkan peran",
       "untuk beraksi"
-    ]
+    ],
+    "traditional": "扮演"
   },
   {
     "id": "3255",
@@ -103,7 +112,8 @@
       "kuat",
       "luar biasa",
       "Classifier for Legs of A Relay Race"
-    ]
+    ],
+    "traditional": "棒"
   },
   {
     "id": "3256",
@@ -113,7 +123,8 @@
       "untuk mengelilingi",
       "untuk melingkari",
       "untuk hem masuk"
-    ]
+    ],
+    "traditional": "包圍"
   },
   {
     "id": "3257",
@@ -124,7 +135,8 @@
       "untuk mengemas",
       "untuk membungkus",
       "kemasan"
-    ]
+    ],
+    "traditional": "包裝"
   },
   {
     "id": "3258",
@@ -133,7 +145,8 @@
     "translations": [
       "mempertahankan",
       "untuk melindungi"
-    ]
+    ],
+    "traditional": "保衛"
   },
   {
     "id": "3259",
@@ -144,7 +157,8 @@
       "untuk menjaga perbaikan yang baik",
       "untuk mempertahankan",
       "pemeliharaan"
-    ]
+    ],
+    "traditional": "保養"
   },
   {
     "id": "3260",
@@ -153,7 +167,8 @@
     "translations": [
       "untuk membayar",
       "untuk membalasnya"
-    ]
+    ],
+    "traditional": "報答"
   },
   {
     "id": "3261",
@@ -162,7 +177,8 @@
     "translations": [
       "untuk membunyikan alarm",
       "untuk melaporkan STH ke polisi"
-    ]
+    ],
+    "traditional": "報警"
   },
   {
     "id": "3262",
@@ -173,7 +189,8 @@
       "untuk menggerutu",
       "untuk menyimpan keluhan",
       "merasa tidak puas"
-    ]
+    ],
+    "traditional": "抱怨"
   },
   {
     "id": "3263",
@@ -185,7 +202,8 @@
       "Paket Infanteri",
       "Paket Lapangan",
       "Selimut Roll"
-    ]
+    ],
+    "traditional": "背包"
   },
   {
     "id": "3264",
@@ -193,7 +211,8 @@
     "pinyin": "bēi jù",
     "translations": [
       "tragedi"
-    ]
+    ],
+    "traditional": "悲劇"
   },
   {
     "id": "3265",
@@ -202,7 +221,8 @@
     "translations": [
       "sedih",
       "sedih"
-    ]
+    ],
+    "traditional": "悲傷"
   },
   {
     "id": "3266",
@@ -212,7 +232,8 @@
       "kutub Utara",
       "Kutub Arktik",
       "Kutub Magnet Utara"
-    ]
+    ],
+    "traditional": "北極"
   },
   {
     "id": "3267",
@@ -220,7 +241,8 @@
     "pinyin": "bèi dòng",
     "translations": [
       "pasif"
-    ]
+    ],
+    "traditional": "被動"
   },
   {
     "id": "3268",
@@ -233,7 +255,8 @@
       "kelas",
       "Klasifikasi untuk generasi",
       "(Sastra) Klasifikasi untuk orang"
-    ]
+    ],
+    "traditional": "輩"
   },
   {
     "id": "3269",
@@ -246,7 +269,8 @@
       "saya sendiri",
       "secara langsung",
       "pribadi"
-    ]
+    ],
+    "traditional": "本人"
   },
   {
     "id": "3270",
@@ -254,7 +278,8 @@
     "pinyin": "bí zi",
     "translations": [
       "hidung"
-    ]
+    ],
+    "traditional": "鼻子"
   },
   {
     "id": "3271",
@@ -264,7 +289,8 @@
       "analogi",
       "contoh",
       "contohnya"
-    ]
+    ],
+    "traditional": "比方"
   },
   {
     "id": "3272",
@@ -273,7 +299,8 @@
     "translations": [
       "proporsi",
       "berat jenis"
-    ]
+    ],
+    "traditional": "比重"
   },
   {
     "id": "3273",
@@ -282,7 +309,8 @@
     "translations": [
       "satu sama lain",
       "satu sama lain"
-    ]
+    ],
+    "traditional": "彼此"
   },
   {
     "id": "3274",
@@ -293,7 +321,8 @@
       "harus",
       "akan",
       "perlu"
-    ]
+    ],
+    "traditional": "必"
   },
   {
     "id": "3275",
@@ -304,7 +333,8 @@
       "membutuhkan",
       "penting",
       "sangat diperlukan"
-    ]
+    ],
+    "traditional": "必需"
   },
   {
     "id": "3276",
@@ -315,7 +345,8 @@
       "semua seutuhnya",
       "ketika semuanya sudah dikatakan dan selesai",
       "dalam analisis akhir"
-    ]
+    ],
+    "traditional": "畢竟"
   },
   {
     "id": "3277",
@@ -325,7 +356,8 @@
       "Tirai jatuh",
       "Turunkan tirai",
       "untuk berakhir (rapat)"
-    ]
+    ],
+    "traditional": "閉幕"
   },
   {
     "id": "3278",
@@ -333,7 +365,8 @@
     "pinyin": "bì mù shì",
     "translations": [
       "upacara penutupan"
-    ]
+    ],
+    "traditional": "閉幕式"
   },
   {
     "id": "3279",
@@ -342,7 +375,8 @@
     "translations": [
       "perbatasan",
       "berbatasan"
-    ]
+    ],
+    "traditional": "邊境"
   },
   {
     "id": "3280",
@@ -353,7 +387,8 @@
       "untuk mengkompilasi",
       "editor",
       "penyusun"
-    ]
+    ],
+    "traditional": "編輯"
   },
   {
     "id": "3281",
@@ -364,7 +399,8 @@
       "untuk mengkompilasi",
       "editor",
       "penyusun"
-    ]
+    ],
+    "traditional": "編輯"
   },
   {
     "id": "3282",
@@ -375,7 +411,8 @@
       "untuk berfluktuasi",
       "mengubah",
       "fluktuasi"
-    ]
+    ],
+    "traditional": "變動"
   },
   {
     "id": "3283",
@@ -385,7 +422,8 @@
       "nyaman",
       "mudah",
       "untuk memfasilitasi"
-    ]
+    ],
+    "traditional": "便利"
   },
   {
     "id": "3284",
@@ -393,7 +431,8 @@
     "pinyin": "biàn tiáo",
     "translations": [
       "(Informal) Catatan"
-    ]
+    ],
+    "traditional": "便條"
   },
   {
     "id": "3285",
@@ -402,7 +441,8 @@
     "translations": [
       "mudah untuk",
       "nyaman untuk"
-    ]
+    ],
+    "traditional": "便於"
   },
   {
     "id": "3286",
@@ -412,7 +452,8 @@
       "rumah tamu",
       "mengajukan",
       "hotel"
-    ]
+    ],
+    "traditional": "賓館"
   },
   {
     "id": "3287",
@@ -423,7 +464,8 @@
       "Kue kering",
       "kue",
       "kue-kue"
-    ]
+    ],
+    "traditional": "餅"
   },
   {
     "id": "3288",
@@ -433,7 +475,8 @@
       "biskuit",
       "cracker",
       "Kue kering"
-    ]
+    ],
+    "traditional": "餅乾"
   },
   {
     "id": "3289",
@@ -441,7 +484,8 @@
     "pinyin": "bìng dú",
     "translations": [
       "virus"
-    ]
+    ],
+    "traditional": "病毒"
   },
   {
     "id": "3290",
@@ -450,7 +494,8 @@
     "translations": [
       "kaca",
       "(bahasa gaul) homoseksual pria"
-    ]
+    ],
+    "traditional": "玻璃"
   },
   {
     "id": "3291",
@@ -460,7 +505,8 @@
       "Blog (Loanword)",
       "weblog",
       "Blogger"
-    ]
+    ],
+    "traditional": "部落格"
   },
   {
     "id": "3292",
@@ -469,7 +515,8 @@
     "translations": [
       "eksposisi",
       "Pameran Internasional"
-    ]
+    ],
+    "traditional": "博覽會"
   },
   {
     "id": "3293",
@@ -479,7 +526,8 @@
       "dokter",
       "Akademisi Pengadilan (di Tiongkok Feodal)",
       "PH.D."
-    ]
+    ],
+    "traditional": "博士"
   },
   {
     "id": "3294",
@@ -487,7 +535,8 @@
     "pinyin": "bó wù guǎn",
     "translations": [
       "museum"
-    ]
+    ],
+    "traditional": "博物館"
   },
   {
     "id": "3295",
@@ -496,7 +545,8 @@
     "translations": [
       "lemah",
       "lemah"
-    ]
+    ],
+    "traditional": "薄弱"
   },
   {
     "id": "3296",
@@ -505,7 +555,8 @@
     "translations": [
       "meskipun",
       "terlepas dari"
-    ]
+    ],
+    "traditional": "不顧"
   },
   {
     "id": "3297",
@@ -516,7 +567,8 @@
       "tidak menguntungkan",
       "berbahaya",
       "merugikan"
-    ]
+    ],
+    "traditional": "不利"
   },
   {
     "id": "3298",
@@ -525,7 +577,8 @@
     "translations": [
       "ketidaksabaran",
       "tidak sabar"
-    ]
+    ],
+    "traditional": "不耐煩"
   },
   {
     "id": "3299",
@@ -537,7 +590,8 @@
       "malang",
       "sedih",
       "Sayangnya"
-    ]
+    ],
+    "traditional": "不幸"
   },
   {
     "id": "3300",
@@ -547,7 +601,8 @@
       "Tidak mudah dilakukan STH",
       "sulit",
       "tidak berubah"
-    ]
+    ],
+    "traditional": "不易"
   },
   {
     "id": "3301",
@@ -556,7 +611,8 @@
     "translations": [
       "untuk mengkompensasi",
       "untuk membuat"
-    ]
+    ],
+    "traditional": "補償"
   },
   {
     "id": "3302",
@@ -568,7 +624,8 @@
       "uang saku",
       "untuk melengkapi (gaji seseorang dll)",
       "keuntungan"
-    ]
+    ],
+    "traditional": "補貼"
   },
   {
     "id": "3303",
@@ -577,7 +634,8 @@
     "translations": [
       "Belum",
       "Belum pernah"
-    ]
+    ],
+    "traditional": "不曾"
   },
   {
     "id": "3304",
@@ -588,7 +646,8 @@
       "bencana",
       "sangat",
       "sangat"
-    ]
+    ],
+    "traditional": "不得了"
   },
   {
     "id": "3305",
@@ -598,7 +657,8 @@
       "Lit. Saya tidak berani (menerima kehormatan)",
       "ara. Saya tidak pantas menerima pujian Anda",
       "kamu merayuku"
-    ]
+    ],
+    "traditional": "不敢當"
   },
   {
     "id": "3306",
@@ -608,7 +668,8 @@
       "buruk",
       "berbahaya",
       "tidak sehat"
-    ]
+    ],
+    "traditional": "不良"
   },
   {
     "id": "3307",
@@ -616,7 +677,8 @@
     "pinyin": "bù miǎn",
     "translations": [
       "mau tidak mau"
-    ]
+    ],
+    "traditional": "不免"
   },
   {
     "id": "3308",
@@ -625,7 +687,8 @@
     "translations": [
       "harus",
       "tidak bisa tetapi"
-    ]
+    ],
+    "traditional": "不能不"
   },
   {
     "id": "3309",
@@ -636,7 +699,8 @@
       "sekarang dan nanti",
       "kadang-kadang",
       "sering"
-    ]
+    ],
+    "traditional": "不時"
   },
   {
     "id": "3310",
@@ -644,7 +708,8 @@
     "pinyin": "bù tíng",
     "translations": [
       "tak henti-hentinya"
-    ]
+    ],
+    "traditional": "不停"
   },
   {
     "id": "3311",
@@ -654,7 +719,8 @@
       "bukan untuk mengizinkan",
       "tidak harus",
       "tidak bisa"
-    ]
+    ],
+    "traditional": "不許"
   },
   {
     "id": "3312",
@@ -665,7 +731,8 @@
       "tanpa akhir",
       "lebih dari",
       "tidak terbatas pada"
-    ]
+    ],
+    "traditional": "不止"
   },
   {
     "id": "3313",
@@ -680,7 +747,8 @@
       "tidak layak",
       "tidak bisa",
       "jangan"
-    ]
+    ],
+    "traditional": "不足"
   },
   {
     "id": "3314",
@@ -689,7 +757,8 @@
     "translations": [
       "posisi",
       "tempat"
-    ]
+    ],
+    "traditional": "部位"
   },
   {
     "id": "3315",
@@ -697,7 +766,8 @@
     "pinyin": "cāi",
     "translations": [
       "menebak"
-    ]
+    ],
+    "traditional": "猜"
   },
   {
     "id": "3316",
@@ -707,7 +777,8 @@
       "menebak",
       "untuk dugaan",
       "untuk menduga"
-    ]
+    ],
+    "traditional": "猜測"
   },
   {
     "id": "3317",
@@ -719,7 +790,8 @@
       "wasit",
       "hakim",
       "wasit"
-    ]
+    ],
+    "traditional": "裁判"
   },
   {
     "id": "3318",
@@ -728,7 +800,8 @@
     "translations": [
       "untuk mendapatkan (untuk perusahaan dll)",
       "untuk membeli"
-    ]
+    ],
+    "traditional": "採購"
   },
   {
     "id": "3319",
@@ -736,7 +809,8 @@
     "pinyin": "cǎi piào",
     "translations": [
       "tiket lotere"
-    ]
+    ],
+    "traditional": "彩票"
   },
   {
     "id": "3320",
@@ -744,7 +818,8 @@
     "pinyin": "cān guǎn",
     "translations": [
       "restoran"
-    ]
+    ],
+    "traditional": "餐館"
   },
   {
     "id": "3321",
@@ -754,7 +829,8 @@
       "ruang makan",
       "ruang makan",
       "restoran"
-    ]
+    ],
+    "traditional": "餐廳"
   },
   {
     "id": "3322",
@@ -764,7 +840,8 @@
       "makanan dan minuman",
       "katering",
       "santapan"
-    ]
+    ],
+    "traditional": "餐飲"
   },
   {
     "id": "3323",
@@ -773,7 +850,8 @@
     "translations": [
       "padang rumput",
       "padang rumput"
-    ]
+    ],
+    "traditional": "草原"
   },
   {
     "id": "3324",
@@ -783,7 +861,8 @@
       "buku",
       "buku kecil",
       "Klasifikasi untuk buku"
-    ]
+    ],
+    "traditional": "冊"
   },
   {
     "id": "3325",
@@ -795,7 +874,8 @@
       "gradasi",
       "pengaturan ide",
       "(seseorang) berdiri"
-    ]
+    ],
+    "traditional": "層次"
   },
   {
     "id": "3326",
@@ -809,7 +889,8 @@
       "menyeberang",
       "memotong",
       "\"X\""
-    ]
+    ],
+    "traditional": "叉"
   },
   {
     "id": "3327",
@@ -817,7 +898,8 @@
     "pinyin": "chā zi",
     "translations": [
       "garpu"
-    ]
+    ],
+    "traditional": "叉子"
   },
   {
     "id": "3328",
@@ -827,7 +909,8 @@
       "perbedaan",
       "perbedaan",
       "perbedaan"
-    ]
+    ],
+    "traditional": "差別"
   },
   {
     "id": "3329",
@@ -836,7 +919,8 @@
     "translations": [
       "perbedaan",
       "celah"
-    ]
+    ],
+    "traditional": "差距"
   },
   {
     "id": "3330",
@@ -849,7 +933,8 @@
       "untuk mengambil bagian",
       "untuk mengganggu",
       "untuk interpose"
-    ]
+    ],
+    "traditional": "插"
   },
   {
     "id": "3331",
@@ -861,7 +946,8 @@
       "untuk berkonsultasi (dokumen dll)",
       "pertanyaan",
       "pertanyaan"
-    ]
+    ],
+    "traditional": "查詢"
   },
   {
     "id": "3332",
@@ -869,7 +955,8 @@
     "pinyin": "chà diǎn r",
     "translations": [
       "Varian Erhua dari 差點 | 差点 [chà diǎn]"
-    ]
+    ],
+    "traditional": "差點兒"
   },
   {
     "id": "3333",
@@ -880,7 +967,8 @@
       "untuk meruntuhkan",
       "untuk merobek",
       "membuka"
-    ]
+    ],
+    "traditional": "拆"
   },
   {
     "id": "3334",
@@ -891,7 +979,8 @@
       "untuk menghancurkan",
       "untuk membongkar",
       "untuk menghapus"
-    ]
+    ],
+    "traditional": "拆除"
   },
   {
     "id": "3335",
@@ -902,7 +991,8 @@
       "perkebunan",
       "Properti",
       "industri"
-    ]
+    ],
+    "traditional": "產業"
   },
   {
     "id": "3336",
@@ -910,7 +1000,8 @@
     "pinyin": "cháng dù",
     "translations": [
       "panjang"
-    ]
+    ],
+    "traditional": "長度"
   },
   {
     "id": "3337",
@@ -920,7 +1011,8 @@
       "umur panjang",
       "Kemampuan untuk hidup lama",
       "lama hidup"
-    ]
+    ],
+    "traditional": "長壽"
   },
   {
     "id": "3338",
@@ -928,7 +1020,8 @@
     "pinyin": "cháng",
     "translations": [
       "usus"
-    ]
+    ],
+    "traditional": "腸"
   },
   {
     "id": "3339",
@@ -941,7 +1034,8 @@
       "sudah",
       "pernah",
       "sekali"
-    ]
+    ],
+    "traditional": "嘗"
   },
   {
     "id": "3340",
@@ -950,7 +1044,8 @@
     "translations": [
       "untuk mencoba",
       "untuk mencoba"
-    ]
+    ],
+    "traditional": "嘗試"
   },
   {
     "id": "3341",
@@ -958,7 +1053,8 @@
     "pinyin": "chǎng zhǎng",
     "translations": [
       "Direktur Pabrik"
-    ]
+    ],
+    "traditional": "廠長"
   },
   {
     "id": "3342",
@@ -969,7 +1065,8 @@
       "tontonan",
       "kesempatan",
       "situasi"
-    ]
+    ],
+    "traditional": "場面"
   },
   {
     "id": "3343",
@@ -980,7 +1077,8 @@
       "untuk memulai",
       "Melamar",
       "menjadi pendukung (ide atau sekolah pemikiran)"
-    ]
+    ],
+    "traditional": "倡導"
   },
   {
     "id": "3344",
@@ -990,7 +1088,8 @@
       "untuk melampaui",
       "melebihi",
       "untuk melampaui"
-    ]
+    ],
+    "traditional": "超越"
   },
   {
     "id": "3345",
@@ -998,7 +1097,8 @@
     "pinyin": "chē zhǔ",
     "translations": [
       "pemilik kendaraan"
-    ]
+    ],
+    "traditional": "車主"
   },
   {
     "id": "3346",
@@ -1008,7 +1108,8 @@
       "Menimbang",
       "untuk menyatakan",
       "untuk nama"
-    ]
+    ],
+    "traditional": "稱"
   },
   {
     "id": "3347",
@@ -1018,7 +1119,8 @@
       "nama",
       "istilah alamat",
       "judul"
-    ]
+    ],
+    "traditional": "稱號"
   },
   {
     "id": "3348",
@@ -1026,7 +1128,8 @@
     "pinyin": "chéng běn",
     "translations": [
       "(manufaktur, produksi dll) biaya"
-    ]
+    ],
+    "traditional": "成本"
   },
   {
     "id": "3349",
@@ -1035,7 +1138,8 @@
     "translations": [
       "Untuk menyelesaikan kontrak",
       "untuk mencapai kesepakatan"
-    ]
+    ],
+    "traditional": "成交"
   },
   {
     "id": "3350",
@@ -1044,7 +1148,8 @@
     "translations": [
       "memengaruhi",
       "hasil"
-    ]
+    ],
+    "traditional": "成效"
   },
   {
     "id": "3351",
@@ -1056,7 +1161,8 @@
       "pepatah",
       "pepatah",
       "pepatah"
-    ]
+    ],
+    "traditional": "成語"
   },
   {
     "id": "3352",
@@ -1065,7 +1171,8 @@
     "translations": [
       "untuk melakukan",
       "untuk menerima kontrak"
-    ]
+    ],
+    "traditional": "承辦"
   },
   {
     "id": "3353",
@@ -1073,7 +1180,8 @@
     "pinyin": "chéng lǐ",
     "translations": [
       "di kota"
-    ]
+    ],
+    "traditional": "城裡"
   },
   {
     "id": "3354",
@@ -1087,7 +1195,8 @@
       "memanfaatkan",
       "untuk berkembang biak (matematika.)",
       "Sekte atau kepercayaan Buddhis"
-    ]
+    ],
+    "traditional": "乘"
   },
   {
     "id": "3355",
@@ -1097,7 +1206,8 @@
       "naik (di dalam mobil atau kereta)",
       "mengemudi",
       "ke motor"
-    ]
+    ],
+    "traditional": "乘車"
   },
   {
     "id": "3356",
@@ -1105,7 +1215,8 @@
     "pinyin": "chéng kè",
     "translations": [
       "penumpang"
-    ]
+    ],
+    "traditional": "乘客"
   },
   {
     "id": "3357",
@@ -1113,7 +1224,8 @@
     "pinyin": "chéng zuò",
     "translations": [
       "naik (di dalam kendaraan)"
-    ]
+    ],
+    "traditional": "乘坐"
   },
   {
     "id": "3358",
@@ -1125,7 +1237,8 @@
       "berat",
       "melelahkan",
       "tekanan"
-    ]
+    ],
+    "traditional": "吃力"
   },
   {
     "id": "3359",
@@ -1136,7 +1249,8 @@
       "kolam pemandian",
       "lantai dansa ballroom",
       "Kios (Lama) (baris depan di teater)"
-    ]
+    ],
+    "traditional": "池子"
   },
   {
     "id": "3360",
@@ -1146,7 +1260,8 @@
       "terlambat",
       "terlambat",
       "lambat"
-    ]
+    ],
+    "traditional": "遲"
   },
   {
     "id": "3361",
@@ -1157,7 +1272,8 @@
       "menjadi terburu-buru",
       "impuls",
       "keinginan"
-    ]
+    ],
+    "traditional": "衝動"
   },
   {
     "id": "3362",
@@ -1169,7 +1285,8 @@
       "bentrokan",
       "tabrakan (yang menarik)",
       "pendapat"
-    ]
+    ],
+    "traditional": "衝突"
   },
   {
     "id": "3363",
@@ -1179,7 +1296,8 @@
       "memadai",
       "memadai",
       "melimpah"
-    ]
+    ],
+    "traditional": "充足"
   },
   {
     "id": "3364",
@@ -1187,7 +1305,8 @@
     "pinyin": "chóu",
     "translations": [
       "untuk mengkhawatirkan"
-    ]
+    ],
+    "traditional": "愁"
   },
   {
     "id": "3365",
@@ -1197,7 +1316,8 @@
       "memalukan",
       "jelek",
       "memalukan"
-    ]
+    ],
+    "traditional": "醜"
   },
   {
     "id": "3366",
@@ -1214,7 +1334,8 @@
       "sangat besar",
       "dengan kejam",
       "Dud (amunisi)"
-    ]
+    ],
+    "traditional": "臭"
   },
   {
     "id": "3367",
@@ -1222,7 +1343,8 @@
     "pinyin": "chū bǎn",
     "translations": [
       "untuk menerbitkan"
-    ]
+    ],
+    "traditional": "出版"
   },
   {
     "id": "3368",
@@ -1230,7 +1352,8 @@
     "pinyin": "chū chāi",
     "translations": [
       "untuk melakukan perjalanan resmi atau bisnis"
-    ]
+    ],
+    "traditional": "出差"
   },
   {
     "id": "3369",
@@ -1239,7 +1362,8 @@
     "translations": [
       "untuk berkeringat",
       "untuk berkeringat"
-    ]
+    ],
+    "traditional": "出汗"
   },
   {
     "id": "3370",
@@ -1248,7 +1372,8 @@
     "translations": [
       "karena",
       "untuk berasal dari"
-    ]
+    ],
+    "traditional": "出於"
   },
   {
     "id": "3371",
@@ -1257,7 +1382,8 @@
     "translations": [
       "tahap awal",
       "periode awal"
-    ]
+    ],
+    "traditional": "初期"
   },
   {
     "id": "3372",
@@ -1268,7 +1394,8 @@
       "hanya bila",
       "hanya dalam kasus itu",
       "kecuali"
-    ]
+    ],
+    "traditional": "除非"
   },
   {
     "id": "3373",
@@ -1276,7 +1403,8 @@
     "pinyin": "chú xī",
     "translations": [
       "Malam Tahun Baru Imlek"
-    ]
+    ],
+    "traditional": "除夕"
   },
   {
     "id": "3374",
@@ -1284,7 +1412,8 @@
     "pinyin": "chú fáng",
     "translations": [
       "dapur"
-    ]
+    ],
+    "traditional": "廚房"
   },
   {
     "id": "3375",
@@ -1293,7 +1422,8 @@
     "translations": [
       "untuk menghukum",
       "untuk menghukum"
-    ]
+    ],
+    "traditional": "處罰"
   },
   {
     "id": "3376",
@@ -1304,7 +1434,8 @@
       "untuk menghukum",
       "tindakan disipliner",
       "untuk berurusan dengan (masalah)"
-    ]
+    ],
+    "traditional": "處分"
   },
   {
     "id": "3377",
@@ -1313,7 +1444,8 @@
     "translations": [
       "untuk berada di",
       "untuk menemukan diri sendiri"
-    ]
+    ],
+    "traditional": "處在"
   },
   {
     "id": "3378",
@@ -1325,7 +1457,8 @@
       "untuk menyampaikan",
       "untuk mentransmisikan",
       "penularan"
-    ]
+    ],
+    "traditional": "傳達"
   },
   {
     "id": "3379",
@@ -1335,7 +1468,8 @@
       "untuk mentransmisikan",
       "untuk meneruskan ke SB lain",
       "(Matematika.) Transitif"
-    ]
+    ],
+    "traditional": "傳遞"
   },
   {
     "id": "3380",
@@ -1344,7 +1478,8 @@
     "translations": [
       "fax",
       "faksimil"
-    ]
+    ],
+    "traditional": "傳真"
   },
   {
     "id": "3381",
@@ -1352,7 +1487,8 @@
     "pinyin": "chuāng lián",
     "translations": [
       "Tirai jendela"
-    ]
+    ],
+    "traditional": "窗簾"
   },
   {
     "id": "3382",
@@ -1364,7 +1500,8 @@
       "untuk dasbor",
       "untuk menerobos",
       "untuk melemahkan diri (melalui melawan kesulitan)"
-    ]
+    ],
+    "traditional": "闖"
   },
   {
     "id": "3383",
@@ -1374,7 +1511,8 @@
       "untuk membangun",
       "untuk mengatur",
       "untuk ditemukan"
-    ]
+    ],
+    "traditional": "創立"
   },
   {
     "id": "3384",
@@ -1383,7 +1521,8 @@
     "translations": [
       "Kamus (kata-kata majemuk Cina)",
       "Juga ditulis 詞典 | 词典 [Cí diǎn]"
-    ]
+    ],
+    "traditional": "辭典"
   },
   {
     "id": "3385",
@@ -1391,7 +1530,8 @@
     "pinyin": "cí zhí",
     "translations": [
       "untuk mengundurkan diri"
-    ]
+    ],
+    "traditional": "辭職"
   },
   {
     "id": "3386",
@@ -1401,7 +1541,8 @@
       "sesudah ini",
       "setelah itu",
       "selanjutnya"
-    ]
+    ],
+    "traditional": "此後"
   },
   {
     "id": "3387",
@@ -1411,7 +1552,8 @@
       "saat ini",
       "Sekarang",
       "saat sekarang"
-    ]
+    ],
+    "traditional": "此刻"
   },
   {
     "id": "3388",
@@ -1420,7 +1562,8 @@
     "translations": [
       "Sekarang",
       "saat ini"
-    ]
+    ],
+    "traditional": "此時"
   },
   {
     "id": "3389",
@@ -1432,7 +1575,8 @@
       "terang",
       "cerdas",
       "akut (penglihatan dan pendengaran)"
-    ]
+    ],
+    "traditional": "聰明"
   },
   {
     "id": "3390",
@@ -1441,7 +1585,8 @@
     "translations": [
       "dengan demikian",
       "dengan demikian"
-    ]
+    ],
+    "traditional": "從而"
   },
   {
     "id": "3391",
@@ -1450,7 +1595,8 @@
     "translations": [
       "dari dalam",
       "darinya"
-    ]
+    ],
+    "traditional": "從中"
   },
   {
     "id": "3392",
@@ -1463,7 +1609,8 @@
       "garing",
       "Suara yang jernih dan keras",
       "rapi"
-    ]
+    ],
+    "traditional": "脆"
   },
   {
     "id": "3393",
@@ -1473,7 +1620,8 @@
       "untuk menyetor uang (di bank dll)",
       "tabungan bank",
       "deposit bank"
-    ]
+    ],
+    "traditional": "存款"
   },
   {
     "id": "3394",
@@ -1483,7 +1631,8 @@
       "satuan panjang",
       "inci",
       "ibu jari"
-    ]
+    ],
+    "traditional": "寸"
   },
   {
     "id": "3395",
@@ -1492,7 +1641,8 @@
     "translations": [
       "untuk mencapai (perjanjian)",
       "untuk mencapai"
-    ]
+    ],
+    "traditional": "達成"
   },
   {
     "id": "3396",
@@ -1504,7 +1654,8 @@
       "kembali",
       "menanggapi",
       "gema"
-    ]
+    ],
+    "traditional": "答"
   },
   {
     "id": "3397",
@@ -1514,7 +1665,8 @@
       "untuk menjawab",
       "membalas",
       "Balas ke: (di header email)"
-    ]
+    ],
+    "traditional": "答复"
   },
   {
     "id": "3398",
@@ -1523,7 +1675,8 @@
     "translations": [
       "sejak",
       "dari"
-    ]
+    ],
+    "traditional": "打"
   },
   {
     "id": "3399",
@@ -1536,7 +1689,8 @@
       "untuk menghiasi",
       "cara berpakaian",
       "Gaya pakaian"
-    ]
+    ],
+    "traditional": "打扮"
   },
   {
     "id": "3400",
@@ -1547,7 +1701,8 @@
       "untuk mengemas",
       "untuk meletakkan sisa makanan dalam tas doggy untuk dibawa pulang",
       "untuk paket (komputasi)"
-    ]
+    ],
+    "traditional": "打包"
   },
   {
     "id": "3401",
@@ -1561,7 +1716,8 @@
       "meniup",
       "kejutan (psikologis)",
       "Perkusi (musik)"
-    ]
+    ],
+    "traditional": "打擊"
   },
   {
     "id": "3402",
@@ -1571,7 +1727,8 @@
       "untuk bertarung",
       "untuk perkelahian",
       "Untuk datang untuk berhembus"
-    ]
+    ],
+    "traditional": "打架"
   },
   {
     "id": "3403",
@@ -1581,7 +1738,8 @@
       "mengganggu",
       "mengganggu",
       "masalah"
-    ]
+    ],
+    "traditional": "打擾"
   },
   {
     "id": "3404",
@@ -1594,7 +1752,8 @@
       "berani",
       "berani",
       "tak kenal takut"
-    ]
+    ],
+    "traditional": "大膽"
   },
   {
     "id": "3405",
@@ -1604,7 +1763,8 @@
       "sebagian besar",
       "secara keseluruhan",
       "juga pr. [Dà Du]"
-    ]
+    ],
+    "traditional": "大都"
   },
   {
     "id": "3406",
@@ -1615,7 +1775,8 @@
       "garis besar",
       "program",
       "prinsip-prinsip terkemuka"
-    ]
+    ],
+    "traditional": "大綱"
   },
   {
     "id": "3407",
@@ -1623,7 +1784,8 @@
     "pinyin": "dà huǒ r",
     "translations": [
       "Varian Erhua dari 大伙 [dà huǒ]"
-    ]
+    ],
+    "traditional": "大夥兒"
   },
   {
     "id": "3408",
@@ -1631,7 +1793,8 @@
     "pinyin": "dà jiǎng sài",
     "translations": [
       "Grand Prix, Kontes Hadiah Utama"
-    ]
+    ],
+    "traditional": "大獎賽"
   },
   {
     "id": "3409",
@@ -1640,7 +1803,8 @@
     "translations": [
       "otak",
       "otak besar"
-    ]
+    ],
+    "traditional": "大腦"
   },
   {
     "id": "3410",
@@ -1651,7 +1815,8 @@
       "peristiwa politik utama (perang atau perubahan rezim)",
       "Acara Sosial Utama (Pernikahan atau Pemakaman)",
       "(lakukan sth) secara besar-besaran"
-    ]
+    ],
+    "traditional": "大事"
   },
   {
     "id": "3411",
@@ -1660,7 +1825,8 @@
     "translations": [
       "aula",
       "ruang santai"
-    ]
+    ],
+    "traditional": "大廳"
   },
   {
     "id": "3412",
@@ -1668,7 +1834,8 @@
     "pinyin": "dà xiàng",
     "translations": [
       "gajah"
-    ]
+    ],
+    "traditional": "大象"
   },
   {
     "id": "3413",
@@ -1676,7 +1843,8 @@
     "pinyin": "dà xióng māo",
     "translations": [
       "Panda raksasa (Ailuropoda melanoleuca)"
-    ]
+    ],
+    "traditional": "大熊貓"
   },
   {
     "id": "3414",
@@ -1686,7 +1854,8 @@
       "lebih besar dari",
       "lebih besar dari",
       "lebih dari,>"
-    ]
+    ],
+    "traditional": "大於"
   },
   {
     "id": "3415",
@@ -1696,7 +1865,8 @@
       "lebih atau kurang",
       "dengan kasar",
       "sekitar"
-    ]
+    ],
+    "traditional": "大致"
   },
   {
     "id": "3416",
@@ -1708,7 +1878,8 @@
       "tanpa ekspresi",
       "kosong",
       "untuk tinggal"
-    ]
+    ],
+    "traditional": "呆"
   },
   {
     "id": "3417",
@@ -1716,7 +1887,8 @@
     "pinyin": "dāi",
     "translations": [
       "untuk tinggal"
-    ]
+    ],
+    "traditional": "待"
   },
   {
     "id": "3418",
@@ -1726,7 +1898,8 @@
       "harga",
       "biaya",
       "pertimbangan (dalam transaksi saham)"
-    ]
+    ],
+    "traditional": "代價"
   },
   {
     "id": "3419",
@@ -1737,7 +1910,8 @@
       "untuk bertindak sebagai agen atau proxy",
       "pengganti",
       "proxy (komputasi)"
-    ]
+    ],
+    "traditional": "代理"
   },
   {
     "id": "3420",
@@ -1746,7 +1920,8 @@
     "translations": [
       "memiliki",
       "melibatkan"
-    ]
+    ],
+    "traditional": "帶有"
   },
   {
     "id": "3421",
@@ -1756,7 +1931,8 @@
       "pinjaman",
       "untuk memberikan pinjaman (mis. Bank)",
       "untuk menaikkan pinjaman (dari mis. Bank)"
-    ]
+    ],
+    "traditional": "貸款"
   },
   {
     "id": "3422",
@@ -1766,7 +1942,8 @@
       "lajang",
       "hanya",
       "tunggal"
-    ]
+    ],
+    "traditional": "單一"
   },
   {
     "id": "3423",
@@ -1778,7 +1955,8 @@
       "nyali",
       "empedu",
       "wadah dalam (mis. Kandung kemih sepak bola, wadah dalam termos)"
-    ]
+    ],
+    "traditional": "膽"
   },
   {
     "id": "3424",
@@ -1787,7 +1965,8 @@
     "translations": [
       "pengecut",
       "pemalu"
-    ]
+    ],
+    "traditional": "膽小"
   },
   {
     "id": "3425",
@@ -1795,7 +1974,8 @@
     "pinyin": "dàn gāo",
     "translations": [
       "kue"
-    ]
+    ],
+    "traditional": "蛋糕"
   },
   {
     "id": "3426",
@@ -1804,7 +1984,8 @@
     "translations": [
       "di tempat kejadian",
       "di tempat"
-    ]
+    ],
+    "traditional": "當場"
   },
   {
     "id": "3427",
@@ -1813,7 +1994,8 @@
     "translations": [
       "usia saat ini",
       "era kontemporer"
-    ]
+    ],
+    "traditional": "當代"
   },
   {
     "id": "3428",
@@ -1824,7 +2006,8 @@
       "Kemudian",
       "di tahun-tahun itu",
       "Selama waktu itu"
-    ]
+    ],
+    "traditional": "當年"
   },
   {
     "id": "3429",
@@ -1836,7 +2019,8 @@
       "modern",
       "hadiah",
       "Menghadapi (AS)"
-    ]
+    ],
+    "traditional": "當前"
   },
   {
     "id": "3430",
@@ -1844,7 +2028,8 @@
     "pinyin": "dāng xuǎn",
     "translations": [
       "untuk dipilih"
-    ]
+    ],
+    "traditional": "當選"
   },
   {
     "id": "3431",
@@ -1859,7 +2044,8 @@
       "untuk menghalangi",
       "menutupi",
       "Gear (mis. Dalam transmisi mobil)"
-    ]
+    ],
+    "traditional": "擋"
   },
   {
     "id": "3432",
@@ -1869,7 +2055,8 @@
       "untuk tiba",
       "kedatangan",
       "kedatangan"
-    ]
+    ],
+    "traditional": "到來"
   },
   {
     "id": "3433",
@@ -1880,7 +2067,8 @@
       "Sebenarnya",
       "sebaliknya",
       "Mengapa tidak"
-    ]
+    ],
+    "traditional": "倒是"
   },
   {
     "id": "3434",
@@ -1890,7 +2078,8 @@
       "kebajikan",
       "moralitas",
       "etika"
-    ]
+    ],
+    "traditional": "道德"
   },
   {
     "id": "3435",
@@ -1899,7 +2088,8 @@
     "translations": [
       "Baiklah!",
       "cukup!"
-    ]
+    ],
+    "traditional": "得了"
   },
   {
     "id": "3436",
@@ -1912,7 +2102,8 @@
       "untuk",
       "Akhirnya dalam posisi untuk",
       "dengan sth di tampilan"
-    ]
+    ],
+    "traditional": "得以"
   },
   {
     "id": "3437",
@@ -1921,7 +2112,8 @@
     "translations": [
       "menunggu",
       "menunggu untuk"
-    ]
+    ],
+    "traditional": "等候"
   },
   {
     "id": "3438",
@@ -1931,7 +2123,8 @@
       "nilai",
       "pangkat",
       "status"
-    ]
+    ],
+    "traditional": "等級"
   },
   {
     "id": "3439",
@@ -1939,7 +2132,8 @@
     "pinyin": "dī yú",
     "translations": [
       "menjadi lebih rendah dari"
-    ]
+    ],
+    "traditional": "低於"
   },
   {
     "id": "3440",
@@ -1947,7 +2141,8 @@
     "pinyin": "dì dài",
     "translations": [
       "daerah"
-    ]
+    ],
+    "traditional": "地帶"
   },
   {
     "id": "3441",
@@ -1957,7 +2152,8 @@
       "topografi",
       "medan",
       "bentuk lahan"
-    ]
+    ],
+    "traditional": "地形"
   },
   {
     "id": "3442",
@@ -1965,7 +2161,8 @@
     "pinyin": "dì zhèn",
     "translations": [
       "gempa bumi"
-    ]
+    ],
+    "traditional": "地震"
   },
   {
     "id": "3443",
@@ -1976,7 +2173,8 @@
       "untuk meneruskan STH",
       "untuk bertambah atau berkurang secara bertahap",
       "secara progresif"
-    ]
+    ],
+    "traditional": "遞"
   },
   {
     "id": "3444",
@@ -1984,7 +2182,8 @@
     "pinyin": "dì gěi",
     "translations": [
       "untuk menyerahkannya"
-    ]
+    ],
+    "traditional": "遞給"
   },
   {
     "id": "3445",
@@ -1993,7 +2192,8 @@
     "translations": [
       "perayaan",
       "upacara"
-    ]
+    ],
+    "traditional": "典禮"
   },
   {
     "id": "3446",
@@ -2003,7 +2203,8 @@
       "untuk menyala",
       "untuk membakar",
       "terbakar"
-    ]
+    ],
+    "traditional": "點燃"
   },
   {
     "id": "3447",
@@ -2011,7 +2212,8 @@
     "pinyin": "diàn chí",
     "translations": [
       "baterai"
-    ]
+    ],
+    "traditional": "電池"
   },
   {
     "id": "3448",
@@ -2019,7 +2221,8 @@
     "pinyin": "diàn fàn guō",
     "translations": [
       "penanak nasi listrik"
-    ]
+    ],
+    "traditional": "電鍋"
   },
   {
     "id": "3449",
@@ -2027,7 +2230,8 @@
     "pinyin": "diàn zǐ bǎn",
     "translations": [
       "Edisi Elektronik, Versi Digital"
-    ]
+    ],
+    "traditional": "電子版"
   },
   {
     "id": "3450",
@@ -2039,7 +2243,8 @@
       "pergerakan personel",
       "untuk memobilisasi",
       "untuk dimainkan"
-    ]
+    ],
+    "traditional": "調動"
   },
   {
     "id": "3451",
@@ -2049,7 +2254,8 @@
       "kalah",
       "mengesampingkan",
       "untuk melempar"
-    ]
+    ],
+    "traditional": "丟"
   },
   {
     "id": "3452",
@@ -2061,7 +2267,8 @@
       "motif",
       "motivasi",
       "maksud"
-    ]
+    ],
+    "traditional": "動機"
   },
   {
     "id": "3453",
@@ -2072,7 +2279,8 @@
       "untuk memukul",
       "memukul",
       "menyentuh"
-    ]
+    ],
+    "traditional": "動手"
   },
   {
     "id": "3454",
@@ -2084,7 +2292,8 @@
       "perkembangan",
       "kecenderungan",
       "Dinamis (Sains)"
-    ]
+    ],
+    "traditional": "動態"
   },
   {
     "id": "3455",
@@ -2094,7 +2303,8 @@
       "untuk memobilisasi",
       "untuk membangkitkan",
       "mobilisasi"
-    ]
+    ],
+    "traditional": "動員"
   },
   {
     "id": "3456",
@@ -2104,7 +2314,8 @@
       "membekukan",
       "terasa sangat dingin",
       "Aspic atau Jelly"
-    ]
+    ],
+    "traditional": "凍"
   },
   {
     "id": "3457",
@@ -2114,7 +2325,8 @@
       "gua",
       "lubang",
       "nol (bentuk lisan yang tidak ambigu saat mengeja angka)"
-    ]
+    ],
+    "traditional": "洞"
   },
   {
     "id": "3458",
@@ -2122,7 +2334,8 @@
     "pinyin": "dòu zhì pǐn",
     "translations": [
       "produk kedelai"
-    ]
+    ],
+    "traditional": "豆製品"
   },
   {
     "id": "3459",
@@ -2136,7 +2349,8 @@
       "kejam",
       "garang",
       "narkotika"
-    ]
+    ],
+    "traditional": "毒"
   },
   {
     "id": "3460",
@@ -2150,7 +2364,8 @@
       "tumpukan",
       "tumpukan",
       "jumlah besar"
-    ]
+    ],
+    "traditional": "堆"
   },
   {
     "id": "3461",
@@ -2164,7 +2379,8 @@
       "kebalikan relatif",
       "lawan",
       "diametral"
-    ]
+    ],
+    "traditional": "對立"
   },
   {
     "id": "3462",
@@ -2177,7 +2393,8 @@
       "homolog",
       "cocok dengan STH",
       "mitra"
-    ]
+    ],
+    "traditional": "對應"
   },
   {
     "id": "3463",
@@ -2186,7 +2403,8 @@
     "translations": [
       "ton (kata pinjaman)",
       "Taiwan PR. [dùn]"
-    ]
+    ],
+    "traditional": "噸"
   },
   {
     "id": "3464",
@@ -2197,7 +2415,8 @@
       "cuping",
       "ara. Item di kedua sisi",
       "classifier untuk bunga, awan dll"
-    ]
+    ],
+    "traditional": "朵"
   },
   {
     "id": "3465",
@@ -2207,7 +2426,8 @@
       "untuk bersembunyi",
       "untuk menghindar",
       "menghindari"
-    ]
+    ],
+    "traditional": "躲"
   },
   {
     "id": "3466",
@@ -2216,7 +2436,8 @@
     "translations": [
       "anak-anak",
       "putra dan putri"
-    ]
+    ],
+    "traditional": "兒女"
   },
   {
     "id": "3467",
@@ -2225,7 +2446,8 @@
     "translations": [
       "telinga",
       "menangani (pada cangkir)"
-    ]
+    ],
+    "traditional": "耳朵"
   },
   {
     "id": "3468",
@@ -2234,7 +2456,8 @@
     "translations": [
       "Barcode dua dimensi",
       "Kode QR"
-    ]
+    ],
+    "traditional": "QR 圖碼"
   },
   {
     "id": "3469",
@@ -2245,7 +2468,8 @@
       "untuk menerbitkan",
       "untuk mengumumkan",
       "untuk mendistribusikan"
-    ]
+    ],
+    "traditional": "發布"
   },
   {
     "id": "3470",
@@ -2256,7 +2480,8 @@
       "untuk mendeteksi",
       "menyadari",
       "untuk memahami"
-    ]
+    ],
+    "traditional": "發覺"
   },
   {
     "id": "3471",
@@ -2270,7 +2495,8 @@
       "untuk keluar",
       "emanasi",
       "emisi"
-    ]
+    ],
+    "traditional": "發射"
   },
   {
     "id": "3472",
@@ -2281,7 +2507,8 @@
       "untuk mengeluarkan (saham, mata uang dll)",
       "untuk melepaskan",
       "untuk mendistribusikan (film)"
-    ]
+    ],
+    "traditional": "發行"
   },
   {
     "id": "3473",
@@ -2290,7 +2517,8 @@
     "translations": [
       "untuk menghukum",
       "untuk menghukum"
-    ]
+    ],
+    "traditional": "罰"
   },
   {
     "id": "3474",
@@ -2300,7 +2528,8 @@
       "untuk baik-baik saja",
       "penalti",
       "baik (moneter)"
-    ]
+    ],
+    "traditional": "罰款"
   },
   {
     "id": "3475",
@@ -2309,7 +2538,8 @@
     "translations": [
       "undang-undang",
       "undang-undang"
-    ]
+    ],
+    "traditional": "法規"
   },
   {
     "id": "3476",
@@ -2317,7 +2547,8 @@
     "pinyin": "fǎ zhì",
     "translations": [
       "Sistem dan Lembaga Hukum"
-    ]
+    ],
+    "traditional": "法制"
   },
   {
     "id": "3477",
@@ -2326,7 +2557,8 @@
     "translations": [
       "makmur",
       "Booming (Ekonomi)"
-    ]
+    ],
+    "traditional": "繁榮"
   },
   {
     "id": "3478",
@@ -2335,7 +2567,8 @@
     "translations": [
       "untuk dikembalikan ke",
       "untuk datang (atau pergi) kembali"
-    ]
+    ],
+    "traditional": "返回"
   },
   {
     "id": "3479",
@@ -2344,7 +2577,8 @@
     "translations": [
       "untuk mencegah dan menyembuhkan",
       "pencegahan dan penyembuhan"
-    ]
+    ],
+    "traditional": "防治"
   },
   {
     "id": "3480",
@@ -2353,7 +2587,8 @@
     "translations": [
       "untuk memperbesar",
       "untuk memperbesar"
-    ]
+    ],
+    "traditional": "放大"
   },
   {
     "id": "3481",
@@ -2363,7 +2598,8 @@
       "untuk meninggalkan",
       "untuk meninggalkan",
       "menyerah"
-    ]
+    ],
+    "traditional": "放棄"
   },
   {
     "id": "3482",
@@ -2375,7 +2611,8 @@
       "untuk menerobos",
       "persepuluh",
       "Persentase penjatahan"
-    ]
+    ],
+    "traditional": "分成"
   },
   {
     "id": "3483",
@@ -2385,7 +2622,8 @@
       "untuk menyelesaikan",
       "untuk membusuk",
       "untuk memecah"
-    ]
+    ],
+    "traditional": "分解"
   },
   {
     "id": "3484",
@@ -2393,7 +2631,8 @@
     "pinyin": "fēn lèi",
     "translations": [
       "klasifikasi"
-    ]
+    ],
+    "traditional": "分類"
   },
   {
     "id": "3485",
@@ -2401,7 +2640,8 @@
     "pinyin": "fēn lí",
     "translations": [
       "untuk memisahkan"
-    ]
+    ],
+    "traditional": "分離"
   },
   {
     "id": "3486",
@@ -2410,7 +2650,8 @@
     "translations": [
       "untuk menganalisa",
       "analisis"
-    ]
+    ],
+    "traditional": "分析"
   },
   {
     "id": "3487",
@@ -2418,7 +2659,8 @@
     "pinyin": "fēn xiǎng",
     "translations": [
       "untuk berbagi (biarkan orang lain memiliki beberapa sth bagus)"
-    ]
+    ],
+    "traditional": "分享"
   },
   {
     "id": "3488",
@@ -2426,7 +2668,8 @@
     "pinyin": "fēng shōu",
     "translations": [
       "Bumper Harvest"
-    ]
+    ],
+    "traditional": "豐收"
   },
   {
     "id": "3489",
@@ -2437,7 +2680,8 @@
       "Sikap elegan",
       "berkah",
       "sikap tenang"
-    ]
+    ],
+    "traditional": "風度"
   },
   {
     "id": "3490",
@@ -2452,7 +2696,8 @@
       "menjadi kaya",
       "Grand (dialek)",
       "mengesankan (dialek)"
-    ]
+    ],
+    "traditional": "風光"
   },
   {
     "id": "3491",
@@ -2464,7 +2709,8 @@
       "untuk memberikan judul",
       "menyegel",
       "Klasifikasi untuk objek yang disegel, esp. surat"
-    ]
+    ],
+    "traditional": "封"
   },
   {
     "id": "3492",
@@ -2474,7 +2720,8 @@
       "gila",
       "gila",
       "liar"
-    ]
+    ],
+    "traditional": "瘋"
   },
   {
     "id": "3493",
@@ -2484,7 +2731,8 @@
       "gila",
       "panik",
       "Popularitas ekstrem"
-    ]
+    ],
+    "traditional": "瘋狂"
   },
   {
     "id": "3494",
@@ -2495,7 +2743,8 @@
       "untuk membantu SB UP",
       "untuk mendukung diri sendiri dengan memegang sesuatu",
       "untuk membantu"
-    ]
+    ],
+    "traditional": "扶"
   },
   {
     "id": "3495",
@@ -2505,7 +2754,8 @@
       "untuk mematuhi (perintah)",
       "untuk memenuhi",
       "untuk menunda"
-    ]
+    ],
+    "traditional": "服從"
   },
   {
     "id": "3496",
@@ -2515,7 +2765,8 @@
       "lebar",
       "gulungan",
       "classifier untuk tekstil atau gambar"
-    ]
+    ],
+    "traditional": "幅"
   },
   {
     "id": "3497",
@@ -2526,7 +2777,8 @@
       "cakupan",
       "jangkauan",
       "cakupan"
-    ]
+    ],
+    "traditional": "幅度"
   },
   {
     "id": "3498",
@@ -2536,7 +2788,8 @@
       "manfaat materi",
       "manfaat dalam bentuk barang",
       "(kesejahteraan Sosial"
-    ]
+    ],
+    "traditional": "福利"
   },
   {
     "id": "3499",
@@ -2548,7 +2801,8 @@
       "tambahan",
       "bantu",
       "anak perusahaan"
-    ]
+    ],
+    "traditional": "輔助"
   },
   {
     "id": "3500",
@@ -2556,7 +2810,8 @@
     "pinyin": "fù zé rén",
     "translations": [
       "orang yang bertanggung jawab"
-    ]
+    ],
+    "traditional": "負責人"
   },
   {
     "id": "3501",
@@ -2566,7 +2821,8 @@
       "lampiran",
       "lampiran (email)",
       "lampiran"
-    ]
+    ],
+    "traditional": "附件"
   },
   {
     "id": "3502",
@@ -2575,7 +2831,8 @@
     "translations": [
       "pembaruan",
       "untuk reformasi"
-    ]
+    ],
+    "traditional": "改革"
   },
   {
     "id": "3503",
@@ -2587,7 +2844,8 @@
       "Blunt (mis. Pernyataan)",
       "Anda mungkin juga",
       "secara sederhana"
-    ]
+    ],
+    "traditional": "乾脆"
   },
   {
     "id": "3504",
@@ -2598,7 +2856,8 @@
       "untuk mengganggu",
       "gangguan",
       "gangguan (fisika)"
-    ]
+    ],
+    "traditional": "干擾"
   },
   {
     "id": "3505",
@@ -2608,7 +2867,8 @@
       "untuk ikut campur",
       "untuk campur tangan",
       "intervensi"
-    ]
+    ],
+    "traditional": "干預"
   },
   {
     "id": "3506",
@@ -2618,7 +2878,8 @@
       "kesan",
       "Refleksi",
       "pikiran"
-    ]
+    ],
+    "traditional": "感想"
   },
   {
     "id": "3507",
@@ -2626,7 +2887,8 @@
     "pinyin": "gāng bǐ",
     "translations": [
       "pulpen"
-    ]
+    ],
+    "traditional": "鋼筆"
   },
   {
     "id": "3508",
@@ -2634,7 +2896,8 @@
     "pinyin": "gāng qín",
     "translations": [
       "piano"
-    ]
+    ],
+    "traditional": "鋼琴"
   },
   {
     "id": "3509",
@@ -2643,7 +2906,8 @@
     "translations": [
       "tinggi",
       "mulia"
-    ]
+    ],
+    "traditional": "高大"
   },
   {
     "id": "3510",
@@ -2655,7 +2919,8 @@
       "ketinggian",
       "tingkat tinggi",
       "sangat"
-    ]
+    ],
+    "traditional": "高度"
   },
   {
     "id": "3511",
@@ -2663,7 +2928,8 @@
     "pinyin": "gāo gēn xié",
     "translations": [
       "sepatu tinggi"
-    ]
+    ],
+    "traditional": "高跟鞋"
   },
   {
     "id": "3512",
@@ -2671,7 +2937,8 @@
     "pinyin": "gāo wēn",
     "translations": [
       "suhu tinggi"
-    ]
+    ],
+    "traditional": "高溫"
   },
   {
     "id": "3513",
@@ -2680,7 +2947,8 @@
     "translations": [
       "lebih besar dari",
       "melebihi"
-    ]
+    ],
+    "traditional": "高於"
   },
   {
     "id": "3514",
@@ -2688,7 +2956,8 @@
     "pinyin": "gāo yuán",
     "translations": [
       "dataran"
-    ]
+    ],
+    "traditional": "高原"
   },
   {
     "id": "3515",
@@ -2701,7 +2970,8 @@
       "untuk mengatur",
       "untuk mendapatkan",
       "untuk mengurus"
-    ]
+    ],
+    "traditional": "搞"
   },
   {
     "id": "3516",
@@ -2710,7 +2980,8 @@
     "translations": [
       "untuk melakukannya dengan baik di",
       "untuk melakukan pekerjaan dengan baik"
-    ]
+    ],
+    "traditional": "搞好"
   },
   {
     "id": "3517",
@@ -2718,7 +2989,8 @@
     "pinyin": "gē qǔ",
     "translations": [
       "lagu"
-    ]
+    ],
+    "traditional": "歌曲"
   },
   {
     "id": "3518",
@@ -2727,7 +2999,8 @@
     "translations": [
       "pintu selanjutnya",
       "tetangga"
-    ]
+    ],
+    "traditional": "隔壁"
   },
   {
     "id": "3519",
@@ -2737,7 +3010,8 @@
       "ukuran",
       "tinggi",
       "perawakan"
-    ]
+    ],
+    "traditional": "個兒"
   },
   {
     "id": "3520",
@@ -2748,7 +3022,8 @@
       "(di depan",
       "(dalam) kehadiran SB",
       "Tepat sebelum (kencan)"
-    ]
+    ],
+    "traditional": "跟前"
   },
   {
     "id": "3521",
@@ -2756,7 +3031,8 @@
     "pinyin": "gēn suí",
     "translations": [
       "mengikuti"
-    ]
+    ],
+    "traditional": "跟隨"
   },
   {
     "id": "3522",
@@ -2765,7 +3041,8 @@
     "translations": [
       "untuk mengganti (ban usang dll)",
       "untuk mengubah (alamat seseorang dll)"
-    ]
+    ],
+    "traditional": "更換"
   },
   {
     "id": "3523",
@@ -2778,7 +3055,8 @@
       "untuk meningkatkan",
       "untuk memperbaharui",
       "untuk beregenerasi"
-    ]
+    ],
+    "traditional": "更新"
   },
   {
     "id": "3524",
@@ -2787,7 +3065,8 @@
     "translations": [
       "seni dan kerajinan",
       "Seni Industri"
-    ]
+    ],
+    "traditional": "工藝"
   },
   {
     "id": "3525",
@@ -2797,7 +3076,8 @@
       "hari kerja",
       "hari kerja",
       "hari kerja"
-    ]
+    ],
+    "traditional": "工作日"
   },
   {
     "id": "3526",
@@ -2806,7 +3086,8 @@
     "translations": [
       "pos",
       "pengumuman"
-    ]
+    ],
+    "traditional": "公告"
   },
   {
     "id": "3527",
@@ -2815,7 +3096,8 @@
     "translations": [
       "diketahui publik (menjadi)",
       "Diterima (As)"
-    ]
+    ],
+    "traditional": "公認"
   },
   {
     "id": "3528",
@@ -2823,7 +3105,8 @@
     "pinyin": "gōng shì",
     "translations": [
       "rumus"
-    ]
+    ],
+    "traditional": "公式"
   },
   {
     "id": "3529",
@@ -2833,7 +3116,8 @@
       "hanya",
       "adil",
       "adil"
-    ]
+    ],
+    "traditional": "公正"
   },
   {
     "id": "3530",
@@ -2842,7 +3126,8 @@
     "translations": [
       "untuk menyimpulkan",
       "total"
-    ]
+    ],
+    "traditional": "共計"
   },
   {
     "id": "3531",
@@ -2851,7 +3136,8 @@
     "translations": [
       "untuk berbagi",
       "untuk menikmati bersama"
-    ]
+    ],
+    "traditional": "共享"
   },
   {
     "id": "3532",
@@ -2863,7 +3149,8 @@
       "alur",
       "selokan",
       "jurang"
-    ]
+    ],
+    "traditional": "溝"
   },
   {
     "id": "3533",
@@ -2874,7 +3161,8 @@
       "untuk menghubungkan",
       "untuk menghubungkan",
       "untuk berkomunikasi"
-    ]
+    ],
+    "traditional": "溝通"
   },
   {
     "id": "3534",
@@ -2884,7 +3172,8 @@
       "untuk memperkirakan",
       "memperhitungkan",
       "(coll.) Untuk mengira"
-    ]
+    ],
+    "traditional": "估計"
   },
   {
     "id": "3535",
@@ -2894,7 +3183,8 @@
       "kuno",
       "tua",
       "tua"
-    ]
+    ],
+    "traditional": "古老"
   },
   {
     "id": "3536",
@@ -2907,7 +3197,8 @@
       "untuk membangunkan",
       "untuk menonjol",
       "membengkak"
-    ]
+    ],
+    "traditional": "鼓"
   },
   {
     "id": "3537",
@@ -2915,7 +3206,8 @@
     "pinyin": "gǔ lì",
     "translations": [
       "untuk mendorong"
-    ]
+    ],
+    "traditional": "鼓勵"
   },
   {
     "id": "3538",
@@ -2924,7 +3216,8 @@
     "translations": [
       "bertepuk tangan",
       "bertepuk tangan"
-    ]
+    ],
+    "traditional": "鼓掌"
   },
   {
     "id": "3539",
@@ -2933,7 +3226,8 @@
     "translations": [
       "penasihat",
       "konsultan"
-    ]
+    ],
+    "traditional": "顧問"
   },
   {
     "id": "3540",
@@ -2942,7 +3236,8 @@
     "translations": [
       "untuk bertanya-tanya",
       "menyalahkan"
-    ]
+    ],
+    "traditional": "怪"
   },
   {
     "id": "3541",
@@ -2954,7 +3249,8 @@
       "untuk menunjukkan kepedulian",
       "peduli tentang",
       "Memperhatikan"
-    ]
+    ],
+    "traditional": "關懷"
   },
   {
     "id": "3542",
@@ -2966,7 +3262,8 @@
       "kunci",
       "penting",
       "sangat penting"
-    ]
+    ],
+    "traditional": "關鍵"
   },
   {
     "id": "3543",
@@ -2974,7 +3271,8 @@
     "pinyin": "guàn jūn",
     "translations": [
       "juara"
-    ]
+    ],
+    "traditional": "冠軍"
   },
   {
     "id": "3544",
@@ -2983,7 +3281,8 @@
     "translations": [
       "kehormatan dan kemuliaan",
       "mulia"
-    ]
+    ],
+    "traditional": "光榮"
   },
   {
     "id": "3545",
@@ -2994,7 +3293,8 @@
       "lampu",
       "penerangan",
       "pencahayaan (untuk foto)"
-    ]
+    ],
+    "traditional": "光線"
   },
   {
     "id": "3546",
@@ -3004,7 +3304,8 @@
       "lebar",
       "banyak sekali",
       "menyebar"
-    ]
+    ],
+    "traditional": "廣"
   },
   {
     "id": "3547",
@@ -3013,7 +3314,8 @@
     "translations": [
       "luas",
       "jangkauan luas"
-    ]
+    ],
+    "traditional": "廣泛"
   },
   {
     "id": "3548",
@@ -3024,7 +3326,8 @@
       "perencanaan",
       "rencana",
       "program"
-    ]
+    ],
+    "traditional": "規劃"
   },
   {
     "id": "3549",
@@ -3039,7 +3342,8 @@
       "licik",
       "licik",
       "(Sufiks untuk SB dengan wakil atau kecanduan tertentu dll)"
-    ]
+    ],
+    "traditional": "鬼"
   },
   {
     "id": "3550",
@@ -3048,7 +3352,8 @@
     "translations": [
       "lemari",
       "kabinet"
-    ]
+    ],
+    "traditional": "櫃子"
   },
   {
     "id": "3551",
@@ -3059,7 +3364,8 @@
       "untuk berguling",
       "untuk mendaki",
       "Enyah!"
-    ]
+    ],
+    "traditional": "滾"
   },
   {
     "id": "3552",
@@ -3069,7 +3375,8 @@
       "pot",
       "panci",
       "ketel"
-    ]
+    ],
+    "traditional": "鍋"
   },
   {
     "id": "3553",
@@ -3077,7 +3384,8 @@
     "pinyin": "guó jí",
     "translations": [
       "kebangsaan"
-    ]
+    ],
+    "traditional": "國籍"
   },
   {
     "id": "3554",
@@ -3087,7 +3395,8 @@
       "warga negara",
       "warga",
       "orang-orang dari suatu bangsa"
-    ]
+    ],
+    "traditional": "國民"
   },
   {
     "id": "3555",
@@ -3101,7 +3410,8 @@
       "boros",
       "tanpa pengendalian diri",
       "terlambat"
-    ]
+    ],
+    "traditional": "過度"
   },
   {
     "id": "3556",
@@ -3111,7 +3421,8 @@
       "terlalu sensitif",
       "alergi",
       "alergi"
-    ]
+    ],
+    "traditional": "過敏"
   },
   {
     "id": "3557",
@@ -3120,7 +3431,8 @@
     "translations": [
       "terlalu banyak",
       "secara berlebihan"
-    ]
+    ],
+    "traditional": "過於"
   },
   {
     "id": "3558",
@@ -3132,7 +3444,8 @@
       "menyakiti",
       "kejahatan",
       "bencana"
-    ]
+    ],
+    "traditional": "害"
   },
   {
     "id": "3559",
@@ -3142,7 +3455,8 @@
       "keringat",
       "keringat",
       "menjadi tidak bisa berkata-kata (karena ketidakberdayaan, rasa malu dll) (bahasa gaul internet digunakan sebagai intereksi)"
-    ]
+    ],
+    "traditional": "汗"
   },
   {
     "id": "3560",
@@ -3150,7 +3464,8 @@
     "pinyin": "hǎo yùn",
     "translations": [
       "semoga beruntung"
-    ]
+    ],
+    "traditional": "好運"
   },
   {
     "id": "3561",
@@ -3159,7 +3474,8 @@
     "translations": [
       "memanggil",
       "untuk mengajukan banding"
-    ]
+    ],
+    "traditional": "號召"
   },
   {
     "id": "3562",
@@ -3168,7 +3484,8 @@
     "translations": [
       "menggabungkan",
       "untuk lampiran"
-    ]
+    ],
+    "traditional": "合併"
   },
   {
     "id": "3563",
@@ -3181,7 +3498,8 @@
       "perpaduan",
       "campuran",
       "sintetis"
-    ]
+    ],
+    "traditional": "合成"
   },
   {
     "id": "3564",
@@ -3190,7 +3508,8 @@
     "translations": [
       "kotak kecil",
       "kasus"
-    ]
+    ],
+    "traditional": "盒"
   },
   {
     "id": "3565",
@@ -3198,7 +3517,8 @@
     "pinyin": "hé fàn",
     "translations": [
       "Makanan dalam kotak yang dipartisi"
-    ]
+    ],
+    "traditional": "便當"
   },
   {
     "id": "3566",
@@ -3207,7 +3527,8 @@
     "translations": [
       "kotak",
       "kasus"
-    ]
+    ],
+    "traditional": "盒子"
   },
   {
     "id": "3567",
@@ -3216,7 +3537,8 @@
     "translations": [
       "kartu ucapan",
       "kartu ucapan selamat"
-    ]
+    ],
+    "traditional": "賀卡"
   },
   {
     "id": "3568",
@@ -3225,7 +3547,8 @@
     "translations": [
       "membenci",
       "menyesal"
-    ]
+    ],
+    "traditional": "恨"
   },
   {
     "id": "3569",
@@ -3233,7 +3556,8 @@
     "pinyin": "hóu",
     "translations": [
       "monyet"
-    ]
+    ],
+    "traditional": "猴"
   },
   {
     "id": "3570",
@@ -3242,7 +3566,8 @@
     "translations": [
       "menyesal",
       "untuk bertobat"
-    ]
+    ],
+    "traditional": "後悔"
   },
   {
     "id": "3571",
@@ -3251,7 +3576,8 @@
     "translations": [
       "jalur",
       "gang"
-    ]
+    ],
+    "traditional": "胡同"
   },
   {
     "id": "3572",
@@ -3262,7 +3588,8 @@
       "kumis atau kumis",
       "rambut wajah",
       "(Coll.) Bandit"
-    ]
+    ],
+    "traditional": "鬍子"
   },
   {
     "id": "3573",
@@ -3270,7 +3597,8 @@
     "pinyin": "hǔ",
     "translations": [
       "harimau"
-    ]
+    ],
+    "traditional": "虎"
   },
   {
     "id": "3574",
@@ -3278,7 +3606,8 @@
     "pinyin": "huá yǔ",
     "translations": [
       "bahasa Cina"
-    ]
+    ],
+    "traditional": "華語"
   },
   {
     "id": "3575",
@@ -3290,7 +3619,8 @@
       "mulus",
       "licin",
       "licik"
-    ]
+    ],
+    "traditional": "滑"
   },
   {
     "id": "3576",
@@ -3298,7 +3628,8 @@
     "pinyin": "huà shí",
     "translations": [
       "fosil"
-    ]
+    ],
+    "traditional": "化石"
   },
   {
     "id": "3577",
@@ -3308,7 +3639,8 @@
       "untuk membagi",
       "untuk partisi",
       "untuk membedakan"
-    ]
+    ],
+    "traditional": "劃分"
   },
   {
     "id": "3578",
@@ -3322,7 +3654,8 @@
       "layar (ditampilkan oleh komputer)",
       "bingkai (gambar bergerak)",
       "bidang pandang"
-    ]
+    ],
+    "traditional": "畫面"
   },
   {
     "id": "3579",
@@ -3331,7 +3664,8 @@
     "translations": [
       "Segmen (Zoologi) (dari tubuh cacing, kelabang dll)",
       "(Gbr.) Bagian dari keseluruhan yang terintegrasi: aspek (suatu proyek), elemen (dari suatu kebijakan), sektor (ekonomi), tahap (dari suatu proses), dll"
-    ]
+    ],
+    "traditional": "環節"
   },
   {
     "id": "3580",
@@ -3342,7 +3676,8 @@
       "kehilangan kepala",
       "(coll.) (Setelah 得) tak tertahankan",
       "sangat"
-    ]
+    ],
+    "traditional": "慌"
   },
   {
     "id": "3581",
@@ -3351,7 +3686,8 @@
     "translations": [
       "dengan terburu-buru",
       "dalam kesibukan"
-    ]
+    ],
+    "traditional": "慌忙"
   },
   {
     "id": "3582",
@@ -3365,7 +3701,8 @@
       "muram",
       "putus asa",
       "ambigu"
-    ]
+    ],
+    "traditional": "灰色"
   },
   {
     "id": "3583",
@@ -3378,7 +3715,8 @@
       "untuk memulihkan",
       "untuk mendapatkan kembali",
       "untuk merehabilitasi"
-    ]
+    ],
+    "traditional": "恢復"
   },
   {
     "id": "3584",
@@ -3391,7 +3729,8 @@
       "pembalasan",
       "untuk melaporkan kembali",
       "untuk membalas"
-    ]
+    ],
+    "traditional": "回報"
   },
   {
     "id": "3585",
@@ -3405,7 +3744,8 @@
       "untuk mundur",
       "untuk menarik",
       "untuk mengundurkan diri (seorang hakim dll)"
-    ]
+    ],
+    "traditional": "迴避"
   },
   {
     "id": "3586",
@@ -3414,7 +3754,8 @@
     "translations": [
       "untuk melihat ke belakang",
       "untuk meninjau"
-    ]
+    ],
+    "traditional": "回顧"
   },
   {
     "id": "3587",
@@ -3426,7 +3767,8 @@
       "mendapatkan kembali",
       "untuk memulihkan",
       "untuk mengingat (produk yang rusak)"
-    ]
+    ],
+    "traditional": "回收"
   },
   {
     "id": "3588",
@@ -3437,7 +3779,8 @@
       "untuk menoleh",
       "Nanti",
       "oleh dan oleh"
-    ]
+    ],
+    "traditional": "回頭"
   },
   {
     "id": "3589",
@@ -3447,7 +3790,8 @@
       "membalas",
       "untuk menulis kembali",
       "surat ditulis sebagai balasan"
-    ]
+    ],
+    "traditional": "回信"
   },
   {
     "id": "3590",
@@ -3456,7 +3800,8 @@
     "translations": [
       "untuk mengingat",
       "memori"
-    ]
+    ],
+    "traditional": "回憶"
   },
   {
     "id": "3591",
@@ -3465,7 +3810,8 @@
     "translations": [
       "untuk mengirimkan uang",
       "pengiriman uang"
-    ]
+    ],
+    "traditional": "匯款"
   },
   {
     "id": "3592",
@@ -3474,7 +3820,8 @@
     "translations": [
       "pembicaraan",
       "diskusi"
-    ]
+    ],
+    "traditional": "會談"
   },
   {
     "id": "3593",
@@ -3485,7 +3832,8 @@
       "daya hidup",
       "semangat",
       "kekuatan vital"
-    ]
+    ],
+    "traditional": "活力"
   },
   {
     "id": "3594",
@@ -3497,7 +3845,8 @@
       "cepat",
       "aktif",
       "(Kimia) Reaktif"
-    ]
+    ],
+    "traditional": "活潑"
   },
   {
     "id": "3595",
@@ -3505,7 +3854,8 @@
     "pinyin": "huǒ chái",
     "translations": [
       "cocok (untuk pencahayaan api)"
-    ]
+    ],
+    "traditional": "火柴"
   },
   {
     "id": "3596",
@@ -3513,7 +3863,8 @@
     "pinyin": "huǒ tuǐ",
     "translations": [
       "daging"
-    ]
+    ],
+    "traditional": "火腿"
   },
   {
     "id": "3597",
@@ -3521,7 +3872,8 @@
     "pinyin": "huǒ zāi",
     "translations": [
       "api (yang membakar bangunan dll)"
-    ]
+    ],
+    "traditional": "火災"
   },
   {
     "id": "3598",
@@ -3530,7 +3882,8 @@
     "translations": [
       "atau",
       "salah satu atau yang lain"
-    ]
+    ],
+    "traditional": "或是"
   },
   {
     "id": "3599",
@@ -3540,7 +3893,8 @@
       "orang mekanik",
       "robot",
       "Android"
-    ]
+    ],
+    "traditional": "機器人"
   },
   {
     "id": "3600",
@@ -3550,7 +3904,8 @@
       "mesin diproses",
       "buatan mesin",
       "mekanisme"
-    ]
+    ],
+    "traditional": "機制"
   },
   {
     "id": "3601",
@@ -3559,7 +3914,8 @@
     "translations": [
       "otot",
       "daging"
-    ]
+    ],
+    "traditional": "肌肉"
   },
   {
     "id": "3602",
@@ -3569,7 +3925,8 @@
       "basis (operasi)",
       "Pangkalan Industri atau Militer",
       "Al Qaeda"
-    ]
+    ],
+    "traditional": "基地"
   },
   {
     "id": "3603",
@@ -3577,7 +3934,8 @@
     "pinyin": "jī jīn",
     "translations": [
       "dana"
-    ]
+    ],
+    "traditional": "基金"
   },
   {
     "id": "3604",
@@ -3586,7 +3944,8 @@
     "translations": [
       "bahkan jika",
       "meskipun"
-    ]
+    ],
+    "traditional": "即使"
   },
   {
     "id": "3605",
@@ -3597,7 +3956,8 @@
       "blok",
       "perusahaan",
       "konglomerat"
-    ]
+    ],
+    "traditional": "集團"
   },
   {
     "id": "3606",
@@ -3610,7 +3970,8 @@
       "untuk menekan",
       "memeras",
       "untuk menemukan (waktu dalam jadwal sibuk seseorang)"
-    ]
+    ],
+    "traditional": "擠"
   },
   {
     "id": "3607",
@@ -3620,7 +3981,8 @@
       "untuk mengingat",
       "untuk mengingat",
       "Penyimpanan"
-    ]
+    ],
+    "traditional": "記憶"
   },
   {
     "id": "3608",
@@ -3629,7 +3991,8 @@
     "translations": [
       "kemampuan teknis",
       "keahlian"
-    ]
+    ],
+    "traditional": "技能"
   },
   {
     "id": "3609",
@@ -3639,7 +4002,8 @@
       "untuk mewarisi",
       "untuk berhasil (tahta dll)",
       "untuk melanjutkan (tradisi dll)"
-    ]
+    ],
+    "traditional": "繼承"
   },
   {
     "id": "3610",
@@ -3647,7 +4011,8 @@
     "pinyin": "jiā rè",
     "translations": [
       "untuk memanaskan"
-    ]
+    ],
+    "traditional": "加熱"
   },
   {
     "id": "3611",
@@ -3661,7 +4026,8 @@
       "untuk menambahkan",
       "Selain itu",
       "Selain itu"
-    ]
+    ],
+    "traditional": "加上"
   },
   {
     "id": "3612",
@@ -3670,7 +4036,8 @@
     "translations": [
       "untuk mempercepat",
       "untuk mempercepat"
-    ]
+    ],
+    "traditional": "加速"
   },
   {
     "id": "3613",
@@ -3682,7 +4049,8 @@
       "(Digunakan sebelum kata kerja disyllabic untuk menunjukkan bahwa tindakan kata kerja diterapkan pada STH atau SB yang disebutkan sebelumnya)",
       "untuk menerapkan (pembatasan dll) ke (SB)",
       "untuk memberi (dukungan, pertimbangan dll) kepada (sth)"
-    ]
+    ],
+    "traditional": "加以"
   },
   {
     "id": "3614",
@@ -3701,7 +4069,8 @@
       "klip",
       "map",
       "Taiwan PR. [Jiá]"
-    ]
+    ],
+    "traditional": "夾"
   },
   {
     "id": "3615",
@@ -3719,7 +4088,8 @@
       "sistem peringkat yang digunakan dalam ujian kekaisaran (lama)",
       "Unit Administrasi Sipil (Lama)",
       "Titik Kompas Tiongkok Kuno: 75 °"
-    ]
+    ],
+    "traditional": "甲"
   },
   {
     "id": "3616",
@@ -3729,7 +4099,8 @@
       "harga",
       "nilai",
       "(Kimia) Valensi"
-    ]
+    ],
+    "traditional": "價"
   },
   {
     "id": "3617",
@@ -3738,7 +4109,8 @@
     "translations": [
       "untuk pilot (kapal, pesawat dll)",
       "mengemudi"
-    ]
+    ],
+    "traditional": "駕駛"
   },
   {
     "id": "3618",
@@ -3746,7 +4118,8 @@
     "pinyin": "jià zhào",
     "translations": [
       "surat izin Mengemudi"
-    ]
+    ],
+    "traditional": "駕照"
   },
   {
     "id": "3619",
@@ -3757,7 +4130,8 @@
       "stabil",
       "setia",
       "tegas"
-    ]
+    ],
+    "traditional": "堅定"
   },
   {
     "id": "3620",
@@ -3766,7 +4140,8 @@
     "translations": [
       "bahu",
       "untuk bahu (tanggung jawab dll)"
-    ]
+    ],
+    "traditional": "肩"
   },
   {
     "id": "3621",
@@ -3776,7 +4151,8 @@
       "sulit",
       "keras",
       "sulit"
-    ]
+    ],
+    "traditional": "艱苦"
   },
   {
     "id": "3622",
@@ -3786,7 +4162,8 @@
       "sulit",
       "keras",
       "menantang"
-    ]
+    ],
+    "traditional": "艱難"
   },
   {
     "id": "3623",
@@ -3796,7 +4173,8 @@
       "untuk memeriksa",
       "untuk memeriksa",
       "untuk mengetes"
-    ]
+    ],
+    "traditional": "檢驗"
   },
   {
     "id": "3624",
@@ -3806,7 +4184,8 @@
       "untuk meringankan",
       "untuk memudahkan",
       "untuk meringankan"
-    ]
+    ],
+    "traditional": "減輕"
   },
   {
     "id": "3625",
@@ -3819,7 +4198,8 @@
       "untuk memotong dengan gunting",
       "untuk memotong",
       "untuk menghapus atau memusnahkan"
-    ]
+    ],
+    "traditional": "剪"
   },
   {
     "id": "3626",
@@ -3827,7 +4207,8 @@
     "pinyin": "jiǎn dāo",
     "translations": [
       "gunting"
-    ]
+    ],
+    "traditional": "剪刀"
   },
   {
     "id": "3627",
@@ -3837,7 +4218,8 @@
       "gunting",
       "gunting",
       "Shears"
-    ]
+    ],
+    "traditional": "剪子"
   },
   {
     "id": "3628",
@@ -3845,7 +4227,8 @@
     "pinyin": "jiàn jiē",
     "translations": [
       "tidak langsung"
-    ]
+    ],
+    "traditional": "間接"
   },
   {
     "id": "3629",
@@ -3854,7 +4237,8 @@
     "translations": [
       "untuk membangun",
       "untuk membangun"
-    ]
+    ],
+    "traditional": "建造"
   },
   {
     "id": "3630",
@@ -3863,7 +4247,8 @@
     "translations": [
       "untuk membangun",
       "bangunan"
-    ]
+    ],
+    "traditional": "建築"
   },
   {
     "id": "3631",
@@ -3872,7 +4257,8 @@
     "translations": [
       "kokoh",
       "suara"
-    ]
+    ],
+    "traditional": "健全"
   },
   {
     "id": "3632",
@@ -3883,7 +4269,8 @@
       "tombol (pada mouse atau perangkat lain)",
       "ikatan kimia",
       "pasak pd as roda"
-    ]
+    ],
+    "traditional": "鍵"
   },
   {
     "id": "3633",
@@ -3891,7 +4278,8 @@
     "pinyin": "jiàn pán",
     "translations": [
       "papan ketik"
-    ]
+    ],
+    "traditional": "鍵盤"
   },
   {
     "id": "3634",
@@ -3905,7 +4293,8 @@
       "untuk sekakmat",
       "Beberapa saat yang lalu",
       "(Memperkenalkan objek kata kerja utama, digunakan dengan cara yang sama seperti 把 [bǎ])"
-    ]
+    ],
+    "traditional": "將"
   },
   {
     "id": "3635",
@@ -3915,7 +4304,8 @@
       "akan",
       "sebaiknya",
       "pergi ke"
-    ]
+    ],
+    "traditional": "將要"
   },
   {
     "id": "3636",
@@ -3924,7 +4314,8 @@
     "translations": [
       "untuk memberi hadiah",
       "hadiah (sebagai dorongan)"
-    ]
+    ],
+    "traditional": "獎勵"
   },
   {
     "id": "3637",
@@ -3939,7 +4330,8 @@
       "untuk membenarkan diri sendiri",
       "mengakui",
       "(Coll.) Untuk menyelesaikannya"
-    ]
+    ],
+    "traditional": "交代"
   },
   {
     "id": "3638",
@@ -3949,7 +4341,8 @@
       "distrik pinggiran kota",
       "pinggiran",
       "pinggiran kota"
-    ]
+    ],
+    "traditional": "郊區"
   },
   {
     "id": "3639",
@@ -3959,7 +4352,8 @@
       "pita perekat",
       "sabuk karet",
       "rekaman perekaman"
-    ]
+    ],
+    "traditional": "膠帶"
   },
   {
     "id": "3640",
@@ -3967,7 +4361,8 @@
     "pinyin": "jiāo shuǐ",
     "translations": [
       "lem"
-    ]
+    ],
+    "traditional": "膠水"
   },
   {
     "id": "3641",
@@ -3976,7 +4371,8 @@
     "translations": [
       "langkah",
       "melangkah"
-    ]
+    ],
+    "traditional": "腳步"
   },
   {
     "id": "3642",
@@ -3987,7 +4383,8 @@
       "menghubungi",
       "mengakses",
       "berhubungan dengan"
-    ]
+    ],
+    "traditional": "接觸"
   },
   {
     "id": "3643",
@@ -3997,7 +4394,8 @@
       "di ujungnya",
       "berturut-turut",
       "secara berturut-turut"
-    ]
+    ],
+    "traditional": "接連"
   },
   {
     "id": "3644",
@@ -4011,7 +4409,8 @@
       "untuk bebas",
       "untuk mengangkat (embargo)",
       "untuk membatalkan (kesepakatan)"
-    ]
+    ],
+    "traditional": "解除"
   },
   {
     "id": "3645",
@@ -4022,7 +4421,8 @@
       "untuk membebaskan",
       "pembebasan",
       "mengacu pada kemenangan komunis atas kaum nasionalis pada tahun 1949"
-    ]
+    ],
+    "traditional": "解放"
   },
   {
     "id": "3646",
@@ -4035,7 +4435,8 @@
       "untuk menyerah atau berhenti melakukan sth",
       "Disiplin Monastik Buddha",
       "cincin (untuk jari)"
-    ]
+    ],
+    "traditional": "戒"
   },
   {
     "id": "3647",
@@ -4046,7 +4447,8 @@
       "periode",
       "menjadi jatuh tempo",
       "Klasifikasi untuk acara, pertemuan, pemilihan, perlengkapan olahraga, tahun (kelulusan)"
-    ]
+    ],
+    "traditional": "屆"
   },
   {
     "id": "3648",
@@ -4054,7 +4456,8 @@
     "pinyin": "jīn rì",
     "translations": [
       "Hari ini"
-    ]
+    ],
+    "traditional": "今日"
   },
   {
     "id": "3649",
@@ -4068,7 +4471,8 @@
       "tanpa ragu-ragu",
       "Jangan ragu (untuk bertanya, mengeluh dll)",
       "(lanjutkan dan lakukan) tanpa ragu-ragu"
-    ]
+    ],
+    "traditional": "儘管"
   },
   {
     "id": "3650",
@@ -4077,7 +4481,8 @@
     "translations": [
       "rapat",
       "rapat"
-    ]
+    ],
+    "traditional": "緊緊"
   },
   {
     "id": "3651",
@@ -4086,7 +4491,8 @@
     "translations": [
       "sejauh mungkin",
       "untuk melakukan yang terbaik"
-    ]
+    ],
+    "traditional": "盡可能"
   },
   {
     "id": "3652",
@@ -4094,7 +4500,8 @@
     "pinyin": "jìn huà",
     "translations": [
       "evolusi"
-    ]
+    ],
+    "traditional": "進化"
   },
   {
     "id": "3653",
@@ -4103,7 +4510,8 @@
     "translations": [
       "baru-baru ini",
       "akhir-akhir ini"
-    ]
+    ],
+    "traditional": "近來"
   },
   {
     "id": "3654",
@@ -4112,7 +4520,8 @@
     "translations": [
       "dana",
       "pengeluaran"
-    ]
+    ],
+    "traditional": "經費"
   },
   {
     "id": "3655",
@@ -4121,7 +4530,8 @@
     "translations": [
       "pemandangan",
       "penglihatan (untuk dilihat)"
-    ]
+    ],
+    "traditional": "景象"
   },
   {
     "id": "3656",
@@ -4130,7 +4540,8 @@
     "translations": [
       "untuk memperingatkan",
       "untuk menyegarkan"
-    ]
+    ],
+    "traditional": "警告"
   },
   {
     "id": "3657",
@@ -4139,7 +4550,8 @@
     "translations": [
       "balapan",
       "kompetisi"
-    ]
+    ],
+    "traditional": "競賽"
   },
   {
     "id": "3658",
@@ -4148,7 +4560,8 @@
     "translations": [
       "untuk bersaing",
       "kompetisi"
-    ]
+    ],
+    "traditional": "競爭"
   },
   {
     "id": "3659",
@@ -4156,7 +4569,8 @@
     "pinyin": "jiǔ guǐ",
     "translations": [
       "pemabuk"
-    ]
+    ],
+    "traditional": "酒鬼"
   },
   {
     "id": "3660",
@@ -4165,7 +4579,8 @@
     "translations": [
       "untuk meredakan bencana",
       "untuk membantu korban bencana"
-    ]
+    ],
+    "traditional": "救災"
   },
   {
     "id": "3661",
@@ -4175,7 +4590,8 @@
       "tiba-tiba",
       "yang mengejutkan seseorang",
       "melangkah sejauh ini"
-    ]
+    ],
+    "traditional": "居然"
   },
   {
     "id": "3662",
@@ -4185,7 +4601,8 @@
       "aspek",
       "fase",
       "situasi"
-    ]
+    ],
+    "traditional": "局面"
   },
   {
     "id": "3663",
@@ -4193,7 +4610,8 @@
     "pinyin": "jú zhǎng",
     "translations": [
       "kepala Biro"
-    ]
+    ],
+    "traditional": "局長"
   },
   {
     "id": "3664",
@@ -4205,7 +4623,8 @@
       "aktivitas",
       "bergerak",
       "pergerakan"
-    ]
+    ],
+    "traditional": "舉動"
   },
   {
     "id": "3665",
@@ -4215,7 +4634,8 @@
       "untuk menolak",
       "untuk menolak",
       "menolak"
-    ]
+    ],
+    "traditional": "拒絕"
   },
   {
     "id": "3666",
@@ -4223,7 +4643,8 @@
     "pinyin": "jù lè bù",
     "translations": [
       "klub (organisasi atau premisnya) (Loanword)"
-    ]
+    ],
+    "traditional": "俱樂部"
   },
   {
     "id": "3667",
@@ -4233,7 +4654,8 @@
       "skrip untuk diputar, opera, film dll",
       "skenario",
       "skenario"
-    ]
+    ],
+    "traditional": "劇本"
   },
   {
     "id": "3668",
@@ -4242,7 +4664,8 @@
     "translations": [
       "sama sekali tidak",
       "sederhana (tidak bisa)"
-    ]
+    ],
+    "traditional": "決不"
   },
   {
     "id": "3669",
@@ -4253,7 +4676,8 @@
       "untuk melepaskan semua harapan",
       "putus asa",
       "keputusasaan"
-    ]
+    ],
+    "traditional": "絕望"
   },
   {
     "id": "3670",
@@ -4263,7 +4687,8 @@
       "prajurit",
       "tentara",
       "personil militer"
-    ]
+    ],
+    "traditional": "軍人"
   },
   {
     "id": "3671",
@@ -4272,7 +4697,8 @@
     "translations": [
       "untuk membuka (konferensi)",
       "untuk meresmikan"
-    ]
+    ],
+    "traditional": "開幕"
   },
   {
     "id": "3672",
@@ -4280,7 +4706,8 @@
     "pinyin": "kāi mù shì",
     "translations": [
       "upacara pembukaan"
-    ]
+    ],
+    "traditional": "開幕式"
   },
   {
     "id": "3673",
@@ -4288,7 +4715,8 @@
     "pinyin": "kàn chéng",
     "translations": [
       "untuk menganggap sebagai"
-    ]
+    ],
+    "traditional": "看成"
   },
   {
     "id": "3674",
@@ -4297,7 +4725,8 @@
     "translations": [
       "untuk bercumbu",
       "untuk melihat"
-    ]
+    ],
+    "traditional": "看出"
   },
   {
     "id": "3675",
@@ -4306,7 +4735,8 @@
     "translations": [
       "untuk melihat",
       "untuk hal"
-    ]
+    ],
+    "traditional": "看待"
   },
   {
     "id": "3676",
@@ -4320,7 +4750,8 @@
       "penilaian",
       "tinjauan",
       "evaluasi"
-    ]
+    ],
+    "traditional": "考核"
   },
   {
     "id": "3677",
@@ -4328,7 +4759,8 @@
     "pinyin": "kǎo ròu",
     "translations": [
       "Barbekyu (Lit. daging panggang)"
-    ]
+    ],
+    "traditional": "烤肉"
   },
   {
     "id": "3678",
@@ -4336,7 +4768,8 @@
     "pinyin": "kǎo yā",
     "translations": [
       "bebek panggang"
-    ]
+    ],
+    "traditional": "烤鴨"
   },
   {
     "id": "3679",
@@ -4345,7 +4778,8 @@
     "translations": [
       "di dekat",
       "untuk mendekati"
-    ]
+    ],
+    "traditional": "靠近"
   },
   {
     "id": "3680",
@@ -4353,7 +4787,8 @@
     "pinyin": "kē",
     "translations": [
       "Klasifikasi untuk bidang kecil, mutiara, biji-bijian jagung, gigi, hati, satelit dll"
-    ]
+    ],
+    "traditional": "顆"
   },
   {
     "id": "3681",
@@ -4361,7 +4796,8 @@
     "pinyin": "ké",
     "translations": [
       "batuk"
-    ]
+    ],
+    "traditional": "咳"
   },
   {
     "id": "3682",
@@ -4376,7 +4812,8 @@
       "sesuai",
       "(partikel yang digunakan untuk penekanan) tentu saja",
       "sangat"
-    ]
+    ],
+    "traditional": "可"
   },
   {
     "id": "3683",
@@ -4386,7 +4823,8 @@
       "menyedihkan",
       "menyedihkan",
       "Untuk mengasihani"
-    ]
+    ],
+    "traditional": "可憐"
   },
   {
     "id": "3684",
@@ -4396,7 +4834,8 @@
       "sangat disayangkan",
       "sayang sekali",
       "Sayangnya"
-    ]
+    ],
+    "traditional": "可惜"
   },
   {
     "id": "3685",
@@ -4405,7 +4844,8 @@
     "translations": [
       "untuk haus",
       "lama untuk"
-    ]
+    ],
+    "traditional": "渴望"
   },
   {
     "id": "3686",
@@ -4419,7 +4859,8 @@
       "untuk memotong",
       "menindas",
       "classifier untuk interval waktu yang singkat"
-    ]
+    ],
+    "traditional": "刻"
   },
   {
     "id": "3687",
@@ -4428,7 +4869,8 @@
     "translations": [
       "klien",
       "pelanggan"
-    ]
+    ],
+    "traditional": "客戶"
   },
   {
     "id": "3688",
@@ -4439,7 +4881,8 @@
       "sopan",
       "resmi",
       "sederhana"
-    ]
+    ],
+    "traditional": "客氣"
   },
   {
     "id": "3689",
@@ -4448,7 +4891,8 @@
     "translations": [
       "Ruang tamu (kamar untuk tamu yang tiba)",
       "ruang tamu"
-    ]
+    ],
+    "traditional": "客廳"
   },
   {
     "id": "3690",
@@ -4458,7 +4902,8 @@
       "tugas",
       "masalah",
       "masalah"
-    ]
+    ],
+    "traditional": "課題"
   },
   {
     "id": "3691",
@@ -4472,7 +4917,8 @@
       "untuk memberikan pengakuan",
       "untuk menegaskan",
       "afirmatif (jawaban)"
-    ]
+    ],
+    "traditional": "肯定"
   },
   {
     "id": "3692",
@@ -4481,7 +4927,8 @@
     "translations": [
       "di langit",
       "di udara"
-    ]
+    ],
+    "traditional": "空中"
   },
   {
     "id": "3693",
@@ -4491,7 +4938,8 @@
       "kontrol",
       "untuk melakukan kontrol atas",
       "berisi"
-    ]
+    ],
+    "traditional": "控制"
   },
   {
     "id": "3694",
@@ -4500,7 +4948,8 @@
     "translations": [
       "slogan",
       "slogan"
-    ]
+    ],
+    "traditional": "口號"
   },
   {
     "id": "3695",
@@ -4510,7 +4959,8 @@
       "gudang",
       "gudang",
       "(File) Perpustakaan"
-    ]
+    ],
+    "traditional": "庫"
   },
   {
     "id": "3696",
@@ -4519,7 +4969,8 @@
     "translations": [
       "senang",
       "ceria"
-    ]
+    ],
+    "traditional": "快活"
   },
   {
     "id": "3697",
@@ -4527,7 +4978,8 @@
     "pinyin": "kuān dù",
     "translations": [
       "lebar"
-    ]
+    ],
+    "traditional": "寬度"
   },
   {
     "id": "3698",
@@ -4537,7 +4989,8 @@
       "gila",
       "liar",
       "brutal"
-    ]
+    ],
+    "traditional": "狂"
   },
   {
     "id": "3699",
@@ -4549,7 +5002,8 @@
       "Untunglah",
       "Beruntung ...",
       "(Seringkali ironisnya) mewah itu…"
-    ]
+    ],
+    "traditional": "虧"
   },
   {
     "id": "3700",
@@ -4559,7 +5013,8 @@
       "untuk membingungkan",
       "mengganggu",
       "menyebabkan komplikasi"
-    ]
+    ],
+    "traditional": "困擾"
   },
   {
     "id": "3701",
@@ -4570,7 +5025,8 @@
       "Menghilang",
       "untuk meninggalkan atau lupa membawa",
       "tertinggal atau tertinggal"
-    ]
+    ],
+    "traditional": "落"
   },
   {
     "id": "3702",
@@ -4579,7 +5035,8 @@
     "translations": [
       "surat masuk",
       "Kirim surat di sini"
-    ]
+    ],
+    "traditional": "來信"
   },
   {
     "id": "3703",
@@ -4599,7 +5056,8 @@
       "secara menyeluruh",
       "jelek",
       "buruk"
-    ]
+    ],
+    "traditional": "爛"
   },
   {
     "id": "3704",
@@ -4607,7 +5065,8 @@
     "pinyin": "lǎng dú",
     "translations": [
       "untuk membaca dengan keras"
-    ]
+    ],
+    "traditional": "朗讀"
   },
   {
     "id": "3705",
@@ -4615,7 +5074,8 @@
     "pinyin": "làng màn",
     "translations": [
       "romantis"
-    ]
+    ],
+    "traditional": "浪漫"
   },
   {
     "id": "3706",
@@ -4625,7 +5085,8 @@
       "bekerja",
       "bekerja keras",
       "kerja fisik"
-    ]
+    ],
+    "traditional": "勞動"
   },
   {
     "id": "3707",
@@ -4633,7 +5094,8 @@
     "pinyin": "lí",
     "translations": [
       "pir"
-    ]
+    ],
+    "traditional": "梨"
   },
   {
     "id": "3708",
@@ -4646,7 +5108,8 @@
       "kesopanan",
       "etiket",
       "kesopanan"
-    ]
+    ],
+    "traditional": "禮"
   },
   {
     "id": "3709",
@@ -4656,7 +5119,8 @@
       "pekan",
       "pelayanan keagamaan",
       "memuja"
-    ]
+    ],
+    "traditional": "禮拜"
   },
   {
     "id": "3710",
@@ -4665,7 +5129,8 @@
     "translations": [
       "kesopanan",
       "tata krama"
-    ]
+    ],
+    "traditional": "禮貌"
   },
   {
     "id": "3711",
@@ -4681,7 +5146,8 @@
       "brutal",
       "luar biasa besar",
       "luar biasa"
-    ]
+    ],
+    "traditional": "厲害"
   },
   {
     "id": "3712",
@@ -4695,7 +5161,8 @@
       "untuk menyusun",
       "sekaligus",
       "langsung"
-    ]
+    ],
+    "traditional": "立"
   },
   {
     "id": "3713",
@@ -4704,7 +5171,8 @@
     "translations": [
       "posisi",
       "sudut"
-    ]
+    ],
+    "traditional": "立場"
   },
   {
     "id": "3714",
@@ -4712,7 +5180,8 @@
     "pinyin": "lì rùn",
     "translations": [
       "keuntungan"
-    ]
+    ],
+    "traditional": "利潤"
   },
   {
     "id": "3715",
@@ -4721,7 +5190,8 @@
     "translations": [
       "pengecualian",
       "menjadi pengecualian"
-    ]
+    ],
+    "traditional": "例外"
   },
   {
     "id": "3716",
@@ -4733,7 +5203,8 @@
       "untuk melampirkan",
       "koneksi",
       "tautan (di halaman web)"
-    ]
+    ],
+    "traditional": "連接"
   },
   {
     "id": "3717",
@@ -4745,7 +5216,8 @@
       "untuk tetap berhubungan (dengan)",
       "hubungan",
       "(Matematika.) Koneksi"
-    ]
+    ],
+    "traditional": "聯絡"
   },
   {
     "id": "3718",
@@ -4756,7 +5228,8 @@
       "untuk membuat koneksi asosiatif",
       "Asosiasi Mental",
       "Prediksi Word dan Fungsi Otomatis Lengkap dari Program Pengeditan Metode Input"
-    ]
+    ],
+    "traditional": "聯想"
   },
   {
     "id": "3719",
@@ -4765,7 +5238,8 @@
     "translations": [
       "wastafel",
       "baskom untuk mencuci tangan dan wajah"
-    ]
+    ],
+    "traditional": "臉盆"
   },
   {
     "id": "3720",
@@ -4774,7 +5248,8 @@
     "translations": [
       "corak",
       "Lihat"
-    ]
+    ],
+    "traditional": "臉色"
   },
   {
     "id": "3721",
@@ -4784,7 +5259,8 @@
       "(Cinta romantis",
       "sedang jatuh cinta",
       "untuk berselingkuh"
-    ]
+    ],
+    "traditional": "戀愛"
   },
   {
     "id": "3722",
@@ -4796,7 +5272,8 @@
       "kedua sisi",
       "Kedua pantai",
       "Taiwan dan Daratan"
-    ]
+    ],
+    "traditional": "兩岸"
   },
   {
     "id": "3723",
@@ -4805,7 +5282,8 @@
     "translations": [
       "tetangga",
       "pintu selanjutnya"
-    ]
+    ],
+    "traditional": "鄰居"
   },
   {
     "id": "3724",
@@ -4813,7 +5291,8 @@
     "pinyin": "líng",
     "translations": [
       "(kecil) bel"
-    ]
+    ],
+    "traditional": "鈴"
   },
   {
     "id": "3725",
@@ -4824,7 +5303,8 @@
       "nada dering",
       "Bell Stroke",
       "gemerincing"
-    ]
+    ],
+    "traditional": "鈴聲"
   },
   {
     "id": "3726",
@@ -4832,7 +5312,8 @@
     "pinyin": "lǐng dài",
     "translations": [
       "dasi"
-    ]
+    ],
+    "traditional": "領帶"
   },
   {
     "id": "3727",
@@ -4850,7 +5331,8 @@
       "Judul Kehormatan",
       "musim",
       "Posisi Pemerintah (Lama)"
-    ]
+    ],
+    "traditional": "令"
   },
   {
     "id": "3728",
@@ -4862,7 +5344,8 @@
       "untuk pergi dari satu tempat ke tempat lain",
       "menjadi mobile",
       "(aset) cairan"
-    ]
+    ],
+    "traditional": "流動"
   },
   {
     "id": "3729",
@@ -4873,7 +5356,8 @@
       "untuk mendistribusikan",
       "sirkulasi",
       "distribusi"
-    ]
+    ],
+    "traditional": "流通"
   },
   {
     "id": "3730",
@@ -4884,7 +5368,8 @@
       "untuk membocorkan",
       "untuk ditinggalkan karena kesalahan",
       "waterclock atau jam pasir (tua)"
-    ]
+    ],
+    "traditional": "漏"
   },
   {
     "id": "3731",
@@ -4895,7 +5380,8 @@
       "lubang",
       "celah",
       "jalan keluar"
-    ]
+    ],
+    "traditional": "漏洞"
   },
   {
     "id": "3732",
@@ -4903,7 +5389,8 @@
     "pinyin": "luó ji",
     "translations": [
       "Logika (Loanword)"
-    ]
+    ],
+    "traditional": "邏輯"
   },
   {
     "id": "3733",
@@ -4915,7 +5402,8 @@
       "untuk melaksanakan",
       "untuk melakukan",
       "untuk memutuskan"
-    ]
+    ],
+    "traditional": "落實"
   },
   {
     "id": "3734",
@@ -4925,7 +5413,8 @@
       "dermaga",
       "dermaga",
       "dermaga"
-    ]
+    ],
+    "traditional": "碼頭"
   },
   {
     "id": "3735",
@@ -4935,7 +5424,8 @@
       "memarahi",
       "untuk menyalahgunakan",
       "untuk mengutuk"
-    ]
+    ],
+    "traditional": "罵"
   },
   {
     "id": "3736",
@@ -4945,7 +5435,8 @@
       "membeli dan menjual",
       "bisnis",
       "transaksi bisnis"
-    ]
+    ],
+    "traditional": "買賣"
   },
   {
     "id": "3737",
@@ -4954,7 +5445,8 @@
     "translations": [
       "sangat lama",
       "tak ada habisnya"
-    ]
+    ],
+    "traditional": "漫長"
   },
   {
     "id": "3738",
@@ -4964,7 +5456,8 @@
       "karikatur",
       "Kartun",
       "Manga Jepang"
-    ]
+    ],
+    "traditional": "漫畫"
   },
   {
     "id": "3739",
@@ -4972,7 +5465,8 @@
     "pinyin": "máo bǐ",
     "translations": [
       "Menulis kuas"
-    ]
+    ],
+    "traditional": "毛筆"
   },
   {
     "id": "3740",
@@ -4982,7 +5476,8 @@
       "kontradiksi",
       "pandangan yang saling bertentangan",
       "kontradiktif"
-    ]
+    ],
+    "traditional": "矛盾"
   },
   {
     "id": "3741",
@@ -4998,7 +5493,8 @@
       "untuk mengadopsi secara keliru (identitas SB dll)",
       "untuk berpura-pura",
       "(sastra) untuk meliput"
-    ]
+    ],
+    "traditional": "冒"
   },
   {
     "id": "3742",
@@ -5006,7 +5502,8 @@
     "pinyin": "mào yì",
     "translations": [
       "Perdagangan (Komersial)"
-    ]
+    ],
+    "traditional": "貿易"
   },
   {
     "id": "3743",
@@ -5014,7 +5511,8 @@
     "pinyin": "méi",
     "translations": [
       "batu bara"
-    ]
+    ],
+    "traditional": "煤"
   },
   {
     "id": "3744",
@@ -5023,7 +5521,8 @@
     "translations": [
       "Gas Batubara",
       "gas (bahan bakar)"
-    ]
+    ],
+    "traditional": "煤氣"
   },
   {
     "id": "3745",
@@ -5031,7 +5530,8 @@
     "pinyin": "mén zhěn",
     "translations": [
       "Layanan rawat jalan"
-    ]
+    ],
+    "traditional": "門診"
   },
   {
     "id": "3746",
@@ -5042,7 +5542,8 @@
       "mempesona",
       "menawan",
       "menggoda"
-    ]
+    ],
+    "traditional": "迷人"
   },
   {
     "id": "3747",
@@ -5051,7 +5552,8 @@
     "translations": [
       "takhyul",
       "untuk memiliki keyakinan takhayul (di STH)"
-    ]
+    ],
+    "traditional": "迷信"
   },
   {
     "id": "3748",
@@ -5061,7 +5563,8 @@
       "penampilan",
       "menghadapi",
       "fitur"
-    ]
+    ],
+    "traditional": "面貌"
   },
   {
     "id": "3749",
@@ -5076,7 +5579,8 @@
       "harga diri",
       "perasaan",
       "(Obat) bubuk"
-    ]
+    ],
+    "traditional": "面子"
   },
   {
     "id": "3750",
@@ -5086,7 +5590,8 @@
       "Kedua (satuan waktu)",
       "busur kedua (unit pengukuran sudut)",
       "(Coll.) Secara instan"
-    ]
+    ],
+    "traditional": "秒"
   },
   {
     "id": "3751",
@@ -5095,7 +5600,8 @@
     "translations": [
       "peka",
       "rentan"
-    ]
+    ],
+    "traditional": "敏感"
   },
   {
     "id": "3752",
@@ -5106,7 +5612,8 @@
       "bersinar",
       "berkilauan",
       "menjadi jelas"
-    ]
+    ],
+    "traditional": "明亮"
   },
   {
     "id": "3753",
@@ -5117,7 +5624,8 @@
       "terus terang",
       "niscaya",
       "tentu saja"
-    ]
+    ],
+    "traditional": "明明"
   },
   {
     "id": "3754",
@@ -5126,7 +5634,8 @@
     "translations": [
       "memesan",
       "memerintah"
-    ]
+    ],
+    "traditional": "命令"
   },
   {
     "id": "3755",
@@ -5135,7 +5644,8 @@
     "translations": [
       "model",
       "Contoh bagus"
-    ]
+    ],
+    "traditional": "模範"
   },
   {
     "id": "3756",
@@ -5147,7 +5657,8 @@
       "untuk meniru",
       "untuk meniru",
       "model"
-    ]
+    ],
+    "traditional": "模仿"
   },
   {
     "id": "3757",
@@ -5157,7 +5668,8 @@
       "tidak jelas",
       "kabur",
       "kusut"
-    ]
+    ],
+    "traditional": "模糊"
   },
   {
     "id": "3758",
@@ -5167,7 +5679,8 @@
       "mode",
       "metode",
       "pola"
-    ]
+    ],
+    "traditional": "模式"
   },
   {
     "id": "3759",
@@ -5180,7 +5693,8 @@
       "ara. Disharmony",
       "konflik",
       "juga ditulis 磨擦"
-    ]
+    ],
+    "traditional": "摩擦"
   },
   {
     "id": "3760",
@@ -5189,7 +5703,8 @@
     "translations": [
       "motor (kata pinjaman)",
       "sepeda motor"
-    ]
+    ],
+    "traditional": "摩托"
   },
   {
     "id": "3761",
@@ -5202,7 +5717,8 @@
       "perkiraan",
       "tentang",
       "juga pr. [Mó Yàng]"
-    ]
+    ],
+    "traditional": "模樣"
   },
   {
     "id": "3762",
@@ -5214,7 +5730,8 @@
       "melihat",
       "tatapan",
       "Lihat"
-    ]
+    ],
+    "traditional": "目光"
   },
   {
     "id": "3763",
@@ -5223,7 +5740,8 @@
     "translations": [
       "menjadi sabar",
       "kesabaran"
-    ]
+    ],
+    "traditional": "耐心"
   },
   {
     "id": "3764",
@@ -5232,7 +5750,8 @@
     "translations": [
       "jenis kelamin laki-laki",
       "seorang laki-laki"
-    ]
+    ],
+    "traditional": "男性"
   },
   {
     "id": "3765",
@@ -5241,7 +5760,8 @@
     "translations": [
       "Utara dan selatan",
       "utara ke selatan"
-    ]
+    ],
+    "traditional": "南北"
   },
   {
     "id": "3766",
@@ -5249,7 +5769,8 @@
     "pinyin": "nán jí",
     "translations": [
       "kutub selatan"
-    ]
+    ],
+    "traditional": "南極"
   },
   {
     "id": "3767",
@@ -5259,7 +5780,8 @@
       "jarang",
       "langka",
       "Sulit didapat"
-    ]
+    ],
+    "traditional": "難得"
   },
   {
     "id": "3768",
@@ -5267,7 +5789,8 @@
     "pinyin": "nán yǐ",
     "translations": [
       "sulit untuk (memprediksi, membayangkan dll)"
-    ]
+    ],
+    "traditional": "難以"
   },
   {
     "id": "3769",
@@ -5276,7 +5799,8 @@
     "translations": [
       "otak",
       "pikiran"
-    ]
+    ],
+    "traditional": "腦子"
   },
   {
     "id": "3770",
@@ -5287,7 +5811,8 @@
       "intern",
       "hakiki",
       "bawaan"
-    ]
+    ],
+    "traditional": "內在"
   },
   {
     "id": "3771",
@@ -5296,7 +5821,8 @@
     "translations": [
       "energi",
       "kemampuan"
-    ]
+    ],
+    "traditional": "能量"
   },
   {
     "id": "3772",
@@ -5305,7 +5831,8 @@
     "translations": [
       "Tahun (mis. Tahun ajaran, tahun fiskal)",
       "tahunan"
-    ]
+    ],
+    "traditional": "年度"
   },
   {
     "id": "3773",
@@ -5313,7 +5840,8 @@
     "pinyin": "nián líng",
     "translations": [
       "usia (seseorang)"
-    ]
+    ],
+    "traditional": "年齡"
   },
   {
     "id": "3774",
@@ -5322,7 +5850,8 @@
     "translations": [
       "sebelum akhir tahun",
       "Sebelum Tahun Baru"
-    ]
+    ],
+    "traditional": "年前"
   },
   {
     "id": "3775",
@@ -5334,7 +5863,8 @@
       "banteng",
       "Newton (Abbr. Untuk 牛頓 | 牛顿 [niú dùn])",
       "(bahasa gaul) mengagumkan"
-    ]
+    ],
+    "traditional": "牛"
   },
   {
     "id": "3776",
@@ -5342,7 +5872,8 @@
     "pinyin": "niú zǎi kù",
     "translations": [
       "jeans"
-    ]
+    ],
+    "traditional": "牛仔褲"
   },
   {
     "id": "3777",
@@ -5350,7 +5881,8 @@
     "pinyin": "nóng chǎn pǐn",
     "translations": [
       "produk pertanian"
-    ]
+    ],
+    "traditional": "農產品"
   },
   {
     "id": "3778",
@@ -5359,7 +5891,8 @@
     "translations": [
       "wanita",
       "jenis kelamin wanita"
-    ]
+    ],
+    "traditional": "女性"
   },
   {
     "id": "3779",
@@ -5368,7 +5901,8 @@
     "translations": [
       "hangat",
       "untuk menghangatkan"
-    ]
+    ],
+    "traditional": "暖"
   },
   {
     "id": "3780",
@@ -5378,7 +5912,8 @@
       "kadang-kadang",
       "sesekali",
       "Kadang-kadang"
-    ]
+    ],
+    "traditional": "偶爾"
   },
   {
     "id": "3781",
@@ -5390,7 +5925,8 @@
       "kadang-kadang",
       "kebetulan",
       "secara acak"
-    ]
+    ],
+    "traditional": "偶然"
   },
   {
     "id": "3782",
@@ -5398,7 +5934,8 @@
     "pinyin": "ǒu xiàng",
     "translations": [
       "idola"
-    ]
+    ],
+    "traditional": "偶像"
   },
   {
     "id": "3783",
@@ -5407,7 +5944,8 @@
     "translations": [
       "untuk film",
       "untuk memotret (gambar)"
-    ]
+    ],
+    "traditional": "拍攝"
   },
   {
     "id": "3784",
@@ -5418,7 +5956,8 @@
       "untuk menghapus",
       "untuk mengecualikan",
       "untuk memerintah"
-    ]
+    ],
+    "traditional": "排除"
   },
   {
     "id": "3785",
@@ -5431,7 +5970,8 @@
       "samping",
       "diri sendiri",
       "sisi kanan karakter Cina yang terpisah, seringkali fonetis"
-    ]
+    ],
+    "traditional": "旁"
   },
   {
     "id": "3786",
@@ -5442,7 +5982,8 @@
       "untuk menjaga perusahaan SB",
       "untuk membantu",
       "Varian lama 賠 | 赔 [péi]"
-    ]
+    ],
+    "traditional": "陪"
   },
   {
     "id": "3787",
@@ -5452,7 +5993,8 @@
       "untuk mengkompensasi kerugian",
       "untuk mengganti rugi",
       "menderita kerugian finansial"
-    ]
+    ],
+    "traditional": "賠"
   },
   {
     "id": "3788",
@@ -5460,7 +6002,8 @@
     "pinyin": "péi cháng",
     "translations": [
       "untuk mengkompensasi"
-    ]
+    ],
+    "traditional": "賠償"
   },
   {
     "id": "3789",
@@ -5470,7 +6013,8 @@
       "untuk dialokasikan",
       "untuk menyediakan",
       "untuk pakaian dengan"
-    ]
+    ],
+    "traditional": "配備"
   },
   {
     "id": "3790",
@@ -5479,7 +6023,8 @@
     "translations": [
       "untuk membentuk satu set lengkap",
       "koheren"
-    ]
+    ],
+    "traditional": "配套"
   },
   {
     "id": "3791",
@@ -5490,7 +6035,8 @@
       "untuk menyemburkan",
       "untuk menyemprot",
       "untuk percepatan"
-    ]
+    ],
+    "traditional": "噴"
   },
   {
     "id": "3792",
@@ -5500,7 +6046,8 @@
       "baskom",
       "pot bunga",
       "Unit volume sama dengan 12 斗 [dǒu] dan 8 升 [shēng], sekitar 128 liter"
-    ]
+    ],
+    "traditional": "盆"
   },
   {
     "id": "3793",
@@ -5512,7 +6059,8 @@
       "untuk membuka gulungan",
       "untuk dibagi terbuka",
       "menyebar"
-    ]
+    ],
+    "traditional": "披"
   },
   {
     "id": "3794",
@@ -5520,7 +6068,8 @@
     "pinyin": "pí fū",
     "translations": [
       "kulit"
-    ]
+    ],
+    "traditional": "皮膚"
   },
   {
     "id": "3795",
@@ -5528,7 +6077,8 @@
     "pinyin": "pí xié",
     "translations": [
       "sepatu kulit"
-    ]
+    ],
+    "traditional": "皮鞋"
   },
   {
     "id": "3796",
@@ -5539,7 +6089,8 @@
       "perangai",
       "watak",
       "sifat mudah naik darah"
-    ]
+    ],
+    "traditional": "脾氣"
   },
   {
     "id": "3797",
@@ -5551,7 +6102,8 @@
       "orang biasa",
       "Classifier for Cloth: Bolt",
       "daya kuda"
-    ]
+    ],
+    "traditional": "匹"
   },
   {
     "id": "3798",
@@ -5562,7 +6114,8 @@
       "untuk menipu",
       "untuk menipu",
       "untuk naik (kuda dll) dengan mengayunkan satu kaki"
-    ]
+    ],
+    "traditional": "騙"
   },
   {
     "id": "3799",
@@ -5571,7 +6124,8 @@
     "translations": [
       "penipu",
       "cheat"
-    ]
+    ],
+    "traditional": "騙子"
   },
   {
     "id": "3800",
@@ -5584,7 +6138,8 @@
       "petualang",
       "dengan risiko hidup seseorang",
       "mengeja"
-    ]
+    ],
+    "traditional": "拼"
   },
   {
     "id": "3801",
@@ -5593,7 +6148,8 @@
     "translations": [
       "frekuensi",
       "(saluran televisi"
-    ]
+    ],
+    "traditional": "頻道"
   },
   {
     "id": "3802",
@@ -5602,7 +6158,8 @@
     "translations": [
       "sering",
       "sering"
-    ]
+    ],
+    "traditional": "頻繁"
   },
   {
     "id": "3803",
@@ -5628,7 +6185,8 @@
       "untuk menilai",
       "untuk mengukur ke atas",
       "fret (pada gitar atau kecapi)"
-    ]
+    ],
+    "traditional": "品"
   },
   {
     "id": "3804",
@@ -5654,7 +6212,8 @@
       "untuk menilai",
       "untuk mengukur ke atas",
       "fret (pada gitar atau kecapi)"
-    ]
+    ],
+    "traditional": "品"
   },
   {
     "id": "3805",
@@ -5663,7 +6222,8 @@
     "translations": [
       "keturunan",
       "variasi"
-    ]
+    ],
+    "traditional": "品種"
   },
   {
     "id": "3806",
@@ -5674,7 +6234,8 @@
       "bahkan",
       "mulus",
       "datar"
-    ]
+    ],
+    "traditional": "平坦"
   },
   {
     "id": "3807",
@@ -5683,7 +6244,8 @@
     "translations": [
       "bidang",
       "polos"
-    ]
+    ],
+    "traditional": "平原"
   },
   {
     "id": "3808",
@@ -5694,7 +6256,8 @@
       "untuk menilai",
       "penilaian",
       "evaluasi"
-    ]
+    ],
+    "traditional": "評估"
   },
   {
     "id": "3809",
@@ -5705,7 +6268,8 @@
       "mendiskusikan",
       "komentar",
       "komentar"
-    ]
+    ],
+    "traditional": "評論"
   },
   {
     "id": "3810",
@@ -5717,7 +6281,8 @@
       "atas dasar",
       "Tidak masalah (bagaimana, apa dll)",
       "bukti"
-    ]
+    ],
+    "traditional": "憑"
   },
   {
     "id": "3811",
@@ -5728,7 +6293,8 @@
       "menumpahkan",
       "kasar dan kasar",
       "kasar"
-    ]
+    ],
+    "traditional": "潑"
   },
   {
     "id": "3812",
@@ -5736,7 +6302,8 @@
     "pinyin": "pú tao",
     "translations": [
       "anggur"
-    ]
+    ],
+    "traditional": "葡萄"
   },
   {
     "id": "3813",
@@ -5744,7 +6311,8 @@
     "pinyin": "pú tao jiǔ",
     "translations": [
       "(anggur) anggur"
-    ]
+    ],
+    "traditional": "葡萄酒"
   },
   {
     "id": "3814",
@@ -5755,7 +6323,8 @@
       "untuk berharap dengan sungguh-sungguh",
       "ekspektasi",
       "harapan"
-    ]
+    ],
+    "traditional": "期望"
   },
   {
     "id": "3815",
@@ -5764,7 +6333,8 @@
     "translations": [
       "menyelesaikan",
       "luas"
-    ]
+    ],
+    "traditional": "齊全"
   },
   {
     "id": "3816",
@@ -5778,7 +6348,8 @@
       "itu",
       "seperti",
       "itu (mengacu pada STH sebelum itu)"
-    ]
+    ],
+    "traditional": "其"
   },
   {
     "id": "3817",
@@ -5789,7 +6360,8 @@
       "(Gbr.) Untuk menggerakkan",
       "untuk meluncurkan (operasi)",
       "untuk mengaktifkan (rencana)"
-    ]
+    ],
+    "traditional": "啟動"
   },
   {
     "id": "3818",
@@ -5802,7 +6374,8 @@
       "pencerahan",
       "wahyu",
       "motivasi"
-    ]
+    ],
+    "traditional": "啟發"
   },
   {
     "id": "3819",
@@ -5812,7 +6385,8 @@
       "Pengumuman (tertulis, di papan iklan, surat, surat kabar atau situs web)",
       "untuk memposting informasi",
       "pemberitahuan"
-    ]
+    ],
+    "traditional": "啟事"
   },
   {
     "id": "3820",
@@ -5820,7 +6394,8 @@
     "pinyin": "qǐ dào",
     "translations": [
       "untuk bermain (peran), memiliki (efek)"
-    ]
+    ],
+    "traditional": "起到"
   },
   {
     "id": "3821",
@@ -5829,7 +6404,8 @@
     "translations": [
       "Minimal",
       "setidaknya"
-    ]
+    ],
+    "traditional": "起碼"
   },
   {
     "id": "3822",
@@ -5837,7 +6413,8 @@
     "pinyin": "qì tǐ",
     "translations": [
       "Gas (mis. Zat gas)"
-    ]
+    ],
+    "traditional": "氣體"
   },
   {
     "id": "3823",
@@ -5849,7 +6426,8 @@
       "suasana",
       "suasana",
       "pemandangan"
-    ]
+    ],
+    "traditional": "氣象"
   },
   {
     "id": "3824",
@@ -5857,7 +6435,8 @@
     "pinyin": "qiān",
     "translations": [
       "untuk menandatangani nama seseorang"
-    ]
+    ],
+    "traditional": "簽"
   },
   {
     "id": "3825",
@@ -5865,7 +6444,8 @@
     "pinyin": "qiān dìng",
     "translations": [
       "untuk menyetujui dan menandatangani (perjanjian dll)"
-    ]
+    ],
+    "traditional": "簽訂"
   },
   {
     "id": "3826",
@@ -5875,7 +6455,8 @@
       "untuk menandatangani (nama seseorang dengan pena dll)",
       "untuk menandatangani",
       "tanda tangan"
-    ]
+    ],
+    "traditional": "簽名"
   },
   {
     "id": "3827",
@@ -5883,7 +6464,8 @@
     "pinyin": "qiān yuē",
     "translations": [
       "untuk menandatangani kontrak atau perjanjian"
-    ]
+    ],
+    "traditional": "簽約"
   },
   {
     "id": "3828",
@@ -5893,7 +6475,8 @@
       "Visa",
       "sertifikat",
       "untuk mensertifikasi"
-    ]
+    ],
+    "traditional": "簽證"
   },
   {
     "id": "3829",
@@ -5902,7 +6485,8 @@
     "translations": [
       "untuk menandatangani (nama seseorang)",
       "tanda tangan"
-    ]
+    ],
+    "traditional": "簽字"
   },
   {
     "id": "3830",
@@ -5913,7 +6497,8 @@
       "Vista",
       "(prospek masa depan",
       "perspektif"
-    ]
+    ],
+    "traditional": "前景"
   },
   {
     "id": "3831",
@@ -5923,7 +6508,8 @@
       "premis",
       "prasyarat",
       "prasyarat"
-    ]
+    ],
+    "traditional": "前提"
   },
   {
     "id": "3832",
@@ -5934,7 +6520,8 @@
       "untuk berhutang",
       "kurang",
       "menguap"
-    ]
+    ],
+    "traditional": "欠"
   },
   {
     "id": "3833",
@@ -5949,7 +6536,8 @@
       "untuk menggantikan orang lain dalam tes",
       "untuk mengetuk",
       "Klasifikasi untuk tembakan senapan"
-    ]
+    ],
+    "traditional": "槍"
   },
   {
     "id": "3834",
@@ -5958,7 +6546,8 @@
     "translations": [
       "kekuatan",
       "intensitas"
-    ]
+    ],
+    "traditional": "強度"
   },
   {
     "id": "3835",
@@ -5966,7 +6555,8 @@
     "pinyin": "qiáng bì",
     "translations": [
       "dinding"
-    ]
+    ],
+    "traditional": "牆壁"
   },
   {
     "id": "3836",
@@ -5979,7 +6569,8 @@
       "untuk meraih",
       "untuk merampok",
       "untuk merebut"
-    ]
+    ],
+    "traditional": "搶"
   },
   {
     "id": "3837",
@@ -5987,7 +6578,8 @@
     "pinyin": "qiǎng jiù",
     "translations": [
       "untuk menyelamatkan"
-    ]
+    ],
+    "traditional": "搶救"
   },
   {
     "id": "3838",
@@ -5996,7 +6588,8 @@
     "translations": [
       "untuk memaksa",
       "untuk memaksa"
-    ]
+    ],
+    "traditional": "強迫"
   },
   {
     "id": "3839",
@@ -6009,7 +6602,8 @@
       "diam",
       "khawatir",
       "Taiwan PR. [qiǎo qiǎo]"
-    ]
+    ],
+    "traditional": "悄悄"
   },
   {
     "id": "3840",
@@ -6023,7 +6617,8 @@
       "untuk mengetuk",
       "untuk merobek SB",
       "untuk biaya berlebih"
-    ]
+    ],
+    "traditional": "敲"
   },
   {
     "id": "3841",
@@ -6031,7 +6626,8 @@
     "pinyin": "qiāo mén",
     "translations": [
       "untuk mengetuk pintu"
-    ]
+    ],
+    "traditional": "敲門"
   },
   {
     "id": "3842",
@@ -6042,7 +6638,8 @@
       "untuk melihat",
       "untuk melihat (seorang dokter)",
       "untuk mengunjungi"
-    ]
+    ],
+    "traditional": "瞧"
   },
   {
     "id": "3843",
@@ -6051,7 +6648,8 @@
     "translations": [
       "guqin 古琴 [gǔ qín] (jenis sitar)",
       "alat musik secara umum"
-    ]
+    ],
+    "traditional": "琴"
   },
   {
     "id": "3844",
@@ -6060,7 +6658,8 @@
     "translations": [
       "kerja keras",
       "rajin"
-    ]
+    ],
+    "traditional": "勤奮"
   },
   {
     "id": "3845",
@@ -6072,7 +6671,8 @@
       "Hitam kehijauan",
       "anak muda",
       "Muda (orang)"
-    ]
+    ],
+    "traditional": "青"
   },
   {
     "id": "3846",
@@ -6080,7 +6680,8 @@
     "pinyin": "qīng chén",
     "translations": [
       "dini hari"
-    ]
+    ],
+    "traditional": "清晨"
   },
   {
     "id": "3847",
@@ -6090,7 +6691,8 @@
       "untuk membersihkan",
       "untuk merapikan",
       "untuk membuang"
-    ]
+    ],
+    "traditional": "清理"
   },
   {
     "id": "3848",
@@ -6099,7 +6701,8 @@
     "translations": [
       "merencanakan",
       "keadaan"
-    ]
+    ],
+    "traditional": "情節"
   },
   {
     "id": "3849",
@@ -6108,7 +6711,8 @@
     "translations": [
       "keadaan",
       "situasi"
-    ]
+    ],
+    "traditional": "情形"
   },
   {
     "id": "3850",
@@ -6116,7 +6720,8 @@
     "pinyin": "qíng lǎng",
     "translations": [
       "cerah dan tidak berawan"
-    ]
+    ],
+    "traditional": "晴朗"
   },
   {
     "id": "3851",
@@ -6126,7 +6731,8 @@
       "daerah",
       "wilayah",
       "daerah"
-    ]
+    ],
+    "traditional": "區域"
   },
   {
     "id": "3852",
@@ -6135,7 +6741,8 @@
     "translations": [
       "semua",
       "tanpa terkecuali"
-    ]
+    ],
+    "traditional": "全都"
   },
   {
     "id": "3853",
@@ -6144,7 +6751,8 @@
     "translations": [
       "di seluruh dunia",
       "seluruh dunia"
-    ]
+    ],
+    "traditional": "全世界"
   },
   {
     "id": "3854",
@@ -6154,7 +6762,8 @@
       "musim semi (aliran kecil)",
       "mulut pegas",
       "koin (kuno)"
-    ]
+    ],
+    "traditional": "泉"
   },
   {
     "id": "3855",
@@ -6167,7 +6776,8 @@
       "untuk mendesak",
       "menghibur",
       "menenangkan"
-    ]
+    ],
+    "traditional": "勸"
   },
   {
     "id": "3856",
@@ -6178,7 +6788,8 @@
       "menjadi kekurangan",
       "kekurangan",
       "kekurangan"
-    ]
+    ],
+    "traditional": "缺乏"
   },
   {
     "id": "3857",
@@ -6187,7 +6798,8 @@
     "translations": [
       "untuk membangun",
       "untuk melembagakan"
-    ]
+    ],
+    "traditional": "確立"
   },
   {
     "id": "3858",
@@ -6196,7 +6808,8 @@
     "translations": [
       "masyarakat",
       "koloni"
-    ]
+    ],
+    "traditional": "群體"
   },
   {
     "id": "3859",
@@ -6206,7 +6819,8 @@
       "massa",
       "orang banyak",
       "massa"
-    ]
+    ],
+    "traditional": "群眾"
   },
   {
     "id": "3860",
@@ -6218,7 +6832,8 @@
       "untuk mendapatkan (kebiasaan buruk dll)",
       "untuk mencemari",
       "untuk menambahkan pencucian warna ke lukisan"
-    ]
+    ],
+    "traditional": "染"
   },
   {
     "id": "3861",
@@ -6235,7 +6850,8 @@
       "untuk membuat jalan memutar",
       "membingungkan",
       "untuk membingungkan"
-    ]
+    ],
+    "traditional": "繞"
   },
   {
     "id": "3862",
@@ -6245,7 +6861,8 @@
       "panas",
       "jumlah panas",
       "nilai kalor"
-    ]
+    ],
+    "traditional": "熱量"
   },
   {
     "id": "3863",
@@ -6255,7 +6872,8 @@
       "populer",
       "panas",
       "dalam mode"
-    ]
+    ],
+    "traditional": "熱門"
   },
   {
     "id": "3864",
@@ -6264,7 +6882,8 @@
     "translations": [
       "dunia manusia",
       "bumi"
-    ]
+    ],
+    "traditional": "人間"
   },
   {
     "id": "3865",
@@ -6273,7 +6892,8 @@
     "translations": [
       "tenaga kerja",
       "Kekuatan Tenaga Kerja"
-    ]
+    ],
+    "traditional": "人力"
   },
   {
     "id": "3866",
@@ -6283,7 +6903,8 @@
       "orang",
       "angka",
       "tokoh masyarakat"
-    ]
+    ],
+    "traditional": "人士"
   },
   {
     "id": "3867",
@@ -6293,7 +6914,8 @@
       "orang",
       "karakter (dalam drama, novel dll)",
       "tokoh utama"
-    ]
+    ],
+    "traditional": "人物"
   },
   {
     "id": "3868",
@@ -6304,7 +6926,8 @@
       "untuk bertahan",
       "menoleransi",
       "untuk menahan diri"
-    ]
+    ],
+    "traditional": "忍"
   },
   {
     "id": "3869",
@@ -6313,7 +6936,8 @@
     "translations": [
       "tidak bisa membantu",
       "tidak bisa menanggung"
-    ]
+    ],
+    "traditional": "忍不住"
   },
   {
     "id": "3870",
@@ -6322,7 +6946,8 @@
     "translations": [
       "untuk menanggung",
       "untuk bertahan"
-    ]
+    ],
+    "traditional": "忍受"
   },
   {
     "id": "3871",
@@ -6332,7 +6957,8 @@
       "untuk mengenali",
       "untuk mengetahui",
       "untuk mengakui"
-    ]
+    ],
+    "traditional": "認"
   },
   {
     "id": "3872",
@@ -6346,7 +6972,8 @@
       "untuk percaya dengan tegas",
       "untuk mengatur pikiran seseorang",
       "untuk mengidentifikasi dengan"
-    ]
+    ],
+    "traditional": "認定"
   },
   {
     "id": "3873",
@@ -6355,7 +6982,8 @@
     "translations": [
       "untuk melempar",
       "untuk membuang"
-    ]
+    ],
+    "traditional": "扔"
   },
   {
     "id": "3874",
@@ -6365,7 +6993,8 @@
       "masih (tersisa)",
       "tetap (sama)",
       "belum"
-    ]
+    ],
+    "traditional": "仍舊"
   },
   {
     "id": "3875",
@@ -6374,7 +7003,8 @@
     "translations": [
       "lewat sini",
       "Jadi"
-    ]
+    ],
+    "traditional": "如此"
   },
   {
     "id": "3876",
@@ -6383,7 +7013,8 @@
     "translations": [
       "menyukai",
       "sebagai"
-    ]
+    ],
+    "traditional": "如同"
   },
   {
     "id": "3877",
@@ -6391,7 +7022,8 @@
     "pinyin": "rú xià",
     "translations": [
       "sebagai berikut"
-    ]
+    ],
+    "traditional": "如下"
   },
   {
     "id": "3878",
@@ -6401,7 +7033,8 @@
       "pintu masuk",
       "untuk memasuki pintu",
       "Pendahuluan (ke subjek)"
-    ]
+    ],
+    "traditional": "入門"
   },
   {
     "id": "3879",
@@ -6410,7 +7043,8 @@
     "translations": [
       "lembut",
       "fleksibel"
-    ]
+    ],
+    "traditional": "軟"
   },
   {
     "id": "3880",
@@ -6418,7 +7052,8 @@
     "pinyin": "ruǎn jiàn",
     "translations": [
       "(perangkat lunak komputer"
-    ]
+    ],
+    "traditional": "軟體"
   },
   {
     "id": "3881",
@@ -6429,7 +7064,8 @@
       "untuk menyemprot",
       "menumpahkan",
       "untuk ditumpahkan"
-    ]
+    ],
+    "traditional": "灑"
   },
   {
     "id": "3882",
@@ -6442,7 +7078,8 @@
       "berantakan",
       "santai",
       "obat bubuk"
-    ]
+    ],
+    "traditional": "散"
   },
   {
     "id": "3883",
@@ -6451,7 +7088,8 @@
     "translations": [
       "prosa",
       "karangan"
-    ]
+    ],
+    "traditional": "散文"
   },
   {
     "id": "3884",
@@ -6464,7 +7102,8 @@
       "untuk melemahkan atau mengurangi",
       "untuk pintar (dialek)",
       "(digunakan setelah kata kerja)"
-    ]
+    ],
+    "traditional": "殺"
   },
   {
     "id": "3885",
@@ -6474,7 +7113,8 @@
       "Hancurkan virus komputer",
       "untuk mendisinfeksi",
       "anti Virus"
-    ]
+    ],
+    "traditional": "殺毒"
   },
   {
     "id": "3886",
@@ -6482,7 +7122,8 @@
     "pinyin": "shā mò",
     "translations": [
       "gurun"
-    ]
+    ],
+    "traditional": "沙漠"
   },
   {
     "id": "3887",
@@ -6490,7 +7131,8 @@
     "pinyin": "shǎ",
     "translations": [
       "konyol"
-    ]
+    ],
+    "traditional": "傻"
   },
   {
     "id": "3888",
@@ -6498,7 +7140,8 @@
     "pinyin": "shān qū",
     "translations": [
       "area gunung"
-    ]
+    ],
+    "traditional": "山區"
   },
   {
     "id": "3889",
@@ -6507,7 +7150,8 @@
     "translations": [
       "untuk penggemar",
       "untuk menampar wajah SB"
-    ]
+    ],
+    "traditional": "扇"
   },
   {
     "id": "3890",
@@ -6517,7 +7161,8 @@
       "penggemar",
       "geser, engsel, atau bagian datar STH",
       "Classifier for Doors, Windows dll"
-    ]
+    ],
+    "traditional": "扇"
   },
   {
     "id": "3891",
@@ -6525,7 +7170,8 @@
     "pinyin": "shàn zi",
     "translations": [
       "penggemar"
-    ]
+    ],
+    "traditional": "扇子"
   },
   {
     "id": "3892",
@@ -6534,7 +7180,8 @@
     "translations": [
       "merek dagang",
       "logo"
-    ]
+    ],
+    "traditional": "商標"
   },
   {
     "id": "3893",
@@ -6543,7 +7190,8 @@
     "translations": [
       "otoritas yang lebih tinggi",
       "atasan"
-    ]
+    ],
+    "traditional": "上級"
   },
   {
     "id": "3894",
@@ -6555,7 +7203,8 @@
       "lama dan baru",
       "panjang",
       "tentang"
-    ]
+    ],
+    "traditional": "上下"
   },
   {
     "id": "3895",
@@ -6564,7 +7213,8 @@
     "translations": [
       "naik",
       "naik"
-    ]
+    ],
+    "traditional": "上漲"
   },
   {
     "id": "3896",
@@ -6573,7 +7223,8 @@
     "translations": [
       "agak",
       "sedikit"
-    ]
+    ],
+    "traditional": "稍"
   },
   {
     "id": "3897",
@@ -6581,7 +7232,8 @@
     "pinyin": "shāo wēi",
     "translations": [
       "sedikit"
-    ]
+    ],
+    "traditional": "稍微"
   },
   {
     "id": "3898",
@@ -6590,7 +7242,8 @@
     "translations": [
       "ular",
       "ular"
-    ]
+    ],
+    "traditional": "蛇"
   },
   {
     "id": "3899",
@@ -6600,7 +7253,8 @@
       "benci melakukan sth",
       "membenci untuk berpisah",
       "untuk menyesali"
-    ]
+    ],
+    "traditional": "捨不得"
   },
   {
     "id": "3900",
@@ -6608,7 +7262,8 @@
     "pinyin": "shě de",
     "translations": [
       "bersedia berpisah dengan STH"
-    ]
+    ],
+    "traditional": "捨得"
   },
   {
     "id": "3901",
@@ -6620,7 +7275,8 @@
       "untuk membayangkan",
       "Rencana Tentatif",
       "untuk pertimbangan"
-    ]
+    ],
+    "traditional": "設想"
   },
   {
     "id": "3902",
@@ -6632,7 +7288,8 @@
       "klub",
       "agen",
       "(Tua) Dewa Tanah"
-    ]
+    ],
+    "traditional": "社"
   },
   {
     "id": "3903",
@@ -6640,7 +7297,8 @@
     "pinyin": "shè qū",
     "translations": [
       "masyarakat"
-    ]
+    ],
+    "traditional": "社區"
   },
   {
     "id": "3904",
@@ -6651,7 +7309,8 @@
       "peluncuran",
       "untuk menyinggung",
       "Radio- (Kimia)"
-    ]
+    ],
+    "traditional": "射"
   },
   {
     "id": "3905",
@@ -6660,7 +7319,8 @@
     "translations": [
       "untuk menembak",
       "untuk menembak (pistol)"
-    ]
+    ],
+    "traditional": "射擊"
   },
   {
     "id": "3906",
@@ -6668,7 +7328,8 @@
     "pinyin": "shè xiàng",
     "translations": [
       "untuk merekam rekaman"
-    ]
+    ],
+    "traditional": "攝像"
   },
   {
     "id": "3907",
@@ -6676,7 +7337,8 @@
     "pinyin": "shè xiàng jī",
     "translations": [
       "kamera video"
-    ]
+    ],
+    "traditional": "攝像機"
   },
   {
     "id": "3908",
@@ -6686,7 +7348,8 @@
       "untuk mengambil foto",
       "fotografi",
       "untuk syuting (film)"
-    ]
+    ],
+    "traditional": "攝影"
   },
   {
     "id": "3909",
@@ -6695,7 +7358,8 @@
     "translations": [
       "juru potret",
       "juru kamera"
-    ]
+    ],
+    "traditional": "攝影師"
   },
   {
     "id": "3910",
@@ -6704,7 +7368,8 @@
     "translations": [
       "untuk meregangkan",
       "untuk memperpanjang"
-    ]
+    ],
+    "traditional": "伸"
   },
   {
     "id": "3911",
@@ -6714,7 +7379,8 @@
       "jurang yang dalam",
       "kedalaman",
       "bagian terdalam atau paling jauh"
-    ]
+    ],
+    "traditional": "深處"
   },
   {
     "id": "3912",
@@ -6724,7 +7390,8 @@
       "kedalaman",
       "(dari pidato dll) kedalaman",
       "Tahap Pengembangan Lanjutan"
-    ]
+    ],
+    "traditional": "深度"
   },
   {
     "id": "3913",
@@ -6743,7 +7410,8 @@
       "(bahasa gaul) mengagumkan",
       "luar biasa",
       "Tuhan"
-    ]
+    ],
+    "traditional": "神"
   },
   {
     "id": "3914",
@@ -6754,7 +7422,8 @@
       "kondisi kejiwaan",
       "(Coll.) Terikat",
       "Nutjob"
-    ]
+    ],
+    "traditional": "神經"
   },
   {
     "id": "3915",
@@ -6764,7 +7433,8 @@
       "gaib",
       "mistik",
       "ajaib"
-    ]
+    ],
+    "traditional": "神奇"
   },
   {
     "id": "3916",
@@ -6773,7 +7443,8 @@
     "translations": [
       "Lihat",
       "ekspresi"
-    ]
+    ],
+    "traditional": "神情"
   },
   {
     "id": "3917",
@@ -6782,7 +7453,8 @@
     "translations": [
       "untuk meningkatkan",
       "untuk naik"
-    ]
+    ],
+    "traditional": "升高"
   },
   {
     "id": "3918",
@@ -6793,7 +7465,8 @@
       "untuk menghasilkan",
       "dihasilkan",
       "diproduksi"
-    ]
+    ],
+    "traditional": "生成"
   },
   {
     "id": "3919",
@@ -6806,7 +7479,8 @@
       "kebisingan",
       "reputasi",
       "Klasifikasi untuk suara"
-    ]
+    ],
+    "traditional": "聲"
   },
   {
     "id": "3920",
@@ -6815,7 +7489,8 @@
     "translations": [
       "kemenangan atau kekalahan",
       "hasil pertempuran"
-    ]
+    ],
+    "traditional": "勝負"
   },
   {
     "id": "3921",
@@ -6825,7 +7500,8 @@
       "untuk tetap",
       "ditinggalkan",
       "untuk memiliki sisa"
-    ]
+    ],
+    "traditional": "剩"
   },
   {
     "id": "3922",
@@ -6834,7 +7510,8 @@
     "translations": [
       "untuk tetap",
       "Tersisa"
-    ]
+    ],
+    "traditional": "剩下"
   },
   {
     "id": "3923",
@@ -6846,7 +7523,8 @@
       "untuk membuat kesalahan",
       "kesalahan",
       "Kesalahan layanan (dalam bola voli, tenis dll)"
-    ]
+    ],
+    "traditional": "失誤"
   },
   {
     "id": "3924",
@@ -6856,7 +7534,8 @@
       "menguasai",
       "Pekerja yang memenuhi syarat",
       "bentuk alamat yang terhormat untuk pria yang lebih tua"
-    ]
+    ],
+    "traditional": "師傅"
   },
   {
     "id": "3925",
@@ -6864,7 +7543,8 @@
     "pinyin": "shī gē",
     "translations": [
       "puisi"
-    ]
+    ],
+    "traditional": "詩歌"
   },
   {
     "id": "3926",
@@ -6875,7 +7555,8 @@
       "menyelesaikan",
       "seratus persen",
       "warna murni (dengan warna)"
-    ]
+    ],
+    "traditional": "十足"
   },
   {
     "id": "3927",
@@ -6884,7 +7565,8 @@
     "translations": [
       "sering",
       "sering"
-    ]
+    ],
+    "traditional": "時常"
   },
   {
     "id": "3928",
@@ -6894,7 +7576,8 @@
       "waktu",
       "zaman",
       "periode waktu"
-    ]
+    ],
+    "traditional": "時光"
   },
   {
     "id": "3929",
@@ -6904,7 +7587,8 @@
       "Waktu yang beruntung",
       "kesempatan",
       "peluang"
-    ]
+    ],
+    "traditional": "時機"
   },
   {
     "id": "3930",
@@ -6914,7 +7598,8 @@
       "tren saat ini",
       "situasi saat ini",
       "Bagaimana keadaan"
-    ]
+    ],
+    "traditional": "時事"
   },
   {
     "id": "3931",
@@ -6927,7 +7612,8 @@
       "ekonomis",
       "menguntungkan (kesepakatan)",
       "Substansial (Diskon)"
-    ]
+    ],
+    "traditional": "實惠"
   },
   {
     "id": "3932",
@@ -6937,7 +7623,8 @@
       "untuk mengambil",
       "untuk menyusun atau mengatur",
       "sepuluh (angka anti-penipuan bankir)"
-    ]
+    ],
+    "traditional": "拾"
   },
   {
     "id": "3933",
@@ -6950,7 +7637,8 @@
       "bisa dilakukan",
       "untuk membuat",
       "menyebabkan"
-    ]
+    ],
+    "traditional": "使得"
   },
   {
     "id": "3934",
@@ -6961,7 +7649,8 @@
       "untuk menunjukkan cara melakukan sth",
       "demonstrasi",
       "contoh model"
-    ]
+    ],
+    "traditional": "示範"
   },
   {
     "id": "3935",
@@ -6972,7 +7661,8 @@
       "membentuk",
       "pola",
       "gaya"
-    ]
+    ],
+    "traditional": "式"
   },
   {
     "id": "3936",
@@ -6981,7 +7671,8 @@
     "translations": [
       "kekuatan",
       "(kemampuan untuk) pengaruh"
-    ]
+    ],
+    "traditional": "勢力"
   },
   {
     "id": "3937",
@@ -6990,7 +7681,8 @@
     "translations": [
       "untuk mencoba",
       "untuk mencoba"
-    ]
+    ],
+    "traditional": "試圖"
   },
   {
     "id": "3938",
@@ -6998,7 +7690,8 @@
     "pinyin": "shì pín",
     "translations": [
       "video"
-    ]
+    ],
+    "traditional": "影片"
   },
   {
     "id": "3939",
@@ -7009,7 +7702,8 @@
       "untuk melihat sebagai",
       "mempertimbangkan untuk menjadi",
       "untuk dianggap"
-    ]
+    ],
+    "traditional": "視為"
   },
   {
     "id": "3940",
@@ -7018,7 +7712,8 @@
     "translations": [
       "untuk membeli (dari berbagai tempat)",
       "untuk mengakuisisi (sebuah perusahaan)"
-    ]
+    ],
+    "traditional": "收購"
   },
   {
     "id": "3941",
@@ -7027,7 +7722,8 @@
     "translations": [
       "berkumpul",
       "untuk mengumpulkan"
-    ]
+    ],
+    "traditional": "收集"
   },
   {
     "id": "3942",
@@ -7040,7 +7736,8 @@
       "untuk memperbaiki",
       "(coll.) Untuk menyortir SB",
       "untuk memperbaiki SB"
-    ]
+    ],
+    "traditional": "收拾"
   },
   {
     "id": "3943",
@@ -7051,7 +7748,8 @@
       "berarti (melakukan sth)",
       "strategi",
       "menipu"
-    ]
+    ],
+    "traditional": "手段"
   },
   {
     "id": "3944",
@@ -7061,7 +7759,8 @@
       "teknik",
       "menipu",
       "keahlian"
-    ]
+    ],
+    "traditional": "手法"
   },
   {
     "id": "3945",
@@ -7069,7 +7768,8 @@
     "pinyin": "shòu sī",
     "translations": [
       "Sushi"
-    ]
+    ],
+    "traditional": "壽司"
   },
   {
     "id": "3946",
@@ -7078,7 +7778,8 @@
     "translations": [
       "bencana yang dilanda bencana",
       "untuk dipukul oleh bencana alam"
-    ]
+    ],
+    "traditional": "受災"
   },
   {
     "id": "3947",
@@ -7090,7 +7791,8 @@
       "(pakaian) ketat",
       "(daging) ramping",
       "(tanah) tidak produktif"
-    ]
+    ],
+    "traditional": "瘦"
   },
   {
     "id": "3948",
@@ -7100,7 +7802,8 @@
       "kaligrafi",
       "tulisan tangan",
       "keahlian menulis indah"
-    ]
+    ],
+    "traditional": "書法"
   },
   {
     "id": "3949",
@@ -7108,7 +7811,8 @@
     "pinyin": "shū guì",
     "translations": [
       "rak buku"
-    ]
+    ],
+    "traditional": "書櫃"
   },
   {
     "id": "3950",
@@ -7116,7 +7820,8 @@
     "pinyin": "shū zhuō",
     "translations": [
       "meja"
-    ]
+    ],
+    "traditional": "書桌"
   },
   {
     "id": "3951",
@@ -7125,7 +7830,8 @@
     "translations": [
       "untuk mengekspor",
       "untuk output"
-    ]
+    ],
+    "traditional": "輸出"
   },
   {
     "id": "3952",
@@ -7133,7 +7839,8 @@
     "pinyin": "shū cài",
     "translations": [
       "Sayuran"
-    ]
+    ],
+    "traditional": "蔬菜"
   },
   {
     "id": "3953",
@@ -7142,7 +7849,8 @@
     "translations": [
       "untuk menjadi terbiasa",
       "untuk mengetahui dengan baik"
-    ]
+    ],
+    "traditional": "熟悉"
   },
   {
     "id": "3954",
@@ -7151,7 +7859,8 @@
     "translations": [
       "tikus",
       "mouse"
-    ]
+    ],
+    "traditional": "鼠"
   },
   {
     "id": "3955",
@@ -7159,7 +7868,8 @@
     "pinyin": "shǔ biāo",
     "translations": [
       "mouse (komputasi)"
-    ]
+    ],
+    "traditional": "鼠標"
   },
   {
     "id": "3956",
@@ -7168,7 +7878,8 @@
     "translations": [
       "jumlah",
       "nomor"
-    ]
+    ],
+    "traditional": "數目"
   },
   {
     "id": "3957",
@@ -7178,7 +7889,8 @@
       "untuk melempar",
       "terjatuh",
       "untuk jatuh dan istirahat"
-    ]
+    ],
+    "traditional": "摔"
   },
   {
     "id": "3958",
@@ -7188,7 +7900,8 @@
       "untuk jatuh",
       "untuk tergelincir dan jatuh",
       "untuk melempar SB ke tanah"
-    ]
+    ],
+    "traditional": "摔倒"
   },
   {
     "id": "3959",
@@ -7198,7 +7911,8 @@
       "untuk memimpin",
       "untuk memerintah",
       "ke kepala"
-    ]
+    ],
+    "traditional": "率領"
   },
   {
     "id": "3960",
@@ -7206,7 +7920,8 @@
     "pinyin": "shuāng shǒu",
     "translations": [
       "kedua tangan"
-    ]
+    ],
+    "traditional": "雙手"
   },
   {
     "id": "3961",
@@ -7214,7 +7929,8 @@
     "pinyin": "shuǐ chǎn pǐn",
     "translations": [
       "produk air, makanan laut"
-    ]
+    ],
+    "traditional": "水產品"
   },
   {
     "id": "3962",
@@ -7224,7 +7940,8 @@
       "kadar air",
       "(Gbr.) Overstatement",
       "lapisan"
-    ]
+    ],
+    "traditional": "水分"
   },
   {
     "id": "3963",
@@ -7232,7 +7949,8 @@
     "pinyin": "shuǐ kù",
     "translations": [
       "waduk"
-    ]
+    ],
+    "traditional": "水庫"
   },
   {
     "id": "3964",
@@ -7241,7 +7959,8 @@
     "translations": [
       "banjir",
       "kerusakan banjir"
-    ]
+    ],
+    "traditional": "水災"
   },
   {
     "id": "3965",
@@ -7251,7 +7970,8 @@
       "tidur",
       "tidur",
       "(komputasi) untuk memasuki mode tidur"
-    ]
+    ],
+    "traditional": "睡眠"
   },
   {
     "id": "3966",
@@ -7266,7 +7986,8 @@
       "teori",
       "hipotesa",
       "penafsiran"
-    ]
+    ],
+    "traditional": "說法"
   },
   {
     "id": "3967",
@@ -7276,7 +7997,8 @@
       "gelar Master",
       "orang yang memiliki gelar master",
       "orang terpelajar"
-    ]
+    ],
+    "traditional": "碩士"
   },
   {
     "id": "3968",
@@ -7288,7 +8010,8 @@
       "interpersonal",
       "SB dengan siapa seseorang memiliki hubungan pribadi yang dekat",
       "anggota klik seseorang"
-    ]
+    ],
+    "traditional": "私人"
   },
   {
     "id": "3969",
@@ -7297,7 +8020,8 @@
     "translations": [
       "(baris) pemikiran",
       "pemikiran"
-    ]
+    ],
+    "traditional": "思維"
   },
   {
     "id": "3970",
@@ -7305,7 +8029,8 @@
     "pinyin": "sì zhōu",
     "translations": [
       "semuanya"
-    ]
+    ],
+    "traditional": "四周"
   },
   {
     "id": "3971",
@@ -7313,7 +8038,8 @@
     "pinyin": "sōu",
     "translations": [
       "untuk mencari"
-    ]
+    ],
+    "traditional": "搜"
   },
   {
     "id": "3972",
@@ -7322,7 +8048,8 @@
     "translations": [
       "untuk mencari (tempat)",
       "Untuk mencari (database dll)"
-    ]
+    ],
+    "traditional": "搜尋"
   },
   {
     "id": "3973",
@@ -7333,7 +8060,8 @@
       "kamar asrama",
       "ruang tempat tinggal",
       "asrama"
-    ]
+    ],
+    "traditional": "宿舍"
   },
   {
     "id": "3974",
@@ -7342,7 +8070,8 @@
     "translations": [
       "asam, manis, pahit dan pedas panas",
       "ara. kegembiraan dan kesedihan hidup"
-    ]
+    ],
+    "traditional": "酸甜苦辣"
   },
   {
     "id": "3975",
@@ -7350,7 +8079,8 @@
     "pinyin": "suí hòu",
     "translations": [
       "segera setelah"
-    ]
+    ],
+    "traditional": "隨後"
   },
   {
     "id": "3976",
@@ -7362,7 +8092,8 @@
       "sesuka hati",
       "sukarela",
       "sadar"
-    ]
+    ],
+    "traditional": "隨意"
   },
   {
     "id": "3977",
@@ -7372,7 +8103,8 @@
       "bersama",
       "setelah",
       "mengikuti"
-    ]
+    ],
+    "traditional": "隨著"
   },
   {
     "id": "3978",
@@ -7381,7 +8113,8 @@
     "translations": [
       "bertahun-tahun",
       "waktu"
-    ]
+    ],
+    "traditional": "歲月"
   },
   {
     "id": "3979",
@@ -7391,7 +8124,8 @@
       "untuk memecah",
       "untuk pecah berkeping-keping",
       "fragmentaris"
-    ]
+    ],
+    "traditional": "碎"
   },
   {
     "id": "3980",
@@ -7401,7 +8135,8 @@
       "menyakiti",
       "untuk menghancurkan",
       "untuk merusak"
-    ]
+    ],
+    "traditional": "損害"
   },
   {
     "id": "3981",
@@ -7412,7 +8147,8 @@
       "kerusakan",
       "kalah",
       "untuk menderita kerusakan"
-    ]
+    ],
+    "traditional": "損失"
   },
   {
     "id": "3982",
@@ -7422,7 +8158,8 @@
       "tempat",
       "Lokasi",
       "(setelah kata benda) tempat di mana ia berada"
-    ]
+    ],
+    "traditional": "所在"
   },
   {
     "id": "3983",
@@ -7432,7 +8169,8 @@
       "untuk mengunci",
       "untuk mengunci",
       "kunci"
-    ]
+    ],
+    "traditional": "鎖"
   },
   {
     "id": "3984",
@@ -7442,7 +8180,8 @@
       "badai",
       "topan",
       "Kehadiran panggung, Poise"
-    ]
+    ],
+    "traditional": "颱風"
   },
   {
     "id": "3985",
@@ -7452,7 +8191,8 @@
       "mengangkat",
       "untuk meningkatkan",
       "(dari dua orang atau lebih) untuk dibawa"
-    ]
+    ],
+    "traditional": "抬"
   },
   {
     "id": "3986",
@@ -7462,7 +8202,8 @@
       "untuk mengangkat kepala seseorang",
       "untuk mendapatkan tanah",
       "nama akun, atau ruang untuk menulis nama di cek, tagihan dll"
-    ]
+    ],
+    "traditional": "抬頭"
   },
   {
     "id": "3987",
@@ -7470,7 +8211,8 @@
     "pinyin": "tài kōng",
     "translations": [
       "luar angkasa"
-    ]
+    ],
+    "traditional": "太空"
   },
   {
     "id": "3988",
@@ -7487,7 +8229,8 @@
       "untuk menuduh",
       "untuk memakzulkan",
       "elastis (bahan)"
-    ]
+    ],
+    "traditional": "彈"
   },
   {
     "id": "3989",
@@ -7497,7 +8240,8 @@
       "untuk melarikan diri",
       "melarikan diri",
       "melarikan diri"
-    ]
+    ],
+    "traditional": "逃"
   },
   {
     "id": "3990",
@@ -7507,7 +8251,8 @@
       "melarikan diri dari sth",
       "melarikan diri",
       "untuk melarikan diri"
-    ]
+    ],
+    "traditional": "逃跑"
   },
   {
     "id": "3991",
@@ -7517,7 +8262,8 @@
       "untuk melarikan diri",
       "melarikan diri",
       "melarikan diri"
-    ]
+    ],
+    "traditional": "逃走"
   },
   {
     "id": "3992",
@@ -7525,7 +8271,8 @@
     "pinyin": "táo",
     "translations": [
       "persik"
-    ]
+    ],
+    "traditional": "桃"
   },
   {
     "id": "3993",
@@ -7534,7 +8281,8 @@
     "translations": [
       "buah persik yang merekah",
       "(Gbr.) Love Affair"
-    ]
+    ],
+    "traditional": "桃花"
   },
   {
     "id": "3994",
@@ -7542,7 +8290,8 @@
     "pinyin": "táo shù",
     "translations": [
       "pohon persik"
-    ]
+    ],
+    "traditional": "桃樹"
   },
   {
     "id": "3995",
@@ -7554,7 +8303,8 @@
       "tidak menyenangkan",
       "sulit",
       "mengganggu"
-    ]
+    ],
+    "traditional": "討厭"
   },
   {
     "id": "3996",
@@ -7565,7 +8315,8 @@
       "spesifik",
       "ditunjuk",
       "tertentu"
-    ]
+    ],
+    "traditional": "特定"
   },
   {
     "id": "3997",
@@ -7574,7 +8325,8 @@
     "translations": [
       "Properti",
       "ciri"
-    ]
+    ],
+    "traditional": "特性"
   },
   {
     "id": "3998",
@@ -7584,7 +8336,8 @@
       "spesifik (untuk)",
       "ciri-ciri dari)",
       "berbeda"
-    ]
+    ],
+    "traditional": "特有"
   },
   {
     "id": "3999",
@@ -7593,7 +8346,8 @@
     "translations": [
       "mempromosikan",
       "untuk advokat"
-    ]
+    ],
+    "traditional": "提倡"
   },
   {
     "id": "4000",
@@ -7606,7 +8360,8 @@
       "untuk mengambil",
       "untuk membangkitkan",
       "untuk menaikkan (topik, beban yang berat, kepalan seseorang, roh seseorang dll)"
-    ]
+    ],
+    "traditional": "提起"
   },
   {
     "id": "4001",
@@ -7620,7 +8375,8 @@
       "tip",
       "pengingat",
       "melihat"
-    ]
+    ],
+    "traditional": "提示"
   },
   {
     "id": "4002",
@@ -7628,7 +8384,8 @@
     "pinyin": "tí cái",
     "translations": [
       "materi pelajaran"
-    ]
+    ],
+    "traditional": "題材"
   },
   {
     "id": "4003",
@@ -7637,7 +8394,8 @@
     "translations": [
       "volume",
       "dalam jumlah besar"
-    ]
+    ],
+    "traditional": "體積"
   },
   {
     "id": "4004",
@@ -7646,7 +8404,8 @@
     "translations": [
       "kekuatan fisik",
       "kekuatan fisik"
-    ]
+    ],
+    "traditional": "體力"
   },
   {
     "id": "4005",
@@ -7658,7 +8417,8 @@
       "jenius",
       "berbakat",
       "berbakat"
-    ]
+    ],
+    "traditional": "天才"
   },
   {
     "id": "4006",
@@ -7666,7 +8426,8 @@
     "pinyin": "tiān rán qì",
     "translations": [
       "gas alam"
-    ]
+    ],
+    "traditional": "天然氣"
   },
   {
     "id": "4007",
@@ -7674,7 +8435,8 @@
     "pinyin": "tiān wén",
     "translations": [
       "astronomi"
-    ]
+    ],
+    "traditional": "天文"
   },
   {
     "id": "4008",
@@ -7685,7 +8447,8 @@
       "untuk mengatur",
       "untuk menyelaraskan",
       "untuk mendamaikan (akuntansi dll)"
-    ]
+    ],
+    "traditional": "調節"
   },
   {
     "id": "4009",
@@ -7694,7 +8457,8 @@
     "translations": [
       "untuk bermeditasi",
       "untuk membawa pihak dalam kesepakatan"
-    ]
+    ],
+    "traditional": "調解"
   },
   {
     "id": "4010",
@@ -7705,7 +8469,8 @@
       "ruang tamu",
       "kantor",
       "Departemen Pemerintah Provinsi"
-    ]
+    ],
+    "traditional": "廳"
   },
   {
     "id": "4011",
@@ -7714,7 +8479,8 @@
     "translations": [
       "untuk tinggal di suatu tempat sementara",
       "untuk berhenti"
-    ]
+    ],
+    "traditional": "停留"
   },
   {
     "id": "4012",
@@ -7723,7 +8489,8 @@
     "translations": [
       "umum (gunakan)",
       "dapat dipertukarkan"
-    ]
+    ],
+    "traditional": "通用"
   },
   {
     "id": "4013",
@@ -7735,7 +8502,8 @@
       "untuk merebut",
       "maling",
       "diam-diam"
-    ]
+    ],
+    "traditional": "偷"
   },
   {
     "id": "4014",
@@ -7747,7 +8515,8 @@
       "secara diam-diam",
       "secara sembunyi",
       "secara rahasia"
-    ]
+    ],
+    "traditional": "偷偷"
   },
   {
     "id": "4015",
@@ -7758,7 +8527,8 @@
       "untuk membuat terobosan",
       "untuk melampaui atau mematahkan bagian belakang (tugas dll)",
       "(dari olahraga bola) untuk menembus pertahanan"
-    ]
+    ],
+    "traditional": "突破"
   },
   {
     "id": "4016",
@@ -7767,7 +8537,8 @@
     "translations": [
       "kentang",
       "(TW) Kacang Kacang"
-    ]
+    ],
+    "traditional": "馬鈴薯"
   },
   {
     "id": "4017",
@@ -7777,7 +8548,8 @@
       "meludah",
       "untuk menempatkan",
       "untuk mengatakan"
-    ]
+    ],
+    "traditional": "吐"
   },
   {
     "id": "4018",
@@ -7786,7 +8558,8 @@
     "translations": [
       "memuntahkan",
       "untuk muntah"
-    ]
+    ],
+    "traditional": "吐"
   },
   {
     "id": "4019",
@@ -7794,7 +8567,8 @@
     "pinyin": "tù",
     "translations": [
       "kelinci"
-    ]
+    ],
+    "traditional": "兔"
   },
   {
     "id": "4020",
@@ -7803,7 +8577,8 @@
     "translations": [
       "Perintah Resimen",
       "kepala delegasi"
-    ]
+    ],
+    "traditional": "團長"
   },
   {
     "id": "4021",
@@ -7812,7 +8587,8 @@
     "translations": [
       "berlaku",
       "untuk melakukan"
-    ]
+    ],
+    "traditional": "推行"
   },
   {
     "id": "4022",
@@ -7824,7 +8600,8 @@
       "diastasis (obat)",
       "amputasi",
       "abjungsi (botani)"
-    ]
+    ],
+    "traditional": "脫離"
   },
   {
     "id": "4023",
@@ -7833,7 +8610,8 @@
     "translations": [
       "dunia luar",
       "luar"
-    ]
+    ],
+    "traditional": "外界"
   },
   {
     "id": "4024",
@@ -7845,7 +8623,8 @@
       "hancur",
       "pergi ke anjing",
       "Oh tidak"
-    ]
+    ],
+    "traditional": "完了"
   },
   {
     "id": "4025",
@@ -7854,7 +8633,8 @@
     "translations": [
       "Microblogging",
       "Microblog"
-    ]
+    ],
+    "traditional": "微博"
   },
   {
     "id": "4026",
@@ -7864,7 +8644,8 @@
       "merasa malu atau canggung",
       "untuk membuat segalanya sulit (untuk seseorang)",
       "untuk menemukan hal-hal yang sulit (dilakukan atau dikelola)"
-    ]
+    ],
+    "traditional": "為難"
   },
   {
     "id": "4027",
@@ -7873,7 +8654,8 @@
     "translations": [
       "(harus dilakukan) dengan (tanggal tertentu)",
       "abadi (waktu tertentu)"
-    ]
+    ],
+    "traditional": "為期"
   },
   {
     "id": "4028",
@@ -7882,7 +8664,8 @@
     "translations": [
       "sampai",
       "(digunakan dalam kombinasi dengan kata-kata seperti 到 [dào] atau 至 [zhì] dalam konstruksi bentuk 到 ... 為止 | 到 ... 为止)"
-    ]
+    ],
+    "traditional": "為止"
   },
   {
     "id": "4029",
@@ -7891,7 +8674,8 @@
     "translations": [
       "untuk mengandalkan terutama",
       "untuk melampirkan paling penting"
-    ]
+    ],
+    "traditional": "為主"
   },
   {
     "id": "4030",
@@ -7900,7 +8684,8 @@
     "translations": [
       "liar",
       "untuk melanggar hukum"
-    ]
+    ],
+    "traditional": "違法"
   },
   {
     "id": "4031",
@@ -7908,7 +8693,8 @@
     "pinyin": "wéi fǎn",
     "translations": [
       "untuk melanggar (hukum)"
-    ]
+    ],
+    "traditional": "違反"
   },
   {
     "id": "4032",
@@ -7919,7 +8705,8 @@
       "tidak teratur",
       "liar",
       "korup"
-    ]
+    ],
+    "traditional": "違規"
   },
   {
     "id": "4033",
@@ -7928,7 +8715,8 @@
     "translations": [
       "untuk berputar",
       "untuk berpusat pada (masalah)"
-    ]
+    ],
+    "traditional": "圍繞"
   },
   {
     "id": "4034",
@@ -7937,7 +8725,8 @@
     "translations": [
       "hanya",
       "tunggal"
-    ]
+    ],
+    "traditional": "唯一"
   },
   {
     "id": "4035",
@@ -7947,7 +8736,8 @@
       "untuk mempercayakan",
       "mempercayai",
       "untuk komisi"
-    ]
+    ],
+    "traditional": "委託"
   },
   {
     "id": "4036",
@@ -7956,7 +8746,8 @@
     "translations": [
       "satelit",
       "bulan"
-    ]
+    ],
+    "traditional": "衛星"
   },
   {
     "id": "4037",
@@ -7964,7 +8755,8 @@
     "pinyin": "wèi",
     "translations": [
       "perut"
-    ]
+    ],
+    "traditional": "胃"
   },
   {
     "id": "4038",
@@ -7972,7 +8764,8 @@
     "pinyin": "wèi wèn",
     "translations": [
       "untuk mengekspresikan simpati, salam, penghiburan dll"
-    ]
+    ],
+    "traditional": "慰問"
   },
   {
     "id": "4039",
@@ -7982,7 +8775,8 @@
       "lembut",
       "lembut",
       "sedang"
-    ]
+    ],
+    "traditional": "溫和"
   },
   {
     "id": "4040",
@@ -7990,7 +8784,8 @@
     "pinyin": "wén yì",
     "translations": [
       "Sastra dan Seni"
-    ]
+    ],
+    "traditional": "文藝"
   },
   {
     "id": "4041",
@@ -7998,7 +8793,8 @@
     "pinyin": "wò shì",
     "translations": [
       "kamar tidur"
-    ]
+    ],
+    "traditional": "臥室"
   },
   {
     "id": "4042",
@@ -8010,7 +8806,8 @@
       "untuk mengepal (tinju seseorang)",
       "untuk menguasai",
       "Classifier: segelintir"
-    ]
+    ],
+    "traditional": "握"
   },
   {
     "id": "4043",
@@ -8019,7 +8816,8 @@
     "translations": [
       "polusi",
       "kontaminasi"
-    ]
+    ],
+    "traditional": "污染"
   },
   {
     "id": "4044",
@@ -8027,7 +8825,8 @@
     "pinyin": "wū shuǐ",
     "translations": [
       "penyaluran pecomberan"
-    ]
+    ],
+    "traditional": "污水"
   },
   {
     "id": "4045",
@@ -8036,7 +8835,8 @@
     "translations": [
       "rumah",
       "ruang"
-    ]
+    ],
+    "traditional": "屋"
   },
   {
     "id": "4046",
@@ -8050,7 +8850,8 @@
       "mau tak mau",
       "Nolens Volens",
       "ABBR. untuk 無可奈 何 | 无可奈 何 [wú kě nài hé]"
-    ]
+    ],
+    "traditional": "無奈"
   },
   {
     "id": "4047",
@@ -8059,7 +8860,8 @@
     "translations": [
       "tanpa keraguan",
       "niscaya"
-    ]
+    ],
+    "traditional": "無疑"
   },
   {
     "id": "4048",
@@ -8069,7 +8871,8 @@
       "menari",
       "untuk menggunakan",
       "untuk mengacungkan"
-    ]
+    ],
+    "traditional": "舞"
   },
   {
     "id": "4049",
@@ -8077,7 +8880,8 @@
     "pinyin": "wù jià",
     "translations": [
       "(harga komoditas"
-    ]
+    ],
+    "traditional": "物價"
   },
   {
     "id": "4050",
@@ -8087,7 +8891,8 @@
       "Properti",
       "perumahan",
       "ABBR. untuk 物業 管理 | 物业 管理 [wù yè guǎn lǐ], manajemen properti"
-    ]
+    ],
+    "traditional": "物業"
   },
   {
     "id": "4051",
@@ -8098,7 +8903,8 @@
       "zat",
       "bahan",
       "materialistis"
-    ]
+    ],
+    "traditional": "物質"
   },
   {
     "id": "4052",
@@ -8108,7 +8914,8 @@
       "untuk salah paham",
       "salah membaca",
       "salah paham"
-    ]
+    ],
+    "traditional": "誤解"
   },
   {
     "id": "4053",
@@ -8116,7 +8923,8 @@
     "pinyin": "xī hóng shì",
     "translations": [
       "tomat"
-    ]
+    ],
+    "traditional": "西紅柿"
   },
   {
     "id": "4054",
@@ -8125,7 +8933,8 @@
     "translations": [
       "setelan",
       "Pakaian bergaya barat"
-    ]
+    ],
+    "traditional": "西裝"
   },
   {
     "id": "4055",
@@ -8133,7 +8942,8 @@
     "pinyin": "xǐ jù",
     "translations": [
       "komedi"
-    ]
+    ],
+    "traditional": "喜劇"
   },
   {
     "id": "4056",
@@ -8144,7 +8954,8 @@
       "drama",
       "bermain",
       "menunjukkan"
-    ]
+    ],
+    "traditional": "戲"
   },
   {
     "id": "4057",
@@ -8154,7 +8965,8 @@
       "drama",
       "bermain",
       "teater"
-    ]
+    ],
+    "traditional": "戲劇"
   },
   {
     "id": "4058",
@@ -8163,7 +8975,8 @@
     "translations": [
       "untuk menakuti",
       "untuk menakuti"
-    ]
+    ],
+    "traditional": "嚇"
   },
   {
     "id": "4059",
@@ -8174,7 +8987,8 @@
       "prioritas",
       "secara berturut-turut",
       "satu setelah lainnya"
-    ]
+    ],
+    "traditional": "先後"
   },
   {
     "id": "4060",
@@ -8183,7 +8997,8 @@
     "translations": [
       "sebelum",
       "sebelumnya"
-    ]
+    ],
+    "traditional": "先前"
   },
   {
     "id": "4061",
@@ -8192,7 +9007,8 @@
     "translations": [
       "berwarna cerah",
       "berwarna riang"
-    ]
+    ],
+    "traditional": "鮮豔"
   },
   {
     "id": "4062",
@@ -8204,7 +9020,8 @@
       "tidak sibuk",
       "santai",
       "lampiran"
-    ]
+    ],
+    "traditional": "閒"
   },
   {
     "id": "4063",
@@ -8216,7 +9033,8 @@
       "menonjol",
       "menyolok",
       "(awalan) phanero-"
-    ]
+    ],
+    "traditional": "顯"
   },
   {
     "id": "4064",
@@ -8225,7 +9043,8 @@
     "translations": [
       "saat ini ada",
       "tersedia saat ini"
-    ]
+    ],
+    "traditional": "現有"
   },
   {
     "id": "4065",
@@ -8233,7 +9052,8 @@
     "pinyin": "xiàn zhuàng",
     "translations": [
       "Situasi saat ini"
-    ]
+    ],
+    "traditional": "現狀"
   },
   {
     "id": "4066",
@@ -8243,7 +9063,8 @@
       "jejak",
       "petunjuk",
       "Thread (dari sebuah cerita)"
-    ]
+    ],
+    "traditional": "線索"
   },
   {
     "id": "4067",
@@ -8257,7 +9078,8 @@
       "memperlihatkan",
       "untuk dipajang",
       "orang yang layak (tua)"
-    ]
+    ],
+    "traditional": "獻"
   },
   {
     "id": "4068",
@@ -8268,7 +9090,8 @@
       "tempat asal",
       "desa atau kota asal",
       "Township (unit administrasi RRC)"
-    ]
+    ],
+    "traditional": "鄉"
   },
   {
     "id": "4069",
@@ -8278,7 +9101,8 @@
       "pedesaan",
       "desa",
       "pedesaan"
-    ]
+    ],
+    "traditional": "鄉村"
   },
   {
     "id": "4070",
@@ -8288,7 +9112,8 @@
       "setara",
       "sama",
       "setara"
-    ]
+    ],
+    "traditional": "相等"
   },
   {
     "id": "4071",
@@ -8302,7 +9127,8 @@
       "relevan",
       "sesuai",
       "(memodifikasi) sesuai"
-    ]
+    ],
+    "traditional": "相應"
   },
   {
     "id": "4072",
@@ -8310,7 +9136,8 @@
     "pinyin": "xiāng cháng",
     "translations": [
       "sosis"
-    ]
+    ],
+    "traditional": "香腸"
   },
   {
     "id": "4073",
@@ -8320,7 +9147,8 @@
       "terperinci",
       "secara terperinci",
       "menit"
-    ]
+    ],
+    "traditional": "詳細"
   },
   {
     "id": "4074",
@@ -8330,7 +9158,8 @@
       "untuk menikmati",
       "untuk menjalaninya",
       "kesenangan"
-    ]
+    ],
+    "traditional": "享受"
   },
   {
     "id": "4075",
@@ -8338,7 +9167,8 @@
     "pinyin": "xiàng dǎo",
     "translations": [
       "memandu"
-    ]
+    ],
+    "traditional": "嚮導"
   },
   {
     "id": "4076",
@@ -8347,7 +9177,8 @@
     "translations": [
       "maju",
       "maju"
-    ]
+    ],
+    "traditional": "向前"
   },
   {
     "id": "4077",
@@ -8359,7 +9190,8 @@
       "untuk memajukan",
       "untuk mencoba meningkatkan diri",
       "untuk membuat kemajuan"
-    ]
+    ],
+    "traditional": "向上"
   },
   {
     "id": "4078",
@@ -8369,7 +9201,8 @@
       "Dialog Komik",
       "sketsa",
       "Crosstalk"
-    ]
+    ],
+    "traditional": "相聲"
   },
   {
     "id": "4079",
@@ -8383,7 +9216,8 @@
       "untuk menyimbolkan",
       "untuk menandakan",
       "untuk berdiri"
-    ]
+    ],
+    "traditional": "象徵"
   },
   {
     "id": "4080",
@@ -8392,7 +9226,8 @@
     "translations": [
       "untuk menghilangkan",
       "untuk menghapus"
-    ]
+    ],
+    "traditional": "消除"
   },
   {
     "id": "4081",
@@ -8401,7 +9236,8 @@
     "translations": [
       "untuk mendisinfeksi",
       "untuk mensterilkan"
-    ]
+    ],
+    "traditional": "消毒"
   },
   {
     "id": "4082",
@@ -8410,7 +9246,8 @@
     "translations": [
       "pemadam kebakaran",
       "Kontrol Kebakaran"
-    ]
+    ],
+    "traditional": "消防"
   },
   {
     "id": "4083",
@@ -8418,7 +9255,8 @@
     "pinyin": "xiāo fèi zhě",
     "translations": [
       "konsumen"
-    ]
+    ],
+    "traditional": "消費者"
   },
   {
     "id": "4084",
@@ -8428,7 +9266,8 @@
       "negatif",
       "pasif",
       "tidak aktif"
-    ]
+    ],
+    "traditional": "消極"
   },
   {
     "id": "4085",
@@ -8436,7 +9275,8 @@
     "pinyin": "xiǎo tōu",
     "translations": [
       "maling"
-    ]
+    ],
+    "traditional": "小偷"
   },
   {
     "id": "4086",
@@ -8450,7 +9290,8 @@
       "(dialek) untuk tidur",
       "sesaat",
       "Beberapa saat"
-    ]
+    ],
+    "traditional": "歇"
   },
   {
     "id": "4087",
@@ -8460,7 +9301,8 @@
       "perjanjian",
       "pakta",
       "protokol"
-    ]
+    ],
+    "traditional": "協定"
   },
   {
     "id": "4088",
@@ -8469,7 +9311,8 @@
     "translations": [
       "kontrak",
       "protokol"
-    ]
+    ],
+    "traditional": "協議書"
   },
   {
     "id": "4089",
@@ -8480,7 +9323,8 @@
       "miring",
       "miring",
       "miring"
-    ]
+    ],
+    "traditional": "斜"
   },
   {
     "id": "4090",
@@ -8491,7 +9335,8 @@
       "keadaan jiwa seseorang",
       "cara berpikir",
       "mentalitas"
-    ]
+    ],
+    "traditional": "心態"
   },
   {
     "id": "4091",
@@ -8503,7 +9348,8 @@
       "menyesal",
       "untuk dendam",
       "menjadi tertekan"
-    ]
+    ],
+    "traditional": "心疼"
   },
   {
     "id": "4092",
@@ -8517,7 +9363,8 @@
       "kerja keras",
       "untuk pergi ke banyak masalah",
       "kesulitan"
-    ]
+    ],
+    "traditional": "辛苦"
   },
   {
     "id": "4093",
@@ -8527,7 +9374,8 @@
       "untuk menghargai",
       "untuk menikmati",
       "untuk mengagumi"
-    ]
+    ],
+    "traditional": "欣賞"
   },
   {
     "id": "4094",
@@ -8537,7 +9385,8 @@
       "keyakinan",
       "kepercayaan",
       "pengakuan"
-    ]
+    ],
+    "traditional": "信念"
   },
   {
     "id": "4095",
@@ -8546,7 +9395,8 @@
     "translations": [
       "kotak surat",
       "kotak surat"
-    ]
+    ],
+    "traditional": "信箱"
   },
   {
     "id": "4096",
@@ -8554,7 +9404,8 @@
     "pinyin": "xíng shǐ",
     "translations": [
       "untuk melakukan perjalanan sepanjang rute (kendaraan dll)"
-    ]
+    ],
+    "traditional": "行駛"
   },
   {
     "id": "4097",
@@ -8565,7 +9416,8 @@
       "membentuk",
       "pola",
       "morfologi"
-    ]
+    ],
+    "traditional": "形態"
   },
   {
     "id": "4098",
@@ -8574,7 +9426,8 @@
     "translations": [
       "fungsi",
       "pertunjukan"
-    ]
+    ],
+    "traditional": "性能"
   },
   {
     "id": "4099",
@@ -8585,7 +9438,8 @@
       "mengesankan",
       "agung",
       "megah"
-    ]
+    ],
+    "traditional": "雄偉"
   },
   {
     "id": "4100",
@@ -8597,7 +9451,8 @@
       "untuk menegur",
       "(Coll.) Lemah",
       "tidak mampu"
-    ]
+    ],
+    "traditional": "熊"
   },
   {
     "id": "4101",
@@ -8610,7 +9465,8 @@
       "menganggur",
       "untuk menikmati waktu luang",
       "berbohong bera"
-    ]
+    ],
+    "traditional": "休閒"
   },
   {
     "id": "4102",
@@ -8621,7 +9477,8 @@
       "untuk merenovasi",
       "restorasi",
       "(komputasi) untuk memperbaiki (bug)"
-    ]
+    ],
+    "traditional": "修復"
   },
   {
     "id": "4103",
@@ -8630,7 +9487,8 @@
     "translations": [
       "untuk membangun",
       "untuk membangun"
-    ]
+    ],
+    "traditional": "修建"
   },
   {
     "id": "4104",
@@ -8640,7 +9498,8 @@
       "prestasi",
       "pelatihan",
       "kultivasi diri"
-    ]
+    ],
+    "traditional": "修養"
   },
   {
     "id": "4105",
@@ -8649,7 +9508,8 @@
     "translations": [
       "berpikiran terbuka",
       "rendah hati"
-    ]
+    ],
+    "traditional": "虛心"
   },
   {
     "id": "4106",
@@ -8658,7 +9518,8 @@
     "translations": [
       "untuk memungkinkan",
       "untuk mengizinkan"
-    ]
+    ],
+    "traditional": "許可"
   },
   {
     "id": "4107",
@@ -8667,7 +9528,8 @@
     "translations": [
       "Kursus opsional (di sekolah)",
       "untuk mengambil kursus opsional"
-    ]
+    ],
+    "traditional": "選修"
   },
   {
     "id": "4108",
@@ -8678,7 +9540,8 @@
       "Cabang Pembelajaran",
       "kursus",
       "Disiplin akademik"
-    ]
+    ],
+    "traditional": "學科"
   },
   {
     "id": "4109",
@@ -8687,7 +9550,8 @@
     "translations": [
       "Gelar Akademik",
       "tempat di sekolah"
-    ]
+    ],
+    "traditional": "學位"
   },
   {
     "id": "4110",
@@ -8695,7 +9559,8 @@
     "pinyin": "xué zhě",
     "translations": [
       "sarjana"
-    ]
+    ],
+    "traditional": "學者"
   },
   {
     "id": "4111",
@@ -8704,7 +9569,8 @@
     "translations": [
       "mencari",
       "untuk mencari"
-    ]
+    ],
+    "traditional": "尋求"
   },
   {
     "id": "4112",
@@ -8712,7 +9578,8 @@
     "pinyin": "xún wèn",
     "translations": [
       "untuk menanyakan"
-    ]
+    ],
+    "traditional": "詢問"
   },
   {
     "id": "4113",
@@ -8721,7 +9588,8 @@
     "translations": [
       "menyetorkan",
       "uang muka"
-    ]
+    ],
+    "traditional": "押金"
   },
   {
     "id": "4114",
@@ -8730,7 +9598,8 @@
     "translations": [
       "bebek",
       "pelacur pria (bahasa gaul)"
-    ]
+    ],
+    "traditional": "鴨子"
   },
   {
     "id": "4115",
@@ -8739,7 +9608,8 @@
     "translations": [
       "tempat kedua (dalam kontes olahraga)",
       "pemenang kedua"
-    ]
+    ],
+    "traditional": "亞軍"
   },
   {
     "id": "4116",
@@ -8748,7 +9618,8 @@
     "translations": [
       "untuk memperpanjang",
       "menyebar"
-    ]
+    ],
+    "traditional": "延伸"
   },
   {
     "id": "4117",
@@ -8757,7 +9628,8 @@
     "translations": [
       "berat",
       "ketat"
-    ]
+    ],
+    "traditional": "嚴厲"
   },
   {
     "id": "4118",
@@ -8769,7 +9641,8 @@
       "serius",
       "sungguh-sungguh",
       "berat"
-    ]
+    ],
+    "traditional": "嚴肅"
   },
   {
     "id": "4119",
@@ -8779,7 +9652,8 @@
       "kata-kata",
       "pidato",
       "(lisan) bahasa"
-    ]
+    ],
+    "traditional": "言語"
   },
   {
     "id": "4120",
@@ -8789,7 +9663,8 @@
       "institusi penelitian",
       "studi pascasarjana",
       "lulusan sekolah"
-    ]
+    ],
+    "traditional": "研究所"
   },
   {
     "id": "4121",
@@ -8801,7 +9676,8 @@
       "tinjauan ke masa depan",
       "penglihatan",
       "cara memandang sesuatu"
-    ]
+    ],
+    "traditional": "眼光"
   },
   {
     "id": "4122",
@@ -8810,7 +9686,8 @@
     "translations": [
       "untuk mengundang",
       "undangan"
-    ]
+    ],
+    "traditional": "邀請"
   },
   {
     "id": "4123",
@@ -8818,7 +9695,8 @@
     "pinyin": "yáo tóu",
     "translations": [
       "untuk menggelengkan kepala"
-    ]
+    ],
+    "traditional": "搖頭"
   },
   {
     "id": "4124",
@@ -8827,7 +9705,8 @@
     "translations": [
       "menggigit",
       "untuk menggigit"
-    ]
+    ],
+    "traditional": "咬"
   },
   {
     "id": "4125",
@@ -8837,7 +9716,8 @@
       "apakah",
       "mungkin juga",
       "juga bagus"
-    ]
+    ],
+    "traditional": "也好"
   },
   {
     "id": "4126",
@@ -8847,7 +9727,8 @@
       "bisnis",
       "pekerjaan profesional",
       "melayani"
-    ]
+    ],
+    "traditional": "業務"
   },
   {
     "id": "4127",
@@ -8856,7 +9737,8 @@
     "translations": [
       "waktu malam",
       "malam atau malam (mis. Kelas)"
-    ]
+    ],
+    "traditional": "夜間"
   },
   {
     "id": "4128",
@@ -8865,7 +9747,8 @@
     "translations": [
       "Kualitas terbaik",
       "peringkat depan"
-    ]
+    ],
+    "traditional": "一流"
   },
   {
     "id": "4129",
@@ -8874,7 +9757,8 @@
     "translations": [
       "legal (proses)",
       "menurut hukum"
-    ]
+    ],
+    "traditional": "依法"
   },
   {
     "id": "4130",
@@ -8883,7 +9767,8 @@
     "translations": [
       "seperti sebelumnya",
       "tetap"
-    ]
+    ],
+    "traditional": "依舊"
   },
   {
     "id": "4131",
@@ -8893,7 +9778,8 @@
       "berdasarkan",
       "dasar",
       "dasar"
-    ]
+    ],
+    "traditional": "依據"
   },
   {
     "id": "4132",
@@ -8902,7 +9788,8 @@
     "translations": [
       "berdasarkan",
       "dalam terang"
-    ]
+    ],
+    "traditional": "依照"
   },
   {
     "id": "4133",
@@ -8910,7 +9797,8 @@
     "pinyin": "yí bèi zi",
     "translations": [
       "(seumur hidup"
-    ]
+    ],
+    "traditional": "一輩子"
   },
   {
     "id": "4134",
@@ -8919,7 +9807,8 @@
     "translations": [
       "wilayah",
       "daerah"
-    ]
+    ],
+    "traditional": "一帶"
   },
   {
     "id": "4135",
@@ -8932,7 +9821,8 @@
       "Kapan",
       "dalam waktu singkat",
       "dalam satu hari"
-    ]
+    ],
+    "traditional": "一旦"
   },
   {
     "id": "4136",
@@ -8941,7 +9831,8 @@
     "translations": [
       "dalam sebuah kata",
       "pendeknya"
-    ]
+    ],
+    "traditional": "一句話"
   },
   {
     "id": "4137",
@@ -8953,7 +9844,8 @@
       "pergi dengan cara yang sama",
       "pergi ke arah yang sama",
       "sejenis"
-    ]
+    ],
+    "traditional": "一路"
   },
   {
     "id": "4138",
@@ -8961,7 +9853,8 @@
     "pinyin": "yí xià r",
     "translations": [
       "Varian Erhua dari 一下 [yī xià]"
-    ]
+    ],
+    "traditional": "一下兒"
   },
   {
     "id": "4139",
@@ -8971,7 +9864,8 @@
       "sebentar lagi",
       "semua sekaligus",
       "tiba-tiba"
-    ]
+    ],
+    "traditional": "一下子"
   },
   {
     "id": "4140",
@@ -8980,7 +9874,8 @@
     "translations": [
       "selalu (sebelumnya)",
       "periode waktu di masa lalu"
-    ]
+    ],
+    "traditional": "一向"
   },
   {
     "id": "4141",
@@ -8996,7 +9891,8 @@
       "lekok",
       "Radikal dalam karakter Cina (Kangxi Radical 5)",
       "Titik Kompas Cina Kuno: 105 °"
-    ]
+    ],
+    "traditional": "乙"
   },
   {
     "id": "4142",
@@ -9006,7 +9902,8 @@
       "sehingga",
       "Jadi untuk",
       "untuk"
-    ]
+    ],
+    "traditional": "以便"
   },
   {
     "id": "4143",
@@ -9015,7 +9912,8 @@
     "translations": [
       "di masa lalu",
       "dahulu"
-    ]
+    ],
+    "traditional": "以往"
   },
   {
     "id": "4144",
@@ -9025,7 +9923,8 @@
       "satu nafas",
       "dalam satu napas",
       "sekejap"
-    ]
+    ],
+    "traditional": "一口氣"
   },
   {
     "id": "4145",
@@ -9036,7 +9935,8 @@
       "dari kepala sampai kaki",
       "satu orang",
       "Setelan Pakaian"
-    ]
+    ],
+    "traditional": "一身"
   },
   {
     "id": "4146",
@@ -9047,7 +9947,8 @@
       "kesadaran",
       "untuk menyadari",
       "menyadari"
-    ]
+    ],
+    "traditional": "意識"
   },
   {
     "id": "4147",
@@ -9057,7 +9958,8 @@
       "untuk menandakan",
       "berarti",
       "menyiratkan"
-    ]
+    ],
+    "traditional": "意味著"
   },
   {
     "id": "4148",
@@ -9067,7 +9969,8 @@
       "akan",
       "tekad",
       "tekad"
-    ]
+    ],
+    "traditional": "意志"
   },
   {
     "id": "4149",
@@ -9078,7 +9981,8 @@
       "sebagai akibat",
       "dengan demikian",
       "dan sebagai hasil, …"
-    ]
+    ],
+    "traditional": "因而"
   },
   {
     "id": "4150",
@@ -9087,7 +9991,8 @@
     "translations": [
       "minum",
       "minuman"
-    ]
+    ],
+    "traditional": "飲料"
   },
   {
     "id": "4151",
@@ -9096,7 +10001,8 @@
     "translations": [
       "makanan dan minuman",
       "diet"
-    ]
+    ],
+    "traditional": "飲食"
   },
   {
     "id": "4152",
@@ -9105,7 +10011,8 @@
     "translations": [
       "untuk mencetak",
       "pencetakan"
-    ]
+    ],
+    "traditional": "印刷"
   },
   {
     "id": "4153",
@@ -9116,7 +10023,8 @@
       "untuk merespon",
       "untuk mematuhi",
       "untuk menangani atau mengatasinya"
-    ]
+    ],
+    "traditional": "應"
   },
   {
     "id": "4154",
@@ -9131,7 +10039,8 @@
       "mantap",
       "kualitas baik)",
       "mampu (orang)"
-    ]
+    ],
+    "traditional": "硬"
   },
   {
     "id": "4155",
@@ -9139,7 +10048,8 @@
     "pinyin": "yìng jiàn",
     "translations": [
       "perangkat keras"
-    ]
+    ],
+    "traditional": "硬體"
   },
   {
     "id": "4156",
@@ -9148,7 +10058,8 @@
     "translations": [
       "untuk merangkul",
       "memeluk"
-    ]
+    ],
+    "traditional": "擁抱"
   },
   {
     "id": "4157",
@@ -9157,7 +10068,8 @@
     "translations": [
       "memiliki",
       "untuk memiliki"
-    ]
+    ],
+    "traditional": "擁有"
   },
   {
     "id": "4158",
@@ -9166,7 +10078,8 @@
     "translations": [
       "tidak butuh",
       "tidak ada gunanya"
-    ]
+    ],
+    "traditional": "用不著"
   },
   {
     "id": "4159",
@@ -9177,7 +10090,8 @@
       "konsumen",
       "pelanggan",
       "pelanggan"
-    ]
+    ],
+    "traditional": "用戶"
   },
   {
     "id": "4160",
@@ -9185,7 +10099,8 @@
     "pinyin": "yòng lái",
     "translations": [
       "untuk digunakan"
-    ]
+    ],
+    "traditional": "用來"
   },
   {
     "id": "4161",
@@ -9195,7 +10110,8 @@
       "gunakan di",
       "digunakan pada",
       "digunakan untuk"
-    ]
+    ],
+    "traditional": "用於"
   },
   {
     "id": "4162",
@@ -9206,7 +10122,8 @@
       "menguntungkan (istilah)",
       "preferensial (perawatan)",
       "harga Diskon)"
-    ]
+    ],
+    "traditional": "優惠"
   },
   {
     "id": "4163",
@@ -9215,7 +10132,8 @@
     "translations": [
       "untuk memiliki prioritas",
       "untuk diutamakan"
-    ]
+    ],
+    "traditional": "優先"
   },
   {
     "id": "4164",
@@ -9224,7 +10142,8 @@
     "translations": [
       "(kata pinjaman) humor",
       "lucu"
-    ]
+    ],
+    "traditional": "幽默"
   },
   {
     "id": "4165",
@@ -9233,7 +10152,8 @@
     "translations": [
       "khususnya",
       "khususnya"
-    ]
+    ],
+    "traditional": "尤其"
   },
   {
     "id": "4166",
@@ -9242,7 +10162,8 @@
     "translations": [
       "dengan ini",
       "dari ini"
-    ]
+    ],
+    "traditional": "由此"
   },
   {
     "id": "4167",
@@ -9250,7 +10171,8 @@
     "pinyin": "yóu yù",
     "translations": [
       "ragu-ragu"
-    ]
+    ],
+    "traditional": "猶豫"
   },
   {
     "id": "4168",
@@ -9258,7 +10180,8 @@
     "pinyin": "yóu yǒng chí",
     "translations": [
       "kolam renang"
-    ]
+    ],
+    "traditional": "游泳池"
   },
   {
     "id": "4169",
@@ -9268,7 +10191,8 @@
       "persahabatan",
       "persahabatan",
       "persahabatan"
-    ]
+    ],
+    "traditional": "友誼"
   },
   {
     "id": "4170",
@@ -9276,7 +10200,8 @@
     "pinyin": "yǒu dú",
     "translations": [
       "beracun"
-    ]
+    ],
+    "traditional": "有毒"
   },
   {
     "id": "4171",
@@ -9286,7 +10211,8 @@
       "destruktif",
       "berbahaya",
       "merusak"
-    ]
+    ],
+    "traditional": "有害"
   },
   {
     "id": "4172",
@@ -9296,7 +10222,8 @@
       "kuat",
       "kuat",
       "kuat"
-    ]
+    ],
+    "traditional": "有力"
   },
   {
     "id": "4173",
@@ -9304,7 +10231,8 @@
     "pinyin": "yǒu lì yú",
     "translations": [
       "menjadi menguntungkan, menjadi bermanfaat bagi"
-    ]
+    ],
+    "traditional": "有利於"
   },
   {
     "id": "4174",
@@ -9313,7 +10241,8 @@
     "translations": [
       "memiliki",
       "untuk memiliki"
-    ]
+    ],
+    "traditional": "有著"
   },
   {
     "id": "4175",
@@ -9322,7 +10251,8 @@
     "translations": [
       "kok",
       "bulu tangkis"
-    ]
+    ],
+    "traditional": "羽毛球"
   },
   {
     "id": "4176",
@@ -9330,7 +10260,8 @@
     "pinyin": "yǔ róng fú",
     "translations": [
       "pakaian yang dipenuhi"
-    ]
+    ],
+    "traditional": "羽絨服"
   },
   {
     "id": "4177",
@@ -9338,7 +10269,8 @@
     "pinyin": "yǔ shuǐ",
     "translations": [
       "Yushui atau air hujan, ke-2 dari 24 istilah matahari 二十四 節氣 | 二十四 节气 19 Februari-5 Maret"
-    ]
+    ],
+    "traditional": "雨水"
   },
   {
     "id": "4178",
@@ -9349,7 +10281,8 @@
       "untuk bersiap-siap",
       "persiapan",
       "persiapan"
-    ]
+    ],
+    "traditional": "預備"
   },
   {
     "id": "4179",
@@ -9358,7 +10291,8 @@
     "translations": [
       "untuk mengharapkan",
       "untuk mengantisipasi"
-    ]
+    ],
+    "traditional": "預期"
   },
   {
     "id": "4180",
@@ -9366,7 +10300,8 @@
     "pinyin": "yuán dàn",
     "translations": [
       "Hari Tahun Baru"
-    ]
+    ],
+    "traditional": "元旦"
   },
   {
     "id": "4181",
@@ -9376,7 +10311,8 @@
       "taman",
       "taman",
       "taman lanskap"
-    ]
+    ],
+    "traditional": "園林"
   },
   {
     "id": "4182",
@@ -9385,7 +10321,8 @@
     "translations": [
       "prinsip",
       "teori"
-    ]
+    ],
+    "traditional": "原理"
   },
   {
     "id": "4183",
@@ -9396,7 +10333,8 @@
       "asli",
       "primitif",
       "Asli (dokumen dll)"
-    ]
+    ],
+    "traditional": "原始"
   },
   {
     "id": "4184",
@@ -9406,7 +10344,8 @@
       "semula",
       "asli",
       "mantan"
-    ]
+    ],
+    "traditional": "原先"
   },
   {
     "id": "4185",
@@ -9415,7 +10354,8 @@
     "translations": [
       "asli",
       "mantan"
-    ]
+    ],
+    "traditional": "原有"
   },
   {
     "id": "4186",
@@ -9423,7 +10363,8 @@
     "pinyin": "yuǎn chù",
     "translations": [
       "tempat yang jauh"
-    ]
+    ],
+    "traditional": "遠處"
   },
   {
     "id": "4187",
@@ -9432,7 +10373,8 @@
     "translations": [
       "menyalahkan",
       "Mengeluh"
-    ]
+    ],
+    "traditional": "怨"
   },
   {
     "id": "4188",
@@ -9445,7 +10387,8 @@
       "berharap untuk",
       "siap",
       "bersedia"
-    ]
+    ],
+    "traditional": "願"
   },
   {
     "id": "4189",
@@ -9457,7 +10400,8 @@
       "untuk membatasi",
       "larangan",
       "paksaan"
-    ]
+    ],
+    "traditional": "約束"
   },
   {
     "id": "4190",
@@ -9465,7 +10409,8 @@
     "pinyin": "yuè bǐng",
     "translations": [
       "MoonCake (khususnya untuk Festival Pertengahan Musim Gugur)"
-    ]
+    ],
+    "traditional": "月餅"
   },
   {
     "id": "4191",
@@ -9473,7 +10418,8 @@
     "pinyin": "yuè qiú",
     "translations": [
       "bulan"
-    ]
+    ],
+    "traditional": "月球"
   },
   {
     "id": "4192",
@@ -9481,7 +10427,8 @@
     "pinyin": "yuè lǎn shì",
     "translations": [
       "ruang baca"
-    ]
+    ],
+    "traditional": "閱覽室"
   },
   {
     "id": "4193",
@@ -9495,7 +10442,8 @@
       "harta benda",
       "keberuntungan",
       "takdir"
-    ]
+    ],
+    "traditional": "運"
   },
   {
     "id": "4194",
@@ -9508,7 +10456,8 @@
       "(dari layanan kereta api dll) untuk beroperasi",
       "untuk berlari",
       "(dari komputer) untuk dijalankan"
-    ]
+    ],
+    "traditional": "運行"
   },
   {
     "id": "4195",
@@ -9517,7 +10466,8 @@
     "translations": [
       "bencana",
       "bencana"
-    ]
+    ],
+    "traditional": "災"
   },
   {
     "id": "4196",
@@ -9526,7 +10476,8 @@
     "translations": [
       "bencana",
       "bencana"
-    ]
+    ],
+    "traditional": "災害"
   },
   {
     "id": "4197",
@@ -9535,7 +10486,8 @@
     "translations": [
       "bencana",
       "malapetaka"
-    ]
+    ],
+    "traditional": "災難"
   },
   {
     "id": "4198",
@@ -9544,7 +10496,8 @@
     "translations": [
       "area bencana",
       "wilayah yang dilanda"
-    ]
+    ],
+    "traditional": "災區"
   },
   {
     "id": "4199",
@@ -9555,7 +10508,8 @@
       "lagi",
       "satu lagi",
       "sekali lagi"
-    ]
+    ],
+    "traditional": "再次"
   },
   {
     "id": "4200",
@@ -9563,7 +10517,8 @@
     "pinyin": "zài yě",
     "translations": [
       "(tidak lagi"
-    ]
+    ],
+    "traditional": "再也"
   },
   {
     "id": "4201",
@@ -9572,7 +10527,8 @@
     "translations": [
       "hadir",
       "untuk berada di tempat kejadian"
-    ]
+    ],
+    "traditional": "在場"
   },
   {
     "id": "4202",
@@ -9581,7 +10537,8 @@
     "translations": [
       "(termasuk) di dalamnya",
       "diantara mereka"
-    ]
+    ],
+    "traditional": "在內"
   },
   {
     "id": "4203",
@@ -9591,7 +10548,8 @@
       "sementara",
       "sementara",
       "untuk saat ini"
-    ]
+    ],
+    "traditional": "暫時"
   },
   {
     "id": "4204",
@@ -9602,7 +10560,8 @@
       "Time-out (mis. dalam olahraga)",
       "penghentian",
       "Jeda (Media Player)"
-    ]
+    ],
+    "traditional": "暫停"
   },
   {
     "id": "4205",
@@ -9615,7 +10574,8 @@
       "busuk",
       "berantakan",
       "hancur"
-    ]
+    ],
+    "traditional": "糟"
   },
   {
     "id": "4206",
@@ -9627,7 +10587,8 @@
       "Nasib buruk apa",
       "sangat buruk",
       "buruk"
-    ]
+    ],
+    "traditional": "糟糕"
   },
   {
     "id": "4207",
@@ -9637,7 +10598,8 @@
       "periode awal",
       "fase awal",
       "tahap awal"
-    ]
+    ],
+    "traditional": "早期"
   },
   {
     "id": "4208",
@@ -9647,7 +10609,8 @@
       "meningkatkan",
       "memperluas",
       "menambahkan"
-    ]
+    ],
+    "traditional": "增"
   },
   {
     "id": "4209",
@@ -9655,7 +10618,8 @@
     "pinyin": "zēng chǎn",
     "translations": [
       "untuk meningkatkan produksi"
-    ]
+    ],
+    "traditional": "增產"
   },
   {
     "id": "4210",
@@ -9665,7 +10629,8 @@
       "untuk memperbesar",
       "untuk memperkuat",
       "untuk memperbesar"
-    ]
+    ],
+    "traditional": "增大"
   },
   {
     "id": "4211",
@@ -9674,7 +10639,8 @@
     "translations": [
       "meningkatkan",
       "bertambah jumlahnya"
-    ]
+    ],
+    "traditional": "增多"
   },
   {
     "id": "4212",
@@ -9683,7 +10649,8 @@
     "translations": [
       "meningkatkan",
       "untuk memperkuat"
-    ]
+    ],
+    "traditional": "增強"
   },
   {
     "id": "4213",
@@ -9693,7 +10660,8 @@
       "untuk memberi sebagai hadiah",
       "untuk mengusir",
       "untuk memberikan gelar kehormatan setelah kematian (lama)"
-    ]
+    ],
+    "traditional": "贈"
   },
   {
     "id": "4214",
@@ -9701,7 +10669,8 @@
     "pinyin": "zèng sòng",
     "translations": [
       "untuk hadir sebagai hadiah"
-    ]
+    ],
+    "traditional": "贈送"
   },
   {
     "id": "4215",
@@ -9715,7 +10684,8 @@
       "memilih",
       "untuk menghapus",
       "untuk lepas landas (kacamata, topi dll)"
-    ]
+    ],
+    "traditional": "摘"
   },
   {
     "id": "4216",
@@ -9726,7 +10696,8 @@
       "untuk pameran",
       "pameran",
       "menunjukkan"
-    ]
+    ],
+    "traditional": "展覽"
   },
   {
     "id": "4217",
@@ -9737,7 +10708,8 @@
       "menampilkan",
       "memperlihatkan",
       "untuk memamerkan sth"
-    ]
+    ],
+    "traditional": "展示"
   },
   {
     "id": "4218",
@@ -9748,7 +10720,8 @@
       "memunculkan",
       "mengungkap",
       "menampilkan"
-    ]
+    ],
+    "traditional": "展現"
   },
   {
     "id": "4219",
@@ -9757,7 +10730,8 @@
     "translations": [
       "untuk menempati (suatu wilayah)",
       "untuk menahan"
-    ]
+    ],
+    "traditional": "佔領"
   },
   {
     "id": "4220",
@@ -9770,7 +10744,8 @@
       "untuk menempati",
       "untuk memiliki",
       "untuk memperhitungkan (proporsi tinggi dll)"
-    ]
+    ],
+    "traditional": "佔有"
   },
   {
     "id": "4221",
@@ -9778,7 +10753,8 @@
     "pinyin": "zhǎng",
     "translations": [
       "naik (harga, sungai)"
-    ]
+    ],
+    "traditional": "漲"
   },
   {
     "id": "4222",
@@ -9787,7 +10763,8 @@
     "translations": [
       "untuk menghargai (nilainya)",
       "untuk menaikkan harga"
-    ]
+    ],
+    "traditional": "漲價"
   },
   {
     "id": "4223",
@@ -9801,7 +10778,8 @@
       "untuk mengetahui dengan baik",
       "untuk memahami sth dengan baik dan tahu cara menggunakannya",
       "kelancaran"
-    ]
+    ],
+    "traditional": "掌握"
   },
   {
     "id": "4224",
@@ -9810,7 +10788,8 @@
     "translations": [
       "untuk mendaftarkan siswa baru",
       "untuk mendapatkan siswa"
-    ]
+    ],
+    "traditional": "招生"
   },
   {
     "id": "4225",
@@ -9819,7 +10798,8 @@
     "translations": [
       "untuk melambai",
       "untuk memberi isyarat"
-    ]
+    ],
+    "traditional": "招手"
   },
   {
     "id": "4226",
@@ -9827,7 +10807,8 @@
     "pinyin": "zhēn guì",
     "translations": [
       "berharga"
-    ]
+    ],
+    "traditional": "珍貴"
   },
   {
     "id": "4227",
@@ -9837,7 +10818,8 @@
       "untuk menghargai",
       "untuk menilai",
       "untuk menghargai"
-    ]
+    ],
+    "traditional": "珍惜"
   },
   {
     "id": "4228",
@@ -9845,7 +10827,8 @@
     "pinyin": "zhēn zhū",
     "translations": [
       "mutiara"
-    ]
+    ],
+    "traditional": "珍珠"
   },
   {
     "id": "4229",
@@ -9855,7 +10838,8 @@
       "BENAR",
       "jujur",
       "asli"
-    ]
+    ],
+    "traditional": "真誠"
   },
   {
     "id": "4230",
@@ -9863,7 +10847,8 @@
     "pinyin": "zhēn lǐ",
     "translations": [
       "kebenaran"
-    ]
+    ],
+    "traditional": "真理"
   },
   {
     "id": "4231",
@@ -9872,7 +10857,8 @@
     "translations": [
       "Kebenaran tentang STH",
       "fakta yang sebenarnya"
-    ]
+    ],
+    "traditional": "真相"
   },
   {
     "id": "4232",
@@ -9881,7 +10867,8 @@
     "translations": [
       "diagnosa",
       "untuk mendiagnosis"
-    ]
+    ],
+    "traditional": "診斷"
   },
   {
     "id": "4233",
@@ -9891,7 +10878,8 @@
       "untuk bergetar",
       "untuk mengguncang",
       "getaran"
-    ]
+    ],
+    "traditional": "振動"
   },
   {
     "id": "4234",
@@ -9900,7 +10888,8 @@
     "translations": [
       "untuk mengagetkan",
       "ke Astonish"
-    ]
+    ],
+    "traditional": "震驚"
   },
   {
     "id": "4235",
@@ -9910,7 +10899,8 @@
       "kontroversi",
       "sengketa",
       "untuk membantah"
-    ]
+    ],
+    "traditional": "爭議"
   },
   {
     "id": "4236",
@@ -9920,7 +10910,8 @@
       "asli",
       "hukum",
       "Lihat juga 盜版 | 盗版 [dào bǎn]"
-    ]
+    ],
+    "traditional": "正版"
   },
   {
     "id": "4237",
@@ -9929,7 +10920,8 @@
     "translations": [
       "reguler",
       "Menurut standar"
-    ]
+    ],
+    "traditional": "正規"
   },
   {
     "id": "4238",
@@ -9938,7 +10930,8 @@
     "translations": [
       "sama seperti",
       "tepatnya"
-    ]
+    ],
+    "traditional": "正如"
   },
   {
     "id": "4239",
@@ -9949,7 +10942,8 @@
       "kebenaran",
       "hanya",
       "adil"
-    ]
+    ],
+    "traditional": "正義"
   },
   {
     "id": "4240",
@@ -9958,7 +10952,8 @@
     "translations": [
       "untuk mengkonfirmasi (sth menjadi benar)",
       "untuk memverifikasi"
-    ]
+    ],
+    "traditional": "證實"
   },
   {
     "id": "4241",
@@ -9967,7 +10962,8 @@
     "translations": [
       "kredensial",
       "sertifikat"
-    ]
+    ],
+    "traditional": "證書"
   },
   {
     "id": "4242",
@@ -9977,7 +10973,8 @@
       "untuk berjuang untuk mendapatkan gratis",
       "berusaha untuk mendapatkan",
       "Untuk mendapatkan uang)"
-    ]
+    ],
+    "traditional": "掙"
   },
   {
     "id": "4243",
@@ -9985,7 +10982,8 @@
     "pinyin": "zhèng qián",
     "translations": [
       "Untuk mendapatkan uang"
-    ]
+    ],
+    "traditional": "掙錢"
   },
   {
     "id": "4244",
@@ -9994,7 +10992,8 @@
     "translations": [
       "di dalam",
       "di dalam"
-    ]
+    ],
+    "traditional": "之內"
   },
   {
     "id": "4245",
@@ -10003,7 +11002,8 @@
     "translations": [
       "di luar",
       "tidak termasuk"
-    ]
+    ],
+    "traditional": "之外"
   },
   {
     "id": "4246",
@@ -10013,7 +11013,8 @@
       "di bawah",
       "di bawah",
       "kurang dari"
-    ]
+    ],
+    "traditional": "之下"
   },
   {
     "id": "4247",
@@ -10024,7 +11025,8 @@
       "di antara",
       "Di tengah-tengah (melakukan sth)",
       "selama"
-    ]
+    ],
+    "traditional": "之中"
   },
   {
     "id": "4248",
@@ -10034,7 +11036,8 @@
       "menghabiskan",
       "untuk membayar",
       "pengeluaran"
-    ]
+    ],
+    "traditional": "支出"
   },
   {
     "id": "4249",
@@ -10044,7 +11047,8 @@
       "kontrol",
       "mendominasi",
       "untuk dialokasikan"
-    ]
+    ],
+    "traditional": "支配"
   },
   {
     "id": "4250",
@@ -10055,7 +11059,8 @@
       "untuk melakukan",
       "untuk mengeksekusi",
       "untuk berlari"
-    ]
+    ],
+    "traditional": "執行"
   },
   {
     "id": "4251",
@@ -10064,7 +11069,8 @@
     "translations": [
       "garis lurus",
       "tajam (naik atau turun)"
-    ]
+    ],
+    "traditional": "直線"
   },
   {
     "id": "4252",
@@ -10073,7 +11079,8 @@
     "translations": [
       "untuk bekerja shift",
       "sedang bertugas"
-    ]
+    ],
+    "traditional": "值班"
   },
   {
     "id": "4253",
@@ -10082,7 +11089,8 @@
     "translations": [
       "fungsi",
       "peran"
-    ]
+    ],
+    "traditional": "職能"
   },
   {
     "id": "4254",
@@ -10092,7 +11100,8 @@
       "pos",
       "kantor",
       "posisi"
-    ]
+    ],
+    "traditional": "職位"
   },
   {
     "id": "4255",
@@ -10103,7 +11112,8 @@
       "posisi",
       "pekerjaan",
       "tugas"
-    ]
+    ],
+    "traditional": "職務"
   },
   {
     "id": "4256",
@@ -10115,7 +11125,8 @@
       "tidak ada, tapi",
       "tidak lebih dari",
       "Hanya saja ..."
-    ]
+    ],
+    "traditional": "只不過"
   },
   {
     "id": "4257",
@@ -10124,7 +11135,8 @@
     "translations": [
       "hanya melihat sesuatu (dan tidak ada yang lain)",
       "Hanya untuk melihat itu, melihat itu, (sebuah partikel yang memperkenalkan adegan atau peristiwa baru)"
-    ]
+    ],
+    "traditional": "只見"
   },
   {
     "id": "4258",
@@ -10138,7 +11150,8 @@
       "tanda",
       "plang",
       "(komputasi) penunjuk"
-    ]
+    ],
+    "traditional": "指標"
   },
   {
     "id": "4259",
@@ -10146,7 +11159,8 @@
     "pinyin": "zhǐ jia",
     "translations": [
       "kuku"
-    ]
+    ],
+    "traditional": "指甲"
   },
   {
     "id": "4260",
@@ -10158,7 +11172,8 @@
       "untuk menginstruksikan",
       "arahan",
       "instruksi"
-    ]
+    ],
+    "traditional": "指示"
   },
   {
     "id": "4261",
@@ -10168,7 +11183,8 @@
       "mengkritik",
       "untuk menemukan kesalahan dengan",
       "untuk mengecam"
-    ]
+    ],
+    "traditional": "指責"
   },
   {
     "id": "4262",
@@ -10179,7 +11195,8 @@
       "paling",
       "ke",
       "sampai"
-    ]
+    ],
+    "traditional": "至"
   },
   {
     "id": "4263",
@@ -10188,7 +11205,8 @@
     "translations": [
       "untuk membuat",
       "untuk keluar (produk)"
-    ]
+    ],
+    "traditional": "製成"
   },
   {
     "id": "4264",
@@ -10197,7 +11215,8 @@
     "translations": [
       "untuk membatasi",
       "kondisi"
-    ]
+    ],
+    "traditional": "制約"
   },
   {
     "id": "4265",
@@ -10206,7 +11225,8 @@
     "translations": [
       "hukum dan ketertiban",
       "keamanan publik"
-    ]
+    ],
+    "traditional": "治安"
   },
   {
     "id": "4266",
@@ -10218,7 +11238,8 @@
       "untuk mengelola",
       "kontrol",
       "tata kelola"
-    ]
+    ],
+    "traditional": "治理"
   },
   {
     "id": "4267",
@@ -10229,7 +11250,8 @@
       "untuk putus",
       "untuk menghentikan",
       "untuk mengganggu"
-    ]
+    ],
+    "traditional": "中斷"
   },
   {
     "id": "4268",
@@ -10237,7 +11259,8 @@
     "pinyin": "zhōng qiū jié",
     "translations": [
       "Festival Pertengahan Musim Gugur pada tanggal 15 Bulan Lunar ke-8"
-    ]
+    ],
+    "traditional": "中秋節"
   },
   {
     "id": "4269",
@@ -10248,7 +11271,8 @@
       "tengah",
       "tengah",
       "Otoritas Pusat (dari suatu Negara)"
-    ]
+    ],
+    "traditional": "中央"
   },
   {
     "id": "4270",
@@ -10256,7 +11280,8 @@
     "pinyin": "zhōng yào",
     "translations": [
       "Obat Tiongkok (Tradisional)"
-    ]
+    ],
+    "traditional": "中藥"
   },
   {
     "id": "4271",
@@ -10268,7 +11293,8 @@
       "garis finishing (dalam perlombaan)",
       "tujuan",
       "terminal"
-    ]
+    ],
+    "traditional": "終點"
   },
   {
     "id": "4272",
@@ -10278,7 +11304,8 @@
       "kekal",
       "semua kehidupan seseorang",
       "pernikahan"
-    ]
+    ],
+    "traditional": "終身"
   },
   {
     "id": "4273",
@@ -10287,7 +11314,8 @@
     "translations": [
       "untuk berhenti",
       "untuk mengakhiri (hukum)"
-    ]
+    ],
+    "traditional": "終止"
   },
   {
     "id": "4274",
@@ -10296,7 +11324,8 @@
     "translations": [
       "untuk diracuni",
       "peracunan"
-    ]
+    ],
+    "traditional": "中毒"
   },
   {
     "id": "4275",
@@ -10304,7 +11333,8 @@
     "pinyin": "zhòng duō",
     "translations": [
       "banyak sekali"
-    ]
+    ],
+    "traditional": "眾多"
   },
   {
     "id": "4276",
@@ -10313,7 +11343,8 @@
     "translations": [
       "periode",
       "siklus"
-    ]
+    ],
+    "traditional": "週期"
   },
   {
     "id": "4277",
@@ -10321,7 +11352,8 @@
     "pinyin": "zhú zi",
     "translations": [
       "bambu"
-    ]
+    ],
+    "traditional": "竹子"
   },
   {
     "id": "4278",
@@ -10330,7 +11362,8 @@
     "translations": [
       "untuk mengatur",
       "menjadi tuan rumah (acara konferensi atau olahraga)"
-    ]
+    ],
+    "traditional": "主辦"
   },
   {
     "id": "4279",
@@ -10343,7 +11376,8 @@
       "untuk memimpin",
       "untuk mengarahkan",
       "mendominasi"
-    ]
+    ],
+    "traditional": "主導"
   },
   {
     "id": "4280",
@@ -10351,7 +11385,8 @@
     "pinyin": "zhǔ guān",
     "translations": [
       "subyektif"
-    ]
+    ],
+    "traditional": "主觀"
   },
   {
     "id": "4281",
@@ -10362,7 +11397,8 @@
       "bertanggung jawab atas",
       "orang yang bertanggung jawab",
       "Pengelola"
-    ]
+    ],
+    "traditional": "主管"
   },
   {
     "id": "4282",
@@ -10374,7 +11410,8 @@
       "tubuh",
       "subjek",
       "agen"
-    ]
+    ],
+    "traditional": "主體"
   },
   {
     "id": "4283",
@@ -10382,7 +11419,8 @@
     "pinyin": "zhù lǐ",
     "translations": [
       "asisten"
-    ]
+    ],
+    "traditional": "助理"
   },
   {
     "id": "4284",
@@ -10391,7 +11429,8 @@
     "translations": [
       "asisten",
       "pembantu"
-    ]
+    ],
+    "traditional": "助手"
   },
   {
     "id": "4285",
@@ -10400,7 +11439,8 @@
     "translations": [
       "mendaftar",
       "mendaftarkan"
-    ]
+    ],
+    "traditional": "註冊"
   },
   {
     "id": "4286",
@@ -10409,7 +11449,8 @@
     "translations": [
       "injeksi",
       "untuk menyuntikkan"
-    ]
+    ],
+    "traditional": "注射"
   },
   {
     "id": "4287",
@@ -10418,7 +11459,8 @@
     "translations": [
       "untuk menonton dengan penuh perhatian",
       "untuk menatap"
-    ]
+    ],
+    "traditional": "注視"
   },
   {
     "id": "4288",
@@ -10427,7 +11469,8 @@
     "translations": [
       "memperhatikan",
       "untuk menekankan"
-    ]
+    ],
+    "traditional": "注重"
   },
   {
     "id": "4289",
@@ -10436,7 +11479,8 @@
     "translations": [
       "untuk memberi selamat",
       "Selamat"
-    ]
+    ],
+    "traditional": "祝賀"
   },
   {
     "id": "4290",
@@ -10446,7 +11490,8 @@
       "album",
       "Rekaman (musik)",
       "Koleksi khusus materi cetak atau siaran"
-    ]
+    ],
+    "traditional": "專輯"
   },
   {
     "id": "4291",
@@ -10456,7 +11501,8 @@
       "paten",
       "STH dinikmati secara unik (atau dimiliki dll) oleh sekelompok orang tertentu",
       "monopoli"
-    ]
+    ],
+    "traditional": "專利"
   },
   {
     "id": "4292",
@@ -10466,7 +11512,8 @@
       "Untuk mengganti",
       "untuk mengubah",
       "isomerisasi (kimia)"
-    ]
+    ],
+    "traditional": "轉化"
   },
   {
     "id": "4293",
@@ -10477,7 +11524,8 @@
       "untuk menukar",
       "untuk mengubah",
       "untuk mengubah"
-    ]
+    ],
+    "traditional": "轉換"
   },
   {
     "id": "4294",
@@ -10486,7 +11534,8 @@
     "translations": [
       "transfer (teknologi, barang dll)",
       "penyampaian (properti)"
-    ]
+    ],
+    "traditional": "轉讓"
   },
   {
     "id": "4295",
@@ -10495,7 +11544,8 @@
     "translations": [
       "untuk mengubah arah",
       "ara. untuk mengubah sikap seseorang"
-    ]
+    ],
+    "traditional": "轉向"
   },
   {
     "id": "4296",
@@ -10506,7 +11556,8 @@
       "dekorasi",
       "dekoratif",
       "ornamental"
-    ]
+    ],
+    "traditional": "裝飾"
   },
   {
     "id": "4297",
@@ -10517,7 +11568,8 @@
       "untuk bertemu",
       "untuk bertemu",
       "untuk bertemu secara tidak sengaja"
-    ]
+    ],
+    "traditional": "撞"
   },
   {
     "id": "4298",
@@ -10525,7 +11577,8 @@
     "pinyin": "zī běn",
     "translations": [
       "modal (ekonomi)"
-    ]
+    ],
+    "traditional": "資本"
   },
   {
     "id": "4299",
@@ -10534,7 +11587,8 @@
     "translations": [
       "Properti",
       "aktiva"
-    ]
+    ],
+    "traditional": "資產"
   },
   {
     "id": "4300",
@@ -10544,7 +11598,8 @@
       "untuk mensubsidi",
       "untuk memberikan bantuan keuangan",
       "subsidi"
-    ]
+    ],
+    "traditional": "資助"
   },
   {
     "id": "4301",
@@ -10552,7 +11607,8 @@
     "pinyin": "zǐ dàn",
     "translations": [
       "peluru"
-    ]
+    ],
+    "traditional": "子彈"
   },
   {
     "id": "4302",
@@ -10562,7 +11618,8 @@
       "hati-hati",
       "penuh perhatian",
       "waspada"
-    ]
+    ],
+    "traditional": "仔細"
   },
   {
     "id": "4303",
@@ -10571,7 +11628,8 @@
     "translations": [
       "ungu",
       "ungu"
-    ]
+    ],
+    "traditional": "紫"
   },
   {
     "id": "4304",
@@ -10579,7 +11637,8 @@
     "pinyin": "zì háo",
     "translations": [
       "bangga (prestasi seseorang dll)"
-    ]
+    ],
+    "traditional": "自豪"
   },
   {
     "id": "4305",
@@ -10589,7 +11648,8 @@
       "untuk bunuh diri",
       "untuk bunuh diri",
       "untuk mencoba bunuh diri"
-    ]
+    ],
+    "traditional": "自殺"
   },
   {
     "id": "4306",
@@ -10597,7 +11657,8 @@
     "pinyin": "zì yuàn",
     "translations": [
       "sukarela"
-    ]
+    ],
+    "traditional": "自願"
   },
   {
     "id": "4307",
@@ -10606,7 +11667,8 @@
     "translations": [
       "ketua",
       "Direktur Jenderal (dari perusahaan dll)"
-    ]
+    ],
+    "traditional": "總經理"
   },
   {
     "id": "4308",
@@ -10616,7 +11678,8 @@
       "total",
       "jumlah",
       "agregat"
-    ]
+    ],
+    "traditional": "總數"
   },
   {
     "id": "4309",
@@ -10626,7 +11689,8 @@
       "akhirnya",
       "Akhirnya",
       "secara keseluruhan"
-    ]
+    ],
+    "traditional": "總算"
   },
   {
     "id": "4310",
@@ -10639,7 +11703,8 @@
       "seluruh",
       "keseluruhan",
       "populasi (statistik)"
-    ]
+    ],
+    "traditional": "總體"
   },
   {
     "id": "4311",
@@ -10651,7 +11716,8 @@
       "untuk memblokir",
       "halangan",
       "halangan"
-    ]
+    ],
+    "traditional": "阻礙"
   },
   {
     "id": "4312",
@@ -10663,7 +11729,8 @@
       "sistem terorganisir",
       "saraf",
       "jaringan"
-    ]
+    ],
+    "traditional": "組織"
   },
   {
     "id": "4313",
@@ -10671,7 +11738,8 @@
     "pinyin": "zuì",
     "translations": [
       "mabuk"
-    ]
+    ],
+    "traditional": "醉"
   },
   {
     "id": "4314",
@@ -10680,7 +11748,8 @@
     "translations": [
       "untuk menghormati",
       "untuk menghormati"
-    ]
+    ],
+    "traditional": "尊敬"
   },
   {
     "id": "4315",
@@ -10694,7 +11763,8 @@
       "terkenal",
       "serius",
       "sesuai"
-    ]
+    ],
+    "traditional": "尊重"
   },
   {
     "id": "4316",
@@ -10704,6 +11774,7 @@
       "untuk mematuhi",
       "untuk mematuhi",
       "untuk menghormati (kesepakatan)"
-    ]
+    ],
+    "traditional": "遵守"
   }
 ]

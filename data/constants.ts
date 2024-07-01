@@ -17,6 +17,7 @@ export type Level = keyof typeof CHARACTERS_PER_LEVEL;
 export type ChineseCharacter = {
   id: string;
   hanzi: string;
+  traditional: string;
   pinyin: string;
   translations: Array<string>;
 };

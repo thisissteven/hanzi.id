@@ -1,6 +1,7 @@
 import { SpeechProvider } from "@/utils";
 import { Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon } from "lucide-react";
 import React from "react";
+import { AudioProvider } from "./hsk-layout";
 
 type FontSize = "base" | "lg" | "xl" | "2xl";
 
@@ -186,21 +187,23 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <ReadingContext.Provider
-      value={{
-        blurred,
-        fontSize,
-        speed,
-        flashcard,
-        toggleBlur,
-        changeFontSize,
-        changeSpeed,
-        addToFlashcard,
-        removeFromFlashcard,
-      }}
-    >
-      <SpeechProvider>{children}</SpeechProvider>
-    </ReadingContext.Provider>
+    <AudioProvider>
+      <ReadingContext.Provider
+        value={{
+          blurred,
+          fontSize,
+          speed,
+          flashcard,
+          toggleBlur,
+          changeFontSize,
+          changeSpeed,
+          addToFlashcard,
+          removeFromFlashcard,
+        }}
+      >
+        <SpeechProvider>{children}</SpeechProvider>
+      </ReadingContext.Provider>
+    </AudioProvider>
   );
 }
 

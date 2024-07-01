@@ -14,6 +14,8 @@ import { toast } from "sonner";
 
 import { useLocale } from "@/locales/use-locale";
 import { TranslateApiResponse } from "@/pages/api/translate";
+import { AudioButton } from "../hsk";
+import { useWindowSize } from "@/hooks";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -83,6 +85,7 @@ export function DefinitionModal({
   const [entryIndex, setEntryIndex] = React.useState(0);
 
   const currentSection = sections?.[activeIndex];
+
   const currentSimplifiedLength = currentSection?.simplified.length;
   const isIdiom = currentSimplifiedLength && currentSimplifiedLength >= 4;
 
@@ -100,6 +103,8 @@ export function DefinitionModal({
       latestSentenceIndex.current = sentenceIndex;
     }
   }, [sentenceIndex]);
+
+  const { width } = useWindowSize();
 
   return (
     <Dialog className="relative z-[998]" open={Boolean(sentence)} onClose={onClose}>
@@ -198,6 +203,9 @@ export function DefinitionModal({
                     );
                   })}
                 </p>
+                <div className="mt-2 flex justify-end px-2">
+                  <AudioButton key={sentence} speed={1.2} size={width < 768 ? "normal" : "large"} text={sentence} />
+                </div>
               </div>
 
               <TranslateSentence translated={data?.translated ?? ""} />

@@ -1,4 +1,4 @@
-import { DragToScrollWrapper, Popover } from "@/components";
+import { DragToScrollWrapper, Popover, usePreferences } from "@/components";
 import React from "react";
 import clsx from "clsx";
 import { AudioButton } from "../AudioButton";
@@ -19,6 +19,8 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
   const currentLesson = lessons.filter((lesson) => lesson.lessonInfo.level.toLowerCase() === currentLevel);
 
   const regex = new RegExp(`(${hanzi})`);
+
+  const { isSimplified } = usePreferences();
 
   if (lessons.length === 0) {
     return (
@@ -52,7 +54,7 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
       )}
       <ul className="relative space-y-2 px-4">
         {currentLesson.map((lesson, index) => {
-          const splitted = lesson.simplified.split(regex);
+          const splitted = isSimplified ? lesson.simplified.split(regex) : lesson.traditional.split(regex);
 
           return (
             <li key={index} className="list-none">
@@ -67,7 +69,12 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
                       );
                     return <React.Fragment key={index}>{part}</React.Fragment>;
                   })}
-                  <AudioButton size="small" key={lesson.audioUrl} text={lesson.simplified} speed={1.3} />
+                  <AudioButton
+                    size="small"
+                    key={lesson.audioUrl}
+                    text={isSimplified ? lesson.simplified : lesson.traditional}
+                    speed={1.3}
+                  />
                 </Popover.Trigger>
                 <Popover.Content
                   align="start"

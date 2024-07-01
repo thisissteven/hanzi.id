@@ -1,6 +1,6 @@
 import React from "react";
 import { HanziApiResponse } from "../types";
-import { Popover, Drawer } from "@/components";
+import { Popover, Drawer, usePreferences } from "@/components";
 import { useWindowSize } from "@/hooks";
 import clsx from "clsx";
 
@@ -9,6 +9,8 @@ export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziA
   const isMobile = width < 640;
 
   const regex = new RegExp(`(${hanzi})`);
+
+  const { isSimplified } = usePreferences();
 
   if (!idioms) return null;
 
@@ -25,7 +27,7 @@ export function ExampleIdioms({ hanzi, idioms }: { hanzi: string; idioms: HanziA
           )}
           <ul>
             {idioms.map((idiom, index) => {
-              const splitted = idiom.simplified.split(regex);
+              const splitted = isSimplified ? idiom.simplified.split(regex) : idiom.traditional.split(regex);
 
               return (
                 <li key={index} className="list-none">

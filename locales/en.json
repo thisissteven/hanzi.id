@@ -15,6 +15,10 @@
       "title": "Flashcards",
       "description": "Your saved words and phrases for quick review."
     },
+    "search": {
+      "title": "Search",
+      "description": "Browse Chinese characters, words, and phrases."
+    },
     "suggestions": {
       "title": "Suggestions",
       "description": "A new feature, improvements, or books you would like to be added to the site."

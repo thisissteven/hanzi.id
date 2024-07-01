@@ -2,9 +2,9 @@ import "@/styles/globals.css";
 
 import { ThemeProvider } from "next-themes";
 import { SWRConfig } from "swr";
-import type { AppProps } from "next/app";
+import type { AppContext, AppProps } from "next/app";
 
-import { Seo } from "@/components";
+import { PreferencesProvider, Seo } from "@/components";
 import { apiClient } from "@/utils";
 import { AnimatePresence } from "framer-motion";
 import { ConfettiProvider, HSKLayout, NewReadingLayout, ReadingLayout } from "@/modules/layout";
@@ -52,27 +52,29 @@ export default function App({ Component, pageProps, router }: AppProps) {
         }}
       >
         <SessionProvider session={pageProps.session}>
-          <AuthProvider>
-            <ConfettiProvider>
-              <AnimatePresence mode="wait">
-                {isNewReading ? (
-                  <NewReadingLayout key="new-reading">
+          <PreferencesProvider>
+            <AuthProvider>
+              <ConfettiProvider>
+                <AnimatePresence mode="wait">
+                  {isNewReading ? (
+                    <NewReadingLayout key="new-reading">
+                      <Component key={router.pathname} {...pageProps} />
+                    </NewReadingLayout>
+                  ) : isReading ? (
+                    <ReadingLayout key="reading">
+                      <Component key={router.pathname} {...pageProps} />
+                    </ReadingLayout>
+                  ) : isHsk ? (
+                    <HSKLayout key="hsk">
+                      <Component key={router.pathname} {...pageProps} />
+                    </HSKLayout>
+                  ) : (
                     <Component key={router.pathname} {...pageProps} />
-                  </NewReadingLayout>
-                ) : isReading ? (
-                  <ReadingLayout key="reading">
-                    <Component key={router.pathname} {...pageProps} />
-                  </ReadingLayout>
-                ) : isHsk ? (
-                  <HSKLayout key="hsk">
-                    <Component key={router.pathname} {...pageProps} />
-                  </HSKLayout>
-                ) : (
-                  <Component key={router.pathname} {...pageProps} />
-                )}
-              </AnimatePresence>
-            </ConfettiProvider>
-          </AuthProvider>
+                  )}
+                </AnimatePresence>
+              </ConfettiProvider>
+            </AuthProvider>
+          </PreferencesProvider>
         </SessionProvider>
       </SWRConfig>
     </ThemeProvider>

@@ -9,6 +9,7 @@ import { ExampleIdioms } from "./ExampleIdioms";
 import { RelatedHanzi } from "./RelatedHanzi";
 import { IdHanziMapKey } from "../HanziModal";
 import { Level } from "@/data";
+import { usePreferences } from "@/components";
 
 export function HanziDetails({
   definition,
@@ -24,6 +25,8 @@ export function HanziDetails({
   const [entryIndex, setEntryIndex] = React.useState(0);
 
   const ref = React.useRef<HTMLDivElement>(null);
+
+  const { isSimplified } = usePreferences();
 
   React.useEffect(() => {
     if (ref.current) {
@@ -45,11 +48,11 @@ export function HanziDetails({
   const currentEntry = definition.entries[actualEntryIndex];
   const entryLength = definition.entries.length;
 
-  const hanzi = definition.simplified;
+  const hanzi = isSimplified ? definition.simplified : currentEntry.traditional;
   const pinyin = currentEntry.pinyin;
   const audioUrl = BASE_URL + `/api/audio/${encodeURI(hanzi)}?pinyin=${pinyin}`;
 
-  const isIdiom = definition.simplified.length === 4;
+  const isIdiom = hanzi.length === 4;
 
   return (
     <div ref={ref} className="overflow-y-auto flex-1 scrollbar-none py-4">
@@ -96,9 +99,9 @@ export function HanziDetails({
 
         <RelatedHanzi hanzi={hanzi} related={related} />
 
-        <ExampleIdioms hanzi={definition.simplified} idioms={idioms} />
+        <ExampleIdioms hanzi={isSimplified ? definition.simplified : currentEntry.traditional} idioms={idioms} />
 
-        <ExampleSentences hanzi={definition.simplified} lessons={lessons} />
+        <ExampleSentences hanzi={isSimplified ? definition.simplified : currentEntry.traditional} lessons={lessons} />
       </div>
     </div>
   );

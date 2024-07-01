@@ -20,7 +20,7 @@ export async function preloadHanziDetails(hanzi: string, locale: Locale) {
 
 export function CharacterCard({
   id,
-  hanzi,
+  character,
   pinyin,
   translations,
   isFlipped,
@@ -30,6 +30,7 @@ export function CharacterCard({
   onFlip,
   onCompleteToggle,
 }: ChineseCharacter & {
+  character: string;
   hanziHref: string;
   isCompleted: boolean;
   onCompleteToggle: () => void;
@@ -68,7 +69,7 @@ export function CharacterCard({
               "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-b-[1.5px] grid place-items-center bg-softblack border-secondary/10"
             )}
           >
-            <span className="font-medium">{hanzi}</span>
+            <span className="font-medium">{character}</span>
 
             <MarkAsCompleted
               className={isCompleted ? "bg-transparent" : ""}
@@ -83,7 +84,7 @@ export function CharacterCard({
               )}
             >
               <Link
-                onMouseEnter={() => preloadHanziDetails(hanzi, locale)}
+                onMouseEnter={() => preloadHanziDetails(character, locale)}
                 onClick={(e) => e.stopPropagation()}
                 href={hanziHref}
                 shallow

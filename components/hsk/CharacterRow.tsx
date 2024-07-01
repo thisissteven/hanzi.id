@@ -7,13 +7,14 @@ import { MarkAsCompleted } from "./CharacterCard";
 
 export function CharacterRow({
   id,
-  hanzi,
+  character,
   pinyin,
   translations,
   isCompleted,
   onClick,
   onCompleteToggle,
 }: ChineseCharacter & {
+  character: string;
   onClick: () => void;
   isCompleted: boolean;
   onCompleteToggle: () => void;
@@ -27,7 +28,7 @@ export function CharacterRow({
       )}
     >
       <div className="pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-b border-b-secondary/10 bg-softblack active:bg-hovered">
-        <div className="shrink-0 font-medium">{hanzi}</div>
+        <div className="shrink-0 font-medium">{character}</div>
 
         <div className="overflow-x-hidden flex-1">
           <div className="text-sm font-medium">{pinyin}</div>

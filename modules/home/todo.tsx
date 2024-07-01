@@ -1,15 +1,7 @@
 import React from "react";
 import { Button } from "./buttons";
-import {
-  FilePlus2Icon,
-  GraduationCapIcon,
-  LanguagesIcon,
-  LibraryBigIcon,
-  LightbulbIcon,
-  SendIcon,
-  TelescopeIcon,
-} from "lucide-react";
-import { ChangeLocaleButton, Divider } from "@/components";
+import { BookAIcon, CompassIcon, FilePlus2Icon, GraduationCapIcon, LibraryBigIcon, LightbulbIcon } from "lucide-react";
+import { ChangeLocaleButton, ChangeSimplifiedTraditional, Divider, usePreferences } from "@/components";
 import { AuthButton } from "./auth-button";
 import { useLocale } from "@/locales/use-locale";
 
@@ -17,13 +9,18 @@ const isAdmin = process.env.NEXT_PUBLIC_IS_ADMIN;
 
 export function HomeTodo() {
   const { t } = useLocale();
+  const { isSimplified } = usePreferences();
+
   return (
     <React.Fragment>
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl md:text-3xl font-bold">今天你有什么计划？</h1>
+        <h1 className="text-2xl md:text-3xl font-bold">{isSimplified ? "欢迎光临" : "歡迎光臨"} 🎉</h1>
 
         {isAdmin && <AuthButton />}
-        <ChangeLocaleButton />
+        <div className="flex gap-2">
+          <ChangeSimplifiedTraditional />
+          <ChangeLocaleButton />
+        </div>
       </div>
 
       <Divider />
@@ -71,12 +68,18 @@ export function HomeTodo() {
 
         <Button
           path="/flashcards"
-          className="hover:bg-pink-500/10"
-          icon={
-            <LanguagesIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-pink-500" />
-          }
+          className="hover:bg-sky-500/10"
+          icon={<BookAIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-500" />}
           title={t.home.flashcards.title}
           description={t.home.flashcards.description}
+        />
+
+        <Button
+          path="?search="
+          className="hover:bg-teal-500/10"
+          icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-teal-500" />}
+          title={t.home.search.title}
+          description={t.home.search.description}
         />
 
         <Button

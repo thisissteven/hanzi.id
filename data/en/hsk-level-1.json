@@ -3,3000 +3,4541 @@
     "id": "1",
     "hanzi": "爱",
     "pinyin": "ài",
-    "translations": ["love"]
+    "translations": [
+      "love"
+    ],
+    "traditional": "愛"
   },
   {
     "id": "2",
     "hanzi": "爱好",
     "pinyin": "ài hào",
-    "translations": ["hobby"]
+    "translations": [
+      "hobby"
+    ],
+    "traditional": "愛好"
   },
   {
     "id": "3",
     "hanzi": "八",
     "pinyin": "bā",
-    "translations": ["eight"]
+    "translations": [
+      "eight"
+    ],
+    "traditional": "八"
   },
   {
     "id": "4",
     "hanzi": "爸爸",
     "pinyin": "bà ba",
-    "translations": ["dad"]
+    "translations": [
+      "dad"
+    ],
+    "traditional": "爸爸"
   },
   {
     "id": "5",
     "hanzi": "吧",
     "pinyin": "ba",
-    "translations": ["(a particle used at the end of the sentence to indicate suggestion or instruction)"]
+    "translations": [
+      "(a particle used at the end of the sentence to indicate suggestion or instruction)"
+    ],
+    "traditional": "吧"
   },
   {
     "id": "6",
     "hanzi": "白",
     "pinyin": "bái",
-    "translations": ["white"]
+    "translations": [
+      "white"
+    ],
+    "traditional": "白"
   },
   {
     "id": "7",
     "hanzi": "白天",
     "pinyin": "bái tiān",
-    "translations": ["daytime"]
+    "translations": [
+      "daytime"
+    ],
+    "traditional": "白天"
   },
   {
     "id": "8",
     "hanzi": "百",
     "pinyin": "bǎi",
-    "translations": ["hundred"]
+    "translations": [
+      "hundred"
+    ],
+    "traditional": "百"
   },
   {
     "id": "9",
     "hanzi": "班",
     "pinyin": "bān",
-    "translations": ["class"]
+    "translations": [
+      "class"
+    ],
+    "traditional": "班"
   },
   {
     "id": "10",
     "hanzi": "半",
     "pinyin": "bàn",
-    "translations": ["half"]
+    "translations": [
+      "half"
+    ],
+    "traditional": "半"
   },
   {
     "id": "11",
     "hanzi": "半年",
     "pinyin": "bàn nián",
-    "translations": ["half a year"]
+    "translations": [
+      "half a year"
+    ],
+    "traditional": "半年"
   },
   {
     "id": "12",
     "hanzi": "半天",
     "pinyin": "bàn tiān",
-    "translations": ["half day", "long time"]
+    "translations": [
+      "half day",
+      "long time"
+    ],
+    "traditional": "半天"
   },
   {
     "id": "13",
     "hanzi": "帮",
     "pinyin": "bāng",
-    "translations": ["to help"]
+    "translations": [
+      "to help"
+    ],
+    "traditional": "幫"
   },
   {
     "id": "14",
     "hanzi": "帮忙",
     "pinyin": "bāng máng",
-    "translations": ["to help"]
+    "translations": [
+      "to help"
+    ],
+    "traditional": "幫忙"
   },
   {
     "id": "15",
     "hanzi": "包",
     "pinyin": "bāo",
-    "translations": ["bag；to pack"]
+    "translations": [
+      "bag；to pack"
+    ],
+    "traditional": "包"
   },
   {
     "id": "16",
     "hanzi": "包子",
     "pinyin": "bāo zi",
-    "translations": ["bun"]
+    "translations": [
+      "bun"
+    ],
+    "traditional": "包子"
   },
   {
     "id": "17",
     "hanzi": "杯",
     "pinyin": "bēi",
-    "translations": ["cup (measure word)"]
+    "translations": [
+      "cup (measure word)"
+    ],
+    "traditional": "杯"
   },
   {
     "id": "18",
     "hanzi": "杯子",
     "pinyin": "bēi zi",
-    "translations": ["cup"]
+    "translations": [
+      "cup"
+    ],
+    "traditional": "杯子"
   },
   {
     "id": "19",
     "hanzi": "北",
     "pinyin": "běi",
-    "translations": ["north"]
+    "translations": [
+      "north"
+    ],
+    "traditional": "北"
   },
   {
     "id": "20",
     "hanzi": "北边",
     "pinyin": "běi bian",
-    "translations": ["north side"]
+    "translations": [
+      "north side"
+    ],
+    "traditional": "北邊"
   },
   {
     "id": "21",
     "hanzi": "北京",
     "pinyin": "Běi jīng",
-    "translations": ["Beijing"]
+    "translations": [
+      "Beijing"
+    ],
+    "traditional": "北京"
   },
   {
     "id": "22",
     "hanzi": "本",
     "pinyin": "běn",
-    "translations": ["(measure word for books)"]
+    "translations": [
+      "(measure word for books)"
+    ],
+    "traditional": "本"
   },
   {
     "id": "23",
     "hanzi": "本子",
     "pinyin": "běn zi",
-    "translations": ["note book"]
+    "translations": [
+      "note book"
+    ],
+    "traditional": "本子"
   },
   {
     "id": "24",
     "hanzi": "比",
     "pinyin": "bǐ",
-    "translations": ["compare"]
+    "translations": [
+      "compare"
+    ],
+    "traditional": "比"
   },
   {
     "id": "25",
     "hanzi": "别",
     "pinyin": "bié",
-    "translations": ["do not"]
+    "translations": [
+      "do not"
+    ],
+    "traditional": "別"
   },
   {
     "id": "26",
     "hanzi": "别的",
     "pinyin": "bié de",
-    "translations": ["other"]
+    "translations": [
+      "other"
+    ],
+    "traditional": "別的"
   },
   {
     "id": "27",
     "hanzi": "别人",
     "pinyin": "bié rén",
-    "translations": ["other people"]
+    "translations": [
+      "other people"
+    ],
+    "traditional": "別人"
   },
   {
     "id": "28",
     "hanzi": "病",
     "pinyin": "bìng",
-    "translations": ["sick", "disease"]
+    "translations": [
+      "sick",
+      "disease"
+    ],
+    "traditional": "病"
   },
   {
     "id": "29",
     "hanzi": "病人",
     "pinyin": "bìng rén",
-    "translations": ["patient"]
+    "translations": [
+      "patient"
+    ],
+    "traditional": "病人"
   },
   {
     "id": "30",
     "hanzi": "不大",
     "pinyin": "bú tà",
-    "translations": ["not big", "not very"]
+    "translations": [
+      "not big",
+      "not very"
+    ],
+    "traditional": "不大"
   },
   {
     "id": "31",
     "hanzi": "不对",
     "pinyin": "bú duì",
-    "translations": ["not right", "wrong"]
+    "translations": [
+      "not right",
+      "wrong"
+    ],
+    "traditional": "不對"
   },
   {
     "id": "32",
     "hanzi": "不客气",
     "pinyin": "bú kè qì",
-    "translations": ["you’re welcome"]
+    "translations": [
+      "you’re welcome"
+    ],
+    "traditional": "不客氣"
   },
   {
     "id": "33",
     "hanzi": "不用",
     "pinyin": "bú yòng",
-    "translations": ["no need to"]
+    "translations": [
+      "no need to"
+    ],
+    "traditional": "不用"
   },
   {
     "id": "34",
     "hanzi": "不",
     "pinyin": "bù",
-    "translations": ["do not"]
+    "translations": [
+      "do not"
+    ],
+    "traditional": "不"
   },
   {
     "id": "35",
     "hanzi": "菜",
     "pinyin": "cài",
-    "translations": ["dish"]
+    "translations": [
+      "dish"
+    ],
+    "traditional": "菜"
   },
   {
     "id": "36",
     "hanzi": "茶",
     "pinyin": "chá",
-    "translations": ["tea"]
+    "translations": [
+      "tea"
+    ],
+    "traditional": "茶"
   },
   {
     "id": "37",
     "hanzi": "差",
     "pinyin": "chà",
-    "translations": ["lack of", "bad"]
+    "translations": [
+      "lack of",
+      "bad"
+    ],
+    "traditional": "差"
   },
   {
     "id": "38",
     "hanzi": "常",
     "pinyin": "cháng",
-    "translations": ["often"]
+    "translations": [
+      "often"
+    ],
+    "traditional": "常"
   },
   {
     "id": "39",
     "hanzi": "常常",
     "pinyin": "cháng cháng",
-    "translations": ["often"]
+    "translations": [
+      "often"
+    ],
+    "traditional": "常常"
   },
   {
     "id": "40",
     "hanzi": "唱",
     "pinyin": "chàng",
-    "translations": ["sing"]
+    "translations": [
+      "sing"
+    ],
+    "traditional": "唱"
   },
   {
     "id": "41",
     "hanzi": "唱歌",
     "pinyin": "chàng gē",
-    "translations": ["to sing a song"]
+    "translations": [
+      "to sing a song"
+    ],
+    "traditional": "唱歌"
   },
   {
     "id": "42",
     "hanzi": "车",
     "pinyin": "chē",
-    "translations": ["vehicle"]
+    "translations": [
+      "vehicle"
+    ],
+    "traditional": "車"
   },
   {
     "id": "43",
     "hanzi": "车票",
     "pinyin": "chē piào",
-    "translations": ["bus or train ticket"]
+    "translations": [
+      "bus or train ticket"
+    ],
+    "traditional": "車票"
   },
   {
     "id": "44",
     "hanzi": "车上",
     "pinyin": "chē shang",
-    "translations": ["in the car"]
+    "translations": [
+      "in the car"
+    ],
+    "traditional": "車上"
   },
   {
     "id": "45",
     "hanzi": "车站",
     "pinyin": "chē zhàn",
-    "translations": ["station"]
+    "translations": [
+      "station"
+    ],
+    "traditional": "車站"
   },
   {
     "id": "46",
     "hanzi": "吃",
     "pinyin": "chī",
-    "translations": ["eat"]
+    "translations": [
+      "eat"
+    ],
+    "traditional": "吃"
   },
   {
     "id": "47",
     "hanzi": "吃饭",
     "pinyin": "chī fàn",
-    "translations": ["eat"]
+    "translations": [
+      "eat"
+    ],
+    "traditional": "吃飯"
   },
   {
     "id": "48",
     "hanzi": "出",
     "pinyin": "chū",
-    "translations": ["out"]
+    "translations": [
+      "out"
+    ],
+    "traditional": "出"
   },
   {
     "id": "49",
     "hanzi": "出来",
     "pinyin": "chū lái",
-    "translations": ["come out"]
+    "translations": [
+      "come out"
+    ],
+    "traditional": "出來"
   },
   {
     "id": "50",
     "hanzi": "出去",
     "pinyin": "chū qù",
-    "translations": ["go out"]
+    "translations": [
+      "go out"
+    ],
+    "traditional": "出去"
   },
   {
     "id": "51",
     "hanzi": "穿",
     "pinyin": "chuān",
-    "translations": ["wear"]
+    "translations": [
+      "wear"
+    ],
+    "traditional": "穿"
   },
   {
     "id": "52",
     "hanzi": "床",
     "pinyin": "chuáng",
-    "translations": ["bed"]
+    "translations": [
+      "bed"
+    ],
+    "traditional": "床"
   },
   {
     "id": "53",
     "hanzi": "次",
     "pinyin": "cì",
-    "translations": ["times"]
+    "translations": [
+      "times"
+    ],
+    "traditional": "次"
   },
   {
     "id": "54",
     "hanzi": "从",
     "pinyin": "cóng",
-    "translations": ["from"]
+    "translations": [
+      "from"
+    ],
+    "traditional": "從"
   },
   {
     "id": "55",
     "hanzi": "错",
     "pinyin": "cuò",
-    "translations": ["wrong"]
+    "translations": [
+      "wrong"
+    ],
+    "traditional": "錯"
   },
   {
     "id": "56",
     "hanzi": "打",
     "pinyin": "dǎ",
-    "translations": ["hit"]
+    "translations": [
+      "hit"
+    ],
+    "traditional": "打"
   },
   {
     "id": "57",
     "hanzi": "打车",
     "pinyin": "dǎ chē",
-    "translations": ["take a taxi"]
+    "translations": [
+      "take a taxi"
+    ],
+    "traditional": "打車"
   },
   {
     "id": "58",
     "hanzi": "打电话",
     "pinyin": "dǎ diàn huà",
-    "translations": ["make a call"]
+    "translations": [
+      "make a call"
+    ],
+    "traditional": "打電話"
   },
   {
     "id": "59",
     "hanzi": "打开",
     "pinyin": "dǎ kāi",
-    "translations": ["to open", "turn on"]
+    "translations": [
+      "to open",
+      "turn on"
+    ],
+    "traditional": "打開"
   },
   {
     "id": "60",
     "hanzi": "打球",
     "pinyin": "dǎ qiú",
-    "translations": ["play ball"]
+    "translations": [
+      "play ball"
+    ],
+    "traditional": "打球"
   },
   {
     "id": "61",
     "hanzi": "大",
     "pinyin": "dà",
-    "translations": ["big"]
+    "translations": [
+      "big"
+    ],
+    "traditional": "大"
   },
   {
     "id": "62",
     "hanzi": "大学",
     "pinyin": "dà xué",
-    "translations": ["university"]
+    "translations": [
+      "university"
+    ],
+    "traditional": "大學"
   },
   {
     "id": "63",
     "hanzi": "大学生",
     "pinyin": "dà xué shēng",
-    "translations": ["college student"]
+    "translations": [
+      "college student"
+    ],
+    "traditional": "大學生"
   },
   {
     "id": "64",
     "hanzi": "到",
     "pinyin": "dào",
-    "translations": ["to", "arrive", "until"]
+    "translations": [
+      "to",
+      "arrive",
+      "until"
+    ],
+    "traditional": "到"
   },
   {
     "id": "65",
     "hanzi": "得到",
     "pinyin": "dé dào",
-    "translations": ["get", "acquire"]
+    "translations": [
+      "get",
+      "acquire"
+    ],
+    "traditional": "得到"
   },
   {
     "id": "66",
     "hanzi": "地",
     "pinyin": "de",
-    "translations": ["(a particle used to explain verb)"]
+    "translations": [
+      "(a particle used to explain verb)"
+    ],
+    "traditional": "地"
   },
   {
     "id": "67",
     "hanzi": "的",
     "pinyin": "de",
-    "translations": ["(a particle used behind an attributive)"]
+    "translations": [
+      "(a particle used behind an attributive)"
+    ],
+    "traditional": "的"
   },
   {
     "id": "68",
     "hanzi": "等",
     "pinyin": "děng",
-    "translations": ["wait"]
+    "translations": [
+      "wait"
+    ],
+    "traditional": "等"
   },
   {
     "id": "69",
     "hanzi": "地",
     "pinyin": "dì",
-    "translations": ["ground"]
+    "translations": [
+      "ground"
+    ],
+    "traditional": "地"
   },
   {
     "id": "70",
     "hanzi": "地点",
     "pinyin": "dì diǎn",
-    "translations": ["location"]
+    "translations": [
+      "location"
+    ],
+    "traditional": "地點"
   },
   {
     "id": "71",
     "hanzi": "地方",
     "pinyin": "dì fang",
-    "translations": ["place"]
+    "translations": [
+      "place"
+    ],
+    "traditional": "地方"
   },
   {
     "id": "72",
     "hanzi": "地上",
     "pinyin": "dì shang",
-    "translations": ["on the ground"]
+    "translations": [
+      "on the ground"
+    ],
+    "traditional": "地上"
   },
   {
     "id": "73",
     "hanzi": "地图",
     "pinyin": "dìtú",
-    "translations": ["map"]
+    "translations": [
+      "map"
+    ],
+    "traditional": "地圖"
   },
   {
     "id": "74",
     "hanzi": "弟弟",
     "pinyin": "dìdi",
-    "translations": ["younger brother"]
+    "translations": [
+      "younger brother"
+    ],
+    "traditional": "弟弟"
   },
   {
     "id": "75",
     "hanzi": "第二",
     "pinyin": "dì èr",
-    "translations": ["second"]
+    "translations": [
+      "second"
+    ],
+    "traditional": "第二"
   },
   {
     "id": "76",
     "hanzi": "点",
     "pinyin": "diǎn",
-    "translations": ["o’clock", "point"]
+    "translations": [
+      "o’clock",
+      "point"
+    ],
+    "traditional": "點"
   },
   {
     "id": "77",
     "hanzi": "电",
     "pinyin": "diàn",
-    "translations": ["electricity"]
+    "translations": [
+      "electricity"
+    ],
+    "traditional": "電"
   },
   {
     "id": "78",
     "hanzi": "电话",
     "pinyin": "diàn huà",
-    "translations": ["phone"]
+    "translations": [
+      "phone"
+    ],
+    "traditional": "電話"
   },
   {
     "id": "79",
     "hanzi": "电脑",
     "pinyin": "diàn nǎo",
-    "translations": ["computer"]
+    "translations": [
+      "computer"
+    ],
+    "traditional": "電腦"
   },
   {
     "id": "80",
     "hanzi": "电视",
     "pinyin": "diàn shì",
-    "translations": ["tv"]
+    "translations": [
+      "tv"
+    ],
+    "traditional": "電視"
   },
   {
     "id": "81",
     "hanzi": "电视机",
     "pinyin": "diàn shì jī",
-    "translations": ["tv set"]
+    "translations": [
+      "tv set"
+    ],
+    "traditional": "電視機"
   },
   {
     "id": "82",
     "hanzi": "电影",
     "pinyin": "diàn yǐng",
-    "translations": ["movie"]
+    "translations": [
+      "movie"
+    ],
+    "traditional": "電影"
   },
   {
     "id": "83",
     "hanzi": "电影院",
     "pinyin": "diàn yǐng yuàn",
-    "translations": ["cinema"]
+    "translations": [
+      "cinema"
+    ],
+    "traditional": "電影院"
   },
   {
     "id": "84",
     "hanzi": "东",
     "pinyin": "dōng",
-    "translations": ["east"]
+    "translations": [
+      "east"
+    ],
+    "traditional": "東"
   },
   {
     "id": "85",
     "hanzi": "东边",
     "pinyin": "dōng bian",
-    "translations": ["east side"]
+    "translations": [
+      "east side"
+    ],
+    "traditional": "東邊"
   },
   {
     "id": "86",
     "hanzi": "东西",
     "pinyin": "dōng xi",
-    "translations": ["object", "stuff"]
+    "translations": [
+      "object",
+      "stuff"
+    ],
+    "traditional": "東西"
   },
   {
     "id": "87",
     "hanzi": "动",
     "pinyin": "dòng",
-    "translations": ["move"]
+    "translations": [
+      "move"
+    ],
+    "traditional": "動"
   },
   {
     "id": "88",
     "hanzi": "动作",
     "pinyin": "dòng zuò",
-    "translations": ["action"]
+    "translations": [
+      "action"
+    ],
+    "traditional": "動作"
   },
   {
     "id": "89",
     "hanzi": "都",
     "pinyin": "dōu",
-    "translations": ["all"]
+    "translations": [
+      "all"
+    ],
+    "traditional": "都"
   },
   {
     "id": "90",
     "hanzi": "读",
     "pinyin": "dú",
-    "translations": ["read"]
+    "translations": [
+      "read"
+    ],
+    "traditional": "讀"
   },
   {
     "id": "91",
     "hanzi": "读书",
     "pinyin": "dú shū",
-    "translations": ["to read a book"]
+    "translations": [
+      "to read a book"
+    ],
+    "traditional": "讀書"
   },
   {
     "id": "92",
     "hanzi": "对",
     "pinyin": "duì",
-    "translations": ["correct"]
+    "translations": [
+      "correct"
+    ],
+    "traditional": "對"
   },
   {
     "id": "93",
     "hanzi": "对不起",
     "pinyin": "duì bu qǐ",
-    "translations": ["sorry"]
+    "translations": [
+      "sorry"
+    ],
+    "traditional": "對不起"
   },
   {
     "id": "94",
     "hanzi": "多",
     "pinyin": "duō",
-    "translations": ["many"]
+    "translations": [
+      "many"
+    ],
+    "traditional": "多"
   },
   {
     "id": "95",
     "hanzi": "多少",
     "pinyin": "duō shao",
-    "translations": ["how many"]
+    "translations": [
+      "how many"
+    ],
+    "traditional": "多少"
   },
   {
     "id": "96",
     "hanzi": "饿",
     "pinyin": "è",
-    "translations": ["hungry"]
+    "translations": [
+      "hungry"
+    ],
+    "traditional": "餓"
   },
   {
     "id": "97",
     "hanzi": "儿子",
     "pinyin": "ér zi",
-    "translations": ["son"]
+    "translations": [
+      "son"
+    ],
+    "traditional": "兒子"
   },
   {
     "id": "98",
     "hanzi": "二",
     "pinyin": "èr",
-    "translations": ["two"]
+    "translations": [
+      "two"
+    ],
+    "traditional": "二"
   },
   {
     "id": "99",
     "hanzi": "饭",
     "pinyin": "fàn",
-    "translations": ["rice"]
+    "translations": [
+      "rice"
+    ],
+    "traditional": "飯"
   },
   {
     "id": "100",
     "hanzi": "饭店",
     "pinyin": "fàn diàn",
-    "translations": ["restaurant"]
+    "translations": [
+      "restaurant"
+    ],
+    "traditional": "飯店"
   },
   {
     "id": "101",
     "hanzi": "房间",
     "pinyin": "fáng jiān",
-    "translations": ["room"]
+    "translations": [
+      "room"
+    ],
+    "traditional": "房間"
   },
   {
     "id": "102",
     "hanzi": "房子",
     "pinyin": "fáng zi",
-    "translations": ["house"]
+    "translations": [
+      "house"
+    ],
+    "traditional": "房子"
   },
   {
     "id": "103",
     "hanzi": "放",
     "pinyin": "fàng",
-    "translations": ["put"]
+    "translations": [
+      "put"
+    ],
+    "traditional": "放"
   },
   {
     "id": "104",
     "hanzi": "放假",
     "pinyin": "fàng jià",
-    "translations": ["holiday"]
+    "translations": [
+      "holiday"
+    ],
+    "traditional": "放假"
   },
   {
     "id": "105",
     "hanzi": "放学",
     "pinyin": "fàng xué",
-    "translations": ["after school"]
+    "translations": [
+      "after school"
+    ],
+    "traditional": "放學"
   },
   {
     "id": "106",
     "hanzi": "飞",
     "pinyin": "fēi",
-    "translations": ["fly"]
+    "translations": [
+      "fly"
+    ],
+    "traditional": "飛"
   },
   {
     "id": "107",
     "hanzi": "飞机",
     "pinyin": "fēi jī",
-    "translations": ["aircraft；plane"]
+    "translations": [
+      "aircraft；plane"
+    ],
+    "traditional": "飛機"
   },
   {
     "id": "108",
     "hanzi": "非常",
     "pinyin": "fēi cháng",
-    "translations": ["very"]
+    "translations": [
+      "very"
+    ],
+    "traditional": "非常"
   },
   {
     "id": "109",
     "hanzi": "分",
     "pinyin": "fēn",
-    "translations": ["minute"]
+    "translations": [
+      "minute"
+    ],
+    "traditional": "分"
   },
   {
     "id": "110",
     "hanzi": "风",
     "pinyin": "fēng",
-    "translations": ["wind"]
+    "translations": [
+      "wind"
+    ],
+    "traditional": "風"
   },
   {
     "id": "111",
     "hanzi": "干",
     "pinyin": "gàn",
-    "translations": ["dry"]
+    "translations": [
+      "dry"
+    ],
+    "traditional": "幹"
   },
   {
     "id": "112",
     "hanzi": "干净",
     "pinyin": "gān jìng",
-    "translations": ["clean"]
+    "translations": [
+      "clean"
+    ],
+    "traditional": "乾淨"
   },
   {
     "id": "113",
     "hanzi": "干",
     "pinyin": "gàn",
-    "translations": ["do"]
+    "translations": [
+      "do"
+    ],
+    "traditional": "幹"
   },
   {
     "id": "114",
     "hanzi": "干什么",
     "pinyin": "gàn shén me",
-    "translations": ["what to do"]
+    "translations": [
+      "what to do"
+    ],
+    "traditional": "幹什麼"
   },
   {
     "id": "115",
     "hanzi": "高",
     "pinyin": "gāo",
-    "translations": ["tall", "high"]
+    "translations": [
+      "tall",
+      "high"
+    ],
+    "traditional": "高"
   },
   {
     "id": "116",
     "hanzi": "高兴",
     "pinyin": "gāo xìng",
-    "translations": ["happy"]
+    "translations": [
+      "happy"
+    ],
+    "traditional": "高興"
   },
   {
     "id": "117",
     "hanzi": "告诉",
     "pinyin": "gào su",
-    "translations": ["tell"]
+    "translations": [
+      "tell"
+    ],
+    "traditional": "告訴"
   },
   {
     "id": "118",
     "hanzi": "哥哥",
     "pinyin": "gē ge",
-    "translations": ["older brother"]
+    "translations": [
+      "older brother"
+    ],
+    "traditional": "哥哥"
   },
   {
     "id": "119",
     "hanzi": "歌",
     "pinyin": "gē",
-    "translations": ["song"]
+    "translations": [
+      "song"
+    ],
+    "traditional": "歌"
   },
   {
     "id": "120",
     "hanzi": "个",
     "pinyin": "gè",
-    "translations": ["(general measure word)"]
+    "translations": [
+      "(general measure word)"
+    ],
+    "traditional": "個"
   },
   {
     "id": "121",
     "hanzi": "给",
     "pinyin": "gěi",
-    "translations": ["give"]
+    "translations": [
+      "give"
+    ],
+    "traditional": "給"
   },
   {
     "id": "122",
     "hanzi": "跟",
     "pinyin": "gēn",
-    "translations": ["with"]
+    "translations": [
+      "with"
+    ],
+    "traditional": "跟"
   },
   {
     "id": "123",
     "hanzi": "工人",
     "pinyin": "gōng rén",
-    "translations": ["worker"]
+    "translations": [
+      "worker"
+    ],
+    "traditional": "工人"
   },
   {
     "id": "124",
     "hanzi": "工作",
     "pinyin": "gōng zuò",
-    "translations": ["to work", "job"]
+    "translations": [
+      "to work",
+      "job"
+    ],
+    "traditional": "工作"
   },
   {
     "id": "125",
     "hanzi": "关",
     "pinyin": "guān",
-    "translations": ["to close", "turn off"]
+    "translations": [
+      "to close",
+      "turn off"
+    ],
+    "traditional": "關"
   },
   {
     "id": "126",
     "hanzi": "关上",
     "pinyin": "guān shang",
-    "translations": ["to close", "turn off"]
+    "translations": [
+      "to close",
+      "turn off"
+    ],
+    "traditional": "關上"
   },
   {
     "id": "127",
     "hanzi": "贵",
     "pinyin": "guì",
-    "translations": ["expensive"]
+    "translations": [
+      "expensive"
+    ],
+    "traditional": "貴"
   },
   {
     "id": "128",
     "hanzi": "国",
     "pinyin": "guó",
-    "translations": ["country"]
+    "translations": [
+      "country"
+    ],
+    "traditional": "國"
   },
   {
     "id": "129",
     "hanzi": "国家",
     "pinyin": "guó jiā",
-    "translations": ["country"]
+    "translations": [
+      "country"
+    ],
+    "traditional": "國家"
   },
   {
     "id": "130",
     "hanzi": "国外",
     "pinyin": "guó wài",
-    "translations": ["abroad"]
+    "translations": [
+      "abroad"
+    ],
+    "traditional": "國外"
   },
   {
     "id": "131",
     "hanzi": "过",
     "pinyin": "guò",
-    "translations": ["to cross", "to pass"]
+    "translations": [
+      "to cross",
+      "to pass"
+    ],
+    "traditional": "過"
   },
   {
     "id": "132",
     "hanzi": "还",
     "pinyin": "hái",
-    "translations": ["also", "still"]
+    "translations": [
+      "also",
+      "still"
+    ],
+    "traditional": "還"
   },
   {
     "id": "133",
     "hanzi": "还是",
     "pinyin": "hái shi",
-    "translations": ["or"]
+    "translations": [
+      "or"
+    ],
+    "traditional": "還是"
   },
   {
     "id": "134",
     "hanzi": "还有",
     "pinyin": "hái yǒu",
-    "translations": ["and also"]
+    "translations": [
+      "and also"
+    ],
+    "traditional": "還有"
   },
   {
     "id": "135",
     "hanzi": "孩子",
     "pinyin": "hái zi",
-    "translations": ["child"]
+    "translations": [
+      "child"
+    ],
+    "traditional": "孩子"
   },
   {
     "id": "136",
     "hanzi": "汉语",
     "pinyin": "Hàn yǔ",
-    "translations": ["Chinese"]
+    "translations": [
+      "Chinese"
+    ],
+    "traditional": "漢語"
   },
   {
     "id": "137",
     "hanzi": "汉字",
     "pinyin": "Hàn zì",
-    "translations": ["Chinese character"]
+    "translations": [
+      "Chinese character"
+    ],
+    "traditional": "漢字"
   },
   {
     "id": "138",
     "hanzi": "好",
     "pinyin": "hǎo",
-    "translations": ["great", "good"]
+    "translations": [
+      "great",
+      "good"
+    ],
+    "traditional": "好"
   },
   {
     "id": "139",
     "hanzi": "好吃",
     "pinyin": "hào chī",
-    "translations": ["delicious"]
+    "translations": [
+      "delicious"
+    ],
+    "traditional": "好吃"
   },
   {
     "id": "140",
     "hanzi": "好看",
     "pinyin": "hǎo kàn",
-    "translations": ["good looking"]
+    "translations": [
+      "good looking"
+    ],
+    "traditional": "好看"
   },
   {
     "id": "141",
     "hanzi": "好听",
     "pinyin": "hǎo tīng",
-    "translations": ["nice (to listen)"]
+    "translations": [
+      "nice (to listen)"
+    ],
+    "traditional": "好聽"
   },
   {
     "id": "142",
     "hanzi": "好玩儿",
     "pinyin": "hǎo wánr",
-    "translations": ["fun"]
+    "translations": [
+      "fun"
+    ],
+    "traditional": "好玩兒"
   },
   {
     "id": "143",
     "hanzi": "号",
     "pinyin": "hào",
-    "translations": ["number", "date"]
+    "translations": [
+      "number",
+      "date"
+    ],
+    "traditional": "號"
   },
   {
     "id": "144",
     "hanzi": "喝",
     "pinyin": "hē",
-    "translations": ["drink"]
+    "translations": [
+      "drink"
+    ],
+    "traditional": "喝"
   },
   {
     "id": "145",
     "hanzi": "和",
     "pinyin": "hé",
-    "translations": ["with", "and"]
+    "translations": [
+      "with",
+      "and"
+    ],
+    "traditional": "和"
   },
   {
     "id": "146",
     "hanzi": "很",
     "pinyin": "hěn",
-    "translations": ["very"]
+    "translations": [
+      "very"
+    ],
+    "traditional": "很"
   },
   {
     "id": "147",
     "hanzi": "后",
     "pinyin": "hòu",
-    "translations": ["behind", "after"]
+    "translations": [
+      "behind",
+      "after"
+    ],
+    "traditional": "後"
   },
   {
     "id": "148",
     "hanzi": "后边",
     "pinyin": "hòu bian",
-    "translations": ["back side"]
+    "translations": [
+      "back side"
+    ],
+    "traditional": "後邊"
   },
   {
     "id": "149",
     "hanzi": "后天",
     "pinyin": "hòu tiān",
-    "translations": ["the day after tomorrow"]
+    "translations": [
+      "the day after tomorrow"
+    ],
+    "traditional": "後天"
   },
   {
     "id": "150",
     "hanzi": "花",
     "pinyin": "huā",
-    "translations": ["flower"]
+    "translations": [
+      "flower"
+    ],
+    "traditional": "花"
   },
   {
     "id": "151",
     "hanzi": "话",
     "pinyin": "huà",
-    "translations": ["words"]
+    "translations": [
+      "words"
+    ],
+    "traditional": "話"
   },
   {
     "id": "152",
     "hanzi": "坏",
     "pinyin": "huài",
-    "translations": ["bad", "broken"]
+    "translations": [
+      "bad",
+      "broken"
+    ],
+    "traditional": "壞"
   },
   {
     "id": "153",
     "hanzi": "还",
     "pinyin": "huán",
-    "translations": ["return"]
+    "translations": [
+      "return"
+    ],
+    "traditional": "還"
   },
   {
     "id": "154",
     "hanzi": "回",
     "pinyin": "huí",
-    "translations": ["back to"]
+    "translations": [
+      "back to"
+    ],
+    "traditional": "回"
   },
   {
     "id": "155",
     "hanzi": "回答",
     "pinyin": "huídá",
-    "translations": ["to answer"]
+    "translations": [
+      "to answer"
+    ],
+    "traditional": "回答"
   },
   {
     "id": "156",
     "hanzi": "回到",
     "pinyin": "huí dào",
-    "translations": ["back to"]
+    "translations": [
+      "back to"
+    ],
+    "traditional": "回到"
   },
   {
     "id": "157",
     "hanzi": "回家",
     "pinyin": "huí jiā",
-    "translations": ["come back home", "go home"]
+    "translations": [
+      "come back home",
+      "go home"
+    ],
+    "traditional": "回家"
   },
   {
     "id": "158",
     "hanzi": "回来",
     "pinyin": "huí lái",
-    "translations": ["come back"]
+    "translations": [
+      "come back"
+    ],
+    "traditional": "回來"
   },
   {
     "id": "159",
     "hanzi": "回去",
     "pinyin": "huí qù",
-    "translations": ["go back"]
+    "translations": [
+      "go back"
+    ],
+    "traditional": "回去"
   },
   {
     "id": "160",
     "hanzi": "会",
     "pinyin": "huì",
-    "translations": ["can", "be able to"]
+    "translations": [
+      "can",
+      "be able to"
+    ],
+    "traditional": "會"
   },
   {
     "id": "161",
     "hanzi": "火车",
     "pinyin": "huǒ chē",
-    "translations": ["train"]
+    "translations": [
+      "train"
+    ],
+    "traditional": "火車"
   },
   {
     "id": "162",
     "hanzi": "机场",
     "pinyin": "jī chǎng",
-    "translations": ["airport"]
+    "translations": [
+      "airport"
+    ],
+    "traditional": "機場"
   },
   {
     "id": "163",
     "hanzi": "机票",
     "pinyin": "jī piào",
-    "translations": ["plane tickets"]
+    "translations": [
+      "plane tickets"
+    ],
+    "traditional": "機票"
   },
   {
     "id": "164",
     "hanzi": "鸡蛋",
     "pinyin": "jī dàn",
-    "translations": ["chicken egg"]
+    "translations": [
+      "chicken egg"
+    ],
+    "traditional": "雞蛋"
   },
   {
     "id": "165",
     "hanzi": "几",
     "pinyin": "jǐ",
-    "translations": ["a few"]
+    "translations": [
+      "a few"
+    ],
+    "traditional": "幾"
   },
   {
     "id": "166",
     "hanzi": "记",
     "pinyin": "jì",
-    "translations": ["remember"]
+    "translations": [
+      "remember"
+    ],
+    "traditional": "記"
   },
   {
     "id": "167",
     "hanzi": "记得",
     "pinyin": "jì de",
-    "translations": ["remember"]
+    "translations": [
+      "remember"
+    ],
+    "traditional": "記得"
   },
   {
     "id": "168",
     "hanzi": "记住",
     "pinyin": "jì zhù",
-    "translations": ["remember"]
+    "translations": [
+      "remember"
+    ],
+    "traditional": "記住"
   },
   {
     "id": "169",
     "hanzi": "家",
     "pinyin": "jiā",
-    "translations": ["family", "home"]
+    "translations": [
+      "family",
+      "home"
+    ],
+    "traditional": "家"
   },
   {
     "id": "170",
     "hanzi": "家里",
     "pinyin": "jiā li",
-    "translations": ["at home"]
+    "translations": [
+      "at home"
+    ],
+    "traditional": "家裡"
   },
   {
     "id": "171",
     "hanzi": "家人",
     "pinyin": "jiā rén",
-    "translations": ["family"]
+    "translations": [
+      "family"
+    ],
+    "traditional": "家人"
   },
   {
     "id": "172",
     "hanzi": "间",
     "pinyin": "jiān",
-    "translations": ["room"]
+    "translations": [
+      "room"
+    ],
+    "traditional": "間"
   },
   {
     "id": "173",
     "hanzi": "见",
     "pinyin": "jiàn",
-    "translations": ["meet"]
+    "translations": [
+      "meet"
+    ],
+    "traditional": "見"
   },
   {
     "id": "174",
     "hanzi": "见面",
     "pinyin": "jiàn miàn",
-    "translations": ["meet"]
+    "translations": [
+      "meet"
+    ],
+    "traditional": "見面"
   },
   {
     "id": "175",
     "hanzi": "教",
     "pinyin": "jiào",
-    "translations": ["teach"]
+    "translations": [
+      "teach"
+    ],
+    "traditional": "教"
   },
   {
     "id": "176",
     "hanzi": "叫",
     "pinyin": "jiào",
-    "translations": ["call"]
+    "translations": [
+      "call"
+    ],
+    "traditional": "叫"
   },
   {
     "id": "177",
     "hanzi": "教学楼",
     "pinyin": "jiào xué lóu",
-    "translations": ["classroom building"]
+    "translations": [
+      "classroom building"
+    ],
+    "traditional": "教學樓"
   },
   {
     "id": "178",
     "hanzi": "姐姐",
     "pinyin": "jiě jie",
-    "translations": ["older sister"]
+    "translations": [
+      "older sister"
+    ],
+    "traditional": "姐姐"
   },
   {
     "id": "179",
     "hanzi": "介绍",
     "pinyin": "jiè shào",
-    "translations": ["introduce", "introduction"]
+    "translations": [
+      "introduce",
+      "introduction"
+    ],
+    "traditional": "介紹"
   },
   {
     "id": "180",
     "hanzi": "今年",
     "pinyin": "jīn nián",
-    "translations": ["this year"]
+    "translations": [
+      "this year"
+    ],
+    "traditional": "今年"
   },
   {
     "id": "181",
     "hanzi": "今天",
     "pinyin": "jīn tiān",
-    "translations": ["today"]
+    "translations": [
+      "today"
+    ],
+    "traditional": "今天"
   },
   {
     "id": "182",
     "hanzi": "进",
     "pinyin": "jìn",
-    "translations": ["enter"]
+    "translations": [
+      "enter"
+    ],
+    "traditional": "進"
   },
   {
     "id": "183",
     "hanzi": "进来",
     "pinyin": "jìn lái",
-    "translations": ["come in"]
+    "translations": [
+      "come in"
+    ],
+    "traditional": "進來"
   },
   {
     "id": "184",
     "hanzi": "进去",
     "pinyin": "jìn qù",
-    "translations": ["go in"]
+    "translations": [
+      "go in"
+    ],
+    "traditional": "進去"
   },
   {
     "id": "185",
     "hanzi": "九",
     "pinyin": "jiǔ",
-    "translations": ["nine"]
+    "translations": [
+      "nine"
+    ],
+    "traditional": "九"
   },
   {
     "id": "186",
     "hanzi": "就",
     "pinyin": "jiù",
-    "translations": ["(indicate summary or result)"]
+    "translations": [
+      "(indicate summary or result)"
+    ],
+    "traditional": "就"
   },
   {
     "id": "187",
     "hanzi": "觉得",
     "pinyin": "jué de",
-    "translations": ["feel"]
+    "translations": [
+      "feel"
+    ],
+    "traditional": "覺得"
   },
   {
     "id": "188",
     "hanzi": "开",
     "pinyin": "kāi",
-    "translations": ["open", "drive"]
+    "translations": [
+      "open",
+      "drive"
+    ],
+    "traditional": "開"
   },
   {
     "id": "189",
     "hanzi": "开车",
     "pinyin": "kāi chē",
-    "translations": ["drive"]
+    "translations": [
+      "drive"
+    ],
+    "traditional": "開車"
   },
   {
     "id": "190",
     "hanzi": "开会",
     "pinyin": "kāi huì",
-    "translations": ["have a meeting"]
+    "translations": [
+      "have a meeting"
+    ],
+    "traditional": "開會"
   },
   {
     "id": "191",
     "hanzi": "开玩笑",
     "pinyin": "kāi wán xiào",
-    "translations": ["joking"]
+    "translations": [
+      "joking"
+    ],
+    "traditional": "開玩笑"
   },
   {
     "id": "192",
     "hanzi": "看",
     "pinyin": "kàn",
-    "translations": ["look"]
+    "translations": [
+      "look"
+    ],
+    "traditional": "看"
   },
   {
     "id": "193",
     "hanzi": "看病",
     "pinyin": "kàn bìng",
-    "translations": ["see a doctor"]
+    "translations": [
+      "see a doctor"
+    ],
+    "traditional": "看病"
   },
   {
     "id": "194",
     "hanzi": "看到",
     "pinyin": "kàn dào",
-    "translations": ["see"]
+    "translations": [
+      "see"
+    ],
+    "traditional": "看到"
   },
   {
     "id": "195",
     "hanzi": "看见",
     "pinyin": "kàn jiàn",
-    "translations": ["see"]
+    "translations": [
+      "see"
+    ],
+    "traditional": "看見"
   },
   {
     "id": "196",
     "hanzi": "考",
     "pinyin": "kǎo",
-    "translations": ["test"]
+    "translations": [
+      "test"
+    ],
+    "traditional": "考"
   },
   {
     "id": "197",
     "hanzi": "考试",
     "pinyin": "kǎo shì",
-    "translations": ["examination"]
+    "translations": [
+      "examination"
+    ],
+    "traditional": "考試"
   },
   {
     "id": "198",
     "hanzi": "渴",
     "pinyin": "kě",
-    "translations": ["thirsty"]
+    "translations": [
+      "thirsty"
+    ],
+    "traditional": "渴"
   },
   {
     "id": "199",
     "hanzi": "课",
     "pinyin": "kè",
-    "translations": ["class", "lesson"]
+    "translations": [
+      "class",
+      "lesson"
+    ],
+    "traditional": "課"
   },
   {
     "id": "200",
     "hanzi": "课本",
     "pinyin": "kè běn",
-    "translations": ["textbook"]
+    "translations": [
+      "textbook"
+    ],
+    "traditional": "課本"
   },
   {
     "id": "201",
     "hanzi": "课文",
     "pinyin": "kè wén",
-    "translations": ["text"]
+    "translations": [
+      "text"
+    ],
+    "traditional": "課文"
   },
   {
     "id": "202",
     "hanzi": "口",
     "pinyin": "kǒu",
-    "translations": ["mouth"]
+    "translations": [
+      "mouth"
+    ],
+    "traditional": "口"
   },
   {
     "id": "203",
     "hanzi": "块",
     "pinyin": "kuài",
-    "translations": ["piece (measure word)"]
+    "translations": [
+      "piece (measure word)"
+    ],
+    "traditional": "塊"
   },
   {
     "id": "204",
     "hanzi": "快",
     "pinyin": "kuài",
-    "translations": ["fast"]
+    "translations": [
+      "fast"
+    ],
+    "traditional": "快"
   },
   {
     "id": "205",
     "hanzi": "来",
     "pinyin": "lái",
-    "translations": ["come"]
+    "translations": [
+      "come"
+    ],
+    "traditional": "來"
   },
   {
     "id": "206",
     "hanzi": "来到",
     "pinyin": "lái dào",
-    "translations": ["come to"]
+    "translations": [
+      "come to"
+    ],
+    "traditional": "來到"
   },
   {
     "id": "207",
     "hanzi": "老",
     "pinyin": "lǎo",
-    "translations": ["old"]
+    "translations": [
+      "old"
+    ],
+    "traditional": "老"
   },
   {
     "id": "208",
     "hanzi": "老人",
     "pinyin": "lǎo rén",
-    "translations": ["old people"]
+    "translations": [
+      "old people"
+    ],
+    "traditional": "老人"
   },
   {
     "id": "209",
     "hanzi": "老师",
     "pinyin": "lǎo shī",
-    "translations": ["teacher"]
+    "translations": [
+      "teacher"
+    ],
+    "traditional": "老師"
   },
   {
     "id": "210",
     "hanzi": "了",
     "pinyin": "le",
-    "translations": ["already"]
+    "translations": [
+      "already"
+    ],
+    "traditional": "了"
   },
   {
     "id": "211",
     "hanzi": "累",
     "pinyin": "lèi",
-    "translations": ["tired"]
+    "translations": [
+      "tired"
+    ],
+    "traditional": "累"
   },
   {
     "id": "212",
     "hanzi": "冷",
     "pinyin": "lěng",
-    "translations": ["cold"]
+    "translations": [
+      "cold"
+    ],
+    "traditional": "冷"
   },
   {
     "id": "213",
     "hanzi": "里",
     "pinyin": "lǐ",
-    "translations": ["in"]
+    "translations": [
+      "in"
+    ],
+    "traditional": "裡"
   },
   {
     "id": "214",
     "hanzi": "里边",
     "pinyin": "lǐ bian",
-    "translations": ["inside"]
+    "translations": [
+      "inside"
+    ],
+    "traditional": "裡邊"
   },
   {
     "id": "215",
     "hanzi": "两",
     "pinyin": "liǎng",
-    "translations": ["two"]
+    "translations": [
+      "two"
+    ],
+    "traditional": "兩"
   },
   {
     "id": "216",
     "hanzi": "零",
     "pinyin": "líng",
-    "translations": ["zero"]
+    "translations": [
+      "zero"
+    ],
+    "traditional": "零"
   },
   {
     "id": "217",
     "hanzi": "六",
     "pinyin": "liù",
-    "translations": ["six"]
+    "translations": [
+      "six"
+    ],
+    "traditional": "六"
   },
   {
     "id": "218",
     "hanzi": "楼",
     "pinyin": "lóu",
-    "translations": ["floor"]
+    "translations": [
+      "floor"
+    ],
+    "traditional": "樓"
   },
   {
     "id": "219",
     "hanzi": "楼上",
     "pinyin": "lóu shàng",
-    "translations": ["upstairs"]
+    "translations": [
+      "upstairs"
+    ],
+    "traditional": "樓上"
   },
   {
     "id": "220",
     "hanzi": "楼下",
     "pinyin": "lóu xià",
-    "translations": ["downstairs"]
+    "translations": [
+      "downstairs"
+    ],
+    "traditional": "樓下"
   },
   {
     "id": "221",
     "hanzi": "路",
     "pinyin": "lù",
-    "translations": ["road"]
+    "translations": [
+      "road"
+    ],
+    "traditional": "路"
   },
   {
     "id": "222",
     "hanzi": "路口",
     "pinyin": "lù kǒu",
-    "translations": ["intersection"]
+    "translations": [
+      "intersection"
+    ],
+    "traditional": "路口"
   },
   {
     "id": "223",
     "hanzi": "路上",
     "pinyin": "lù shang",
-    "translations": ["on the road"]
+    "translations": [
+      "on the road"
+    ],
+    "traditional": "路上"
   },
   {
     "id": "224",
     "hanzi": "妈妈",
     "pinyin": "mā ma",
-    "translations": ["mother"]
+    "translations": [
+      "mother"
+    ],
+    "traditional": "媽媽"
   },
   {
     "id": "225",
     "hanzi": "马路",
     "pinyin": "mǎ lù",
-    "translations": ["road"]
+    "translations": [
+      "road"
+    ],
+    "traditional": "馬路"
   },
   {
     "id": "226",
     "hanzi": "马上",
     "pinyin": "mǎ shàng",
-    "translations": ["immediately"]
+    "translations": [
+      "immediately"
+    ],
+    "traditional": "馬上"
   },
   {
     "id": "227",
     "hanzi": "吗",
     "pinyin": "ma",
-    "translations": ["is it"]
+    "translations": [
+      "is it"
+    ],
+    "traditional": "嗎"
   },
   {
     "id": "228",
     "hanzi": "买",
     "pinyin": "mǎi",
-    "translations": ["buy"]
+    "translations": [
+      "buy"
+    ],
+    "traditional": "買"
   },
   {
     "id": "229",
     "hanzi": "慢",
     "pinyin": "màn",
-    "translations": ["slow"]
+    "translations": [
+      "slow"
+    ],
+    "traditional": "慢"
   },
   {
     "id": "230",
     "hanzi": "忙",
     "pinyin": "máng",
-    "translations": ["busy"]
+    "translations": [
+      "busy"
+    ],
+    "traditional": "忙"
   },
   {
     "id": "231",
     "hanzi": "毛",
     "pinyin": "máo",
-    "translations": ["(measure word for money)"]
+    "translations": [
+      "(measure word for money)"
+    ],
+    "traditional": "毛"
   },
   {
     "id": "232",
     "hanzi": "没",
     "pinyin": "méi",
-    "translations": ["not"]
+    "translations": [
+      "not"
+    ],
+    "traditional": "沒"
   },
   {
     "id": "233",
     "hanzi": "没关系",
     "pinyin": "méi guān xi",
-    "translations": ["it’s ok"]
+    "translations": [
+      "it’s ok"
+    ],
+    "traditional": "沒關係"
   },
   {
     "id": "234",
     "hanzi": "没什么",
     "pinyin": "méi shén me",
-    "translations": ["it’s nothing"]
+    "translations": [
+      "it’s nothing"
+    ],
+    "traditional": "沒什麼"
   },
   {
     "id": "235",
     "hanzi": "没事儿",
     "pinyin": "méi shìr",
-    "translations": ["it’s okay"]
+    "translations": [
+      "it’s okay"
+    ],
+    "traditional": "沒事兒"
   },
   {
     "id": "236",
     "hanzi": "没有",
     "pinyin": "méi yǒu",
-    "translations": ["don’t have"]
+    "translations": [
+      "don’t have"
+    ],
+    "traditional": "沒有"
   },
   {
     "id": "237",
     "hanzi": "妹妹",
     "pinyin": "mèi mei",
-    "translations": ["younger sister"]
+    "translations": [
+      "younger sister"
+    ],
+    "traditional": "妹妹"
   },
   {
     "id": "238",
     "hanzi": "门",
     "pinyin": "mén",
-    "translations": ["door"]
+    "translations": [
+      "door"
+    ],
+    "traditional": "門"
   },
   {
     "id": "239",
     "hanzi": "门口",
     "pinyin": "mén kǒu",
-    "translations": ["entrance"]
+    "translations": [
+      "entrance"
+    ],
+    "traditional": "門口"
   },
   {
     "id": "240",
     "hanzi": "门票",
     "pinyin": "mén piào",
-    "translations": ["tickets"]
+    "translations": [
+      "tickets"
+    ],
+    "traditional": "門票"
   },
   {
     "id": "241",
     "hanzi": "朋友们",
     "pinyin": "péng you men",
-    "translations": ["friends"]
+    "translations": [
+      "friends"
+    ],
+    "traditional": "朋友們"
   },
   {
     "id": "242",
     "hanzi": "米饭",
     "pinyin": "mǐ fàn",
-    "translations": ["rice"]
+    "translations": [
+      "rice"
+    ],
+    "traditional": "米飯"
   },
   {
     "id": "243",
     "hanzi": "面包",
     "pinyin": "miàn bāo",
-    "translations": ["bread"]
+    "translations": [
+      "bread"
+    ],
+    "traditional": "麵包"
   },
   {
     "id": "244",
     "hanzi": "面条儿",
     "pinyin": "miàn tiáor",
-    "translations": ["noodles"]
+    "translations": [
+      "noodles"
+    ],
+    "traditional": "麵條兒"
   },
   {
     "id": "245",
     "hanzi": "名字",
     "pinyin": "míng zi",
-    "translations": ["first name"]
+    "translations": [
+      "first name"
+    ],
+    "traditional": "名字"
   },
   {
     "id": "246",
     "hanzi": "明白",
     "pinyin": "míng bai",
-    "translations": ["understand"]
+    "translations": [
+      "understand"
+    ],
+    "traditional": "明白"
   },
   {
     "id": "247",
     "hanzi": "明年",
     "pinyin": "míng nián",
-    "translations": ["next year"]
+    "translations": [
+      "next year"
+    ],
+    "traditional": "明年"
   },
   {
     "id": "248",
     "hanzi": "明天",
     "pinyin": "míng tiān",
-    "translations": ["tomorrow"]
+    "translations": [
+      "tomorrow"
+    ],
+    "traditional": "明天"
   },
   {
     "id": "249",
     "hanzi": "拿",
     "pinyin": "ná",
-    "translations": ["take"]
+    "translations": [
+      "take"
+    ],
+    "traditional": "拿"
   },
   {
     "id": "250",
     "hanzi": "哪",
     "pinyin": "nǎ",
-    "translations": ["which"]
+    "translations": [
+      "which"
+    ],
+    "traditional": "哪"
   },
   {
     "id": "251",
     "hanzi": "哪里",
     "pinyin": "nǎ lǐ",
-    "translations": ["where"]
+    "translations": [
+      "where"
+    ],
+    "traditional": "哪裡"
   },
   {
     "id": "252",
     "hanzi": "哪儿",
     "pinyin": "nǎr",
-    "translations": ["where"]
+    "translations": [
+      "where"
+    ],
+    "traditional": "哪兒"
   },
   {
     "id": "253",
     "hanzi": "哪些",
     "pinyin": "nǎ xiē",
-    "translations": ["which"]
+    "translations": [
+      "which"
+    ],
+    "traditional": "哪些"
   },
   {
     "id": "254",
     "hanzi": "那",
     "pinyin": "nà",
-    "translations": ["that"]
+    "translations": [
+      "that"
+    ],
+    "traditional": "那"
   },
   {
     "id": "255",
     "hanzi": "那边",
     "pinyin": "nà biān",
-    "translations": ["over there"]
+    "translations": [
+      "over there"
+    ],
+    "traditional": "那邊"
   },
   {
     "id": "256",
     "hanzi": "那里",
     "pinyin": "nà lǐ",
-    "translations": ["there"]
+    "translations": [
+      "there"
+    ],
+    "traditional": "那裡"
   },
   {
     "id": "257",
     "hanzi": "那儿",
     "pinyin": "nàr",
-    "translations": ["there"]
+    "translations": [
+      "there"
+    ],
+    "traditional": "那兒"
   },
   {
     "id": "258",
     "hanzi": "那些",
     "pinyin": "nà xiē",
-    "translations": ["those"]
+    "translations": [
+      "those"
+    ],
+    "traditional": "那些"
   },
   {
     "id": "259",
     "hanzi": "奶",
     "pinyin": "nǎi",
-    "translations": ["milk"]
+    "translations": [
+      "milk"
+    ],
+    "traditional": "奶"
   },
   {
     "id": "260",
     "hanzi": "奶奶",
     "pinyin": "nǎi nai",
-    "translations": ["grandmother"]
+    "translations": [
+      "grandmother"
+    ],
+    "traditional": "奶奶"
   },
   {
     "id": "261",
     "hanzi": "男",
     "pinyin": "nán",
-    "translations": ["male"]
+    "translations": [
+      "male"
+    ],
+    "traditional": "男"
   },
   {
     "id": "262",
     "hanzi": "男孩儿",
     "pinyin": "nán háir",
-    "translations": ["boy"]
+    "translations": [
+      "boy"
+    ],
+    "traditional": "男孩兒"
   },
   {
     "id": "263",
     "hanzi": "男朋友",
     "pinyin": "nán péng you",
-    "translations": ["boyfriend"]
+    "translations": [
+      "boyfriend"
+    ],
+    "traditional": "男朋友"
   },
   {
     "id": "264",
     "hanzi": "男人",
     "pinyin": "nán rén",
-    "translations": ["man"]
+    "translations": [
+      "man"
+    ],
+    "traditional": "男人"
   },
   {
     "id": "265",
     "hanzi": "男生",
     "pinyin": "nán shēng",
-    "translations": ["school boy"]
+    "translations": [
+      "school boy"
+    ],
+    "traditional": "男生"
   },
   {
     "id": "266",
     "hanzi": "南",
     "pinyin": "nán",
-    "translations": ["south"]
+    "translations": [
+      "south"
+    ],
+    "traditional": "南"
   },
   {
     "id": "267",
     "hanzi": "南边",
     "pinyin": "nán bian",
-    "translations": ["south side"]
+    "translations": [
+      "south side"
+    ],
+    "traditional": "南邊"
   },
   {
     "id": "268",
     "hanzi": "难",
     "pinyin": "nán",
-    "translations": ["difficult"]
+    "translations": [
+      "difficult"
+    ],
+    "traditional": "難"
   },
   {
     "id": "269",
     "hanzi": "呢",
     "pinyin": "ne",
-    "translations": ["what"]
+    "translations": [
+      "what"
+    ],
+    "traditional": "呢"
   },
   {
     "id": "270",
     "hanzi": "能",
     "pinyin": "néng",
-    "translations": ["can"]
+    "translations": [
+      "can"
+    ],
+    "traditional": "能"
   },
   {
     "id": "271",
     "hanzi": "你",
     "pinyin": "nǐ",
-    "translations": ["you"]
+    "translations": [
+      "you"
+    ],
+    "traditional": "你"
   },
   {
     "id": "272",
     "hanzi": "你们",
     "pinyin": "nǐ men",
-    "translations": ["you guys"]
+    "translations": [
+      "you guys"
+    ],
+    "traditional": "你們"
   },
   {
     "id": "273",
     "hanzi": "年",
     "pinyin": "nián",
-    "translations": ["year"]
+    "translations": [
+      "year"
+    ],
+    "traditional": "年"
   },
   {
     "id": "274",
     "hanzi": "您",
     "pinyin": "nín",
-    "translations": ["you"]
+    "translations": [
+      "you"
+    ],
+    "traditional": "您"
   },
   {
     "id": "275",
     "hanzi": "牛奶",
     "pinyin": "niú nǎi",
-    "translations": ["cow milk"]
+    "translations": [
+      "cow milk"
+    ],
+    "traditional": "牛奶"
   },
   {
     "id": "276",
     "hanzi": "女",
     "pinyin": "nǚ",
-    "translations": ["female"]
+    "translations": [
+      "female"
+    ],
+    "traditional": "女"
   },
   {
     "id": "277",
     "hanzi": "女儿",
     "pinyin": "nǚ’ér",
-    "translations": ["daughter"]
+    "translations": [
+      "daughter"
+    ],
+    "traditional": "女兒"
   },
   {
     "id": "278",
     "hanzi": "女孩儿",
     "pinyin": "nǚ háir",
-    "translations": ["girl"]
+    "translations": [
+      "girl"
+    ],
+    "traditional": "女孩兒"
   },
   {
     "id": "279",
     "hanzi": "女朋友",
     "pinyin": "nǚ péng you",
-    "translations": ["girlfriend"]
+    "translations": [
+      "girlfriend"
+    ],
+    "traditional": "女朋友"
   },
   {
     "id": "280",
     "hanzi": "女人",
     "pinyin": "nǚ rén",
-    "translations": ["woman"]
+    "translations": [
+      "woman"
+    ],
+    "traditional": "女人"
   },
   {
     "id": "281",
     "hanzi": "女生",
     "pinyin": "nǚ shēng",
-    "translations": ["schoolgirl"]
+    "translations": [
+      "schoolgirl"
+    ],
+    "traditional": "女生"
   },
   {
     "id": "282",
     "hanzi": "旁边",
     "pinyin": "páng biān",
-    "translations": ["next to"]
+    "translations": [
+      "next to"
+    ],
+    "traditional": "旁邊"
   },
   {
     "id": "283",
     "hanzi": "跑",
     "pinyin": "pǎo",
-    "translations": ["run"]
+    "translations": [
+      "run"
+    ],
+    "traditional": "跑"
   },
   {
     "id": "284",
     "hanzi": "朋友",
     "pinyin": "péng you",
-    "translations": ["friend"]
+    "translations": [
+      "friend"
+    ],
+    "traditional": "朋友"
   },
   {
     "id": "285",
     "hanzi": "票",
     "pinyin": "piào",
-    "translations": ["ticket"]
+    "translations": [
+      "ticket"
+    ],
+    "traditional": "票"
   },
   {
     "id": "286",
     "hanzi": "七",
     "pinyin": "qī",
-    "translations": ["seven"]
+    "translations": [
+      "seven"
+    ],
+    "traditional": "七"
   },
   {
     "id": "287",
     "hanzi": "起",
     "pinyin": "qǐ",
-    "translations": ["up"]
+    "translations": [
+      "up"
+    ],
+    "traditional": "起"
   },
   {
     "id": "288",
     "hanzi": "起床",
     "pinyin": "qǐ chuáng",
-    "translations": ["get up"]
+    "translations": [
+      "get up"
+    ],
+    "traditional": "起床"
   },
   {
     "id": "289",
     "hanzi": "起来",
     "pinyin": "qǐ lái",
-    "translations": ["stand up"]
+    "translations": [
+      "stand up"
+    ],
+    "traditional": "起來"
   },
   {
     "id": "290",
     "hanzi": "汽车",
     "pinyin": "qì chē",
-    "translations": ["car"]
+    "translations": [
+      "car"
+    ],
+    "traditional": "汽車"
   },
   {
     "id": "291",
     "hanzi": "前",
     "pinyin": "qián",
-    "translations": ["before"]
+    "translations": [
+      "before"
+    ],
+    "traditional": "前"
   },
   {
     "id": "292",
     "hanzi": "前边",
     "pinyin": "qián bian",
-    "translations": ["front side"]
+    "translations": [
+      "front side"
+    ],
+    "traditional": "前邊"
   },
   {
     "id": "293",
     "hanzi": "前天",
     "pinyin": "qián tiān",
-    "translations": ["the day before yesterday"]
+    "translations": [
+      "the day before yesterday"
+    ],
+    "traditional": "前天"
   },
   {
     "id": "294",
     "hanzi": "钱",
     "pinyin": "qián",
-    "translations": ["money"]
+    "translations": [
+      "money"
+    ],
+    "traditional": "錢"
   },
   {
     "id": "295",
     "hanzi": "钱包",
     "pinyin": "qián bāo",
-    "translations": ["wallet"]
+    "translations": [
+      "wallet"
+    ],
+    "traditional": "錢包"
   },
   {
     "id": "296",
     "hanzi": "请",
     "pinyin": "qǐng",
-    "translations": ["please"]
+    "translations": [
+      "please"
+    ],
+    "traditional": "請"
   },
   {
     "id": "297",
     "hanzi": "请假",
     "pinyin": "qǐng jià",
-    "translations": ["ask for leave"]
+    "translations": [
+      "ask for leave"
+    ],
+    "traditional": "請假"
   },
   {
     "id": "298",
     "hanzi": "请进",
     "pinyin": "qǐng jìn",
-    "translations": ["please come in"]
+    "translations": [
+      "please come in"
+    ],
+    "traditional": "請進"
   },
   {
     "id": "299",
     "hanzi": "请问",
     "pinyin": "qǐng wèn",
-    "translations": ["excuse me"]
+    "translations": [
+      "excuse me"
+    ],
+    "traditional": "請問"
   },
   {
     "id": "300",
     "hanzi": "请坐",
     "pinyin": "qǐng zuò",
-    "translations": ["please sit down"]
+    "translations": [
+      "please sit down"
+    ],
+    "traditional": "請坐"
   },
   {
     "id": "301",
     "hanzi": "球",
     "pinyin": "qiú",
-    "translations": ["ball"]
+    "translations": [
+      "ball"
+    ],
+    "traditional": "球"
   },
   {
     "id": "302",
     "hanzi": "去",
     "pinyin": "qù",
-    "translations": ["go"]
+    "translations": [
+      "go"
+    ],
+    "traditional": "去"
   },
   {
     "id": "303",
     "hanzi": "去年",
     "pinyin": "qù nián",
-    "translations": ["last year"]
+    "translations": [
+      "last year"
+    ],
+    "traditional": "去年"
   },
   {
     "id": "304",
     "hanzi": "热",
     "pinyin": "rè",
-    "translations": ["hot"]
+    "translations": [
+      "hot"
+    ],
+    "traditional": "熱"
   },
   {
     "id": "305",
     "hanzi": "人",
     "pinyin": "rén",
-    "translations": ["people"]
+    "translations": [
+      "people"
+    ],
+    "traditional": "人"
   },
   {
     "id": "306",
     "hanzi": "认识",
     "pinyin": "rèn shi",
-    "translations": ["know"]
+    "translations": [
+      "know"
+    ],
+    "traditional": "認識"
   },
   {
     "id": "307",
     "hanzi": "认真",
     "pinyin": "rèn zhēn",
-    "translations": ["serious"]
+    "translations": [
+      "serious"
+    ],
+    "traditional": "認真"
   },
   {
     "id": "308",
     "hanzi": "日",
     "pinyin": "rì",
-    "translations": ["day"]
+    "translations": [
+      "day"
+    ],
+    "traditional": "日"
   },
   {
     "id": "309",
     "hanzi": "日期",
     "pinyin": "rì qī",
-    "translations": ["date"]
+    "translations": [
+      "date"
+    ],
+    "traditional": "日期"
   },
   {
     "id": "310",
     "hanzi": "肉",
     "pinyin": "ròu",
-    "translations": ["meat"]
+    "translations": [
+      "meat"
+    ],
+    "traditional": "肉"
   },
   {
     "id": "311",
     "hanzi": "三",
     "pinyin": "sān",
-    "translations": ["three"]
+    "translations": [
+      "three"
+    ],
+    "traditional": "三"
   },
   {
     "id": "312",
     "hanzi": "山",
     "pinyin": "shān",
-    "translations": ["mountain"]
+    "translations": [
+      "mountain"
+    ],
+    "traditional": "山"
   },
   {
     "id": "313",
     "hanzi": "商场",
     "pinyin": "shāng chǎng",
-    "translations": ["mall"]
+    "translations": [
+      "mall"
+    ],
+    "traditional": "商場"
   },
   {
     "id": "314",
     "hanzi": "商店",
     "pinyin": "shāng diàn",
-    "translations": ["store"]
+    "translations": [
+      "store"
+    ],
+    "traditional": "商店"
   },
   {
     "id": "315",
     "hanzi": "上",
     "pinyin": "shàng",
-    "translations": ["on"]
+    "translations": [
+      "on"
+    ],
+    "traditional": "上"
   },
   {
     "id": "316",
     "hanzi": "上班",
     "pinyin": "shàng bān",
-    "translations": ["go to work"]
+    "translations": [
+      "go to work"
+    ],
+    "traditional": "上班"
   },
   {
     "id": "317",
     "hanzi": "上边",
     "pinyin": "shàng bian",
-    "translations": ["above"]
+    "translations": [
+      "above"
+    ],
+    "traditional": "上邊"
   },
   {
     "id": "318",
     "hanzi": "上车",
     "pinyin": "shàng chē",
-    "translations": ["get on to the car"]
+    "translations": [
+      "get on to the car"
+    ],
+    "traditional": "上車"
   },
   {
     "id": "319",
     "hanzi": "上次",
     "pinyin": "shàng cì",
-    "translations": ["last time"]
+    "translations": [
+      "last time"
+    ],
+    "traditional": "上次"
   },
   {
     "id": "320",
     "hanzi": "上课",
     "pinyin": "shàng kè",
-    "translations": ["go to class"]
+    "translations": [
+      "go to class"
+    ],
+    "traditional": "上課"
   },
   {
     "id": "321",
     "hanzi": "上网",
     "pinyin": "shàng wǎng",
-    "translations": ["go online"]
+    "translations": [
+      "go online"
+    ],
+    "traditional": "上網"
   },
   {
     "id": "322",
     "hanzi": "上午",
     "pinyin": "shàng wǔ",
-    "translations": ["morning"]
+    "translations": [
+      "morning"
+    ],
+    "traditional": "上午"
   },
   {
     "id": "323",
     "hanzi": "上学",
     "pinyin": "shàng xué",
-    "translations": ["go to school"]
+    "translations": [
+      "go to school"
+    ],
+    "traditional": "上學"
   },
   {
     "id": "324",
     "hanzi": "少",
     "pinyin": "shǎo",
-    "translations": ["little", "less"]
+    "translations": [
+      "little",
+      "less"
+    ],
+    "traditional": "少"
   },
   {
     "id": "325",
     "hanzi": "谁",
     "pinyin": "shéi/shuí",
-    "translations": ["who"]
+    "translations": [
+      "who"
+    ],
+    "traditional": "誰"
   },
   {
     "id": "326",
     "hanzi": "身上",
     "pinyin": "shēn shang",
-    "translations": ["on the body"]
+    "translations": [
+      "on the body"
+    ],
+    "traditional": "身上"
   },
   {
     "id": "327",
     "hanzi": "身体",
     "pinyin": "shēn tǐ",
-    "translations": ["body"]
+    "translations": [
+      "body"
+    ],
+    "traditional": "身體"
   },
   {
     "id": "328",
     "hanzi": "什么",
     "pinyin": "shén me",
-    "translations": ["what"]
+    "translations": [
+      "what"
+    ],
+    "traditional": "什麼"
   },
   {
     "id": "329",
     "hanzi": "生病",
     "pinyin": "shēng bìng",
-    "translations": ["sick"]
+    "translations": [
+      "sick"
+    ],
+    "traditional": "生病"
   },
   {
     "id": "330",
     "hanzi": "生气",
     "pinyin": "shēng qì",
-    "translations": ["angry", "pissed off"]
+    "translations": [
+      "angry",
+      "pissed off"
+    ],
+    "traditional": "生氣"
   },
   {
     "id": "331",
     "hanzi": "生日",
     "pinyin": "shēng rì",
-    "translations": ["birthday"]
+    "translations": [
+      "birthday"
+    ],
+    "traditional": "生日"
   },
   {
     "id": "332",
     "hanzi": "十",
     "pinyin": "shí",
-    "translations": ["ten"]
+    "translations": [
+      "ten"
+    ],
+    "traditional": "十"
   },
   {
     "id": "333",
     "hanzi": "时候",
     "pinyin": "shí hou",
-    "translations": ["when"]
+    "translations": [
+      "when"
+    ],
+    "traditional": "時候"
   },
   {
     "id": "334",
     "hanzi": "时间",
     "pinyin": "shí jiān",
-    "translations": ["time"]
+    "translations": [
+      "time"
+    ],
+    "traditional": "時間"
   },
   {
     "id": "335",
     "hanzi": "事",
     "pinyin": "shì",
-    "translations": ["thing", "affair"]
+    "translations": [
+      "thing",
+      "affair"
+    ],
+    "traditional": "事"
   },
   {
     "id": "336",
     "hanzi": "试",
     "pinyin": "shì",
-    "translations": ["try", "test"]
+    "translations": [
+      "try",
+      "test"
+    ],
+    "traditional": "試"
   },
   {
     "id": "337",
     "hanzi": "是",
     "pinyin": "shì",
-    "translations": ["yes", "am/is/are"]
+    "translations": [
+      "yes",
+      "am/is/are"
+    ],
+    "traditional": "是"
   },
   {
     "id": "338",
     "hanzi": "是不是",
     "pinyin": "shì bu shì",
-    "translations": ["is not it"]
+    "translations": [
+      "is not it"
+    ],
+    "traditional": "是不是"
   },
   {
     "id": "339",
     "hanzi": "手",
     "pinyin": "shǒu",
-    "translations": ["hand"]
+    "translations": [
+      "hand"
+    ],
+    "traditional": "手"
   },
   {
     "id": "340",
     "hanzi": "手机",
     "pinyin": "shǒu jī",
-    "translations": ["handphone"]
+    "translations": [
+      "handphone"
+    ],
+    "traditional": "智慧型手機"
   },
   {
     "id": "341",
     "hanzi": "书",
     "pinyin": "shū",
-    "translations": ["book"]
+    "translations": [
+      "book"
+    ],
+    "traditional": "書"
   },
   {
     "id": "342",
     "hanzi": "书包",
     "pinyin": "shū bāo",
-    "translations": ["school bag"]
+    "translations": [
+      "school bag"
+    ],
+    "traditional": "書包"
   },
   {
     "id": "343",
     "hanzi": "书店",
     "pinyin": "shū diàn",
-    "translations": ["bookstore"]
+    "translations": [
+      "bookstore"
+    ],
+    "traditional": "書店"
   },
   {
     "id": "344",
     "hanzi": "树",
     "pinyin": "shù",
-    "translations": ["tree"]
+    "translations": [
+      "tree"
+    ],
+    "traditional": "樹"
   },
   {
     "id": "345",
     "hanzi": "水",
     "pinyin": "shuǐ",
-    "translations": ["water"]
+    "translations": [
+      "water"
+    ],
+    "traditional": "水"
   },
   {
     "id": "346",
     "hanzi": "水果",
     "pinyin": "shuǐ guǒ",
-    "translations": ["fruit"]
+    "translations": [
+      "fruit"
+    ],
+    "traditional": "水果"
   },
   {
     "id": "347",
     "hanzi": "睡",
     "pinyin": "shuì",
-    "translations": ["sleep"]
+    "translations": [
+      "sleep"
+    ],
+    "traditional": "睡"
   },
   {
     "id": "348",
     "hanzi": "睡觉",
     "pinyin": "shuì jiào",
-    "translations": ["go to bed"]
+    "translations": [
+      "go to bed"
+    ],
+    "traditional": "睡覺"
   },
   {
     "id": "349",
     "hanzi": "说",
     "pinyin": "shuō",
-    "translations": ["say"]
+    "translations": [
+      "say"
+    ],
+    "traditional": "說"
   },
   {
     "id": "350",
     "hanzi": "说话",
     "pinyin": "shuō huà",
-    "translations": ["speak"]
+    "translations": [
+      "speak"
+    ],
+    "traditional": "說話"
   },
   {
     "id": "351",
     "hanzi": "四",
     "pinyin": "sì",
-    "translations": ["four"]
+    "translations": [
+      "four"
+    ],
+    "traditional": "四"
   },
   {
     "id": "352",
     "hanzi": "送",
     "pinyin": "sòng",
-    "translations": ["give away"]
+    "translations": [
+      "give away"
+    ],
+    "traditional": "送"
   },
   {
     "id": "353",
     "hanzi": "岁",
     "pinyin": "suì",
-    "translations": ["year (old)"]
+    "translations": [
+      "year (old)"
+    ],
+    "traditional": "歲"
   },
   {
     "id": "354",
     "hanzi": "他",
     "pinyin": "tā",
-    "translations": ["he"]
+    "translations": [
+      "he"
+    ],
+    "traditional": "他"
   },
   {
     "id": "355",
     "hanzi": "他们",
     "pinyin": "tā men",
-    "translations": ["they"]
+    "translations": [
+      "they"
+    ],
+    "traditional": "他們"
   },
   {
     "id": "356",
     "hanzi": "她",
     "pinyin": "tā",
-    "translations": ["she"]
+    "translations": [
+      "she"
+    ],
+    "traditional": "她"
   },
   {
     "id": "357",
     "hanzi": "她们",
     "pinyin": "tā men",
-    "translations": ["they"]
+    "translations": [
+      "they"
+    ],
+    "traditional": "她們"
   },
   {
     "id": "358",
     "hanzi": "太",
     "pinyin": "tài",
-    "translations": ["too"]
+    "translations": [
+      "too"
+    ],
+    "traditional": "太"
   },
   {
     "id": "359",
     "hanzi": "天",
     "pinyin": "tiān",
-    "translations": ["day"]
+    "translations": [
+      "day"
+    ],
+    "traditional": "天"
   },
   {
     "id": "360",
     "hanzi": "天气",
     "pinyin": "tiān qì",
-    "translations": ["weather"]
+    "translations": [
+      "weather"
+    ],
+    "traditional": "天氣"
   },
   {
     "id": "361",
     "hanzi": "听",
     "pinyin": "tīng",
-    "translations": ["listen"]
+    "translations": [
+      "listen"
+    ],
+    "traditional": "聽"
   },
   {
     "id": "362",
     "hanzi": "听到",
     "pinyin": "tīng dào",
-    "translations": ["hear"]
+    "translations": [
+      "hear"
+    ],
+    "traditional": "聽到"
   },
   {
     "id": "363",
     "hanzi": "听见",
     "pinyin": "tīng jiàn",
-    "translations": ["hear"]
+    "translations": [
+      "hear"
+    ],
+    "traditional": "聽見"
   },
   {
     "id": "364",
     "hanzi": "听写",
     "pinyin": "tīng xiě",
-    "translations": ["dictation"]
+    "translations": [
+      "dictation"
+    ],
+    "traditional": "聽寫"
   },
   {
     "id": "365",
     "hanzi": "同学",
     "pinyin": "tóng xué",
-    "translations": ["classmate"]
+    "translations": [
+      "classmate"
+    ],
+    "traditional": "同學"
   },
   {
     "id": "366",
     "hanzi": "图书馆",
     "pinyin": "tú shū guǎn",
-    "translations": ["library"]
+    "translations": [
+      "library"
+    ],
+    "traditional": "圖書館"
   },
   {
     "id": "367",
     "hanzi": "外",
     "pinyin": "wài",
-    "translations": ["out"]
+    "translations": [
+      "out"
+    ],
+    "traditional": "外"
   },
   {
     "id": "368",
     "hanzi": "外边",
     "pinyin": "wài bian",
-    "translations": ["outside"]
+    "translations": [
+      "outside"
+    ],
+    "traditional": "外邊"
   },
   {
     "id": "369",
     "hanzi": "外国",
     "pinyin": "wài guó",
-    "translations": ["foreign country"]
+    "translations": [
+      "foreign country"
+    ],
+    "traditional": "外國"
   },
   {
     "id": "370",
     "hanzi": "外语",
     "pinyin": "wài yǔ",
-    "translations": ["foreign language"]
+    "translations": [
+      "foreign language"
+    ],
+    "traditional": "外語"
   },
   {
     "id": "371",
     "hanzi": "玩儿",
     "pinyin": "wánr",
-    "translations": ["play"]
+    "translations": [
+      "play"
+    ],
+    "traditional": "玩兒"
   },
   {
     "id": "372",
     "hanzi": "晚",
     "pinyin": "wǎn",
-    "translations": ["late"]
+    "translations": [
+      "late"
+    ],
+    "traditional": "晚"
   },
   {
     "id": "373",
     "hanzi": "晚饭",
     "pinyin": "wǎn fàn",
-    "translations": ["dinner"]
+    "translations": [
+      "dinner"
+    ],
+    "traditional": "晚飯"
   },
   {
     "id": "374",
     "hanzi": "晚上",
     "pinyin": "wǎn shang",
-    "translations": ["at night"]
+    "translations": [
+      "at night"
+    ],
+    "traditional": "晚上"
   },
   {
     "id": "375",
     "hanzi": "网上",
     "pinyin": "wǎng shang",
-    "translations": ["on the internet"]
+    "translations": [
+      "on the internet"
+    ],
+    "traditional": "網上"
   },
   {
     "id": "376",
     "hanzi": "网友",
     "pinyin": "wǎng yǒu",
-    "translations": ["netizen"]
+    "translations": [
+      "netizen"
+    ],
+    "traditional": "網友"
   },
   {
     "id": "377",
     "hanzi": "忘",
     "pinyin": "wàng",
-    "translations": ["forget"]
+    "translations": [
+      "forget"
+    ],
+    "traditional": "忘"
   },
   {
     "id": "378",
     "hanzi": "忘记",
     "pinyin": "wàng jì",
-    "translations": ["forget"]
+    "translations": [
+      "forget"
+    ],
+    "traditional": "忘記"
   },
   {
     "id": "379",
     "hanzi": "问",
     "pinyin": "wèn",
-    "translations": ["ask"]
+    "translations": [
+      "ask"
+    ],
+    "traditional": "問"
   },
   {
     "id": "380",
     "hanzi": "我",
     "pinyin": "wǒ",
-    "translations": ["I"]
+    "translations": [
+      "I"
+    ],
+    "traditional": "我"
   },
   {
     "id": "381",
     "hanzi": "我们",
     "pinyin": "wǒ men",
-    "translations": ["we"]
+    "translations": [
+      "we"
+    ],
+    "traditional": "我們"
   },
   {
     "id": "382",
     "hanzi": "五",
     "pinyin": "wǔ",
-    "translations": ["five"]
+    "translations": [
+      "five"
+    ],
+    "traditional": "五"
   },
   {
     "id": "383",
     "hanzi": "午饭",
     "pinyin": "wǔ fàn",
-    "translations": ["lunch"]
+    "translations": [
+      "lunch"
+    ],
+    "traditional": "午飯"
   },
   {
     "id": "384",
     "hanzi": "西",
     "pinyin": "xī",
-    "translations": ["west"]
+    "translations": [
+      "west"
+    ],
+    "traditional": "西"
   },
   {
     "id": "385",
     "hanzi": "西边",
     "pinyin": "xī bian",
-    "translations": ["west side"]
+    "translations": [
+      "west side"
+    ],
+    "traditional": "西邊"
   },
   {
     "id": "386",
     "hanzi": "洗",
     "pinyin": "xǐ",
-    "translations": ["wash"]
+    "translations": [
+      "wash"
+    ],
+    "traditional": "洗"
   },
   {
     "id": "387",
     "hanzi": "洗手间",
     "pinyin": "xǐ shǒu jiān",
-    "translations": ["restroom"]
+    "translations": [
+      "restroom"
+    ],
+    "traditional": "洗手間"
   },
   {
     "id": "388",
     "hanzi": "喜欢",
     "pinyin": "xǐ huan",
-    "translations": ["like"]
+    "translations": [
+      "like"
+    ],
+    "traditional": "喜歡"
   },
   {
     "id": "389",
     "hanzi": "下",
     "pinyin": "xià",
-    "translations": ["under", "off"]
+    "translations": [
+      "under",
+      "off"
+    ],
+    "traditional": "下"
   },
   {
     "id": "390",
     "hanzi": "下班",
     "pinyin": "xià bān",
-    "translations": ["off work"]
+    "translations": [
+      "off work"
+    ],
+    "traditional": "下班"
   },
   {
     "id": "391",
     "hanzi": "下边",
     "pinyin": "xià bian",
-    "translations": ["below"]
+    "translations": [
+      "below"
+    ],
+    "traditional": "下邊"
   },
   {
     "id": "392",
     "hanzi": "下车",
     "pinyin": "xià chē",
-    "translations": ["get off the car"]
+    "translations": [
+      "get off the car"
+    ],
+    "traditional": "下車"
   },
   {
     "id": "393",
     "hanzi": "下次",
     "pinyin": "xià cì",
-    "translations": ["next time"]
+    "translations": [
+      "next time"
+    ],
+    "traditional": "下次"
   },
   {
     "id": "394",
     "hanzi": "下课",
     "pinyin": "xià kè",
-    "translations": ["end of class"]
+    "translations": [
+      "end of class"
+    ],
+    "traditional": "下課"
   },
   {
     "id": "395",
     "hanzi": "下午",
     "pinyin": "xià wǔ",
-    "translations": ["afternoon"]
+    "translations": [
+      "afternoon"
+    ],
+    "traditional": "下午"
   },
   {
     "id": "396",
     "hanzi": "下雨",
     "pinyin": "xià yǔ",
-    "translations": ["rain"]
+    "translations": [
+      "rain"
+    ],
+    "traditional": "下雨"
   },
   {
     "id": "397",
     "hanzi": "先",
     "pinyin": "xiān",
-    "translations": ["first"]
+    "translations": [
+      "first"
+    ],
+    "traditional": "先"
   },
   {
     "id": "398",
     "hanzi": "先生",
     "pinyin": "xiān sheng",
-    "translations": ["Mister"]
+    "translations": [
+      "Mister"
+    ],
+    "traditional": "先生"
   },
   {
     "id": "399",
     "hanzi": "现在",
     "pinyin": "xiàn zài",
-    "translations": ["right now"]
+    "translations": [
+      "right now"
+    ],
+    "traditional": "現在"
   },
   {
     "id": "400",
     "hanzi": "想",
     "pinyin": "xiǎng",
-    "translations": ["miss", "want", "think"]
+    "translations": [
+      "miss",
+      "want",
+      "think"
+    ],
+    "traditional": "想"
   },
   {
     "id": "401",
     "hanzi": "小",
     "pinyin": "xiǎo",
-    "translations": ["small"]
+    "translations": [
+      "small"
+    ],
+    "traditional": "小"
   },
   {
     "id": "402",
     "hanzi": "小孩儿",
     "pinyin": "xiǎo háir",
-    "translations": ["child"]
+    "translations": [
+      "child"
+    ],
+    "traditional": "小孩兒"
   },
   {
     "id": "403",
     "hanzi": "小姐",
     "pinyin": "xiǎo jiě",
-    "translations": ["Miss"]
+    "translations": [
+      "Miss"
+    ],
+    "traditional": "小姐"
   },
   {
     "id": "404",
     "hanzi": "小朋友",
     "pinyin": "xiǎo péng yǒu",
-    "translations": ["kids"]
+    "translations": [
+      "kids"
+    ],
+    "traditional": "小朋友"
   },
   {
     "id": "405",
     "hanzi": "小时",
     "pinyin": "xiǎo shí",
-    "translations": ["hour"]
+    "translations": [
+      "hour"
+    ],
+    "traditional": "小時"
   },
   {
     "id": "406",
     "hanzi": "小学",
     "pinyin": "xiǎo xué",
-    "translations": ["primary school"]
+    "translations": [
+      "primary school"
+    ],
+    "traditional": "小學"
   },
   {
     "id": "407",
     "hanzi": "小学生",
     "pinyin": "xiǎo xué shēng",
-    "translations": ["elementary school student"]
+    "translations": [
+      "elementary school student"
+    ],
+    "traditional": "小學生"
   },
   {
     "id": "408",
     "hanzi": "笑",
     "pinyin": "xiào",
-    "translations": ["laugh"]
+    "translations": [
+      "laugh"
+    ],
+    "traditional": "笑"
   },
   {
     "id": "409",
     "hanzi": "写",
     "pinyin": "xiě",
-    "translations": ["write"]
+    "translations": [
+      "write"
+    ],
+    "traditional": "寫"
   },
   {
     "id": "410",
     "hanzi": "谢谢",
     "pinyin": "xiè xie",
-    "translations": ["thank you"]
+    "translations": [
+      "thank you"
+    ],
+    "traditional": "謝謝"
   },
   {
     "id": "411",
     "hanzi": "新",
     "pinyin": "xīn",
-    "translations": ["new"]
+    "translations": [
+      "new"
+    ],
+    "traditional": "新"
   },
   {
     "id": "412",
     "hanzi": "新年",
     "pinyin": "xīn nián",
-    "translations": ["new year"]
+    "translations": [
+      "new year"
+    ],
+    "traditional": "新年"
   },
   {
     "id": "413",
     "hanzi": "星期",
     "pinyin": "xīng qī",
-    "translations": ["week"]
+    "translations": [
+      "week"
+    ],
+    "traditional": "星期"
   },
   {
     "id": "414",
     "hanzi": "星期日",
     "pinyin": "xīng qī rì",
-    "translations": ["Sunday"]
+    "translations": [
+      "Sunday"
+    ],
+    "traditional": "星期日"
   },
   {
     "id": "415",
     "hanzi": "星期天",
     "pinyin": "xīng qī tiān",
-    "translations": ["Sunday"]
+    "translations": [
+      "Sunday"
+    ],
+    "traditional": "星期天"
   },
   {
     "id": "416",
     "hanzi": "行",
     "pinyin": "xíng",
-    "translations": ["okay"]
+    "translations": [
+      "okay"
+    ],
+    "traditional": "行"
   },
   {
     "id": "417",
     "hanzi": "休息",
     "pinyin": "xiū xi",
-    "translations": ["rest"]
+    "translations": [
+      "rest"
+    ],
+    "traditional": "休息"
   },
   {
     "id": "418",
     "hanzi": "学",
     "pinyin": "xué",
-    "translations": ["learn"]
+    "translations": [
+      "learn"
+    ],
+    "traditional": "學"
   },
   {
     "id": "419",
     "hanzi": "学生",
     "pinyin": "xué shēng",
-    "translations": ["student"]
+    "translations": [
+      "student"
+    ],
+    "traditional": "學生"
   },
   {
     "id": "420",
     "hanzi": "学习",
     "pinyin": "xué xí",
-    "translations": ["learn", "study"]
+    "translations": [
+      "learn",
+      "study"
+    ],
+    "traditional": "學習"
   },
   {
     "id": "421",
     "hanzi": "学校",
     "pinyin": "xué xiào",
-    "translations": ["school"]
+    "translations": [
+      "school"
+    ],
+    "traditional": "學校"
   },
   {
     "id": "422",
     "hanzi": "学院",
     "pinyin": "xué yuàn",
-    "translations": ["academy"]
+    "translations": [
+      "academy"
+    ],
+    "traditional": "學院"
   },
   {
     "id": "423",
     "hanzi": "要",
     "pinyin": "yào",
-    "translations": ["want"]
+    "translations": [
+      "want"
+    ],
+    "traditional": "要"
   },
   {
     "id": "424",
     "hanzi": "爷爷",
     "pinyin": "yé ye",
-    "translations": ["grandfather"]
+    "translations": [
+      "grandfather"
+    ],
+    "traditional": "爺爺"
   },
   {
     "id": "425",
     "hanzi": "也",
     "pinyin": "yě",
-    "translations": ["also"]
+    "translations": [
+      "also"
+    ],
+    "traditional": "也"
   },
   {
     "id": "426",
     "hanzi": "页",
     "pinyin": "yè",
-    "translations": ["page"]
+    "translations": [
+      "page"
+    ],
+    "traditional": "頁"
   },
   {
     "id": "427",
     "hanzi": "一",
     "pinyin": "yī",
-    "translations": ["one"]
+    "translations": [
+      "one"
+    ],
+    "traditional": "一"
   },
   {
     "id": "428",
     "hanzi": "衣服",
     "pinyin": "yī fu",
-    "translations": ["clothes"]
+    "translations": [
+      "clothes"
+    ],
+    "traditional": "衣服"
   },
   {
     "id": "429",
     "hanzi": "医生",
     "pinyin": "yī shēng",
-    "translations": ["doctor"]
+    "translations": [
+      "doctor"
+    ],
+    "traditional": "醫生"
   },
   {
     "id": "430",
     "hanzi": "医院",
     "pinyin": "yī yuàn",
-    "translations": ["hospital"]
+    "translations": [
+      "hospital"
+    ],
+    "traditional": "醫院"
   },
   {
     "id": "431",
     "hanzi": "一半",
     "pinyin": "yí bàn",
-    "translations": ["a half"]
+    "translations": [
+      "a half"
+    ],
+    "traditional": "一半"
   },
   {
     "id": "432",
     "hanzi": "一会儿",
     "pinyin": "yí huìr",
-    "translations": ["a while"]
+    "translations": [
+      "a while"
+    ],
+    "traditional": "一會兒"
   },
   {
     "id": "433",
     "hanzi": "一块儿",
     "pinyin": "yí kuàir",
-    "translations": ["together"]
+    "translations": [
+      "together"
+    ],
+    "traditional": "一塊兒"
   },
   {
     "id": "434",
     "hanzi": "一下儿",
     "pinyin": "yí xiàr",
-    "translations": ["a while"]
+    "translations": [
+      "a while"
+    ],
+    "traditional": "一下兒"
   },
   {
     "id": "435",
     "hanzi": "一样",
     "pinyin": "yí yàng",
-    "translations": ["same"]
+    "translations": [
+      "same"
+    ],
+    "traditional": "一樣"
   },
   {
     "id": "436",
     "hanzi": "一边",
     "pinyin": "yì biān",
-    "translations": ["while"]
+    "translations": [
+      "while"
+    ],
+    "traditional": "一邊"
   },
   {
     "id": "437",
     "hanzi": "一点儿",
     "pinyin": "yì diǎnr",
-    "translations": ["a little"]
+    "translations": [
+      "a little"
+    ],
+    "traditional": "一點兒"
   },
   {
     "id": "438",
     "hanzi": "一起",
     "pinyin": "yì qǐ",
-    "translations": ["together"]
+    "translations": [
+      "together"
+    ],
+    "traditional": "一起"
   },
   {
     "id": "439",
     "hanzi": "一些",
     "pinyin": "yì xiē",
-    "translations": ["some"]
+    "translations": [
+      "some"
+    ],
+    "traditional": "一些"
   },
   {
     "id": "440",
     "hanzi": "用",
     "pinyin": "yòng",
-    "translations": ["use"]
+    "translations": [
+      "use"
+    ],
+    "traditional": "用"
   },
   {
     "id": "441",
     "hanzi": "有",
     "pinyin": "yǒu",
-    "translations": ["have"]
+    "translations": [
+      "have"
+    ],
+    "traditional": "有"
   },
   {
     "id": "442",
     "hanzi": "有的",
     "pinyin": "yǒu de",
-    "translations": ["some"]
+    "translations": [
+      "some"
+    ],
+    "traditional": "有的"
   },
   {
     "id": "443",
     "hanzi": "有名",
     "pinyin": "yǒu míng",
-    "translations": ["famous"]
+    "translations": [
+      "famous"
+    ],
+    "traditional": "有名"
   },
   {
     "id": "444",
     "hanzi": "有时候",
     "pinyin": "yǒu shí hou",
-    "translations": ["sometimes"]
+    "translations": [
+      "sometimes"
+    ],
+    "traditional": "有時候"
   },
   {
     "id": "445",
     "hanzi": "有些",
     "pinyin": "yǒu xiē",
-    "translations": ["some"]
+    "translations": [
+      "some"
+    ],
+    "traditional": "有些"
   },
   {
     "id": "446",
     "hanzi": "有用",
     "pinyin": "yǒu yòng",
-    "translations": ["useful"]
+    "translations": [
+      "useful"
+    ],
+    "traditional": "有用"
   },
   {
     "id": "447",
     "hanzi": "右",
     "pinyin": "yòu",
-    "translations": ["right"]
+    "translations": [
+      "right"
+    ],
+    "traditional": "右"
   },
   {
     "id": "448",
     "hanzi": "右边",
     "pinyin": "yòu bian",
-    "translations": ["right side"]
+    "translations": [
+      "right side"
+    ],
+    "traditional": "右邊"
   },
   {
     "id": "449",
     "hanzi": "雨",
     "pinyin": "yǔ",
-    "translations": ["rain"]
+    "translations": [
+      "rain"
+    ],
+    "traditional": "雨"
   },
   {
     "id": "450",
     "hanzi": "元",
     "pinyin": "yuán",
-    "translations": ["China Yuan"]
+    "translations": [
+      "China Yuan"
+    ],
+    "traditional": "元"
   },
   {
     "id": "451",
     "hanzi": "远",
     "pinyin": "yuǎn",
-    "translations": ["far"]
+    "translations": [
+      "far"
+    ],
+    "traditional": "遠"
   },
   {
     "id": "452",
     "hanzi": "月",
     "pinyin": "yuè",
-    "translations": ["moon", "month"]
+    "translations": [
+      "moon",
+      "month"
+    ],
+    "traditional": "月"
   },
   {
     "id": "453",
     "hanzi": "再",
     "pinyin": "zài",
-    "translations": ["again"]
+    "translations": [
+      "again"
+    ],
+    "traditional": "再"
   },
   {
     "id": "454",
     "hanzi": "再见",
     "pinyin": "zài jiàn",
-    "translations": ["goodbye"]
+    "translations": [
+      "goodbye"
+    ],
+    "traditional": "再見"
   },
   {
     "id": "455",
     "hanzi": "在",
     "pinyin": "zài",
-    "translations": ["in"]
+    "translations": [
+      "in"
+    ],
+    "traditional": "在"
   },
   {
     "id": "456",
     "hanzi": "在家",
     "pinyin": "zài jiā",
-    "translations": ["at home"]
+    "translations": [
+      "at home"
+    ],
+    "traditional": "在家"
   },
   {
     "id": "457",
     "hanzi": "早",
     "pinyin": "zǎo",
-    "translations": ["early"]
+    "translations": [
+      "early"
+    ],
+    "traditional": "早"
   },
   {
     "id": "458",
     "hanzi": "早饭",
     "pinyin": "zǎo fàn",
-    "translations": ["breakfast"]
+    "translations": [
+      "breakfast"
+    ],
+    "traditional": "早飯"
   },
   {
     "id": "459",
     "hanzi": "早上",
     "pinyin": "zǎo shang",
-    "translations": ["morning"]
+    "translations": [
+      "morning"
+    ],
+    "traditional": "早上"
   },
   {
     "id": "460",
     "hanzi": "怎么",
     "pinyin": "zěn me",
-    "translations": ["how"]
+    "translations": [
+      "how"
+    ],
+    "traditional": "怎麼"
   },
   {
     "id": "461",
     "hanzi": "站",
     "pinyin": "zhàn",
-    "translations": ["station"]
+    "translations": [
+      "station"
+    ],
+    "traditional": "站"
   },
   {
     "id": "462",
     "hanzi": "找",
     "pinyin": "zhǎo",
-    "translations": ["look for"]
+    "translations": [
+      "look for"
+    ],
+    "traditional": "找"
   },
   {
     "id": "463",
     "hanzi": "找到",
     "pinyin": "zhǎo dào",
-    "translations": ["find"]
+    "translations": [
+      "find"
+    ],
+    "traditional": "找到"
   },
   {
     "id": "464",
     "hanzi": "这",
     "pinyin": "zhè",
-    "translations": ["this"]
+    "translations": [
+      "this"
+    ],
+    "traditional": "這"
   },
   {
     "id": "465",
     "hanzi": "这边",
     "pinyin": "zhè biān",
-    "translations": ["here"]
+    "translations": [
+      "here"
+    ],
+    "traditional": "這邊"
   },
   {
     "id": "466",
     "hanzi": "这里",
     "pinyin": "zhè lǐ",
-    "translations": ["here"]
+    "translations": [
+      "here"
+    ],
+    "traditional": "這裡"
   },
   {
     "id": "467",
     "hanzi": "这儿",
     "pinyin": "zhèr",
-    "translations": ["here"]
+    "translations": [
+      "here"
+    ],
+    "traditional": "這兒"
   },
   {
     "id": "468",
     "hanzi": "这些",
     "pinyin": "zhè xiē",
-    "translations": ["these"]
+    "translations": [
+      "these"
+    ],
+    "traditional": "這些"
   },
   {
     "id": "469",
     "hanzi": "着",
     "pinyin": "zhe",
-    "translations": ["with"]
+    "translations": [
+      "with"
+    ],
+    "traditional": "著"
   },
   {
     "id": "470",
     "hanzi": "真",
     "pinyin": "zhēn",
-    "translations": ["true", "very"]
+    "translations": [
+      "true",
+      "very"
+    ],
+    "traditional": "真"
   },
   {
     "id": "471",
     "hanzi": "真的",
     "pinyin": "zhēn de",
-    "translations": ["really"]
+    "translations": [
+      "really"
+    ],
+    "traditional": "真的"
   },
   {
     "id": "472",
     "hanzi": "正",
     "pinyin": "zhèng",
-    "translations": ["being"]
+    "translations": [
+      "being"
+    ],
+    "traditional": "正"
   },
   {
     "id": "473",
     "hanzi": "正在",
     "pinyin": "zhèng zài",
-    "translations": ["being"]
+    "translations": [
+      "being"
+    ],
+    "traditional": "正在"
   },
   {
     "id": "474",
     "hanzi": "知道",
     "pinyin": "zhī dào",
-    "translations": ["know"]
+    "translations": [
+      "know"
+    ],
+    "traditional": "知道"
   },
   {
     "id": "475",
     "hanzi": "知识",
     "pinyin": "zhī shi",
-    "translations": ["knowledge"]
+    "translations": [
+      "knowledge"
+    ],
+    "traditional": "知識"
   },
   {
     "id": "476",
     "hanzi": "中",
     "pinyin": "zhōng",
-    "translations": ["middle"]
+    "translations": [
+      "middle"
+    ],
+    "traditional": "中"
   },
   {
     "id": "477",
     "hanzi": "中国",
     "pinyin": "Zhōng guó",
-    "translations": ["China"]
+    "translations": [
+      "China"
+    ],
+    "traditional": "中國"
   },
   {
     "id": "478",
     "hanzi": "中间",
     "pinyin": "zhōng jiān",
-    "translations": ["middle"]
+    "translations": [
+      "middle"
+    ],
+    "traditional": "中間"
   },
   {
     "id": "479",
     "hanzi": "中文",
     "pinyin": "Zhōng wén",
-    "translations": ["Chinese"]
+    "translations": [
+      "Chinese"
+    ],
+    "traditional": "中文"
   },
   {
     "id": "480",
     "hanzi": "中午",
     "pinyin": "zhōng wǔ",
-    "translations": ["noon"]
+    "translations": [
+      "noon"
+    ],
+    "traditional": "中午"
   },
   {
     "id": "481",
     "hanzi": "中学",
     "pinyin": "zhōng xué",
-    "translations": ["middle school"]
+    "translations": [
+      "middle school"
+    ],
+    "traditional": "中學"
   },
   {
     "id": "482",
     "hanzi": "中学生",
     "pinyin": "zhōng xué shēng",
-    "translations": ["middle school student"]
+    "translations": [
+      "middle school student"
+    ],
+    "traditional": "中學生"
   },
   {
     "id": "483",
     "hanzi": "重",
     "pinyin": "zhòng",
-    "translations": ["heavy"]
+    "translations": [
+      "heavy"
+    ],
+    "traditional": "重"
   },
   {
     "id": "484",
     "hanzi": "重要",
     "pinyin": "zhòng yào",
-    "translations": ["important"]
+    "translations": [
+      "important"
+    ],
+    "traditional": "重要"
   },
   {
     "id": "485",
     "hanzi": "住",
     "pinyin": "zhù",
-    "translations": ["live"]
+    "translations": [
+      "live"
+    ],
+    "traditional": "住"
   },
   {
     "id": "486",
     "hanzi": "准备",
     "pinyin": "zhǔn bèi",
-    "translations": ["prepare", "plan"]
+    "translations": [
+      "prepare",
+      "plan"
+    ],
+    "traditional": "準備"
   },
   {
     "id": "487",
     "hanzi": "桌子",
     "pinyin": "zhuō zi",
-    "translations": ["table"]
+    "translations": [
+      "table"
+    ],
+    "traditional": "桌子"
   },
   {
     "id": "488",
     "hanzi": "字",
     "pinyin": "zì",
-    "translations": ["word"]
+    "translations": [
+      "word"
+    ],
+    "traditional": "字"
   },
   {
     "id": "489",
     "hanzi": "子",
     "pinyin": "zi",
-    "translations": ["(noun suffix)"]
+    "translations": [
+      "(noun suffix)"
+    ],
+    "traditional": "子"
   },
   {
     "id": "490",
     "hanzi": "走",
     "pinyin": "zǒu",
-    "translations": ["walk", "go"]
+    "translations": [
+      "walk",
+      "go"
+    ],
+    "traditional": "走"
   },
   {
     "id": "491",
     "hanzi": "走路",
     "pinyin": "zǒu lù",
-    "translations": ["walk"]
+    "translations": [
+      "walk"
+    ],
+    "traditional": "走路"
   },
   {
     "id": "492",
     "hanzi": "最",
     "pinyin": "zuì",
-    "translations": ["most"]
+    "translations": [
+      "most"
+    ],
+    "traditional": "最"
   },
   {
     "id": "493",
     "hanzi": "最好",
     "pinyin": "zuì hǎo",
-    "translations": ["the best"]
+    "translations": [
+      "the best"
+    ],
+    "traditional": "最好"
   },
   {
     "id": "494",
     "hanzi": "最后",
     "pinyin": "zuì hòu",
-    "translations": ["at last"]
+    "translations": [
+      "at last"
+    ],
+    "traditional": "最後"
   },
   {
     "id": "495",
     "hanzi": "昨天",
     "pinyin": "zuó tiān",
-    "translations": ["yesterday"]
+    "translations": [
+      "yesterday"
+    ],
+    "traditional": "昨天"
   },
   {
     "id": "496",
     "hanzi": "左",
     "pinyin": "zuǒ",
-    "translations": ["left"]
+    "translations": [
+      "left"
+    ],
+    "traditional": "左"
   },
   {
     "id": "497",
     "hanzi": "左边",
     "pinyin": "zuǒ biān",
-    "translations": ["left side"]
+    "translations": [
+      "left side"
+    ],
+    "traditional": "左邊"
   },
   {
     "id": "498",
     "hanzi": "坐",
     "pinyin": "zuò",
-    "translations": ["sit"]
+    "translations": [
+      "sit"
+    ],
+    "traditional": "坐"
   },
   {
     "id": "499",
     "hanzi": "坐下",
     "pinyin": "zuò xia",
-    "translations": ["sit down"]
+    "translations": [
+      "sit down"
+    ],
+    "traditional": "坐下"
   },
   {
     "id": "500",
     "hanzi": "做",
     "pinyin": "zuò",
-    "translations": ["do"]
+    "translations": [
+      "do"
+    ],
+    "traditional": "做"
   }
 ]

@@ -5,7 +5,8 @@
     "pinyin": "ài",
     "translations": [
       "Cinta"
-    ]
+    ],
+    "traditional": "愛"
   },
   {
     "id": "2",
@@ -13,7 +14,8 @@
     "pinyin": "ài hào",
     "translations": [
       "hobi"
-    ]
+    ],
+    "traditional": "愛好"
   },
   {
     "id": "3",
@@ -21,7 +23,8 @@
     "pinyin": "bā",
     "translations": [
       "delapan"
-    ]
+    ],
+    "traditional": "八"
   },
   {
     "id": "4",
@@ -29,7 +32,8 @@
     "pinyin": "bà ba",
     "translations": [
       "ayah"
-    ]
+    ],
+    "traditional": "爸爸"
   },
   {
     "id": "5",
@@ -37,7 +41,8 @@
     "pinyin": "ba",
     "translations": [
       "(Partikel yang digunakan di akhir kalimat untuk menunjukkan saran atau instruksi)"
-    ]
+    ],
+    "traditional": "吧"
   },
   {
     "id": "6",
@@ -45,7 +50,8 @@
     "pinyin": "bái",
     "translations": [
       "putih"
-    ]
+    ],
+    "traditional": "白"
   },
   {
     "id": "7",
@@ -53,7 +59,8 @@
     "pinyin": "bái tiān",
     "translations": [
       "siang hari"
-    ]
+    ],
+    "traditional": "白天"
   },
   {
     "id": "8",
@@ -61,7 +68,8 @@
     "pinyin": "bǎi",
     "translations": [
       "ratus"
-    ]
+    ],
+    "traditional": "百"
   },
   {
     "id": "9",
@@ -69,7 +77,8 @@
     "pinyin": "bān",
     "translations": [
       "kelas"
-    ]
+    ],
+    "traditional": "班"
   },
   {
     "id": "10",
@@ -77,7 +86,8 @@
     "pinyin": "bàn",
     "translations": [
       "setengah"
-    ]
+    ],
+    "traditional": "半"
   },
   {
     "id": "11",
@@ -85,7 +95,8 @@
     "pinyin": "bàn nián",
     "translations": [
       "setengah tahun"
-    ]
+    ],
+    "traditional": "半年"
   },
   {
     "id": "12",
@@ -94,7 +105,8 @@
     "translations": [
       "setengah hari",
       "lama"
-    ]
+    ],
+    "traditional": "半天"
   },
   {
     "id": "13",
@@ -102,7 +114,8 @@
     "pinyin": "bāng",
     "translations": [
       "untuk membantu"
-    ]
+    ],
+    "traditional": "幫"
   },
   {
     "id": "14",
@@ -110,7 +123,8 @@
     "pinyin": "bāng máng",
     "translations": [
       "untuk membantu"
-    ]
+    ],
+    "traditional": "幫忙"
   },
   {
     "id": "15",
@@ -118,7 +132,8 @@
     "pinyin": "bāo",
     "translations": [
       "tas ； untuk mengemas"
-    ]
+    ],
+    "traditional": "包"
   },
   {
     "id": "16",
@@ -126,7 +141,8 @@
     "pinyin": "bāo zi",
     "translations": [
       "sanggul"
-    ]
+    ],
+    "traditional": "包子"
   },
   {
     "id": "17",
@@ -134,7 +150,8 @@
     "pinyin": "bēi",
     "translations": [
       "cangkir (ukur kata)"
-    ]
+    ],
+    "traditional": "杯"
   },
   {
     "id": "18",
@@ -142,7 +159,8 @@
     "pinyin": "bēi zi",
     "translations": [
       "cangkir"
-    ]
+    ],
+    "traditional": "杯子"
   },
   {
     "id": "19",
@@ -150,7 +168,8 @@
     "pinyin": "běi",
     "translations": [
       "utara"
-    ]
+    ],
+    "traditional": "北"
   },
   {
     "id": "20",
@@ -158,7 +177,8 @@
     "pinyin": "běi bian",
     "translations": [
       "sisi utara"
-    ]
+    ],
+    "traditional": "北邊"
   },
   {
     "id": "21",
@@ -166,7 +186,8 @@
     "pinyin": "Běi jīng",
     "translations": [
       "Beijing"
-    ]
+    ],
+    "traditional": "北京"
   },
   {
     "id": "22",
@@ -174,7 +195,8 @@
     "pinyin": "běn",
     "translations": [
       "(Ukur kata untuk buku)"
-    ]
+    ],
+    "traditional": "本"
   },
   {
     "id": "23",
@@ -182,7 +204,8 @@
     "pinyin": "běn zi",
     "translations": [
       "buku catatan"
-    ]
+    ],
+    "traditional": "本子"
   },
   {
     "id": "24",
@@ -190,7 +213,8 @@
     "pinyin": "bǐ",
     "translations": [
       "membandingkan"
-    ]
+    ],
+    "traditional": "比"
   },
   {
     "id": "25",
@@ -198,7 +222,8 @@
     "pinyin": "bié",
     "translations": [
       "tidak"
-    ]
+    ],
+    "traditional": "別"
   },
   {
     "id": "26",
@@ -206,7 +231,8 @@
     "pinyin": "bié de",
     "translations": [
       "lainnya"
-    ]
+    ],
+    "traditional": "別的"
   },
   {
     "id": "27",
@@ -214,7 +240,8 @@
     "pinyin": "bié rén",
     "translations": [
       "orang lain"
-    ]
+    ],
+    "traditional": "別人"
   },
   {
     "id": "28",
@@ -223,7 +250,8 @@
     "translations": [
       "sakit",
       "penyakit"
-    ]
+    ],
+    "traditional": "病"
   },
   {
     "id": "29",
@@ -231,7 +259,8 @@
     "pinyin": "bìng rén",
     "translations": [
       "sabar"
-    ]
+    ],
+    "traditional": "病人"
   },
   {
     "id": "30",
@@ -240,7 +269,8 @@
     "translations": [
       "tidak besar",
       "tidak terlalu"
-    ]
+    ],
+    "traditional": "不大"
   },
   {
     "id": "31",
@@ -249,7 +279,8 @@
     "translations": [
       "tidak benar",
       "salah"
-    ]
+    ],
+    "traditional": "不對"
   },
   {
     "id": "32",
@@ -257,7 +288,8 @@
     "pinyin": "bú kè qì",
     "translations": [
       "Terima kasih kembali"
-    ]
+    ],
+    "traditional": "不客氣"
   },
   {
     "id": "33",
@@ -265,7 +297,8 @@
     "pinyin": "bú yòng",
     "translations": [
       "tidak perlu untuk"
-    ]
+    ],
+    "traditional": "不用"
   },
   {
     "id": "34",
@@ -273,7 +306,8 @@
     "pinyin": "bù",
     "translations": [
       "tidak"
-    ]
+    ],
+    "traditional": "不"
   },
   {
     "id": "35",
@@ -281,7 +315,8 @@
     "pinyin": "cài",
     "translations": [
       "piring"
-    ]
+    ],
+    "traditional": "菜"
   },
   {
     "id": "36",
@@ -289,7 +324,8 @@
     "pinyin": "chá",
     "translations": [
       "teh"
-    ]
+    ],
+    "traditional": "茶"
   },
   {
     "id": "37",
@@ -298,7 +334,8 @@
     "translations": [
       "kurangnya",
       "buruk"
-    ]
+    ],
+    "traditional": "差"
   },
   {
     "id": "38",
@@ -306,7 +343,8 @@
     "pinyin": "cháng",
     "translations": [
       "sering"
-    ]
+    ],
+    "traditional": "常"
   },
   {
     "id": "39",
@@ -314,7 +352,8 @@
     "pinyin": "cháng cháng",
     "translations": [
       "sering"
-    ]
+    ],
+    "traditional": "常常"
   },
   {
     "id": "40",
@@ -322,7 +361,8 @@
     "pinyin": "chàng",
     "translations": [
       "menyanyi"
-    ]
+    ],
+    "traditional": "唱"
   },
   {
     "id": "41",
@@ -330,7 +370,8 @@
     "pinyin": "chàng gē",
     "translations": [
       "menyanyikan lagu"
-    ]
+    ],
+    "traditional": "唱歌"
   },
   {
     "id": "42",
@@ -338,7 +379,8 @@
     "pinyin": "chē",
     "translations": [
       "kendaraan"
-    ]
+    ],
+    "traditional": "車"
   },
   {
     "id": "43",
@@ -346,7 +388,8 @@
     "pinyin": "chē piào",
     "translations": [
       "Tiket bus atau kereta api"
-    ]
+    ],
+    "traditional": "車票"
   },
   {
     "id": "44",
@@ -354,7 +397,8 @@
     "pinyin": "chē shang",
     "translations": [
       "di dalam mobil"
-    ]
+    ],
+    "traditional": "車上"
   },
   {
     "id": "45",
@@ -362,7 +406,8 @@
     "pinyin": "chē zhàn",
     "translations": [
       "stasiun"
-    ]
+    ],
+    "traditional": "車站"
   },
   {
     "id": "46",
@@ -370,7 +415,8 @@
     "pinyin": "chī",
     "translations": [
       "makan"
-    ]
+    ],
+    "traditional": "吃"
   },
   {
     "id": "47",
@@ -378,7 +424,8 @@
     "pinyin": "chī fàn",
     "translations": [
       "makan"
-    ]
+    ],
+    "traditional": "吃飯"
   },
   {
     "id": "48",
@@ -386,7 +433,8 @@
     "pinyin": "chū",
     "translations": [
       "keluar"
-    ]
+    ],
+    "traditional": "出"
   },
   {
     "id": "49",
@@ -394,7 +442,8 @@
     "pinyin": "chū lái",
     "translations": [
       "keluar"
-    ]
+    ],
+    "traditional": "出來"
   },
   {
     "id": "50",
@@ -402,7 +451,8 @@
     "pinyin": "chū qù",
     "translations": [
       "keluar"
-    ]
+    ],
+    "traditional": "出去"
   },
   {
     "id": "51",
@@ -410,7 +460,8 @@
     "pinyin": "chuān",
     "translations": [
       "memakai"
-    ]
+    ],
+    "traditional": "穿"
   },
   {
     "id": "52",
@@ -418,7 +469,8 @@
     "pinyin": "chuáng",
     "translations": [
       "tempat tidur"
-    ]
+    ],
+    "traditional": "床"
   },
   {
     "id": "53",
@@ -426,7 +478,8 @@
     "pinyin": "cì",
     "translations": [
       "waktu"
-    ]
+    ],
+    "traditional": "次"
   },
   {
     "id": "54",
@@ -434,7 +487,8 @@
     "pinyin": "cóng",
     "translations": [
       "dari"
-    ]
+    ],
+    "traditional": "從"
   },
   {
     "id": "55",
@@ -442,7 +496,8 @@
     "pinyin": "cuò",
     "translations": [
       "salah"
-    ]
+    ],
+    "traditional": "錯"
   },
   {
     "id": "56",
@@ -450,7 +505,8 @@
     "pinyin": "dǎ",
     "translations": [
       "memukul"
-    ]
+    ],
+    "traditional": "打"
   },
   {
     "id": "57",
@@ -458,7 +514,8 @@
     "pinyin": "dǎ chē",
     "translations": [
       "naik taksi"
-    ]
+    ],
+    "traditional": "打車"
   },
   {
     "id": "58",
@@ -466,7 +523,8 @@
     "pinyin": "dǎ diàn huà",
     "translations": [
       "menelpon"
-    ]
+    ],
+    "traditional": "打電話"
   },
   {
     "id": "59",
@@ -475,7 +533,8 @@
     "translations": [
       "membuka",
       "menyalakan"
-    ]
+    ],
+    "traditional": "打開"
   },
   {
     "id": "60",
@@ -483,7 +542,8 @@
     "pinyin": "dǎ qiú",
     "translations": [
       "main bola"
-    ]
+    ],
+    "traditional": "打球"
   },
   {
     "id": "61",
@@ -491,7 +551,8 @@
     "pinyin": "dà",
     "translations": [
       "besar"
-    ]
+    ],
+    "traditional": "大"
   },
   {
     "id": "62",
@@ -499,7 +560,8 @@
     "pinyin": "dà xué",
     "translations": [
       "Universitas"
-    ]
+    ],
+    "traditional": "大學"
   },
   {
     "id": "63",
@@ -507,7 +569,8 @@
     "pinyin": "dà xué shēng",
     "translations": [
       "mahasiswa"
-    ]
+    ],
+    "traditional": "大學生"
   },
   {
     "id": "64",
@@ -517,7 +580,8 @@
       "ke",
       "tiba",
       "sampai"
-    ]
+    ],
+    "traditional": "到"
   },
   {
     "id": "65",
@@ -526,7 +590,8 @@
     "translations": [
       "mendapatkan",
       "mendapatkan"
-    ]
+    ],
+    "traditional": "得到"
   },
   {
     "id": "66",
@@ -534,7 +599,8 @@
     "pinyin": "de",
     "translations": [
       "(Partikel yang digunakan untuk menjelaskan kata kerja)"
-    ]
+    ],
+    "traditional": "地"
   },
   {
     "id": "67",
@@ -542,7 +608,8 @@
     "pinyin": "de",
     "translations": [
       "(Partikel yang digunakan di belakang atributif)"
-    ]
+    ],
+    "traditional": "的"
   },
   {
     "id": "68",
@@ -550,7 +617,8 @@
     "pinyin": "děng",
     "translations": [
       "Tunggu"
-    ]
+    ],
+    "traditional": "等"
   },
   {
     "id": "69",
@@ -558,7 +626,8 @@
     "pinyin": "dì",
     "translations": [
       "tanah"
-    ]
+    ],
+    "traditional": "地"
   },
   {
     "id": "70",
@@ -566,7 +635,8 @@
     "pinyin": "dì diǎn",
     "translations": [
       "Lokasi"
-    ]
+    ],
+    "traditional": "地點"
   },
   {
     "id": "71",
@@ -574,7 +644,8 @@
     "pinyin": "dì fang",
     "translations": [
       "tempat"
-    ]
+    ],
+    "traditional": "地方"
   },
   {
     "id": "72",
@@ -582,7 +653,8 @@
     "pinyin": "dì shang",
     "translations": [
       "di tanah"
-    ]
+    ],
+    "traditional": "地上"
   },
   {
     "id": "73",
@@ -590,7 +662,8 @@
     "pinyin": "dìtú",
     "translations": [
       "peta"
-    ]
+    ],
+    "traditional": "地圖"
   },
   {
     "id": "74",
@@ -598,7 +671,8 @@
     "pinyin": "dìdi",
     "translations": [
       "adik laki-laki"
-    ]
+    ],
+    "traditional": "弟弟"
   },
   {
     "id": "75",
@@ -606,7 +680,8 @@
     "pinyin": "dì èr",
     "translations": [
       "Kedua"
-    ]
+    ],
+    "traditional": "第二"
   },
   {
     "id": "76",
@@ -615,7 +690,8 @@
     "translations": [
       "jam",
       "titik"
-    ]
+    ],
+    "traditional": "點"
   },
   {
     "id": "77",
@@ -623,7 +699,8 @@
     "pinyin": "diàn",
     "translations": [
       "listrik"
-    ]
+    ],
+    "traditional": "電"
   },
   {
     "id": "78",
@@ -631,7 +708,8 @@
     "pinyin": "diàn huà",
     "translations": [
       "telepon"
-    ]
+    ],
+    "traditional": "電話"
   },
   {
     "id": "79",
@@ -639,7 +717,8 @@
     "pinyin": "diàn nǎo",
     "translations": [
       "komputer"
-    ]
+    ],
+    "traditional": "電腦"
   },
   {
     "id": "80",
@@ -647,7 +726,8 @@
     "pinyin": "diàn shì",
     "translations": [
       "televisi"
-    ]
+    ],
+    "traditional": "電視"
   },
   {
     "id": "81",
@@ -655,7 +735,8 @@
     "pinyin": "diàn shì jī",
     "translations": [
       "set TV"
-    ]
+    ],
+    "traditional": "電視機"
   },
   {
     "id": "82",
@@ -663,7 +744,8 @@
     "pinyin": "diàn yǐng",
     "translations": [
       "film"
-    ]
+    ],
+    "traditional": "電影"
   },
   {
     "id": "83",
@@ -671,7 +753,8 @@
     "pinyin": "diàn yǐng yuàn",
     "translations": [
       "bioskop"
-    ]
+    ],
+    "traditional": "電影院"
   },
   {
     "id": "84",
@@ -679,7 +762,8 @@
     "pinyin": "dōng",
     "translations": [
       "timur"
-    ]
+    ],
+    "traditional": "東"
   },
   {
     "id": "85",
@@ -687,7 +771,8 @@
     "pinyin": "dōng bian",
     "translations": [
       "bagian timur"
-    ]
+    ],
+    "traditional": "東邊"
   },
   {
     "id": "86",
@@ -696,7 +781,8 @@
     "translations": [
       "obyek",
       "hal-hal"
-    ]
+    ],
+    "traditional": "東西"
   },
   {
     "id": "87",
@@ -704,7 +790,8 @@
     "pinyin": "dòng",
     "translations": [
       "bergerak"
-    ]
+    ],
+    "traditional": "動"
   },
   {
     "id": "88",
@@ -712,7 +799,8 @@
     "pinyin": "dòng zuò",
     "translations": [
       "tindakan"
-    ]
+    ],
+    "traditional": "動作"
   },
   {
     "id": "89",
@@ -720,7 +808,8 @@
     "pinyin": "dōu",
     "translations": [
       "semua"
-    ]
+    ],
+    "traditional": "都"
   },
   {
     "id": "90",
@@ -728,7 +817,8 @@
     "pinyin": "dú",
     "translations": [
       "membaca"
-    ]
+    ],
+    "traditional": "讀"
   },
   {
     "id": "91",
@@ -736,7 +826,8 @@
     "pinyin": "dú shū",
     "translations": [
       "Untuk membaca sebuah buku"
-    ]
+    ],
+    "traditional": "讀書"
   },
   {
     "id": "92",
@@ -744,7 +835,8 @@
     "pinyin": "duì",
     "translations": [
       "benar"
-    ]
+    ],
+    "traditional": "對"
   },
   {
     "id": "93",
@@ -752,7 +844,8 @@
     "pinyin": "duì bu qǐ",
     "translations": [
       "Maaf"
-    ]
+    ],
+    "traditional": "對不起"
   },
   {
     "id": "94",
@@ -760,7 +853,8 @@
     "pinyin": "duō",
     "translations": [
       "banyak"
-    ]
+    ],
+    "traditional": "多"
   },
   {
     "id": "95",
@@ -768,7 +862,8 @@
     "pinyin": "duō shao",
     "translations": [
       "berapa banyak"
-    ]
+    ],
+    "traditional": "多少"
   },
   {
     "id": "96",
@@ -776,7 +871,8 @@
     "pinyin": "è",
     "translations": [
       "lapar"
-    ]
+    ],
+    "traditional": "餓"
   },
   {
     "id": "97",
@@ -784,7 +880,8 @@
     "pinyin": "ér zi",
     "translations": [
       "putra"
-    ]
+    ],
+    "traditional": "兒子"
   },
   {
     "id": "98",
@@ -792,7 +889,8 @@
     "pinyin": "èr",
     "translations": [
       "dua"
-    ]
+    ],
+    "traditional": "二"
   },
   {
     "id": "99",
@@ -800,7 +898,8 @@
     "pinyin": "fàn",
     "translations": [
       "beras"
-    ]
+    ],
+    "traditional": "飯"
   },
   {
     "id": "100",
@@ -808,7 +907,8 @@
     "pinyin": "fàn diàn",
     "translations": [
       "restoran"
-    ]
+    ],
+    "traditional": "飯店"
   },
   {
     "id": "101",
@@ -816,7 +916,8 @@
     "pinyin": "fáng jiān",
     "translations": [
       "ruang"
-    ]
+    ],
+    "traditional": "房間"
   },
   {
     "id": "102",
@@ -824,7 +925,8 @@
     "pinyin": "fáng zi",
     "translations": [
       "rumah"
-    ]
+    ],
+    "traditional": "房子"
   },
   {
     "id": "103",
@@ -832,7 +934,8 @@
     "pinyin": "fàng",
     "translations": [
       "meletakkan"
-    ]
+    ],
+    "traditional": "放"
   },
   {
     "id": "104",
@@ -840,7 +943,8 @@
     "pinyin": "fàng jià",
     "translations": [
       "hari libur"
-    ]
+    ],
+    "traditional": "放假"
   },
   {
     "id": "105",
@@ -848,7 +952,8 @@
     "pinyin": "fàng xué",
     "translations": [
       "setelah sekolah"
-    ]
+    ],
+    "traditional": "放學"
   },
   {
     "id": "106",
@@ -856,7 +961,8 @@
     "pinyin": "fēi",
     "translations": [
       "terbang"
-    ]
+    ],
+    "traditional": "飛"
   },
   {
     "id": "107",
@@ -864,7 +970,8 @@
     "pinyin": "fēi jī",
     "translations": [
       "pesawat ； pesawat"
-    ]
+    ],
+    "traditional": "飛機"
   },
   {
     "id": "108",
@@ -872,7 +979,8 @@
     "pinyin": "fēi cháng",
     "translations": [
       "sangat"
-    ]
+    ],
+    "traditional": "非常"
   },
   {
     "id": "109",
@@ -880,7 +988,8 @@
     "pinyin": "fēn",
     "translations": [
       "menit"
-    ]
+    ],
+    "traditional": "分"
   },
   {
     "id": "110",
@@ -888,7 +997,8 @@
     "pinyin": "fēng",
     "translations": [
       "angin"
-    ]
+    ],
+    "traditional": "風"
   },
   {
     "id": "111",
@@ -896,7 +1006,8 @@
     "pinyin": "gàn",
     "translations": [
       "kering"
-    ]
+    ],
+    "traditional": "幹"
   },
   {
     "id": "112",
@@ -904,7 +1015,8 @@
     "pinyin": "gān jìng",
     "translations": [
       "membersihkan"
-    ]
+    ],
+    "traditional": "乾淨"
   },
   {
     "id": "113",
@@ -912,7 +1024,8 @@
     "pinyin": "gàn",
     "translations": [
       "Mengerjakan"
-    ]
+    ],
+    "traditional": "幹"
   },
   {
     "id": "114",
@@ -920,7 +1033,8 @@
     "pinyin": "gàn shén me",
     "translations": [
       "apa yang harus dilakukan"
-    ]
+    ],
+    "traditional": "幹什麼"
   },
   {
     "id": "115",
@@ -929,7 +1043,8 @@
     "translations": [
       "tinggi",
       "tinggi"
-    ]
+    ],
+    "traditional": "高"
   },
   {
     "id": "116",
@@ -937,7 +1052,8 @@
     "pinyin": "gāo xìng",
     "translations": [
       "senang"
-    ]
+    ],
+    "traditional": "高興"
   },
   {
     "id": "117",
@@ -945,7 +1061,8 @@
     "pinyin": "gào su",
     "translations": [
       "memberi tahu"
-    ]
+    ],
+    "traditional": "告訴"
   },
   {
     "id": "118",
@@ -953,7 +1070,8 @@
     "pinyin": "gē ge",
     "translations": [
       "kakak"
-    ]
+    ],
+    "traditional": "哥哥"
   },
   {
     "id": "119",
@@ -961,7 +1079,8 @@
     "pinyin": "gē",
     "translations": [
       "lagu"
-    ]
+    ],
+    "traditional": "歌"
   },
   {
     "id": "120",
@@ -969,7 +1088,8 @@
     "pinyin": "gè",
     "translations": [
       "(Word Ukuran Umum)"
-    ]
+    ],
+    "traditional": "個"
   },
   {
     "id": "121",
@@ -977,7 +1097,8 @@
     "pinyin": "gěi",
     "translations": [
       "memberi"
-    ]
+    ],
+    "traditional": "給"
   },
   {
     "id": "122",
@@ -985,7 +1106,8 @@
     "pinyin": "gēn",
     "translations": [
       "dengan"
-    ]
+    ],
+    "traditional": "跟"
   },
   {
     "id": "123",
@@ -993,7 +1115,8 @@
     "pinyin": "gōng rén",
     "translations": [
       "pekerja"
-    ]
+    ],
+    "traditional": "工人"
   },
   {
     "id": "124",
@@ -1002,7 +1125,8 @@
     "translations": [
       "bekerja",
       "pekerjaan"
-    ]
+    ],
+    "traditional": "工作"
   },
   {
     "id": "125",
@@ -1011,7 +1135,8 @@
     "translations": [
       "untuk menutup",
       "matikan"
-    ]
+    ],
+    "traditional": "關"
   },
   {
     "id": "126",
@@ -1020,7 +1145,8 @@
     "translations": [
       "untuk menutup",
       "matikan"
-    ]
+    ],
+    "traditional": "關上"
   },
   {
     "id": "127",
@@ -1028,7 +1154,8 @@
     "pinyin": "guì",
     "translations": [
       "mahal"
-    ]
+    ],
+    "traditional": "貴"
   },
   {
     "id": "128",
@@ -1036,7 +1163,8 @@
     "pinyin": "guó",
     "translations": [
       "negara"
-    ]
+    ],
+    "traditional": "國"
   },
   {
     "id": "129",
@@ -1044,7 +1172,8 @@
     "pinyin": "guó jiā",
     "translations": [
       "negara"
-    ]
+    ],
+    "traditional": "國家"
   },
   {
     "id": "130",
@@ -1052,7 +1181,8 @@
     "pinyin": "guó wài",
     "translations": [
       "luar negeri"
-    ]
+    ],
+    "traditional": "國外"
   },
   {
     "id": "131",
@@ -1061,7 +1191,8 @@
     "translations": [
       "menyeberang",
       "melewati"
-    ]
+    ],
+    "traditional": "過"
   },
   {
     "id": "132",
@@ -1070,7 +1201,8 @@
     "translations": [
       "Juga",
       "tetap"
-    ]
+    ],
+    "traditional": "還"
   },
   {
     "id": "133",
@@ -1078,7 +1210,8 @@
     "pinyin": "hái shi",
     "translations": [
       "atau"
-    ]
+    ],
+    "traditional": "還是"
   },
   {
     "id": "134",
@@ -1086,7 +1219,8 @@
     "pinyin": "hái yǒu",
     "translations": [
       "dan juga"
-    ]
+    ],
+    "traditional": "還有"
   },
   {
     "id": "135",
@@ -1094,7 +1228,8 @@
     "pinyin": "hái zi",
     "translations": [
       "anak"
-    ]
+    ],
+    "traditional": "孩子"
   },
   {
     "id": "136",
@@ -1102,7 +1237,8 @@
     "pinyin": "Hàn yǔ",
     "translations": [
       "Cina"
-    ]
+    ],
+    "traditional": "漢語"
   },
   {
     "id": "137",
@@ -1110,7 +1246,8 @@
     "pinyin": "Hàn zì",
     "translations": [
       "Karakter Cina"
-    ]
+    ],
+    "traditional": "漢字"
   },
   {
     "id": "138",
@@ -1119,7 +1256,8 @@
     "translations": [
       "Besar",
       "Bagus"
-    ]
+    ],
+    "traditional": "好"
   },
   {
     "id": "139",
@@ -1127,7 +1265,8 @@
     "pinyin": "hào chī",
     "translations": [
       "lezat"
-    ]
+    ],
+    "traditional": "好吃"
   },
   {
     "id": "140",
@@ -1135,7 +1274,8 @@
     "pinyin": "hǎo kàn",
     "translations": [
       "tampan"
-    ]
+    ],
+    "traditional": "好看"
   },
   {
     "id": "141",
@@ -1143,7 +1283,8 @@
     "pinyin": "hǎo tīng",
     "translations": [
       "bagus (mendengarkan)"
-    ]
+    ],
+    "traditional": "好聽"
   },
   {
     "id": "142",
@@ -1151,7 +1292,8 @@
     "pinyin": "hǎo wánr",
     "translations": [
       "seru"
-    ]
+    ],
+    "traditional": "好玩兒"
   },
   {
     "id": "143",
@@ -1160,7 +1302,8 @@
     "translations": [
       "nomor",
       "tanggal"
-    ]
+    ],
+    "traditional": "號"
   },
   {
     "id": "144",
@@ -1168,7 +1311,8 @@
     "pinyin": "hē",
     "translations": [
       "minum"
-    ]
+    ],
+    "traditional": "喝"
   },
   {
     "id": "145",
@@ -1177,7 +1321,8 @@
     "translations": [
       "dengan",
       "Dan"
-    ]
+    ],
+    "traditional": "和"
   },
   {
     "id": "146",
@@ -1185,7 +1330,8 @@
     "pinyin": "hěn",
     "translations": [
       "sangat"
-    ]
+    ],
+    "traditional": "很"
   },
   {
     "id": "147",
@@ -1194,7 +1340,8 @@
     "translations": [
       "di belakang",
       "setelah"
-    ]
+    ],
+    "traditional": "後"
   },
   {
     "id": "148",
@@ -1202,7 +1349,8 @@
     "pinyin": "hòu bian",
     "translations": [
       "sisi belakang"
-    ]
+    ],
+    "traditional": "後邊"
   },
   {
     "id": "149",
@@ -1210,7 +1358,8 @@
     "pinyin": "hòu tiān",
     "translations": [
       "Lusa"
-    ]
+    ],
+    "traditional": "後天"
   },
   {
     "id": "150",
@@ -1218,7 +1367,8 @@
     "pinyin": "huā",
     "translations": [
       "bunga"
-    ]
+    ],
+    "traditional": "花"
   },
   {
     "id": "151",
@@ -1226,7 +1376,8 @@
     "pinyin": "huà",
     "translations": [
       "kata-kata"
-    ]
+    ],
+    "traditional": "話"
   },
   {
     "id": "152",
@@ -1235,7 +1386,8 @@
     "translations": [
       "buruk",
       "rusak"
-    ]
+    ],
+    "traditional": "壞"
   },
   {
     "id": "153",
@@ -1243,7 +1395,8 @@
     "pinyin": "huán",
     "translations": [
       "kembali"
-    ]
+    ],
+    "traditional": "還"
   },
   {
     "id": "154",
@@ -1251,7 +1404,8 @@
     "pinyin": "huí",
     "translations": [
       "kembali ke"
-    ]
+    ],
+    "traditional": "回"
   },
   {
     "id": "155",
@@ -1259,7 +1413,8 @@
     "pinyin": "huídá",
     "translations": [
       "untuk menjawab"
-    ]
+    ],
+    "traditional": "回答"
   },
   {
     "id": "156",
@@ -1267,7 +1422,8 @@
     "pinyin": "huí dào",
     "translations": [
       "kembali ke"
-    ]
+    ],
+    "traditional": "回到"
   },
   {
     "id": "157",
@@ -1276,7 +1432,8 @@
     "translations": [
       "Kembali ke rumah",
       "pulang ke rumah"
-    ]
+    ],
+    "traditional": "回家"
   },
   {
     "id": "158",
@@ -1284,7 +1441,8 @@
     "pinyin": "huí lái",
     "translations": [
       "kembali"
-    ]
+    ],
+    "traditional": "回來"
   },
   {
     "id": "159",
@@ -1292,7 +1450,8 @@
     "pinyin": "huí qù",
     "translations": [
       "kembali"
-    ]
+    ],
+    "traditional": "回去"
   },
   {
     "id": "160",
@@ -1301,7 +1460,8 @@
     "translations": [
       "Bisa",
       "mampu untuk"
-    ]
+    ],
+    "traditional": "會"
   },
   {
     "id": "161",
@@ -1309,7 +1469,8 @@
     "pinyin": "huǒ chē",
     "translations": [
       "kereta"
-    ]
+    ],
+    "traditional": "火車"
   },
   {
     "id": "162",
@@ -1317,7 +1478,8 @@
     "pinyin": "jī chǎng",
     "translations": [
       "Bandara"
-    ]
+    ],
+    "traditional": "機場"
   },
   {
     "id": "163",
@@ -1325,7 +1487,8 @@
     "pinyin": "jī piào",
     "translations": [
       "tiket-tiket pesawat"
-    ]
+    ],
+    "traditional": "機票"
   },
   {
     "id": "164",
@@ -1333,7 +1496,8 @@
     "pinyin": "jī dàn",
     "translations": [
       "telur ayam"
-    ]
+    ],
+    "traditional": "雞蛋"
   },
   {
     "id": "165",
@@ -1341,7 +1505,8 @@
     "pinyin": "jǐ",
     "translations": [
       "Beberapa"
-    ]
+    ],
+    "traditional": "幾"
   },
   {
     "id": "166",
@@ -1349,7 +1514,8 @@
     "pinyin": "jì",
     "translations": [
       "Ingat"
-    ]
+    ],
+    "traditional": "記"
   },
   {
     "id": "167",
@@ -1357,7 +1523,8 @@
     "pinyin": "jì de",
     "translations": [
       "Ingat"
-    ]
+    ],
+    "traditional": "記得"
   },
   {
     "id": "168",
@@ -1365,7 +1532,8 @@
     "pinyin": "jì zhù",
     "translations": [
       "Ingat"
-    ]
+    ],
+    "traditional": "記住"
   },
   {
     "id": "169",
@@ -1374,7 +1542,8 @@
     "translations": [
       "keluarga",
       "rumah"
-    ]
+    ],
+    "traditional": "家"
   },
   {
     "id": "170",
@@ -1382,7 +1551,8 @@
     "pinyin": "jiā li",
     "translations": [
       "di rumah"
-    ]
+    ],
+    "traditional": "家裡"
   },
   {
     "id": "171",
@@ -1390,7 +1560,8 @@
     "pinyin": "jiā rén",
     "translations": [
       "keluarga"
-    ]
+    ],
+    "traditional": "家人"
   },
   {
     "id": "172",
@@ -1398,7 +1569,8 @@
     "pinyin": "jiān",
     "translations": [
       "ruang"
-    ]
+    ],
+    "traditional": "間"
   },
   {
     "id": "173",
@@ -1406,7 +1578,8 @@
     "pinyin": "jiàn",
     "translations": [
       "bertemu"
-    ]
+    ],
+    "traditional": "見"
   },
   {
     "id": "174",
@@ -1414,7 +1587,8 @@
     "pinyin": "jiàn miàn",
     "translations": [
       "bertemu"
-    ]
+    ],
+    "traditional": "見面"
   },
   {
     "id": "175",
@@ -1422,7 +1596,8 @@
     "pinyin": "jiào",
     "translations": [
       "mengajar"
-    ]
+    ],
+    "traditional": "教"
   },
   {
     "id": "176",
@@ -1430,7 +1605,8 @@
     "pinyin": "jiào",
     "translations": [
       "panggilan"
-    ]
+    ],
+    "traditional": "叫"
   },
   {
     "id": "177",
@@ -1438,7 +1614,8 @@
     "pinyin": "jiào xué lóu",
     "translations": [
       "bangunan kelas"
-    ]
+    ],
+    "traditional": "教學樓"
   },
   {
     "id": "178",
@@ -1446,7 +1623,8 @@
     "pinyin": "jiě jie",
     "translations": [
       "kakak perempuan"
-    ]
+    ],
+    "traditional": "姐姐"
   },
   {
     "id": "179",
@@ -1455,7 +1633,8 @@
     "translations": [
       "memperkenalkan",
       "perkenalan"
-    ]
+    ],
+    "traditional": "介紹"
   },
   {
     "id": "180",
@@ -1463,7 +1642,8 @@
     "pinyin": "jīn nián",
     "translations": [
       "tahun ini"
-    ]
+    ],
+    "traditional": "今年"
   },
   {
     "id": "181",
@@ -1471,7 +1651,8 @@
     "pinyin": "jīn tiān",
     "translations": [
       "Hari ini"
-    ]
+    ],
+    "traditional": "今天"
   },
   {
     "id": "182",
@@ -1479,7 +1660,8 @@
     "pinyin": "jìn",
     "translations": [
       "memasuki"
-    ]
+    ],
+    "traditional": "進"
   },
   {
     "id": "183",
@@ -1487,7 +1669,8 @@
     "pinyin": "jìn lái",
     "translations": [
       "Silahkan masuk"
-    ]
+    ],
+    "traditional": "進來"
   },
   {
     "id": "184",
@@ -1495,7 +1678,8 @@
     "pinyin": "jìn qù",
     "translations": [
       "masuk"
-    ]
+    ],
+    "traditional": "進去"
   },
   {
     "id": "185",
@@ -1503,7 +1687,8 @@
     "pinyin": "jiǔ",
     "translations": [
       "sembilan"
-    ]
+    ],
+    "traditional": "九"
   },
   {
     "id": "186",
@@ -1511,7 +1696,8 @@
     "pinyin": "jiù",
     "translations": [
       "(Tunjukkan ringkasan atau hasil)"
-    ]
+    ],
+    "traditional": "就"
   },
   {
     "id": "187",
@@ -1519,7 +1705,8 @@
     "pinyin": "jué de",
     "translations": [
       "merasa"
-    ]
+    ],
+    "traditional": "覺得"
   },
   {
     "id": "188",
@@ -1528,7 +1715,8 @@
     "translations": [
       "membuka",
       "menyetir"
-    ]
+    ],
+    "traditional": "開"
   },
   {
     "id": "189",
@@ -1536,7 +1724,8 @@
     "pinyin": "kāi chē",
     "translations": [
       "menyetir"
-    ]
+    ],
+    "traditional": "開車"
   },
   {
     "id": "190",
@@ -1544,7 +1733,8 @@
     "pinyin": "kāi huì",
     "translations": [
       "ada rapat"
-    ]
+    ],
+    "traditional": "開會"
   },
   {
     "id": "191",
@@ -1552,7 +1742,8 @@
     "pinyin": "kāi wán xiào",
     "translations": [
       "bercanda"
-    ]
+    ],
+    "traditional": "開玩笑"
   },
   {
     "id": "192",
@@ -1560,7 +1751,8 @@
     "pinyin": "kàn",
     "translations": [
       "Lihat"
-    ]
+    ],
+    "traditional": "看"
   },
   {
     "id": "193",
@@ -1568,7 +1760,8 @@
     "pinyin": "kàn bìng",
     "translations": [
       "Periksa ke dokter"
-    ]
+    ],
+    "traditional": "看病"
   },
   {
     "id": "194",
@@ -1576,7 +1769,8 @@
     "pinyin": "kàn dào",
     "translations": [
       "melihat"
-    ]
+    ],
+    "traditional": "看到"
   },
   {
     "id": "195",
@@ -1584,7 +1778,8 @@
     "pinyin": "kàn jiàn",
     "translations": [
       "melihat"
-    ]
+    ],
+    "traditional": "看見"
   },
   {
     "id": "196",
@@ -1592,7 +1787,8 @@
     "pinyin": "kǎo",
     "translations": [
       "tes"
-    ]
+    ],
+    "traditional": "考"
   },
   {
     "id": "197",
@@ -1600,7 +1796,8 @@
     "pinyin": "kǎo shì",
     "translations": [
       "penyelidikan"
-    ]
+    ],
+    "traditional": "考試"
   },
   {
     "id": "198",
@@ -1608,7 +1805,8 @@
     "pinyin": "kě",
     "translations": [
       "haus"
-    ]
+    ],
+    "traditional": "渴"
   },
   {
     "id": "199",
@@ -1617,7 +1815,8 @@
     "translations": [
       "kelas",
       "pelajaran"
-    ]
+    ],
+    "traditional": "課"
   },
   {
     "id": "200",
@@ -1625,7 +1824,8 @@
     "pinyin": "kè běn",
     "translations": [
       "buku pelajaran"
-    ]
+    ],
+    "traditional": "課本"
   },
   {
     "id": "201",
@@ -1633,7 +1833,8 @@
     "pinyin": "kè wén",
     "translations": [
       "teks"
-    ]
+    ],
+    "traditional": "課文"
   },
   {
     "id": "202",
@@ -1641,7 +1842,8 @@
     "pinyin": "kǒu",
     "translations": [
       "mulut"
-    ]
+    ],
+    "traditional": "口"
   },
   {
     "id": "203",
@@ -1649,7 +1851,8 @@
     "pinyin": "kuài",
     "translations": [
       "Potongan (Ukur Kata)"
-    ]
+    ],
+    "traditional": "塊"
   },
   {
     "id": "204",
@@ -1657,7 +1860,8 @@
     "pinyin": "kuài",
     "translations": [
       "cepat"
-    ]
+    ],
+    "traditional": "快"
   },
   {
     "id": "205",
@@ -1665,7 +1869,8 @@
     "pinyin": "lái",
     "translations": [
       "datang"
-    ]
+    ],
+    "traditional": "來"
   },
   {
     "id": "206",
@@ -1673,7 +1878,8 @@
     "pinyin": "lái dào",
     "translations": [
       "datang ke"
-    ]
+    ],
+    "traditional": "來到"
   },
   {
     "id": "207",
@@ -1681,7 +1887,8 @@
     "pinyin": "lǎo",
     "translations": [
       "tua"
-    ]
+    ],
+    "traditional": "老"
   },
   {
     "id": "208",
@@ -1689,7 +1896,8 @@
     "pinyin": "lǎo rén",
     "translations": [
       "orang tua"
-    ]
+    ],
+    "traditional": "老人"
   },
   {
     "id": "209",
@@ -1697,7 +1905,8 @@
     "pinyin": "lǎo shī",
     "translations": [
       "guru"
-    ]
+    ],
+    "traditional": "老師"
   },
   {
     "id": "210",
@@ -1705,7 +1914,8 @@
     "pinyin": "le",
     "translations": [
       "sudah"
-    ]
+    ],
+    "traditional": "了"
   },
   {
     "id": "211",
@@ -1713,7 +1923,8 @@
     "pinyin": "lèi",
     "translations": [
       "lelah"
-    ]
+    ],
+    "traditional": "累"
   },
   {
     "id": "212",
@@ -1721,7 +1932,8 @@
     "pinyin": "lěng",
     "translations": [
       "dingin"
-    ]
+    ],
+    "traditional": "冷"
   },
   {
     "id": "213",
@@ -1729,7 +1941,8 @@
     "pinyin": "lǐ",
     "translations": [
       "di dalam"
-    ]
+    ],
+    "traditional": "裡"
   },
   {
     "id": "214",
@@ -1737,7 +1950,8 @@
     "pinyin": "lǐ bian",
     "translations": [
       "di dalam"
-    ]
+    ],
+    "traditional": "裡邊"
   },
   {
     "id": "215",
@@ -1745,7 +1959,8 @@
     "pinyin": "liǎng",
     "translations": [
       "dua"
-    ]
+    ],
+    "traditional": "兩"
   },
   {
     "id": "216",
@@ -1753,7 +1968,8 @@
     "pinyin": "líng",
     "translations": [
       "nol"
-    ]
+    ],
+    "traditional": "零"
   },
   {
     "id": "217",
@@ -1761,7 +1977,8 @@
     "pinyin": "liù",
     "translations": [
       "enam"
-    ]
+    ],
+    "traditional": "六"
   },
   {
     "id": "218",
@@ -1769,7 +1986,8 @@
     "pinyin": "lóu",
     "translations": [
       "lantai"
-    ]
+    ],
+    "traditional": "樓"
   },
   {
     "id": "219",
@@ -1777,7 +1995,8 @@
     "pinyin": "lóu shàng",
     "translations": [
       "di atas"
-    ]
+    ],
+    "traditional": "樓上"
   },
   {
     "id": "220",
@@ -1785,7 +2004,8 @@
     "pinyin": "lóu xià",
     "translations": [
       "di bawah"
-    ]
+    ],
+    "traditional": "樓下"
   },
   {
     "id": "221",
@@ -1793,7 +2013,8 @@
     "pinyin": "lù",
     "translations": [
       "jalan"
-    ]
+    ],
+    "traditional": "路"
   },
   {
     "id": "222",
@@ -1801,7 +2022,8 @@
     "pinyin": "lù kǒu",
     "translations": [
       "persimpangan"
-    ]
+    ],
+    "traditional": "路口"
   },
   {
     "id": "223",
@@ -1809,7 +2031,8 @@
     "pinyin": "lù shang",
     "translations": [
       "di jalan"
-    ]
+    ],
+    "traditional": "路上"
   },
   {
     "id": "224",
@@ -1817,7 +2040,8 @@
     "pinyin": "mā ma",
     "translations": [
       "ibu"
-    ]
+    ],
+    "traditional": "媽媽"
   },
   {
     "id": "225",
@@ -1825,7 +2049,8 @@
     "pinyin": "mǎ lù",
     "translations": [
       "jalan"
-    ]
+    ],
+    "traditional": "馬路"
   },
   {
     "id": "226",
@@ -1833,7 +2058,8 @@
     "pinyin": "mǎ shàng",
     "translations": [
       "langsung"
-    ]
+    ],
+    "traditional": "馬上"
   },
   {
     "id": "227",
@@ -1841,7 +2067,8 @@
     "pinyin": "ma",
     "translations": [
       "Apakah itu"
-    ]
+    ],
+    "traditional": "嗎"
   },
   {
     "id": "228",
@@ -1849,7 +2076,8 @@
     "pinyin": "mǎi",
     "translations": [
       "membeli"
-    ]
+    ],
+    "traditional": "買"
   },
   {
     "id": "229",
@@ -1857,7 +2085,8 @@
     "pinyin": "màn",
     "translations": [
       "lambat"
-    ]
+    ],
+    "traditional": "慢"
   },
   {
     "id": "230",
@@ -1865,7 +2094,8 @@
     "pinyin": "máng",
     "translations": [
       "sibuk"
-    ]
+    ],
+    "traditional": "忙"
   },
   {
     "id": "231",
@@ -1873,7 +2103,8 @@
     "pinyin": "máo",
     "translations": [
       "(Ukur kata untuk uang)"
-    ]
+    ],
+    "traditional": "毛"
   },
   {
     "id": "232",
@@ -1881,7 +2112,8 @@
     "pinyin": "méi",
     "translations": [
       "bukan"
-    ]
+    ],
+    "traditional": "沒"
   },
   {
     "id": "233",
@@ -1889,7 +2121,8 @@
     "pinyin": "méi guān xi",
     "translations": [
       "tidak apa-apa"
-    ]
+    ],
+    "traditional": "沒關係"
   },
   {
     "id": "234",
@@ -1897,7 +2130,8 @@
     "pinyin": "méi shén me",
     "translations": [
       "tidak apa"
-    ]
+    ],
+    "traditional": "沒什麼"
   },
   {
     "id": "235",
@@ -1905,7 +2139,8 @@
     "pinyin": "méi shìr",
     "translations": [
       "tidak apa-apa"
-    ]
+    ],
+    "traditional": "沒事兒"
   },
   {
     "id": "236",
@@ -1913,7 +2148,8 @@
     "pinyin": "méi yǒu",
     "translations": [
       "tidak punya"
-    ]
+    ],
+    "traditional": "沒有"
   },
   {
     "id": "237",
@@ -1921,7 +2157,8 @@
     "pinyin": "mèi mei",
     "translations": [
       "adik perempuan"
-    ]
+    ],
+    "traditional": "妹妹"
   },
   {
     "id": "238",
@@ -1929,7 +2166,8 @@
     "pinyin": "mén",
     "translations": [
       "pintu"
-    ]
+    ],
+    "traditional": "門"
   },
   {
     "id": "239",
@@ -1937,7 +2175,8 @@
     "pinyin": "mén kǒu",
     "translations": [
       "pintu masuk"
-    ]
+    ],
+    "traditional": "門口"
   },
   {
     "id": "240",
@@ -1945,7 +2184,8 @@
     "pinyin": "mén piào",
     "translations": [
       "tiket"
-    ]
+    ],
+    "traditional": "門票"
   },
   {
     "id": "241",
@@ -1953,7 +2193,8 @@
     "pinyin": "péng you men",
     "translations": [
       "teman-teman"
-    ]
+    ],
+    "traditional": "朋友們"
   },
   {
     "id": "242",
@@ -1961,7 +2202,8 @@
     "pinyin": "mǐ fàn",
     "translations": [
       "beras"
-    ]
+    ],
+    "traditional": "米飯"
   },
   {
     "id": "243",
@@ -1969,7 +2211,8 @@
     "pinyin": "miàn bāo",
     "translations": [
       "roti"
-    ]
+    ],
+    "traditional": "麵包"
   },
   {
     "id": "244",
@@ -1977,7 +2220,8 @@
     "pinyin": "miàn tiáor",
     "translations": [
       "Mie"
-    ]
+    ],
+    "traditional": "麵條兒"
   },
   {
     "id": "245",
@@ -1985,7 +2229,8 @@
     "pinyin": "míng zi",
     "translations": [
       "nama depan"
-    ]
+    ],
+    "traditional": "名字"
   },
   {
     "id": "246",
@@ -1993,7 +2238,8 @@
     "pinyin": "míng bai",
     "translations": [
       "memahami"
-    ]
+    ],
+    "traditional": "明白"
   },
   {
     "id": "247",
@@ -2001,7 +2247,8 @@
     "pinyin": "míng nián",
     "translations": [
       "tahun depan"
-    ]
+    ],
+    "traditional": "明年"
   },
   {
     "id": "248",
@@ -2009,7 +2256,8 @@
     "pinyin": "míng tiān",
     "translations": [
       "besok"
-    ]
+    ],
+    "traditional": "明天"
   },
   {
     "id": "249",
@@ -2017,7 +2265,8 @@
     "pinyin": "ná",
     "translations": [
       "mengambil"
-    ]
+    ],
+    "traditional": "拿"
   },
   {
     "id": "250",
@@ -2025,7 +2274,8 @@
     "pinyin": "nǎ",
     "translations": [
       "yang"
-    ]
+    ],
+    "traditional": "哪"
   },
   {
     "id": "251",
@@ -2033,7 +2283,8 @@
     "pinyin": "nǎ lǐ",
     "translations": [
       "Di mana"
-    ]
+    ],
+    "traditional": "哪裡"
   },
   {
     "id": "252",
@@ -2041,7 +2292,8 @@
     "pinyin": "nǎr",
     "translations": [
       "Di mana"
-    ]
+    ],
+    "traditional": "哪兒"
   },
   {
     "id": "253",
@@ -2049,7 +2301,8 @@
     "pinyin": "nǎ xiē",
     "translations": [
       "yang"
-    ]
+    ],
+    "traditional": "哪些"
   },
   {
     "id": "254",
@@ -2057,7 +2310,8 @@
     "pinyin": "nà",
     "translations": [
       "itu"
-    ]
+    ],
+    "traditional": "那"
   },
   {
     "id": "255",
@@ -2065,7 +2319,8 @@
     "pinyin": "nà biān",
     "translations": [
       "di sana"
-    ]
+    ],
+    "traditional": "那邊"
   },
   {
     "id": "256",
@@ -2073,7 +2328,8 @@
     "pinyin": "nà lǐ",
     "translations": [
       "di sana"
-    ]
+    ],
+    "traditional": "那裡"
   },
   {
     "id": "257",
@@ -2081,7 +2337,8 @@
     "pinyin": "nàr",
     "translations": [
       "di sana"
-    ]
+    ],
+    "traditional": "那兒"
   },
   {
     "id": "258",
@@ -2089,7 +2346,8 @@
     "pinyin": "nà xiē",
     "translations": [
       "itu"
-    ]
+    ],
+    "traditional": "那些"
   },
   {
     "id": "259",
@@ -2097,7 +2355,8 @@
     "pinyin": "nǎi",
     "translations": [
       "susu"
-    ]
+    ],
+    "traditional": "奶"
   },
   {
     "id": "260",
@@ -2105,7 +2364,8 @@
     "pinyin": "nǎi nai",
     "translations": [
       "nenek"
-    ]
+    ],
+    "traditional": "奶奶"
   },
   {
     "id": "261",
@@ -2113,7 +2373,8 @@
     "pinyin": "nán",
     "translations": [
       "pria"
-    ]
+    ],
+    "traditional": "男"
   },
   {
     "id": "262",
@@ -2121,7 +2382,8 @@
     "pinyin": "nán háir",
     "translations": [
       "anak laki-laki"
-    ]
+    ],
+    "traditional": "男孩兒"
   },
   {
     "id": "263",
@@ -2129,7 +2391,8 @@
     "pinyin": "nán péng you",
     "translations": [
       "pacar"
-    ]
+    ],
+    "traditional": "男朋友"
   },
   {
     "id": "264",
@@ -2137,7 +2400,8 @@
     "pinyin": "nán rén",
     "translations": [
       "pria"
-    ]
+    ],
+    "traditional": "男人"
   },
   {
     "id": "265",
@@ -2145,7 +2409,8 @@
     "pinyin": "nán shēng",
     "translations": [
       "anak sekolah"
-    ]
+    ],
+    "traditional": "男生"
   },
   {
     "id": "266",
@@ -2153,7 +2418,8 @@
     "pinyin": "nán",
     "translations": [
       "selatan"
-    ]
+    ],
+    "traditional": "南"
   },
   {
     "id": "267",
@@ -2161,7 +2427,8 @@
     "pinyin": "nán bian",
     "translations": [
       "sisi selatan"
-    ]
+    ],
+    "traditional": "南邊"
   },
   {
     "id": "268",
@@ -2169,7 +2436,8 @@
     "pinyin": "nán",
     "translations": [
       "sulit"
-    ]
+    ],
+    "traditional": "難"
   },
   {
     "id": "269",
@@ -2177,7 +2445,8 @@
     "pinyin": "ne",
     "translations": [
       "Apa"
-    ]
+    ],
+    "traditional": "呢"
   },
   {
     "id": "270",
@@ -2185,7 +2454,8 @@
     "pinyin": "néng",
     "translations": [
       "Bisa"
-    ]
+    ],
+    "traditional": "能"
   },
   {
     "id": "271",
@@ -2193,7 +2463,8 @@
     "pinyin": "nǐ",
     "translations": [
       "Anda"
-    ]
+    ],
+    "traditional": "你"
   },
   {
     "id": "272",
@@ -2201,7 +2472,8 @@
     "pinyin": "nǐ men",
     "translations": [
       "kalian"
-    ]
+    ],
+    "traditional": "你們"
   },
   {
     "id": "273",
@@ -2209,7 +2481,8 @@
     "pinyin": "nián",
     "translations": [
       "tahun"
-    ]
+    ],
+    "traditional": "年"
   },
   {
     "id": "274",
@@ -2217,7 +2490,8 @@
     "pinyin": "nín",
     "translations": [
       "Anda"
-    ]
+    ],
+    "traditional": "您"
   },
   {
     "id": "275",
@@ -2225,7 +2499,8 @@
     "pinyin": "niú nǎi",
     "translations": [
       "susu sapi"
-    ]
+    ],
+    "traditional": "牛奶"
   },
   {
     "id": "276",
@@ -2233,7 +2508,8 @@
     "pinyin": "nǚ",
     "translations": [
       "perempuan"
-    ]
+    ],
+    "traditional": "女"
   },
   {
     "id": "277",
@@ -2241,7 +2517,8 @@
     "pinyin": "nǚ’ér",
     "translations": [
       "anak perempuan"
-    ]
+    ],
+    "traditional": "女兒"
   },
   {
     "id": "278",
@@ -2249,7 +2526,8 @@
     "pinyin": "nǚ háir",
     "translations": [
       "gadis"
-    ]
+    ],
+    "traditional": "女孩兒"
   },
   {
     "id": "279",
@@ -2257,7 +2535,8 @@
     "pinyin": "nǚ péng you",
     "translations": [
       "pacar perempuan"
-    ]
+    ],
+    "traditional": "女朋友"
   },
   {
     "id": "280",
@@ -2265,7 +2544,8 @@
     "pinyin": "nǚ rén",
     "translations": [
       "wanita"
-    ]
+    ],
+    "traditional": "女人"
   },
   {
     "id": "281",
@@ -2273,7 +2553,8 @@
     "pinyin": "nǚ shēng",
     "translations": [
       "siswi"
-    ]
+    ],
+    "traditional": "女生"
   },
   {
     "id": "282",
@@ -2281,7 +2562,8 @@
     "pinyin": "páng biān",
     "translations": [
       "di sebelah"
-    ]
+    ],
+    "traditional": "旁邊"
   },
   {
     "id": "283",
@@ -2289,7 +2571,8 @@
     "pinyin": "pǎo",
     "translations": [
       "berlari"
-    ]
+    ],
+    "traditional": "跑"
   },
   {
     "id": "284",
@@ -2297,7 +2580,8 @@
     "pinyin": "péng you",
     "translations": [
       "teman"
-    ]
+    ],
+    "traditional": "朋友"
   },
   {
     "id": "285",
@@ -2305,7 +2589,8 @@
     "pinyin": "piào",
     "translations": [
       "tiket"
-    ]
+    ],
+    "traditional": "票"
   },
   {
     "id": "286",
@@ -2313,7 +2598,8 @@
     "pinyin": "qī",
     "translations": [
       "tujuh"
-    ]
+    ],
+    "traditional": "七"
   },
   {
     "id": "287",
@@ -2321,7 +2607,8 @@
     "pinyin": "qǐ",
     "translations": [
       "ke atas"
-    ]
+    ],
+    "traditional": "起"
   },
   {
     "id": "288",
@@ -2329,7 +2616,8 @@
     "pinyin": "qǐ chuáng",
     "translations": [
       "bangun"
-    ]
+    ],
+    "traditional": "起床"
   },
   {
     "id": "289",
@@ -2337,7 +2625,8 @@
     "pinyin": "qǐ lái",
     "translations": [
       "berdiri"
-    ]
+    ],
+    "traditional": "起來"
   },
   {
     "id": "290",
@@ -2345,7 +2634,8 @@
     "pinyin": "qì chē",
     "translations": [
       "mobil"
-    ]
+    ],
+    "traditional": "汽車"
   },
   {
     "id": "291",
@@ -2353,7 +2643,8 @@
     "pinyin": "qián",
     "translations": [
       "sebelum"
-    ]
+    ],
+    "traditional": "前"
   },
   {
     "id": "292",
@@ -2361,7 +2652,8 @@
     "pinyin": "qián bian",
     "translations": [
       "sisi depan"
-    ]
+    ],
+    "traditional": "前邊"
   },
   {
     "id": "293",
@@ -2369,7 +2661,8 @@
     "pinyin": "qián tiān",
     "translations": [
       "kemarin lusa"
-    ]
+    ],
+    "traditional": "前天"
   },
   {
     "id": "294",
@@ -2377,7 +2670,8 @@
     "pinyin": "qián",
     "translations": [
       "uang"
-    ]
+    ],
+    "traditional": "錢"
   },
   {
     "id": "295",
@@ -2385,7 +2679,8 @@
     "pinyin": "qián bāo",
     "translations": [
       "dompet"
-    ]
+    ],
+    "traditional": "錢包"
   },
   {
     "id": "296",
@@ -2393,7 +2688,8 @@
     "pinyin": "qǐng",
     "translations": [
       "Tolong"
-    ]
+    ],
+    "traditional": "請"
   },
   {
     "id": "297",
@@ -2401,7 +2697,8 @@
     "pinyin": "qǐng jià",
     "translations": [
       "Meminta cuti"
-    ]
+    ],
+    "traditional": "請假"
   },
   {
     "id": "298",
@@ -2409,7 +2706,8 @@
     "pinyin": "qǐng jìn",
     "translations": [
       "silakan masuk"
-    ]
+    ],
+    "traditional": "請進"
   },
   {
     "id": "299",
@@ -2417,7 +2715,8 @@
     "pinyin": "qǐng wèn",
     "translations": [
       "Permisi"
-    ]
+    ],
+    "traditional": "請問"
   },
   {
     "id": "300",
@@ -2425,7 +2724,8 @@
     "pinyin": "qǐng zuò",
     "translations": [
       "silakan duduk"
-    ]
+    ],
+    "traditional": "請坐"
   },
   {
     "id": "301",
@@ -2433,7 +2733,8 @@
     "pinyin": "qiú",
     "translations": [
       "bola"
-    ]
+    ],
+    "traditional": "球"
   },
   {
     "id": "302",
@@ -2441,7 +2742,8 @@
     "pinyin": "qù",
     "translations": [
       "pergi"
-    ]
+    ],
+    "traditional": "去"
   },
   {
     "id": "303",
@@ -2449,7 +2751,8 @@
     "pinyin": "qù nián",
     "translations": [
       "tahun lalu"
-    ]
+    ],
+    "traditional": "去年"
   },
   {
     "id": "304",
@@ -2457,7 +2760,8 @@
     "pinyin": "rè",
     "translations": [
       "panas"
-    ]
+    ],
+    "traditional": "熱"
   },
   {
     "id": "305",
@@ -2465,7 +2769,8 @@
     "pinyin": "rén",
     "translations": [
       "rakyat"
-    ]
+    ],
+    "traditional": "人"
   },
   {
     "id": "306",
@@ -2473,7 +2778,8 @@
     "pinyin": "rèn shi",
     "translations": [
       "tahu"
-    ]
+    ],
+    "traditional": "認識"
   },
   {
     "id": "307",
@@ -2481,7 +2787,8 @@
     "pinyin": "rèn zhēn",
     "translations": [
       "serius"
-    ]
+    ],
+    "traditional": "認真"
   },
   {
     "id": "308",
@@ -2489,7 +2796,8 @@
     "pinyin": "rì",
     "translations": [
       "hari"
-    ]
+    ],
+    "traditional": "日"
   },
   {
     "id": "309",
@@ -2497,7 +2805,8 @@
     "pinyin": "rì qī",
     "translations": [
       "tanggal"
-    ]
+    ],
+    "traditional": "日期"
   },
   {
     "id": "310",
@@ -2505,7 +2814,8 @@
     "pinyin": "ròu",
     "translations": [
       "daging"
-    ]
+    ],
+    "traditional": "肉"
   },
   {
     "id": "311",
@@ -2513,7 +2823,8 @@
     "pinyin": "sān",
     "translations": [
       "tiga"
-    ]
+    ],
+    "traditional": "三"
   },
   {
     "id": "312",
@@ -2521,7 +2832,8 @@
     "pinyin": "shān",
     "translations": [
       "gunung"
-    ]
+    ],
+    "traditional": "山"
   },
   {
     "id": "313",
@@ -2529,7 +2841,8 @@
     "pinyin": "shāng chǎng",
     "translations": [
       "mall"
-    ]
+    ],
+    "traditional": "商場"
   },
   {
     "id": "314",
@@ -2537,7 +2850,8 @@
     "pinyin": "shāng diàn",
     "translations": [
       "toko"
-    ]
+    ],
+    "traditional": "商店"
   },
   {
     "id": "315",
@@ -2545,7 +2859,8 @@
     "pinyin": "shàng",
     "translations": [
       "pada"
-    ]
+    ],
+    "traditional": "上"
   },
   {
     "id": "316",
@@ -2553,7 +2868,8 @@
     "pinyin": "shàng bān",
     "translations": [
       "pergi bekerja"
-    ]
+    ],
+    "traditional": "上班"
   },
   {
     "id": "317",
@@ -2561,7 +2877,8 @@
     "pinyin": "shàng bian",
     "translations": [
       "di atas"
-    ]
+    ],
+    "traditional": "上邊"
   },
   {
     "id": "318",
@@ -2569,7 +2886,8 @@
     "pinyin": "shàng chē",
     "translations": [
       "pergi ke mobil"
-    ]
+    ],
+    "traditional": "上車"
   },
   {
     "id": "319",
@@ -2577,7 +2895,8 @@
     "pinyin": "shàng cì",
     "translations": [
       "terakhir kali"
-    ]
+    ],
+    "traditional": "上次"
   },
   {
     "id": "320",
@@ -2585,7 +2904,8 @@
     "pinyin": "shàng kè",
     "translations": [
       "pergi ke kelas"
-    ]
+    ],
+    "traditional": "上課"
   },
   {
     "id": "321",
@@ -2593,7 +2913,8 @@
     "pinyin": "shàng wǎng",
     "translations": [
       "online"
-    ]
+    ],
+    "traditional": "上網"
   },
   {
     "id": "322",
@@ -2601,7 +2922,8 @@
     "pinyin": "shàng wǔ",
     "translations": [
       "Pagi"
-    ]
+    ],
+    "traditional": "上午"
   },
   {
     "id": "323",
@@ -2609,7 +2931,8 @@
     "pinyin": "shàng xué",
     "translations": [
       "pergi ke sekolah"
-    ]
+    ],
+    "traditional": "上學"
   },
   {
     "id": "324",
@@ -2618,7 +2941,8 @@
     "translations": [
       "kecil",
       "lebih sedikit"
-    ]
+    ],
+    "traditional": "少"
   },
   {
     "id": "325",
@@ -2626,7 +2950,8 @@
     "pinyin": "shéi/shuí",
     "translations": [
       "WHO"
-    ]
+    ],
+    "traditional": "誰"
   },
   {
     "id": "326",
@@ -2634,7 +2959,8 @@
     "pinyin": "shēn shang",
     "translations": [
       "di tubuh"
-    ]
+    ],
+    "traditional": "身上"
   },
   {
     "id": "327",
@@ -2642,7 +2968,8 @@
     "pinyin": "shēn tǐ",
     "translations": [
       "tubuh"
-    ]
+    ],
+    "traditional": "身體"
   },
   {
     "id": "328",
@@ -2650,7 +2977,8 @@
     "pinyin": "shén me",
     "translations": [
       "Apa"
-    ]
+    ],
+    "traditional": "什麼"
   },
   {
     "id": "329",
@@ -2658,7 +2986,8 @@
     "pinyin": "shēng bìng",
     "translations": [
       "sakit"
-    ]
+    ],
+    "traditional": "生病"
   },
   {
     "id": "330",
@@ -2667,7 +2996,8 @@
     "translations": [
       "marah",
       "kesal"
-    ]
+    ],
+    "traditional": "生氣"
   },
   {
     "id": "331",
@@ -2675,7 +3005,8 @@
     "pinyin": "shēng rì",
     "translations": [
       "hari ulang tahun"
-    ]
+    ],
+    "traditional": "生日"
   },
   {
     "id": "332",
@@ -2683,7 +3014,8 @@
     "pinyin": "shí",
     "translations": [
       "sepuluh"
-    ]
+    ],
+    "traditional": "十"
   },
   {
     "id": "333",
@@ -2691,7 +3023,8 @@
     "pinyin": "shí hou",
     "translations": [
       "Kapan"
-    ]
+    ],
+    "traditional": "時候"
   },
   {
     "id": "334",
@@ -2699,7 +3032,8 @@
     "pinyin": "shí jiān",
     "translations": [
       "waktu"
-    ]
+    ],
+    "traditional": "時間"
   },
   {
     "id": "335",
@@ -2708,7 +3042,8 @@
     "translations": [
       "benda",
       "perselingkuhan"
-    ]
+    ],
+    "traditional": "事"
   },
   {
     "id": "336",
@@ -2717,7 +3052,8 @@
     "translations": [
       "mencoba",
       "tes"
-    ]
+    ],
+    "traditional": "試"
   },
   {
     "id": "337",
@@ -2726,7 +3062,8 @@
     "translations": [
       "Ya",
       "AM/is/is"
-    ]
+    ],
+    "traditional": "是"
   },
   {
     "id": "338",
@@ -2734,7 +3071,8 @@
     "pinyin": "shì bu shì",
     "translations": [
       "Bukankah begitu"
-    ]
+    ],
+    "traditional": "是不是"
   },
   {
     "id": "339",
@@ -2742,7 +3080,8 @@
     "pinyin": "shǒu",
     "translations": [
       "tangan"
-    ]
+    ],
+    "traditional": "手"
   },
   {
     "id": "340",
@@ -2750,7 +3089,8 @@
     "pinyin": "shǒu jī",
     "translations": [
       "handphone"
-    ]
+    ],
+    "traditional": "智慧型手機"
   },
   {
     "id": "341",
@@ -2758,7 +3098,8 @@
     "pinyin": "shū",
     "translations": [
       "buku"
-    ]
+    ],
+    "traditional": "書"
   },
   {
     "id": "342",
@@ -2766,7 +3107,8 @@
     "pinyin": "shū bāo",
     "translations": [
       "tas sekolah"
-    ]
+    ],
+    "traditional": "書包"
   },
   {
     "id": "343",
@@ -2774,7 +3116,8 @@
     "pinyin": "shū diàn",
     "translations": [
       "toko buku"
-    ]
+    ],
+    "traditional": "書店"
   },
   {
     "id": "344",
@@ -2782,7 +3125,8 @@
     "pinyin": "shù",
     "translations": [
       "pohon"
-    ]
+    ],
+    "traditional": "樹"
   },
   {
     "id": "345",
@@ -2790,7 +3134,8 @@
     "pinyin": "shuǐ",
     "translations": [
       "air"
-    ]
+    ],
+    "traditional": "水"
   },
   {
     "id": "346",
@@ -2798,7 +3143,8 @@
     "pinyin": "shuǐ guǒ",
     "translations": [
       "buah"
-    ]
+    ],
+    "traditional": "水果"
   },
   {
     "id": "347",
@@ -2806,7 +3152,8 @@
     "pinyin": "shuì",
     "translations": [
       "tidur"
-    ]
+    ],
+    "traditional": "睡"
   },
   {
     "id": "348",
@@ -2814,7 +3161,8 @@
     "pinyin": "shuì jiào",
     "translations": [
       "pergi tidur"
-    ]
+    ],
+    "traditional": "睡覺"
   },
   {
     "id": "349",
@@ -2822,7 +3170,8 @@
     "pinyin": "shuō",
     "translations": [
       "mengatakan"
-    ]
+    ],
+    "traditional": "說"
   },
   {
     "id": "350",
@@ -2830,7 +3179,8 @@
     "pinyin": "shuō huà",
     "translations": [
       "berbicara"
-    ]
+    ],
+    "traditional": "說話"
   },
   {
     "id": "351",
@@ -2838,7 +3188,8 @@
     "pinyin": "sì",
     "translations": [
       "empat"
-    ]
+    ],
+    "traditional": "四"
   },
   {
     "id": "352",
@@ -2846,7 +3197,8 @@
     "pinyin": "sòng",
     "translations": [
       "memberi secara gratis"
-    ]
+    ],
+    "traditional": "送"
   },
   {
     "id": "353",
@@ -2854,7 +3206,8 @@
     "pinyin": "suì",
     "translations": [
       "tahun)"
-    ]
+    ],
+    "traditional": "歲"
   },
   {
     "id": "354",
@@ -2862,7 +3215,8 @@
     "pinyin": "tā",
     "translations": [
       "Dia"
-    ]
+    ],
+    "traditional": "他"
   },
   {
     "id": "355",
@@ -2870,7 +3224,8 @@
     "pinyin": "tā men",
     "translations": [
       "mereka"
-    ]
+    ],
+    "traditional": "他們"
   },
   {
     "id": "356",
@@ -2878,7 +3233,8 @@
     "pinyin": "tā",
     "translations": [
       "dia"
-    ]
+    ],
+    "traditional": "她"
   },
   {
     "id": "357",
@@ -2886,7 +3242,8 @@
     "pinyin": "tā men",
     "translations": [
       "mereka"
-    ]
+    ],
+    "traditional": "她們"
   },
   {
     "id": "358",
@@ -2894,7 +3251,8 @@
     "pinyin": "tài",
     "translations": [
       "juga"
-    ]
+    ],
+    "traditional": "太"
   },
   {
     "id": "359",
@@ -2902,7 +3260,8 @@
     "pinyin": "tiān",
     "translations": [
       "hari"
-    ]
+    ],
+    "traditional": "天"
   },
   {
     "id": "360",
@@ -2910,7 +3269,8 @@
     "pinyin": "tiān qì",
     "translations": [
       "cuaca"
-    ]
+    ],
+    "traditional": "天氣"
   },
   {
     "id": "361",
@@ -2918,7 +3278,8 @@
     "pinyin": "tīng",
     "translations": [
       "mendengarkan"
-    ]
+    ],
+    "traditional": "聽"
   },
   {
     "id": "362",
@@ -2926,7 +3287,8 @@
     "pinyin": "tīng dào",
     "translations": [
       "mendengar"
-    ]
+    ],
+    "traditional": "聽到"
   },
   {
     "id": "363",
@@ -2934,7 +3296,8 @@
     "pinyin": "tīng jiàn",
     "translations": [
       "mendengar"
-    ]
+    ],
+    "traditional": "聽見"
   },
   {
     "id": "364",
@@ -2942,7 +3305,8 @@
     "pinyin": "tīng xiě",
     "translations": [
       "dikte"
-    ]
+    ],
+    "traditional": "聽寫"
   },
   {
     "id": "365",
@@ -2950,7 +3314,8 @@
     "pinyin": "tóng xué",
     "translations": [
       "teman sekelas"
-    ]
+    ],
+    "traditional": "同學"
   },
   {
     "id": "366",
@@ -2958,7 +3323,8 @@
     "pinyin": "tú shū guǎn",
     "translations": [
       "perpustakaan"
-    ]
+    ],
+    "traditional": "圖書館"
   },
   {
     "id": "367",
@@ -2966,7 +3332,8 @@
     "pinyin": "wài",
     "translations": [
       "keluar"
-    ]
+    ],
+    "traditional": "外"
   },
   {
     "id": "368",
@@ -2974,7 +3341,8 @@
     "pinyin": "wài bian",
     "translations": [
       "di luar"
-    ]
+    ],
+    "traditional": "外邊"
   },
   {
     "id": "369",
@@ -2982,7 +3350,8 @@
     "pinyin": "wài guó",
     "translations": [
       "negara asing"
-    ]
+    ],
+    "traditional": "外國"
   },
   {
     "id": "370",
@@ -2990,7 +3359,8 @@
     "pinyin": "wài yǔ",
     "translations": [
       "bahasa asing"
-    ]
+    ],
+    "traditional": "外語"
   },
   {
     "id": "371",
@@ -2998,7 +3368,8 @@
     "pinyin": "wánr",
     "translations": [
       "bermain"
-    ]
+    ],
+    "traditional": "玩兒"
   },
   {
     "id": "372",
@@ -3006,7 +3377,8 @@
     "pinyin": "wǎn",
     "translations": [
       "terlambat"
-    ]
+    ],
+    "traditional": "晚"
   },
   {
     "id": "373",
@@ -3014,7 +3386,8 @@
     "pinyin": "wǎn fàn",
     "translations": [
       "makan malam"
-    ]
+    ],
+    "traditional": "晚飯"
   },
   {
     "id": "374",
@@ -3022,7 +3395,8 @@
     "pinyin": "wǎn shang",
     "translations": [
       "pada malam hari"
-    ]
+    ],
+    "traditional": "晚上"
   },
   {
     "id": "375",
@@ -3030,7 +3404,8 @@
     "pinyin": "wǎng shang",
     "translations": [
       "di internet"
-    ]
+    ],
+    "traditional": "網上"
   },
   {
     "id": "376",
@@ -3038,7 +3413,8 @@
     "pinyin": "wǎng yǒu",
     "translations": [
       "Warganet"
-    ]
+    ],
+    "traditional": "網友"
   },
   {
     "id": "377",
@@ -3046,7 +3422,8 @@
     "pinyin": "wàng",
     "translations": [
       "lupa"
-    ]
+    ],
+    "traditional": "忘"
   },
   {
     "id": "378",
@@ -3054,7 +3431,8 @@
     "pinyin": "wàng jì",
     "translations": [
       "lupa"
-    ]
+    ],
+    "traditional": "忘記"
   },
   {
     "id": "379",
@@ -3062,7 +3440,8 @@
     "pinyin": "wèn",
     "translations": [
       "bertanya"
-    ]
+    ],
+    "traditional": "問"
   },
   {
     "id": "380",
@@ -3070,7 +3449,8 @@
     "pinyin": "wǒ",
     "translations": [
       "SAYA"
-    ]
+    ],
+    "traditional": "我"
   },
   {
     "id": "381",
@@ -3078,7 +3458,8 @@
     "pinyin": "wǒ men",
     "translations": [
       "Kami"
-    ]
+    ],
+    "traditional": "我們"
   },
   {
     "id": "382",
@@ -3086,7 +3467,8 @@
     "pinyin": "wǔ",
     "translations": [
       "lima"
-    ]
+    ],
+    "traditional": "五"
   },
   {
     "id": "383",
@@ -3094,7 +3476,8 @@
     "pinyin": "wǔ fàn",
     "translations": [
       "makan siang"
-    ]
+    ],
+    "traditional": "午飯"
   },
   {
     "id": "384",
@@ -3102,7 +3485,8 @@
     "pinyin": "xī",
     "translations": [
       "Barat"
-    ]
+    ],
+    "traditional": "西"
   },
   {
     "id": "385",
@@ -3110,7 +3494,8 @@
     "pinyin": "xī bian",
     "translations": [
       "sisi barat"
-    ]
+    ],
+    "traditional": "西邊"
   },
   {
     "id": "386",
@@ -3118,7 +3503,8 @@
     "pinyin": "xǐ",
     "translations": [
       "mencuci"
-    ]
+    ],
+    "traditional": "洗"
   },
   {
     "id": "387",
@@ -3126,7 +3512,8 @@
     "pinyin": "xǐ shǒu jiān",
     "translations": [
       "kamar kecil"
-    ]
+    ],
+    "traditional": "洗手間"
   },
   {
     "id": "388",
@@ -3134,7 +3521,8 @@
     "pinyin": "xǐ huan",
     "translations": [
       "menyukai"
-    ]
+    ],
+    "traditional": "喜歡"
   },
   {
     "id": "389",
@@ -3143,7 +3531,8 @@
     "translations": [
       "di bawah",
       "mati"
-    ]
+    ],
+    "traditional": "下"
   },
   {
     "id": "390",
@@ -3151,7 +3540,8 @@
     "pinyin": "xià bān",
     "translations": [
       "cuti"
-    ]
+    ],
+    "traditional": "下班"
   },
   {
     "id": "391",
@@ -3159,7 +3549,8 @@
     "pinyin": "xià bian",
     "translations": [
       "di bawah"
-    ]
+    ],
+    "traditional": "下邊"
   },
   {
     "id": "392",
@@ -3167,7 +3558,8 @@
     "pinyin": "xià chē",
     "translations": [
       "melepaskan diri"
-    ]
+    ],
+    "traditional": "下車"
   },
   {
     "id": "393",
@@ -3175,7 +3567,8 @@
     "pinyin": "xià cì",
     "translations": [
       "lain kali"
-    ]
+    ],
+    "traditional": "下次"
   },
   {
     "id": "394",
@@ -3183,7 +3576,8 @@
     "pinyin": "xià kè",
     "translations": [
       "akhir kelas"
-    ]
+    ],
+    "traditional": "下課"
   },
   {
     "id": "395",
@@ -3191,7 +3585,8 @@
     "pinyin": "xià wǔ",
     "translations": [
       "sore"
-    ]
+    ],
+    "traditional": "下午"
   },
   {
     "id": "396",
@@ -3199,7 +3594,8 @@
     "pinyin": "xià yǔ",
     "translations": [
       "hujan"
-    ]
+    ],
+    "traditional": "下雨"
   },
   {
     "id": "397",
@@ -3207,7 +3603,8 @@
     "pinyin": "xiān",
     "translations": [
       "Pertama"
-    ]
+    ],
+    "traditional": "先"
   },
   {
     "id": "398",
@@ -3215,7 +3612,8 @@
     "pinyin": "xiān sheng",
     "translations": [
       "Tuan"
-    ]
+    ],
+    "traditional": "先生"
   },
   {
     "id": "399",
@@ -3223,7 +3621,8 @@
     "pinyin": "xiàn zài",
     "translations": [
       "sekarang"
-    ]
+    ],
+    "traditional": "現在"
   },
   {
     "id": "400",
@@ -3233,7 +3632,8 @@
       "merindukan",
       "ingin",
       "memikirkan"
-    ]
+    ],
+    "traditional": "想"
   },
   {
     "id": "401",
@@ -3241,7 +3641,8 @@
     "pinyin": "xiǎo",
     "translations": [
       "kecil"
-    ]
+    ],
+    "traditional": "小"
   },
   {
     "id": "402",
@@ -3249,7 +3650,8 @@
     "pinyin": "xiǎo háir",
     "translations": [
       "anak"
-    ]
+    ],
+    "traditional": "小孩兒"
   },
   {
     "id": "403",
@@ -3257,7 +3659,8 @@
     "pinyin": "xiǎo jiě",
     "translations": [
       "Merindukan"
-    ]
+    ],
+    "traditional": "小姐"
   },
   {
     "id": "404",
@@ -3265,7 +3668,8 @@
     "pinyin": "xiǎo péng yǒu",
     "translations": [
       "anak-anak"
-    ]
+    ],
+    "traditional": "小朋友"
   },
   {
     "id": "405",
@@ -3273,7 +3677,8 @@
     "pinyin": "xiǎo shí",
     "translations": [
       "jam"
-    ]
+    ],
+    "traditional": "小時"
   },
   {
     "id": "406",
@@ -3281,7 +3686,8 @@
     "pinyin": "xiǎo xué",
     "translations": [
       "sekolah dasar"
-    ]
+    ],
+    "traditional": "小學"
   },
   {
     "id": "407",
@@ -3289,7 +3695,8 @@
     "pinyin": "xiǎo xué shēng",
     "translations": [
       "Siswa Sekolah Dasar"
-    ]
+    ],
+    "traditional": "小學生"
   },
   {
     "id": "408",
@@ -3297,7 +3704,8 @@
     "pinyin": "xiào",
     "translations": [
       "tertawa"
-    ]
+    ],
+    "traditional": "笑"
   },
   {
     "id": "409",
@@ -3305,7 +3713,8 @@
     "pinyin": "xiě",
     "translations": [
       "menulis"
-    ]
+    ],
+    "traditional": "寫"
   },
   {
     "id": "410",
@@ -3313,7 +3722,8 @@
     "pinyin": "xiè xie",
     "translations": [
       "Terima kasih"
-    ]
+    ],
+    "traditional": "謝謝"
   },
   {
     "id": "411",
@@ -3321,7 +3731,8 @@
     "pinyin": "xīn",
     "translations": [
       "baru"
-    ]
+    ],
+    "traditional": "新"
   },
   {
     "id": "412",
@@ -3329,7 +3740,8 @@
     "pinyin": "xīn nián",
     "translations": [
       "tahun Baru"
-    ]
+    ],
+    "traditional": "新年"
   },
   {
     "id": "413",
@@ -3337,7 +3749,8 @@
     "pinyin": "xīng qī",
     "translations": [
       "pekan"
-    ]
+    ],
+    "traditional": "星期"
   },
   {
     "id": "414",
@@ -3345,7 +3758,8 @@
     "pinyin": "xīng qī rì",
     "translations": [
       "Minggu"
-    ]
+    ],
+    "traditional": "星期日"
   },
   {
     "id": "415",
@@ -3353,7 +3767,8 @@
     "pinyin": "xīng qī tiān",
     "translations": [
       "Minggu"
-    ]
+    ],
+    "traditional": "星期天"
   },
   {
     "id": "416",
@@ -3361,7 +3776,8 @@
     "pinyin": "xíng",
     "translations": [
       "Oke"
-    ]
+    ],
+    "traditional": "行"
   },
   {
     "id": "417",
@@ -3369,7 +3785,8 @@
     "pinyin": "xiū xi",
     "translations": [
       "istirahat"
-    ]
+    ],
+    "traditional": "休息"
   },
   {
     "id": "418",
@@ -3377,7 +3794,8 @@
     "pinyin": "xué",
     "translations": [
       "mempelajari"
-    ]
+    ],
+    "traditional": "學"
   },
   {
     "id": "419",
@@ -3385,7 +3803,8 @@
     "pinyin": "xué shēng",
     "translations": [
       "murid"
-    ]
+    ],
+    "traditional": "學生"
   },
   {
     "id": "420",
@@ -3394,7 +3813,8 @@
     "translations": [
       "mempelajari",
       "belajar"
-    ]
+    ],
+    "traditional": "學習"
   },
   {
     "id": "421",
@@ -3402,7 +3822,8 @@
     "pinyin": "xué xiào",
     "translations": [
       "sekolah"
-    ]
+    ],
+    "traditional": "學校"
   },
   {
     "id": "422",
@@ -3410,7 +3831,8 @@
     "pinyin": "xué yuàn",
     "translations": [
       "akademi"
-    ]
+    ],
+    "traditional": "學院"
   },
   {
     "id": "423",
@@ -3418,7 +3840,8 @@
     "pinyin": "yào",
     "translations": [
       "ingin"
-    ]
+    ],
+    "traditional": "要"
   },
   {
     "id": "424",
@@ -3426,7 +3849,8 @@
     "pinyin": "yé ye",
     "translations": [
       "kakek"
-    ]
+    ],
+    "traditional": "爺爺"
   },
   {
     "id": "425",
@@ -3434,7 +3858,8 @@
     "pinyin": "yě",
     "translations": [
       "Juga"
-    ]
+    ],
+    "traditional": "也"
   },
   {
     "id": "426",
@@ -3442,7 +3867,8 @@
     "pinyin": "yè",
     "translations": [
       "halaman"
-    ]
+    ],
+    "traditional": "頁"
   },
   {
     "id": "427",
@@ -3450,7 +3876,8 @@
     "pinyin": "yī",
     "translations": [
       "satu"
-    ]
+    ],
+    "traditional": "一"
   },
   {
     "id": "428",
@@ -3458,7 +3885,8 @@
     "pinyin": "yī fu",
     "translations": [
       "pakaian"
-    ]
+    ],
+    "traditional": "衣服"
   },
   {
     "id": "429",
@@ -3466,7 +3894,8 @@
     "pinyin": "yī shēng",
     "translations": [
       "dokter"
-    ]
+    ],
+    "traditional": "醫生"
   },
   {
     "id": "430",
@@ -3474,7 +3903,8 @@
     "pinyin": "yī yuàn",
     "translations": [
       "RSUD"
-    ]
+    ],
+    "traditional": "醫院"
   },
   {
     "id": "431",
@@ -3482,7 +3912,8 @@
     "pinyin": "yí bàn",
     "translations": [
       "setengah"
-    ]
+    ],
+    "traditional": "一半"
   },
   {
     "id": "432",
@@ -3490,7 +3921,8 @@
     "pinyin": "yí huìr",
     "translations": [
       "sementara waktu"
-    ]
+    ],
+    "traditional": "一會兒"
   },
   {
     "id": "433",
@@ -3498,7 +3930,8 @@
     "pinyin": "yí kuàir",
     "translations": [
       "bersama"
-    ]
+    ],
+    "traditional": "一塊兒"
   },
   {
     "id": "434",
@@ -3506,7 +3939,8 @@
     "pinyin": "yí xiàr",
     "translations": [
       "sementara waktu"
-    ]
+    ],
+    "traditional": "一下兒"
   },
   {
     "id": "435",
@@ -3514,7 +3948,8 @@
     "pinyin": "yí yàng",
     "translations": [
       "sama"
-    ]
+    ],
+    "traditional": "一樣"
   },
   {
     "id": "436",
@@ -3522,7 +3957,8 @@
     "pinyin": "yì biān",
     "translations": [
       "ketika"
-    ]
+    ],
+    "traditional": "一邊"
   },
   {
     "id": "437",
@@ -3530,7 +3966,8 @@
     "pinyin": "yì diǎnr",
     "translations": [
       "sedikit"
-    ]
+    ],
+    "traditional": "一點兒"
   },
   {
     "id": "438",
@@ -3538,7 +3975,8 @@
     "pinyin": "yì qǐ",
     "translations": [
       "bersama"
-    ]
+    ],
+    "traditional": "一起"
   },
   {
     "id": "439",
@@ -3546,7 +3984,8 @@
     "pinyin": "yì xiē",
     "translations": [
       "beberapa"
-    ]
+    ],
+    "traditional": "一些"
   },
   {
     "id": "440",
@@ -3554,7 +3993,8 @@
     "pinyin": "yòng",
     "translations": [
       "menggunakan"
-    ]
+    ],
+    "traditional": "用"
   },
   {
     "id": "441",
@@ -3562,7 +4002,8 @@
     "pinyin": "yǒu",
     "translations": [
       "memiliki"
-    ]
+    ],
+    "traditional": "有"
   },
   {
     "id": "442",
@@ -3570,7 +4011,8 @@
     "pinyin": "yǒu de",
     "translations": [
       "beberapa"
-    ]
+    ],
+    "traditional": "有的"
   },
   {
     "id": "443",
@@ -3578,7 +4020,8 @@
     "pinyin": "yǒu míng",
     "translations": [
       "terkenal"
-    ]
+    ],
+    "traditional": "有名"
   },
   {
     "id": "444",
@@ -3586,7 +4029,8 @@
     "pinyin": "yǒu shí hou",
     "translations": [
       "Kadang-kadang"
-    ]
+    ],
+    "traditional": "有時候"
   },
   {
     "id": "445",
@@ -3594,7 +4038,8 @@
     "pinyin": "yǒu xiē",
     "translations": [
       "beberapa"
-    ]
+    ],
+    "traditional": "有些"
   },
   {
     "id": "446",
@@ -3602,7 +4047,8 @@
     "pinyin": "yǒu yòng",
     "translations": [
       "berguna"
-    ]
+    ],
+    "traditional": "有用"
   },
   {
     "id": "447",
@@ -3610,7 +4056,8 @@
     "pinyin": "yòu",
     "translations": [
       "Kanan"
-    ]
+    ],
+    "traditional": "右"
   },
   {
     "id": "448",
@@ -3618,7 +4065,8 @@
     "pinyin": "yòu bian",
     "translations": [
       "sisi kanan"
-    ]
+    ],
+    "traditional": "右邊"
   },
   {
     "id": "449",
@@ -3626,7 +4074,8 @@
     "pinyin": "yǔ",
     "translations": [
       "hujan"
-    ]
+    ],
+    "traditional": "雨"
   },
   {
     "id": "450",
@@ -3634,7 +4083,8 @@
     "pinyin": "yuán",
     "translations": [
       "China Yuan"
-    ]
+    ],
+    "traditional": "元"
   },
   {
     "id": "451",
@@ -3642,7 +4092,8 @@
     "pinyin": "yuǎn",
     "translations": [
       "jauh"
-    ]
+    ],
+    "traditional": "遠"
   },
   {
     "id": "452",
@@ -3651,7 +4102,8 @@
     "translations": [
       "bulan",
       "bulan"
-    ]
+    ],
+    "traditional": "月"
   },
   {
     "id": "453",
@@ -3659,7 +4111,8 @@
     "pinyin": "zài",
     "translations": [
       "lagi"
-    ]
+    ],
+    "traditional": "再"
   },
   {
     "id": "454",
@@ -3667,7 +4120,8 @@
     "pinyin": "zài jiàn",
     "translations": [
       "selamat tinggal"
-    ]
+    ],
+    "traditional": "再見"
   },
   {
     "id": "455",
@@ -3675,7 +4129,8 @@
     "pinyin": "zài",
     "translations": [
       "di dalam"
-    ]
+    ],
+    "traditional": "在"
   },
   {
     "id": "456",
@@ -3683,7 +4138,8 @@
     "pinyin": "zài jiā",
     "translations": [
       "di rumah"
-    ]
+    ],
+    "traditional": "在家"
   },
   {
     "id": "457",
@@ -3691,7 +4147,8 @@
     "pinyin": "zǎo",
     "translations": [
       "lebih awal"
-    ]
+    ],
+    "traditional": "早"
   },
   {
     "id": "458",
@@ -3699,7 +4156,8 @@
     "pinyin": "zǎo fàn",
     "translations": [
       "sarapan"
-    ]
+    ],
+    "traditional": "早飯"
   },
   {
     "id": "459",
@@ -3707,7 +4165,8 @@
     "pinyin": "zǎo shang",
     "translations": [
       "Pagi"
-    ]
+    ],
+    "traditional": "早上"
   },
   {
     "id": "460",
@@ -3715,7 +4174,8 @@
     "pinyin": "zěn me",
     "translations": [
       "Bagaimana"
-    ]
+    ],
+    "traditional": "怎麼"
   },
   {
     "id": "461",
@@ -3723,7 +4183,8 @@
     "pinyin": "zhàn",
     "translations": [
       "stasiun"
-    ]
+    ],
+    "traditional": "站"
   },
   {
     "id": "462",
@@ -3731,7 +4192,8 @@
     "pinyin": "zhǎo",
     "translations": [
       "mencari"
-    ]
+    ],
+    "traditional": "找"
   },
   {
     "id": "463",
@@ -3739,7 +4201,8 @@
     "pinyin": "zhǎo dào",
     "translations": [
       "menemukan"
-    ]
+    ],
+    "traditional": "找到"
   },
   {
     "id": "464",
@@ -3747,7 +4210,8 @@
     "pinyin": "zhè",
     "translations": [
       "ini"
-    ]
+    ],
+    "traditional": "這"
   },
   {
     "id": "465",
@@ -3755,7 +4219,8 @@
     "pinyin": "zhè biān",
     "translations": [
       "Di Sini"
-    ]
+    ],
+    "traditional": "這邊"
   },
   {
     "id": "466",
@@ -3763,7 +4228,8 @@
     "pinyin": "zhè lǐ",
     "translations": [
       "Di Sini"
-    ]
+    ],
+    "traditional": "這裡"
   },
   {
     "id": "467",
@@ -3771,7 +4237,8 @@
     "pinyin": "zhèr",
     "translations": [
       "Di Sini"
-    ]
+    ],
+    "traditional": "這兒"
   },
   {
     "id": "468",
@@ -3779,7 +4246,8 @@
     "pinyin": "zhè xiē",
     "translations": [
       "ini"
-    ]
+    ],
+    "traditional": "這些"
   },
   {
     "id": "469",
@@ -3787,7 +4255,8 @@
     "pinyin": "zhe",
     "translations": [
       "dengan"
-    ]
+    ],
+    "traditional": "著"
   },
   {
     "id": "470",
@@ -3796,7 +4265,8 @@
     "translations": [
       "BENAR",
       "sangat"
-    ]
+    ],
+    "traditional": "真"
   },
   {
     "id": "471",
@@ -3804,7 +4274,8 @@
     "pinyin": "zhēn de",
     "translations": [
       "Sungguh"
-    ]
+    ],
+    "traditional": "真的"
   },
   {
     "id": "472",
@@ -3812,7 +4283,8 @@
     "pinyin": "zhèng",
     "translations": [
       "makhluk"
-    ]
+    ],
+    "traditional": "正"
   },
   {
     "id": "473",
@@ -3820,7 +4292,8 @@
     "pinyin": "zhèng zài",
     "translations": [
       "makhluk"
-    ]
+    ],
+    "traditional": "正在"
   },
   {
     "id": "474",
@@ -3828,7 +4301,8 @@
     "pinyin": "zhī dào",
     "translations": [
       "tahu"
-    ]
+    ],
+    "traditional": "知道"
   },
   {
     "id": "475",
@@ -3836,7 +4310,8 @@
     "pinyin": "zhī shi",
     "translations": [
       "pengetahuan"
-    ]
+    ],
+    "traditional": "知識"
   },
   {
     "id": "476",
@@ -3844,7 +4319,8 @@
     "pinyin": "zhōng",
     "translations": [
       "tengah"
-    ]
+    ],
+    "traditional": "中"
   },
   {
     "id": "477",
@@ -3852,7 +4328,8 @@
     "pinyin": "Zhōng guó",
     "translations": [
       "Cina"
-    ]
+    ],
+    "traditional": "中國"
   },
   {
     "id": "478",
@@ -3860,7 +4337,8 @@
     "pinyin": "zhōng jiān",
     "translations": [
       "tengah"
-    ]
+    ],
+    "traditional": "中間"
   },
   {
     "id": "479",
@@ -3868,7 +4346,8 @@
     "pinyin": "Zhōng wén",
     "translations": [
       "Cina"
-    ]
+    ],
+    "traditional": "中文"
   },
   {
     "id": "480",
@@ -3876,7 +4355,8 @@
     "pinyin": "zhōng wǔ",
     "translations": [
       "siang"
-    ]
+    ],
+    "traditional": "中午"
   },
   {
     "id": "481",
@@ -3884,7 +4364,8 @@
     "pinyin": "zhōng xué",
     "translations": [
       "sekolah Menengah"
-    ]
+    ],
+    "traditional": "中學"
   },
   {
     "id": "482",
@@ -3892,7 +4373,8 @@
     "pinyin": "zhōng xué shēng",
     "translations": [
       "Siswa Sekolah Menengah"
-    ]
+    ],
+    "traditional": "中學生"
   },
   {
     "id": "483",
@@ -3900,7 +4382,8 @@
     "pinyin": "zhòng",
     "translations": [
       "berat"
-    ]
+    ],
+    "traditional": "重"
   },
   {
     "id": "484",
@@ -3908,7 +4391,8 @@
     "pinyin": "zhòng yào",
     "translations": [
       "penting"
-    ]
+    ],
+    "traditional": "重要"
   },
   {
     "id": "485",
@@ -3916,7 +4400,8 @@
     "pinyin": "zhù",
     "translations": [
       "hidup"
-    ]
+    ],
+    "traditional": "住"
   },
   {
     "id": "486",
@@ -3925,7 +4410,8 @@
     "translations": [
       "mempersiapkan",
       "rencana"
-    ]
+    ],
+    "traditional": "準備"
   },
   {
     "id": "487",
@@ -3933,7 +4419,8 @@
     "pinyin": "zhuō zi",
     "translations": [
       "meja"
-    ]
+    ],
+    "traditional": "桌子"
   },
   {
     "id": "488",
@@ -3941,7 +4428,8 @@
     "pinyin": "zì",
     "translations": [
       "kata"
-    ]
+    ],
+    "traditional": "字"
   },
   {
     "id": "489",
@@ -3949,7 +4437,8 @@
     "pinyin": "zi",
     "translations": [
       "(Sufiks kata benda)"
-    ]
+    ],
+    "traditional": "子"
   },
   {
     "id": "490",
@@ -3958,7 +4447,8 @@
     "translations": [
       "berjalan",
       "pergi"
-    ]
+    ],
+    "traditional": "走"
   },
   {
     "id": "491",
@@ -3966,7 +4456,8 @@
     "pinyin": "zǒu lù",
     "translations": [
       "berjalan"
-    ]
+    ],
+    "traditional": "走路"
   },
   {
     "id": "492",
@@ -3974,7 +4465,8 @@
     "pinyin": "zuì",
     "translations": [
       "paling"
-    ]
+    ],
+    "traditional": "最"
   },
   {
     "id": "493",
@@ -3982,7 +4474,8 @@
     "pinyin": "zuì hǎo",
     "translations": [
       "terbaik"
-    ]
+    ],
+    "traditional": "最好"
   },
   {
     "id": "494",
@@ -3990,7 +4483,8 @@
     "pinyin": "zuì hòu",
     "translations": [
       "akhirnya"
-    ]
+    ],
+    "traditional": "最後"
   },
   {
     "id": "495",
@@ -3998,7 +4492,8 @@
     "pinyin": "zuó tiān",
     "translations": [
       "Kemarin"
-    ]
+    ],
+    "traditional": "昨天"
   },
   {
     "id": "496",
@@ -4006,7 +4501,8 @@
     "pinyin": "zuǒ",
     "translations": [
       "kiri"
-    ]
+    ],
+    "traditional": "左"
   },
   {
     "id": "497",
@@ -4014,7 +4510,8 @@
     "pinyin": "zuǒ biān",
     "translations": [
       "sisi kiri"
-    ]
+    ],
+    "traditional": "左邊"
   },
   {
     "id": "498",
@@ -4022,7 +4519,8 @@
     "pinyin": "zuò",
     "translations": [
       "duduk"
-    ]
+    ],
+    "traditional": "坐"
   },
   {
     "id": "499",
@@ -4030,7 +4528,8 @@
     "pinyin": "zuò xia",
     "translations": [
       "duduk"
-    ]
+    ],
+    "traditional": "坐下"
   },
   {
     "id": "500",
@@ -4038,6 +4537,7 @@
     "pinyin": "zuò",
     "translations": [
       "Mengerjakan"
-    ]
+    ],
+    "traditional": "做"
   }
 ]

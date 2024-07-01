@@ -15,6 +15,10 @@
       "title": "Kartu Pengingat",
       "description": "Kata dan frasa yang disimpan untuk ulasan cepat."
     },
+    "search": {
+      "title": "Cari Kata",
+      "description": "Telusuri karakter, kata, dan frasa bahasa Cina."
+    },
     "suggestions": {
       "title": "Saran",
       "description": "Fitur baru, perbaikan, atau buku yang ingin Anda tambahkan ke situs."
