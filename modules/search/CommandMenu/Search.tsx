@@ -1,5 +1,6 @@
 import { LoadingBar } from "@/components";
 import { Command } from "cmdk";
+import { LucideX } from "lucide-react";
 import React from "react";
 
 function SearchIcon() {
@@ -44,7 +45,15 @@ export function CommandMenuSearch({
         value={value}
         onValueChange={onValueChange}
       />
-      {isLoading && <LoadingBar visible={isLoading} />}
+      {isLoading ? (
+        <LoadingBar visible={isLoading} />
+      ) : (
+        value.length > 0 && (
+          <button onClick={() => onValueChange("")}>
+            <LucideX className="w-4 h-4 text-[#888]" />
+          </button>
+        )
+      )}
     </div>
   );
 }
