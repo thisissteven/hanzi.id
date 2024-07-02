@@ -168,12 +168,12 @@ export function Explore() {
                   transition={{ type: "tween", duration: 0.2 }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="border-b border-b-secondary/10"
+                  className="border-b border-b-secondary/10 w-full"
                 >
                   <Link
                     href={`/read/${book.id}`}
                     scroll={false}
-                    className="inline-block text-left max-md:px-4 py-4 md:w-full md:hover:bg-hovered active:bg-hovered duration-200"
+                    className="inline-block w-full text-left max-md:px-4 py-4 md:w-full md:hover:bg-hovered active:bg-hovered duration-200"
                   >
                     <div className="flex gap-4">
                       <div className="w-4 max-md:hidden -ml-6 grid place-items-center">{index + 1}</div>

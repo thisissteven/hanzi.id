@@ -99,6 +99,7 @@ model Book {
   title       String  @default("Untitled")
   description String  @default("No description yet.")
   isUnique    Boolean @default(false)
+  isPublished Boolean @default(false)
 
   image Image?
 
