@@ -16,7 +16,7 @@ export function CommandMenuItemCard({
     <Command.Item
       value={value}
       onSelect={onSelect}
-      className="cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-sm font-light gap-3"
+      className="cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-base font-light gap-3"
     >
       <div className="flex-1">
         {/* <div className="text-primary">{displayName}</div>
@@ -39,7 +39,7 @@ export function CommandMenuItem({
     <Command.Item
       value={value}
       onSelect={onSelect}
-      className="cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-sm font-light gap-3"
+      className="cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-base font-light gap-3"
     >
       <span>{text}</span>
     </Command.Item>

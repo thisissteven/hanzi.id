@@ -108,7 +108,7 @@ export function DefinitionModal({
 
   const { isSimplified } = usePreferences();
 
-  const currentHanzi = isSimplified ? currentSection?.simplified : currentSection?.traditional;
+  const currentHanzi = isSimplified ? currentSection?.simplified : currentSection?.simplified;
 
   return (
     <Dialog className="relative z-[998]" open={Boolean(sentence)} onClose={onClose}>
@@ -200,7 +200,7 @@ export function DefinitionModal({
                             activeIndex === index && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
                           )}
                         >
-                          {isSimplified ? section.simplified : section.traditional}
+                          {isSimplified ? section.simplified : section.simplified}
                         </span>
                         {additionalPunctuation}
                       </span>
