@@ -145,7 +145,7 @@ function CommandMenuContent() {
 
   return (
     <>
-      <Command filter={() => 1} label={t.searchPlaceholder} className="relative bg-softblack h-[60vh] min-h-[400px]">
+      <Command filter={() => 1} label={t.searchPlaceholder} className="relative bg-softblack h-[75vh] min-h-[400px]">
         <CommandMenuHeader scrolled={scrolled}>
           <CommandMenuSearch
             isLoading={isLoading}
