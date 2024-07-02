@@ -7,7 +7,7 @@ import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 
 import { cn } from "@/utils";
 import { useReading } from "@/modules/layout";
-import { Divider, LoadingBar } from "@/components";
+import { Divider, LoadingBar, usePreferences } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import { SaveToFlashcard } from "./save-to-flashcard";
 import { toast } from "sonner";
@@ -106,6 +106,10 @@ export function DefinitionModal({
 
   const { width } = useWindowSize();
 
+  const { isSimplified } = usePreferences();
+
+  const currentHanzi = isSimplified ? currentSection?.simplified : currentSection?.traditional;
+
   return (
     <Dialog className="relative z-[998]" open={Boolean(sentence)} onClose={onClose}>
       <DialogBackdrop
@@ -196,7 +200,7 @@ export function DefinitionModal({
                             activeIndex === index && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
                           )}
                         >
-                          {section.simplified}
+                          {isSimplified ? section.simplified : section.traditional}
                         </span>
                         {additionalPunctuation}
                       </span>
@@ -218,21 +222,21 @@ export function DefinitionModal({
                     <div className="flex justify-between">
                       {isIdiom ? (
                         <div>
-                          <p className="mt-1 text-3xl md:text-4xl font-medium">{currentSection?.simplified}</p>
+                          <p className="mt-1 text-3xl md:text-4xl font-medium">{currentHanzi}</p>
                           <div className="flex items-end gap-2">
                             <p className="font-medium">{currentEntry?.pinyin}</p>
                           </div>
                         </div>
                       ) : (
                         <div className="mt-1 flex items-end gap-2">
-                          <p className="text-3xl md:text-4xl font-medium">{currentSection?.simplified}</p>
+                          <p className="text-3xl md:text-4xl font-medium">{currentHanzi}</p>
                           <div>
                             <p className="font-medium">{currentEntry?.pinyin}</p>
                           </div>
                         </div>
                       )}
 
-                      <SaveToFlashcard key={currentSection?.simplified} word={currentSection?.simplified} />
+                      <SaveToFlashcard key={currentHanzi} word={currentHanzi} />
                     </div>
 
                     {currentEntries.length > 1 && (

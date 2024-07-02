@@ -4,6 +4,7 @@ import { cn } from "@/utils";
 import { AddOrRemoveFromFlashcard } from "../speech";
 import { FlashcardedResult } from "@/pages/api/flashcard/en";
 import { useRouter } from "next/router";
+import { usePreferences } from "@/components";
 
 export function CardDetailsModal({
   chapterName,
@@ -39,7 +40,11 @@ export function CardDetailsModal({
     return () => clearTimeout(timeout);
   }, [details]);
 
-  const hanzi = details?.simplified ?? latestDetails.current?.simplified;
+  const { isSimplified } = usePreferences();
+
+  const hanzi = isSimplified
+    ? details?.simplified ?? latestDetails.current?.simplified
+    : details?.traditional ?? latestDetails.current?.traditional;
   const isIdiom = hanzi && hanzi.length >= 4;
 
   const entries = details?.entries ?? latestDetails.current?.entries ?? [];

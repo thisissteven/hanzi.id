@@ -66,5 +66,12 @@
     "Progres belajar Anda akan disimpan secara lokal! 🎉",
     "Ayo mulai!"
   ],
-  "continue": "Mulai"
+  "continue": "Mulai",
+  "exportSuccessful": "Ekspor berhasil!",
+  "searchPlaceholder": "Cari karakter, kata, atau frasa...",
+  "commandMenuChips": ["Terjemahan", "Definisi Kata"],
+  "recentlySearched": "Terakhir dicari",
+  "openCommandMenu": "Buka pencarian kata",
+  "seeDetails": "Lihat definisi",
+  "searchErrorToast": "Harap hanya masukkan karakter Cina."
 }

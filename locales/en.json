@@ -21,7 +21,7 @@
     },
     "suggestions": {
       "title": "Suggestions",
-      "description": "A new feature, improvements, or books you would like to be added to the site."
+      "description": "New features, improvements, or books you would like to be added to the site."
     }
   },
   "startReading": "Start Reading",
@@ -66,5 +66,12 @@
     "Your learning progress will be saved locally! 🎉",
     "Let's get started!"
   ],
-  "continue": "Continue"
+  "continue": "Continue",
+  "exportSuccessful": "Export successful!",
+  "searchPlaceholder": "Search for characters, words, or phrases...",
+  "commandMenuChips": ["Translation", "Word Definition"],
+  "recentlySearched": "Recently searched",
+  "openCommandMenu": "Open search command",
+  "seeDetails": "See details",
+  "searchErrorToast": "Please only enter Chinese characters."
 }

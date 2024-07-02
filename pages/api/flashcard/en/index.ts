@@ -10,6 +10,7 @@ export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs"
 
 export interface FlashcardedResult {
   simplified: string;
+  traditional: string;
   entries?: Array<{
     pinyin: string;
     english: string[];
@@ -42,6 +43,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Flashc
 
       return {
         simplified: i.simplified,
+        traditional: i.traditional,
         entries,
       };
     })[0];

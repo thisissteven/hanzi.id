@@ -6,8 +6,12 @@ const filePathEn = path.join(process.cwd(), "utils", "tokenizer", "en", "cedict_
 const tokenizeEn = loadFile(filePathEn);
 
 function segment(text) {
-  const segmented = tokenizeEn(text);
-  return segmented;
+  try {
+    const segmented = tokenizeEn(text);
+    return segmented;
+  } catch {
+    return [];
+  }
 }
 
 module.exports = { segment };

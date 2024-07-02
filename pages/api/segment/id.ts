@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { segment } from "@/utils/tokenizer";
+import { segmentId } from "@/utils/tokenizer/segment-id";
 
 export const config = {
   maxDuration: 15,
@@ -13,6 +13,7 @@ export type SegmentApiResponse = {
 export interface SegmentedResult {
   index: number;
   simplified: string;
+  traditional: string;
   entries?: Array<{
     pinyin: string;
     english: string[];
@@ -37,13 +38,12 @@ const punctuations = /([\u4e00-\u9fa5]+|\d+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<SegmentApiResponse>) {
   const text = req.query.text as string;
-  const locale = req.query.locale as string;
 
   const splitted = text.match(punctuations) ?? [];
 
   const segmented = splitted.map((t) => {
     if (t.match(/[\u4e00-\u9fa5]/)) {
-      return segment(t);
+      return segmentId(t);
     }
 
     return [{ simplified: t }];
@@ -60,6 +60,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Segmen
         return {
           index: currentIndex,
           simplified: i.simplified,
+          traditional: i.traditional,
           isPunctuation: true,
         };
 
@@ -72,6 +73,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Segmen
       return {
         index: currentIndex,
         simplified: i.simplified,
+        traditional: i.traditional,
         entries,
         isPunctuation: false,
       };

@@ -4,12 +4,15 @@ import { BookAIcon, CompassIcon, FilePlus2Icon, GraduationCapIcon, LibraryBigIco
 import { ChangeLocaleButton, ChangeSimplifiedTraditional, Divider, usePreferences } from "@/components";
 import { AuthButton } from "./auth-button";
 import { useLocale } from "@/locales/use-locale";
+import { useRouter } from "next/router";
 
 const isAdmin = process.env.NEXT_PUBLIC_IS_ADMIN;
 
 export function HomeTodo() {
   const { t } = useLocale();
   const { isSimplified } = usePreferences();
+
+  const router = useRouter();
 
   return (
     <React.Fragment>
@@ -75,7 +78,10 @@ export function HomeTodo() {
         />
 
         <Button
-          path="?search="
+          path="?search=true"
+          // onClick={() => {
+          //   router.push(router.asPath + "?search=true", undefined, { shallow: true });
+          // }}
           className="hover:bg-teal-500/10"
           icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-teal-500" />}
           title={t.home.search.title}

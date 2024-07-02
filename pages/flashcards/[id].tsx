@@ -1,6 +1,6 @@
 import React from "react";
 import { Flashcard, Layout, useFlashcard } from "@/modules/layout";
-import { BackRouteButton, LoadMore } from "@/components";
+import { BackRouteButton, LoadMore, usePreferences } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRightIcon, LucideDownload } from "lucide-react";
 import { useRouter } from "next/router";
@@ -91,6 +91,8 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   const router = useRouter();
 
+  const { isSimplified } = usePreferences();
+
   return (
     <>
       <FlashcardProvider>
@@ -123,7 +125,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
                 >
                   <div className="relative group transition select-none text-3xl w-full">
                     <div className="pl-3 pr-4 pt-8 pb-3 flex gap-2 items-center">
-                      <div className="shrink-0 font-medium">{flashcard.words[index]}</div>
+                      <div className="shrink-0 font-medium">{isSimplified ? card?.simplified : card?.traditional}</div>
 
                       <div className="overflow-x-hidden flex-1">
                         <div className="text-sm font-medium text-smokewhite">{pinyin ?? t.loading}</div>
@@ -169,7 +171,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
               transition={{ type: "tween", duration: 0.2 }}
               className="sticky bottom-4 mt-8 max-md:mx-4 flex justify-end"
             >
-              Export successful!
+              {t.exportSuccessful}
             </motion.div>
           ) : (
             <motion.div

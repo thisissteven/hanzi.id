@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 
 import { ThemeProvider } from "next-themes";
 import { SWRConfig } from "swr";
-import type { AppContext, AppProps } from "next/app";
+import type { AppProps } from "next/app";
 
 import { PreferencesProvider, Seo } from "@/components";
 import { apiClient } from "@/utils";
@@ -15,6 +15,7 @@ import { AuthProvider } from "@/modules/auth";
 import { Toaster } from "sonner";
 
 import { Analytics } from "@vercel/analytics/react";
+import { SearchCommandMenu } from "@/modules/search";
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -41,7 +42,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
       <Toaster position="top-center" />
 
-      <Analytics />
+      {process.env.NODE_ENV === "production" && <Analytics />}
 
       <SWRConfig
         value={{
@@ -53,6 +54,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       >
         <SessionProvider session={pageProps.session}>
           <PreferencesProvider>
+            <SearchCommandMenu />
             <AuthProvider>
               <ConfettiProvider>
                 <AnimatePresence mode="wait">

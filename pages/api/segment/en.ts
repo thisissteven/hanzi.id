@@ -1,15 +1,13 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { translateToId } from "@/utils/translate";
-import { segmentId } from "@/utils/tokenizer/segment-id";
+import { segment } from "@/utils/tokenizer";
 
 export const config = {
   maxDuration: 15,
 };
 
-export type TranslateApiResponse = {
+export type SegmentApiResponse = {
   result: Array<SegmentedResult[]>;
-  translated: string;
 };
 
 export interface SegmentedResult {
@@ -38,18 +36,14 @@ type TokenizerResult = Array<{
 // const punctuations = /([\u4e00-\u9fa5]+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
 const punctuations = /([\u4e00-\u9fa5]+|\d+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
 
-export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
-
-export default async function handler(req: NextApiRequest, res: NextApiResponse<TranslateApiResponse>) {
+export default function handler(req: NextApiRequest, res: NextApiResponse<SegmentApiResponse>) {
   const text = req.query.text as string;
-
-  const translated = await translateToId(text);
 
   const splitted = text.match(punctuations) ?? [];
 
   const segmented = splitted.map((t) => {
     if (t.match(/[\u4e00-\u9fa5]/)) {
-      return segmentId(t);
+      return segment(t);
     }
 
     return [{ simplified: t }];
@@ -86,5 +80,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     });
   });
 
-  res.status(200).json({ result, translated });
+  res.status(200).json({ result });
 }
