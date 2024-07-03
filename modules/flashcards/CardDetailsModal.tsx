@@ -79,7 +79,7 @@ export function CardDetailsModal({
                           <p className="mt-1 text-3xl md:text-4xl font-medium">{hanzi}</p>
                           <div className="flex items-end gap-2 mt-1.5">
                             <p className="font-medium">{currentEntry?.pinyin}</p>
-                            <AudioButton key={hanzi} text={hanzi ?? ""} size="normal" />
+                            <AudioButton text={hanzi ?? ""} size="normal" />
                           </div>
                         </div>
                       ) : (
@@ -88,7 +88,7 @@ export function CardDetailsModal({
                           <div>
                             <p className="font-medium">{currentEntry?.pinyin}</p>
                           </div>
-                          <AudioButton key={hanzi} text={hanzi ?? ""} size="normal" />
+                          <AudioButton text={hanzi ?? ""} size="normal" />
                         </div>
                       )}
 

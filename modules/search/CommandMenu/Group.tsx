@@ -122,7 +122,6 @@ export function CommandMenuGroupCard({
                   <div className="flex items-end gap-2 mt-1.5">
                     <p className="font-medium">{currentEntry?.pinyin}</p>
                     <AudioButton
-                      key={isSimplified ? currentSection?.simplified : currentSection?.traditional}
                       text={isSimplified ? currentSection?.simplified : currentSection?.traditional ?? ""}
                       size="normal"
                     />
@@ -137,7 +136,6 @@ export function CommandMenuGroupCard({
                     <p className="font-medium">{currentEntry?.pinyin}</p>
                   </div>
                   <AudioButton
-                    key={isSimplified ? currentSection?.simplified : currentSection?.traditional}
                     text={isSimplified ? currentSection?.simplified : currentSection?.traditional ?? ""}
                     size="normal"
                   />
@@ -184,11 +182,14 @@ export function CommandMenuGroupSearch({
   heading,
   data,
   onSelect,
+  clearHistory,
 }: {
   heading?: string;
   data: string[];
   onSelect: (value: string) => void;
+  clearHistory: () => void;
 }) {
+  const { t } = useLocale();
   return (
     <>
       <style jsx global>{`
@@ -200,6 +201,14 @@ export function CommandMenuGroupSearch({
         {data.map((text, index) => {
           return <CommandMenuItem key={text + index} value={text} onSelect={onSelect} text={text} />;
         })}
+        {data.length > 5 && (
+          <CommandMenuItem
+            value="clear-history"
+            onSelect={clearHistory}
+            text={t.clearHistory}
+            className="flex justify-center w-full text-xs font-bold"
+          ></CommandMenuItem>
+        )}
       </Command.Group>
     </>
   );

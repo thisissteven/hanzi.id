@@ -1,4 +1,5 @@
 import { FlashcardedResult } from "@/pages/api/flashcard/en";
+import { cn } from "@/utils";
 import { Command } from "cmdk";
 import React from "react";
 
@@ -30,16 +31,21 @@ export function CommandMenuItem({
   text,
   value,
   onSelect,
+  className,
 }: {
   onSelect?: (value: string) => void;
   value?: string;
   text: string;
+  className?: string;
 }) {
   return (
     <Command.Item
       value={value}
       onSelect={onSelect}
-      className="cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-base font-light gap-3"
+      className={cn(
+        "cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-base font-light gap-3",
+        className
+      )}
     >
       <span>{text}</span>
     </Command.Item>

@@ -74,5 +74,6 @@
   "openCommandMenu": "Buka pencarian kata",
   "seeDetails": "Lihat definisi",
   "searchErrorToast": "Harap hanya masukkan karakter Cina.",
-  "keyword": "Pencarian Anda:"
+  "keyword": "Pencarian Anda:",
+  "clearHistory": "Hapus Riwayat Pencarian"
 }

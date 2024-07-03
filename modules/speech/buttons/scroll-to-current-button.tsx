@@ -19,7 +19,7 @@ export function ScrollToCurrentButton({
   const { width } = useWindowSize();
 
   const left =
-    width && width < 810
+    width < 810
       ? element?.getBoundingClientRect().left + element?.getBoundingClientRect().width - 48
       : element?.getBoundingClientRect().left + element?.getBoundingClientRect().width - 32;
 

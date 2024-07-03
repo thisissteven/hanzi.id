@@ -268,7 +268,7 @@ export function DefinitionModal({
                           <p className="mt-1 text-3xl md:text-4xl font-medium">{currentHanzi}</p>
                           <div className="flex items-end gap-2 mt-1.5">
                             <p className="font-medium">{currentEntry?.pinyin}</p>
-                            <AudioButton key={currentHanzi} text={currentHanzi ?? ""} size="normal" />
+                            <AudioButton text={currentHanzi ?? ""} size="normal" />
                           </div>
                         </div>
                       ) : (
@@ -277,7 +277,7 @@ export function DefinitionModal({
                           <div>
                             <p className="font-medium">{currentEntry?.pinyin}</p>
                           </div>
-                          <AudioButton key={currentHanzi} text={currentHanzi ?? ""} size="normal" />
+                          <AudioButton text={currentHanzi ?? ""} size="normal" />
                         </div>
                       )}
 

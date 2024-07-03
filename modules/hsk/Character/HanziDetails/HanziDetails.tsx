@@ -63,14 +63,14 @@ export function HanziDetails({
             <p className="px-4 text-6xl font-medium">{hanzi}</p>
             <div className="flex items-end gap-2 px-4">
               <p className="font-medium">{currentEntry.pinyin}</p>
-              <AudioButton key={audioUrl} text={hanzi} />
+              <AudioButton text={hanzi} />
             </div>
           </>
         ) : (
           <div className="flex items-end gap-2 px-4">
             <p className="text-6xl font-medium">{hanzi}</p>
             <div>
-              <AudioButton key={audioUrl} text={hanzi} />
+              <AudioButton text={hanzi} />
               <p className="font-medium">{currentEntry.pinyin}</p>
             </div>
           </div>

@@ -88,16 +88,22 @@ function useRecentlySearched() {
     localStorage.setItem("recentlySearched", JSON.stringify(updated));
   };
 
-  return { recentlySearched, updateRecentlySearched };
+  const clearRecentlySearched = () => {
+    setRecentlySearched([]);
+    localStorage.removeItem("recentlySearched");
+  };
+
+  return { recentlySearched, updateRecentlySearched, clearRecentlySearched };
 }
 
-const regex = /^[\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF0-9，。！？、；：“”‘’（）《》【】]+$/;
+const regex =
+  /^[\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF0-9，。！？、；：“”‘’（）《》【】!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]+$/;
 
 function CommandMenuContent() {
   const listRef = React.useRef<HTMLDivElement>(null);
   const [scrolled, setScrolled] = React.useState(false);
 
-  const { recentlySearched, updateRecentlySearched } = useRecentlySearched();
+  const { recentlySearched, updateRecentlySearched, clearRecentlySearched } = useRecentlySearched();
 
   const [value, setValue] = React.useState("");
   const [active, setActive] = React.useState([0, 1]);
@@ -177,7 +183,12 @@ function CommandMenuContent() {
           className="overflow-y-auto h-[calc(100%-82px)] scrollbar-none p-2 scroll-pb-[86px] scroll-pt-[62px] pb-[calc(28px+0.5rem)]"
         >
           {recentlySearched && isSearchEmpty && (
-            <CommandMenuGroupSearch onSelect={setValue} heading={t.recentlySearched} data={recentlySearched} />
+            <CommandMenuGroupSearch
+              clearHistory={clearRecentlySearched}
+              onSelect={setValue}
+              heading={t.recentlySearched}
+              data={recentlySearched}
+            />
           )}
 
           <AudioProvider>
