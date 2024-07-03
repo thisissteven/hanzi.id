@@ -66,7 +66,7 @@ export function useFlashcardList() {
   React.useEffect(() => {
     const savedFlashcard = localStorage.getItem("flashcard-data");
     if (savedFlashcard) {
-      setFlashcard(JSON.parse(savedFlashcard));
+      setFlashcard(JSON.parse(savedFlashcard).filter((f: Flashcard) => f.words.length > 0));
     }
   }, []);
 

@@ -52,7 +52,7 @@ const chunkArray = (array: string[], size: number) => {
   return chunkedArray;
 };
 
-const CHUNK_SIZE = 30;
+const CHUNK_SIZE = 50;
 
 function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
   const [bookName, chapterName] = flashcard.chapter.split("-");
