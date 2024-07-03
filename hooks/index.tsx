@@ -6,3 +6,4 @@ export * from "./useDragToScroll";
 export * from "./useIsMobile";
 export * from "./useThrottledClickHandler";
 export * from "./useDelayedInfiniteSWR";
+export * from "./useSmoothScrollToIndex";

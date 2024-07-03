@@ -14,6 +14,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { useLastRead } from "@/modules/home/explore";
 import { useLocale } from "@/locales/use-locale";
+import { useSmoothScroll } from "@/hooks";
 
 export default function Read() {
   const router = useRouter();
@@ -32,14 +33,20 @@ export default function Read() {
     overscan: 0,
   });
 
+  const smoothScrollToIndex = useSmoothScroll(virtualizer);
+
   const toLastRead = React.useCallback(
     (index: number) => {
       toSentence(index);
-      virtualizer.scrollToIndex(index, {
-        behavior: "smooth",
+      smoothScrollToIndex(index - 1, {
+        align: "start",
+        duration: 1000,
       });
+      // virtualizer.scrollToIndex(index, {
+      //   behavior: "smooth",
+      // });
     },
-    [toSentence, virtualizer]
+    [smoothScrollToIndex, toSentence]
   );
 
   const { updateLastRead } = useLastRead({
@@ -65,18 +72,26 @@ export default function Read() {
     }
   }, [bookId, chapterId, currentSentenceIdx, sentenceIndex, updateLastRead]);
 
+  const lastReadSentenceIndex = React.useRef(0);
+  React.useEffect(() => {
+    if (!sentenceIndex) {
+      toSentence(lastReadSentenceIndex.current);
+      smoothScrollToIndex(lastReadSentenceIndex.current - 1, {
+        align: "start",
+        duration: 1000,
+      });
+    } else {
+      lastReadSentenceIndex.current = parseInt(sentenceIndex);
+    }
+  }, [sentenceIndex, smoothScrollToIndex, toSentence]);
+
   const { t } = useLocale();
 
   return (
     <Layout>
       <div className="min-h-dvh bg-black">
         <DefinitionModal
-          onClose={() => {
-            router.back();
-            setTimeout(() => {
-              toSentence(parseInt(sentenceIndex));
-            }, 300);
-          }}
+          onClose={() => router.back()}
           getDefinitionUrl={(locale) =>
             `https://content.hanzi.id/books/${bookId}/${chapterId}/${locale}/${sentenceIndex}.json`
           }
