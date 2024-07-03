@@ -6,11 +6,11 @@ import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { toast } from "sonner";
 import useSWRImmutable from "swr/immutable";
 
 export type LastRead = {
   bookId: string;
+  chapterId: string;
   chapters: Array<{
     chapterId: string;
     lastSentenceIndex: string;
@@ -80,6 +80,7 @@ export function useLastRead({
         const newLastRead = [
           {
             bookId: args.bookId,
+            chapterId: args.chapterId,
             chapters: newChapters,
           },
           ...lastRead.filter((book) => book.bookId !== args.bookId),
@@ -90,6 +91,7 @@ export function useLastRead({
         const newLastRead = [
           {
             bookId: args.bookId,
+            chapterId: args.chapterId,
             chapters: newChapters,
           },
           ...lastRead.filter((book) => book.bookId !== args.bookId),
@@ -104,6 +106,7 @@ export function useLastRead({
       const newLastRead = [
         {
           bookId: args.bookId,
+          chapterId: args.chapterId,
           chapters: [newLastReadItem],
         },
         ...lastRead,
@@ -113,6 +116,20 @@ export function useLastRead({
   }, []);
 
   return { updateLastRead };
+}
+
+export function useLastReadChapterId(bookId: string) {
+  const lastReadChapterId = React.useMemo(() => {
+    if (typeof window !== "undefined") {
+      const lastRead = JSON.parse(localStorage.getItem("lastReadData") ?? "[]") as LastRead[];
+      const lastReadItem = lastRead.find((read) => read.bookId === bookId);
+      return lastReadItem?.chapterId;
+    } else {
+      return "";
+    }
+  }, [bookId]);
+
+  return lastReadChapterId;
 }
 
 function useBooks() {

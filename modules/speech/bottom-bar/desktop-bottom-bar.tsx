@@ -115,7 +115,6 @@ export function DesktopBottomBar({
             disabled={currentSentenceIdx === sentences.length - 1}
             onClick={() => toSentence(currentSentenceIdx + 1)}
           />
-          {/* <SelectSpeed onChange={(speed) => {}} /> */}
         </div>
 
         <button

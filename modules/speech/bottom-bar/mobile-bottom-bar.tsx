@@ -56,6 +56,8 @@ export function MobileBottomBar({
     }
   );
 
+  const width = (currentSentenceIdx / (sentences.length - 1)) * 100;
+
   return (
     <div className="fixed bottom-2 px-2 w-full">
       <div className="bg-subtle/50 backdrop-blur-md h-16 rounded-lg w-full p-2 pb-2.5 duration-200 overflow-hidden">
@@ -86,7 +88,7 @@ export function MobileBottomBar({
           <div className="h-[1.5px] rounded-full bg-white/20 w-[calc(100%+1rem)]"></div>
           <div
             style={{
-              width: `${(currentSentenceIdx / (sentences.length - 1)) * 100}%`,
+              width: width === 100 ? `calc(${width}% + 1rem)` : `${width}%`,
             }}
             className="absolute left-0 top-0 h-[1.5px] rounded-full bg-white duration-200"
           ></div>

@@ -10,9 +10,10 @@ import { useRouter as useNavigationRouter } from "next/navigation";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 import { LucideBookOpen } from "lucide-react";
 import { useScrollToTop } from "@/modules/new";
-import { LastRead } from "@/modules/home/explore";
+import { LastRead, useLastReadChapterId } from "@/modules/home/explore";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useLocale } from "@/locales/use-locale";
+import { useSmoothScroll } from "@/hooks";
 
 export function useBookDetails(bookId: string) {
   const swrData = useSWRImmutable<GetBookByIdResponse>(`https://content.hanzi.id/books/${bookId}/metadata.json`);
@@ -33,6 +34,9 @@ function BookDetails() {
   const description = book?.description;
   const chapters = book?.chapters || [];
 
+  const lastReadChapter = useLastReadChapterId(id);
+  const lastReadIndex = chapters.findIndex((chapter) => chapter.id === lastReadChapter);
+
   const [lastRead, setLastRead] = React.useState<LastRead[]>([]);
 
   React.useEffect(() => {
@@ -51,6 +55,19 @@ function BookDetails() {
   });
 
   const { t } = useLocale();
+
+  const smoothScrollToIndex = useSmoothScroll(virtualizer);
+
+  React.useEffect(() => {
+    if (lastReadChapter && lastReadIndex > -1) {
+      smoothScrollToIndex(lastReadIndex + 1, {
+        align: "start",
+        duration: 1000,
+      });
+    }
+  }, [lastReadIndex, lastReadChapter, smoothScrollToIndex]);
+
+  const [isInteracted, setIsInteracted] = React.useState(false);
 
   return (
     <div className="mt-8 pb-8 max-md:px-4">
@@ -83,7 +100,14 @@ function BookDetails() {
 
           <h2 className="text-xl md:text-2xl font-semibold">{t.chapters}</h2>
 
-          <ul>
+          <ul
+            onMouseMove={() => {
+              setIsInteracted(true);
+            }}
+            onTouchStart={() => {
+              setIsInteracted(true);
+            }}
+          >
             <VirtualizedList virtualizer={virtualizer}>
               {(items, virtualizer) => {
                 if (!chapters) return null;
@@ -108,7 +132,25 @@ function BookDetails() {
 
                   return (
                     <VirtualizedList.Item key={item.key} virtualizer={virtualizer} item={item}>
-                      <li key={index} className="py-5 sm:py-8 border-b border-b-secondary/10">
+                      <li
+                        key={index}
+                        onTouchStart={(e) => {
+                          if (lastReadIndex === item.index || (lastReadIndex === -1 && item.index === 0)) {
+                            e.stopPropagation();
+                          }
+                        }}
+                        onMouseMove={(e) => {
+                          if (lastReadIndex === item.index || (lastReadIndex === -1 && item.index === 0)) {
+                            e.stopPropagation();
+                          }
+                        }}
+                        className={cn(
+                          "py-5 sm:py-8 border-b border-b-secondary/10 duration-300",
+                          lastReadIndex === item.index || (lastReadIndex === -1 && item.index === 0) || isInteracted
+                            ? "opacity-100"
+                            : "opacity-50"
+                        )}
+                      >
                         <h2 className="text-xl font-medium">
                           {index + 1}: {chapter.title}
                         </h2>
