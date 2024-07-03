@@ -119,8 +119,13 @@ export function CommandMenuGroupCard({
                   <p className="mt-1 text-3xl md:text-4xl font-medium">
                     {isSimplified ? currentSection?.simplified : currentSection?.traditional}
                   </p>
-                  <div className="flex items-end gap-2">
+                  <div className="flex items-end gap-2 mt-1.5">
                     <p className="font-medium">{currentEntry?.pinyin}</p>
+                    <AudioButton
+                      key={isSimplified ? currentSection?.simplified : currentSection?.traditional}
+                      text={isSimplified ? currentSection?.simplified : currentSection?.traditional ?? ""}
+                      size="normal"
+                    />
                   </div>
                 </div>
               ) : (
@@ -131,6 +136,11 @@ export function CommandMenuGroupCard({
                   <div>
                     <p className="font-medium">{currentEntry?.pinyin}</p>
                   </div>
+                  <AudioButton
+                    key={isSimplified ? currentSection?.simplified : currentSection?.traditional}
+                    text={isSimplified ? currentSection?.simplified : currentSection?.traditional ?? ""}
+                    size="normal"
+                  />
                 </div>
               )}
             </div>
