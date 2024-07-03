@@ -40,6 +40,7 @@ export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
 
     utterance.lang = isMobile ? "zh_CN" : "zh-CN";
     utterance.rate = speed;
+    utterance.pitch = 2;
 
     utterance.onstart = () =>
       setIsSpeaking({

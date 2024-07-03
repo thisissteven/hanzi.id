@@ -1,5 +1,5 @@
 import React from "react";
-import { Flashcard, Layout, useFlashcard } from "@/modules/layout";
+import { AudioProvider, Flashcard, Layout, useFlashcard } from "@/modules/layout";
 import { BackRouteButton, LoadMore, usePreferences } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRightIcon, LucideDownload } from "lucide-react";
@@ -95,16 +95,18 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   return (
     <>
-      <FlashcardProvider>
-        <CardDetailsModal
-          chapterName={`${bookName}-${chapterName}`}
-          details={details}
-          onClose={() => {
-            setDetails(undefined);
-            router.back();
-          }}
-        />
-      </FlashcardProvider>
+      <AudioProvider>
+        <FlashcardProvider>
+          <CardDetailsModal
+            chapterName={`${bookName}-${chapterName}`}
+            details={details}
+            onClose={() => {
+              setDetails(undefined);
+              router.back();
+            }}
+          />
+        </FlashcardProvider>
+      </AudioProvider>
       <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
       <p className="mx-4 mt-2 text-secondary text-sm">{bookName}</p>
 

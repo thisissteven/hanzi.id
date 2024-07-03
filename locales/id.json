@@ -73,5 +73,6 @@
   "recentlySearched": "Terakhir dicari",
   "openCommandMenu": "Buka pencarian kata",
   "seeDetails": "Lihat definisi",
-  "searchErrorToast": "Harap hanya masukkan karakter Cina."
+  "searchErrorToast": "Harap hanya masukkan karakter Cina.",
+  "keyword": "Pencarian Anda:"
 }

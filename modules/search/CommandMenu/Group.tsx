@@ -49,7 +49,7 @@ export function CommandMenuGroupCard({
   return (
     <div>
       <div className="px-3 sm:px-4">
-        <span className="text-sm text-secondary">{t.sentence}:</span>
+        <span className="text-sm text-secondary">{t.keyword}</span>
         <p className="text-xl md:text-2xl tracking-wider mt-1 leading-[30px]">
           {sections.map((section, index) => {
             const isLastIndex = sections.length - 1 === index;
@@ -136,7 +136,7 @@ export function CommandMenuGroupCard({
             </div>
 
             {currentEntries.length > 1 && (
-              <div className="space-x-2 mt-2">
+              <div className="flex flex-wrap gap-2 mt-2">
                 {currentEntries.map((_, index) => {
                   return (
                     <button

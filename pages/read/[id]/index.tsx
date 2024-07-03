@@ -104,6 +104,8 @@ function BookDetails() {
 
                   const continueReading = readingProgress > 1 && parseInt(lastSentenceIndex) > 0;
 
+                  const readingProgressFixed = readingProgress.toFixed();
+
                   return (
                     <VirtualizedList.Item key={item.key} virtualizer={virtualizer} item={item}>
                       <li key={index} className="py-5 sm:py-8 border-b border-b-secondary/10">
@@ -127,8 +129,15 @@ function BookDetails() {
                               </span>
                             )}
                             {Math.floor(readingProgress) > 0 && (
-                              <span className="inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
-                                {readingProgress.toFixed()} %
+                              <span
+                                className={cn(
+                                  "inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset",
+                                  readingProgressFixed === "100" && "text-green-400 ring-green-500/20 bg-green-500/10",
+                                  readingProgressFixed !== "100" &&
+                                    "text-yellow-400 ring-yellow-500/20 bg-yellow-500/10"
+                                )}
+                              >
+                                {readingProgressFixed} %
                               </span>
                             )}
                           </div>
@@ -141,7 +150,9 @@ function BookDetails() {
                             className={cn(
                               "flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full px-4 py-2 font-medium ring-1 ring-inset justify-center",
                               continueReading
-                                ? "ring-green-400/20 text-green-400 active:bg-green-400/20 bg-green-400/10"
+                                ? readingProgressFixed === "100"
+                                  ? "ring-green-400/20 text-green-400 active:bg-green-400/20 bg-green-400/10"
+                                  : "ring-yellow-400/20 text-yellow-400 active:bg-yellow-400/20 bg-yellow-400/10"
                                 : "ring-blue-400/20 text-blue-400 active:bg-blue-400/20 bg-blue-400/10"
                             )}
                           >

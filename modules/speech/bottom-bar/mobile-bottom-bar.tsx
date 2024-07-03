@@ -5,8 +5,6 @@ import Image from "next/image";
 import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
 import { SoundWaveMobile, TextMarquee } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
-import useSWRImmutable from "swr/immutable";
-import { GetBookByIdResponse } from "@/pages/api/book/[id]";
 import { useRouter } from "next/router";
 import { useBookDetails } from "@/pages/read/[id]";
 

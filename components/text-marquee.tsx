@@ -32,6 +32,7 @@ export function TextMarquee({
   containerClassName?: string;
   gradientClassName?: string;
 }) {
+  const [shouldAnimate, setShouldAnimate] = React.useState(true);
   const [scope, animate] = useAnimate();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLParagraphElement>;
@@ -40,7 +41,10 @@ export function TextMarquee({
     if (ref.current !== undefined) {
       const elementWidth = calculateElementWidth(ref.current);
       const maxWidth = scope.current.clientWidth;
-      if (elementWidth < maxWidth) return;
+      if (elementWidth < maxWidth) {
+        setShouldAnimate(false);
+        return;
+      }
 
       const translateBy = elementWidth - maxWidth + offset;
       const duration = translateBy / 8;
@@ -62,8 +66,14 @@ export function TextMarquee({
 
   return (
     <div ref={scope} className={cn("-ml-1 w-full overflow-hidden relative", containerClassName)}>
-      <div className={cn("absolute z-10 h-1/2 bg-gradient-to-r from-subtle/50 w-2", gradientClassName)}></div>
-      <div className={cn("absolute z-10 h-1/2 right-0 bg-gradient-to-l from-subtle/50 w-2", gradientClassName)}></div>
+      {shouldAnimate && (
+        <>
+          <div className={cn("absolute z-10 h-1/2 bg-gradient-to-r from-subtle/50 w-2", gradientClassName)}></div>
+          <div
+            className={cn("absolute z-10 h-1/2 right-0 bg-gradient-to-l from-subtle/50 w-2", gradientClassName)}
+          ></div>
+        </>
+      )}
 
       <m.h2 ref={ref} className={cn("ml-1 text-sm font-semibold whitespace-nowrap", titleClassName)}>
         {title}

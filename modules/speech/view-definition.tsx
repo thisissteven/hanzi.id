@@ -16,6 +16,7 @@ import { useLocale } from "@/locales/use-locale";
 import { TranslateApiResponse } from "@/pages/api/translate";
 import { AudioButton } from "../hsk";
 import { useWindowSize } from "@/hooks";
+import { LucideCopy, LucideCopyCheck } from "lucide-react";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -28,6 +29,47 @@ type DefinitionModalProps = {
   previousDisabled?: boolean;
   nextDisabled?: boolean;
 };
+
+function CopyToClipboard({ text, size }: { text: string; size: number }) {
+  const [copied, setCopied] = React.useState(false);
+
+  const Icon = copied ? LucideCopyCheck : LucideCopy;
+
+  return (
+    <button
+      disabled={copied}
+      onClick={() => {
+        navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }}
+      className="group relative flex h-9 md:h-12 w-9 md:w-12 flex-shrink-0 items-center justify-center rounded-full transition-colors duration-200 disabled:active:bg-transparent active:bg-hovered"
+    >
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={copied.toString()}
+          initial={{
+            scale: 0.9,
+            opacity: 0,
+          }}
+          animate={{
+            scale: 1,
+            opacity: 1,
+          }}
+          exit={{
+            scale: 0.9,
+            opacity: 0.5,
+          }}
+          transition={{
+            duration: 0.15,
+          }}
+        >
+          <Icon strokeWidth={2} size={size} className={cn("text-sky-400", copied ? "opacity-100" : "opacity-50")} />
+        </motion.div>
+      </AnimatePresence>
+    </button>
+  );
+}
 
 export function DefinitionModal({
   previousSentence,
@@ -207,8 +249,9 @@ export function DefinitionModal({
                     );
                   })}
                 </p>
-                <div className="mt-2 flex justify-end px-2">
-                  <AudioButton key={sentence} speed={1.2} size={width < 768 ? "normal" : "large"} text={sentence} />
+                <div key={sentence} className="mt-2 pr-2 flex justify-end items-center gap-1 md:gap-2">
+                  <CopyToClipboard text={sentence} size={width < 768 ? 20 : 26} />
+                  <AudioButton speed={1.2} size={width < 768 ? "normal" : "large"} text={sentence} />
                 </div>
               </div>
 
@@ -223,8 +266,9 @@ export function DefinitionModal({
                       {isIdiom ? (
                         <div>
                           <p className="mt-1 text-3xl md:text-4xl font-medium">{currentHanzi}</p>
-                          <div className="flex items-end gap-2">
+                          <div className="flex items-end gap-2 mt-1.5">
                             <p className="font-medium">{currentEntry?.pinyin}</p>
+                            <AudioButton key={currentHanzi} text={currentHanzi ?? ""} size="normal" />
                           </div>
                         </div>
                       ) : (
@@ -233,6 +277,7 @@ export function DefinitionModal({
                           <div>
                             <p className="font-medium">{currentEntry?.pinyin}</p>
                           </div>
+                          <AudioButton key={currentHanzi} text={currentHanzi ?? ""} size="normal" />
                         </div>
                       )}
 
@@ -240,7 +285,7 @@ export function DefinitionModal({
                     </div>
 
                     {currentEntries.length > 1 && (
-                      <div className="space-x-2 mt-2">
+                      <div className="flex flex-wrap gap-2 mt-2">
                         {currentEntries.map((_, index) => {
                           return (
                             <button
@@ -273,14 +318,12 @@ export function DefinitionModal({
 
               <Divider />
 
-              <div className="mt-2 px-3 sm:px-4 flex justify-between items-end">
+              <div className="mt-2 px-3 sm:px-4 flex justify-between items-end bg-softblack">
                 <span className="text-sm text-secondary">
                   {parseInt(sentenceIndex ?? latestSentenceIndex.current) + 1}/{totalSentences}
                 </span>
                 <button
-                  onClick={() => {
-                    router.back();
-                  }}
+                  onClick={onClose}
                   className="block rounded-md font-medium duration-200 text-secondary bg-hovered active:bg-subtle px-3 py-1.5"
                 >
                   OK

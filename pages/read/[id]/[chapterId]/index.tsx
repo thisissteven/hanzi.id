@@ -72,8 +72,10 @@ export default function Read() {
       <div className="min-h-dvh bg-black">
         <DefinitionModal
           onClose={() => {
-            toSentence(parseInt(sentenceIndex));
             router.back();
+            setTimeout(() => {
+              toSentence(parseInt(sentenceIndex));
+            }, 300);
           }}
           getDefinitionUrl={(locale) =>
             `https://content.hanzi.id/books/${bookId}/${chapterId}/${locale}/${sentenceIndex}.json`

@@ -57,6 +57,7 @@ const createSpeechEngine = (options: SpeechEngineOptions) => {
     utterance.volume = state.config.volume;
     utterance.voice = state.config.voice;
     utterance.lang = localeMapping[locale];
+    utterance.pitch = 2;
     // set up listeners
     utterance.onboundary = (e) => options.onBoundary(e);
     utterance.onend = (e) => {
