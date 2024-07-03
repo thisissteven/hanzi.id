@@ -72,15 +72,15 @@ export default function Read() {
     }
   }, [bookId, chapterId, currentSentenceIdx, sentenceIndex, updateLastRead]);
 
-  const lastReadSentenceIndex = React.useRef(0);
+  const lastReadSentenceIndex = React.useRef<null | number>(null);
   React.useEffect(() => {
-    if (!sentenceIndex) {
+    if (!sentenceIndex && lastReadSentenceIndex.current !== null) {
       toSentence(lastReadSentenceIndex.current);
       smoothScrollToIndex(lastReadSentenceIndex.current - 1, {
         align: "start",
         duration: 1000,
       });
-    } else {
+    } else if (sentenceIndex) {
       lastReadSentenceIndex.current = parseInt(sentenceIndex);
     }
   }, [sentenceIndex, smoothScrollToIndex, toSentence]);
@@ -138,7 +138,9 @@ export default function Read() {
               <div className="px-2 flex justify-between items-end">
                 <div className="w-fit">
                   <button
-                    onClick={() => router.back()}
+                    onClick={() => {
+                      router.back();
+                    }}
                     className="mt-4 py-2 pl-3 pr-4 rounded-md duration-200 active:bg-hovered flex items-center gap-2"
                   >
                     <div className="mb-[3px]">&#8592;</div> {t.return}

@@ -7,8 +7,6 @@ import React from "react";
 import { useParagraphs } from "./use-paragraphs";
 import { useReading } from "@/modules/layout";
 import { useRouter } from "next/router";
-import useSWRImmutable from "swr/immutable";
-import { GetChapterByIdResponse } from "@/pages/api/chapter/[id]";
 import { useChapterById } from "@/modules/speech";
 
 const useSpeechManager = (
