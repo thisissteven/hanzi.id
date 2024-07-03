@@ -34,31 +34,32 @@ export function useLastRead({
       .find((read) => read.bookId === bookId)
       ?.chapters.find((chapter) => chapter.chapterId === chapterId);
 
-    if (lastReadItem) {
-      toast.custom(
-        (toastItem) => {
-          return (
-            <div className="border border-secondary/10 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
-              <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
-              <span className="shrink-0 flex-1">{t.goToLastReadSentence}</span>
-              <button
-                className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
-                onClick={() => {
-                  scrollFn(parseInt(lastReadItem.lastSentenceIndex));
-                  toast.dismiss(toastItem);
-                }}
-              >
-                &#x2192;
-              </button>
-            </div>
-          );
-        },
-        {
-          id: "last-read",
-          duration: Infinity,
-        }
-      );
-    }
+    if (lastReadItem) scrollFn(parseInt(lastReadItem.lastSentenceIndex));
+    // if (lastReadItem) {
+    //   toast.custom(
+    //     (toastItem) => {
+    //       return (
+    //         <div className="border border-secondary/10 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
+    //           <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
+    //           <span className="shrink-0 flex-1">{t.goToLastReadSentence}</span>
+    //           <button
+    //             className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
+    //             onClick={() => {
+    //               scrollFn(parseInt(lastReadItem.lastSentenceIndex));
+    //               toast.dismiss(toastItem);
+    //             }}
+    //           >
+    //             &#x2192;
+    //           </button>
+    //         </div>
+    //       );
+    //     },
+    //     {
+    //       id: "last-read",
+    //       duration: Infinity,
+    //     }
+    //   );
+    // }
   }, [bookId, chapterId, scrollFn, t.goToLastReadSentence]);
 
   const updateLastRead = React.useCallback((args: { bookId: string; chapterId: string; lastSentenceIndex: string }) => {
