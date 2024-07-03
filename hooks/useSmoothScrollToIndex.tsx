@@ -12,7 +12,11 @@ export const useSmoothScroll = (virtualizer: Virtualizer<Window, Element>) => {
   return React.useCallback(
     (
       index: number,
-      { align: initialAlign, duration = 1000 }: { align?: "start" | "center" | "end" | "auto"; duration?: number } = {}
+      {
+        align: initialAlign,
+        duration = 1000,
+        additionalOffset = 0,
+      }: { align?: "start" | "center" | "end" | "auto"; duration?: number; additionalOffset?: number } = {}
     ) => {
       const start = virtualizer.scrollOffset;
       const startTime = (scrollingRef.current = Date.now());
@@ -27,10 +31,10 @@ export const useSmoothScroll = (virtualizer: Virtualizer<Window, Element>) => {
         const interpolated = start + (offset - start) * progress;
 
         if (elapsed < duration) {
-          virtualizer.scrollToOffset(interpolated, { align: "start" });
+          virtualizer.scrollToOffset(interpolated + additionalOffset, { align: "start" });
           requestAnimationFrame(run);
         } else {
-          virtualizer.scrollToOffset(interpolated, { align: "start" });
+          virtualizer.scrollToOffset(interpolated + additionalOffset, { align: "start" });
         }
       };
 

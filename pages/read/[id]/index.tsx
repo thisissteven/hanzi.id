@@ -50,7 +50,7 @@ function BookDetails() {
 
   const virtualizer = useWindowVirtualizer({
     count: chapters.length,
-    estimateSize: () => 350,
+    estimateSize: () => 250,
     overscan: 3,
   });
 
@@ -60,21 +60,26 @@ function BookDetails() {
 
   React.useEffect(() => {
     if (lastReadChapter && lastReadIndex > -1) {
-      smoothScrollToIndex(lastReadIndex + 1, {
+      const additionalOffsetMap = 180 + divRef.current.clientHeight - 100;
+      const additionalOffset = additionalOffsetMap ?? 0;
+      smoothScrollToIndex(lastReadIndex, {
         align: "start",
         duration: 1000,
+        additionalOffset,
       });
     }
-  }, [lastReadIndex, lastReadChapter, smoothScrollToIndex]);
+  }, [lastReadIndex, lastReadChapter, smoothScrollToIndex, chapters.length]);
 
   const [isInteracted, setIsInteracted] = React.useState(false);
+
+  const divRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
   return (
     <div className="mt-8 pb-8 max-md:px-4">
       {isLoading && <div>{t.loadingBookDetails}</div>}
       {book && (
         <motion.div transition={{ type: "tween", duration: 0.2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          <div className="flex max-md:flex-col max-md:items-center items-end gap-4 md:gap-6">
+          <div ref={divRef} className="flex max-md:flex-col max-md:items-center items-end gap-4 md:gap-6">
             <div className="relative w-56 md:w-52 aspect-[9/12] shrink-0">
               <div
                 className={cn("absolute inset-0 w-full h-full", "dark:shadow-[_0px_10px_140px_rgb(30,77,105,0.8)]")}

@@ -8,13 +8,17 @@ import { useParagraphs } from "./use-paragraphs";
 import { useReading } from "@/modules/layout";
 import { useRouter } from "next/router";
 import { useChapterById } from "@/modules/speech";
+import { useBookDetails } from "@/pages/read/[id]";
+import { useLocale } from "@/locales/use-locale";
 
 const useSpeechManager = (
   sentences: Array<string>,
   {
     rate,
+    onEndCallback,
   }: {
     rate: number;
+    onEndCallback: () => void;
   }
 ) => {
   const [currentSentenceIdx, setCurrentSentenceIdx] = useState(0);
@@ -77,6 +81,7 @@ const useSpeechManager = (
             // end
             setPlaybackState("paused");
             isPlaying.current = false;
+            onEndCallback();
             return prev;
           });
         },
@@ -111,7 +116,7 @@ const useSpeechManager = (
     }
 
     return null;
-  }, [isMobile, rate, sentences]);
+  }, [isMobile, onEndCallback, rate, sentences]);
 
   useEffect(() => {
     if (typeof window !== "undefined" && speechEngine) {
@@ -200,20 +205,58 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
   const chapterId = router.query.chapterId as string;
 
   const { data: chapter } = useChapterById(bookId, chapterId);
+  const { data: book } = useBookDetails(bookId);
 
   const { sentences } = useParagraphs(chapter?.content ?? "", chapter?.book?.isUnique ?? false);
   const { speed } = useReading();
 
+  const { t } = useLocale();
+
   const readySentences = sentences.length === 0 ? [""] : sentences;
+
+  const nextChapterId = React.useMemo(() => {
+    try {
+      return book?.chapters[book?.chapters.findIndex((chapter) => chapter.id === chapterId) + 1];
+    } catch {
+      return null;
+    }
+  }, [book?.chapters, chapterId]);
+
+  const onEndCallback = React.useCallback(() => {
+    if (nextChapterId) {
+      toast.custom(
+        (_) => (
+          <div className="border border-secondary/10 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
+            <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
+            <span className="shrink-0 flex-1">{t.nextChapter}</span>
+            <button
+              className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
+              onClick={() => {
+                router.push(`/read/${bookId}/${nextChapterId.id}`);
+              }}
+            >
+              &#x2192;
+            </button>
+          </div>
+        ),
+        {
+          id: "next-chapter",
+          duration: Infinity,
+        }
+      );
+    }
+  }, [bookId, nextChapterId, router, t.nextChapter]);
 
   const value = useSpeechManager(readySentences, {
     rate: speed,
+    onEndCallback,
   });
 
   const lastChapterId = React.useRef(chapterId);
 
   React.useEffect(() => {
     if (chapterId) {
+      toast.dismiss("next-chapter");
       lastChapterId.current = chapterId;
       rerender();
     }
