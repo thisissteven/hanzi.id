@@ -30,13 +30,9 @@ export function HomeTodo() {
 
       <div className="grid md:grid-cols-2 gap-4">
         <Button
-          className="hover:bg-blue-500/10"
+          className="hover:bg-sky-200/5"
           icon={
-            <GraduationCapIcon
-              size={48}
-              strokeWidth={1.5}
-              className="shrink-0 duration-200 group-hover:text-blue-500"
-            />
+            <GraduationCapIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
           }
           path="/hsk/1"
           title={t.home.hsk.title}
@@ -46,9 +42,9 @@ export function HomeTodo() {
         {isAdmin && (
           <Button
             path="/new"
-            className="hover:bg-amber-500/10"
+            className="hover:bg-sky-200/5"
             icon={
-              <FilePlus2Icon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-amber-500" />
+              <FilePlus2Icon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
             }
             title="New Reading"
             description="Upload PDFs, texts or images to practice reading."
@@ -57,13 +53,9 @@ export function HomeTodo() {
 
         <Button
           path="/explore"
-          className="hover:bg-emerald-500/10"
+          className="hover:bg-sky-200/5"
           icon={
-            <LibraryBigIcon
-              size={48}
-              strokeWidth={1.5}
-              className="shrink-0 duration-200 group-hover:text-emerald-500"
-            />
+            <LibraryBigIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
           }
           title={t.home.explore.title}
           description={t.home.explore.description}
@@ -71,8 +63,8 @@ export function HomeTodo() {
 
         <Button
           path="/flashcards"
-          className="hover:bg-sky-500/10"
-          icon={<BookAIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-500" />}
+          className="hover:bg-sky-200/5"
+          icon={<BookAIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
           title={t.home.flashcards.title}
           description={t.home.flashcards.description}
         />
@@ -82,17 +74,17 @@ export function HomeTodo() {
           // onClick={() => {
           //   router.push(router.asPath + "?search=true", undefined, { shallow: true });
           // }}
-          className="hover:bg-teal-500/10"
-          icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-teal-500" />}
+          className="hover:bg-sky-200/5"
+          icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
           title={t.home.search.title}
           description={t.home.search.description}
         />
 
         <Button
           path="/suggestions"
-          className="hover:bg-yellow-500/10"
+          className="hover:bg-sky-200/5"
           icon={
-            <LightbulbIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-yellow-500" />
+            <LightbulbIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
           }
           title={t.home.suggestions.title}
           description={t.home.suggestions.description}

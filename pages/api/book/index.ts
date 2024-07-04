@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { getStatsFromText, prisma, requestHandler } from "@/utils";
 import { Prisma } from "@prisma/client";
 import { getParagraphs } from "@/utils/use-speech/paragraph-utils";
+import { enToId, zhCNTozhTW } from "@/utils/translate";
 
 export function getCursor(previousCursor?: string | null) {
   const cursor = previousCursor
@@ -88,11 +89,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     POST: async (currentUser) => {
       const { title, description, chapters, image } = req.body;
 
+      const [descriptionId, titleTraditional] = await Promise.all([enToId(description), zhCNTozhTW(title)]);
+
       const user = await prisma.book.create({
         data: {
           userId: currentUser.id,
           title,
+          titleTraditional,
           description,
+          descriptionId,
           image: {
             create: {
               source: image.source,

@@ -35,17 +35,6 @@ export function ScrollToCurrentButton({
           align: "start",
           duration: 1000,
         });
-        // if (direction === "top") {
-        //   virtualizer.scrollToOffset(virtualizer.getOffsetForIndex(currentSentenceIdx)[0], {
-        //     behavior: "smooth",
-        //     align: virtualizer.getOffsetForIndex(currentSentenceIdx)[1],
-        //   });
-        // } else {
-        //   virtualizer.scrollToIndex(currentSentenceIdx + 5, {
-        //     behavior: "smooth",
-        //     align: "center",
-        //   });
-        // }
       }}
       className={cn(
         "fixed max-[810px]:bottom-20 bottom-4 bg-hovered/50 backdrop-blur-sm active:bg-hovered text-white w-9 h-9 grid place-items-center pb-2.5 pt-1.5 px-2 rounded-md duration-200 z-30",

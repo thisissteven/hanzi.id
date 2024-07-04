@@ -1,3 +1,4 @@
+import { usePreferences } from "@/components";
 import { useLocale } from "@/locales/use-locale";
 import { GetAllBooksResponse } from "@/pages/api/book";
 import { cn } from "@/utils";
@@ -130,7 +131,9 @@ export function Explore() {
   const books =
     selected === 0 ? data?.data : data?.data?.filter((book) => lastRead.some((read) => read.bookId === book.id));
 
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+
+  const { isSimplified } = usePreferences();
 
   return (
     <div className="mt-4">
@@ -180,9 +183,11 @@ export function Explore() {
                         />
                       </div>
                       <div className="flex flex-col flex-1">
-                        <h3 className="text-lg md:text-2xl font-semibold line-clamp-1">{book.title}</h3>
+                        <h3 className="text-lg md:text-2xl font-semibold line-clamp-1">
+                          {isSimplified ? book.title : book.titleTraditional}
+                        </h3>
                         <p className="mt-1 max-md:text-sm text-secondary line-clamp-2 md:line-clamp-3">
-                          {book.description}
+                          {locale === "en" ? book.description : book.descriptionId}
                         </p>
                         <div className="mt-2 max-md:mt-4 inline-flex text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
                           {book.chapters.length} {book.chapters.length > 1 ? "chapters" : "chapter"}

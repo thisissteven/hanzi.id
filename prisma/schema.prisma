@@ -96,8 +96,12 @@ model Book {
   id     String @id @default(cuid())
   userId String
 
-  title       String  @default("Untitled")
-  description String  @default("No description yet.")
+  title            String @default("Untitled")
+  titleTraditional String @default("Untitled")
+
+  description   String @default("No description yet.")
+  descriptionId String @default("Belum ada deskripsi.")
+
   isUnique    Boolean @default(false)
   isPublished Boolean @default(false)
 
@@ -115,9 +119,14 @@ model Book {
 model Chapter {
   id String @id @default(cuid())
 
-  order                Int    @default(0)
-  title                String @default("Untitled")
-  shortContent         String @default("-")
+  order Int @default(0)
+
+  title            String @default("Untitled")
+  titleTraditional String @default("Untitled")
+
+  shortContent            String @default("-")
+  shortContentTraditional String @default("-")
+
   content              String @default("-")
   wordCount            Int    @default(0)
   estimatedReadingTime Int    @default(0)
