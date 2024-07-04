@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "@/modules/layout";
-import { BackRouteButton, Divider, VirtualizedList } from "@/components";
+import { BackRouteButton, Divider, usePreferences, VirtualizedList } from "@/components";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn, push } from "@/utils";
@@ -15,8 +15,9 @@ import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useLocale } from "@/locales/use-locale";
 import { useSmoothScroll } from "@/hooks";
 
-export function useBookDetails(bookId: string) {
-  const swrData = useSWRImmutable<GetBookByIdResponse>(`https://content.hanzi.id/books/${bookId}/metadata.json`);
+export function useBookDetails(bookId: string, isSimplified: boolean) {
+  const metadata = isSimplified ? "metadata-sim" : "metadata-trad";
+  const swrData = useSWRImmutable<GetBookByIdResponse>(`https://content.hanzi.id/books/${bookId}/${metadata}.json`);
 
   return swrData;
 }
@@ -27,11 +28,13 @@ function BookDetails() {
 
   const id = router.query.id as string;
 
-  const { data: book, isLoading } = useBookDetails(id);
+  const { isSimplified } = usePreferences();
+  const { data: book, isLoading } = useBookDetails(id, isSimplified);
+  const { t, locale } = useLocale();
 
   const source = book?.image?.source;
-  const title = book?.title;
-  const description = book?.description;
+  const title = isSimplified ? book?.title : book?.titleTraditional;
+  const description = locale === "en" ? book?.description : book?.descriptionId;
   const chapters = book?.chapters || [];
 
   const lastReadChapter = useLastReadChapterId(id);
@@ -53,8 +56,6 @@ function BookDetails() {
     estimateSize: () => 250,
     overscan: 3,
   });
-
-  const { t } = useLocale();
 
   const smoothScrollToIndex = useSmoothScroll(virtualizer);
 

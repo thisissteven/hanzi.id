@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { useChapterById } from "@/modules/speech";
 import { useBookDetails } from "@/pages/read/[id]";
 import { useLocale } from "@/locales/use-locale";
+import { usePreferences } from "@/components";
 
 const useSpeechManager = (
   sentences: Array<string>,
@@ -205,7 +206,8 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
   const chapterId = router.query.chapterId as string;
 
   const { data: chapter } = useChapterById(bookId, chapterId);
-  const { data: book } = useBookDetails(bookId);
+  const { isSimplified } = usePreferences();
+  const { data: book } = useBookDetails(bookId, isSimplified);
 
   const { sentences } = useParagraphs(chapter?.content ?? "", chapter?.book?.isUnique ?? false);
   const { speed } = useReading();

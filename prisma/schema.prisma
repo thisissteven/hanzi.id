@@ -121,11 +121,9 @@ model Chapter {
 
   order Int @default(0)
 
-  title            String @default("Untitled")
-  titleTraditional String @default("Untitled")
+  title String @default("Untitled")
 
-  shortContent            String @default("-")
-  shortContentTraditional String @default("-")
+  shortContent String @default("-")
 
   content              String @default("-")
   wordCount            Int    @default(0)

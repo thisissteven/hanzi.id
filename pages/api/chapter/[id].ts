@@ -3,7 +3,6 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 import { prisma, requestHandler } from "@/utils";
 import { Prisma } from "@prisma/client";
-import { getParagraphs } from "@/utils/use-speech/paragraph-utils";
 
 function getChapterById(id: string) {
   return prisma.chapter.findUnique({

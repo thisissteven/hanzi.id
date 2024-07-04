@@ -3,7 +3,7 @@ import React from "react";
 import { PlayingState } from "@/utils";
 import Image from "next/image";
 import { MobilePlayButton, NextSentenceButton, PrevSentenceButton } from "../buttons";
-import { SoundWaveMobile, TextMarquee } from "@/components";
+import { SoundWaveMobile, TextMarquee, usePreferences } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
 import { useRouter } from "next/router";
 import { useBookDetails } from "@/pages/read/[id]";
@@ -28,7 +28,8 @@ export function MobileBottomBar({
   const bookId = router.query.id as string;
   const chapterId = router.query.chapterId;
 
-  const { data } = useBookDetails(bookId);
+  const { isSimplified } = usePreferences();
+  const { data } = useBookDetails(bookId, isSimplified);
 
   const source = data?.image?.smallUrl;
   const title = data?.title;

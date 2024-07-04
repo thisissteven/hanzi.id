@@ -4,7 +4,7 @@ import { cn, PlayingState, useDebounce } from "@/utils";
 import clsx from "clsx";
 import Image from "next/image";
 import { PrevSentenceButton, PlayButton, NextSentenceButton } from "../buttons";
-import { SoundWave, TextMarquee } from "@/components";
+import { SoundWave, TextMarquee, usePreferences } from "@/components";
 import { useThrottledClickHandler } from "@/hooks";
 import { ScanSearchIcon } from "lucide-react";
 import { useRouter } from "next/router";
@@ -32,7 +32,8 @@ export function DesktopBottomBar({
   const bookId = router.query.id as string;
   const chapterId = router.query.chapterId;
 
-  const { data } = useBookDetails(bookId);
+  const { isSimplified } = usePreferences();
+  const { data } = useBookDetails(bookId, isSimplified);
 
   const source = data?.image?.source;
   const title = data?.title;
