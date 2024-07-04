@@ -212,8 +212,6 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
 
   const { t } = useLocale();
 
-  const readySentences = sentences.length === 0 ? [""] : sentences;
-
   const nextChapterId = React.useMemo(() => {
     try {
       return book?.chapters[book?.chapters.findIndex((chapter) => chapter.id === chapterId) + 1];
@@ -232,7 +230,7 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
             <button
               className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
               onClick={() => {
-                router.push(`/read/${bookId}/${nextChapterId.id}`);
+                router.replace(`/read/${bookId}/${nextChapterId.id}`);
               }}
             >
               &#x2192;
@@ -247,7 +245,7 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
     }
   }, [bookId, nextChapterId, router, t.nextChapter]);
 
-  const value = useSpeechManager(readySentences, {
+  const value = useSpeechManager(sentences, {
     rate: speed,
     onEndCallback,
   });

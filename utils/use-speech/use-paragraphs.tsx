@@ -9,7 +9,10 @@ export function useParagraphs(text: string, isUnique: boolean) {
     return isUnique ? getParagraphs(text, startQuote, endQuote) : getParagraphs(text);
   }, [isUnique, text]);
 
-  const sentences = React.useMemo(() => paragraphs.flat(), [paragraphs]);
+  const sentences = React.useMemo(() => {
+    const readySentences = paragraphs.flat();
+    return readySentences.length > 0 ? readySentences : [""];
+  }, [paragraphs]);
 
   return { paragraphs, sentences };
 }

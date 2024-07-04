@@ -42,9 +42,6 @@ export default function Read() {
         align: "start",
         duration: 1000,
       });
-      // virtualizer.scrollToIndex(index, {
-      //   behavior: "smooth",
-      // });
     },
     [smoothScrollToIndex, toSentence]
   );
@@ -56,19 +53,21 @@ export default function Read() {
   });
 
   React.useEffect(() => {
-    if (bookId && chapterId && currentSentenceIdx > 0) {
-      updateLastRead({
-        bookId,
-        chapterId,
-        lastSentenceIndex: currentSentenceIdx.toString(),
-      });
-    }
-    if (bookId && chapterId && sentenceIndex && parseInt(sentenceIndex) > 0) {
-      updateLastRead({
-        bookId,
-        chapterId,
-        lastSentenceIndex: sentenceIndex,
-      });
+    if (bookId && chapterId) {
+      if (currentSentenceIdx > 0) {
+        updateLastRead({
+          bookId,
+          chapterId,
+          lastSentenceIndex: currentSentenceIdx.toString(),
+        });
+      }
+      if (sentenceIndex && parseInt(sentenceIndex) > 0) {
+        updateLastRead({
+          bookId,
+          chapterId,
+          lastSentenceIndex: sentenceIndex,
+        });
+      }
     }
   }, [bookId, chapterId, currentSentenceIdx, sentenceIndex, updateLastRead]);
 
@@ -80,6 +79,7 @@ export default function Read() {
         align: "start",
         duration: 1000,
       });
+      lastReadSentenceIndex.current = null;
     } else if (sentenceIndex) {
       lastReadSentenceIndex.current = parseInt(sentenceIndex);
     }
