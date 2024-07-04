@@ -7,10 +7,12 @@ import useSWRImmutable from "swr/immutable";
 import { GetChapterByIdResponse } from "@/pages/api/chapter/[id]";
 import { useRouter } from "next/router";
 import { useFlashcardContext } from "@/modules/flashcards";
+import { usePreferences } from "@/components";
 
-export function useChapterById(bookId: string, chapterId: string) {
+export function useChapterById(bookId: string, chapterId: string, isSimplified: boolean) {
+  const content = isSimplified ? "content-sim" : "content-trad";
   const swrData = useSWRImmutable<GetChapterByIdResponse>(
-    `https://content.hanzi.id/books/${bookId}/${chapterId}/content.json`
+    `https://content.hanzi.id/books/${bookId}/${chapterId}/${content}.json`
   );
 
   return swrData;
@@ -24,7 +26,8 @@ export function SaveToFlashcard({ word }: { word?: string }) {
   const bookId = router.query.id as string;
   const chapterId = router.query.chapterId as string;
 
-  const { data: chapter } = useChapterById(bookId, chapterId);
+  const { isSimplified } = usePreferences();
+  const { data: chapter } = useChapterById(bookId, chapterId, isSimplified);
 
   const chapterName = `${chapter?.book.title}-${chapter?.title}`;
 

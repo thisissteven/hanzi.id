@@ -205,8 +205,9 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
   const bookId = router.query.id as string;
   const chapterId = router.query.chapterId as string;
 
-  const { data: chapter } = useChapterById(bookId, chapterId);
   const { isSimplified } = usePreferences();
+
+  const { data: chapter } = useChapterById(bookId, chapterId, isSimplified);
   const { data: book } = useBookDetails(bookId, isSimplified);
 
   const { sentences } = useParagraphs(chapter?.content ?? "", chapter?.book?.isUnique ?? false);
