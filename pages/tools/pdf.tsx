@@ -1,13 +1,13 @@
 import { Layout } from "@/modules/layout";
-import React from "react";
 import { PDFTool } from "@/modules/tools";
+import React from "react";
 
 export default function PDFToolPage() {
   return (
     <Layout>
-      <form className="max-md:px-4">
+      <div className="max-md:px-4">
         <PDFTool />
-      </form>
+      </div>
     </Layout>
   );
 }

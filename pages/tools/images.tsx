@@ -5,9 +5,9 @@ import { ImagesTool } from "@/modules/tools";
 export default function ImagesToolPage() {
   return (
     <Layout>
-      <form className="max-md:px-4">
+      <div className="max-md:px-4">
         <ImagesTool />
-      </form>
+      </div>
     </Layout>
   );
 }

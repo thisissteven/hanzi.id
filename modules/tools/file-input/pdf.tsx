@@ -1,0 +1,92 @@
+import React from "react";
+import clsx from "clsx";
+import { formatFileSize } from "./utils";
+import { LucideFile, LucideTrash2 } from "lucide-react";
+
+export function FileInputPDF({ onChange, disabled = false }: { onChange: (blob: string) => void; disabled?: boolean }) {
+  const [fileName, setFileName] = React.useState<string | null>(null);
+  const [fileSize, setFileSize] = React.useState<string | null>(null);
+  const [blobUrl, setBlobUrl] = React.useState<string>("");
+
+  function handleFileUpload(event: React.ChangeEvent<HTMLInputElement>) {
+    const files = event.target.files;
+    if (!files) return;
+
+    const file = files[0];
+
+    const blob = new Blob([file], { type: file.type });
+    const blobUrl = URL.createObjectURL(blob);
+
+    onChange(blobUrl);
+    setFileName(file.name);
+    setFileSize(formatFileSize(file.size));
+    setBlobUrl(blobUrl);
+  }
+
+  return (
+    <div
+      className={clsx(
+        "rounded-md border border-secondary/40 border-dashed w-full",
+        disabled && "cursor-not-allowed opacity-50",
+        "max-md:min-h-56"
+      )}
+    >
+      <div className={clsx("relative w-full h-full grid place-items-center", disabled && "pointer-events-none")}>
+        <div className="grid place-items-center gap-2 w-full px-4">
+          <LucideFile className="w-10 h-10 text-secondary" />
+          <p className="text-secondary text-center">
+            Pindah file ke sini atau <span className="font-medium text-sky-500">pilih file</span> untuk mengunggah
+          </p>
+          {fileName && (
+            <div className="mt-2 relative z-10 rounded-md border border-secondary/10 bg-softblack p-4 w-full max-w-sm">
+              <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                <button
+                  disabled={disabled}
+                  onClick={() => {
+                    setFileName(null);
+                    setFileSize(null);
+                    setBlobUrl("");
+                    onChange("");
+                  }}
+                  type="button"
+                  className="rounded p-2 duration-200 text-secondary hover:text-sky-500"
+                  aria-label="Remove file"
+                >
+                  <LucideTrash2 className="h-5 w-5 shrink-0" />
+                </button>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center">
+                  <LucideFile className="h-5 w-5 shrink-0" />
+                </span>
+                <div className="pr-8 overflow-hidden">
+                  <a
+                    href={blobUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-medium text-sky-500 line-clamp-1 hover:underline"
+                  >
+                    {fileName}
+                  </a>
+                  <p className="mt-0.5 text-secondary text-xs">{fileSize}</p>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+        <input
+          disabled={disabled}
+          type="file"
+          accept="application/pdf"
+          className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+          onChange={handleFileUpload}
+        />
+      </div>
+      <div className="mt-2">
+        <p className="text-secondary">
+          Pastikan file merupakan format <b>.pdf</b>
+        </p>
+      </div>
+    </div>
+  );
+}
