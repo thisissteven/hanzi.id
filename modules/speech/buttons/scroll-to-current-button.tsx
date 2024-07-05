@@ -31,10 +31,11 @@ export function ScrollToCurrentButton({
         left,
       }}
       onClick={() => {
+        const additionalOffset = currentSentenceIdx === totalSentences - 1 ? 0 : -50;
         smoothScrollToIndex(currentSentenceIdx, {
           align: "start",
           duration: 1000,
-          additionalOffset: -50,
+          additionalOffset,
         });
       }}
       className={cn(

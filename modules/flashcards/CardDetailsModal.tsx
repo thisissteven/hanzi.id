@@ -182,8 +182,8 @@ function DisectedCharacters({
                 setEntryIndex(0);
               }}
               className={cn(
-                "w-12 aspect-square grid place-items-center text-lg md:text-xl rounded-md border border-secondary/15 duration-200",
-                selected === index && "bg-hovered/50 text-sky-500 border-secondary/10"
+                "w-12 aspect-square grid place-items-center text-lg md:text-xl rounded-md border duration-200",
+                selected === index ? "bg-hovered/50 text-sky-500 border-sky-500/30" : "opacity-50 border-secondary/15"
               )}
             >
               {hanzi}
