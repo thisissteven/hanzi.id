@@ -60,7 +60,7 @@ function BookDetails() {
   const smoothScrollToIndex = useSmoothScroll(virtualizer);
 
   React.useEffect(() => {
-    if (lastReadChapter && lastReadIndex > -1) {
+    if (lastReadChapter && lastReadIndex > 0) {
       const additionalOffsetMap = 180 + divRef.current.clientHeight - 100;
       const additionalOffset = additionalOffsetMap ?? 0;
       smoothScrollToIndex(lastReadIndex, {
