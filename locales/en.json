@@ -101,10 +101,15 @@
     "description": "Count the number of characters in Chinese text."
   },
   "previewText": "PDF Preview will be displayed here",
+  "previewImage": "Image preview will be displayed here",
   "copySuccess": "Text copied to clipboard!",
   "fileUploadText": ["Drag and drop file here or", "click here", "to upload"],
   "convertToText": "Convert to Text",
   "fileMakeSurePDF": ["File should be in the format of", ".pdf"],
+  "fileMakeSureImage": ["File should be in the format of", ".jpg/png/gif/webp"],
   "pagesNotShown": "more pages not shown",
-  "page": "Page"
+  "imagesNotShown": "more images not shown",
+  "page": "Page",
+  "image": "Image",
+  "moreImages": "more images"
 }

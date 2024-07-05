@@ -1,11 +1,15 @@
+import { useLocale } from "@/locales/use-locale";
 import clsx from "clsx";
 import React from "react";
 import Tesseract, { createWorker } from "tesseract.js";
+import { GeneratedText } from "./generated-text";
 
 export function TextResultImage({ isLoading, imageUrls }: { isLoading: boolean; imageUrls: string[] }) {
   const [isGeneratingText, setIsGeneratingText] = React.useState(false);
   const [stage, setStage] = React.useState("");
   const [textResult, setTextResult] = React.useState<Array<{ text: string[]; page: number }>>([]);
+
+  const { t } = useLocale();
 
   React.useEffect(() => {
     setTextResult([]);
@@ -59,7 +63,7 @@ export function TextResultImage({ isLoading, imageUrls }: { isLoading: boolean; 
           const ret = await worker.recognize(updatedUrl);
           const text = ret.data.text.split("\n");
 
-          setTextResult((prev) => [...prev, { text, page: i }]);
+          setTextResult((prev) => [...prev, { text, page: i + 1 }]);
 
           context.clearRect(0, 0, canvas.width, canvas.height);
           img.src = "";
@@ -75,7 +79,7 @@ export function TextResultImage({ isLoading, imageUrls }: { isLoading: boolean; 
   };
 
   return (
-    <div className="max-md:mt-4 md:max-h-[calc(100dvh-20.5rem)] flex-1 rounded-md border border-gray-400 border-dashed">
+    <div className="max-md:mt-4 md:max-h-[calc(100dvh-20.5rem)] flex-1 rounded-md border border-secondary/40 border-dashed">
       <div
         className={clsx(
           "relative px-4 scrollbar h-full",
@@ -83,23 +87,12 @@ export function TextResultImage({ isLoading, imageUrls }: { isLoading: boolean; 
         )}
       >
         {textResult.length > 0 ? (
-          <div className="py-4">
-            {textResult.map((result, index) => (
-              <div key={index} className="mt-4">
-                <div>Page {result.page + 1}</div>
-                <div className="mt-2">
-                  {result.text.map((t, i) => (
-                    <p key={i}>{t}</p>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <GeneratedText textResult={textResult} isLoading={isGeneratingText} isImage />
         ) : (
           <div className="max-md:h-44 grid place-items-center w-full h-full">
             <button
-              className="w-fit rounded-md py-2 px-6 active:bg-hovered duration-200 disabled:opacity-50 disabled:pointer-events-none disabled:border-none bg-subtle/50"
-              disabled={isLoading}
+              disabled={isLoading || imageUrls.length === 0 || isGeneratingText}
+              className="w-fit rounded-md py-2 px-6 active:bg-hovered duration-200 disabled:pointer-events-none disabled:border-none disabled:opacity-50 disabled:bg-transparent bg-subtle/50"
               onClick={async () => {
                 setIsGeneratingText(true);
                 const numOfPages = imageUrls.length;
@@ -135,7 +128,7 @@ export function TextResultImage({ isLoading, imageUrls }: { isLoading: boolean; 
                 }
               }}
             >
-              Convert to text
+              {isGeneratingText ? stage : t.convertToText}
             </button>
           </div>
         )}

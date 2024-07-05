@@ -101,10 +101,15 @@
     "description": "Hitung jumlah karakter dalam teks Cina."
   },
   "previewText": "Preview file PDF akan tampil di sini",
+  "previewImage": "Preview gambar akan tampil di sini",
   "copySuccess": "Teks berhasil disalin.",
   "fileUploadText": ["Pindah file ke sini atau", "pilih file", "untuk mengunggah"],
   "convertToText": "Konversi ke Teks",
   "fileMakeSurePDF": ["Pastikan file merupakan format", ".pdf"],
+  "fileMakeSureImage": ["Pastikan file merupakan format", ".jpg/png/gif/webp"],
   "pagesNotShown": "halaman lagi tidak ditampilkan",
-  "page": "Halaman"
+  "imagesNotShown": "gambar lagi tidak ditampilkan",
+  "page": "Halaman",
+  "image": "Gambar",
+  "moreImages": "gambar lainnya"
 }
