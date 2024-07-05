@@ -99,5 +99,12 @@
   "characterCountTool": {
     "title": "Hitung Karakter",
     "description": "Hitung jumlah karakter dalam teks Cina."
-  }
+  },
+  "previewText": "Preview file PDF akan tampil di sini",
+  "copySuccess": "Teks berhasil disalin.",
+  "fileUploadText": ["Pindah file ke sini atau", "pilih file", "untuk mengunggah"],
+  "convertToText": "Konversi ke Teks",
+  "fileMakeSurePDF": ["Pastikan file merupakan format", ".pdf"],
+  "pagesNotShown": "halaman lagi tidak ditampilkan",
+  "page": "Halaman"
 }

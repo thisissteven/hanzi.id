@@ -2,11 +2,14 @@ import React from "react";
 import clsx from "clsx";
 import { formatFileSize } from "./utils";
 import { LucideFile, LucideTrash2 } from "lucide-react";
+import { useLocale } from "@/locales/use-locale";
 
 export function FileInputPDF({ onChange, disabled = false }: { onChange: (blob: string) => void; disabled?: boolean }) {
   const [fileName, setFileName] = React.useState<string | null>(null);
   const [fileSize, setFileSize] = React.useState<string | null>(null);
   const [blobUrl, setBlobUrl] = React.useState<string>("");
+
+  const { t } = useLocale();
 
   function handleFileUpload(event: React.ChangeEvent<HTMLInputElement>) {
     const files = event.target.files;
@@ -35,7 +38,8 @@ export function FileInputPDF({ onChange, disabled = false }: { onChange: (blob: 
         <div className="grid place-items-center gap-2 w-full px-4">
           <LucideFile className="w-10 h-10 text-secondary" />
           <p className="text-secondary text-center">
-            Pindah file ke sini atau <span className="font-medium text-sky-500">pilih file</span> untuk mengunggah
+            {t.fileUploadText[0]} <span className="font-medium text-sky-500">{t.fileUploadText[1]}</span>{" "}
+            {t.fileUploadText[2]}
           </p>
           {fileName && (
             <div className="mt-2 relative z-10 rounded-md border border-secondary/10 bg-softblack p-4 w-full max-w-sm">
@@ -84,7 +88,7 @@ export function FileInputPDF({ onChange, disabled = false }: { onChange: (blob: 
       </div>
       <div className="mt-2">
         <p className="text-secondary">
-          Pastikan file merupakan format <b>.pdf</b>
+          {t.fileMakeSurePDF[0]} <b>{t.fileMakeSurePDF[1]}</b>
         </p>
       </div>
     </div>

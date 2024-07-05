@@ -5,6 +5,7 @@ import Tesseract, { createWorker } from "tesseract.js";
 import { usePDFJS } from "../hooks/use-pdfjs";
 import { LucideCopy, LucideDownload } from "lucide-react";
 import { toast } from "sonner";
+import { useLocale } from "@/locales/use-locale";
 
 type TextResult = Array<{ text: string[]; page: number }>;
 
@@ -13,6 +14,8 @@ export function TextResultPDF({ isLoading, pdfUrl }: { isLoading: boolean; pdfUr
   const [isGeneratingText, setIsGeneratingText] = React.useState(false);
   const [stage, setStage] = React.useState("");
   const [textResult, setTextResult] = React.useState<TextResult>([]);
+
+  const { t } = useLocale();
 
   React.useEffect(() => {
     setTextResult([]);
@@ -139,7 +142,7 @@ export function TextResultPDF({ isLoading, pdfUrl }: { isLoading: boolean; pdfUr
                 }
               }}
             >
-              {isGeneratingText ? stage : "Konversi menjadi teks"}
+              {isGeneratingText ? stage : t.convertToText}
             </button>
           </div>
         )}
@@ -152,6 +155,7 @@ function GeneratedText({ textResult, isLoading }: { textResult: TextResult; isLo
   const [currentPage, setCurrentPage] = React.useState(1);
 
   const { text, page } = textResult.find((result) => result.page === currentPage) || { text: [], page: 1 };
+  const { t } = useLocale();
 
   return (
     <div className="mt-4 pb-4">
@@ -167,7 +171,7 @@ function GeneratedText({ textResult, isLoading }: { textResult: TextResult; isLo
             &#8592;
           </button>
           <div className="inline-flex items-center rounded-md backdrop-blur-sm bg-gray-400/10 px-4 py-2 font-medium text-secondary ring-1 ring-inset ring-gray-400/20 text-sm">
-            Halaman {page} / {textResult.length}
+            {t.page} {page} / {textResult.length}
           </div>
           <button
             disabled={currentPage === textResult.length}
@@ -190,7 +194,7 @@ function GeneratedText({ textResult, isLoading }: { textResult: TextResult; isLo
                 return (
                   <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3 shadow shadow-black">
                     <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
-                    <span className="shrink-0">Teks berhasil disalin.</span>
+                    <span className="shrink-0">{t.copySuccess}</span>
                   </div>
                 );
               });

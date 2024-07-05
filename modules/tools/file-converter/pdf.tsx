@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { usePDFJS } from "../hooks/use-pdfjs";
+import { useLocale } from "@/locales/use-locale";
 
 export const FileConverterPDF = ({
   pdfUrl,
@@ -13,6 +14,8 @@ export const FileConverterPDF = ({
   const [remainingPages, setRemainingPages] = useState<number>(0);
 
   const pdfjs = usePDFJS();
+
+  const { t } = useLocale();
 
   useEffect(() => {
     if (pdfjs) {
@@ -61,7 +64,9 @@ export const FileConverterPDF = ({
       ))}
       {remainingPages > 0 && (
         <div className="flex items-center justify-center h-40 w-40">
-          <p className="p-4 text-secondary">{remainingPages} halaman lagi tidak ditampilkan</p>
+          <p className="p-4 text-secondary">
+            {remainingPages} {t.pagesNotShown}
+          </p>
         </div>
       )}
     </div>

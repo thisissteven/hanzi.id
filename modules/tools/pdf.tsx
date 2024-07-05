@@ -40,14 +40,14 @@ export function PDFTool() {
                     />
                   ) : (
                     <div className="grid place-items-center h-full">
-                      <p className="text-secondary">Preview file PDF akan tampil di sini</p>
+                      <p className="text-secondary">{t.previewText}</p>
                     </div>
                   )}
                 </div>
               </div>
               {loadingState.loading && (
                 <p className="text-secondary absolute inset-0 w-full h-full grid place-items-center">
-                  Memuat {loadingState.percentage}%
+                  {t.loading} {loadingState.percentage}%
                 </p>
               )}
             </div>
