@@ -116,11 +116,11 @@ export function CommandMenuGroupCard({
             <div className="flex justify-between">
               {isIdiom ? (
                 <div>
-                  <p className="mt-1 text-3xl md:text-4xl font-medium">
+                  <p className="mt-1 text-4xl md:text-5xl font-medium">
                     {isSimplified ? currentSection?.simplified : currentSection?.traditional}
                   </p>
                   <div className="flex items-end gap-2 mt-1.5">
-                    <p className="font-medium">{currentEntry?.pinyin}</p>
+                    <p className="font-medium text-lg md:text-xl">{currentEntry?.pinyin}</p>
                     <AudioButton
                       text={isSimplified ? currentSection?.simplified : currentSection?.traditional ?? ""}
                       size="normal"
@@ -129,11 +129,11 @@ export function CommandMenuGroupCard({
                 </div>
               ) : (
                 <div className="mt-1 flex items-end gap-2">
-                  <p className="text-3xl md:text-4xl font-medium">
+                  <p className="text-4xl md:text-5xl font-medium">
                     {isSimplified ? currentSection?.simplified : currentSection?.traditional}
                   </p>
                   <div>
-                    <p className="font-medium">{currentEntry?.pinyin}</p>
+                    <p className="font-medium text-lg md:text-xl">{currentEntry?.pinyin}</p>
                   </div>
                   <AudioButton
                     text={isSimplified ? currentSection?.simplified : currentSection?.traditional ?? ""}
@@ -144,7 +144,7 @@ export function CommandMenuGroupCard({
             </div>
 
             {currentEntries.length > 1 && (
-              <div className="flex flex-wrap gap-2 mt-2">
+              <div className="flex flex-wrap gap-2 mt-3">
                 {currentEntries.map((_, index) => {
                   return (
                     <button
