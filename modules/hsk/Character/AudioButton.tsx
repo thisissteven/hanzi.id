@@ -1,6 +1,13 @@
+import { useLocale } from "@/locales/use-locale";
 import { useAudio } from "@/modules/layout";
 import clsx from "clsx";
 import * as React from "react";
+import { toast } from "sonner";
+
+function isOpera() {
+  var userAgent = navigator.userAgent.toLowerCase();
+  return userAgent.includes("opera") || userAgent.includes("opr");
+}
 
 export function AudioButton({
   text,
@@ -12,6 +19,8 @@ export function AudioButton({
   size?: "small" | "normal" | "large";
 }) {
   const { speak, isSpeaking, stopAudio } = useAudio();
+
+  const { t } = useLocale();
 
   const isLoading = isSpeaking.text === text;
 
@@ -26,6 +35,22 @@ export function AudioButton({
       role="button"
       onClick={async (e) => {
         e.stopPropagation();
+        if (isOpera()) {
+          toast.custom(
+            (_) => (
+              <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3">
+                <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-rose-500 indicator"></div>
+                <span className="shrink-0">{t.operaNotSupported}</span>
+              </div>
+            ),
+            {
+              id: "opera not supported",
+              duration: 5000,
+              position: "bottom-center",
+            }
+          );
+          return;
+        }
         if (isLoading) {
           stopAudio();
           return;

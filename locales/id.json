@@ -111,5 +111,7 @@
   "imagesNotShown": "gambar lagi tidak ditampilkan",
   "page": "Halaman",
   "image": "Gambar",
-  "moreImages": "gambar lainnya"
+  "moreImages": "gambar lainnya",
+  "audioNotFound": "Sumber audio tidak ditemukan.",
+  "operaNotSupported": "Browser Opera tidak didukung."
 }

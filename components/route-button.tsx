@@ -5,7 +5,7 @@ import { useLocale } from "@/locales/use-locale";
 
 const buttonClassName = "mt-4 py-2 pl-3 pr-4 rounded-md duration-200 active:bg-hovered flex items-center gap-2";
 
-export function BackRouteButton({ defaultBack = false }: { defaultBack?: boolean }) {
+export function BackRouteButton({ defaultBack = false, className }: { defaultBack?: boolean; className?: string }) {
   const router = useRouter();
   const { t } = useLocale();
 
@@ -25,7 +25,7 @@ export function BackRouteButton({ defaultBack = false }: { defaultBack?: boolean
         }
       }}
       type="button"
-      className={buttonClassName}
+      className={cn(buttonClassName, className)}
     >
       <div className="mb-[3px]">&#8592;</div> {t.return}
     </button>

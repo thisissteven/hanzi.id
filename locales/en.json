@@ -111,5 +111,7 @@
   "imagesNotShown": "more images not shown",
   "page": "Page",
   "image": "Image",
-  "moreImages": "more images"
+  "moreImages": "more images",
+  "audioNotFound": "Audio source not found.",
+  "operaNotSupported": "Opera browser not supported."
 }

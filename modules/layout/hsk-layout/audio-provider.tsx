@@ -1,5 +1,6 @@
 // src/context/AudioContext.js
 import useIsMobile from "@/hooks/useIsMobile";
+import { useLocale } from "@/locales/use-locale";
 import React, { createContext, useContext, useState } from "react";
 import { toast } from "sonner";
 
@@ -27,6 +28,8 @@ export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
     state: false,
     text: null,
   });
+
+  const { t } = useLocale();
 
   const isMobile = useIsMobile();
 
@@ -58,7 +61,7 @@ export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
           (_) => (
             <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3">
               <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-rose-500 indicator"></div>
-              <span className="shrink-0">Audio source not found.</span>
+              <span className="shrink-0">{t.audioNotFound}</span>
             </div>
           ),
           {
