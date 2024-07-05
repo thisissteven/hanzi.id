@@ -1,6 +1,14 @@
 import React from "react";
 import { Button } from "./buttons";
-import { BookAIcon, CompassIcon, FilePlus2Icon, GraduationCapIcon, LibraryBigIcon, LightbulbIcon } from "lucide-react";
+import {
+  BookAIcon,
+  CompassIcon,
+  FilePlus2Icon,
+  GraduationCapIcon,
+  LibraryBigIcon,
+  LightbulbIcon,
+  PickaxeIcon,
+} from "lucide-react";
 import { ChangeLocaleButton, ChangeSimplifiedTraditional, Divider, usePreferences } from "@/components";
 import { AuthButton } from "./auth-button";
 import { useLocale } from "@/locales/use-locale";
@@ -62,6 +70,19 @@ export function HomeTodo() {
         />
 
         <Button
+          path="/tools"
+          className="hover:bg-sky-200/5 relative disabled:pointer-events-none disabled:opacity-70"
+          disabled
+          icon={<PickaxeIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
+          title={t.home.tools.title}
+          description={t.home.tools.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-emerald-500/10 px-2 py-1 font-medium text-emerald-500 ring-1 ring-inset ring-emerald-500/20">
+            {t.comingSoon}
+          </div>
+        </Button>
+
+        <Button
           path="/flashcards"
           className="hover:bg-sky-200/5"
           icon={<BookAIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
@@ -71,9 +92,6 @@ export function HomeTodo() {
 
         <Button
           path="?search=true"
-          // onClick={() => {
-          //   router.push(router.asPath + "?search=true", undefined, { shallow: true });
-          // }}
           className="hover:bg-sky-200/5"
           icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
           title={t.home.search.title}

@@ -2,10 +2,16 @@
   "practice": "Mock Exams",
   "return": "Return",
   "lastVisited": "Last Visited",
+  "new": "New",
+  "comingSoon": "Coming Soon",
   "home": {
     "hsk": {
       "title": "Learn HSK 1-9",
       "description": "Chinese HSK vocabulary lists and practice exams."
+    },
+    "tools": {
+      "title": "Tools",
+      "description": "Chinese character tools and resources."
     },
     "explore": {
       "title": "Explore",
@@ -76,5 +82,22 @@
   "searchErrorToast": "Please only enter Chinese characters.",
   "keyword": "You searched for:",
   "clearHistory": "Clear Search History",
-  "nextChapter": "Read next chapter?"
+  "nextChapter": "Read next chapter?",
+  "tools": {
+    "title": "Tools",
+    "description": "Some complementary tools you might need.",
+    "buttons": ["Extract Text from PDF", "Extract Text from Image/s", "Character Counter"]
+  },
+  "imagesTool": {
+    "title": "Extract Text from Image/s",
+    "description": "Upload images and get extracted text in Chinese."
+  },
+  "pdfTool": {
+    "title": "Extract Text from PDF",
+    "description": "Upload PDF and get extracted text in Chinese."
+  },
+  "characterCountTool": {
+    "title": "Character Counter",
+    "description": "Count the number of characters in Chinese text."
+  }
 }

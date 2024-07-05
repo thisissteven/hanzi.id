@@ -57,6 +57,7 @@ export function Button({
   description,
   icon,
   path,
+  children,
   onClick,
   ...props
 }: React.ComponentPropsWithoutRef<"button"> & AdditionalProps) {
@@ -78,6 +79,7 @@ export function Button({
           <p className="text-sm mt-2 text-secondary">{description}</p>
         </div>
       </div>
+      {children}
     </button>
   );
 }

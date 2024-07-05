@@ -7,7 +7,7 @@ import type { AppProps } from "next/app";
 import { PreferencesProvider, Seo } from "@/components";
 import { apiClient } from "@/utils";
 import { AnimatePresence } from "framer-motion";
-import { ConfettiProvider, HSKLayout, NewReadingLayout, ReadingLayout } from "@/modules/layout";
+import { ConfettiProvider, HSKLayout, NewReadingLayout, ReadingLayout, ToolsLayout } from "@/modules/layout";
 import React from "react";
 
 import { SessionProvider } from "next-auth/react";
@@ -21,6 +21,7 @@ export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:30
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const isNewReading = router.pathname.startsWith("/new");
+  const isTools = router.pathname.startsWith("/tools");
   const isHsk = router.pathname.startsWith("/hsk");
   const isReading = router.pathname.startsWith("/read");
 
@@ -62,6 +63,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
                     <NewReadingLayout key="new-reading">
                       <Component key={router.pathname} {...pageProps} />
                     </NewReadingLayout>
+                  ) : isTools ? (
+                    <ToolsLayout key="tools">
+                      <Component key={router.pathname} {...pageProps} />
+                    </ToolsLayout>
                   ) : isReading ? (
                     <ReadingLayout key="reading">
                       <Component key={router.pathname} {...pageProps} />

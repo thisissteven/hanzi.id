@@ -2,10 +2,16 @@
   "practice": "Latihan Soal",
   "return": "Kembali",
   "lastVisited": "Terakhir Dikunjungi",
+  "new": "Baru",
+  "comingSoon": "Segera Datang",
   "home": {
     "hsk": {
       "title": "Belajar HSK 1-9",
       "description": "Daftar kosakata HSK dan latihan soal."
+    },
+    "tools": {
+      "title": "Fitur Tambahan",
+      "description": "Fitur lainnya terkait karakter Cina."
     },
     "explore": {
       "title": "Jelajahi",
@@ -76,5 +82,22 @@
   "searchErrorToast": "Harap hanya masukkan karakter Cina.",
   "keyword": "Pencarian Anda:",
   "clearHistory": "Hapus Riwayat Pencarian",
-  "nextChapter": "Lanjut ke bab selanjutnya?"
+  "nextChapter": "Lanjut ke bab selanjutnya?",
+  "tools": {
+    "title": "Tambahan",
+    "description": "Fitur lainnya yang mungkin Anda butuhkan.",
+    "buttons": ["Ambil Teks dari PDF", "Ambil Teks dari gambar", "Hitung Karakter"]
+  },
+  "imagesTool": {
+    "title": "Ambil Teks dari Gambar",
+    "description": "Unggah gambar dan dapatkan teks dalam bahasa Cina."
+  },
+  "pdfTool": {
+    "title": "Ambil Teks dari PDF",
+    "description": "Unggah PDF dan dapatkan teks dalam bahasa Cina."
+  },
+  "characterCountTool": {
+    "title": "Hitung Karakter",
+    "description": "Hitung jumlah karakter dalam teks Cina."
+  }
 }
