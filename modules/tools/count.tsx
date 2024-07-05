@@ -43,7 +43,7 @@ export function CharacterCountTool() {
         <p className="mt-1 text-secondary">{t.characterCountTool.description}</p>
       </div>
 
-      <div className="mt-4 md:px-2 flex justify-between items-end">
+      <div className="mt-4 md:px-2 flex justify-between flex-wrap gap-3 items-end">
         <div className="flex gap-2">
           <Stat>
             {count} {t.characterCountTool.characters}
