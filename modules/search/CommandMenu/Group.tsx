@@ -45,6 +45,7 @@ export function CommandMenuGroupCard({
 
   const showTranslations = active.includes(0);
   const showDefinitions = active.includes(1);
+  const shouldHighlight = sections.length > 1;
 
   return (
     <div>
@@ -78,9 +79,12 @@ export function CommandMenuGroupCard({
               >
                 <span
                   className={cn(
-                    "underline-offset-4 cursor-pointer border-b-[1.5px] border-softblack",
-                    "relative rounded-b-md rounded-t pb-0.5 box-clone active:bg-indigo-300/20",
-                    activeIndex === index && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
+                    "underline-offset-4 border-b-[1.5px] border-softblack",
+                    "relative rounded-b-md rounded-t pb-0.5 box-clone",
+                    shouldHighlight && "cursor-pointer active:bg-indigo-300/20",
+                    activeIndex === index &&
+                      shouldHighlight &&
+                      "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
                   )}
                 >
                   {hanzi}

@@ -4,7 +4,7 @@ import { cn } from "@/utils";
 import { AddOrRemoveFromFlashcard } from "../speech";
 import { FlashcardedResult } from "@/pages/api/flashcard/en";
 import { useRouter } from "next/router";
-import { usePreferences } from "@/components";
+import { Divider, usePreferences } from "@/components";
 import { AudioButton } from "../hsk";
 
 export function CardDetailsModal({
@@ -49,6 +49,7 @@ export function CardDetailsModal({
   const isIdiom = hanzi && hanzi.length >= 4;
 
   const entries = details?.entries ?? latestDetails.current?.entries ?? [];
+  const disected = details?.disected ?? latestDetails.current?.disected ?? [];
   const currentEntry = entries[entryIndex];
 
   return (
@@ -127,6 +128,13 @@ export function CardDetailsModal({
                 )}
               </div>
 
+              {disected.length > 1 && (
+                <>
+                  <Divider />
+                  <DisectedCharacters disected={disected} isSimplified={isSimplified} />
+                </>
+              )}
+
               <div className="mt-2 px-3 sm:px-4 flex justify-end">
                 <button
                   onClick={onClose}
@@ -140,5 +148,95 @@ export function CardDetailsModal({
         </div>
       </div>
     </Dialog>
+  );
+}
+
+function DisectedCharacters({
+  disected,
+  isSimplified,
+}: {
+  disected: FlashcardedResult["disected"];
+  isSimplified: boolean;
+}) {
+  const [selected, setSelected] = React.useState(0);
+  const [entryIndex, setEntryIndex] = React.useState(0);
+
+  const selectedEntry = disected[selected];
+  const hanzi = isSimplified ? selectedEntry.simplified : selectedEntry.traditional;
+
+  const entries = selectedEntry.entries ?? [];
+  const english = entries[entryIndex].english;
+  const pinyin = entries[entryIndex].pinyin;
+  const isIdiom = hanzi.length >= 4;
+
+  return (
+    <div className="mt-2 px-3 sm:px-4">
+      <div className="flex gap-2">
+        {disected.map((entry, index) => {
+          const hanzi = isSimplified ? entry.simplified : entry.traditional;
+          return (
+            <button
+              key={index}
+              onClick={() => setSelected(index)}
+              className={cn(
+                "w-12 aspect-square grid place-items-center text-lg md:text-xl rounded-md border border-secondary/15 duration-200",
+                selected === index && "bg-hovered/50 text-sky-500"
+              )}
+            >
+              {hanzi}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="mt-2 flex justify-between">
+        {isIdiom ? (
+          <div>
+            <p className="mt-1 text-4xl md:text-5xl font-medium">{hanzi}</p>
+            <div className="flex items-end gap-2 mt-1.5">
+              <p className="font-medium text-lg md:text-xl">{pinyin}</p>
+              <AudioButton text={hanzi ?? ""} size="normal" />
+            </div>
+          </div>
+        ) : (
+          <div className="mt-1 flex items-end gap-2">
+            <p className="text-4xl md:text-5xl font-medium">{hanzi}</p>
+            <div>
+              <p className="font-medium text-lg md:text-xl">{pinyin}</p>
+            </div>
+            <AudioButton text={hanzi ?? ""} size="normal" />
+          </div>
+        )}
+      </div>
+
+      {entries.length > 1 && (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {entries.map((_, index) => {
+            return (
+              <button
+                onClick={() => setEntryIndex(index)}
+                className={cn(
+                  "rounded-md px-4 text-sm py-0.5 border",
+                  entryIndex === index ? "bg-smokewhite text-black border-white" : "border-softzinc"
+                )}
+                key={index}
+              >
+                {index + 1}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      <ul className="mt-1 ml-4 pr-1">
+        {english.map((definition, index) => {
+          return (
+            <li key={index} className="list-disc">
+              {definition}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }

@@ -15,9 +15,17 @@ export interface FlashcardedResult {
     pinyin: string;
     english: string[];
   }>;
+  disected: {
+    simplified: string;
+    traditional: string;
+    entries?: Array<{
+      pinyin: string;
+      english: string[];
+    }>;
+  }[];
 }
 
-type TokenizerResult = Array<{
+export type TokenizerResult = Array<{
   text: string;
   traditional: string;
   simplified: string;
@@ -41,10 +49,28 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Flashc
         english: match.english.split("/").map((t) => t.trim()),
       }));
 
+      const characters = i.text.split("").map((t) => segment(t));
+
+      const disected = characters.map((item: TokenizerResult) => {
+        return item.map((i) => {
+          const entries = i.matches.map((match) => ({
+            pinyin: match.pinyinPretty,
+            english: match.english.split("/").map((t) => t.trim()),
+          }));
+
+          return {
+            simplified: i.simplified,
+            traditional: i.traditional,
+            entries,
+          };
+        })[0];
+      });
+
       return {
         simplified: i.simplified,
         traditional: i.traditional,
         entries,
+        disected,
       };
     })[0];
   });
