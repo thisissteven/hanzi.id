@@ -177,10 +177,13 @@ function DisectedCharacters({
           return (
             <button
               key={index}
-              onClick={() => setSelected(index)}
+              onClick={() => {
+                setSelected(index);
+                setEntryIndex(0);
+              }}
               className={cn(
                 "w-12 aspect-square grid place-items-center text-lg md:text-xl rounded-md border border-secondary/15 duration-200",
-                selected === index && "bg-hovered/50 text-sky-500"
+                selected === index && "bg-hovered/50 text-sky-500 border-secondary/10"
               )}
             >
               {hanzi}

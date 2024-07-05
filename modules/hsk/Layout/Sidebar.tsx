@@ -6,7 +6,6 @@ import { HSKLevelItems } from "./HSKLevelItems";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 import { ChangeLocaleButton, ChangeSimplifiedTraditional, Drawer } from "@/components";
-import { useRouter } from "next/router";
 import { useLocale } from "@/locales/use-locale";
 import { toast } from "sonner";
 

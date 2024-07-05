@@ -38,9 +38,10 @@ export default function Read() {
   const toLastRead = React.useCallback(
     (index: number) => {
       toSentence(index);
-      smoothScrollToIndex(index - 1, {
+      smoothScrollToIndex(index, {
         align: "start",
         duration: 1000,
+        additionalOffset: -50,
       });
     },
     [smoothScrollToIndex, toSentence]
@@ -75,9 +76,10 @@ export default function Read() {
   React.useEffect(() => {
     if (!sentenceIndex && lastReadSentenceIndex.current !== null) {
       toSentence(lastReadSentenceIndex.current);
-      smoothScrollToIndex(lastReadSentenceIndex.current - 1, {
+      smoothScrollToIndex(lastReadSentenceIndex.current, {
         align: "start",
         duration: 1000,
+        additionalOffset: -50,
       });
       lastReadSentenceIndex.current = null;
     } else if (sentenceIndex) {

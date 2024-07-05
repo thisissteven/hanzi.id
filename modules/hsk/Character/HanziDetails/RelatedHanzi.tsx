@@ -10,6 +10,8 @@ export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: Hanzi
 
   const { isSimplified } = usePreferences();
 
+  const regex = new RegExp(`(${hanzi})`);
+
   if (!related) return null;
 
   return (
@@ -24,21 +26,30 @@ export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: Hanzi
             </p>
           )}
           <ul>
-            {related.map((hanzi, index) => {
+            {related.map((phrase, index) => {
+              const splitted = isSimplified ? phrase.simplified.split(regex) : phrase.traditional.split(regex);
               return (
                 <li key={index} className="list-none">
                   <Popover>
                     <Popover.Trigger className="text-left sm:text-lg font-medium">
-                      {isSimplified ? hanzi.simplified : hanzi.traditional}
+                      {splitted.map((part, index) => {
+                        if (part === hanzi)
+                          return (
+                            <span className="text-wheat" key={index}>
+                              {hanzi}
+                            </span>
+                          );
+                        return <React.Fragment key={index}>{part}</React.Fragment>;
+                      })}
                     </Popover.Trigger>
                     <Popover.Content
                       align="start"
                       className="text-xs sm:text-sm leading-5 text-smokewhite px-2 max-w-[calc(100vw-1rem)] md:max-w-[calc(540px-1rem)]"
                     >
-                      <p>{hanzi.pinyin}</p>
+                      <p>{phrase.pinyin}</p>
                     </Popover.Content>
                   </Popover>
-                  <p className="text-sm sm:text-base text-lightgray">{hanzi.definition}</p>
+                  <p className="text-sm sm:text-base text-lightgray">{phrase.definition}</p>
                 </li>
               );
             })}

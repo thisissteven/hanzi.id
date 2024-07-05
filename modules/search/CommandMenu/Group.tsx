@@ -51,7 +51,7 @@ export function CommandMenuGroupCard({
     <div>
       <div className="px-3 sm:px-4">
         <span className="text-sm text-secondary">{t.keyword}</span>
-        <p className="text-xl md:text-2xl tracking-wider mt-1 leading-[30px]">
+        <p className="text-2xl md:text-3xl tracking-wider mt-1 leading-[30px]">
           {sections.map((section, index) => {
             const isLastIndex = sections.length - 1 === index;
 
@@ -210,7 +210,7 @@ export function CommandMenuGroupSearch({
             value="clear-history"
             onSelect={clearHistory}
             text={t.clearHistory}
-            className="flex justify-center w-full text-xs font-bold"
+            className="flex justify-center w-full text-sm font-medium"
           ></CommandMenuItem>
         )}
       </Command.Group>

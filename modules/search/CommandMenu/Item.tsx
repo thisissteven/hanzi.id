@@ -43,7 +43,7 @@ export function CommandMenuItem({
       value={value}
       onSelect={onSelect}
       className={cn(
-        "cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-base font-light gap-3",
+        "cursor-pointer w-full px-2 py-1.5 flex items-center rounded-md data-[selected=true]:bg-hovered active:bg-hovered select-none text-lg font-light gap-3",
         className
       )}
     >

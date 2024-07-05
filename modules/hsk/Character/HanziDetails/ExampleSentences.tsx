@@ -59,22 +59,24 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
           return (
             <li key={index} className="list-none">
               <Popover>
-                <Popover.Trigger className="text-left sm:text-lg font-medium">
-                  {splitted.map((part, index) => {
-                    if (part === hanzi)
-                      return (
-                        <span className="text-sky-400" key={index}>
-                          {hanzi}
-                        </span>
-                      );
-                    return <React.Fragment key={index}>{part}</React.Fragment>;
-                  })}
-                  <AudioButton
-                    size="small"
-                    key={lesson.audioUrl}
-                    text={isSimplified ? lesson.simplified : lesson.traditional}
-                    speed={1.3}
-                  />
+                <Popover.Trigger asChild className="text-left sm:text-lg font-medium">
+                  <div role="button">
+                    {splitted.map((part, index) => {
+                      if (part === hanzi)
+                        return (
+                          <span className="text-sky-400" key={index}>
+                            {hanzi}
+                          </span>
+                        );
+                      return <React.Fragment key={index}>{part}</React.Fragment>;
+                    })}
+                    <AudioButton
+                      size="small"
+                      key={lesson.audioUrl}
+                      text={isSimplified ? lesson.simplified : lesson.traditional}
+                      speed={1.3}
+                    />
+                  </div>
                 </Popover.Trigger>
                 <Popover.Content
                   align="start"

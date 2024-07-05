@@ -22,7 +22,7 @@ export function AudioButton({
   }, [stopAudio]);
 
   return (
-    <div
+    <button
       role="button"
       onClick={async (e) => {
         e.stopPropagation();
@@ -36,7 +36,7 @@ export function AudioButton({
       }}
       className={clsx(
         "text-sky-500 active:opacity-100 transition",
-        size === "small" && "inline align-middle",
+        size === "small" && "inline align-middle max-sm:mb-0.5",
         isLoading ? "opacity-100" : "opacity-50"
       )}
     >
@@ -60,6 +60,6 @@ export function AudioButton({
         <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
         <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
       </svg>
-    </div>
+    </button>
   );
 }
