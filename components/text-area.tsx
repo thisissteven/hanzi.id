@@ -4,14 +4,16 @@ type TextareaProps = {
   onEscape?: (e: KeyboardEvent) => void;
   minHeight?: string;
   placeholderClassName?: string | boolean | (string | boolean)[];
+  limitHeightOnBlur?: boolean;
 } & React.ComponentPropsWithoutRef<"textarea">;
 
 export function Textarea({
   className,
   placeholderClassName,
-  minHeight = "40px",
+  minHeight = "136px",
   onEscape = (_) => {},
   onChange,
+  limitHeightOnBlur = false,
   ...rest
 }: TextareaProps) {
   const textAreaRef = React.useRef() as React.MutableRefObject<HTMLTextAreaElement>;
@@ -36,6 +38,17 @@ export function Textarea({
   return (
     <div className="relative w-full">
       <textarea
+        onFocus={(_) => {
+          if (limitHeightOnBlur && textAreaRef.current.scrollHeight > textAreaRef.current.clientHeight) {
+            textAreaRef.current.style.height = "auto";
+            textAreaRef.current.style.height = `${textAreaRef.current.scrollHeight}px`;
+          }
+        }}
+        onBlur={(_) => {
+          if (limitHeightOnBlur) {
+            textAreaRef.current.style.height = minHeight;
+          }
+        }}
         ref={textAreaRef}
         onChange={(e) => {
           if (onChange) onChange(e);

@@ -98,7 +98,12 @@
   },
   "characterCountTool": {
     "title": "Character Counter",
-    "description": "Count the number of characters in Chinese text."
+    "description": "Count the number of characters in Chinese text.",
+    "placeholder": "Enter Chinese text here...",
+    "characters": "characters",
+    "uniqueCharacters": "unique characters",
+    "count": "Count",
+    "export": "Download as csv"
   },
   "previewText": "PDF Preview will be displayed here",
   "previewImage": "Image preview will be displayed here",

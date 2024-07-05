@@ -98,7 +98,12 @@
   },
   "characterCountTool": {
     "title": "Hitung Karakter",
-    "description": "Hitung jumlah karakter dalam teks Cina."
+    "description": "Hitung jumlah karakter dalam teks Cina.",
+    "placeholder": "Masukkan teks Cina di sini...",
+    "characters": "karakter",
+    "uniqueCharacters": "karakter unik",
+    "count": "Jumlah",
+    "export": "Unduh sebagai csv"
   },
   "previewText": "Preview file PDF akan tampil di sini",
   "previewImage": "Preview gambar akan tampil di sini",

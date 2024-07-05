@@ -28,7 +28,7 @@ export function ImagesTool() {
               setImageBlobUrls(urls);
             }}
           />
-          <div className="max-md:mt-6 gap-4 md:flex md:flex-col">
+          <div className="max-sm:mt-12 max-md:mt-6 gap-4 md:flex md:flex-col">
             <div className="relative rounded-md border border-secondary/40 border-dashed p-2">
               <div className="h-44 overflow-x-auto overflow-y-hidden scrollbar">
                 <div className={cn(loadingState.loading && "opacity-50", "h-full")}>
