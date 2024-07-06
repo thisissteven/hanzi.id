@@ -49,6 +49,11 @@ export function CommandMenuSearch({
         placeholder={placeholder}
         value={value}
         onValueChange={onValueChange}
+        onFocus={() => {
+          router.replace({
+            query: { ...router.query, isWriting: "false" },
+          });
+        }}
       />
       {isLoading ? (
         <LoadingBar visible={isLoading} />

@@ -39,7 +39,7 @@ export function DesktopSidebar() {
 
   return (
     <div className="max-md:hidden border-r border-r-secondary/10">
-      <aside className="px-4 pb-4 pt-20 z-10 sticky top-0 h-[calc(100dvh-7rem)] overflow-y-auto min-w-64">
+      <aside className="px-4 pb-4 pt-20 z-10 sticky top-0 h-[calc(100dvh-7rem)] overflow-y-auto scrollbar min-w-64">
         <ul className="space-y-1">
           <HSKLevelItems />
         </ul>

@@ -48,7 +48,7 @@ export function CommandMenuGroupCard({
   const shouldHighlight = sections.length > 1;
 
   return (
-    <div className="pb-3">
+    <div>
       <div className="px-3 sm:px-4">
         <span className="text-sm text-secondary">{t.keyword}</span>
         <p className="text-2xl md:text-3xl tracking-wider mt-1 leading-[30px]">

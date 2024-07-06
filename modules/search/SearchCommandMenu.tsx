@@ -185,36 +185,36 @@ function CommandMenuContent() {
             if (!listRef.current) return;
             listRef.current?.scrollTop > 0 ? setScrolled(true) : setScrolled(false);
           }}
-          className="overflow-y-auto h-[calc(100%-82px)] scrollbar-none p-2 scroll-pb-[86px] scroll-pt-[62px] pb-[calc(28px+0.5rem)]"
+          className="overflow-y-auto h-[calc(100%-82px)] scrollbar-none p-2 scroll-pb-[86px] scroll-pt-[62px] pb-[calc(38px+0.5rem)]"
         >
-          <AnimatePresence mode="wait" initial={false}>
-            {isWriting ? (
-              <Layout key="handwriting" duration={0.15}>
-                <HandwritingComponent
-                  onSelected={(text) => {
-                    setValue(value + text);
-                  }}
-                />
-              </Layout>
-            ) : (
-              recentlySearched &&
-              isSearchEmpty && (
-                <Layout key="recently-searched" duration={0.15}>
-                  <CommandMenuGroupSearch
-                    clearHistory={clearRecentlySearched}
-                    onSelect={setValue}
-                    heading={t.recentlySearched}
-                    data={recentlySearched}
+          <AudioProvider>
+            <AnimatePresence mode="wait" initial={false}>
+              {isWriting ? (
+                <Layout key="handwriting" duration={0.15}>
+                  <HandwritingComponent
+                    onSelected={(text) => {
+                      setValue(value + text);
+                    }}
                   />
                 </Layout>
-              )
-            )}
-          </AnimatePresence>
-
-          <AudioProvider>
-            <div className={cn("duration-200", isLoading ? "opacity-50" : "opacity-100")}>
-              {searchResult && value && <CommandMenuGroupCard active={active} data={searchResult} sentence={value} />}
-            </div>
+              ) : (
+                <Layout key="recently-searched" duration={0.15}>
+                  {recentlySearched && isSearchEmpty && (
+                    <CommandMenuGroupSearch
+                      clearHistory={clearRecentlySearched}
+                      onSelect={setValue}
+                      heading={t.recentlySearched}
+                      data={recentlySearched}
+                    />
+                  )}
+                  <div className={cn("duration-200", isLoading ? "opacity-50" : "opacity-100")}>
+                    {searchResult && value && (
+                      <CommandMenuGroupCard active={active} data={searchResult} sentence={value} />
+                    )}
+                  </div>
+                </Layout>
+              )}
+            </AnimatePresence>
           </AudioProvider>
         </Command.List>
       </Command>

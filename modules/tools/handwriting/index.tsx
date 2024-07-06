@@ -35,7 +35,7 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
 
       const ctx = canvas.getContext("2d");
       if (ctx) {
-        ctx.strokeStyle = "#fefefe";
+        ctx.strokeStyle = "#f8f8f8";
       }
 
       if (handwriting) {
@@ -104,7 +104,7 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
   };
 
   return (
-    <div className="md:px-2 w-full mx-auto pb-3">
+    <div className="md:px-2 w-full mx-auto">
       <canvas
         className="bg-softzinc rounded-md"
         id="myCanvas"
