@@ -1,15 +1,6 @@
 import React from "react";
 import { Button } from "./buttons";
-import {
-  BookAIcon,
-  CompassIcon,
-  FilePlus2Icon,
-  GraduationCapIcon,
-  LibraryBigIcon,
-  LightbulbIcon,
-  PickaxeIcon,
-  SearchIcon,
-} from "lucide-react";
+import { BookAIcon, FilePlus2Icon, LibraryBigIcon, LightbulbIcon, PickaxeIcon, SearchIcon } from "lucide-react";
 import { ChangeLocaleButton, ChangeSimplifiedTraditional, Divider, usePreferences } from "@/components";
 import { AuthButton } from "./auth-button";
 import { useLocale } from "@/locales/use-locale";
@@ -54,31 +45,28 @@ export function HomeTodo() {
       <Divider />
 
       <div className="grid md:grid-cols-2 gap-4">
-        {/* <Button
-          className="relative hover:bg-sky-200/5"
-          icon={
-            <GraduationCapIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
-          }
-          path="/old-hsk/1"
-          title={t.home.oldHSK.title}
-          description={t.home.oldHSK.description}
-        >
-          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-amber-500/10 px-2 py-1 font-medium text-amber-500 ring-1 ring-inset ring-amber-500/20">
-            {t.oldHSK}
-          </div>
-        </Button> */}
-
         <Button
           className="relative hover:bg-sky-200/5"
-          icon={
-            <GraduationCapIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
-          }
+          icon={<div className="w-12 shrink-0 text-3xl font-bold text-sky-500">3.0</div>}
           path="/hsk/1"
           title={t.home.hsk.title}
           description={t.home.hsk.description}
         >
           <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md bg-sky-500/10 px-2 py-1 font-medium text-sky-500 ring-1 ring-inset ring-sky-500/20">
             2024
+          </div>
+        </Button>
+
+        <Button
+          disabled
+          className="relative hover:bg-sky-200/5 disabled:pointer-events-none disabled:opacity-50"
+          icon={<div className="w-12 shrink-0 text-3xl font-bold text-amber-500">2.0</div>}
+          path="/old-hsk/1"
+          title={t.home.oldHSK.title}
+          description={t.home.oldHSK.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-amber-500/10 px-2 py-1 font-medium text-amber-500 ring-1 ring-inset ring-amber-500/20">
+            {t.oldHSK}
           </div>
         </Button>
 
