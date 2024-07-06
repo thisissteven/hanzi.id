@@ -1,8 +1,8 @@
 import { Level } from "@/data";
 import { useCompletedCharactersActions } from "@/store";
 import React from "react";
-import { Dialog } from "./Dialog";
-import { Button } from "./Button";
+import { Dialog } from "../Dialog";
+import { Button } from "../Button";
 
 export function ResetButton({ level, disabled }: { level: Level; disabled: boolean }) {
   const { resetLevel } = useCompletedCharactersActions();

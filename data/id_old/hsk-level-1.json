@@ -1,0 +1,1859 @@
+[
+  {
+    "id": 1,
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "translations": [
+      "mencintai",
+      "kasih sayang",
+      "untuk disukai",
+      "menyukai"
+    ],
+    "traditional": "愛"
+  },
+  {
+    "id": 2,
+    "hanzi": "八",
+    "pinyin": "bā",
+    "translations": [
+      "delapan",
+      "8"
+    ],
+    "traditional": "八"
+  },
+  {
+    "id": 3,
+    "hanzi": "爸爸",
+    "pinyin": "bà ba",
+    "translations": [
+      "(Informal) Ayah",
+      "CL: 個 | 个",
+      "位 [wèi]"
+    ],
+    "traditional": "爸爸"
+  },
+  {
+    "id": 4,
+    "hanzi": "杯子",
+    "pinyin": "bēi zi",
+    "translations": [
+      "cangkir",
+      "kaca",
+      "CL: 個 | 个",
+      "支",
+      "枝 [zhī]"
+    ],
+    "traditional": "杯子"
+  },
+  {
+    "id": 5,
+    "hanzi": "北京",
+    "pinyin": "Běi jīng",
+    "translations": [
+      "Beijing",
+      "Modal Republik Rakyat Tiongkok",
+      "Peking",
+      "Pemerintah RRC"
+    ],
+    "traditional": "北京"
+  },
+  {
+    "id": 6,
+    "hanzi": "本",
+    "pinyin": "běn",
+    "translations": [
+      "akar atau batang tanaman",
+      "asal",
+      "sumber",
+      "ini",
+      "Sekarang",
+      "akar",
+      "dasar",
+      "dasar",
+      "Klasifikasi untuk buku",
+      "berkala",
+      "file dll",
+      "semula"
+    ],
+    "traditional": "本"
+  },
+  {
+    "id": 7,
+    "hanzi": "不客气",
+    "pinyin": "bù kè qi",
+    "translations": [
+      "Terima kasih kembali",
+      "tidak sopan",
+      "kasar",
+      "tumpul",
+      "tidak menyebutkannya"
+    ],
+    "traditional": "不客氣"
+  },
+  {
+    "id": 8,
+    "hanzi": "不",
+    "pinyin": "bù",
+    "translations": [
+      "(awalan negatif)",
+      "bukan",
+      "TIDAK"
+    ],
+    "traditional": "不"
+  },
+  {
+    "id": 9,
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "translations": [
+      "hidangan (jenis makanan)",
+      "Sayuran",
+      "sayur-mayur",
+      "Masakan",
+      "CL: 盤 | 盘",
+      "道 [Dào]"
+    ],
+    "traditional": "菜"
+  },
+  {
+    "id": 10,
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "translations": [
+      "teh",
+      "tanaman teh",
+      "CL: 杯",
+      "壺 | 壶 [hú]"
+    ],
+    "traditional": "茶"
+  },
+  {
+    "id": 11,
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "translations": [
+      "untuk makan",
+      "untuk mengkonsumsi",
+      "makan di (kafetaria dll)",
+      "untuk memberantas",
+      "untuk menghancurkan",
+      "untuk menyerap",
+      "menderita"
+    ],
+    "traditional": "吃"
+  },
+  {
+    "id": 12,
+    "hanzi": "出租车",
+    "pinyin": "chū zū chē",
+    "translations": [
+      "taksi",
+      "(Taiwan) mobil sewaan"
+    ],
+    "traditional": "計程車"
+  },
+  {
+    "id": 13,
+    "hanzi": "打电话",
+    "pinyin": "dǎ diàn huà",
+    "translations": [
+      "untuk melakukan panggilan telepon"
+    ],
+    "traditional": "打電話"
+  },
+  {
+    "id": 14,
+    "hanzi": "大",
+    "pinyin": "dà",
+    "translations": [
+      "besar",
+      "sangat besar",
+      "besar",
+      "besar",
+      "Besar",
+      "lebar",
+      "dalam",
+      "tertua",
+      "tertua"
+    ],
+    "traditional": "大"
+  },
+  {
+    "id": 15,
+    "hanzi": "的",
+    "pinyin": "de",
+    "translations": [
+      "dari",
+      "~ (Partikel posesif)",
+      "(digunakan setelah atribut)",
+      "(digunakan untuk membentuk ekspresi nominal)",
+      "(digunakan di akhir kalimat deklaratif untuk penekanan)"
+    ],
+    "traditional": "的"
+  },
+  {
+    "id": 16,
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "translations": [
+      "titik",
+      "dot",
+      "menjatuhkan",
+      "bintik",
+      "jam",
+      "titik (dalam ruang atau waktu)",
+      "untuk menggambar satu titik",
+      "Untuk memeriksa daftar",
+      "untuk memilih",
+      "untuk memesan (makanan di restoran)",
+      "untuk menyentuh secara singkat",
+      "untuk mengisyaratkan",
+      "untuk menerangi",
+      "untuk menyala",
+      "untuk menuangkan setetes dengan drop",
+      "(Lama) seperlima dari jam tangan dua jam 更 [gēng]",
+      "stroke dot dalam karakter Cina",
+      "Klasifikasi untuk item"
+    ],
+    "traditional": "點"
+  },
+  {
+    "id": 17,
+    "hanzi": "电脑",
+    "pinyin": "diàn nǎo",
+    "translations": [
+      "komputer",
+      "Cl: 臺 | 台 [Tái]"
+    ],
+    "traditional": "電腦"
+  },
+  {
+    "id": 18,
+    "hanzi": "电视",
+    "pinyin": "diàn shì",
+    "translations": [
+      "televisi",
+      "televisi",
+      "CL: 臺 | 台",
+      "個 | 个 [gè]"
+    ],
+    "traditional": "電視"
+  },
+  {
+    "id": 19,
+    "hanzi": "电影",
+    "pinyin": "diàn yǐng",
+    "translations": [
+      "film",
+      "film",
+      "CL: 部",
+      "片",
+      "幕",
+      "場 | 场 [chǎng]"
+    ],
+    "traditional": "電影"
+  },
+  {
+    "id": 20,
+    "hanzi": "东西",
+    "pinyin": "dōng xi",
+    "translations": [
+      "benda",
+      "hal-hal",
+      "orang",
+      "CL: 個 | 个",
+      "件 [jiàn]"
+    ],
+    "traditional": "東西"
+  },
+  {
+    "id": 21,
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "translations": [
+      "semua",
+      "keduanya",
+      "sepenuhnya",
+      "(digunakan untuk penekanan) bahkan",
+      "sudah",
+      "(sama sekali tidak"
+    ],
+    "traditional": "都"
+  },
+  {
+    "id": 22,
+    "hanzi": "读",
+    "pinyin": "dú",
+    "translations": [
+      "untuk membaca",
+      "untuk belajar",
+      "Membaca kata (mis. Pengucapan)",
+      "Mirip dengan 拼音 [pīn yīn]"
+    ],
+    "traditional": "讀"
+  },
+  {
+    "id": 23,
+    "hanzi": "对不起",
+    "pinyin": "duì bu qǐ",
+    "translations": [
+      "tak layak",
+      "untuk mengecewakan",
+      "saya minta maaf",
+      "Permisi",
+      "maaf",
+      "jika Anda berkenan",
+      "Maaf? (Tolong ulangi)"
+    ],
+    "traditional": "對不起"
+  },
+  {
+    "id": 24,
+    "hanzi": "多",
+    "pinyin": "duō",
+    "translations": [
+      "banyak",
+      "banyak",
+      "banyak",
+      "banyak sekali",
+      "lagi",
+      "Berlebihan",
+      "Bagaimana (sejauh mana)",
+      "multi-",
+      "Taiwan PR.  ketika itu berarti \"bagaimana\""
+    ],
+    "traditional": "多"
+  },
+  {
+    "id": 25,
+    "hanzi": "多少",
+    "pinyin": "duō shao",
+    "translations": [
+      "berapa harganya",
+      "berapa banyak",
+      "ke berapa)",
+      "sebanyak"
+    ],
+    "traditional": "多少"
+  },
+  {
+    "id": 26,
+    "hanzi": "儿子",
+    "pinyin": "ér zi",
+    "translations": [
+      "putra"
+    ],
+    "traditional": "兒子"
+  },
+  {
+    "id": 27,
+    "hanzi": "二",
+    "pinyin": "èr",
+    "translations": [
+      "dua",
+      "2",
+      "Bodoh (dialek Beijing)"
+    ],
+    "traditional": "二"
+  },
+  {
+    "id": 28,
+    "hanzi": "饭馆",
+    "pinyin": "fàn guǎn",
+    "translations": [
+      "restoran",
+      "CL: 家 [Jiā]"
+    ],
+    "traditional": "飯館"
+  },
+  {
+    "id": 29,
+    "hanzi": "飞机",
+    "pinyin": "fēi jī",
+    "translations": [
+      "pesawat terbang",
+      "CL: 架 [Jià]"
+    ],
+    "traditional": "飛機"
+  },
+  {
+    "id": 30,
+    "hanzi": "分钟",
+    "pinyin": "fēn zhōng",
+    "translations": [
+      "menit"
+    ],
+    "traditional": "分鐘"
+  },
+  {
+    "id": 31,
+    "hanzi": "高兴",
+    "pinyin": "gāo xìng",
+    "translations": [
+      "senang",
+      "senang",
+      "bersedia (melakukan sth)",
+      "dalam suasana hati yang ceria"
+    ],
+    "traditional": "高興"
+  },
+  {
+    "id": 32,
+    "hanzi": "个",
+    "pinyin": "gè",
+    "translations": [
+      "Varian 個 | 个 [gè]"
+    ],
+    "traditional": "個"
+  },
+  {
+    "id": 33,
+    "hanzi": "工作",
+    "pinyin": "gōng zuò",
+    "translations": [
+      "bekerja",
+      "(dari mesin) untuk beroperasi",
+      "pekerjaan",
+      "bekerja",
+      "tugas",
+      "CL: 個 | 个",
+      "份",
+      "項 | 项 [xiàng]"
+    ],
+    "traditional": "工作"
+  },
+  {
+    "id": 34,
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "translations": [
+      "anjing",
+      "CL: 隻 | 只",
+      "條 | 条 [tiáo]"
+    ],
+    "traditional": "狗"
+  },
+  {
+    "id": 35,
+    "hanzi": "汉语",
+    "pinyin": "Hàn yǔ",
+    "translations": [
+      "bahasa Cina",
+      "CL: 門 | 门 [mén]"
+    ],
+    "traditional": "漢語"
+  },
+  {
+    "id": 36,
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "translations": [
+      "Bagus",
+      "Sehat",
+      "sesuai",
+      "bagus untuk",
+      "mudah untuk",
+      "sangat",
+      "Jadi",
+      "(Sufiks menunjukkan penyelesaian atau kesiapan)"
+    ],
+    "traditional": "好"
+  },
+  {
+    "id": 37,
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "translations": [
+      "untuk minum",
+      "Ya ampun!"
+    ],
+    "traditional": "喝"
+  },
+  {
+    "id": 38,
+    "hanzi": "和",
+    "pinyin": "hé",
+    "translations": [
+      "Dan",
+      "bersama dengan",
+      "dengan",
+      "jumlah",
+      "Persatuan",
+      "perdamaian",
+      "harmoni",
+      "Terkait Jepang",
+      "Taiwan PR. [Hàn]"
+    ],
+    "traditional": "和"
+  },
+  {
+    "id": 39,
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "translations": [
+      "(kata keterangan gelar)",
+      "lumayan",
+      "sangat",
+      "sangat"
+    ],
+    "traditional": "很"
+  },
+  {
+    "id": 40,
+    "hanzi": "后面",
+    "pinyin": "hòu mian",
+    "translations": [
+      "belakang",
+      "kembali",
+      "di belakang",
+      "Nanti",
+      "setelah itu"
+    ],
+    "traditional": "後面"
+  },
+  {
+    "id": 41,
+    "hanzi": "回",
+    "pinyin": "huí",
+    "translations": [
+      "untuk melengkung",
+      "mengembalikan",
+      "untuk berputar"
+    ],
+    "traditional": "回"
+  },
+  {
+    "id": 42,
+    "hanzi": "会",
+    "pinyin": "huì",
+    "translations": [
+      "Bisa",
+      "menjadi mungkin",
+      "mampu untuk",
+      "akan",
+      "kemungkinan besar akan",
+      "pastikan untuk",
+      "untuk berkumpul",
+      "bertemu",
+      "berkumpul",
+      "untuk melihat",
+      "Persatuan",
+      "kelompok",
+      "asosiasi",
+      "Cl: 個 | 个 [gè]",
+      "Momen (taiwan pr. Untuk pengertian ini)"
+    ],
+    "traditional": "會"
+  },
+  {
+    "id": 43,
+    "hanzi": "火车站",
+    "pinyin": "huǒ chē zhàn",
+    "translations": [
+      "stasiun kereta"
+    ],
+    "traditional": "火車站"
+  },
+  {
+    "id": 44,
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "translations": [
+      "berapa harganya",
+      "berapa banyak",
+      "beberapa",
+      "Beberapa"
+    ],
+    "traditional": "幾"
+  },
+  {
+    "id": 45,
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "translations": [
+      "rumah",
+      "keluarga",
+      "Klasifikasi untuk keluarga atau bisnis",
+      "mengacu pada sekolah filosofis pra-han cina",
+      "Sufiks kata benda untuk spesialis dalam beberapa kegiatan seperti musisi atau revolusioner",
+      "sesuai dengan bahasa Inggris -ist",
+      "-er",
+      "-ary atau -ian",
+      "Cl: 個 | 个 [gè]"
+    ],
+    "traditional": "家"
+  },
+  {
+    "id": 46,
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "translations": [
+      "berteriak",
+      "memanggil",
+      "untuk memesan",
+      "untuk bertanya",
+      "disebut",
+      "oleh (menunjukkan agen dalam suasana hati pasif)"
+    ],
+    "traditional": "叫"
+  },
+  {
+    "id": 47,
+    "hanzi": "今天",
+    "pinyin": "jīn tiān",
+    "translations": [
+      "Hari ini",
+      "di masa sekarang",
+      "Sekarang"
+    ],
+    "traditional": "今天"
+  },
+  {
+    "id": 48,
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "translations": [
+      "sembilan",
+      "9"
+    ],
+    "traditional": "九"
+  },
+  {
+    "id": 49,
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "translations": [
+      "membuka",
+      "untuk memulai",
+      "untuk menyala",
+      "Merebus",
+      "untuk menulis (resep medis)",
+      "untuk beroperasi (kendaraan)",
+      "ABBR. untuk 開爾文 | 开尔文 derajat Kelvin"
+    ],
+    "traditional": "開"
+  },
+  {
+    "id": 50,
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "translations": [
+      "untuk melihat",
+      "untuk melihat",
+      "untuk membaca",
+      "untuk melihat",
+      "mempertimbangkan",
+      "untuk menganggap sebagai",
+      "untuk melihat sebagai",
+      "untuk memperlakukan sebagai",
+      "untuk menilai",
+      "(setelah kata kerja berulang) untuk mencobanya",
+      "tergantung pada (bagaimana Anda menilai)",
+      "untuk mengunjungi",
+      "untuk menghubungi",
+      "untuk mengobati (penyakit)",
+      "untuk menjaga",
+      "Hati-Hati! (untuk bahaya)"
+    ],
+    "traditional": "看"
+  },
+  {
+    "id": 51,
+    "hanzi": "看见",
+    "pinyin": "kàn jiàn",
+    "translations": [
+      "untuk melihat",
+      "untuk melihat"
+    ],
+    "traditional": "看見"
+  },
+  {
+    "id": 52,
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "translations": [
+      "benjolan (dari bumi)",
+      "bingkah",
+      "bagian",
+      "classifier untuk potongan kain",
+      "kue",
+      "sabun dll",
+      "kata sehari -hari untuk yuan (atau unit mata uang lainnya seperti Hong Kong atau dolar AS dll)",
+      "biasanya sebagai 塊 錢 | 块 钱"
+    ],
+    "traditional": "塊"
+  },
+  {
+    "id": 53,
+    "hanzi": "来",
+    "pinyin": "lái",
+    "translations": [
+      "datang",
+      "untuk tiba",
+      "untuk datang",
+      "semenjak",
+      "Berikutnya"
+    ],
+    "traditional": "來"
+  },
+  {
+    "id": 54,
+    "hanzi": "老师",
+    "pinyin": "lǎo shī",
+    "translations": [
+      "guru",
+      "CL: 個 | 个",
+      "位 [wèi]"
+    ],
+    "traditional": "老師"
+  },
+  {
+    "id": 55,
+    "hanzi": "了",
+    "pinyin": "le",
+    "translations": [
+      "(Partikel modal mengintensifkan klausa sebelumnya)",
+      "(Penanda Tindakan Selesai)"
+    ],
+    "traditional": "了"
+  },
+  {
+    "id": 56,
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "translations": [
+      "dingin"
+    ],
+    "traditional": "冷"
+  },
+  {
+    "id": 57,
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "translations": [
+      "Li (Mil Cina)",
+      "500 meter (modern)",
+      "rumah",
+      "kampung halaman",
+      "desa",
+      "lingkungan",
+      "unit administrasi"
+    ],
+    "traditional": "裡"
+  },
+  {
+    "id": 58,
+    "hanzi": "零",
+    "pinyin": "líng",
+    "translations": [
+      "nol",
+      "nol",
+      "Tanda Nol",
+      "fraksional",
+      "fragmentaris",
+      "ganjil (angka)",
+      "(ditempatkan di antara dua angka untuk menunjukkan jumlah yang lebih kecil diikuti oleh yang lebih besar)",
+      "pecahan",
+      "(dalam matematika) sisa (setelah divisi)",
+      "tambahan",
+      "untuk layu dan jatuh",
+      "untuk layu"
+    ],
+    "traditional": "零"
+  },
+  {
+    "id": 59,
+    "hanzi": "六",
+    "pinyin": "liù",
+    "translations": [
+      "enam",
+      "6"
+    ],
+    "traditional": "六"
+  },
+  {
+    "id": 60,
+    "hanzi": "妈妈",
+    "pinyin": "mā ma",
+    "translations": [
+      "mama",
+      "mama",
+      "ibu",
+      "CL: 個 | 个",
+      "位 [wèi]"
+    ],
+    "traditional": "媽媽"
+  },
+  {
+    "id": 61,
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "translations": [
+      "(tanda tanya)"
+    ],
+    "traditional": "嗎"
+  },
+  {
+    "id": 62,
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "translations": [
+      "untuk membeli",
+      "untuk membeli"
+    ],
+    "traditional": "買"
+  },
+  {
+    "id": 63,
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "translations": [
+      "kucing",
+      "CL: 隻 | 只 [zhī]"
+    ],
+    "traditional": "貓"
+  },
+  {
+    "id": 64,
+    "hanzi": "没",
+    "pinyin": "méi",
+    "translations": [
+      "(awalan negatif untuk kata kerja)",
+      "sudah tidak",
+      "bukan"
+    ],
+    "traditional": "沒"
+  },
+  {
+    "id": 65,
+    "hanzi": "没关系",
+    "pinyin": "méi guān xi",
+    "translations": [
+      "Tidak masalah"
+    ],
+    "traditional": "沒關係"
+  },
+  {
+    "id": 66,
+    "hanzi": "米饭",
+    "pinyin": "mǐ fàn",
+    "translations": [
+      "(Nasi"
+    ],
+    "traditional": "米飯"
+  },
+  {
+    "id": 67,
+    "hanzi": "明天",
+    "pinyin": "míng tiān",
+    "translations": [
+      "besok"
+    ],
+    "traditional": "明天"
+  },
+  {
+    "id": 68,
+    "hanzi": "名字",
+    "pinyin": "míng zi",
+    "translations": [
+      "nama (seseorang atau benda)",
+      "Cl: 個 | 个 [gè]"
+    ],
+    "traditional": "名字"
+  },
+  {
+    "id": 69,
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "translations": [
+      "Bagaimana",
+      "yang"
+    ],
+    "traditional": "哪"
+  },
+  {
+    "id": 70,
+    "hanzi": "那",
+    "pinyin": "nà",
+    "translations": [
+      "itu",
+      "itu",
+      "Kemudian (dalam hal ini)",
+      "umumnya pr.  sebelum classifier",
+      "esp. di Beijing"
+    ],
+    "traditional": "那"
+  },
+  {
+    "id": 71,
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "translations": [
+      "Partikel yang menunjukkan bahwa pertanyaan yang diajukan sebelumnya akan diterapkan pada kata sebelumnya (\"Bagaimana dengan ...?\"",
+      "\"Dan ...?\")",
+      "partikel untuk menanyakan tentang lokasi (\"Di mana ...?\")",
+      "Partikel menandakan jeda",
+      "Untuk menekankan kata -kata sebelumnya dan memberi waktu pendengar untuk mengambilnya (\"Oke?\"",
+      "\"Apakah kau setuju dengan saya?\")",
+      "(Di akhir kalimat deklaratif) Partikel yang menunjukkan kelanjutan dari suatu keadaan atau tindakan",
+      "partikel yang menunjukkan penegasan yang kuat"
+    ],
+    "traditional": "呢"
+  },
+  {
+    "id": 72,
+    "hanzi": "能",
+    "pinyin": "néng",
+    "translations": [
+      "agar bisa",
+      "mampu",
+      "kemampuan",
+      "kemampuan",
+      "mampu",
+      "mampu",
+      "bisa",
+      "(biasanya digunakan dalam negatif) untuk memiliki kemungkinan"
+    ],
+    "traditional": "能"
+  },
+  {
+    "id": 73,
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "translations": [
+      "Anda (informal",
+      "Berbeda dengan yang sopan 您)"
+    ],
+    "traditional": "你"
+  },
+  {
+    "id": 74,
+    "hanzi": "年",
+    "pinyin": "nián",
+    "translations": [
+      "tahun",
+      "Cl: 個 | 个 [gè]"
+    ],
+    "traditional": "年"
+  },
+  {
+    "id": 75,
+    "hanzi": "女儿",
+    "pinyin": "nǚ ér",
+    "translations": [
+      "anak perempuan"
+    ],
+    "traditional": "女兒"
+  },
+  {
+    "id": 76,
+    "hanzi": "朋友",
+    "pinyin": "péng you",
+    "translations": [
+      "teman",
+      "CL: 個 | 个",
+      "位 [wèi]"
+    ],
+    "traditional": "朋友"
+  },
+  {
+    "id": 77,
+    "hanzi": "漂亮",
+    "pinyin": "piào liang",
+    "translations": [
+      "cantik",
+      "cantik"
+    ],
+    "traditional": "漂亮"
+  },
+  {
+    "id": 78,
+    "hanzi": "苹果",
+    "pinyin": "píng guǒ",
+    "translations": [
+      "apel",
+      "CL: 個 | 个",
+      "顆 | 颗 [kē]"
+    ],
+    "traditional": "蘋果"
+  },
+  {
+    "id": 79,
+    "hanzi": "七",
+    "pinyin": "qī",
+    "translations": [
+      "tujuh",
+      "7"
+    ],
+    "traditional": "七"
+  },
+  {
+    "id": 80,
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "translations": [
+      "koin",
+      "uang",
+      "Cl: 筆 | 笔 [bǐ]",
+      "satuan berat",
+      "sepersepuluh tael 兩 | 两 [liǎng]"
+    ],
+    "traditional": "錢"
+  },
+  {
+    "id": 81,
+    "hanzi": "前面",
+    "pinyin": "qián miàn",
+    "translations": [
+      "di depan",
+      "di depan",
+      "mendahului",
+      "di atas"
+    ],
+    "traditional": "前面"
+  },
+  {
+    "id": 82,
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "translations": [
+      "untuk bertanya",
+      "untuk mengundang",
+      "tolong (lakukan sth)",
+      "untuk merawat (untuk makan dll)",
+      "untuk meminta"
+    ],
+    "traditional": "請"
+  },
+  {
+    "id": 83,
+    "hanzi": "去",
+    "pinyin": "qù",
+    "translations": [
+      "untuk pergi",
+      "untuk pergi ke (tempat)",
+      "menyebabkan pergi atau mengirim (SB)",
+      "untuk menghapus",
+      "untuk menyingkirkan",
+      "(Saat digunakan sebelum atau sesudah kata kerja) untuk melakukan STH",
+      "terpisah dari ruang atau waktu",
+      "(Setelah kata kerja gerakan menunjukkan gerakan menjauh dari pembicara)",
+      "(Digunakan setelah kata kerja tertentu untuk menunjukkan detasemen atau pemisahan)",
+      "(waktu atau acara dll) baru saja berlalu atau berlalu"
+    ],
+    "traditional": "去"
+  },
+  {
+    "id": 84,
+    "hanzi": "热",
+    "pinyin": "rè",
+    "translations": [
+      "untuk pemanasan",
+      "untuk memanaskan",
+      "Panas (cuaca)",
+      "panas",
+      "kuat"
+    ],
+    "traditional": "熱"
+  },
+  {
+    "id": 85,
+    "hanzi": "人",
+    "pinyin": "rén",
+    "translations": [
+      "pria",
+      "orang",
+      "rakyat",
+      "CL: 個 | 个",
+      "位 [wèi]"
+    ],
+    "traditional": "人"
+  },
+  {
+    "id": 86,
+    "hanzi": "认识",
+    "pinyin": "rèn shi",
+    "translations": [
+      "untuk mengetahui",
+      "untuk mengenali",
+      "untuk menjadi terbiasa",
+      "untuk berkenalan dengan SB",
+      "pengetahuan",
+      "memahami",
+      "kesadaran",
+      "pengartian"
+    ],
+    "traditional": "認識"
+  },
+  {
+    "id": 87,
+    "hanzi": "日",
+    "pinyin": "rì",
+    "translations": [
+      "matahari",
+      "hari",
+      "tanggal",
+      "Hari Bulan Ini",
+      "ABBR. untuk 日本 Jepang"
+    ],
+    "traditional": "日"
+  },
+  {
+    "id": 88,
+    "hanzi": "三",
+    "pinyin": "sān",
+    "translations": [
+      "tiga",
+      "3"
+    ],
+    "traditional": "三"
+  },
+  {
+    "id": 89,
+    "hanzi": "商店",
+    "pinyin": "shāng diàn",
+    "translations": [
+      "toko",
+      "toko",
+      "CL: 家",
+      "個 | 个 [gè]"
+    ],
+    "traditional": "商店"
+  },
+  {
+    "id": 90,
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "translations": [
+      "di atas",
+      "pada",
+      "di atas",
+      "atas",
+      "sebelumnya",
+      "pertama (dari beberapa bagian)",
+      "memanjat",
+      "untuk masuk",
+      "naik",
+      "untuk hadir (kelas atau universitas)"
+    ],
+    "traditional": "上"
+  },
+  {
+    "id": 91,
+    "hanzi": "上午",
+    "pinyin": "shàng wǔ",
+    "translations": [
+      "Pagi",
+      "Cl: 個 | 个 [gè]"
+    ],
+    "traditional": "上午"
+  },
+  {
+    "id": 92,
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "translations": [
+      "sedikit",
+      "kecil",
+      "kekurangan"
+    ],
+    "traditional": "少"
+  },
+  {
+    "id": 93,
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "translations": [
+      "WHO",
+      "juga pr. [Shuí]"
+    ],
+    "traditional": "誰"
+  },
+  {
+    "id": 94,
+    "hanzi": "什么",
+    "pinyin": "shén me",
+    "translations": [
+      "Apa?",
+      "WHO?",
+      "sesuatu",
+      "apa pun"
+    ],
+    "traditional": "什麼"
+  },
+  {
+    "id": 95,
+    "hanzi": "十",
+    "pinyin": "shí",
+    "translations": [
+      "sepuluh",
+      "10"
+    ],
+    "traditional": "十"
+  },
+  {
+    "id": 96,
+    "hanzi": "时候",
+    "pinyin": "shí hou",
+    "translations": [
+      "waktu",
+      "lamanya waktu",
+      "momen",
+      "periode"
+    ],
+    "traditional": "時候"
+  },
+  {
+    "id": 97,
+    "hanzi": "是",
+    "pinyin": "shì",
+    "translations": [
+      "adalah",
+      "adalah",
+      "saya",
+      "Ya",
+      "menjadi"
+    ],
+    "traditional": "是"
+  },
+  {
+    "id": 98,
+    "hanzi": "书",
+    "pinyin": "shū",
+    "translations": [
+      "buku",
+      "surat",
+      "CL: 本",
+      "冊 | 册",
+      "部 [Bù]",
+      "Lihat juga 書 經 | 书 经 Buku Sejarah"
+    ],
+    "traditional": "書"
+  },
+  {
+    "id": 99,
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "translations": [
+      "air",
+      "sungai",
+      "cairan",
+      "minuman",
+      "biaya tambahan atau pendapatan",
+      "(dari pakaian) Classifier untuk jumlah pencucian"
+    ],
+    "traditional": "水"
+  },
+  {
+    "id": 100,
+    "hanzi": "水果",
+    "pinyin": "shuǐ guǒ",
+    "translations": [
+      "buah",
+      "Cl: 個 | 个 [gè]"
+    ],
+    "traditional": "水果"
+  },
+  {
+    "id": 101,
+    "hanzi": "睡觉",
+    "pinyin": "shuì jiào",
+    "translations": [
+      "Pergi tidur",
+      "tidur"
+    ],
+    "traditional": "睡覺"
+  },
+  {
+    "id": 102,
+    "hanzi": "说话",
+    "pinyin": "shuō huà",
+    "translations": [
+      "berbicara",
+      "untuk mengatakan",
+      "untuk berbicara",
+      "untuk bergosip",
+      "untuk menceritakan kisah",
+      "bicara",
+      "kata"
+    ],
+    "traditional": "說話"
+  },
+  {
+    "id": 103,
+    "hanzi": "四",
+    "pinyin": "sì",
+    "translations": [
+      "empat",
+      "4"
+    ],
+    "traditional": "四"
+  },
+  {
+    "id": 104,
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "translations": [
+      "Klasifikasi selama bertahun -tahun (usia)",
+      "tahun",
+      "tahun (panen tanaman)"
+    ],
+    "traditional": "歲"
+  },
+  {
+    "id": 105,
+    "hanzi": "他",
+    "pinyin": "tā",
+    "translations": [
+      "dia atau dia",
+      "(digunakan untuk kedua jenis kelamin saat jenis kelamin tidak diketahui atau tidak penting)",
+      "(digunakan sebelum nama SB untuk penekanan)",
+      "(digunakan sebagai objek tiruan yang tidak berarti)",
+      "lainnya",
+      "lain"
+    ],
+    "traditional": "他"
+  },
+  {
+    "id": 106,
+    "hanzi": "她",
+    "pinyin": "tā",
+    "translations": [
+      "dia"
+    ],
+    "traditional": "她"
+  },
+  {
+    "id": 107,
+    "hanzi": "太",
+    "pinyin": "tài",
+    "translations": [
+      "paling tinggi",
+      "Terbaik",
+      "terlalu banyak)",
+      "sangat",
+      "sangat"
+    ],
+    "traditional": "太"
+  },
+  {
+    "id": 108,
+    "hanzi": "天气",
+    "pinyin": "tiān qì",
+    "translations": [
+      "cuaca"
+    ],
+    "traditional": "天氣"
+  },
+  {
+    "id": 109,
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "translations": [
+      "untuk mendengarkan",
+      "mendengar",
+      "untuk mematuhi",
+      "A Can (Loanword From English \"Tin\")",
+      "Klasifikasi untuk minuman kalengan"
+    ],
+    "traditional": "聽"
+  },
+  {
+    "id": 110,
+    "hanzi": "同学",
+    "pinyin": "tóng xué",
+    "translations": [
+      "untuk belajar di sekolah yang sama",
+      "sesama mahasiswa",
+      "teman sekelas",
+      "CL: 位",
+      "個 | 个 [gè]"
+    ],
+    "traditional": "同學"
+  },
+  {
+    "id": 111,
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "translations": [
+      "memberi makan"
+    ],
+    "traditional": "餵"
+  },
+  {
+    "id": 112,
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "translations": [
+      "SAYA",
+      "Saya",
+      "-ku"
+    ],
+    "traditional": "我"
+  },
+  {
+    "id": 113,
+    "hanzi": "我们",
+    "pinyin": "wǒ men",
+    "translations": [
+      "Kami",
+      "kita",
+      "diri",
+      "kita"
+    ],
+    "traditional": "我們"
+  },
+  {
+    "id": 114,
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "translations": [
+      "lima",
+      "5"
+    ],
+    "traditional": "五"
+  },
+  {
+    "id": 115,
+    "hanzi": "喜欢",
+    "pinyin": "xǐ huan",
+    "translations": [
+      "menyukai",
+      "untuk disukai"
+    ],
+    "traditional": "喜歡"
+  },
+  {
+    "id": 116,
+    "hanzi": "下",
+    "pinyin": "xià",
+    "translations": [
+      "turun",
+      "ke bawah",
+      "di bawah",
+      "lebih rendah",
+      "Nanti",
+      "Berikutnya (minggu dll)",
+      "kedua (dari dua bagian)",
+      "untuk menolak",
+      "ke bawah"
+    ],
+    "traditional": "下"
+  },
+  {
+    "id": 117,
+    "hanzi": "下午",
+    "pinyin": "xià wǔ",
+    "translations": [
+      "sore",
+      "Cl: 個 | 个 [gè]",
+      "pm."
+    ],
+    "traditional": "下午"
+  },
+  {
+    "id": 118,
+    "hanzi": "下雨",
+    "pinyin": "xià yǔ",
+    "translations": [
+      "hujan",
+      "hujan"
+    ],
+    "traditional": "下雨"
+  },
+  {
+    "id": 119,
+    "hanzi": "先生",
+    "pinyin": "xiān sheng",
+    "translations": [
+      "guru",
+      "suami",
+      "Dokter (Topolect)",
+      "CL: 位 [Wèi]"
+    ],
+    "traditional": "先生"
+  },
+  {
+    "id": 120,
+    "hanzi": "现在",
+    "pinyin": "xiàn zài",
+    "translations": [
+      "Sekarang",
+      "saat sekarang",
+      "saat ini",
+      "modern",
+      "saat ini",
+      "dewasa ini"
+    ],
+    "traditional": "現在"
+  },
+  {
+    "id": 121,
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "translations": [
+      "untuk berpikir",
+      "percaya",
+      "menduga",
+      "berharap",
+      "ingin",
+      "melewatkan"
+    ],
+    "traditional": "想"
+  },
+  {
+    "id": 122,
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "translations": [
+      "kecil",
+      "kecil",
+      "sedikit",
+      "muda"
+    ],
+    "traditional": "小"
+  },
+  {
+    "id": 123,
+    "hanzi": "小姐",
+    "pinyin": "xiǎo jie",
+    "translations": [
+      "wanita muda",
+      "merindukan",
+      "(Slang) Pelacur",
+      "CL: 個 | 个",
+      "位 [wèi]"
+    ],
+    "traditional": "小姐"
+  },
+  {
+    "id": 124,
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "translations": [
+      "beberapa",
+      "sedikit",
+      "beberapa",
+      "Ukur kata yang menunjukkan jumlah kecil atau jumlah kecil (lebih besar dari 1)"
+    ],
+    "traditional": "些"
+  },
+  {
+    "id": 125,
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "translations": [
+      "untuk menulis"
+    ],
+    "traditional": "寫"
+  },
+  {
+    "id": 126,
+    "hanzi": "谢谢",
+    "pinyin": "xiè xie",
+    "translations": [
+      "untuk berterima kasih",
+      "terima kasih"
+    ],
+    "traditional": "謝謝"
+  },
+  {
+    "id": 127,
+    "hanzi": "星期",
+    "pinyin": "xīng qī",
+    "translations": [
+      "pekan",
+      "Cl: 個 | 个 [gè]",
+      "hari di minggu ini",
+      "Minggu"
+    ],
+    "traditional": "星期"
+  },
+  {
+    "id": 128,
+    "hanzi": "学生",
+    "pinyin": "xué sheng",
+    "translations": [
+      "murid",
+      "anak sekolah"
+    ],
+    "traditional": "學生"
+  },
+  {
+    "id": 129,
+    "hanzi": "学习",
+    "pinyin": "xué xí",
+    "translations": [
+      "untuk mempelajari",
+      "untuk belajar"
+    ],
+    "traditional": "學習"
+  },
+  {
+    "id": 130,
+    "hanzi": "学校",
+    "pinyin": "xué xiào",
+    "translations": [
+      "sekolah",
+      "CL: 所 [suǒ]"
+    ],
+    "traditional": "學校"
+  },
+  {
+    "id": 131,
+    "hanzi": "一",
+    "pinyin": "yī",
+    "translations": [
+      "satu",
+      "1",
+      "lajang",
+      "A (artikel)",
+      "sesegera",
+      "seluruh",
+      "utuh",
+      "semua",
+      "selama",
+      "\"Satu\" radikal dalam karakter Cina (radikal kangxi 1)"
+    ],
+    "traditional": "一"
+  },
+  {
+    "id": 132,
+    "hanzi": "衣服",
+    "pinyin": "yī fu",
+    "translations": [
+      "pakaian",
+      "CL: 件",
+      "套 [tào]"
+    ],
+    "traditional": "衣服"
+  },
+  {
+    "id": 133,
+    "hanzi": "医生",
+    "pinyin": "yī shēng",
+    "translations": [
+      "dokter",
+      "CL: 個 | 个",
+      "位",
+      "名 [míng]"
+    ],
+    "traditional": "醫生"
+  },
+  {
+    "id": 134,
+    "hanzi": "医院",
+    "pinyin": "yī yuàn",
+    "translations": [
+      "RSUD",
+      "CL: 所",
+      "家",
+      "座 [Zuò]"
+    ],
+    "traditional": "醫院"
+  },
+  {
+    "id": 135,
+    "hanzi": "椅子",
+    "pinyin": "yǐ zi",
+    "translations": [
+      "kursi",
+      "CL: 把",
+      "套 [tào]"
+    ],
+    "traditional": "椅子"
+  },
+  {
+    "id": 136,
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "translations": [
+      "memiliki",
+      "ada",
+      "ada",
+      "untuk eksis",
+      "menjadi"
+    ],
+    "traditional": "有"
+  },
+  {
+    "id": 137,
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "translations": [
+      "bulan",
+      "bulan",
+      "CL: 個 | 个",
+      "輪 | 轮 [lún]"
+    ],
+    "traditional": "月"
+  },
+  {
+    "id": 138,
+    "hanzi": "在",
+    "pinyin": "zài",
+    "translations": [
+      "(bertempat di",
+      "(menjadi) di",
+      "untuk eksis",
+      "di tengah melakukan sth",
+      "(menunjukkan tindakan yang sedang berlangsung)"
+    ],
+    "traditional": "在"
+  },
+  {
+    "id": 139,
+    "hanzi": "再见",
+    "pinyin": "zài jiàn",
+    "translations": [
+      "selamat tinggal",
+      "Sampai jumpa lagi nanti"
+    ],
+    "traditional": "再見"
+  },
+  {
+    "id": 140,
+    "hanzi": "怎么",
+    "pinyin": "zěn me",
+    "translations": [
+      "varian 怎麼 | 怎么 [zěn saya]"
+    ],
+    "traditional": "怎麼"
+  },
+  {
+    "id": 141,
+    "hanzi": "怎么样",
+    "pinyin": "zěn me yàng",
+    "translations": [
+      "Bagaimana?",
+      "bagaimana tentang?",
+      "bagaimana itu?",
+      "Bagaimana kabar?"
+    ],
+    "traditional": "怎麼樣"
+  },
+  {
+    "id": 142,
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "translations": [
+      "ini",
+      "ini",
+      "(Biasanya pr. Sebelum classifier",
+      "esp. di Beijing)"
+    ],
+    "traditional": "這"
+  },
+  {
+    "id": 143,
+    "hanzi": "中国",
+    "pinyin": "Zhōng guó",
+    "translations": [
+      "Cina",
+      "Kerajaan Tengah"
+    ],
+    "traditional": "中國"
+  },
+  {
+    "id": 144,
+    "hanzi": "中午",
+    "pinyin": "zhōng wǔ",
+    "translations": [
+      "siang",
+      "pagi menjelang siang",
+      "Cl: 個 | 个 [gè]"
+    ],
+    "traditional": "中午"
+  },
+  {
+    "id": 145,
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "translations": [
+      "untuk hidup",
+      "untuk tinggal",
+      "untuk tinggal",
+      "untuk tinggal",
+      "untuk berhenti",
+      "(Sufiks menunjukkan ketegasan",
+      "kemantapan",
+      "atau berhenti)"
+    ],
+    "traditional": "住"
+  },
+  {
+    "id": 146,
+    "hanzi": "桌子",
+    "pinyin": "zhuō zi",
+    "translations": [
+      "meja",
+      "meja",
+      "CL: 張 | 张",
+      "套 [tào]"
+    ],
+    "traditional": "桌子"
+  },
+  {
+    "id": 147,
+    "hanzi": "字",
+    "pinyin": "zì",
+    "translations": [
+      "surat",
+      "simbol",
+      "karakter",
+      "kata",
+      "Cl: 個 | 个 [gè]",
+      "Kantor atau nama gaya yang secara tradisional diberikan kepada laki -laki berusia 20 tahun di Dynastic China"
+    ],
+    "traditional": "字"
+  },
+  {
+    "id": 148,
+    "hanzi": "昨天",
+    "pinyin": "zuó tiān",
+    "translations": [
+      "Kemarin"
+    ],
+    "traditional": "昨天"
+  },
+  {
+    "id": 149,
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "translations": [
+      "duduk",
+      "untuk duduk",
+      "untuk mengambil (bus",
+      "pesawat terbang dll)",
+      "untuk menghasilkan buah",
+      "Varian 座 [Zuò]"
+    ],
+    "traditional": "坐"
+  },
+  {
+    "id": 150,
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "translations": [
+      "melakukan",
+      "untuk membuat",
+      "untuk menghasilkan",
+      "untuk menulis",
+      "untuk menyusun",
+      "untuk bertindak sebagai",
+      "untuk terlibat dalam",
+      "untuk mengadakan (pesta)",
+      "menjadi",
+      "untuk menjadi",
+      "berfungsi (dalam beberapa kapasitas)",
+      "untuk melayani sebagai",
+      "untuk digunakan",
+      "untuk membentuk (ikatan atau hubungan)",
+      "berpura-pura",
+      "untuk berpura -pura",
+      "untuk bertindak sebagai bagian",
+      "tampil"
+    ],
+    "traditional": "做"
+  }
+]

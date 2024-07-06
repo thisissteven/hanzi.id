@@ -7,7 +7,14 @@ import type { AppProps } from "next/app";
 import { PreferencesProvider, Seo } from "@/components";
 import { apiClient } from "@/utils";
 import { AnimatePresence } from "framer-motion";
-import { ConfettiProvider, HSKLayout, NewReadingLayout, ReadingLayout, ToolsLayout } from "@/modules/layout";
+import {
+  ConfettiProvider,
+  HSKLayout,
+  NewReadingLayout,
+  OldHSKLayout,
+  ReadingLayout,
+  ToolsLayout,
+} from "@/modules/layout";
 import React from "react";
 
 import { SessionProvider } from "next-auth/react";
@@ -23,6 +30,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   const isNewReading = router.pathname.startsWith("/new");
   const isTools = router.pathname.startsWith("/tools");
   const isHsk = router.pathname.startsWith("/hsk");
+  const isOldHsk = router.pathname.startsWith("/old-hsk");
   const isReading = router.pathname.startsWith("/read");
 
   React.useEffect(() => {
@@ -75,6 +83,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
                     <HSKLayout key="hsk">
                       <Component key={router.pathname} {...pageProps} />
                     </HSKLayout>
+                  ) : isOldHsk ? (
+                    <OldHSKLayout key="old-hsk">
+                      <Component key={router.pathname} {...pageProps} />
+                    </OldHSKLayout>
                   ) : (
                     <Component key={router.pathname} {...pageProps} />
                   )}

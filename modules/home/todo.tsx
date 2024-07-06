@@ -58,7 +58,6 @@ export function HomeTodo() {
         </Button>
 
         <Button
-          disabled
           className="relative hover:bg-sky-200/5 disabled:pointer-events-none disabled:opacity-50"
           icon={<div className="w-12 shrink-0 text-3xl font-bold text-amber-500">2.0</div>}
           path="/old-hsk/1"
