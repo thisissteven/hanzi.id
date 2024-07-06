@@ -7,7 +7,7 @@ import React from "react";
 
 function SearchIcon() {
   return (
-    <svg className="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="shrink-0" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -45,7 +45,7 @@ export function CommandMenuSearch({
       <SearchIcon />
       <Command.Input
         ref={ref}
-        className="w-full focus:outline-none tracking-wide bg-transparent placeholder:text-placeholder text-sm font-light placeholder:text-secondary"
+        className="w-full focus:outline-none tracking-wide bg-transparent placeholder:text-placeholder font-light placeholder:text-secondary"
         placeholder={placeholder}
         value={value}
         onValueChange={onValueChange}
@@ -60,7 +60,7 @@ export function CommandMenuSearch({
       ) : (
         value.length > 0 && (
           <button onClick={() => onValueChange("")}>
-            <LucideX className="w-4 h-4 text-[#888]" />
+            <LucideX className="w-5 h-5 text-[#888]" />
           </button>
         )
       )}

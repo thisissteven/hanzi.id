@@ -62,8 +62,8 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
           width: canvasRef.current.width,
           height: canvasRef.current.height,
           language: isSimplified ? "zh_CN" : "zh_TW", // Adjust language as per your needs
-          numOfWords: 1, // Example: Limit recognition to single word
-          numOfReturn: 5, // Example: Limit to 5 recognition results
+          numOfWords: 4, // Example: Limit recognition to single word
+          numOfReturn: 8, // Example: Limit to 5 recognition results
         });
       }
     }
@@ -138,7 +138,7 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
                   }
                 }}
                 key={index}
-                className="select-none shrink-0 p-0.5 text-lg sm:text-xl h-10 sm:h-12 aspect-square border border-secondary/10 grid place-items-center rounded-md active:bg-hovered duration-200"
+                className="select-none whitespace-nowrap shrink-0 py-0.5 px-1.5 min-w-10 sm:min-w-12 text-lg sm:text-xl h-10 sm:h-12 border border-secondary/10 grid place-items-center rounded-md active:bg-hovered duration-200"
               >
                 {text}
               </button>

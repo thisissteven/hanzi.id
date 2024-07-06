@@ -125,7 +125,6 @@ export function HanziModal() {
         />
 
         <div className="absolute bg-black max-sm:py-2 max-sm:grid max-sm:grid-cols-2 flex gap-2 bottom-0 left-0 right-0 px-3 sm:px-4 sm:pb-4">
-          <AddToFlashcardMobile hanzi={hanzi} isNewHSK />
           <HSKButton
             onMouseEnter={() => {
               if (previousHanzi) preloadHanziDetails(previousHanzi, locale);
@@ -163,6 +162,7 @@ export function HanziModal() {
           >
             {nextHanzi} &#x2192;
           </HSKButton>
+          <AddToFlashcardMobile hanzi={hanzi} isNewHSK />
         </div>
       </Drawer.Content>
     </Drawer>

@@ -17,7 +17,7 @@ export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: Hanzi
   return (
     <Drawer.NestedRoot direction={isMobile ? "bottom" : "right"}>
       <Drawer.Trigger className="pl-4 text-sm underline underline-offset-2">see related</Drawer.Trigger>
-      <Drawer.Content className={clsx("pt-4", isMobile ? "h-[90dvh] left-0" : "h-dvh rounded-none max-w-xl w-full")}>
+      <Drawer.Content className={clsx("pt-4", isMobile ? "h-[95dvh] left-0" : "h-dvh rounded-none max-w-xl w-full")}>
         <div className="relative space-y-2 p-4 max-sm:pb-8 h-full overflow-y-auto scrollbar-none">
           <p className="text-xl font-medium">Related to {hanzi}</p>
           {related.length === 0 && (
