@@ -7,7 +7,7 @@ import * as React from "react";
 import Head from "next/head";
 import { useCompletedCharactersOld, useCompletedCharactersActionsOld } from "@/store";
 import { Pagination, CharacterRow, Locale, usePreferences } from "@/components";
-import { MobileSidebar, HanziModal } from "@/modules/hsk";
+import { MobileSidebar, HanziModal } from "@/modules/old-hsk";
 import { useWindowSize } from "@/hooks";
 import { CharacterCardOld } from "@/components/hsk/CharacterCard/old";
 
