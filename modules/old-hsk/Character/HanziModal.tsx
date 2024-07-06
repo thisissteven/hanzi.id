@@ -133,7 +133,7 @@ export function HanziModal() {
             className="shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50 whitespace-nowrap flex-1"
             onClick={() => {
               router.replace(
-                `/hsk/${router.query.level}?hanzi=${previousHanzi}&id=${previousHanziId}&page=${router.query.page}`,
+                `/old-hsk/${router.query.level}?hanzi=${previousHanzi}&id=${previousHanziId}&page=${router.query.page}`,
                 undefined,
                 {
                   shallow: true,
