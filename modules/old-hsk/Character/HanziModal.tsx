@@ -44,7 +44,7 @@ export function HanziModal() {
   const nextHanziId = (parseInt(currentHanziId) + 1).toString() as IdHanziMapKey;
 
   const previousHanzi = currentHanziId == "1" ? undefined : IdHanziMapOld[previousHanziId];
-  const nextHanzi = currentHanziId == "11092" ? undefined : IdHanziMapOld[nextHanziId];
+  const nextHanzi = currentHanziId == "5000" ? undefined : IdHanziMapOld[nextHanziId];
 
   const { stopAudio } = useAudio();
 
