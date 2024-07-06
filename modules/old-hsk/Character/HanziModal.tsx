@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 import * as React from "react";
-import { LoadingBar, HSKButton, MarkAsCompleted, preloadHanziDetails, Drawer, url, Locale } from "@/components";
+import { LoadingBar, HSKButton, MarkAsCompleted, preloadHanziDetails, Drawer, Locale } from "@/components";
 import IdHanziMapOld from "@/data/id-hanzi-map-old.json";
 import { HanziApiResponse } from "./types";
 import { HanziDetails } from "./HanziDetails";
@@ -13,6 +13,7 @@ import { LevelOld } from "@/data";
 import { useAudio } from "@/modules/layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { AddToFlashcard, AddToFlashcardMobile } from "../Flashcard";
+import { urlOld } from "@/components/hsk/CharacterCard/old";
 
 export type IdHanziMapKey = keyof typeof IdHanziMapOld;
 
@@ -50,7 +51,7 @@ export function HanziModal() {
   const locale = router.locale as Locale;
 
   const { data, isLoading } = useSWRImmutable<HanziApiResponse>(
-    hanzi ? url(hanzi, locale) : null,
+    hanzi ? urlOld(hanzi, locale) : null,
     async (url) => {
       const response = await fetch(url);
       const data = await response.json();

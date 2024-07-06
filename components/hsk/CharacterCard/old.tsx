@@ -8,10 +8,11 @@ import { preload } from "swr";
 
 export type Locale = "en" | "id";
 
-export const url = (hanzi: string, locale: Locale) => `https://content.hanzi.id/character/${locale}_old/${hanzi}.json`;
+export const urlOld = (hanzi: string, locale: Locale) =>
+  `https://content.hanzi.id/character/${locale}_old/${hanzi}.json`;
 
 export async function preloadHanziDetails(hanzi: string, locale: Locale) {
-  await preload(url(hanzi, locale), async (url) => {
+  await preload(urlOld(hanzi, locale), async (url) => {
     const response = await fetch(url);
     const data = await response.json();
     return data;
