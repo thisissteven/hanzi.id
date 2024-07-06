@@ -11,7 +11,15 @@ const MAX_HEIGHT = 320;
 
 const defaultText = ["。", "，", "？", "！", "、", "；", "：", "“", "”", "‘", "’", "（", "）", "《", "》", "【", "】"];
 
-export function HandwritingComponent({ onSelected }: { onSelected: (text: string) => void }) {
+export function HandwritingComponent({
+  onSelected,
+  addSpace,
+  backspace,
+}: {
+  onSelected: (text: string) => void;
+  addSpace: () => void;
+  backspace: () => void;
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const hwCanvasRef = useRef<any | null>(null);
   const [recognizedText, setRecognizedText] = useState<string[]>(defaultText);
@@ -62,7 +70,7 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
           width: canvasRef.current.width,
           height: canvasRef.current.height,
           language: isSimplified ? "zh_CN" : "zh_TW", // Adjust language as per your needs
-          numOfWords: 4, // Example: Limit recognition to single word
+          numOfWords: 100, // Example: Limit recognition to single word
           numOfReturn: 8, // Example: Limit to 5 recognition results
         });
       }
@@ -73,6 +81,9 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
     if (hwCanvasRef.current) {
       hwCanvasRef.current.erase();
       setRecognizedText(defaultText);
+    }
+    if (hwCanvasRef.current.trace.length === 0) {
+      backspace();
     }
   };
 
@@ -153,7 +164,7 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
           <LucideRedo2 />
         </button>
         <button
-          onClick={handleRedo}
+          onClick={addSpace}
           className="flex-1 grid place-items-center p-2.5 rounded-md bg-subtle/50 active:bg-hovered duration-200"
         >
           <LucideSpace />

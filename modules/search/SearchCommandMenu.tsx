@@ -19,9 +19,8 @@ import { useRouter } from "next/router";
 import { cn } from "@/utils";
 import { toast } from "sonner";
 import { TranslateApiResponse } from "@/pages/api/translate";
-import { AudioProvider, Layout } from "../layout";
+import { AudioProvider } from "../layout";
 import { HandwritingComponent } from "../tools";
-import { AnimatePresence } from "framer-motion";
 
 export function SearchCommandMenu() {
   const router = useRouter();
@@ -99,7 +98,7 @@ function useRecentlySearched() {
 }
 
 const regex =
-  /^[\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF0-9，。！？、；：“”‘’（）《》【】!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]+$/;
+  /^[\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF0-9，。！？、；：“”‘’（）《》【】!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~ ]+$/;
 
 function CommandMenuContent() {
   const listRef = React.useRef<HTMLDivElement>(null);
@@ -109,6 +108,7 @@ function CommandMenuContent() {
 
   const [value, setValue] = React.useState("");
   const [active, setActive] = React.useState([0, 1]);
+  const [isWriting, setIsWriting] = React.useState(false);
 
   const keyword = useDebounce(value, 300);
 
@@ -117,7 +117,7 @@ function CommandMenuContent() {
   const timeoutRef = React.useRef<NodeJS.Timeout>();
 
   const { data: searchResult, isLoading } = useSWRImmutable<TranslateApiResponse>(
-    keyword ? `translate/${locale}?text=${keyword}` : null,
+    keyword ? `translate/${locale}?text=${keyword.trim()}` : null,
     async (url: string) => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
@@ -159,9 +159,6 @@ function CommandMenuContent() {
 
   const { t } = useLocale();
 
-  const router = useRouter();
-  const isWriting = router.query.isWriting === "true";
-
   return (
     <>
       <Command filter={() => 1} label={t.searchPlaceholder} className="relative bg-softblack h-[85vh] min-h-[400px]">
@@ -171,6 +168,8 @@ function CommandMenuContent() {
             placeholder={t.searchPlaceholder}
             value={value}
             onValueChange={setValue}
+            isWriting={isWriting}
+            setIsWriting={setIsWriting}
           />
           <CommandMenuChips
             active={active}
@@ -196,33 +195,31 @@ function CommandMenuContent() {
           className="overflow-y-auto h-[calc(100%-82px)] scrollbar-none p-2 scroll-pb-[86px] scroll-pt-[62px] pb-[calc(38px+0.5rem)]"
         >
           <AudioProvider>
-            <AnimatePresence mode="wait" initial={false}>
-              {isWriting ? (
-                <Layout key="handwriting" duration={0.15}>
-                  <HandwritingComponent
-                    onSelected={(text) => {
-                      setValue(value + text);
-                    }}
+            {isWriting ? (
+              <HandwritingComponent
+                addSpace={() => setValue(value + " ")}
+                backspace={() => setValue(value.slice(0, -1))}
+                onSelected={(text) => {
+                  setValue(value + text);
+                }}
+              />
+            ) : (
+              <React.Fragment>
+                {recentlySearched && isSearchEmpty && (
+                  <CommandMenuGroupSearch
+                    clearHistory={clearRecentlySearched}
+                    onSelect={setValue}
+                    heading={t.recentlySearched}
+                    data={recentlySearched}
                   />
-                </Layout>
-              ) : (
-                <Layout key="recently-searched" duration={0.15}>
-                  {recentlySearched && isSearchEmpty && (
-                    <CommandMenuGroupSearch
-                      clearHistory={clearRecentlySearched}
-                      onSelect={setValue}
-                      heading={t.recentlySearched}
-                      data={recentlySearched}
-                    />
+                )}
+                <div className={cn("duration-200", isLoading ? "opacity-50" : "opacity-100")}>
+                  {searchResult && value && (
+                    <CommandMenuGroupCard active={active} data={searchResult} sentence={value} />
                   )}
-                  <div className={cn("duration-200", isLoading ? "opacity-50" : "opacity-100")}>
-                    {searchResult && value && (
-                      <CommandMenuGroupCard active={active} data={searchResult} sentence={value} />
-                    )}
-                  </div>
-                </Layout>
-              )}
-            </AnimatePresence>
+                </div>
+              </React.Fragment>
+            )}
           </AudioProvider>
         </Command.List>
       </Command>

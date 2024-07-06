@@ -2,7 +2,6 @@ import { LoadingBar } from "@/components";
 import { cn } from "@/utils";
 import { Command } from "cmdk";
 import { LucidePencil, LucideX } from "lucide-react";
-import { useRouter } from "next/router";
 import React from "react";
 
 function SearchIcon() {
@@ -23,16 +22,17 @@ export function CommandMenuSearch({
   onValueChange,
   placeholder,
   isLoading,
+  isWriting,
+  setIsWriting,
 }: {
   value: string;
   placeholder: string;
   onValueChange: (value: string) => void;
   isLoading: boolean;
+  isWriting: boolean;
+  setIsWriting: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const ref = React.useRef() as React.MutableRefObject<HTMLInputElement>;
-
-  const router = useRouter();
-  const isWriting = router.query.isWriting === "true";
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {
@@ -50,9 +50,7 @@ export function CommandMenuSearch({
         value={value}
         onValueChange={onValueChange}
         onFocus={() => {
-          router.replace({
-            query: { ...router.query, isWriting: "false" },
-          });
+          setIsWriting(false);
         }}
       />
       {isLoading ? (
@@ -67,9 +65,7 @@ export function CommandMenuSearch({
 
       <button
         onClick={() => {
-          router.replace({
-            query: { ...router.query, isWriting: isWriting ? "false" : "true" },
-          });
+          setIsWriting((prev) => !prev);
         }}
         className={cn(
           "p-3 rounded-md duration-200",

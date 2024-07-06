@@ -75,7 +75,7 @@
   ],
   "continue": "Continue",
   "exportSuccessful": "Export successful!",
-  "searchPlaceholder": "Search for characters, words, or phrases...",
+  "searchPlaceholder": "Find characters/words/phrases...",
   "commandMenuChips": ["Translation", "Word Definition"],
   "recentlySearched": "Recently searched",
   "openCommandMenu": "Open search command",
