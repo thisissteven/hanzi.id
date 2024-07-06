@@ -9,10 +9,6 @@ import { BackRouteButton } from "@/components";
 export function ToolsLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
-  const isStepOne = pathname === "/tools";
-  //   const isStepTwo = ["/new/text", "/new/image", "/new/pdf"].includes(pathname);
-  //   const isPreview = pathname === "/new/preview";
-
   return (
     <Layout>
       <div className="min-h-dvh">

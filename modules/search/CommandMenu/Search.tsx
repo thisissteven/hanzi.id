@@ -1,6 +1,8 @@
 import { LoadingBar } from "@/components";
+import { cn } from "@/utils";
 import { Command } from "cmdk";
-import { LucideX } from "lucide-react";
+import { LucidePencil, LucideX } from "lucide-react";
+import { useRouter } from "next/router";
 import React from "react";
 
 function SearchIcon() {
@@ -29,6 +31,9 @@ export function CommandMenuSearch({
 }) {
   const ref = React.useRef() as React.MutableRefObject<HTMLInputElement>;
 
+  const router = useRouter();
+  const isWriting = router.query.isWriting === "true";
+
   React.useEffect(() => {
     if (typeof window !== "undefined") {
       ref.current.focus();
@@ -36,7 +41,7 @@ export function CommandMenuSearch({
   }, []);
 
   return (
-    <div className="relative px-4 py-3.5 flex items-center gap-2">
+    <div className="relative pl-4 pr-2 py-2 flex items-center gap-2">
       <SearchIcon />
       <Command.Input
         ref={ref}
@@ -54,6 +59,20 @@ export function CommandMenuSearch({
           </button>
         )
       )}
+
+      <button
+        onClick={() => {
+          router.replace({
+            query: { ...router.query, isWriting: isWriting ? "false" : "true" },
+          });
+        }}
+        className={cn(
+          "p-3 rounded-md duration-200",
+          isWriting ? "opacity-100 bg-softzinc text-sky-500" : "opacity-50 active:bg-softzinc"
+        )}
+      >
+        <LucidePencil size={18} />
+      </button>
     </div>
   );
 }

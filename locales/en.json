@@ -86,7 +86,7 @@
   "tools": {
     "title": "Tools",
     "description": "Some complementary tools you might need.",
-    "buttons": ["Extract Text from PDF", "Extract Text from Image/s", "Character Counter"]
+    "buttons": ["Extract Text from PDF", "Extract Text from Image/s", "Character Counter", "Hanzi Writer"]
   },
   "imagesTool": {
     "title": "Extract Text from Image/s",
@@ -104,6 +104,10 @@
     "uniqueCharacters": "unique characters",
     "count": "Count",
     "export": "Download as csv"
+  },
+  "hanziWriterTool": {
+    "title": "Hanzi Writer",
+    "description": "Search for a character using the following hanzi recognition tool."
   },
   "previewText": "PDF Preview will be displayed here",
   "previewImage": "Image preview will be displayed here",

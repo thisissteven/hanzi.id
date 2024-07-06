@@ -86,7 +86,7 @@
   "tools": {
     "title": "Tambahan",
     "description": "Fitur lainnya yang mungkin Anda butuhkan.",
-    "buttons": ["Ambil Teks dari PDF", "Ambil Teks dari gambar", "Hitung Karakter"]
+    "buttons": ["Ambil Teks dari PDF", "Ambil Teks dari gambar", "Hitung Karakter", "Tulis Hanzi"]
   },
   "imagesTool": {
     "title": "Ambil Teks dari Gambar",
@@ -104,6 +104,10 @@
     "uniqueCharacters": "karakter unik",
     "count": "Jumlah",
     "export": "Unduh sebagai csv"
+  },
+  "hanziWriterTool": {
+    "title": "Tulis Hanzi",
+    "description": "Cari karakter cina melalui goresan tangan."
   },
   "previewText": "Preview file PDF akan tampil di sini",
   "previewImage": "Preview gambar akan tampil di sini",

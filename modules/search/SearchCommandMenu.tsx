@@ -19,7 +19,9 @@ import { useRouter } from "next/router";
 import { cn } from "@/utils";
 import { toast } from "sonner";
 import { TranslateApiResponse } from "@/pages/api/translate";
-import { AudioProvider } from "../layout";
+import { AudioProvider, Layout } from "../layout";
+import { HandwritingComponent } from "../tools";
+import { AnimatePresence } from "framer-motion";
 
 export function SearchCommandMenu() {
   const router = useRouter();
@@ -149,9 +151,12 @@ function CommandMenuContent() {
 
   const { t } = useLocale();
 
+  const router = useRouter();
+  const isWriting = router.query.isWriting === "true";
+
   return (
     <>
-      <Command filter={() => 1} label={t.searchPlaceholder} className="relative bg-softblack h-[80vh] min-h-[400px]">
+      <Command filter={() => 1} label={t.searchPlaceholder} className="relative bg-softblack h-[85vh] min-h-[400px]">
         <CommandMenuHeader scrolled={scrolled}>
           <CommandMenuSearch
             isLoading={isLoading}
@@ -182,14 +187,29 @@ function CommandMenuContent() {
           }}
           className="overflow-y-auto h-[calc(100%-82px)] scrollbar-none p-2 scroll-pb-[86px] scroll-pt-[62px] pb-[calc(28px+0.5rem)]"
         >
-          {recentlySearched && isSearchEmpty && (
-            <CommandMenuGroupSearch
-              clearHistory={clearRecentlySearched}
-              onSelect={setValue}
-              heading={t.recentlySearched}
-              data={recentlySearched}
-            />
-          )}
+          <AnimatePresence mode="wait" initial={false}>
+            {isWriting ? (
+              <Layout key="handwriting" duration={0.15}>
+                <HandwritingComponent
+                  onSelected={(text) => {
+                    setValue(value + text);
+                  }}
+                />
+              </Layout>
+            ) : (
+              recentlySearched &&
+              isSearchEmpty && (
+                <Layout key="recently-searched" duration={0.15}>
+                  <CommandMenuGroupSearch
+                    clearHistory={clearRecentlySearched}
+                    onSelect={setValue}
+                    heading={t.recentlySearched}
+                    data={recentlySearched}
+                  />
+                </Layout>
+              )
+            )}
+          </AnimatePresence>
 
           <AudioProvider>
             <div className={cn("duration-200", isLoading ? "opacity-50" : "opacity-100")}>

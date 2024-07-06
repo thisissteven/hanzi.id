@@ -1,8 +1,8 @@
 import { Layout } from "@/modules/layout";
 import React from "react";
 
-import { BackRouteButton, CustomRouteButton } from "@/components";
-import { FileTextIcon, ImageUpIcon, TypeIcon } from "lucide-react";
+import { CustomRouteButton } from "@/components";
+import { FileTextIcon, ImageUpIcon, PencilIcon, TypeIcon } from "lucide-react";
 import { useLocale } from "@/locales/use-locale";
 
 export function ToolsOnboarding() {
@@ -28,12 +28,16 @@ export function ToolsOnboarding() {
       text: t.tools.buttons[2],
       path: "/tools/count",
     },
+    {
+      icon: <PencilIcon />,
+      text: t.tools.buttons[3],
+      path: "/tools/hanzi-writer",
+    },
   ];
 
   return (
     <Layout>
       <div className="mt-4 px-2 md:px-4">
-        {/* <h1 className="text-2xl md:text-3xl font-bold">{t.tools.title}</h1> */}
         <p className="mt-1 text-secondary">{t.tools.description}</p>
       </div>
       <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
