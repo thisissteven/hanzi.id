@@ -1,5 +1,6 @@
 import { usePreferences } from "@/components";
 import { useWindowSize } from "@/hooks";
+import { useLocale } from "@/locales/use-locale";
 import { LucideDelete, LucideRedo2, LucideSpace, LucideUndo2 } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -15,6 +16,8 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
   const hwCanvasRef = useRef<any | null>(null);
   const [recognizedText, setRecognizedText] = useState<string[]>(defaultText);
   const recognitionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const { t } = useLocale();
 
   const { width } = useWindowSize();
   const { isSimplified } = usePreferences();
@@ -122,7 +125,7 @@ export function HandwritingComponent({ onSelected }: { onSelected: (text: string
         }}
       ></canvas>
       <div className="mt-2 pt-1 px-2 bg-subtle/50 rounded-md">
-        <span className="text-xs text-secondary">Predicted:</span>
+        <span className="text-xs text-secondary">{t.found}</span>
         <div className="mt-1 flex gap-1 overflow-x-auto scrollbar pb-2">
           {recognizedText &&
             recognizedText.map((text, index) => (

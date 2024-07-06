@@ -3,6 +3,7 @@
   "return": "Kembali",
   "lastVisited": "Terakhir Dikunjungi",
   "new": "Baru",
+  "beta": "Beta",
   "comingSoon": "Segera Datang",
   "home": {
     "hsk": {
@@ -122,5 +123,6 @@
   "image": "Gambar",
   "moreImages": "gambar lainnya",
   "audioNotFound": "Sumber audio tidak ditemukan.",
-  "operaNotSupported": "Browser Opera tidak didukung."
+  "operaNotSupported": "Browser Opera tidak didukung.",
+  "found": "Ditemukan:"
 }

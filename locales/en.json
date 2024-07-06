@@ -3,6 +3,7 @@
   "return": "Return",
   "lastVisited": "Last Visited",
   "new": "New",
+  "beta": "Beta",
   "comingSoon": "Coming Soon",
   "home": {
     "hsk": {
@@ -122,5 +123,6 @@
   "image": "Image",
   "moreImages": "more images",
   "audioNotFound": "Audio source not found.",
-  "operaNotSupported": "Opera browser not supported."
+  "operaNotSupported": "Opera browser not supported.",
+  "found": "Found:"
 }

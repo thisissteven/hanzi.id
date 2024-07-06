@@ -114,25 +114,33 @@ function CommandMenuContent() {
 
   const { locale } = useLocale();
 
+  const timeoutRef = React.useRef<NodeJS.Timeout>();
+
   const { data: searchResult, isLoading } = useSWRImmutable<TranslateApiResponse>(
     keyword ? `translate/${locale}?text=${keyword}` : null,
     async (url: string) => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+
       const isMatch = regex.test(keyword);
 
       if (!isMatch) {
-        toast.custom(
-          (_) => (
-            <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3">
-              <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-rose-500 indicator"></div>
-              <span className="shrink-0">{t.searchErrorToast}</span>
-            </div>
-          ),
-          {
-            id: "search-error",
-            duration: 3000,
-            position: "bottom-center",
-          }
-        );
+        timeoutRef.current = setTimeout(() => {
+          toast.custom(
+            (_) => (
+              <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3">
+                <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-rose-500 indicator"></div>
+                <span className="shrink-0">{t.searchErrorToast}</span>
+              </div>
+            ),
+            {
+              id: "search-error",
+              duration: 3000,
+              position: "bottom-center",
+            }
+          );
+        }, 1000);
         return;
       }
 

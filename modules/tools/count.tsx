@@ -6,16 +6,17 @@ import { Textarea } from "@/components";
 import { getCharactersFromText } from "@/utils";
 
 function exportToCSV(data: { char: string; count: number }[]) {
-  const csvContent = [["Character", "Count"], ...data.map(({ char, count }) => [char, count])]
-    .map((e) => e.join(","))
-    .join("\n");
+  const csvRows = data.map(({ char, count }) => `${char},${count}`);
+  const csvContent = `\uFEFFCharacter,Count\n${csvRows.join("\r\n")}`;
 
-  const bom = "\uFEFF"; // UTF-8 BOM
-  const blob = new Blob([bom + csvContent], { type: "text/csv;charset=utf-8;" });
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
   const url = URL.createObjectURL(blob);
+
   const link = document.createElement("a");
   link.setAttribute("href", url);
   link.setAttribute("download", "character_counts.csv");
+
+  // Trigger the download
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

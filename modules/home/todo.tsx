@@ -70,11 +70,11 @@ export function HomeTodo() {
         />
 
         <Button
-          path="/tools"
-          className="hover:bg-sky-200/5 relative disabled:pointer-events-none disabled:opacity-50"
-          icon={<PickaxeIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
-          title={t.home.tools.title}
-          description={t.home.tools.description}
+          path="?search=true"
+          className="hover:bg-sky-200/5 relative"
+          icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
+          title={t.home.search.title}
+          description={t.home.search.description}
         >
           <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-emerald-500/10 px-2 py-1 font-medium text-emerald-500 ring-1 ring-inset ring-emerald-500/20">
             {t.new}
@@ -90,12 +90,16 @@ export function HomeTodo() {
         />
 
         <Button
-          path="?search=true"
-          className="hover:bg-sky-200/5"
-          icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
-          title={t.home.search.title}
-          description={t.home.search.description}
-        />
+          path="/tools"
+          className="hover:bg-sky-200/5 relative disabled:pointer-events-none disabled:opacity-50"
+          icon={<PickaxeIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
+          title={t.home.tools.title}
+          description={t.home.tools.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-yellow-500/10 px-2 py-1 font-medium text-yellow-500 ring-1 ring-inset ring-yellow-500/20">
+            {t.beta}
+          </div>
+        </Button>
 
         <Button
           path="/suggestions"
