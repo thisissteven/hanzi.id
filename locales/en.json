@@ -3,12 +3,18 @@
   "return": "Return",
   "lastVisited": "Last Visited",
   "new": "New",
+  "newHSK": "New HSK",
+  "oldHSK": "Old HSK",
   "beta": "Beta",
   "comingSoon": "Coming Soon",
   "home": {
     "hsk": {
       "title": "Learn HSK 1-9",
-      "description": "Chinese HSK vocabulary lists and practice exams."
+      "description": "New HSK vocabulary lists and example sentences."
+    },
+    "oldHSK": {
+      "title": "Learn HSK 1-6",
+      "description": "Old HSK vocabulary lists and practice exams."
     },
     "tools": {
       "title": "Tools",

@@ -8,44 +8,79 @@ import {
   LibraryBigIcon,
   LightbulbIcon,
   PickaxeIcon,
+  SearchIcon,
 } from "lucide-react";
 import { ChangeLocaleButton, ChangeSimplifiedTraditional, Divider, usePreferences } from "@/components";
 import { AuthButton } from "./auth-button";
 import { useLocale } from "@/locales/use-locale";
 import { useRouter } from "next/router";
+import { useWindowSize } from "@/hooks";
 
 const isAdmin = process.env.NEXT_PUBLIC_IS_ADMIN;
 
 export function HomeTodo() {
   const { t } = useLocale();
-  const { isSimplified } = usePreferences();
 
+  const { isSimplified } = usePreferences();
+  const { width } = useWindowSize();
   const router = useRouter();
 
   return (
     <React.Fragment>
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl md:text-3xl font-bold">{isSimplified ? "欢迎光临" : "歡迎光臨"} 🎉</h1>
-
         {isAdmin && <AuthButton />}
         <div className="flex gap-2">
           <ChangeSimplifiedTraditional />
           <ChangeLocaleButton />
         </div>
+        {/* <h1 className="text-2xl md:text-3xl font-bold">{isSimplified ? "欢迎光临" : "歡迎光臨"} 🎉</h1> */}
+
+        <button
+          onClick={() => {
+            router.push("?search=true");
+          }}
+          className="relative flex gap-2 items-center text-secondary sm:flex-1 rounded-md border border-secondary/10 p-2.5 sm:max-w-xs active:bg-hovered duration-200 bg-softblack"
+        >
+          <SearchIcon size={20} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
+          {width > 640 && (
+            <span>
+              {isSimplified ? "搜索" : "搜尋"}
+              <span className="absolute right-2.5 top-1/2 -translate-y-1/2 font-mono pl-2">⌘K</span>
+            </span>
+          )}
+        </button>
       </div>
 
       <Divider />
 
       <div className="grid md:grid-cols-2 gap-4">
+        {/* <Button
+          className="relative hover:bg-sky-200/5"
+          icon={
+            <GraduationCapIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
+          }
+          path="/old-hsk/1"
+          title={t.home.oldHSK.title}
+          description={t.home.oldHSK.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-amber-500/10 px-2 py-1 font-medium text-amber-500 ring-1 ring-inset ring-amber-500/20">
+            {t.oldHSK}
+          </div>
+        </Button> */}
+
         <Button
-          className="hover:bg-sky-200/5"
+          className="relative hover:bg-sky-200/5"
           icon={
             <GraduationCapIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
           }
           path="/hsk/1"
           title={t.home.hsk.title}
           description={t.home.hsk.description}
-        />
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md bg-sky-500/10 px-2 py-1 font-medium text-sky-500 ring-1 ring-inset ring-sky-500/20">
+            2024
+          </div>
+        </Button>
 
         {isAdmin && (
           <Button
@@ -68,18 +103,6 @@ export function HomeTodo() {
           title={t.home.explore.title}
           description={t.home.explore.description}
         />
-
-        <Button
-          path="?search=true"
-          className="hover:bg-sky-200/5 relative"
-          icon={<CompassIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
-          title={t.home.search.title}
-          description={t.home.search.description}
-        >
-          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-emerald-500/10 px-2 py-1 font-medium text-emerald-500 ring-1 ring-inset ring-emerald-500/20">
-            {t.new}
-          </div>
-        </Button>
 
         <Button
           path="/flashcards"

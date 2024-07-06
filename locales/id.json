@@ -3,12 +3,18 @@
   "return": "Kembali",
   "lastVisited": "Terakhir Dikunjungi",
   "new": "Baru",
+  "newHSK": "HSK Baru",
+  "oldHSK": "HSK Lama",
   "beta": "Beta",
   "comingSoon": "Segera Datang",
   "home": {
     "hsk": {
       "title": "Belajar HSK 1-9",
-      "description": "Daftar kosakata HSK dan latihan soal."
+      "description": "Daftar kosakata HSK baru dan contoh kalimat."
+    },
+    "oldHSK": {
+      "title": "Belajar HSK 1-6",
+      "description": "Daftar kosakata HSK lama dan latihan soal."
     },
     "tools": {
       "title": "Fitur Tambahan",
