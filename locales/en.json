@@ -124,5 +124,7 @@
   "moreImages": "more images",
   "audioNotFound": "Audio source not found.",
   "operaNotSupported": "Opera browser not supported.",
-  "found": "Found:"
+  "found": "Found:",
+  "saveToFlashcard": "Add to Flashcard +",
+  "removeFromFlashcard": "Remove from Flashcard -"
 }

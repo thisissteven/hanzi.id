@@ -158,7 +158,7 @@ export function Checkmark({ className }: { className?: string }) {
   return (
     <LucideCheckCircle
       className={cn(
-        "h-6 w-6 text-smokewhite/20 peer-active:text-sky-300/50 peer-checked:text-sky-300/90 transition pointer-events-none",
+        "h-6 w-6 text-smokewhite/20 peer-active:text-sky-500/50 peer-checked:text-sky-500/90 transition pointer-events-none",
         className
       )}
     />

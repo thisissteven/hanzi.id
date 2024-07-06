@@ -124,5 +124,7 @@
   "moreImages": "gambar lainnya",
   "audioNotFound": "Sumber audio tidak ditemukan.",
   "operaNotSupported": "Browser Opera tidak didukung.",
-  "found": "Ditemukan:"
+  "found": "Ditemukan:",
+  "saveToFlashcard": "+ Kartu Pengingat",
+  "removeFromFlashcard": "- Kartu Pengingat"
 }

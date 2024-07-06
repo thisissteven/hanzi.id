@@ -12,6 +12,7 @@ import clsx from "clsx";
 import { Level } from "@/data";
 import { useAudio } from "@/modules/layout";
 import { motion, AnimatePresence } from "framer-motion";
+import { AddToFlashcard, AddToFlashcardMobile } from "../Flashcard";
 
 export type IdHanziMapKey = keyof typeof IdHanziMap;
 
@@ -87,14 +88,14 @@ export function HanziModal() {
     >
       <Drawer.Content
         className={clsx(
-          "px-0 pt-4 pb-[72px] flex flex-col",
-          isMobile ? "h-[90dvh] left-0" : "h-dvh rounded-none max-w-xl w-full"
+          "px-0 pt-4 pb-[120px] sm:pb-[72px] flex flex-col",
+          isMobile ? "h-dvh left-0" : "h-dvh rounded-none max-w-xl w-full"
         )}
       >
         {data && <HanziDetails currentLevel={currentLevel} currentHanzi={hanzi} {...data} />}
 
         <div className="absolute top-8 sm:top-4 left-0 right-0 mx-4 bg-gradient-to-b from-black h-6"></div>
-        <div className="absolute bottom-14 sm:bottom-12 left-0 right-0 mx-4 bg-gradient-to-t from-black h-12"></div>
+        <div className="absolute bottom-24 sm:bottom-12 left-0 right-0 mx-4 bg-gradient-to-t from-black h-12"></div>
 
         <AnimatePresence>
           {isLoading && (
@@ -123,13 +124,14 @@ export function HanziModal() {
           }}
         />
 
-        <div className="absolute flex gap-2 bottom-0 left-0 right-0 px-3 pb-3 sm:px-4 sm:pb-4">
+        <div className="absolute bg-black max-sm:py-2 max-sm:grid max-sm:grid-cols-2 flex gap-2 bottom-0 left-0 right-0 px-3 sm:px-4 sm:pb-4">
+          <AddToFlashcardMobile hanzi={hanzi} isNewHSK />
           <HSKButton
             onMouseEnter={() => {
               if (previousHanzi) preloadHanziDetails(previousHanzi, locale);
             }}
             disabled={!previousHanzi}
-            className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"
+            className="shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50 whitespace-nowrap flex-1"
             onClick={() => {
               router.replace(
                 `/hsk/${router.query.level}?hanzi=${previousHanzi}&id=${previousHanziId}&page=${router.query.page}`,
@@ -142,12 +144,13 @@ export function HanziModal() {
           >
             &#x2190; {previousHanzi}
           </HSKButton>
+          <AddToFlashcard hanzi={hanzi} isNewHSK />
           <HSKButton
             onMouseEnter={() => {
               if (nextHanzi) preloadHanziDetails(nextHanzi, locale);
             }}
             disabled={!nextHanzi}
-            className="flex-1 shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50"
+            className="shadow-none border-zinc text-smokewhite aria-disabled:shadow-none aria-disabled:border-zinc aria-disabled:text-smokewhite/50 whitespace-nowrap flex-1"
             onClick={() => {
               router.replace(
                 `/hsk/${router.query.level}?hanzi=${nextHanzi}&id=${nextHanziId}&page=${router.query.page}`,
