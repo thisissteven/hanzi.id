@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "hanzi": "爱",
     "pinyin": "ài",
     "translations": [
@@ -12,7 +12,7 @@
     "traditional": "愛"
   },
   {
-    "id": 2,
+    "id": "2",
     "hanzi": "八",
     "pinyin": "bā",
     "translations": [
@@ -22,7 +22,7 @@
     "traditional": "八"
   },
   {
-    "id": 3,
+    "id": "3",
     "hanzi": "爸爸",
     "pinyin": "bà ba",
     "translations": [
@@ -33,7 +33,7 @@
     "traditional": "爸爸"
   },
   {
-    "id": 4,
+    "id": "4",
     "hanzi": "杯子",
     "pinyin": "bēi zi",
     "translations": [
@@ -46,7 +46,7 @@
     "traditional": "杯子"
   },
   {
-    "id": 5,
+    "id": "5",
     "hanzi": "北京",
     "pinyin": "Běi jīng",
     "translations": [
@@ -58,7 +58,7 @@
     "traditional": "北京"
   },
   {
-    "id": 6,
+    "id": "6",
     "hanzi": "本",
     "pinyin": "běn",
     "translations": [
@@ -78,7 +78,7 @@
     "traditional": "本"
   },
   {
-    "id": 7,
+    "id": "7",
     "hanzi": "不客气",
     "pinyin": "bù kè qi",
     "translations": [
@@ -91,7 +91,7 @@
     "traditional": "不客氣"
   },
   {
-    "id": 8,
+    "id": "8",
     "hanzi": "不",
     "pinyin": "bù",
     "translations": [
@@ -102,7 +102,7 @@
     "traditional": "不"
   },
   {
-    "id": 9,
+    "id": "9",
     "hanzi": "菜",
     "pinyin": "cài",
     "translations": [
@@ -116,7 +116,7 @@
     "traditional": "菜"
   },
   {
-    "id": 10,
+    "id": "10",
     "hanzi": "茶",
     "pinyin": "chá",
     "translations": [
@@ -128,7 +128,7 @@
     "traditional": "茶"
   },
   {
-    "id": 11,
+    "id": "11",
     "hanzi": "吃",
     "pinyin": "chī",
     "translations": [
@@ -143,7 +143,7 @@
     "traditional": "吃"
   },
   {
-    "id": 12,
+    "id": "12",
     "hanzi": "出租车",
     "pinyin": "chū zū chē",
     "translations": [
@@ -153,7 +153,7 @@
     "traditional": "計程車"
   },
   {
-    "id": 13,
+    "id": "13",
     "hanzi": "打电话",
     "pinyin": "dǎ diàn huà",
     "translations": [
@@ -162,7 +162,7 @@
     "traditional": "打電話"
   },
   {
-    "id": 14,
+    "id": "14",
     "hanzi": "大",
     "pinyin": "dà",
     "translations": [
@@ -179,7 +179,7 @@
     "traditional": "大"
   },
   {
-    "id": 15,
+    "id": "15",
     "hanzi": "的",
     "pinyin": "de",
     "translations": [
@@ -192,7 +192,7 @@
     "traditional": "的"
   },
   {
-    "id": 16,
+    "id": "16",
     "hanzi": "点",
     "pinyin": "diǎn",
     "translations": [
@@ -218,7 +218,7 @@
     "traditional": "點"
   },
   {
-    "id": 17,
+    "id": "17",
     "hanzi": "电脑",
     "pinyin": "diàn nǎo",
     "translations": [
@@ -228,7 +228,7 @@
     "traditional": "電腦"
   },
   {
-    "id": 18,
+    "id": "18",
     "hanzi": "电视",
     "pinyin": "diàn shì",
     "translations": [
@@ -240,7 +240,7 @@
     "traditional": "電視"
   },
   {
-    "id": 19,
+    "id": "19",
     "hanzi": "电影",
     "pinyin": "diàn yǐng",
     "translations": [
@@ -254,7 +254,7 @@
     "traditional": "電影"
   },
   {
-    "id": 20,
+    "id": "20",
     "hanzi": "东西",
     "pinyin": "dōng xi",
     "translations": [
@@ -267,7 +267,7 @@
     "traditional": "東西"
   },
   {
-    "id": 21,
+    "id": "21",
     "hanzi": "都",
     "pinyin": "dōu",
     "translations": [
@@ -281,7 +281,7 @@
     "traditional": "都"
   },
   {
-    "id": 22,
+    "id": "22",
     "hanzi": "读",
     "pinyin": "dú",
     "translations": [
@@ -293,7 +293,7 @@
     "traditional": "讀"
   },
   {
-    "id": 23,
+    "id": "23",
     "hanzi": "对不起",
     "pinyin": "duì bu qǐ",
     "translations": [
@@ -308,7 +308,7 @@
     "traditional": "對不起"
   },
   {
-    "id": 24,
+    "id": "24",
     "hanzi": "多",
     "pinyin": "duō",
     "translations": [
@@ -325,7 +325,7 @@
     "traditional": "多"
   },
   {
-    "id": 25,
+    "id": "25",
     "hanzi": "多少",
     "pinyin": "duō shao",
     "translations": [
@@ -337,7 +337,7 @@
     "traditional": "多少"
   },
   {
-    "id": 26,
+    "id": "26",
     "hanzi": "儿子",
     "pinyin": "ér zi",
     "translations": [
@@ -346,7 +346,7 @@
     "traditional": "兒子"
   },
   {
-    "id": 27,
+    "id": "27",
     "hanzi": "二",
     "pinyin": "èr",
     "translations": [
@@ -357,7 +357,7 @@
     "traditional": "二"
   },
   {
-    "id": 28,
+    "id": "28",
     "hanzi": "饭馆",
     "pinyin": "fàn guǎn",
     "translations": [
@@ -367,7 +367,7 @@
     "traditional": "飯館"
   },
   {
-    "id": 29,
+    "id": "29",
     "hanzi": "飞机",
     "pinyin": "fēi jī",
     "translations": [
@@ -377,7 +377,7 @@
     "traditional": "飛機"
   },
   {
-    "id": 30,
+    "id": "30",
     "hanzi": "分钟",
     "pinyin": "fēn zhōng",
     "translations": [
@@ -386,7 +386,7 @@
     "traditional": "分鐘"
   },
   {
-    "id": 31,
+    "id": "31",
     "hanzi": "高兴",
     "pinyin": "gāo xìng",
     "translations": [
@@ -398,7 +398,7 @@
     "traditional": "高興"
   },
   {
-    "id": 32,
+    "id": "32",
     "hanzi": "个",
     "pinyin": "gè",
     "translations": [
@@ -407,7 +407,7 @@
     "traditional": "個"
   },
   {
-    "id": 33,
+    "id": "33",
     "hanzi": "工作",
     "pinyin": "gōng zuò",
     "translations": [
@@ -423,7 +423,7 @@
     "traditional": "工作"
   },
   {
-    "id": 34,
+    "id": "34",
     "hanzi": "狗",
     "pinyin": "gǒu",
     "translations": [
@@ -434,7 +434,7 @@
     "traditional": "狗"
   },
   {
-    "id": 35,
+    "id": "35",
     "hanzi": "汉语",
     "pinyin": "Hàn yǔ",
     "translations": [
@@ -444,7 +444,7 @@
     "traditional": "漢語"
   },
   {
-    "id": 36,
+    "id": "36",
     "hanzi": "好",
     "pinyin": "hǎo",
     "translations": [
@@ -460,7 +460,7 @@
     "traditional": "好"
   },
   {
-    "id": 37,
+    "id": "37",
     "hanzi": "喝",
     "pinyin": "hē",
     "translations": [
@@ -470,7 +470,7 @@
     "traditional": "喝"
   },
   {
-    "id": 38,
+    "id": "38",
     "hanzi": "和",
     "pinyin": "hé",
     "translations": [
@@ -487,7 +487,7 @@
     "traditional": "和"
   },
   {
-    "id": 39,
+    "id": "39",
     "hanzi": "很",
     "pinyin": "hěn",
     "translations": [
@@ -499,7 +499,7 @@
     "traditional": "很"
   },
   {
-    "id": 40,
+    "id": "40",
     "hanzi": "后面",
     "pinyin": "hòu mian",
     "translations": [
@@ -512,7 +512,7 @@
     "traditional": "後面"
   },
   {
-    "id": 41,
+    "id": "41",
     "hanzi": "回",
     "pinyin": "huí",
     "translations": [
@@ -523,7 +523,7 @@
     "traditional": "回"
   },
   {
-    "id": 42,
+    "id": "42",
     "hanzi": "会",
     "pinyin": "huì",
     "translations": [
@@ -546,7 +546,7 @@
     "traditional": "會"
   },
   {
-    "id": 43,
+    "id": "43",
     "hanzi": "火车站",
     "pinyin": "huǒ chē zhàn",
     "translations": [
@@ -555,7 +555,7 @@
     "traditional": "火車站"
   },
   {
-    "id": 44,
+    "id": "44",
     "hanzi": "几",
     "pinyin": "jǐ",
     "translations": [
@@ -567,7 +567,7 @@
     "traditional": "幾"
   },
   {
-    "id": 45,
+    "id": "45",
     "hanzi": "家",
     "pinyin": "jiā",
     "translations": [
@@ -584,7 +584,7 @@
     "traditional": "家"
   },
   {
-    "id": 46,
+    "id": "46",
     "hanzi": "叫",
     "pinyin": "jiào",
     "translations": [
@@ -598,7 +598,7 @@
     "traditional": "叫"
   },
   {
-    "id": 47,
+    "id": "47",
     "hanzi": "今天",
     "pinyin": "jīn tiān",
     "translations": [
@@ -609,7 +609,7 @@
     "traditional": "今天"
   },
   {
-    "id": 48,
+    "id": "48",
     "hanzi": "九",
     "pinyin": "jiǔ",
     "translations": [
@@ -619,7 +619,7 @@
     "traditional": "九"
   },
   {
-    "id": 49,
+    "id": "49",
     "hanzi": "开",
     "pinyin": "kāi",
     "translations": [
@@ -634,7 +634,7 @@
     "traditional": "開"
   },
   {
-    "id": 50,
+    "id": "50",
     "hanzi": "看",
     "pinyin": "kàn",
     "translations": [
@@ -658,7 +658,7 @@
     "traditional": "看"
   },
   {
-    "id": 51,
+    "id": "51",
     "hanzi": "看见",
     "pinyin": "kàn jiàn",
     "translations": [
@@ -668,7 +668,7 @@
     "traditional": "看見"
   },
   {
-    "id": 52,
+    "id": "52",
     "hanzi": "块",
     "pinyin": "kuài",
     "translations": [
@@ -684,7 +684,7 @@
     "traditional": "塊"
   },
   {
-    "id": 53,
+    "id": "53",
     "hanzi": "来",
     "pinyin": "lái",
     "translations": [
@@ -697,7 +697,7 @@
     "traditional": "來"
   },
   {
-    "id": 54,
+    "id": "54",
     "hanzi": "老师",
     "pinyin": "lǎo shī",
     "translations": [
@@ -708,7 +708,7 @@
     "traditional": "老師"
   },
   {
-    "id": 55,
+    "id": "55",
     "hanzi": "了",
     "pinyin": "le",
     "translations": [
@@ -718,7 +718,7 @@
     "traditional": "了"
   },
   {
-    "id": 56,
+    "id": "56",
     "hanzi": "冷",
     "pinyin": "lěng",
     "translations": [
@@ -727,7 +727,7 @@
     "traditional": "冷"
   },
   {
-    "id": 57,
+    "id": "57",
     "hanzi": "里",
     "pinyin": "lǐ",
     "translations": [
@@ -742,7 +742,7 @@
     "traditional": "裡"
   },
   {
-    "id": 58,
+    "id": "58",
     "hanzi": "零",
     "pinyin": "líng",
     "translations": [
@@ -762,7 +762,7 @@
     "traditional": "零"
   },
   {
-    "id": 59,
+    "id": "59",
     "hanzi": "六",
     "pinyin": "liù",
     "translations": [
@@ -772,7 +772,7 @@
     "traditional": "六"
   },
   {
-    "id": 60,
+    "id": "60",
     "hanzi": "妈妈",
     "pinyin": "mā ma",
     "translations": [
@@ -785,7 +785,7 @@
     "traditional": "媽媽"
   },
   {
-    "id": 61,
+    "id": "61",
     "hanzi": "吗",
     "pinyin": "ma",
     "translations": [
@@ -794,7 +794,7 @@
     "traditional": "嗎"
   },
   {
-    "id": 62,
+    "id": "62",
     "hanzi": "买",
     "pinyin": "mǎi",
     "translations": [
@@ -804,7 +804,7 @@
     "traditional": "買"
   },
   {
-    "id": 63,
+    "id": "63",
     "hanzi": "猫",
     "pinyin": "māo",
     "translations": [
@@ -814,7 +814,7 @@
     "traditional": "貓"
   },
   {
-    "id": 64,
+    "id": "64",
     "hanzi": "没",
     "pinyin": "méi",
     "translations": [
@@ -825,7 +825,7 @@
     "traditional": "沒"
   },
   {
-    "id": 65,
+    "id": "65",
     "hanzi": "没关系",
     "pinyin": "méi guān xi",
     "translations": [
@@ -834,7 +834,7 @@
     "traditional": "沒關係"
   },
   {
-    "id": 66,
+    "id": "66",
     "hanzi": "米饭",
     "pinyin": "mǐ fàn",
     "translations": [
@@ -843,7 +843,7 @@
     "traditional": "米飯"
   },
   {
-    "id": 67,
+    "id": "67",
     "hanzi": "明天",
     "pinyin": "míng tiān",
     "translations": [
@@ -852,7 +852,7 @@
     "traditional": "明天"
   },
   {
-    "id": 68,
+    "id": "68",
     "hanzi": "名字",
     "pinyin": "míng zi",
     "translations": [
@@ -862,7 +862,7 @@
     "traditional": "名字"
   },
   {
-    "id": 69,
+    "id": "69",
     "hanzi": "哪",
     "pinyin": "nǎ",
     "translations": [
@@ -872,7 +872,7 @@
     "traditional": "哪"
   },
   {
-    "id": 70,
+    "id": "70",
     "hanzi": "那",
     "pinyin": "nà",
     "translations": [
@@ -885,7 +885,7 @@
     "traditional": "那"
   },
   {
-    "id": 71,
+    "id": "71",
     "hanzi": "呢",
     "pinyin": "ne",
     "translations": [
@@ -901,7 +901,7 @@
     "traditional": "呢"
   },
   {
-    "id": 72,
+    "id": "72",
     "hanzi": "能",
     "pinyin": "néng",
     "translations": [
@@ -917,7 +917,7 @@
     "traditional": "能"
   },
   {
-    "id": 73,
+    "id": "73",
     "hanzi": "你",
     "pinyin": "nǐ",
     "translations": [
@@ -927,7 +927,7 @@
     "traditional": "你"
   },
   {
-    "id": 74,
+    "id": "74",
     "hanzi": "年",
     "pinyin": "nián",
     "translations": [
@@ -937,7 +937,7 @@
     "traditional": "年"
   },
   {
-    "id": 75,
+    "id": "75",
     "hanzi": "女儿",
     "pinyin": "nǚ ér",
     "translations": [
@@ -946,7 +946,7 @@
     "traditional": "女兒"
   },
   {
-    "id": 76,
+    "id": "76",
     "hanzi": "朋友",
     "pinyin": "péng you",
     "translations": [
@@ -957,7 +957,7 @@
     "traditional": "朋友"
   },
   {
-    "id": 77,
+    "id": "77",
     "hanzi": "漂亮",
     "pinyin": "piào liang",
     "translations": [
@@ -967,7 +967,7 @@
     "traditional": "漂亮"
   },
   {
-    "id": 78,
+    "id": "78",
     "hanzi": "苹果",
     "pinyin": "píng guǒ",
     "translations": [
@@ -978,7 +978,7 @@
     "traditional": "蘋果"
   },
   {
-    "id": 79,
+    "id": "79",
     "hanzi": "七",
     "pinyin": "qī",
     "translations": [
@@ -988,7 +988,7 @@
     "traditional": "七"
   },
   {
-    "id": 80,
+    "id": "80",
     "hanzi": "钱",
     "pinyin": "qián",
     "translations": [
@@ -1001,7 +1001,7 @@
     "traditional": "錢"
   },
   {
-    "id": 81,
+    "id": "81",
     "hanzi": "前面",
     "pinyin": "qián miàn",
     "translations": [
@@ -1013,7 +1013,7 @@
     "traditional": "前面"
   },
   {
-    "id": 82,
+    "id": "82",
     "hanzi": "请",
     "pinyin": "qǐng",
     "translations": [
@@ -1026,7 +1026,7 @@
     "traditional": "請"
   },
   {
-    "id": 83,
+    "id": "83",
     "hanzi": "去",
     "pinyin": "qù",
     "translations": [
@@ -1044,7 +1044,7 @@
     "traditional": "去"
   },
   {
-    "id": 84,
+    "id": "84",
     "hanzi": "热",
     "pinyin": "rè",
     "translations": [
@@ -1057,7 +1057,7 @@
     "traditional": "熱"
   },
   {
-    "id": 85,
+    "id": "85",
     "hanzi": "人",
     "pinyin": "rén",
     "translations": [
@@ -1070,7 +1070,7 @@
     "traditional": "人"
   },
   {
-    "id": 86,
+    "id": "86",
     "hanzi": "认识",
     "pinyin": "rèn shi",
     "translations": [
@@ -1086,7 +1086,7 @@
     "traditional": "認識"
   },
   {
-    "id": 87,
+    "id": "87",
     "hanzi": "日",
     "pinyin": "rì",
     "translations": [
@@ -1099,7 +1099,7 @@
     "traditional": "日"
   },
   {
-    "id": 88,
+    "id": "88",
     "hanzi": "三",
     "pinyin": "sān",
     "translations": [
@@ -1109,7 +1109,7 @@
     "traditional": "三"
   },
   {
-    "id": 89,
+    "id": "89",
     "hanzi": "商店",
     "pinyin": "shāng diàn",
     "translations": [
@@ -1121,7 +1121,7 @@
     "traditional": "商店"
   },
   {
-    "id": 90,
+    "id": "90",
     "hanzi": "上",
     "pinyin": "shàng",
     "translations": [
@@ -1139,7 +1139,7 @@
     "traditional": "上"
   },
   {
-    "id": 91,
+    "id": "91",
     "hanzi": "上午",
     "pinyin": "shàng wǔ",
     "translations": [
@@ -1149,7 +1149,7 @@
     "traditional": "上午"
   },
   {
-    "id": 92,
+    "id": "92",
     "hanzi": "少",
     "pinyin": "shǎo",
     "translations": [
@@ -1160,7 +1160,7 @@
     "traditional": "少"
   },
   {
-    "id": 93,
+    "id": "93",
     "hanzi": "谁",
     "pinyin": "shéi",
     "translations": [
@@ -1170,7 +1170,7 @@
     "traditional": "誰"
   },
   {
-    "id": 94,
+    "id": "94",
     "hanzi": "什么",
     "pinyin": "shén me",
     "translations": [
@@ -1182,7 +1182,7 @@
     "traditional": "什麼"
   },
   {
-    "id": 95,
+    "id": "95",
     "hanzi": "十",
     "pinyin": "shí",
     "translations": [
@@ -1192,7 +1192,7 @@
     "traditional": "十"
   },
   {
-    "id": 96,
+    "id": "96",
     "hanzi": "时候",
     "pinyin": "shí hou",
     "translations": [
@@ -1204,7 +1204,7 @@
     "traditional": "時候"
   },
   {
-    "id": 97,
+    "id": "97",
     "hanzi": "是",
     "pinyin": "shì",
     "translations": [
@@ -1217,7 +1217,7 @@
     "traditional": "是"
   },
   {
-    "id": 98,
+    "id": "98",
     "hanzi": "书",
     "pinyin": "shū",
     "translations": [
@@ -1231,7 +1231,7 @@
     "traditional": "書"
   },
   {
-    "id": 99,
+    "id": "99",
     "hanzi": "水",
     "pinyin": "shuǐ",
     "translations": [
@@ -1245,7 +1245,7 @@
     "traditional": "水"
   },
   {
-    "id": 100,
+    "id": "100",
     "hanzi": "水果",
     "pinyin": "shuǐ guǒ",
     "translations": [
@@ -1255,7 +1255,7 @@
     "traditional": "水果"
   },
   {
-    "id": 101,
+    "id": "101",
     "hanzi": "睡觉",
     "pinyin": "shuì jiào",
     "translations": [
@@ -1265,7 +1265,7 @@
     "traditional": "睡覺"
   },
   {
-    "id": 102,
+    "id": "102",
     "hanzi": "说话",
     "pinyin": "shuō huà",
     "translations": [
@@ -1280,7 +1280,7 @@
     "traditional": "說話"
   },
   {
-    "id": 103,
+    "id": "103",
     "hanzi": "四",
     "pinyin": "sì",
     "translations": [
@@ -1290,7 +1290,7 @@
     "traditional": "四"
   },
   {
-    "id": 104,
+    "id": "104",
     "hanzi": "岁",
     "pinyin": "suì",
     "translations": [
@@ -1301,7 +1301,7 @@
     "traditional": "歲"
   },
   {
-    "id": 105,
+    "id": "105",
     "hanzi": "他",
     "pinyin": "tā",
     "translations": [
@@ -1315,7 +1315,7 @@
     "traditional": "他"
   },
   {
-    "id": 106,
+    "id": "106",
     "hanzi": "她",
     "pinyin": "tā",
     "translations": [
@@ -1324,7 +1324,7 @@
     "traditional": "她"
   },
   {
-    "id": 107,
+    "id": "107",
     "hanzi": "太",
     "pinyin": "tài",
     "translations": [
@@ -1337,7 +1337,7 @@
     "traditional": "太"
   },
   {
-    "id": 108,
+    "id": "108",
     "hanzi": "天气",
     "pinyin": "tiān qì",
     "translations": [
@@ -1346,7 +1346,7 @@
     "traditional": "天氣"
   },
   {
-    "id": 109,
+    "id": "109",
     "hanzi": "听",
     "pinyin": "tīng",
     "translations": [
@@ -1359,7 +1359,7 @@
     "traditional": "聽"
   },
   {
-    "id": 110,
+    "id": "110",
     "hanzi": "同学",
     "pinyin": "tóng xué",
     "translations": [
@@ -1372,7 +1372,7 @@
     "traditional": "同學"
   },
   {
-    "id": 111,
+    "id": "111",
     "hanzi": "喂",
     "pinyin": "wèi",
     "translations": [
@@ -1381,7 +1381,7 @@
     "traditional": "餵"
   },
   {
-    "id": 112,
+    "id": "112",
     "hanzi": "我",
     "pinyin": "wǒ",
     "translations": [
@@ -1392,7 +1392,7 @@
     "traditional": "我"
   },
   {
-    "id": 113,
+    "id": "113",
     "hanzi": "我们",
     "pinyin": "wǒ men",
     "translations": [
@@ -1404,7 +1404,7 @@
     "traditional": "我們"
   },
   {
-    "id": 114,
+    "id": "114",
     "hanzi": "五",
     "pinyin": "wǔ",
     "translations": [
@@ -1414,7 +1414,7 @@
     "traditional": "五"
   },
   {
-    "id": 115,
+    "id": "115",
     "hanzi": "喜欢",
     "pinyin": "xǐ huan",
     "translations": [
@@ -1424,7 +1424,7 @@
     "traditional": "喜歡"
   },
   {
-    "id": 116,
+    "id": "116",
     "hanzi": "下",
     "pinyin": "xià",
     "translations": [
@@ -1441,7 +1441,7 @@
     "traditional": "下"
   },
   {
-    "id": 117,
+    "id": "117",
     "hanzi": "下午",
     "pinyin": "xià wǔ",
     "translations": [
@@ -1452,7 +1452,7 @@
     "traditional": "下午"
   },
   {
-    "id": 118,
+    "id": "118",
     "hanzi": "下雨",
     "pinyin": "xià yǔ",
     "translations": [
@@ -1462,7 +1462,7 @@
     "traditional": "下雨"
   },
   {
-    "id": 119,
+    "id": "119",
     "hanzi": "先生",
     "pinyin": "xiān sheng",
     "translations": [
@@ -1474,7 +1474,7 @@
     "traditional": "先生"
   },
   {
-    "id": 120,
+    "id": "120",
     "hanzi": "现在",
     "pinyin": "xiàn zài",
     "translations": [
@@ -1488,7 +1488,7 @@
     "traditional": "現在"
   },
   {
-    "id": 121,
+    "id": "121",
     "hanzi": "想",
     "pinyin": "xiǎng",
     "translations": [
@@ -1502,7 +1502,7 @@
     "traditional": "想"
   },
   {
-    "id": 122,
+    "id": "122",
     "hanzi": "小",
     "pinyin": "xiǎo",
     "translations": [
@@ -1514,7 +1514,7 @@
     "traditional": "小"
   },
   {
-    "id": 123,
+    "id": "123",
     "hanzi": "小姐",
     "pinyin": "xiǎo jie",
     "translations": [
@@ -1527,7 +1527,7 @@
     "traditional": "小姐"
   },
   {
-    "id": 124,
+    "id": "124",
     "hanzi": "些",
     "pinyin": "xiē",
     "translations": [
@@ -1539,7 +1539,7 @@
     "traditional": "些"
   },
   {
-    "id": 125,
+    "id": "125",
     "hanzi": "写",
     "pinyin": "xiě",
     "translations": [
@@ -1548,7 +1548,7 @@
     "traditional": "寫"
   },
   {
-    "id": 126,
+    "id": "126",
     "hanzi": "谢谢",
     "pinyin": "xiè xie",
     "translations": [
@@ -1558,7 +1558,7 @@
     "traditional": "謝謝"
   },
   {
-    "id": 127,
+    "id": "127",
     "hanzi": "星期",
     "pinyin": "xīng qī",
     "translations": [
@@ -1570,7 +1570,7 @@
     "traditional": "星期"
   },
   {
-    "id": 128,
+    "id": "128",
     "hanzi": "学生",
     "pinyin": "xué sheng",
     "translations": [
@@ -1580,7 +1580,7 @@
     "traditional": "學生"
   },
   {
-    "id": 129,
+    "id": "129",
     "hanzi": "学习",
     "pinyin": "xué xí",
     "translations": [
@@ -1590,7 +1590,7 @@
     "traditional": "學習"
   },
   {
-    "id": 130,
+    "id": "130",
     "hanzi": "学校",
     "pinyin": "xué xiào",
     "translations": [
@@ -1600,7 +1600,7 @@
     "traditional": "學校"
   },
   {
-    "id": 131,
+    "id": "131",
     "hanzi": "一",
     "pinyin": "yī",
     "translations": [
@@ -1618,7 +1618,7 @@
     "traditional": "一"
   },
   {
-    "id": 132,
+    "id": "132",
     "hanzi": "衣服",
     "pinyin": "yī fu",
     "translations": [
@@ -1629,7 +1629,7 @@
     "traditional": "衣服"
   },
   {
-    "id": 133,
+    "id": "133",
     "hanzi": "医生",
     "pinyin": "yī shēng",
     "translations": [
@@ -1641,7 +1641,7 @@
     "traditional": "醫生"
   },
   {
-    "id": 134,
+    "id": "134",
     "hanzi": "医院",
     "pinyin": "yī yuàn",
     "translations": [
@@ -1653,7 +1653,7 @@
     "traditional": "醫院"
   },
   {
-    "id": 135,
+    "id": "135",
     "hanzi": "椅子",
     "pinyin": "yǐ zi",
     "translations": [
@@ -1664,7 +1664,7 @@
     "traditional": "椅子"
   },
   {
-    "id": 136,
+    "id": "136",
     "hanzi": "有",
     "pinyin": "yǒu",
     "translations": [
@@ -1677,7 +1677,7 @@
     "traditional": "有"
   },
   {
-    "id": 137,
+    "id": "137",
     "hanzi": "月",
     "pinyin": "yuè",
     "translations": [
@@ -1689,7 +1689,7 @@
     "traditional": "月"
   },
   {
-    "id": 138,
+    "id": "138",
     "hanzi": "在",
     "pinyin": "zài",
     "translations": [
@@ -1702,7 +1702,7 @@
     "traditional": "在"
   },
   {
-    "id": 139,
+    "id": "139",
     "hanzi": "再见",
     "pinyin": "zài jiàn",
     "translations": [
@@ -1712,7 +1712,7 @@
     "traditional": "再見"
   },
   {
-    "id": 140,
+    "id": "140",
     "hanzi": "怎么",
     "pinyin": "zěn me",
     "translations": [
@@ -1721,7 +1721,7 @@
     "traditional": "怎麼"
   },
   {
-    "id": 141,
+    "id": "141",
     "hanzi": "怎么样",
     "pinyin": "zěn me yàng",
     "translations": [
@@ -1733,7 +1733,7 @@
     "traditional": "怎麼樣"
   },
   {
-    "id": 142,
+    "id": "142",
     "hanzi": "这",
     "pinyin": "zhè",
     "translations": [
@@ -1745,7 +1745,7 @@
     "traditional": "這"
   },
   {
-    "id": 143,
+    "id": "143",
     "hanzi": "中国",
     "pinyin": "Zhōng guó",
     "translations": [
@@ -1755,7 +1755,7 @@
     "traditional": "中國"
   },
   {
-    "id": 144,
+    "id": "144",
     "hanzi": "中午",
     "pinyin": "zhōng wǔ",
     "translations": [
@@ -1766,7 +1766,7 @@
     "traditional": "中午"
   },
   {
-    "id": 145,
+    "id": "145",
     "hanzi": "住",
     "pinyin": "zhù",
     "translations": [
@@ -1782,7 +1782,7 @@
     "traditional": "住"
   },
   {
-    "id": 146,
+    "id": "146",
     "hanzi": "桌子",
     "pinyin": "zhuō zi",
     "translations": [
@@ -1794,7 +1794,7 @@
     "traditional": "桌子"
   },
   {
-    "id": 147,
+    "id": "147",
     "hanzi": "字",
     "pinyin": "zì",
     "translations": [
@@ -1808,7 +1808,7 @@
     "traditional": "字"
   },
   {
-    "id": 148,
+    "id": "148",
     "hanzi": "昨天",
     "pinyin": "zuó tiān",
     "translations": [
@@ -1817,7 +1817,7 @@
     "traditional": "昨天"
   },
   {
-    "id": 149,
+    "id": "149",
     "hanzi": "坐",
     "pinyin": "zuò",
     "translations": [
@@ -1831,7 +1831,7 @@
     "traditional": "坐"
   },
   {
-    "id": 150,
+    "id": "150",
     "hanzi": "做",
     "pinyin": "zuò",
     "translations": [

@@ -3,7 +3,6 @@ import HanziWriter from "hanzi-writer";
 import { useLocale } from "@/locales/use-locale";
 import { LucidePencil } from "lucide-react";
 import { cn } from "@/utils";
-import { useRouter } from "next/router";
 
 const unicodeRange = /^[\u4e00-\u9fa5]$/;
 
@@ -15,7 +14,6 @@ export const HanziStrokeSimulator = ({ toggleQuiz }: { toggleQuiz: (hanzi: strin
   const [visibleRadical, setVisibleRadical] = useState(false);
 
   const { t } = useLocale();
-  const router = useRouter();
 
   const chineseCharacters = character.split("").filter((char) => {
     return unicodeRange.test(char);
@@ -51,13 +49,14 @@ export const HanziStrokeSimulator = ({ toggleQuiz }: { toggleQuiz: (hanzi: strin
             strokeColor: "#fefefe",
             outlineColor: "#333",
             drawingColor: "#333",
+            radicalColor: visibleRadical ? "#337ab7" : "#fefefe",
           });
           writerRefs.current.push(writer);
           setWriterState((prev) => [...prev, "ready"]);
         }
       });
     }
-  }, [chineseCharacters]);
+  }, [chineseCharacters, visibleRadical]);
 
   return (
     <div className="md:px-3">

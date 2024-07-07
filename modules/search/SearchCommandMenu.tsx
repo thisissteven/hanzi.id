@@ -110,14 +110,14 @@ function CommandMenuContent() {
   const [active, setActive] = React.useState([0, 1]);
   const [isWriting, setIsWriting] = React.useState(false);
 
-  const keyword = useDebounce(value, 300);
+  const keyword = useDebounce(value, 300).trim();
 
   const { locale } = useLocale();
 
   const timeoutRef = React.useRef<NodeJS.Timeout>();
 
   const { data: searchResult, isLoading } = useSWRImmutable<TranslateApiResponse>(
-    keyword ? `translate/${locale}?text=${keyword.trim()}` : null,
+    keyword ? `translate/${locale}?text=${keyword}` : null,
     async (url: string) => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
