@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 
 const unicodeRange = /^[\u4e00-\u9fa5]$/;
 
-export const HanziStrokeSimulator = () => {
+export const HanziStrokeSimulator = ({ toggleQuiz }: { toggleQuiz: (hanzi: string) => void }) => {
   const [character, setCharacter] = useState("");
   const writerRefs = useRef([]) as React.MutableRefObject<HanziWriter[]>;
   const [writerState, setWriterState] = useState<Array<"playing" | "paused" | "ready">>([]);
@@ -93,11 +93,7 @@ export const HanziStrokeSimulator = () => {
               <div id={`character-target-${index}`}></div>
               <div className="grid grid-cols-2 gap-2 w-full">
                 <button
-                  onClick={() => {
-                    router.push(`?quiz=${chineseCharacters[index]}`, undefined, {
-                      shallow: true,
-                    });
-                  }}
+                  onClick={() => toggleQuiz(chineseCharacters[index])}
                   className="w-full grid place-items-center p-3 rounded-md bg-subtle/50 active:bg-hovered duration-200"
                 >
                   <LucidePencil size={16} />

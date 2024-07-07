@@ -8,7 +8,7 @@ import { useLocale } from "@/locales/use-locale";
 
 const maxWidth = 300;
 
-export function HanziStrokeQuiz({ quiz, onClose }: { quiz: string; onClose: () => void }) {
+export function HanziStrokeQuiz({ quiz, onClose }: { quiz?: string | null; onClose: () => void }) {
   const latestQuiz = React.useRef(quiz) as React.MutableRefObject<string | undefined>;
 
   const writerRef = React.useRef() as React.MutableRefObject<HanziWriter | null>;
@@ -16,6 +16,8 @@ export function HanziStrokeQuiz({ quiz, onClose }: { quiz: string; onClose: () =
   const { width } = useWindowSize();
 
   const { t } = useLocale();
+
+  const open = Boolean(quiz);
 
   React.useEffect(() => {
     if (quiz) {
@@ -72,7 +74,7 @@ export function HanziStrokeQuiz({ quiz, onClose }: { quiz: string; onClose: () =
   }, [quiz]);
 
   return (
-    <Dialog className="relative z-[998]" open={Boolean(quiz)} onClose={onClose}>
+    <Dialog className="relative z-[998]" open={open} onClose={onClose}>
       <DialogBackdrop
         transition
         className="fixed inset-y-0 left-0 w-screen z-[998] bg-black/20 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
@@ -113,8 +115,10 @@ export function HanziStrokeQuiz({ quiz, onClose }: { quiz: string; onClose: () =
                     </button>
                     <button
                       onClick={() => {
-                        writerRef.current?.setCharacter(quiz);
-                        writerRef.current?.quiz();
+                        if (quiz) {
+                          writerRef.current?.setCharacter(quiz);
+                          writerRef.current?.quiz();
+                        }
                       }}
                       className="relative flex gap-2 items-center text-secondary rounded-md border border-secondary/10 p-2.5 active:bg-hovered duration-200 bg-softblack h-fit"
                     >

@@ -105,11 +105,7 @@ export function HomeTodo() {
           icon={<PickaxeIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
           title={t.home.tools.title}
           description={t.home.tools.description}
-        >
-          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-yellow-500/10 px-2 py-1 font-medium text-yellow-500 ring-1 ring-inset ring-yellow-500/20">
-            {t.beta}
-          </div>
-        </Button>
+        />
 
         <Button
           path="/suggestions"

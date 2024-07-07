@@ -2,13 +2,12 @@ import { Layout } from "@/modules/layout";
 
 import { useLocale } from "@/locales/use-locale";
 import { HanziStrokeQuiz, HanziStrokeSimulator } from "@/components";
-import { useRouter } from "next/router";
+import React from "react";
 
 export function HanziWriterTool() {
   const { t } = useLocale();
 
-  const router = useRouter();
-  const quiz = router.query.quiz as string;
+  const [quiz, setQuiz] = React.useState<string | null>(null);
 
   return (
     <Layout>
@@ -17,10 +16,24 @@ export function HanziWriterTool() {
         <p className="mt-1 text-secondary">{t.hanziWriterTool.description}</p>
       </div>
 
-      <HanziStrokeQuiz quiz={quiz} onClose={() => router.back()} />
+      <HanziStrokeQuiz
+        quiz={quiz}
+        onClose={() => {
+          setQuiz(null);
+        }}
+      />
 
       <div className="mt-4">
-        <HanziStrokeSimulator />
+        <HanziStrokeSimulator
+          toggleQuiz={(hanzi) => {
+            setQuiz((prev) => {
+              if (prev) {
+                return null;
+              }
+              return hanzi;
+            });
+          }}
+        />
       </div>
     </Layout>
   );
