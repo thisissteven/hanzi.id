@@ -114,7 +114,7 @@
   },
   "hanziWriterTool": {
     "title": "Tulis Hanzi",
-    "description": "Cari karakter cina melalui goresan tangan."
+    "description": "Simulasi goresan karakter Cina dan latihan menulis."
   },
   "previewText": "Preview file PDF akan tampil di sini",
   "previewImage": "Preview gambar akan tampil di sini",
@@ -132,5 +132,17 @@
   "operaNotSupported": "Browser Opera tidak didukung.",
   "found": "Ditemukan:",
   "saveToFlashcard": "+ Kartu Pengingat",
-  "removeFromFlashcard": "- Kartu Pengingat"
+  "removeFromFlashcard": "- Kartu Pengingat",
+  "flashcard": {
+    "cancelText": "Batal",
+    "confirmText": "Hapus",
+    "title": "Hapus Kartu Pengingat",
+    "description": "Apakah Anda yakin ingin menghapus kartu pengingat ini? Tindakan ini tidak dapat dibatalkan.",
+    "successToast": "Kartu pengingat berhasil dihapus."
+  },
+  "hanziStrokePlaceholder": "Masukkan karakter Cina",
+  "showRadical": "Tampilkan Radikal",
+  "hideRadical": "Sembunyikan Radikal",
+  "quiz": "Kuis",
+  "startWriting": "Mulai menulis karakter di bawah ini."
 }

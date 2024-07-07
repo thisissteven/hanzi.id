@@ -1,8 +1,8 @@
 import React from "react";
 import { AudioProvider, Flashcard, Layout, useFlashcard } from "@/modules/layout";
-import { BackRouteButton, LoadMore, usePreferences } from "@/components";
+import { AlertModal, BackRouteButton, createSuccessToast, LoadMore, usePreferences } from "@/components";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronRightIcon, LucideDownload } from "lucide-react";
+import { ChevronRightIcon, LucideDownload, LucideTrash2 } from "lucide-react";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 
@@ -26,18 +26,66 @@ function exportToPleco(words: string[], filename: string) {
 export default function FlashcardsDetailsPage() {
   const router = useRouter();
   const id = router.query.id as string;
-  const flashcard = useFlashcard(id);
+  const { flashcardItem, removeFlashcard } = useFlashcard(id);
+
+  const [openAlert, setOpenAlert] = React.useState(false);
+
+  React.useEffect(() => {
+    if (openAlert) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.scrollbarGutter = "stable";
+    }
+
+    const timeout = setTimeout(() => {
+      if (!openAlert) {
+        document.body.style.overflowY = "scroll";
+        document.documentElement.style.scrollbarGutter = "";
+      }
+    }, 200);
+
+    return () => clearTimeout(timeout);
+  }, [openAlert]);
+
+  const { t } = useLocale();
 
   return (
     <Layout>
+      <AlertModal
+        open={openAlert}
+        onClose={(value) => setOpenAlert(value)}
+        alertProps={{
+          cancelText: t.flashcard.cancelText,
+          confirmText: t.flashcard.confirmText,
+          title: t.flashcard.title,
+          description: t.flashcard.description,
+        }}
+        callback={() => {
+          // Delete flashcard
+          removeFlashcard();
+          setOpenAlert(false);
+          createSuccessToast(t.flashcard.successToast, {
+            id: "delete-flashcard-success",
+            duration: 5000,
+          });
+          router.back();
+        }}
+      />
       <div className="min-h-dvh">
         <main className="max-w-[960px] mx-auto md:px-8">
           <div className="max-md:sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 max-md:px-2 pb-2 border-b-[1.5px] border-b-subtle">
-            <div className="w-fit">
-              <BackRouteButton />
+            <div className="flex justify-between">
+              <div className="w-fit">
+                <BackRouteButton />
+              </div>
+              <button
+                onClick={() => setOpenAlert(true)}
+                className="mt-4 p-2 rounded-md duration-200 active:bg-hovered flex items-center gap-2"
+              >
+                <LucideTrash2 />
+              </button>
             </div>
           </div>
-          {flashcard && <DisplayFlashcard flashcard={flashcard} />}
+          {flashcardItem && <DisplayFlashcard flashcard={flashcardItem} />}
         </main>
       </div>
     </Layout>

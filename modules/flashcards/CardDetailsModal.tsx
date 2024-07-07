@@ -24,21 +24,23 @@ export function CardDetailsModal({
   const open = router.query.open;
 
   React.useEffect(() => {
-    if (details) {
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.scrollbarGutter = "stable";
-      latestDetails.current = details;
-      setEntryIndex(0);
-    }
-
     const timeout = setTimeout(() => {
-      if (!details) {
+      if (!open) {
         document.body.style.overflowY = "scroll";
         document.documentElement.style.scrollbarGutter = "";
       }
     }, 200);
 
     return () => clearTimeout(timeout);
+  }, [open]);
+
+  React.useEffect(() => {
+    if (details) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.scrollbarGutter = "stable";
+      latestDetails.current = details;
+      setEntryIndex(0);
+    }
   }, [details]);
 
   const { isSimplified } = usePreferences();

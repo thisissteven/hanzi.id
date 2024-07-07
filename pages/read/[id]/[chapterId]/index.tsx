@@ -77,11 +77,9 @@ export default function Read() {
   React.useEffect(() => {
     if (!sentenceIndex && lastReadSentenceIndex.current !== null) {
       toSentence(lastReadSentenceIndex.current);
-      const additionalOffset = lastReadSentenceIndex.current === sentences.length - 1 ? 0 : -50;
       smoothScrollToIndex(lastReadSentenceIndex.current, {
         align: "start",
         duration: 1000,
-        additionalOffset,
       });
       lastReadSentenceIndex.current = null;
     } else if (sentenceIndex) {

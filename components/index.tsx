@@ -14,3 +14,7 @@ export * from "./load-more";
 export * from "./change-locale-button";
 export * from "./change-sim-trad";
 export * from "./scripts";
+export * from "./alert-modal";
+export * from "./toast";
+export * from "./hanzi-stroke-simulator";
+export * from "./hanzi-stroke-quiz";

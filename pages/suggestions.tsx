@@ -1,8 +1,7 @@
 import React from "react";
 import { Layout } from "@/modules/layout";
-import { BackRouteButton, Textarea } from "@/components";
+import { BackRouteButton, createErrorToast, createSuccessToast, Textarea } from "@/components";
 import { cn, useMutation } from "@/utils";
-import { toast } from "sonner";
 import { useLocale } from "@/locales/use-locale";
 
 export default function GetStartedPage() {
@@ -54,33 +53,15 @@ export default function GetStartedPage() {
                 const text = target[0].value;
                 await trigger({ text, category });
                 target[0].value = "";
-                toast.custom(
-                  (_) => {
-                    return (
-                      <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3">
-                        <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
-                        <span className="shrink-0">{t.suggestions.successToast}</span>
-                      </div>
-                    );
-                  },
-                  {
-                    id: "suggestion-success",
-                    duration: 5000,
-                  }
-                );
+                createSuccessToast(t.suggestions.successToast, {
+                  id: "suggestion-success",
+                  duration: 5000,
+                });
               } catch {
-                toast.custom(
-                  (_) => (
-                    <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3">
-                      <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-rose-500 indicator"></div>
-                      <span className="shrink-0">{t.suggestions.errorToast}</span>
-                    </div>
-                  ),
-                  {
-                    id: "suggestion-error",
-                    duration: 5000,
-                  }
-                );
+                createErrorToast(t.suggestions.errorToast, {
+                  id: "suggestion-error",
+                  duration: 5000,
+                });
               }
             }}
           >

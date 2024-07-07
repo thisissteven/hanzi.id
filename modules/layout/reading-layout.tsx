@@ -76,6 +76,16 @@ export function useFlashcardList() {
 export function useFlashcard(name: string) {
   const [flashcardItem, setFlashcardItem] = React.useState<Flashcard | null>(null);
 
+  const removeFlashcard = React.useCallback(() => {
+    const flashcards = localStorage.getItem("flashcard-data");
+    if (flashcards) {
+      const parsedFlashcards = JSON.parse(flashcards) as Array<Flashcard>;
+      const newFlashcards = parsedFlashcards.filter((f) => f.chapter !== name);
+      localStorage.setItem("flashcard-data", JSON.stringify(newFlashcards));
+      setFlashcardItem(null);
+    }
+  }, [name]);
+
   React.useEffect(() => {
     const savedFlashcard = localStorage.getItem("flashcard-data");
     if (savedFlashcard) {
@@ -87,7 +97,7 @@ export function useFlashcard(name: string) {
     }
   }, [name]);
 
-  return flashcardItem;
+  return { flashcardItem, removeFlashcard };
 }
 
 export function ReadingProvider({ children }: { children: React.ReactNode }) {

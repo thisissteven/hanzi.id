@@ -24,7 +24,7 @@ export function useElementOutOfView(currentSentenceIndex: number, totalSentences
 
         if (currentElement) {
           const index = Array.from(elements).indexOf(currentElement);
-          if (index === 0 || index >= elements.length - 4) {
+          if (index >= elements.length - 4) {
             setIsOutOfView(true);
           } else {
             setIsOutOfView(false);
