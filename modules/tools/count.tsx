@@ -72,8 +72,6 @@ export function CharacterCountTool() {
           required
           value={text}
           onChange={(e) => setText(e.target.value)}
-          minLength={25}
-          maxLength={500}
           minHeight="136px"
           limitHeightOnBlur
         />
