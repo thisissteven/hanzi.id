@@ -1,6 +1,14 @@
 import React from "react";
 import { Button } from "./buttons";
-import { BookAIcon, FilePlus2Icon, LibraryBigIcon, LightbulbIcon, PickaxeIcon, SearchIcon } from "lucide-react";
+import {
+  BookAIcon,
+  FilePlus2Icon,
+  KeyboardIcon,
+  LibraryBigIcon,
+  LightbulbIcon,
+  PickaxeIcon,
+  SearchIcon,
+} from "lucide-react";
 import { ChangeLocaleButton, ChangeSimplifiedTraditional, Divider, usePreferences } from "@/components";
 import { AuthButton } from "./auth-button";
 import { useLocale } from "@/locales/use-locale";
@@ -90,6 +98,19 @@ export function HomeTodo() {
           title={t.home.explore.title}
           description={t.home.explore.description}
         />
+
+        <Button
+          disabled
+          path="/typing-test"
+          className="hover:bg-sky-200/5 relative disabled:pointer-events-none disabled:opacity-50"
+          icon={<KeyboardIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
+          title={t.home.typingTest.title}
+          description={t.home.typingTest.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-yellow-500/10 px-2 py-1 font-medium text-yellow-500 ring-1 ring-inset ring-yellow-500/20">
+            {t.comingSoon}
+          </div>
+        </Button>
 
         <Button
           path="/flashcards"

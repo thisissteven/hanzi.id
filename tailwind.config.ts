@@ -38,6 +38,19 @@ const config: Config = {
         "light-smokewhite": "rgb(var(--light-smokewhite) / <alpha-value>)",
         lightgray: "rgb(var(--lightgray) / <alpha-value>)",
       },
+      keyframes: {
+        blink: {
+          "0%, 100%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0",
+          },
+        },
+      },
+      animation: {
+        blink: "blink 1s infinite 1s",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

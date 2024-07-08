@@ -24,6 +24,10 @@
       "title": "Explore",
       "description": "Read and listen to Chinese books with translations."
     },
+    "typingTest": {
+      "title": "Typing Practice",
+      "description": "Improve your Chinese typing speed."
+    },
     "flashcards": {
       "title": "Flashcards",
       "description": "Your saved words and phrases for quick review."
