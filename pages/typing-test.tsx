@@ -197,7 +197,6 @@ export default function TypingTest() {
     testType,
     async () => {
       const response = await fetch(fetchUrls[testType]);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
       const data = await response.json();
       return data;
     },
@@ -242,7 +241,7 @@ export default function TypingTest() {
         </div>
         <AnimatePresence initial={false} mode="wait">
           {words.length === 0 ? (
-            <div className="h-[289px] grid place-items-center">
+            <div className="h-[265px] sm:h-[289px] grid place-items-center">
               <LoadingBar visible />
             </div>
           ) : (
@@ -509,7 +508,7 @@ function TypingTestContent({
                 key={index}
                 ref={current ? currentWordRef : null}
                 className={cn(
-                  "text-3xl font-medium duration-500",
+                  "text-2xl sm:text-3xl font-medium duration-500",
                   (inactive || current) && "text-secondary/40",
                   isFinishedAndInactive && "opacity-0"
                 )}
@@ -577,7 +576,7 @@ function TypingTestContent({
               if (wordStatuses[currentIndex].word !== chineseCharacterValue) {
                 updateWord(chineseCharacterValue);
               }
-              if (testStatus === "waiting for you" && chineseCharacterValue.length > 0) {
+              if (testStatus === "waiting for you") {
                 updateTestStatus("ongoing");
               }
             }}
@@ -675,20 +674,19 @@ const Input = React.forwardRef(function Input(
     <input
       type="text"
       ref={ref}
-      // className="w-52 sm:w-64 px-3 py-2 rounded-md focus:outline-none bg-softblack placeholder:text-lightgray"
       className="absolute inset-0 focus:outline-none bg-transparent caret-transparent placeholder:text-lightgray text-sm h-5"
       value={value}
       onChange={(e) => {
         if (testStatus !== "finished") {
           onChange?.(e);
-          setValue(e.currentTarget.value);
-        }
-      }}
-      onKeyDown={(e) => {
-        if ((e.key === SPACE_KEY || e.code === "Space" || e.keyCode === 32) && testStatus !== "finished") {
-          const trimmedValue = e.currentTarget.value.trim();
-          onNextWord(trimmedValue);
-          setValue("");
+          const value = e.target.value;
+          if (value.charAt(value.length - 1) === SPACE_KEY) {
+            const trimmedValue = value.trim();
+            onNextWord(trimmedValue);
+            setValue("");
+          } else {
+            setValue(value);
+          }
         }
       }}
       {...rest}

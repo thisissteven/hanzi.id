@@ -106,8 +106,8 @@ export function HomeTodo() {
           title={t.home.typingTest.title}
           description={t.home.typingTest.description}
         >
-          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-yellow-500/10 px-2 py-1 font-medium text-yellow-500 ring-1 ring-inset ring-yellow-500/20">
-            {t.comingSoon}
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-emerald-500/10 px-2 py-1 font-medium text-emerald-500 ring-1 ring-inset ring-emerald-500/20">
+            {t.new}
           </div>
         </Button>
 
