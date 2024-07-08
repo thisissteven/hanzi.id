@@ -515,7 +515,8 @@ function TypingTestContent({
                 className={cn(
                   "text-2xl sm:text-3xl font-medium duration-500",
                   (inactive || current) && "text-secondary/40",
-                  isFinishedAndInactive && "opacity-0"
+                  isFinishedAndInactive && "opacity-0",
+                  wrong && "underline underline-offset-8 decoration-mossgreen"
                 )}
               >
                 {actualCharacters.map((char, index) => {
@@ -533,8 +534,7 @@ function TypingTestContent({
                         "duration-500",
                         correctChar && "text-smokewhite",
                         correct && "text-smokewhite",
-                        wrongChar && "text-red-500",
-                        wrong && "text-red-500"
+                        wrongChar && "text-mossgreen"
                       )}
                     >
                       {charToDisplay}
