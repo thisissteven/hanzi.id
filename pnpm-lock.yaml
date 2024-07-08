@@ -92,6 +92,9 @@ importers:
       react-hook-form:
         specifier: ^7.52.0
         version: 7.52.0(react@18.3.1)
+      react-timer-hook:
+        specifier: ^3.0.7
+        version: 3.0.7(react@18.3.1)
       react-use-cookie:
         specifier: ^1.6.1
         version: 1.6.1(react@18.3.1)
@@ -3305,6 +3308,11 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
+
+  react-timer-hook@3.0.7:
+    resolution: {integrity: sha512-ATpNcU+PQRxxfNBPVqce2+REtjGAlwmfoNQfcEBMZFxPj0r3GYdKhyPHdStvqrejejEi0QvqaJZjy2lBlFvAsA==}
+    peerDependencies:
+      react: '>=16.8.0'
 
   react-use-cookie@1.6.1:
     resolution: {integrity: sha512-77bENFpc+pi1roLJIrRvekprB4IjwG1Mowir0QdbwA0pDjgMtp3Ya9E1H9dJAisCxBvTZih6k5+2SSVo9BR2qw==}
@@ -7528,6 +7536,10 @@ snapshots:
       tslib: 2.6.3
     optionalDependencies:
       '@types/react': 18.3.3
+
+  react-timer-hook@3.0.7(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   react-use-cookie@1.6.1(react@18.3.1):
     dependencies:

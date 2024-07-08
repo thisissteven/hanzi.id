@@ -1,77 +1,39 @@
+import { createErrorToast } from "@/components";
 import { cn } from "@/utils";
-import { LucideMousePointerClick } from "lucide-react";
+import { LucideMousePointerClick, LucideRefreshCcw } from "lucide-react";
 import React from "react";
+import useSWRImmutable from "swr/immutable";
+import { useTimer } from "react-timer-hook";
 
-const words = [
-  "我们",
-  "他们",
-  "没有",
-  "自己",
-  "中国",
-  "可以",
-  "问题",
-  "工作",
-  "这个",
-  "生活",
-  "这样",
-  "已经",
-  "这些",
-  "一些",
-  "起来",
-  "什么",
-  "现在",
-  "社会",
-  "关系",
-  "第一",
-  "因为",
-  "开始",
-  "许多",
-  "时间",
-  "人们",
-  "今天",
-  "国家",
-  "思想",
-  "一定",
-  "如果",
-  "同时",
-  "需要",
-  "重要",
-  "为了",
-  "就是",
-  "人民",
-  "认为",
-  "成为",
-  "北京",
-  "历史",
-  "方面",
-  "情况",
-  "而且",
-  "学生",
-  "这里",
-  "但是",
-  "孩子",
-  "可能",
-  "发生",
-  "必须",
-  "只有",
-  "要求",
-  "发现",
-  "进行",
-  "特别",
-  "得到",
-  "文化",
-  "同志",
-  "发展",
-  "日本",
-  "因此",
-  "对于",
-  "领导",
-  "时候",
-  "政府",
-];
+const simplified =
+  "https://raw.githubusercontent.com/monkeytypegame/monkeytype/master/frontend/static/languages/chinese_simplified.json";
+const simplified_1k =
+  "https://raw.githubusercontent.com/monkeytypegame/monkeytype/master/frontend/static/languages/chinese_simplified_1k.json";
+const simplified_5k =
+  "https://raw.githubusercontent.com/monkeytypegame/monkeytype/master/frontend/static/languages/chinese_simplified_5k.json";
+const simplified_10k =
+  "https://raw.githubusercontent.com/monkeytypegame/monkeytype/master/frontend/static/languages/chinese_simplified_10k.json";
+const simplified_50k =
+  "https://raw.githubusercontent.com/monkeytypegame/monkeytype/master/frontend/static/languages/chinese_simplified_50k.json";
+const traditional =
+  "https://raw.githubusercontent.com/monkeytypegame/monkeytype/master/frontend/static/languages/chinese_traditional.json";
 
 type WordStatus = "correct" | "wrong" | "inactive" | "current";
 type TestStatus = "waiting for you" | "ongoing" | "finished";
+type TestType = "simplified" | "simplified_1k" | "simplified_5k" | "simplified_10k" | "simplified_50k" | "traditional";
+
+const fetchUrls: Record<TestType, string> = {
+  simplified,
+  simplified_1k,
+  simplified_5k,
+  simplified_10k,
+  simplified_50k,
+  traditional,
+} as const;
+
+function shuffle(array: string[]) {
+  return array.sort(() => Math.random() - 0.5);
+}
 
 const getInitialWordStatuses = (words: string[]) => {
   return [
@@ -139,9 +101,7 @@ function useTypingTest(words: string[]) {
     (input: string) => {
       const currentWord = words[currentWordIndexRef.current];
       const currentWordIndex = currentWordIndexRef.current;
-      if (currentWordIndex === 0) {
-        updateTestStatus("ongoing");
-      }
+
       if (input === currentWord) {
         setWordStatuses((prev) => {
           const next = [...prev];
@@ -214,13 +174,115 @@ function normalizeArrays(typedCharacters: Array<string | null>, actualCharacters
   };
 }
 
+const testTypes = [
+  "simplified",
+  "simplified_1k",
+  "simplified_5k",
+  "simplified_10k",
+  "simplified_50k",
+  "traditional",
+] as Array<TestType>;
+
 export default function TypingTest() {
+  const [testType, setTestType] = React.useState<TestType>("simplified");
+  const { data } = useSWRImmutable<{
+    words: string[];
+  }>(
+    testType,
+    async () => {
+      const response = await fetch(fetchUrls[testType]);
+      const data = await response.json();
+      return data;
+    },
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  const [words, setWords] = React.useState<string[]>([]);
+
+  React.useEffect(() => {
+    if (data?.words) {
+      setWords(shuffle(data.words).slice(0, 100));
+    }
+  }, [data]);
+
+  if (words.length === 0) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div className="mx-auto container max-w-[960px] px-4 grid place-items-center min-h-[90dvh]">
+      <div className="space-y-12 md:space-y-4">
+        <div className="w-fit mx-auto">
+          <ul className="flex justify-center gap-2 md:gap-1.5 whitespace-nowrap flex-wrap">
+            {testTypes.map((type) => {
+              return (
+                <li key={type} className="text-xs text-smokewhite font-light">
+                  <button
+                    onClick={() => {
+                      setTestType(type);
+                    }}
+                    className={cn(
+                      "bg-zinc border-[1.5px] rounded-full px-3 py-0.5 duration-200",
+                      testType === type ? "opacity-100 border-secondary/20" : "opacity-50 border-secondary/20"
+                    )}
+                  >
+                    {type}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <TypingTestContent
+          words={words}
+          shuffleWords={() => {
+            if (data?.words) {
+              setWords(shuffle(data.words).slice(0, 100));
+            }
+          }}
+        />
+      </div>
+    </div>
+  );
+}
+
+function TypingTestContent({ words, shuffleWords }: { words: string[]; shuffleWords: () => void }) {
   const { wordStatuses, testStatus, currentIndex, nextWord, updateWord, updateTestStatus } = useTypingTest(words);
 
   const currentWordRef = React.useRef() as React.MutableRefObject<HTMLLIElement | null>;
   const caretRef = React.useRef() as React.MutableRefObject<HTMLDivElement | null>;
   const inputRef = React.useRef() as React.MutableRefObject<HTMLInputElement | null>;
   const overlayRef = React.useRef() as React.MutableRefObject<HTMLDivElement | null>;
+
+  const resetTest = React.useCallback(() => {
+    shuffleWords();
+    updateTestStatus("waiting for you");
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [shuffleWords, updateTestStatus]);
+
+  React.useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      const isAlphabet = /^[a-z]$/.test(e.key);
+
+      const isCapsAlphabet = /^[A-Z]$/.test(e.key);
+
+      if (isCapsAlphabet) {
+        createErrorToast("Your CAPS LOCK is on!", {});
+      }
+
+      if (isAlphabet || isCapsAlphabet) {
+        inputRef.current?.focus();
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [resetTest]);
 
   React.useEffect(() => {
     if (currentWordRef.current) {
@@ -265,23 +327,13 @@ export default function TypingTest() {
     }
   }, [testStatus, wordStatuses, currentIndex]);
 
+  const onEnd = React.useCallback(() => {
+    updateTestStatus("finished");
+  }, [updateTestStatus]);
+
   return (
-    <div className="mx-auto container max-w-3xl">
-      <div className="h-[11.28rem]"></div>
-      <h1 className="text-2xl md:text-3xl">
-        Typing Test{" "}
-        <span
-          className={cn(
-            "text-base",
-            testStatus === "waiting for you" && "text-secondary/40",
-            testStatus === "ongoing" && "text-sky-500",
-            testStatus === "finished" && "text-smokewhite"
-          )}
-        >
-          ({testStatus})
-        </span>
-      </h1>
-      <p className="mt-2 text-lg text-secondary">Test your typing speed with the following words:</p>
+    <div>
+      <Timer testStatus={testStatus} onEnd={onEnd} time={15} />
       <div
         className="relative"
         onClick={() => {
@@ -345,6 +397,7 @@ export default function TypingTest() {
 
           <Input
             ref={inputRef}
+            testStatus={testStatus}
             onFocus={() => {
               if (caretRef.current) {
                 caretRef.current.style.opacity = "1";
@@ -364,10 +417,9 @@ export default function TypingTest() {
               }
               if (overlayRef.current) {
                 overlayRef.current.style.opacity = "1";
-                overlayRef.current.style.transitionDelay = "500ms";
+                overlayRef.current.style.transitionDelay = "2500ms";
               }
             }}
-            disabled={testStatus === "finished"}
             onChange={(e) => {
               const value = e.currentTarget.value;
               const chineseCharacterValue = value
@@ -378,6 +430,9 @@ export default function TypingTest() {
                 .join("");
               if (wordStatuses[currentIndex].word !== chineseCharacterValue) {
                 updateWord(chineseCharacterValue);
+              }
+              if (testStatus === "waiting for you" && chineseCharacterValue.length > 0) {
+                updateTestStatus("ongoing");
               }
             }}
             onNextWord={(value) => {
@@ -393,18 +448,53 @@ export default function TypingTest() {
         </div>
       </div>
 
-      <div className="mt-4 w-fit flex gap-2">
+      <div className="mt-8 w-fit mx-auto">
         <button
-          onClick={() => {
-            updateTestStatus("waiting for you");
-            if (inputRef.current) {
-              inputRef.current.focus();
-            }
-          }}
+          onClick={resetTest}
+          className="p-2.5 active:bg-hovered duration-200 rounded-md flex items-center gap-2 focus:bg-subtle/50 focus:outline-none outline-transparent text-lightgray"
         >
-          <span className="text-smokewhite">Restart</span>
+          <LucideRefreshCcw size={24} />
         </button>
       </div>
+    </div>
+  );
+}
+
+function getExpiryTimestamp(seconds: number) {
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + seconds);
+  return time;
+}
+
+function Timer({ time, testStatus, onEnd }: { time: number; testStatus: TestStatus; onEnd: () => void }) {
+  const { seconds, start, restart } = useTimer({
+    expiryTimestamp: getExpiryTimestamp(time),
+    onExpire: onEnd,
+    autoStart: false,
+  });
+
+  React.useEffect(() => {
+    if (testStatus === "ongoing") {
+      start();
+    }
+  }, [start, testStatus, time]);
+
+  React.useEffect(() => {
+    if (testStatus === "waiting for you") {
+      restart(getExpiryTimestamp(time), false);
+    }
+  }, [restart, testStatus, time]);
+
+  return (
+    <div
+      className={cn(
+        "text-4xl md:text-5xl duration-500",
+        testStatus === "waiting for you" && "text-secondary/40",
+        testStatus === "ongoing" && "text-sky-500",
+        testStatus === "finished" && "text-smokewhite"
+      )}
+    >
+      {seconds}
     </div>
   );
 }
@@ -412,14 +502,21 @@ export default function TypingTest() {
 const SPACE_KEY = " ";
 
 type InputProps = {
+  testStatus: TestStatus;
   onNextWord: (value: string) => void;
 } & React.ComponentPropsWithoutRef<"input">;
 
 const Input = React.forwardRef(function Input(
-  { onNextWord, onChange, ...rest }: InputProps,
+  { testStatus, onNextWord, onChange, ...rest }: InputProps,
   ref: React.ForwardedRef<HTMLInputElement>
 ) {
   const [value, setValue] = React.useState("");
+
+  React.useEffect(() => {
+    if (testStatus === "waiting for you") {
+      setValue("");
+    }
+  }, [testStatus]);
 
   return (
     <input
@@ -430,11 +527,13 @@ const Input = React.forwardRef(function Input(
       placeholder="press space after each word"
       value={value}
       onChange={(e) => {
-        onChange?.(e);
-        setValue(e.currentTarget.value);
+        if (testStatus !== "finished") {
+          onChange?.(e);
+          setValue(e.currentTarget.value);
+        }
       }}
       onKeyDown={(e) => {
-        if (e.key === SPACE_KEY) {
+        if (e.key === SPACE_KEY && testStatus !== "finished") {
           const trimmedValue = e.currentTarget.value.trim();
           onNextWord(trimmedValue);
           setValue("");
