@@ -148,5 +148,8 @@
   "showRadical": "Show Radical",
   "hideRadical": "Hide Radical",
   "quiz": "Quiz",
-  "startWriting": "Start writing the character below."
+  "startWriting": "Start writing the character below.",
+  "clickHere": "Click here or press any key to focus",
+  "restart": "Restart",
+  "startTyping": "Start typing to begin the test."
 }

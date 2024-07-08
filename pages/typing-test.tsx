@@ -1,9 +1,12 @@
-import { createErrorToast } from "@/components";
+import { createErrorToast, LoadingBar } from "@/components";
 import { cn } from "@/utils";
-import { LucideMousePointerClick, LucideRefreshCcw } from "lucide-react";
+import { LucideMousePointerClick } from "lucide-react";
 import React from "react";
 import useSWRImmutable from "swr/immutable";
 import { useTimer } from "react-timer-hook";
+import { AnimatePresence } from "framer-motion";
+import { Layout, useConfetti } from "@/modules/layout";
+import { useLocale } from "@/locales/use-locale";
 
 const simplified =
   "https://raw.githubusercontent.com/monkeytypegame/monkeytype/master/frontend/static/languages/chinese_simplified.json";
@@ -60,6 +63,8 @@ function useTypingTest(words: string[]) {
 
   const currentWordIndexRef = React.useRef(0);
 
+  const { party } = useConfetti();
+
   const updateTestStatus = React.useCallback(
     (status: TestStatus) => {
       switch (status) {
@@ -73,10 +78,11 @@ function useTypingTest(words: string[]) {
           break;
         case "finished":
           setTestStatus("finished");
+          party();
           break;
       }
     },
-    [words]
+    [words, party]
   );
 
   const updateWord = React.useCallback(
@@ -185,12 +191,13 @@ const testTypes = [
 
 export default function TypingTest() {
   const [testType, setTestType] = React.useState<TestType>("simplified");
-  const { data } = useSWRImmutable<{
+  const { data, isLoading } = useSWRImmutable<{
     words: string[];
   }>(
     testType,
     async () => {
       const response = await fetch(fetchUrls[testType]);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       const data = await response.json();
       return data;
     },
@@ -200,16 +207,13 @@ export default function TypingTest() {
   );
 
   const [words, setWords] = React.useState<string[]>([]);
+  const [disabled, setDisabled] = React.useState(false);
 
   React.useEffect(() => {
     if (data?.words) {
       setWords(shuffle(data.words).slice(0, 100));
     }
   }, [data]);
-
-  if (words.length === 0) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div className="mx-auto container max-w-[960px] px-4 grid place-items-center min-h-[90dvh]">
@@ -220,6 +224,7 @@ export default function TypingTest() {
               return (
                 <li key={type} className="text-xs text-smokewhite font-light">
                   <button
+                    disabled={disabled}
                     onClick={() => {
                       setTestType(type);
                     }}
@@ -235,26 +240,156 @@ export default function TypingTest() {
             })}
           </ul>
         </div>
-        <TypingTestContent
-          words={words}
-          shuffleWords={() => {
-            if (data?.words) {
-              setWords(shuffle(data.words).slice(0, 100));
-            }
-          }}
-        />
+        <AnimatePresence initial={false} mode="wait">
+          {words.length === 0 ? (
+            <div className="h-[289px] grid place-items-center">
+              <LoadingBar visible />
+            </div>
+          ) : (
+            <Layout>
+              <TypingTestContent
+                isLoading={isLoading}
+                words={words}
+                setDisabled={(value) => {
+                  setDisabled(value);
+                }}
+                shuffleWords={() => {
+                  if (data?.words) {
+                    setWords(shuffle(data.words).slice(0, 100));
+                  }
+                }}
+              />
+            </Layout>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
 }
 
-function TypingTestContent({ words, shuffleWords }: { words: string[]; shuffleWords: () => void }) {
+const TypingStatsContext = React.createContext(
+  {} as {
+    wpm: number;
+    accuracy: number;
+    seconds: number;
+    testStatus: TestStatus;
+  }
+);
+
+function useTypingStats() {
+  return React.useContext(TypingStatsContext);
+}
+
+function getExpiryTimestamp(seconds: number) {
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + seconds);
+  return time;
+}
+
+function TypingStatsProvider({
+  time,
+  onEnd,
+  testStatus,
+  wordStatuses,
+  children,
+}: {
+  time: number;
+  onEnd: () => void;
+  testStatus: TestStatus;
+  wordStatuses: Array<{ word: string; status: WordStatus }>;
+  children: React.ReactNode;
+}) {
+  const correctWords = React.useMemo(() => {
+    return wordStatuses.filter((word) => word.status === "correct").length;
+  }, [wordStatuses]);
+
+  const wrongWords = React.useMemo(() => {
+    return wordStatuses.filter((word) => word.status === "wrong").length;
+  }, [wordStatuses]);
+
+  const accuracy = React.useMemo(() => {
+    const totalWords = correctWords + wrongWords;
+    if (totalWords === 0) {
+      return 100;
+    }
+    return Math.round((correctWords / totalWords) * 100);
+  }, [correctWords, wrongWords]);
+
+  const { seconds, start, restart } = useTimer({
+    expiryTimestamp: getExpiryTimestamp(time),
+    onExpire: onEnd,
+    autoStart: false,
+  });
+
+  const wpm = React.useMemo(() => {
+    // Calculate total correct and wrong words
+    const totalWords = correctWords + wrongWords;
+
+    // Calculate WPM based on total correct words and total time in minutes
+    if (totalWords === 0 || time === 0) {
+      return 0;
+    }
+
+    // Convert time from seconds to minutes for WPM calculation
+    const timeInMinutes = time / 60;
+
+    // Calculate WPM
+    const wordsPerMinute = Math.round(correctWords / timeInMinutes);
+
+    return wordsPerMinute;
+  }, [correctWords, wrongWords, time]);
+
+  React.useEffect(() => {
+    if (testStatus === "ongoing") {
+      start();
+    }
+  }, [start, testStatus, time]);
+
+  React.useEffect(() => {
+    if (testStatus === "waiting for you") {
+      restart(getExpiryTimestamp(time), false);
+    }
+  }, [restart, testStatus, time]);
+
+  return (
+    <TypingStatsContext.Provider
+      value={{
+        wpm,
+        accuracy,
+        seconds,
+        testStatus,
+      }}
+    >
+      {children}
+    </TypingStatsContext.Provider>
+  );
+}
+
+function TypingTestContent({
+  isLoading,
+  words,
+  shuffleWords,
+  setDisabled,
+}: {
+  isLoading: boolean;
+  words: string[];
+  shuffleWords: () => void;
+  setDisabled: (value: boolean) => void;
+}) {
   const { wordStatuses, testStatus, currentIndex, nextWord, updateWord, updateTestStatus } = useTypingTest(words);
 
   const currentWordRef = React.useRef() as React.MutableRefObject<HTMLLIElement | null>;
   const caretRef = React.useRef() as React.MutableRefObject<HTMLDivElement | null>;
   const inputRef = React.useRef() as React.MutableRefObject<HTMLInputElement | null>;
   const overlayRef = React.useRef() as React.MutableRefObject<HTMLDivElement | null>;
+
+  React.useEffect(() => {
+    if (testStatus === "waiting for you") {
+      setDisabled(false);
+    } else {
+      setDisabled(true);
+    }
+  }, [setDisabled, testStatus]);
 
   const resetTest = React.useCallback(() => {
     shuffleWords();
@@ -331,9 +466,13 @@ function TypingTestContent({ words, shuffleWords }: { words: string[]; shuffleWo
     updateTestStatus("finished");
   }, [updateTestStatus]);
 
+  const { t } = useLocale();
+
   return (
     <div>
-      <Timer testStatus={testStatus} onEnd={onEnd} time={15} />
+      <TypingStatsProvider onEnd={onEnd} testStatus={testStatus} time={15} wordStatuses={wordStatuses}>
+        <TypingStats />
+      </TypingStatsProvider>
       <div
         className="relative"
         onClick={() => {
@@ -348,7 +487,8 @@ function TypingTestContent({ words, shuffleWords }: { words: string[]; shuffleWo
             key={(testStatus === "ongoing").toString()}
             className={cn(
               "absolute top-[2px] left-1.5 w-1 h-8 rounded-full bg-sky-500/50",
-              testStatus === "ongoing" ? "duration-100" : "animate-blink"
+              testStatus === "ongoing" && "duration-100",
+              testStatus === "waiting for you" && "animate-blink"
             )}
           />
           {words.map((word, index) => {
@@ -362,11 +502,17 @@ function TypingTestContent({ words, shuffleWords }: { words: string[]; shuffleWo
               word.split("")
             );
 
+            const isFinishedAndInactive = testStatus === "finished" && wordStatuses[index].status === "inactive";
+
             return (
               <li
                 key={index}
                 ref={current ? currentWordRef : null}
-                className={cn("text-3xl font-medium duration-500", (inactive || current) && "text-secondary/40")}
+                className={cn(
+                  "text-3xl font-medium duration-500",
+                  (inactive || current) && "text-secondary/40",
+                  isFinishedAndInactive && "opacity-0"
+                )}
               >
                 {actualCharacters.map((char, index) => {
                   const typedChar = typedCharacters[index];
@@ -442,60 +588,67 @@ function TypingTestContent({ words, shuffleWords }: { words: string[]; shuffleWo
         </ul>
         <div
           ref={overlayRef}
-          className="absolute select-none flex items-center justify-center gap-2 inset-0 w-full h-full bg-black/50 backdrop-blur-sm duration-300"
+          className={cn(
+            "absolute select-none flex items-center justify-center gap-2 inset-0 w-full h-full bg-black/50 backdrop-blur-sm duration-300",
+            isLoading ? "opacity-100" : ""
+          )}
         >
-          <LucideMousePointerClick /> Click here or press any key to focus
+          <AnimatePresence mode="wait" initial={false}>
+            {isLoading ? (
+              <LoadingBar visible />
+            ) : (
+              <Layout className="flex items-center justify-center">
+                <LucideMousePointerClick /> {t.clickHere}
+              </Layout>
+            )}
+          </AnimatePresence>
         </div>
       </div>
 
       <div className="mt-8 w-fit mx-auto">
         <button
           onClick={resetTest}
-          className="p-2.5 active:bg-hovered duration-200 rounded-md flex items-center gap-2 focus:bg-subtle/50 focus:outline-none outline-transparent text-lightgray"
+          className="px-4 py-2 active:bg-hovered duration-200 rounded-md flex items-center gap-2 focus:bg-subtle/50 focus:outline-none outline-transparent text-secondary active:text-white border border-secondary/20"
         >
-          <LucideRefreshCcw size={24} />
+          {t.restart}
         </button>
       </div>
     </div>
   );
 }
 
-function getExpiryTimestamp(seconds: number) {
-  const time = new Date();
-  time.setSeconds(time.getSeconds() + seconds);
-  return time;
-}
-
-function Timer({ time, testStatus, onEnd }: { time: number; testStatus: TestStatus; onEnd: () => void }) {
-  const { seconds, start, restart } = useTimer({
-    expiryTimestamp: getExpiryTimestamp(time),
-    onExpire: onEnd,
-    autoStart: false,
-  });
-
-  React.useEffect(() => {
-    if (testStatus === "ongoing") {
-      start();
-    }
-  }, [start, testStatus, time]);
-
-  React.useEffect(() => {
-    if (testStatus === "waiting for you") {
-      restart(getExpiryTimestamp(time), false);
-    }
-  }, [restart, testStatus, time]);
-
+function TypingStats() {
+  const { accuracy, wpm, seconds, testStatus } = useTypingStats();
+  const { t } = useLocale();
   return (
-    <div
-      className={cn(
-        "text-4xl md:text-5xl duration-500",
-        testStatus === "waiting for you" && "text-secondary/40",
-        testStatus === "ongoing" && "text-sky-500",
-        testStatus === "finished" && "text-smokewhite"
+    <AnimatePresence mode="wait" initial={false}>
+      {testStatus === "waiting for you" ? (
+        <Layout key="waiting" className="h-8 sm:h-14 flex text-lightgray font-medium w-fit items-end gap-4">
+          <p className="px-2">{t.startTyping}</p>
+        </Layout>
+      ) : (
+        <Layout key="started" className="h-8 sm:h-14 grid grid-cols-3 text-lightgray font-medium w-fit items-end gap-4">
+          <div
+            className={cn("text-3xl md:text-4xl duration-500 text-center", testStatus === "finished" && "text-sky-500")}
+          >
+            {seconds}
+            <span className="text-sm md:text-lg">s</span>
+          </div>
+          <div
+            className={cn("text-3xl md:text-4xl duration-500 text-center", testStatus === "finished" && "text-sky-500")}
+          >
+            {wpm}
+            <span className="text-sm md:text-lg">wpm</span>
+          </div>
+          <div
+            className={cn("text-3xl md:text-4xl duration-500 text-center", testStatus === "finished" && "text-sky-500")}
+          >
+            {accuracy}
+            <span className="text-sm md:text-lg">%</span>
+          </div>
+        </Layout>
       )}
-    >
-      {seconds}
-    </div>
+    </AnimatePresence>
   );
 }
 
@@ -523,8 +676,7 @@ const Input = React.forwardRef(function Input(
       type="text"
       ref={ref}
       // className="w-52 sm:w-64 px-3 py-2 rounded-md focus:outline-none bg-softblack placeholder:text-lightgray"
-      className="absolute inset-0 focus:outline-none opacity-0 w-2 h-2"
-      placeholder="press space after each word"
+      className="absolute inset-0 focus:outline-none bg-transparent caret-transparent placeholder:text-lightgray text-sm h-5"
       value={value}
       onChange={(e) => {
         if (testStatus !== "finished") {

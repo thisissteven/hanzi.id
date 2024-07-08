@@ -100,7 +100,6 @@ export function HomeTodo() {
         />
 
         <Button
-          disabled
           path="/typing-test"
           className="hover:bg-sky-200/5 relative disabled:pointer-events-none disabled:opacity-50"
           icon={<KeyboardIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
