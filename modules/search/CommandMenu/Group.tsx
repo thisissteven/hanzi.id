@@ -28,7 +28,7 @@ export function CommandMenuGroupCard({
   const currentSection = sections[activeIndex];
 
   const currentSimplifiedLength = currentSection?.simplified.length;
-  const isIdiom = currentSimplifiedLength && currentSimplifiedLength >= 4;
+  const isIdiom = currentSimplifiedLength && currentSimplifiedLength >= 3;
 
   const currentEntries = currentSection?.entries ?? [];
 

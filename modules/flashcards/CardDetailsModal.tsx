@@ -48,7 +48,7 @@ export function CardDetailsModal({
   const hanzi = isSimplified
     ? details?.simplified ?? latestDetails.current?.simplified
     : details?.traditional ?? latestDetails.current?.traditional;
-  const isIdiom = hanzi && hanzi.length >= 4;
+  const isIdiom = hanzi && hanzi.length >= 3;
 
   const entries = details?.entries ?? latestDetails.current?.entries ?? [];
   const disected = details?.disected ?? latestDetails.current?.disected ?? [];
@@ -169,7 +169,7 @@ function DisectedCharacters({
   const entries = selectedEntry.entries ?? [];
   const english = entries[entryIndex].english;
   const pinyin = entries[entryIndex].pinyin;
-  const isIdiom = hanzi.length >= 4;
+  const isIdiom = hanzi.length >= 3;
 
   return (
     <div className="mt-2 px-3 sm:px-4">

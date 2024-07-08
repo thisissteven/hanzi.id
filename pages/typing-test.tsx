@@ -567,7 +567,7 @@ function TypingTestContent({
               }
             }}
             onChange={(e) => {
-              const value = e.currentTarget.value;
+              const value = e.target.value;
               const chineseCharacterValue = value
                 .split("")
                 .filter((char) => {
@@ -685,7 +685,7 @@ const Input = React.forwardRef(function Input(
         }
       }}
       onKeyDown={(e) => {
-        if (e.key === SPACE_KEY && testStatus !== "finished") {
+        if ((e.key === SPACE_KEY || e.code === "Space" || e.keyCode === 32) && testStatus !== "finished") {
           const trimmedValue = e.currentTarget.value.trim();
           onNextWord(trimmedValue);
           setValue("");
