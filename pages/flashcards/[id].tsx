@@ -79,7 +79,7 @@ export default function FlashcardsDetailsPage() {
               </div>
               <button
                 onClick={() => setOpenAlert(true)}
-                className="mt-4 p-2 rounded-md duration-200 active:bg-hovered flex items-center gap-2"
+                className="mt-4 p-2 rounded-md duration-200 active:bg-hovered text-secondary flex items-center gap-2"
               >
                 <LucideTrash2 />
               </button>

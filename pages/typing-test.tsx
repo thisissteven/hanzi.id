@@ -1,4 +1,4 @@
-import { createErrorToast, LoadingBar } from "@/components";
+import { BackRouteButton, createErrorToast, LoadingBar } from "@/components";
 import { cn } from "@/utils";
 import { LucideMousePointerClick } from "lucide-react";
 import React from "react";
@@ -215,54 +215,59 @@ export default function TypingTest() {
   }, [data]);
 
   return (
-    <div className="mx-auto container max-w-[960px] px-4 grid place-items-center min-h-[90dvh]">
-      <div className="space-y-12 md:space-y-4">
-        <div className="w-fit mx-auto">
-          <ul className="flex justify-center gap-2 md:gap-1.5 whitespace-nowrap flex-wrap">
-            {testTypes.map((type) => {
-              return (
-                <li key={type} className="text-xs text-smokewhite font-light">
-                  <button
-                    disabled={disabled}
-                    onClick={() => {
-                      setTestType(type);
-                    }}
-                    className={cn(
-                      "bg-zinc border-[1.5px] rounded-full px-3 py-0.5 duration-200",
-                      testType === type ? "opacity-100 border-secondary/20" : "opacity-50 border-secondary/20"
-                    )}
-                  >
-                    {type}
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <AnimatePresence initial={false} mode="wait">
-          {words.length === 0 ? (
-            <div className="h-[265px] sm:h-[289px] grid place-items-center">
-              <LoadingBar visible />
-            </div>
-          ) : (
-            <Layout>
-              <TypingTestContent
-                isLoading={isLoading}
-                words={words}
-                setDisabled={(value) => {
-                  setDisabled(value);
-                }}
-                shuffleWords={() => {
-                  if (data?.words) {
-                    setWords(shuffle(data.words).slice(0, 100));
-                  }
-                }}
-              />
-            </Layout>
-          )}
-        </AnimatePresence>
+    <>
+      <div className="w-fit mx-auto">
+        <BackRouteButton />
       </div>
-    </div>
+      <div className="mx-auto container max-w-[960px] px-4 grid place-items-center min-h-[90dvh]">
+        <div className="space-y-12 md:space-y-4">
+          <div className="w-fit mx-auto">
+            <ul className="flex justify-center gap-2 md:gap-1.5 whitespace-nowrap flex-wrap">
+              {testTypes.map((type) => {
+                return (
+                  <li key={type} className="text-xs text-smokewhite font-light">
+                    <button
+                      disabled={disabled}
+                      onClick={() => {
+                        setTestType(type);
+                      }}
+                      className={cn(
+                        "bg-zinc border-[1.5px] rounded-full px-3 py-0.5 duration-200",
+                        testType === type ? "opacity-100 border-secondary/20" : "opacity-50 border-secondary/20"
+                      )}
+                    >
+                      {type}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <AnimatePresence initial={false} mode="wait">
+            {words.length === 0 ? (
+              <div className="h-[265px] sm:h-[289px] grid place-items-center">
+                <LoadingBar visible />
+              </div>
+            ) : (
+              <Layout>
+                <TypingTestContent
+                  isLoading={isLoading}
+                  words={words}
+                  setDisabled={(value) => {
+                    setDisabled(value);
+                  }}
+                  shuffleWords={() => {
+                    if (data?.words) {
+                      setWords(shuffle(data.words).slice(0, 100));
+                    }
+                  }}
+                />
+              </Layout>
+            )}
+          </AnimatePresence>
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -588,7 +593,7 @@ function TypingTestContent({
         <div
           ref={overlayRef}
           className={cn(
-            "absolute select-none flex items-center justify-center gap-2 inset-0 w-full h-full bg-black/50 backdrop-blur-sm duration-300",
+            "absolute select-none grid place-items-center inset-0 w-full h-full bg-black/50 backdrop-blur-sm duration-300",
             isLoading ? "opacity-100" : ""
           )}
         >
@@ -596,8 +601,8 @@ function TypingTestContent({
             {isLoading ? (
               <LoadingBar visible />
             ) : (
-              <Layout className="flex items-center justify-center">
-                <LucideMousePointerClick /> {t.clickHere}
+              <Layout className="flex items-center justify-center gap-2 flex-wrap">
+                <LucideMousePointerClick className="shrink-0" /> <span className="text-center">{t.clickHere}</span>
               </Layout>
             )}
           </AnimatePresence>

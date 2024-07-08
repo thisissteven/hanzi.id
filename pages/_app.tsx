@@ -45,6 +45,11 @@ export default function App({ Component, pageProps, router }: AppProps) {
     return () => clearTimeout(timeout);
   }, [isHsk]);
 
+  React.useEffect(() => {
+    document.body.style.overflowY = "scroll";
+    document.documentElement.style.scrollbarGutter = "";
+  }, [router.pathname]);
+
   return (
     <ThemeProvider forcedTheme="dark" attribute="class">
       <Seo />
