@@ -42,7 +42,6 @@
     "react-confetti": "^6.1.0",
     "react-dom": "^18",
     "react-hook-form": "^7.52.0",
-    "react-timer-hook": "^3.0.7",
     "react-use-cookie": "^1.6.1",
     "reading-time-estimator": "^1.11.0",
     "request": "^2.88.2",
@@ -50,6 +49,7 @@
     "swr": "^2.2.5",
     "tailwindcss-animate": "^1.0.7",
     "tesseract.js": "^5.1.0",
+    "use-timer": "^2.0.1",
     "vaul": "^0.9.1",
     "zustand": "^4.5.2"
   },

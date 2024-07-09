@@ -151,5 +151,8 @@
   "startWriting": "Mulai menulis karakter di bawah ini.",
   "clickHere": "Klik di sini atau tekan tombol apa saja untuk fokus",
   "restart": "Ulang",
-  "startTyping": "Mulai mengetik untuk memulai tes."
+  "startTyping": "Mulai mengetik untuk memulai tes.",
+  "showPinyin": "Tampilkan Pinyin",
+  "hidePinyin": "Sembunyikan Pinyin",
+  "settings": "Pengaturan"
 }

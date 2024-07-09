@@ -151,5 +151,8 @@
   "startWriting": "Start writing the character below.",
   "clickHere": "Click here or press any key to focus",
   "restart": "Restart",
-  "startTyping": "Start typing to begin the test."
+  "startTyping": "Start typing to begin the test.",
+  "showPinyin": "Show Pinyin",
+  "hidePinyin": "Hide Pinyin",
+  "settings": "Settings"
 }

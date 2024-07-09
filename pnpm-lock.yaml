@@ -92,9 +92,6 @@ importers:
       react-hook-form:
         specifier: ^7.52.0
         version: 7.52.0(react@18.3.1)
-      react-timer-hook:
-        specifier: ^3.0.7
-        version: 3.0.7(react@18.3.1)
       react-use-cookie:
         specifier: ^1.6.1
         version: 1.6.1(react@18.3.1)
@@ -116,6 +113,9 @@ importers:
       tesseract.js:
         specifier: ^5.1.0
         version: 5.1.0
+      use-timer:
+        specifier: ^2.0.1
+        version: 2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       vaul:
         specifier: ^0.9.1
         version: 0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3309,11 +3309,6 @@ packages:
       '@types/react':
         optional: true
 
-  react-timer-hook@3.0.7:
-    resolution: {integrity: sha512-ATpNcU+PQRxxfNBPVqce2+REtjGAlwmfoNQfcEBMZFxPj0r3GYdKhyPHdStvqrejejEi0QvqaJZjy2lBlFvAsA==}
-    peerDependencies:
-      react: '>=16.8.0'
-
   react-use-cookie@1.6.1:
     resolution: {integrity: sha512-77bENFpc+pi1roLJIrRvekprB4IjwG1Mowir0QdbwA0pDjgMtp3Ya9E1H9dJAisCxBvTZih6k5+2SSVo9BR2qw==}
     engines: {node: '>=8', npm: '>=5'}
@@ -3854,6 +3849,12 @@ packages:
     resolution: {integrity: sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
+
+  use-timer@2.0.1:
+    resolution: {integrity: sha512-ESFkDYZluJZ+G/CaoOBFxg0TjuG7kgNFNhIFZhqv14ho2WIZwuxkRnEURhyLm9I4vNz+ea9ZowNaOkExDAM+6Q==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -7537,10 +7538,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.3
 
-  react-timer-hook@3.0.7(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-
   react-use-cookie@1.6.1(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -8167,6 +8164,11 @@ snapshots:
   use-sync-external-store@1.2.2(react@18.3.1):
     dependencies:
       react: 18.3.1
+
+  use-timer@2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   util-deprecate@1.0.2: {}
 

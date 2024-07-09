@@ -240,3 +240,7 @@ html,
 }
 
 /* #endregion /**=========== Dialog =========== */
+
+.color-opacity-transition {
+  transition: color 500ms, opacity 200ms;
+}

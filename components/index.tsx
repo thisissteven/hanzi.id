@@ -18,3 +18,4 @@ export * from "./alert-modal";
 export * from "./toast";
 export * from "./hanzi-stroke-simulator";
 export * from "./hanzi-stroke-quiz";
+export * from "./route-dialog";
