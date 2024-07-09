@@ -154,5 +154,10 @@
   "startTyping": "Mulai mengetik untuk memulai tes.",
   "showPinyin": "Tampilkan Pinyin",
   "hidePinyin": "Sembunyikan Pinyin",
-  "settings": "Pengaturan"
+  "settings": "Pengaturan",
+  "wordsAdded": "Kata ditambahkan ke kartu pengingat",
+  "cancel": "Batal",
+  "addToFlashcard": "Tambah ke Kartu Pengingat",
+  "onlyAddWrongWords": "Tambahkan hanya kata yang salah",
+  "addTheFollowingWordsToFlashcard": "Tambahkan kata-kata berikut ke kartu pengingat?"
 }

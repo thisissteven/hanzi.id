@@ -281,7 +281,7 @@ export function TypingTestContent({
           {t.restart}
         </button>
         {testStatus === "finished" && currentIndex > 0 && (
-          <AddWordsToFlashcard words={words} currentIndex={currentIndex} />
+          <AddWordsToFlashcard words={words} wordStatuses={wordStatuses} currentIndex={currentIndex} />
         )}
       </div>
     </div>

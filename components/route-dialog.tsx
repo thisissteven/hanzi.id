@@ -7,11 +7,13 @@ export function RouteDialog({
   open,
   onClose,
   className,
+  withoutOkButton,
 }: {
   children: React.ReactNode;
   open: boolean;
   onClose: () => void;
   className?: string;
+  withoutOkButton?: boolean;
 }) {
   // Prevent scrolling when dialog is open
   React.useEffect(() => {
@@ -49,14 +51,16 @@ export function RouteDialog({
           >
             {children}
 
-            <div className="mt-2 flex justify-end bg-softblack">
-              <button
-                onClick={onClose}
-                className="block rounded-md font-medium duration-200 bg-hovered active:bg-subtle px-3 py-1.5"
-              >
-                OK
-              </button>
-            </div>
+            {!withoutOkButton && (
+              <div className="mt-2 flex justify-end bg-softblack">
+                <button
+                  onClick={onClose}
+                  className="block rounded-md font-medium duration-200 bg-hovered active:bg-subtle px-3 py-1.5"
+                >
+                  OK
+                </button>
+              </div>
+            )}
           </DialogPanel>
         </div>
       </div>
