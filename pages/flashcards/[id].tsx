@@ -169,7 +169,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
                 <button
                   onClick={() => {
                     setDetails(card);
-                    router.push(router.asPath + "?open=true", undefined, { shallow: true });
+                    router.push({ query: { ...router.query, open: true } }, undefined, { shallow: true });
                   }}
                   className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
                 >

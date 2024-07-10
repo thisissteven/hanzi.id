@@ -59,7 +59,7 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
           return (
             <li key={index} className="list-none">
               <Popover>
-                <Popover.Trigger asChild className="text-left sm:text-lg font-medium">
+                <Popover.Trigger asChild className="text-left text-xl font-medium">
                   <div role="button">
                     {splitted.map((part, index) => {
                       if (part === hanzi)
@@ -80,12 +80,12 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
                 </Popover.Trigger>
                 <Popover.Content
                   align="start"
-                  className="text-xs sm:text-sm leading-5 text-smokewhite px-2 max-[640px]:max-w-[calc(100vw-1rem)] max-w-[calc(570px-1rem)]"
+                  className="leading-5 text-smokewhite px-2 max-[640px]:max-w-[calc(100vw-1rem)] max-w-[calc(570px-1rem)]"
                 >
                   <p>{lesson.pinyin}</p>
                 </Popover.Content>
               </Popover>
-              <p className="text-sm sm:text-base text-gray">{lesson.english}</p>
+              <p className="text-gray">{lesson.english}</p>
             </li>
           );
         })}

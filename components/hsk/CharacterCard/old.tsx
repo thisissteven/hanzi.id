@@ -62,7 +62,7 @@ export function CharacterCardOld({
       `}</style>
       <div
         onClick={onFlip}
-        className={clsx("select-none text-3xl aspect-square", isCompleted ? "text-smokewhite" : "text-lightgray")}
+        className={clsx("select-none text-4xl aspect-square", isCompleted ? "text-smokewhite" : "text-lightgray")}
       >
         <div className={clsx("relative w-full h-full card", isFlipped && "card-flipped")}>
           <div
@@ -115,8 +115,8 @@ export function CharacterCardOld({
               "card-content absolute inset-0 border-b-[1.5px] bg-softblack flex flex-col items-center justify-center text-flipped px-4 border-secondary/10"
             )}
           >
-            <div className="text-2xl">{pinyin}</div>
-            <div className="text-sm text-center">{translations.join(", ")}</div>
+            <div className="text-3xl">{pinyin}</div>
+            <div className="text-lg text-center">{translations.join(", ")}</div>
           </div>
         </div>
       </div>

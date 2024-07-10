@@ -22,17 +22,14 @@ export function CharacterRow({
   return (
     <div
       onClick={onClick}
-      className={clsx(
-        "relative group transition select-none text-3xl",
-        isCompleted ? "text-smokewhite" : "text-lightgray"
-      )}
+      className={clsx("relative group transition select-none", isCompleted ? "text-smokewhite" : "text-lightgray")}
     >
-      <div className="pl-3 pr-4 pt-6 pb-3 flex gap-2 items-center transition border-b border-b-secondary/10 bg-softblack active:bg-hovered">
-        <div className="shrink-0 font-medium">{character}</div>
+      <div className="pl-3 pr-4 pt-7 pb-3 flex gap-2 items-center transition border-b border-b-secondary/10 bg-softblack active:bg-hovered">
+        <div className="shrink-0 font-medium text-4xl">{character}</div>
 
-        <div className="overflow-x-hidden flex-1">
-          <div className="text-sm font-medium">{pinyin}</div>
-          <div className="text-sm line-clamp-1 max-w-[90%]">{translations.join(", ")}</div>
+        <div className="overflow-x-hidden flex-1 -space-y-1">
+          <div className="text-base font-medium">{pinyin}</div>
+          <div className="text-base line-clamp-1 max-w-[90%]">{translations.join(", ")}</div>
         </div>
 
         <MarkAsCompleted
