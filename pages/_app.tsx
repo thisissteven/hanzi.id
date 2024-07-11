@@ -24,7 +24,22 @@ import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
 import { SearchCommandMenu } from "@/modules/search";
 
+import posthog from "posthog-js";
+import { PostHogProvider } from "posthog-js/react";
+import { Session } from "next-auth";
+
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
+
+if (typeof window !== "undefined") {
+  // checks that we are client-side
+  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY as string, {
+    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
+    person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+    loaded: (posthog) => {
+      if (process.env.NODE_ENV === "development") posthog.debug(); // debug mode in development
+    },
+  });
+}
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const isNewReading = router.pathname.startsWith("/new");
@@ -50,6 +65,17 @@ export default function App({ Component, pageProps, router }: AppProps) {
     document.documentElement.style.scrollbarGutter = "";
   }, [router.pathname]);
 
+  React.useEffect(() => {
+    // Track page views
+    const handleRouteChange = () => posthog?.capture("$pageview");
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <ThemeProvider forcedTheme="dark" attribute="class">
       <Seo />
@@ -66,41 +92,57 @@ export default function App({ Component, pageProps, router }: AppProps) {
           },
         }}
       >
-        <SessionProvider session={pageProps.session}>
+        <InterceptedSessionProvider session={pageProps.session}>
           <PreferencesProvider>
             <SearchCommandMenu />
             <AuthProvider>
               <ConfettiProvider>
-                <AnimatePresence mode="wait">
-                  {isNewReading ? (
-                    <NewReadingLayout key="new-reading">
+                <PostHogProvider client={posthog}>
+                  <AnimatePresence mode="wait">
+                    {isNewReading ? (
+                      <NewReadingLayout key="new-reading">
+                        <Component key={router.pathname} {...pageProps} />
+                      </NewReadingLayout>
+                    ) : isTools ? (
+                      <ToolsLayout key="tools">
+                        <Component key={router.pathname} {...pageProps} />
+                      </ToolsLayout>
+                    ) : isReading ? (
+                      <ReadingLayout key="reading">
+                        <Component key={router.pathname} {...pageProps} />
+                      </ReadingLayout>
+                    ) : isHsk ? (
+                      <HSKLayout key="hsk">
+                        <Component key={router.pathname} {...pageProps} />
+                      </HSKLayout>
+                    ) : isOldHsk ? (
+                      <OldHSKLayout key="old-hsk">
+                        <Component key={router.pathname} {...pageProps} />
+                      </OldHSKLayout>
+                    ) : (
                       <Component key={router.pathname} {...pageProps} />
-                    </NewReadingLayout>
-                  ) : isTools ? (
-                    <ToolsLayout key="tools">
-                      <Component key={router.pathname} {...pageProps} />
-                    </ToolsLayout>
-                  ) : isReading ? (
-                    <ReadingLayout key="reading">
-                      <Component key={router.pathname} {...pageProps} />
-                    </ReadingLayout>
-                  ) : isHsk ? (
-                    <HSKLayout key="hsk">
-                      <Component key={router.pathname} {...pageProps} />
-                    </HSKLayout>
-                  ) : isOldHsk ? (
-                    <OldHSKLayout key="old-hsk">
-                      <Component key={router.pathname} {...pageProps} />
-                    </OldHSKLayout>
-                  ) : (
-                    <Component key={router.pathname} {...pageProps} />
-                  )}
-                </AnimatePresence>
+                    )}
+                  </AnimatePresence>
+                </PostHogProvider>
               </ConfettiProvider>
             </AuthProvider>
           </PreferencesProvider>
-        </SessionProvider>
+        </InterceptedSessionProvider>
       </SWRConfig>
     </ThemeProvider>
   );
+}
+
+function InterceptedSessionProvider({
+  children,
+  session,
+}: {
+  children: React.ReactNode;
+  session: Session | null | undefined;
+}) {
+  if (process.env.NODE_ENV === "production") {
+    return children;
+  }
+
+  return <SessionProvider session={session}>{children}</SessionProvider>;
 }

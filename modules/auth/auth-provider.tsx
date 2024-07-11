@@ -23,6 +23,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const isMobile = useIsMobile();
 
+  if (process.env.NODE_ENV === "production") {
+    return children;
+  }
+
   return (
     <AuthContext.Provider
       value={{
