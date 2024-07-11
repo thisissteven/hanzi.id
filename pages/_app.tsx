@@ -26,7 +26,6 @@ import { SearchCommandMenu } from "@/modules/search";
 
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
-import { Session } from "next-auth";
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -92,7 +91,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
           },
         }}
       >
-        <InterceptedSessionProvider session={pageProps.session}>
+        <SessionProvider session={pageProps.session}>
           <PreferencesProvider>
             <SearchCommandMenu />
             <AuthProvider>
@@ -127,22 +126,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
               </ConfettiProvider>
             </AuthProvider>
           </PreferencesProvider>
-        </InterceptedSessionProvider>
+        </SessionProvider>
       </SWRConfig>
     </ThemeProvider>
   );
-}
-
-function InterceptedSessionProvider({
-  children,
-  session,
-}: {
-  children: React.ReactNode;
-  session: Session | null | undefined;
-}) {
-  if (process.env.NODE_ENV === "production") {
-    return children;
-  }
-
-  return <SessionProvider session={session}>{children}</SessionProvider>;
 }
