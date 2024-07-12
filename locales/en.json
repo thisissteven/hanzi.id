@@ -159,5 +159,8 @@
   "cancel": "Cancel",
   "addToFlashcard": "Add to Flashcard",
   "onlyAddWrongWords": "Only add wrong words to flashcard",
-  "addTheFollowingWordsToFlashcard": "Add the following words to flashcard?"
+  "addTheFollowingWordsToFlashcard": "Add the following words to flashcard?",
+  "exampleSentences": "Example Sentences",
+  "seeExampleSentences": "See Sentences",
+  "hideExampleSentences": "Hide Sentences"
 }

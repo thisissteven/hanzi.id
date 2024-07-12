@@ -159,5 +159,8 @@
   "cancel": "Batal",
   "addToFlashcard": "Tambah ke Kartu Pengingat",
   "onlyAddWrongWords": "Tambahkan hanya kata yang salah",
-  "addTheFollowingWordsToFlashcard": "Tambahkan kata-kata berikut ke kartu pengingat?"
+  "addTheFollowingWordsToFlashcard": "Tambahkan kata-kata berikut ke kartu pengingat?",
+  "exampleSentences": "Kalimat Contoh",
+  "seeExampleSentences": "Lihat Kalimat",
+  "hideExampleSentences": "Sembunyikan"
 }
