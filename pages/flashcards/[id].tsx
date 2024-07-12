@@ -9,6 +9,7 @@ import useSWRImmutable from "swr/immutable";
 import { CardDetailsModal, FlashcardProvider } from "@/modules/flashcards";
 import { useLocale } from "@/locales/use-locale";
 import { FlashcardedResult } from "../api/flashcard/en";
+import { cn } from "@/utils";
 
 function exportToPleco(words: string[], filename: string) {
   const element = document.createElement("a");
@@ -156,7 +157,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
         </FlashcardProvider>
       </AudioProvider>
       <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
-      <p className="mx-4 mt-2 text-secondary text-sm">{bookName}</p>
+      <p className="mx-4 mt-1 text-secondary">{bookName}</p>
 
       <div className="min-h-[calc(100dvh-22rem)]">
         <ul className="mt-4 border-t border-t-secondary/10 grid sm:grid-cols-2">
@@ -165,7 +166,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
             const translations = card?.entries?.[0].english.join(", ");
 
             return (
-              <li key={index} className="border-b border-b-secondary/10">
+              <li key={index} className="h-full flex items-center border-b border-b-secondary/10">
                 <button
                   onClick={() => {
                     setDetails(card);
@@ -173,15 +174,20 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
                   }}
                   className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
                 >
-                  <div className="relative group transition select-none text-3xl w-full">
-                    <div className="pl-3 pr-4 pt-8 pb-3 flex gap-2 items-center">
-                      <div className="shrink-0 font-medium">{isSimplified ? card?.simplified : card?.traditional}</div>
+                  <div className="relative group transition select-none w-full">
+                    <div
+                      className={cn(
+                        "pl-3 pr-4 pt-8 pb-3 flex gap-2 items-center",
+                        card?.simplified.length > 4 && "max-md:flex-col max-md:items-start"
+                      )}
+                    >
+                      <div className="shrink-0 font-medium text-4xl">
+                        {isSimplified ? card?.simplified : card?.traditional}
+                      </div>
 
-                      <div className="overflow-x-hidden flex-1">
-                        <div className="text-sm font-medium text-smokewhite">{pinyin ?? t.loading}</div>
-                        <div className="text-sm line-clamp-1 max-w-[95%] text-secondary">
-                          {translations ?? t.loading}
-                        </div>
+                      <div className="overflow-x-hidden flex-1 w-full">
+                        <div className="font-medium text-smokewhite">{pinyin ?? t.loading}</div>
+                        <div className="line-clamp-1 max-w-[95%] text-secondary">{translations ?? t.loading}</div>
                       </div>
 
                       <div className="absolute left-4 top-3 text-xs text-secondary">{index + 1}</div>

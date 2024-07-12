@@ -79,7 +79,7 @@ export function CardDetailsModal({
                     <div className="flex justify-between">
                       {isIdiom ? (
                         <div>
-                          <p className="mt-1 text-4xl md:text-5xl font-medium">{hanzi}</p>
+                          <p className="mt-1 text-5xl font-medium">{hanzi}</p>
                           <div className="flex items-end gap-2 mt-1.5">
                             <p className="font-medium text-lg md:text-xl">{currentEntry?.pinyin}</p>
                             <AudioButton text={hanzi ?? ""} size="normal" />
@@ -87,7 +87,7 @@ export function CardDetailsModal({
                         </div>
                       ) : (
                         <div className="mt-1 flex items-end gap-2">
-                          <p className="text-4xl md:text-5xl font-medium">{hanzi}</p>
+                          <p className="text-5xl font-medium">{hanzi}</p>
                           <div>
                             <p className="font-medium text-lg md:text-xl">{currentEntry?.pinyin}</p>
                           </div>
@@ -117,7 +117,7 @@ export function CardDetailsModal({
                       </div>
                     )}
 
-                    <ul className="mt-1 ml-4 pr-1">
+                    <ul className="mt-1 ml-4 pr-1 text-lg">
                       {currentEntry?.english?.map((definition, index) => {
                         return (
                           <li key={index} className="list-disc">
@@ -173,7 +173,7 @@ function DisectedCharacters({
 
   return (
     <div className="mt-2 px-3 sm:px-4">
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         {disected.map((entry, index) => {
           const hanzi = isSimplified ? entry.simplified : entry.traditional;
           return (
@@ -184,7 +184,7 @@ function DisectedCharacters({
                 setEntryIndex(0);
               }}
               className={cn(
-                "w-12 aspect-square grid place-items-center text-lg md:text-xl rounded-md border duration-200",
+                "w-12 aspect-square grid place-items-center text-xl md:text-2xl rounded-md border duration-200",
                 selected === index ? "bg-hovered/50 text-sky-500 border-sky-500/30" : "opacity-50 border-secondary/15"
               )}
             >
@@ -197,7 +197,7 @@ function DisectedCharacters({
       <div className="mt-2 flex justify-between">
         {isIdiom ? (
           <div>
-            <p className="mt-1 text-4xl md:text-5xl font-medium">{hanzi}</p>
+            <p className="mt-1 text-5xl font-medium">{hanzi}</p>
             <div className="flex items-end gap-2 mt-1.5">
               <p className="font-medium text-lg md:text-xl">{pinyin}</p>
               <AudioButton text={hanzi ?? ""} size="normal" />
@@ -205,7 +205,7 @@ function DisectedCharacters({
           </div>
         ) : (
           <div className="mt-1 flex items-end gap-2">
-            <p className="text-4xl md:text-5xl font-medium">{hanzi}</p>
+            <p className="text-5xl font-medium">{hanzi}</p>
             <div>
               <p className="font-medium text-lg md:text-xl">{pinyin}</p>
             </div>
@@ -233,7 +233,7 @@ function DisectedCharacters({
         </div>
       )}
 
-      <ul className="mt-1 ml-4 pr-1">
+      <ul className="mt-1 ml-4 pr-1 text-lg">
         {english.map((definition, index) => {
           return (
             <li key={index} className="list-disc">
