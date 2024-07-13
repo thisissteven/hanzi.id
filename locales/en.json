@@ -162,5 +162,9 @@
   "addTheFollowingWordsToFlashcard": "Add the following words to flashcard?",
   "exampleSentences": "Example Sentences",
   "seeExampleSentences": "See Sentences",
-  "hideExampleSentences": "Hide Sentences"
+  "hideExampleSentences": "Hide Sentences",
+  "review": "Review",
+  "numOfCards": "Number of cards",
+  "cardNumbers": "Card numbers",
+  "random": "Random"
 }

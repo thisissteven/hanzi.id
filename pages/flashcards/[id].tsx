@@ -1,15 +1,19 @@
 import React from "react";
 import { AudioProvider, Flashcard, Layout, useFlashcard } from "@/modules/layout";
-import { AlertModal, BackRouteButton, createSuccessToast, LoadMore, usePreferences } from "@/components";
-import { AnimatePresence, motion } from "framer-motion";
-import { ChevronRightIcon, LucideDownload, LucideTrash2 } from "lucide-react";
+import { AlertModal, BackRouteButton, createSuccessToast, LoadMore, RouteDialog } from "@/components";
+import { LucideTrash2 } from "lucide-react";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 
-import { CardDetailsModal, FlashcardProvider } from "@/modules/flashcards";
+import {
+  CardDetailsModal,
+  FlashcardProvider,
+  FlashcardSettingsModal,
+  FooterButtons,
+  VirtualizedCards,
+} from "@/modules/flashcards";
 import { useLocale } from "@/locales/use-locale";
 import { FlashcardedResult } from "../api/flashcard/en";
-import { cn } from "@/utils";
 
 function exportToPleco(words: string[], filename: string) {
   const element = document.createElement("a");
@@ -105,7 +109,6 @@ const CHUNK_SIZE = 50;
 
 function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
   const [bookName, chapterName] = flashcard.chapter.split("-");
-  const [exported, setExported] = React.useState(false);
 
   const [loadingBatch, setLoadingBatch] = React.useState(-1);
   const [cards, setCards] = React.useState<FlashcardedResult[]>([]);
@@ -140,8 +143,6 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   const router = useRouter();
 
-  const { isSimplified } = usePreferences();
-
   return (
     <>
       <AudioProvider>
@@ -156,50 +157,18 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
           />
         </FlashcardProvider>
       </AudioProvider>
+      <FlashcardSettingsModal flashcard={flashcard} />
       <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
       <p className="mx-4 mt-1 text-secondary">{bookName}</p>
 
       <div className="min-h-[calc(100dvh-22rem)]">
-        <ul className="mt-4 border-t border-t-secondary/10 grid sm:grid-cols-2">
-          {cards.map((card, index) => {
-            const pinyin = card?.entries?.map((entry) => entry.pinyin).join("/");
-            const translations = card?.entries?.[0].english.join(", ");
-
-            return (
-              <li key={index} className="h-full flex items-center border-b border-b-secondary/10">
-                <button
-                  onClick={() => {
-                    setDetails(card);
-                    router.push({ query: { ...router.query, open: true } }, undefined, { shallow: true });
-                  }}
-                  className="text-left w-full md:hover:bg-hovered active:bg-hovered duration-200 flex items-center justify-between pr-3 sm:pr-2"
-                >
-                  <div className="relative group transition select-none w-full">
-                    <div
-                      className={cn(
-                        "pl-3 pr-4 pt-8 pb-3 flex gap-2 items-center",
-                        card?.simplified.length > 4 && "max-md:flex-col max-md:items-start"
-                      )}
-                    >
-                      <div className="shrink-0 font-medium text-4xl">
-                        {isSimplified ? card?.simplified : card?.traditional}
-                      </div>
-
-                      <div className="overflow-x-hidden flex-1 w-full">
-                        <div className="font-medium text-smokewhite">{pinyin ?? t.loading}</div>
-                        <div className="line-clamp-1 max-w-[95%] text-secondary">{translations ?? t.loading}</div>
-                      </div>
-
-                      <div className="absolute left-4 top-3 text-xs text-secondary">{index + 1}</div>
-                    </div>
-                  </div>
-
-                  <ChevronRightIcon className="h-5 w-5 shrink-0 flex-none text-secondary/50" aria-hidden="true" />
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+        <VirtualizedCards
+          cards={cards}
+          onCardClick={(card) => {
+            setDetails(card);
+            router.push({ query: { ...router.query, open: true } }, undefined, { shallow: true });
+          }}
+        />
         <LoadMore
           isEnd={isEnd}
           whenInView={() => {
@@ -211,46 +180,14 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
       </div>
 
       {cards.length > 0 && (
-        <AnimatePresence mode="wait" initial={false}>
-          {exported ? (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: [1, 0],
-                transition: {
-                  delay: 2,
-                },
-              }}
-              exit={{
-                opacity: 0,
-              }}
-              transition={{ type: "tween", duration: 0.2 }}
-              className="sticky bottom-4 mt-8 max-md:mx-4 flex justify-end"
-            >
-              {t.exportSuccessful}
-            </motion.div>
-          ) : (
-            <motion.div
-              key="export"
-              exit={{
-                opacity: 0,
-              }}
-              transition={{ type: "tween", duration: 0.2 }}
-              className="sticky bottom-4 mt-8 max-md:mx-4 flex justify-end"
-            >
-              <button
-                type="button"
-                onClick={() => {
-                  exportToPleco(flashcard.words, flashcard.chapter);
-                  setExported(true);
-                }}
-                className="rounded-md font-medium max-md:w-full text-black dark:text-white p-3 md:py-2.5 md:px-4 duration-200 bg-blue-500 active:bg-blue-600 disabled:opacity-50 flex items-center justify-center gap-2"
-              >
-                {t.exportForPleco} <LucideDownload size={20} />
-              </button>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <FooterButtons
+          onExport={() => {
+            exportToPleco(flashcard.words, flashcard.chapter);
+            createSuccessToast(t.exportSuccessful, {
+              id: "export-pleco-success",
+            });
+          }}
+        />
       )}
     </>
   );

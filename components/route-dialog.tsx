@@ -8,12 +8,14 @@ export function RouteDialog({
   onClose,
   className,
   withoutOkButton,
+  position = "bottom",
 }: {
   children: React.ReactNode;
   open: boolean;
   onClose: () => void;
   className?: string;
   withoutOkButton?: boolean;
+  position?: "top" | "bottom";
 }) {
   // Prevent scrolling when dialog is open
   React.useEffect(() => {
@@ -40,12 +42,19 @@ export function RouteDialog({
       />
 
       <div className="fixed inset-y-0 left-0 z-[998] w-screen p-2 sm:p-4 sm:overflow-y-auto">
-        <div className="flex justify-center text-center items-end max-sm:min-h-full sm:items-center">
+        <div
+          className={cn(
+            "flex justify-center text-center sm:items-center",
+            position === "bottom" && "items-end max-sm:min-h-full"
+          )}
+        >
           <DialogPanel
             transition
             className={cn(
-              "relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all max-sm:data-[closed]:translate-y-4 data-[closed]:-translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95",
+              "relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:-translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95",
               "bg-softblack text-smokewhite p-3 sm:p-4",
+              position === "bottom" && "max-sm:data-[closed]:translate-y-4",
+              position === "top" && "max-sm:data-[closed]:-translate-y-4",
               className
             )}
           >

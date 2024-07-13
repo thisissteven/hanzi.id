@@ -162,5 +162,9 @@
   "addTheFollowingWordsToFlashcard": "Tambahkan kata-kata berikut ke kartu pengingat?",
   "exampleSentences": "Kalimat Contoh",
   "seeExampleSentences": "Lihat Kalimat",
-  "hideExampleSentences": "Sembunyikan"
+  "hideExampleSentences": "Sembunyikan",
+  "review": "Ulas",
+  "numOfCards": "Jumlah kartu",
+  "cardNumbers": "Nomor kartu",
+  "random": "Acak"
 }
