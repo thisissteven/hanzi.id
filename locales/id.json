@@ -66,7 +66,7 @@
   "lastRead": "Terakhir Dibaca",
   "cards": "kartu",
   "cardsSingular": "kartu",
-  "emptyFlashcard": "Kartu pengingat Anda kosong. Mulai membaca dan simpan kata-kata yang tidak dikenal yang Anda temui.",
+  "emptyFlashcard": "Kartu pengingat Anda kosong. Simpan kata-kata yang tidak dikenal yang Anda temui.",
   "exportForPleco": "Ekspor untuk Pleco",
   "loading": "Memuat...",
   "loadingBookDetails": "Memuat detail buku...",
@@ -166,5 +166,6 @@
   "review": "Ulas",
   "numOfCards": "Jumlah kartu",
   "cardNumbers": "Nomor kartu",
-  "random": "Acak"
+  "random": "Acak",
+  "loadingFlashcards": "Memuat kartu pengingat..."
 }

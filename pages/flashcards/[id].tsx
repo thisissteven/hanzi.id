@@ -80,7 +80,7 @@ export default function FlashcardsDetailsPage() {
           <div className="max-md:sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 max-md:px-2 pb-2 border-b-[1.5px] border-b-subtle">
             <div className="flex justify-between">
               <div className="w-fit">
-                <BackRouteButton />
+                <BackRouteButton defaultBack />
               </div>
               <button
                 onClick={() => setOpenAlert(true)}

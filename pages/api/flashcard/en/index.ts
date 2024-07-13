@@ -8,6 +8,23 @@ export const config = {
 
 export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
 
+export interface FlashcardedResultStrict {
+  simplified: string;
+  traditional: string;
+  entries: Array<{
+    pinyin: string;
+    english: string[];
+  }>;
+  disected: {
+    simplified: string;
+    traditional: string;
+    entries: Array<{
+      pinyin: string;
+      english: string[];
+    }>;
+  }[];
+}
+
 export interface FlashcardedResult {
   simplified: string;
   traditional: string;

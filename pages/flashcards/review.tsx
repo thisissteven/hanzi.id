@@ -1,8 +1,12 @@
-import { BackRouteButton } from "@/components";
+import { BackRouteButton, LoadingBar } from "@/components";
+import { useLocale } from "@/locales/use-locale";
+import { FlashcardReviewContent } from "@/modules/flashcards";
 import { Layout, useFlashcard } from "@/modules/layout";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React from "react";
+import useSWRImmutable from "swr/immutable";
+import { FlashcardedResult } from "../api/flashcard/en";
 
 export default function FlashcardReview() {
   const router = useRouter();
@@ -34,6 +38,16 @@ export default function FlashcardReview() {
     }
   }, [category, flashcardItem?.words, numOfCards]);
 
+  const { t, locale } = useLocale();
+  const { data, isLoading } = useSWRImmutable<FlashcardedResult[]>(
+    words.length > 0 ? `flashcard/${locale}?text=${words.join("-")}` : undefined,
+    async (url: string) => {
+      const response = await fetch(`/api/${url}`);
+      const data = await response.json();
+      return data;
+    }
+  );
+
   return (
     <Layout>
       <div className="min-h-dvh">
@@ -53,36 +67,20 @@ export default function FlashcardReview() {
           </div>
 
           <AnimatePresence mode="wait">
-            <FlashcardReviewContent words={words} />
+            {isLoading || !data ? (
+              <Layout key="loading-bar" className="absolute w-full max-w-[960px] h-80 grid place-items-center">
+                <div className="flex gap-2 items-center">
+                  <LoadingBar visible /> {t.loadingFlashcards}
+                </div>
+              </Layout>
+            ) : (
+              <Layout key="content">
+                <FlashcardReviewContent words={data} />
+              </Layout>
+            )}
           </AnimatePresence>
         </main>
       </div>
     </Layout>
-  );
-}
-
-function FlashcardReviewContent({ words }: { words: string[] }) {
-  const [index, setIndex] = React.useState(0);
-
-  const currentWord = words[index];
-
-  return (
-    <div className="flex flex-col items-center justify-center h-[calc(100vh-11.25rem)]">
-      <h1 className="text-4xl font-bold">{currentWord}</h1>
-      <div className="flex space-x-4">
-        <button
-          onClick={() => setIndex((prev) => Math.max(0, prev - 1))}
-          className="px-4 py-2 bg-softblack text-smokewhite rounded-md font-medium duration-200 active:bg-subtle"
-        >
-          Previous
-        </button>
-        <button
-          onClick={() => setIndex((prev) => Math.min(words.length - 1, prev + 1))}
-          className="px-4 py-2 bg-softblack text-smokewhite rounded-md font-medium duration-200 active:bg-subtle"
-        >
-          Next
-        </button>
-      </div>
-    </div>
   );
 }

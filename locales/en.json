@@ -66,7 +66,7 @@
   "lastRead": "Last Read",
   "cards": "cards",
   "cardsSingular": "card",
-  "emptyFlashcard": "Your flashcard is empty. Start reading and save unfamiliar words you encounter.",
+  "emptyFlashcard": "Your flashcard is empty. Start saving unfamiliar words you encounter.",
   "exportForPleco": "Export for Pleco",
   "loading": "Loading...",
   "loadingBookDetails": "Loading book details...",
@@ -166,5 +166,6 @@
   "review": "Review",
   "numOfCards": "Number of cards",
   "cardNumbers": "Card numbers",
-  "random": "Random"
+  "random": "Random",
+  "loadingFlashcards": "Loading Flashcards..."
 }

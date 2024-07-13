@@ -85,7 +85,7 @@ export function FlashcardSettingsModal({ flashcard }: { flashcard: Flashcard }) 
             }}
             className="block rounded-md font-medium duration-200 bg-hovered active:bg-subtle px-3 py-1.5"
           >
-            {t.continue}
+            {t.continue} &#x2192;
           </button>
         </div>
       </div>

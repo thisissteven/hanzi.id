@@ -100,6 +100,14 @@ export function HomeTodo() {
         />
 
         <Button
+          path="/flashcards"
+          className="hover:bg-sky-200/5"
+          icon={<BookAIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
+          title={t.home.flashcards.title}
+          description={t.home.flashcards.description}
+        />
+
+        <Button
           path="/typing-test"
           className="hover:bg-sky-200/5 relative disabled:pointer-events-none disabled:opacity-50"
           icon={<KeyboardIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
@@ -110,14 +118,6 @@ export function HomeTodo() {
             {t.new}
           </div>
         </Button>
-
-        <Button
-          path="/flashcards"
-          className="hover:bg-sky-200/5"
-          icon={<BookAIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />}
-          title={t.home.flashcards.title}
-          description={t.home.flashcards.description}
-        />
 
         <Button
           path="/tools"
