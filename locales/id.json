@@ -167,5 +167,12 @@
   "numOfCards": "Jumlah kartu",
   "cardNumbers": "Nomor kartu",
   "random": "Acak",
-  "loadingFlashcards": "Memuat kartu pengingat..."
+  "loadingFlashcards": "Memuat kartu pengingat...",
+  "youDidGreat": "Kamu luar biasa! 🎉",
+  "notBad": "Tidak buruk! 👌",
+  "keepPracticing": "Tetap berlatih! 💪",
+  "correct": "Benar",
+  "wrong": "Salah",
+  "untouched": "Belum",
+  "done": "Selesai"
 }

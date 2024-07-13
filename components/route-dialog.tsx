@@ -8,6 +8,7 @@ export function RouteDialog({
   onClose,
   className,
   withoutOkButton,
+  okButtonText,
   position = "bottom",
 }: {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ export function RouteDialog({
   onClose: () => void;
   className?: string;
   withoutOkButton?: boolean;
+  okButtonText?: string;
   position?: "top" | "bottom";
 }) {
   // Prevent scrolling when dialog is open
@@ -66,7 +68,7 @@ export function RouteDialog({
                   onClick={onClose}
                   className="block rounded-md font-medium duration-200 bg-hovered active:bg-subtle px-3 py-1.5"
                 >
-                  OK
+                  {okButtonText || "OK"}
                 </button>
               </div>
             )}

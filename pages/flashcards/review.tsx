@@ -1,12 +1,12 @@
 import { BackRouteButton, LoadingBar } from "@/components";
 import { useLocale } from "@/locales/use-locale";
-import { FlashcardReviewContent } from "@/modules/flashcards";
-import { Layout, useFlashcard } from "@/modules/layout";
+import { CardDetailsModal, FlashcardProvider, FlashcardReviewContent } from "@/modules/flashcards";
+import { AudioProvider, Layout, useFlashcard } from "@/modules/layout";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React from "react";
 import useSWRImmutable from "swr/immutable";
-import { FlashcardedResult } from "../api/flashcard/en";
+import { FlashcardedResult, FlashcardedResultStrict } from "../api/flashcard/en";
 
 export default function FlashcardReview() {
   const router = useRouter();
@@ -39,7 +39,7 @@ export default function FlashcardReview() {
   }, [category, flashcardItem?.words, numOfCards]);
 
   const { t, locale } = useLocale();
-  const { data, isLoading } = useSWRImmutable<FlashcardedResult[]>(
+  const { data, isLoading } = useSWRImmutable<FlashcardedResultStrict[]>(
     words.length > 0 ? `flashcard/${locale}?text=${words.join("-")}` : undefined,
     async (url: string) => {
       const response = await fetch(`/api/${url}`);
@@ -48,9 +48,24 @@ export default function FlashcardReview() {
     }
   );
 
+  const [details, setDetails] = React.useState<FlashcardedResultStrict>();
+
   return (
     <Layout>
       <div className="min-h-dvh">
+        <AudioProvider>
+          <FlashcardProvider>
+            <CardDetailsModal
+              chapterName={chapter}
+              details={details}
+              onClose={() => {
+                setDetails(undefined);
+                router.back();
+              }}
+            />
+          </FlashcardProvider>
+        </AudioProvider>
+
         <main className="max-w-[960px] mx-auto md:px-8 pb-4">
           <div className="max-md:sticky top-0 md:h-[11.25rem] flex flex-col justify-end bg-black z-20 max-md:px-4 border-b-[1.5px] border-b-subtle">
             <AnimatePresence mode="wait">
@@ -75,7 +90,13 @@ export default function FlashcardReview() {
               </Layout>
             ) : (
               <Layout key="content">
-                <FlashcardReviewContent words={data} />
+                <FlashcardReviewContent
+                  words={data}
+                  onCardClick={(card) => {
+                    setDetails(card);
+                    router.push({ query: { ...router.query, open: true } }, undefined, { shallow: true });
+                  }}
+                />
               </Layout>
             )}
           </AnimatePresence>

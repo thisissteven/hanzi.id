@@ -167,5 +167,12 @@
   "numOfCards": "Number of cards",
   "cardNumbers": "Card numbers",
   "random": "Random",
-  "loadingFlashcards": "Loading Flashcards..."
+  "loadingFlashcards": "Loading Flashcards...",
+  "youDidGreat": "You did great! 🎉",
+  "notBad": "Not bad! 👌",
+  "keepPracticing": "Keep practicing! 💪",
+  "correct": "Correct",
+  "wrong": "Wrong",
+  "untouched": "Untouched",
+  "done": "Done"
 }

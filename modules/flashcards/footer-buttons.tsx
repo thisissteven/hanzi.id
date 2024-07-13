@@ -31,7 +31,7 @@ export function FooterButtons({ onExport }: { onExport: () => void }) {
         transitionProperty: "transform",
         transitionTimingFunction: "ease-in-out",
       }}
-      className="sticky mt-8 max-md:mx-4 flex flex-col sm:flex-row justify-end gap-2 pb-2"
+      className="sticky mt-8 max-md:mx-4 flex flex-col md:flex-row justify-end gap-2 pb-2"
     >
       <button
         type="button"
