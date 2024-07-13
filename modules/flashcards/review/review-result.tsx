@@ -1,52 +1,71 @@
 import React from "react";
-import { CardStatus } from "./content";
 import { CountingNumbers, RouteDialog } from "@/components";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { cn } from "@/utils";
 import { useLocale } from "@/locales/use-locale";
+import { useReview } from "./provider";
 
-export function ReviewResult({ reviewResult }: { reviewResult: CardStatus[] }) {
+export function ReviewResult() {
+  const { reviewResult } = useReview();
+
   const wrong = reviewResult.filter((result) => result === "wrong").length;
   const correct = reviewResult.filter((result) => result === "correct").length;
   const untouched = reviewResult.length - wrong - correct;
+
+  const { t } = useLocale();
+
+  console.log("render result");
+
+  return (
+    <div className="px-2 w-full flex flex-wrap gap-4 justify-center">
+      <div className="flex gap-2 items-center text-sm">
+        <div className="w-2 h-2 rounded-full bg-red-500"></div> {wrong} {t.wrong}
+      </div>
+      <div className="flex gap-2 items-center text-sm">
+        <div className="w-2 h-2 rounded-full bg-emerald-500"></div> {correct} {t.correct}
+      </div>
+      <div className="flex gap-2 items-center text-sm">
+        <div className="w-2 h-2 rounded-full bg-gray-500"></div> {untouched} {t.untouched}
+      </div>
+    </div>
+  );
+}
+
+export function ReviewResultsModal() {
+  const { t } = useLocale();
 
   const router = useRouter();
 
   const open = Boolean(router.query.results);
 
-  const correctPercentage = Math.round((correct / reviewResult.length) * 100);
+  const correctPercentage = parseInt((router.query.percentage as string) ?? "-1");
+  const lastCorrectPercentage = React.useRef(correctPercentage);
 
-  const { t } = useLocale();
+  React.useEffect(() => {
+    if (correctPercentage && correctPercentage > -1) {
+      lastCorrectPercentage.current = correctPercentage;
+    }
+  }, [correctPercentage]);
+
+  const displayPercentage = correctPercentage > -1 ? correctPercentage : lastCorrectPercentage.current;
 
   return (
-    <>
-      <RouteDialog
-        okButtonText={t.done}
-        open={open}
-        onClose={() => {
-          router.replace(`/flashcards/${router.query.chapter}`);
-        }}
-      >
-        <div className="space-y-4 h-64 flex flex-col items-center">
-          <EndResult correctPercentage={correctPercentage} />
-          <h2 className="text-center font-medium">
-            {correctPercentage >= 80 ? t.youDidGreat : correctPercentage >= 50 ? t.notBad : t.keepPracticing}
-          </h2>
-        </div>
-      </RouteDialog>
-      <div className="px-2 w-full flex flex-wrap gap-4 justify-center">
-        <div className="flex gap-2 items-center text-sm">
-          <div className="w-2 h-2 rounded-full bg-red-500"></div> {wrong} {t.wrong}
-        </div>
-        <div className="flex gap-2 items-center text-sm">
-          <div className="w-2 h-2 rounded-full bg-emerald-500"></div> {correct} {t.correct}
-        </div>
-        <div className="flex gap-2 items-center text-sm">
-          <div className="w-2 h-2 rounded-full bg-gray-500"></div> {untouched} {t.untouched}
-        </div>
+    <RouteDialog
+      okButtonText={t.done}
+      open={open}
+      onClose={() => {
+        router.replace(`/flashcards/${router.query.chapter}`);
+      }}
+      noDismiss
+    >
+      <div className="space-y-4 h-64 flex flex-col items-center">
+        <EndResult correctPercentage={displayPercentage} />
+        <h2 className="text-center font-medium">
+          {displayPercentage >= 80 ? t.youDidGreat : displayPercentage >= 50 ? t.notBad : t.keepPracticing}
+        </h2>
       </div>
-    </>
+    </RouteDialog>
   );
 }
 

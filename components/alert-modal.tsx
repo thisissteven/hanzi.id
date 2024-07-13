@@ -25,7 +25,7 @@ export function AlertModal({
         className="fixed inset-y-0 left-0 w-screen z-[998] bg-black/20 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in"
       />
 
-      <div className="fixed inset-y-0 left-0 z-[998] w-screen p-2 sm:p-4 sm:overflow-y-auto">
+      <div className="fixed inset-y-0 left-0 z-[998] w-screen p-2 sm:p-4 overflow-y-auto scrollbar-none">
         <div className="flex justify-center text-center items-end max-sm:min-h-full sm:items-center">
           <DialogPanel
             transition

@@ -1,19 +1,12 @@
 import React from "react";
 import { CardStatus } from "./content";
 import { useLocale } from "@/locales/use-locale";
+import { useReview } from "./provider";
 
-export function Pagination({
-  currentIndex,
-  reviewResult,
-  wordsLength,
-  setCurrentIndex,
-}: {
-  currentIndex: number;
-  reviewResult: CardStatus[];
-  wordsLength: number;
-  setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
-}) {
+export function Pagination({ wordsLength }: { wordsLength: number }) {
   const { t } = useLocale();
+
+  const { currentIndex, reviewResult, setCurrentIndex } = useReview();
 
   return (
     <div className="fixed bottom-2 left-1/2 -translate-x-1/2 px-2 flex flex-wrap gap-2 w-full max-w-80">

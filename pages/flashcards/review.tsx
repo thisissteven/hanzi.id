@@ -6,7 +6,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React from "react";
 import useSWRImmutable from "swr/immutable";
-import { FlashcardedResult, FlashcardedResultStrict } from "../api/flashcard/en";
+import { FlashcardedResultStrict } from "../api/flashcard/en";
+import { ReviewResultsModal } from "@/modules/flashcards/review/review-result";
 
 export default function FlashcardReview() {
   const router = useRouter();
@@ -66,8 +67,10 @@ export default function FlashcardReview() {
           </FlashcardProvider>
         </AudioProvider>
 
-        <main className="max-w-[960px] mx-auto md:px-8 pb-4">
-          <div className="max-md:sticky top-0 md:h-[11.25rem] flex flex-col justify-end bg-black z-20 max-md:px-4 border-b-[1.5px] border-b-subtle">
+        <ReviewResultsModal />
+
+        <main className="max-w-[960px] mx-auto sm:px-8 pb-4">
+          <div className="max-sm:sticky top-0 sm:h-[11.25rem] flex flex-col justify-end bg-black z-20 max-md:px-4 border-b-[1.5px] border-b-subtle">
             <AnimatePresence mode="wait">
               <motion.div
                 initial={{ opacity: 0 }}

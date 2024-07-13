@@ -1,37 +1,38 @@
 import React from "react";
-import { CardStatus } from "./content";
 import { LucideCheck, LucideEye, LucideEyeOff, LucideX } from "lucide-react";
 import { useConfetti } from "@/modules/layout";
 import { useRouter } from "next/router";
+import { useReview } from "./provider";
 
-export function Controls({
-  setReviewResult,
-  setCurrentIndex,
-  setFlipped,
-  flipped,
-  currentIndex,
-  reviewResult,
-  wordsLength,
-}: {
-  setReviewResult: React.Dispatch<React.SetStateAction<CardStatus[]>>;
-  setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
-  setFlipped: React.Dispatch<React.SetStateAction<number | null>>;
-  flipped: number | null;
-  currentIndex: number;
-  reviewResult: CardStatus[];
-  wordsLength: number;
-}) {
+export function Controls({ wordsLength }: { wordsLength: number }) {
   const { party } = useConfetti();
 
+  const { setReviewResult, setCurrentIndex, currentIndex, reviewResult, flipped, setFlipped } = useReview();
+
   const router = useRouter();
+
+  const timeout = React.useRef<NodeJS.Timeout>();
 
   return (
     <div className="mt-4 flex flex-wrap gap-2 w-full max-w-80 mx-auto">
       <button
+        disabled={reviewResult[reviewResult.length - 1] !== "untouched"}
         onClick={() => {
+          clearTimeout(timeout.current);
+
           setReviewResult((prev) => {
             const newResult = [...prev];
             newResult[currentIndex] = "wrong";
+
+            if (currentIndex === wordsLength - 1) {
+              party();
+              timeout.current = setTimeout(() => {
+                const correct = newResult.filter((result) => result === "correct").length;
+                const percentage = Math.round((correct / newResult.length) * 100);
+                router.push({ query: { ...router.query, results: true, percentage } }, undefined, { shallow: true });
+              }, 1500);
+            }
+
             return newResult;
           });
           setCurrentIndex((prev) => {
@@ -42,10 +43,6 @@ export function Controls({
             setFlipped(null);
             return nextIndex;
           });
-          if (currentIndex === wordsLength - 1) {
-            party();
-            router.push({ query: { ...router.query, results: true } }, undefined, { shallow: true });
-          }
         }}
         className="flex items-center rounded-md duration-200 active:bg-red-400/20 active:border-red-400/20 bg-red-400/10 text-red-400 border-b-2 border-red-400/20 p-3"
       >
@@ -60,10 +57,23 @@ export function Controls({
       </button>
 
       <button
+        disabled={reviewResult[reviewResult.length - 1] !== "untouched"}
         onClick={() => {
+          clearTimeout(timeout.current);
+
           setReviewResult((prev) => {
             const newResult = [...prev];
             newResult[currentIndex] = "correct";
+
+            if (currentIndex === wordsLength - 1) {
+              party();
+              timeout.current = setTimeout(() => {
+                const correct = newResult.filter((result) => result === "correct").length;
+                const percentage = Math.round((correct / newResult.length) * 100);
+                router.push({ query: { ...router.query, results: true, percentage } }, undefined, { shallow: true });
+              }, 1500);
+            }
+
             return newResult;
           });
           setCurrentIndex((prev) => {
@@ -71,13 +81,10 @@ export function Controls({
             if (reviewResult[prev] !== "untouched") {
               return prev;
             }
+
             setFlipped(null);
             return nextIndex;
           });
-          if (currentIndex === wordsLength - 1) {
-            party();
-            router.push({ query: { ...router.query, results: true } }, undefined, { shallow: true });
-          }
         }}
         className="flex items-center rounded-md duration-200 active:bg-emerald-400/20 active:border-emerald-400/20 bg-emerald-400/10 text-emerald-400 border-b-2 border-emerald-400/20 p-3"
       >

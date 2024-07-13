@@ -83,7 +83,7 @@ export function FlashcardSettingsModal({ flashcard }: { flashcard: Flashcard }) 
                 `/flashcards/review?category=${selectedCategory}&numOfCards=${numOfCards}&chapter=${chapter}`
               );
             }}
-            className="block rounded-md font-medium duration-200 bg-hovered active:bg-subtle px-3 py-1.5"
+            className="block rounded-md font-medium duration-200 bg-hovered active:bg-subtle px-4 py-2"
           >
             {t.continue} &#x2192;
           </button>

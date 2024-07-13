@@ -5,29 +5,29 @@ import { cn } from "@/utils";
 export type Locale = "en" | "id";
 
 export function CharacterCard({
-  id,
+  index,
   character,
   pinyin,
   translations,
-  isFlipped,
   className,
   status,
+  isFlipped,
   onCardClick,
 }: {
-  id: number;
+  index: number;
   character: string;
   translations: string;
   pinyin: string;
-  isFlipped: boolean;
   className: string;
   status: CardStatus;
+  isFlipped: boolean;
   onCardClick: () => void;
 }) {
   return (
     <>
       <style jsx>{`
         .card {
-          transition: transform 0.5s;
+          transition: transform 0.38s;
           transform-style: preserve-3d;
         }
 
@@ -45,7 +45,7 @@ export function CharacterCard({
         }
       `}</style>
       <div className={cn("select-none aspect-square text-smokewhite duration-200", className)}>
-        <div className={cn("relative w-full h-full card", isFlipped && "card-flipped")}>
+        <div data-card-index={index} className={cn("relative w-full h-full card", isFlipped && "card-flipped")}>
           <div
             className={cn(
               "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-b-4 grid place-items-center bg-softblack border-secondary/10 rounded-lg overflow-hidden"
@@ -53,7 +53,7 @@ export function CharacterCard({
           >
             <span className="font-medium text-4xl sm:text-5xl">{character}</span>
 
-            <div className="absolute left-4 top-4 text-sm">{id}</div>
+            <div className="absolute left-4 top-4 text-sm">{index + 1}</div>
 
             <div className="absolute top-2 right-2 transition p-2 pb-0.5 rounded-md text-lightgray/50 active:bg-zinc">
               <button
