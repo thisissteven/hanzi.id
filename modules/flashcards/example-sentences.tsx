@@ -56,7 +56,7 @@ export function ExampleSentences({ hanzi }: { hanzi: string }) {
               opacity: 0,
             }}
           >
-            <div className="border-b border-b-secondary/10 pb-4">
+            <div className="border-b border-b-secondary/10 pb-4 mb-4">
               <span className="px-3 sm:px-4 text-sm text-secondary">{t.exampleSentences}:</span>
               <SentencesDisplay hanzi={hanzi} lessons={sentences} />
             </div>

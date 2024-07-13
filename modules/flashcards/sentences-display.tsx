@@ -5,7 +5,7 @@ import { AudioButton } from "../hsk";
 import { Sentences } from "./example-sentences";
 
 export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: Sentences }) {
-  const [currentLevel, setCurrentLevel] = React.useState<string | null>(lessons[0].lessonInfo.level.toLowerCase());
+  const [currentLevel, setCurrentLevel] = React.useState<string | null>(lessons?.[0]?.lessonInfo?.level?.toLowerCase());
 
   const lessonLevelSet = new Set(lessons.map((lesson) => lesson.lessonInfo.level.toLowerCase()));
   const lessonLevels = Array.from(lessonLevelSet);
@@ -18,7 +18,7 @@ export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: S
 
   if (lessons.length === 0) {
     return (
-      <p className="ml-3 text-lightgray">
+      <p className="ml-3 sm:ml-4 text-lightgray">
         No example sentences found for <span className="text-xl text-smokewhite">{hanzi}</span>
       </p>
     );
