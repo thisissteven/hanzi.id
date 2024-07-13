@@ -15,8 +15,6 @@ export function ReviewResult() {
 
   const { t } = useLocale();
 
-  console.log("render result");
-
   return (
     <div className="px-2 w-full flex flex-wrap gap-4 justify-center">
       <div className="flex gap-2 items-center text-sm">

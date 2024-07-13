@@ -27,7 +27,7 @@ export function CardContainer({
   const rowVirtualizer = useVirtualizer({
     count: words.length + 1,
     estimateSize: () => containerHeight,
-    overscan: isMobile ? 2 : 5,
+    overscan: isMobile ? 10 : 5,
     getScrollElement: () => containerRef.current,
     horizontal: true,
   });
@@ -61,8 +61,6 @@ export function CardContainer({
       }
     }
   }, [currentIndex]);
-
-  console.log("render card");
 
   return (
     <div className="mt-4 w-full overflow-x-hidden flex gap-2 scrollbar-none" ref={containerRef}>
