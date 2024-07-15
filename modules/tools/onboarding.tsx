@@ -2,7 +2,7 @@ import { Layout } from "@/modules/layout";
 import React from "react";
 
 import { CustomRouteButton } from "@/components";
-import { FileTextIcon, ImageUpIcon, PencilIcon, TypeIcon } from "lucide-react";
+import { BarChart3Icon, FileTextIcon, ImageUpIcon, PencilIcon, TypeIcon } from "lucide-react";
 import { useLocale } from "@/locales/use-locale";
 
 export function ToolsOnboarding() {
@@ -32,6 +32,11 @@ export function ToolsOnboarding() {
       icon: <PencilIcon />,
       text: t.tools.buttons[3],
       path: "/tools/hanzi-writer",
+    },
+    {
+      icon: <BarChart3Icon />,
+      text: t.tools.buttons[4],
+      path: "/tools/analyzer",
     },
   ];
 

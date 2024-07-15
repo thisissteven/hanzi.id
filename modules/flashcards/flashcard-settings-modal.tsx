@@ -79,7 +79,7 @@ export function FlashcardSettingsModal({ flashcard }: { flashcard: Flashcard }) 
         <div className="flex justify-end bg-softblack">
           <button
             onClick={() => {
-              router.push(
+              router.replace(
                 `/flashcards/review?category=${selectedCategory}&numOfCards=${numOfCards}&chapter=${chapter}`
               );
             }}

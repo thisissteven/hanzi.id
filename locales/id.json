@@ -97,7 +97,7 @@
   "tools": {
     "title": "Tambahan",
     "description": "Fitur lainnya yang mungkin Anda butuhkan.",
-    "buttons": ["Ambil Teks dari PDF", "Ambil Teks dari gambar", "Hitung Karakter", "Tulis Hanzi"]
+    "buttons": ["Ambil Teks dari PDF", "Ambil Teks dari gambar", "Hitung Karakter", "Tulis Hanzi", "Analisis Teks"]
   },
   "imagesTool": {
     "title": "Ambil Teks dari Gambar",
@@ -115,6 +115,16 @@
     "uniqueCharacters": "karakter unik",
     "count": "Jumlah",
     "export": "Unduh sebagai csv"
+  },
+  "analyzerTool": {
+    "title": "Analisis Teks",
+    "description": "Dapatkan frekuensi kata, analisis kosa kata unik, dan lainnya.",
+    "placeholder": "Masukkan teks Cina di sini...",
+    "words": "kata",
+    "uniqueWords": "kata unik",
+    "count": "Jumlah",
+    "export": "Unduh sebagai csv",
+    "type": "Jenis"
   },
   "hanziWriterTool": {
     "title": "Tulis Hanzi",

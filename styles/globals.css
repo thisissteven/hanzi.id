@@ -51,6 +51,14 @@
     --lightgray: 136 136 136;
 
     --spinner-color: #e8e8e8;
+
+    --axis-color: #e5e5e5;
+    --chart-primary: #60a5fa;
+    --chart-secondary: #14b8a6;
+    --chart-tertiary: #f59e0b;
+    --chart-segment-fill: #fafafa;
+    --chart-segment-fill-opacity: 0.2;
+    --grid-opacity: 0.2;
   }
 
   html {
@@ -139,6 +147,12 @@
   -moz-transition-timing-function: ease;
   -o-transition-property: all;
   -o-transition-timing-function: ease;
+}
+
+.recharts-yAxis {
+  transform: translate(0, 0);
+  transition-property: all;
+  transition-duration: 200ms;
 }
 
 /* #region  /**=========== Scrollbar =========== */

@@ -22,7 +22,7 @@ function exportToCSV(data: { char: string; count: number }[]) {
   document.body.removeChild(link);
 }
 
-function Stat({ children }: { children: React.ReactNode }) {
+export function Stat({ children }: { children: React.ReactNode }) {
   return (
     <div className="inline-flex text-sm items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-3 py-1.5 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit h-fit">
       {children}

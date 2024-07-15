@@ -97,7 +97,13 @@
   "tools": {
     "title": "Tools",
     "description": "Some complementary tools you might need.",
-    "buttons": ["Extract Text from PDF", "Extract Text from Image/s", "Character Counter", "Hanzi Writer"]
+    "buttons": [
+      "Extract Text from PDF",
+      "Extract Text from Image/s",
+      "Character Counter",
+      "Hanzi Writer",
+      "Text Analyzer"
+    ]
   },
   "imagesTool": {
     "title": "Extract Text from Image/s",
@@ -115,6 +121,16 @@
     "uniqueCharacters": "unique characters",
     "count": "Count",
     "export": "Download as csv"
+  },
+  "analyzerTool": {
+    "title": "Text Analyzer",
+    "description": "Analyze Chinese text and get word frequency, unique words, and more.",
+    "placeholder": "Enter Chinese text here...",
+    "words": "words",
+    "uniqueWords": "unique words",
+    "count": "Count",
+    "export": "Download as csv",
+    "type": "Type"
   },
   "hanziWriterTool": {
     "title": "Hanzi Writer",
