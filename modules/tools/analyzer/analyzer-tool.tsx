@@ -4,10 +4,7 @@ import React from "react";
 import { Stat } from "../count";
 import { Textarea } from "@/components";
 import { useWords } from "./use-words";
-
-import dynamic from "next/dynamic";
-
-const CategoryChart = dynamic(() => import("./category-chart"), { ssr: false });
+import { AnalysisDisplay } from "./analysis-display";
 
 function exportToCSV(data: [string, string, number][]) {
   // Create CSV header
@@ -82,37 +79,7 @@ export function AnalyzerTool() {
           preventHeightChange
         />
 
-        {sorted.length > 0 && (
-          <>
-            <div className="w-full h-80 mt-4">
-              <CategoryChart data={chartData} />
-            </div>
-            <table className="sm:mt-4 min-w-full divide-y divide-secondary/10">
-              <thead className="text-smokewhite">
-                <tr>
-                  <th scope="col" className="sm:px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">
-                    Hanzi
-                  </th>
-                  <th scope="col" className="sm:px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">
-                    {t.analyzerTool.type}
-                  </th>
-                  <th scope="col" className="sm:px-6 py-3 text-left text-sm font-medium uppercase tracking-wider">
-                    {t.analyzerTool.count}
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-secondary/10">
-                {sorted.map(([hanzi, category, count], index) => (
-                  <tr key={index}>
-                    <td className="sm:px-6 py-4 whitespace-nowrap text-lg font-medium">{hanzi}</td>
-                    <td className="sm:px-6 py-4 whitespace-nowrap text-sm">{category}</td>
-                    <td className="sm:px-6 py-4 whitespace-nowrap text-sm">{count}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </>
-        )}
+        {sorted.length > 0 && <AnalysisDisplay sorted={sorted} chartData={chartData} />}
       </div>
     </Layout>
   );

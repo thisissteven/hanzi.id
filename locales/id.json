@@ -166,6 +166,7 @@
   "hidePinyin": "Sembunyikan Pinyin",
   "settings": "Pengaturan",
   "wordsAdded": "Kata ditambahkan ke kartu pengingat",
+  "flashcardExists": "Kartu pengingat dengan judul tersebut sudah ada.",
   "cancel": "Batal",
   "addToFlashcard": "Tambah ke Kartu Pengingat",
   "onlyAddWrongWords": "Tambahkan hanya kata yang salah",
@@ -184,5 +185,12 @@
   "correct": "Benar",
   "wrong": "Salah",
   "untouched": "Belum",
-  "done": "Selesai"
+  "done": "Selesai",
+  "idiomsOnly": "Hanya Idiom",
+  "showAllWords": "Tampilkan Semua Kata",
+  "yourFilterSettings": "Pengaturan filter Anda:",
+  "dumpConfirmation": ["Ini akan menambah", "kata baru ke kartu pengingat Anda."],
+  "pleaseFill": "Silahkan isi kolom berikut:",
+  "placeholderFlashcardTitle": "Judul kartu pengingat",
+  "placeholderFlashcardDescription": "Deskripsi kartu pengingat"
 }

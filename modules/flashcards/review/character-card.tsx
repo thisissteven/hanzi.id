@@ -48,7 +48,10 @@ export function CharacterCard({
         <div data-card-index={index} className={cn("relative w-full h-full card", isFlipped && "card-flipped")}>
           <div
             className={cn(
-              "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-b-4 grid place-items-center bg-softblack border-secondary/10 rounded-lg overflow-hidden"
+              "card-content has-[input:active]:scale-[98%] transition absolute inset-0 border-b-4 grid place-items-center border-secondary/10 rounded-lg overflow-hidden",
+              status === "wrong" && "bg-red-400/10",
+              status === "correct" && "bg-emerald-400/10",
+              status === "untouched" && "bg-softblack"
             )}
           >
             <span className="font-medium text-4xl sm:text-5xl">{character}</span>

@@ -22,6 +22,11 @@ const dashRegexp = /—/;
 const hyphenRegexp = /-/;
 const newlineRegexp = /\n/;
 
+export function capitalizeFirstLetter(word: string) {
+  if (!word) return word;
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
 function cleanUpText(input: string) {
   // Replace sequences of newline and indentations with a single space
   input = input.replace(/[\u3000\n]+\u3000*/g, " ");

@@ -172,6 +172,7 @@
   "hidePinyin": "Hide Pinyin",
   "settings": "Settings",
   "wordsAdded": "Words added to flashcard",
+  "flashcardExists": "Flashcard with that title already exists.",
   "cancel": "Cancel",
   "addToFlashcard": "Add to Flashcard",
   "onlyAddWrongWords": "Only add wrong words to flashcard",
@@ -190,5 +191,12 @@
   "correct": "Correct",
   "wrong": "Wrong",
   "untouched": "Untouched",
-  "done": "Done"
+  "done": "Done",
+  "idiomsOnly": "Idioms Only",
+  "showAllWords": "Show All Words",
+  "yourFilterSettings": "Your filter settings:",
+  "dumpConfirmation": ["This will add", "new words to your flashcard."],
+  "pleaseFill": "Please fill the following:",
+  "placeholderFlashcardTitle": "Enter flashcard title",
+  "placeholderFlashcardDescription": "Enter flashcard description"
 }

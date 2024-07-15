@@ -4,6 +4,7 @@ import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAx
 import { useWindowSize } from "@/hooks";
 import { cn } from "@/utils";
 import { useLocale } from "@/locales/use-locale";
+import { capitalizeFirstLetter } from "@/utils/use-speech/paragraph-utils";
 
 function numberWithCommas(x: number | string) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -92,7 +93,7 @@ export default function CategoryChart({
                       >
                         <circle cx={4} cy={4} r={4} />
                       </svg>
-                      {legendText[locale as "en" | "id"][p.value as "idioms" | "words"]}
+                      {capitalizeFirstLetter(legendText[locale as "en" | "id"][p.value as "idioms" | "words"])}
                     </li>
                   ))}
                 </ul>
@@ -192,7 +193,7 @@ export default function CategoryChart({
                     >
                       <circle cx={4} cy={4} r={4} />
                     </svg>
-                    {p.value}
+                    {capitalizeFirstLetter(legendText[locale as "en" | "id"][p.value as "idioms" | "words"])}
                   </li>
                 ))}
               </ul>

@@ -1,5 +1,7 @@
 import { usePreferences } from "@/components";
 import { useLocale } from "@/locales/use-locale";
+import { capitalizeFirstLetter } from "@/utils/use-speech/paragraph-utils";
+import React from "react";
 import useSWRImmutable from "swr/immutable";
 
 function getChartData(data: Array<[string, string, number]>) {
@@ -21,7 +23,7 @@ function getChartData(data: Array<[string, string, number]>) {
 
   // Transform the map into the desired output format
   const result = Array.from(categoryMap.entries()).map(([name, { idioms, words }]) => ({
-    name,
+    name: capitalizeFirstLetter(name),
     idioms: idioms.size,
     words: words.size,
   }));
@@ -80,16 +82,17 @@ export function useWords(text: string) {
     }
   );
 
-  if (!data) {
-    return {
-      count: 0,
-      unique: 0,
-      sorted: [],
-      chartData: [],
-    };
-  }
+  const memoized = React.useMemo(() => {
+    if (!data) {
+      return {
+        count: 0,
+        unique: 0,
+        sorted: [],
+        chartData: [],
+      };
+    }
+    return getWordsFromText(data, text);
+  }, [data, text]);
 
-  return {
-    ...getWordsFromText(data, text),
-  };
+  return memoized;
 }
