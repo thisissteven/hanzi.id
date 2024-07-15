@@ -198,5 +198,7 @@
   "dumpConfirmation": ["This will add", "new words to your flashcard."],
   "pleaseFill": "Please fill the following:",
   "placeholderFlashcardTitle": "Enter flashcard title",
-  "placeholderFlashcardDescription": "Enter flashcard description"
+  "placeholderFlashcardDescription": "Enter flashcard description",
+  "addNewFlashcardPlaceholder": "Enter chinese character/word/phrase separated by new line, like so:\n你好\n再见",
+  "add": "Add +"
 }

@@ -61,16 +61,16 @@ export type Flashcard = {
 };
 
 export function useFlashcardList() {
-  const [flashcard, setFlashcard] = React.useState<Array<Flashcard>>([]);
+  const [flashcards, setFlashcards] = React.useState<Array<Flashcard>>([]);
 
   React.useEffect(() => {
     const savedFlashcard = localStorage.getItem("flashcard-data");
     if (savedFlashcard) {
-      setFlashcard(JSON.parse(savedFlashcard).filter((f: Flashcard) => f.words.length > 0));
+      setFlashcards(JSON.parse(savedFlashcard).filter((f: Flashcard) => f.words.length > 0));
     }
   }, []);
 
-  return flashcard;
+  return { flashcards, setFlashcards };
 }
 
 export function useFlashcard(name: string) {
