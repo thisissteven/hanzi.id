@@ -42,7 +42,7 @@ function AddNewFlashcardModal({
             const description = target[1].value;
             const words = target[2].value;
 
-            const chapter = `${title}-${description}`;
+            const chapter = `${description}-${title}`;
             const flashcard = {
               chapter,
               words: words

@@ -5,6 +5,7 @@ import { SelectButton } from "../typing-test";
 import { useLocale } from "@/locales/use-locale";
 import { cn } from "@/utils";
 import { Flashcard } from "../layout";
+import { LucideBookType, LucidePencil } from "lucide-react";
 
 const numOfCardsOptions = [5, 10, 15, 20, 30, 40, 50, 75, 100, 200, Infinity] as const;
 
@@ -18,6 +19,7 @@ export function FlashcardSettingsModal({ flashcard }: { flashcard: Flashcard }) 
 
   const [numOfCards, setNumOfCards] = React.useState(Infinity);
   const [selectedCategory, setSelectedCategory] = React.useState(t.random);
+  const [reviewMode, setReviewMode] = React.useState(0);
 
   const options = React.useMemo(
     () => numOfCardsOptions.filter((value) => value <= words.length || value === Infinity),
@@ -38,6 +40,29 @@ export function FlashcardSettingsModal({ flashcard }: { flashcard: Flashcard }) 
   return (
     <RouteDialog open={open} onClose={() => router.back()} withoutOkButton>
       <div className="space-y-8">
+        <div className="space-y-2">
+          <p className="text-center font-medium">{t.reviewMode}</p>
+          <div className="grid sm:grid-cols-2 gap-2">
+            {[0, 1].map((mode, index) => {
+              return (
+                <SelectButton
+                  key={index}
+                  className={cn(
+                    reviewMode === mode ? "text-emerald-500" : "emerald-50",
+                    "flex items-center justify-center gap-2"
+                  )}
+                  onClick={() => {
+                    setReviewMode(mode);
+                  }}
+                >
+                  {mode === 0 ? <LucideBookType size={18} /> : <LucidePencil size={18} />}
+                  {t.reviewModes[mode]}
+                </SelectButton>
+              );
+            })}
+          </div>
+        </div>
+
         <div className="space-y-2">
           <p className="text-center font-medium">{t.numOfCards}</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
@@ -79,9 +104,23 @@ export function FlashcardSettingsModal({ flashcard }: { flashcard: Flashcard }) 
         <div className="flex justify-end bg-softblack">
           <button
             onClick={() => {
-              router.replace(
-                `/flashcards/review?category=${selectedCategory}&numOfCards=${numOfCards}&chapter=${chapter}`
-              );
+              if (reviewMode === 0) {
+                router.replace(
+                  `/flashcards/review?category=${selectedCategory}&numOfCards=${numOfCards}&chapter=${chapter}`
+                );
+              } else {
+                const text = (function () {
+                  if (selectedCategory === "Random") {
+                    const sorted = words.sort(() => Math.random() - 0.5).slice(0, Number(numOfCards));
+                    return sorted;
+                  }
+
+                  const [start, end] = selectedCategory.split("-").map(Number);
+                  const toReturn = words.slice(start - 1, end);
+                  return toReturn;
+                })();
+                router.replace(`/tools/hanzi-writer?text=${text.join("")}`);
+              }
             }}
             className="block rounded-md font-medium duration-200 bg-hovered active:bg-subtle px-4 py-2"
           >

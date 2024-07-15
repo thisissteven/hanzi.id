@@ -107,7 +107,7 @@ export function AnalysisDisplay({
         <tbody className="divide-y divide-secondary/10">
           {sortedByCategory.map(([hanzi, category, count], index) => {
             return (
-              <tr key={index}>
+              <tr key={hanzi}>
                 <td className="sm:px-6 py-4 whitespace-nowrap text-lg font-medium">{hanzi}</td>
                 <td className="sm:px-6 py-4 whitespace-nowrap text-sm">{category}</td>
                 <td className="sm:px-6 py-4 whitespace-nowrap text-sm">{count}</td>

@@ -29,7 +29,7 @@ export function DumpToFlashcardModal({ cards, settings }: { cards: [string, stri
             const title = target[0].value;
             const description = target[1].value;
 
-            const chapter = `${title}-${description}`;
+            const chapter = `${description}-${title}`;
             const flashcard = {
               chapter,
               words: cards.map(([word]) => word),

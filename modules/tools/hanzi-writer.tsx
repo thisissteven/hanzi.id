@@ -3,11 +3,16 @@ import { Layout } from "@/modules/layout";
 import { useLocale } from "@/locales/use-locale";
 import { HanziStrokeQuiz, HanziStrokeSimulator } from "@/components";
 import React from "react";
+import { useRouter } from "next/router";
 
 export function HanziWriterTool() {
   const { t } = useLocale();
 
   const [quiz, setQuiz] = React.useState<string | null>(null);
+
+  const router = useRouter();
+
+  const text = router.query.text as string;
 
   return (
     <Layout>
@@ -25,6 +30,7 @@ export function HanziWriterTool() {
 
       <div className="mt-4">
         <HanziStrokeSimulator
+          text={text}
           toggleQuiz={(hanzi) => {
             setQuiz((prev) => {
               if (prev) {

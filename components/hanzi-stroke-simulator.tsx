@@ -6,10 +6,16 @@ import { cn } from "@/utils";
 
 const unicodeRange = /^[\u4e00-\u9fa5]$/;
 
-export const HanziStrokeSimulator = ({ toggleQuiz }: { toggleQuiz: (hanzi: string) => void }) => {
+export const HanziStrokeSimulator = ({ toggleQuiz, text }: { toggleQuiz: (hanzi: string) => void; text: string }) => {
   const [character, setCharacter] = useState("");
   const writerRefs = useRef([]) as React.MutableRefObject<HanziWriter[]>;
   const [writerState, setWriterState] = useState<Array<"playing" | "paused" | "ready">>([]);
+
+  React.useEffect(() => {
+    if (text && text.length > 0) {
+      setCharacter(text);
+    }
+  }, [text]);
 
   const [visibleRadical, setVisibleRadical] = useState(false);
 

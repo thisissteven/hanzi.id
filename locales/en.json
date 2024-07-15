@@ -200,5 +200,7 @@
   "placeholderFlashcardTitle": "Enter flashcard title",
   "placeholderFlashcardDescription": "Enter flashcard description",
   "addNewFlashcardPlaceholder": "Enter chinese character/word/phrase separated by new line, like so:\n你好\n再见",
-  "add": "Add +"
+  "add": "Add +",
+  "reviewMode": "Review Mode",
+  "reviewModes": ["Word Definition", "Practice Writing"]
 }

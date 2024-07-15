@@ -194,5 +194,7 @@
   "placeholderFlashcardTitle": "Judul kartu pengingat",
   "placeholderFlashcardDescription": "Deskripsi kartu pengingat",
   "addNewFlashcardPlaceholder": "Tambahkan kata/frase Cina ke kartu pengingat dipisahkan dengan baris baru, contoh:\n你好\n再见",
-  "add": "Tambah +"
+  "add": "Tambah +",
+  "reviewMode": "Mode Ulasan",
+  "reviewModes": ["Definisi Kata", "Menulis Karakter"]
 }
