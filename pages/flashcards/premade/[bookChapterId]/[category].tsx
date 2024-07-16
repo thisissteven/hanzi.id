@@ -1,6 +1,6 @@
 import React from "react";
 import { AudioProvider, Flashcard, Layout, useFlashcard } from "@/modules/layout";
-import { AlertModal, BackRouteButton, createSuccessToast, LoadMore } from "@/components";
+import { AlertModal, BackRouteButton, createSuccessToast, LoadMore, usePreferences } from "@/components";
 import { LucideTrash2 } from "lucide-react";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
@@ -13,7 +13,8 @@ import {
   VirtualizedCards,
 } from "@/modules/flashcards";
 import { useLocale } from "@/locales/use-locale";
-import { FlashcardedResult } from "../api/flashcard/en";
+import { FlashcardedResult } from "@/pages/api/flashcard/en";
+import { PremadeFlashcards } from ".";
 
 function exportToPleco(words: string[], filename: string) {
   const element = document.createElement("a");
@@ -28,53 +29,31 @@ function exportToPleco(words: string[], filename: string) {
   document.body.removeChild(element);
 }
 
-export default function FlashcardsDetailsPage() {
+export default function PremadeFlashcardsDetailsPage() {
   const router = useRouter();
-  const id = router.query.id as string;
-  const { flashcardItem, removeFlashcard } = useFlashcard(id);
 
-  const [openAlert, setOpenAlert] = React.useState(false);
+  const bookChapterId = router.query.bookChapterId as string;
 
-  React.useEffect(() => {
-    if (openAlert) {
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.scrollbarGutter = "stable";
+  const { locale } = useLocale();
+  const { isSimplified } = usePreferences();
+
+  const { data } = useSWRImmutable<PremadeFlashcards>(
+    bookChapterId ? `/api/flashcard/premade/${bookChapterId}` : null,
+    async (_: string) => {
+      const [bookId, chapterId] = bookChapterId.split("-");
+      const content = isSimplified ? "flashcards-sim" : "flashcards-trad";
+      const contentUrl = `https://content.hanzi.id/books/${bookId}/${chapterId}/vocabularies/${locale}/${content}.json`;
+      const response = await fetch(contentUrl);
+      const data = await response.json();
+      return data;
     }
+  );
 
-    const timeout = setTimeout(() => {
-      if (!openAlert) {
-        document.body.style.overflowY = "scroll";
-        document.documentElement.style.scrollbarGutter = "";
-      }
-    }, 200);
-
-    return () => clearTimeout(timeout);
-  }, [openAlert]);
-
-  const { t } = useLocale();
+  const flashcards: Array<[string, string[]]> = data ? Object.entries(data) : [];
+  const flashcardItem = flashcards.find(([category]) => category === router.query.category);
 
   return (
     <Layout>
-      <AlertModal
-        open={openAlert}
-        onClose={(value) => setOpenAlert(value)}
-        alertProps={{
-          cancelText: t.flashcard.cancelText,
-          confirmText: t.flashcard.confirmText,
-          title: t.flashcard.title,
-          description: t.flashcard.description,
-        }}
-        callback={() => {
-          // Delete flashcard
-          removeFlashcard();
-          setOpenAlert(false);
-          createSuccessToast(t.flashcard.successToast, {
-            id: "delete-flashcard-success",
-            duration: 5000,
-          });
-          router.back();
-        }}
-      />
       <div className="min-h-dvh">
         <main className="max-w-[960px] mx-auto md:px-8">
           <div className="max-md:sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 max-md:px-2 pb-2 border-b-[1.5px] border-b-subtle">
@@ -82,15 +61,16 @@ export default function FlashcardsDetailsPage() {
               <div className="w-fit">
                 <BackRouteButton defaultBack />
               </div>
-              <button
-                onClick={() => setOpenAlert(true)}
-                className="mt-4 p-2 rounded-md duration-200 active:bg-hovered text-secondary flex items-center gap-2"
-              >
-                <LucideTrash2 />
-              </button>
             </div>
           </div>
-          {flashcardItem && <DisplayFlashcard flashcard={flashcardItem} />}
+          {flashcardItem && (
+            <DisplayFlashcard
+              flashcard={{
+                chapter: router.query.category as string,
+                words: flashcardItem[1],
+              }}
+            />
+          )}
         </main>
       </div>
     </Layout>
@@ -154,6 +134,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
               setDetails(undefined);
               router.back();
             }}
+            withoutFlashcardButton
           />
         </FlashcardProvider>
       </AudioProvider>
@@ -178,17 +159,6 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
           }}
         />
       </div>
-
-      {cards.length > 0 && (
-        <FooterButtons
-          onExport={() => {
-            exportToPleco(flashcard.words, flashcard.chapter);
-            createSuccessToast(t.exportSuccessful, {
-              id: "export-pleco-success",
-            });
-          }}
-        />
-      )}
     </>
   );
 }

@@ -4,7 +4,7 @@ import { cn } from "@/utils";
 import { AddOrRemoveFromFlashcard } from "../speech";
 import { FlashcardedResult } from "@/pages/api/flashcard/en";
 import { useRouter } from "next/router";
-import { Divider, usePreferences } from "@/components";
+import { usePreferences } from "@/components";
 import { AudioButton } from "../hsk";
 import { DisectedCharacters } from "./disected-characters";
 import { ExampleSentences } from "./example-sentences";
@@ -13,10 +13,12 @@ export function CardDetailsModal({
   chapterName,
   details,
   onClose,
+  withoutFlashcardButton = false,
 }: {
   chapterName: string;
   details?: FlashcardedResult;
   onClose: () => void;
+  withoutFlashcardButton?: boolean;
 }) {
   const latestDetails = React.useRef(details) as React.MutableRefObject<FlashcardedResult | undefined>;
 
@@ -97,7 +99,9 @@ export function CardDetailsModal({
                         </div>
                       )}
 
-                      <AddOrRemoveFromFlashcard key={hanzi} chapterName={chapterName} word={hanzi} />
+                      {!withoutFlashcardButton && (
+                        <AddOrRemoveFromFlashcard key={hanzi} chapterName={chapterName} word={hanzi} />
+                      )}
                     </div>
 
                     {entries.length > 1 && (
