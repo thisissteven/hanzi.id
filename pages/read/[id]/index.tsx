@@ -8,7 +8,7 @@ import useSWRImmutable from "swr/immutable";
 import { useRouter } from "next/router";
 import { useRouter as useNavigationRouter } from "next/navigation";
 import { GetBookByIdResponse } from "@/pages/api/book/[id]";
-import { LucideBookOpen } from "lucide-react";
+import { LucideBookOpen, LucideLanguages } from "lucide-react";
 import { useScrollToTop } from "@/modules/new";
 import { LastRead, useLastReadChapterId } from "@/modules/home/explore";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
@@ -190,23 +190,37 @@ function BookDetails() {
                             )}
                           </div>
 
-                          <button
-                            onClick={() => {
-                              push(navigationRouter, `/read/${book?.id}/${chapter.id}`);
-                            }}
-                            aria-label={`Play chapter ${index + 1}: ${chapter.title}`}
-                            className={cn(
-                              "flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full px-4 py-2 font-medium ring-1 ring-inset justify-center",
-                              continueReading
-                                ? readingProgressFixed === "100"
-                                  ? "ring-green-400/20 text-green-400 active:bg-green-400/20 bg-green-400/10"
-                                  : "ring-yellow-400/20 text-yellow-400 active:bg-yellow-400/20 bg-yellow-400/10"
-                                : "ring-blue-400/20 text-blue-400 active:bg-blue-400/20 bg-blue-400/10"
-                            )}
-                          >
-                            <LucideBookOpen size={20} className="mt-0.5" />
-                            <span aria-hidden="true">{continueReading ? t.continueReading : t.startReading}</span>
-                          </button>
+                          <div className="flex max-sm:flex-col-reverse sm:items-center gap-2 sm:gap-4">
+                            <button
+                              onClick={() => {
+                                push(navigationRouter, `/flashcards/premade/${book?.id}-${chapter.id}`);
+                              }}
+                              className={cn(
+                                "flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full px-4 py-2 font-medium ring-1 ring-inset justify-center",
+                                "ring-neutral-400/20 text-neutral-400 active:bg-neutral-400/20 bg-neutral-400/10"
+                              )}
+                            >
+                              <LucideLanguages size={20} className="mt-0.5" />
+                              <span>{t.seeVocabularies}</span>
+                            </button>
+                            <button
+                              onClick={() => {
+                                push(navigationRouter, `/read/${book?.id}/${chapter.id}`);
+                              }}
+                              aria-label={`Play chapter ${index + 1}: ${chapter.title}`}
+                              className={cn(
+                                "flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full px-4 py-2 font-medium ring-1 ring-inset justify-center",
+                                continueReading
+                                  ? readingProgressFixed === "100"
+                                    ? "ring-green-400/20 text-green-400 active:bg-green-400/20 bg-green-400/10"
+                                    : "ring-yellow-400/20 text-yellow-400 active:bg-yellow-400/20 bg-yellow-400/10"
+                                  : "ring-blue-400/20 text-blue-400 active:bg-blue-400/20 bg-blue-400/10"
+                              )}
+                            >
+                              <LucideBookOpen size={20} className="mt-0.5" />
+                              <span>{continueReading ? t.continueReading : t.startReading}</span>
+                            </button>
+                          </div>
                         </div>
                       </li>
                     </VirtualizedList.Item>

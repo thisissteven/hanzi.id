@@ -196,5 +196,6 @@
   "addNewFlashcardPlaceholder": "Tambahkan kata/frase Cina ke kartu pengingat dipisahkan dengan baris baru, contoh:\n你好\n再见",
   "add": "Tambah +",
   "reviewMode": "Mode Ulasan",
-  "reviewModes": ["Definisi Kata", "Menulis Karakter"]
+  "reviewModes": ["Definisi Kata", "Menulis Karakter"],
+  "seeVocabularies": "Lihat Kosakata"
 }

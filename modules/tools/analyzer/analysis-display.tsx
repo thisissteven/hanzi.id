@@ -95,7 +95,7 @@ export function AnalysisDisplay({
               {
                 query: {
                   ...router.query,
-                  flascards: true,
+                  flashcards: true,
                 },
               },
               undefined,

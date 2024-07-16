@@ -202,5 +202,6 @@
   "addNewFlashcardPlaceholder": "Enter chinese character/word/phrase separated by new line, like so:\n你好\n再见",
   "add": "Add +",
   "reviewMode": "Review Mode",
-  "reviewModes": ["Word Definition", "Practice Writing"]
+  "reviewModes": ["Word Definition", "Practice Writing"],
+  "seeVocabularies": "See Vocabularies"
 }
