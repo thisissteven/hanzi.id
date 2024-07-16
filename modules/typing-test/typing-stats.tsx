@@ -16,7 +16,16 @@ export function TypingStats() {
         <Layout key="waiting" className="h-8 sm:h-14 flex text-lightgray font-medium w-fit items-end gap-4">
           <button
             onClick={() => {
-              router.push("?settings=true", undefined, { shallow: true });
+              router.push(
+                {
+                  query: {
+                    ...router.query,
+                    settings: true,
+                  },
+                },
+                undefined,
+                { shallow: true }
+              );
             }}
             className="px-2 flex py-2 gap-1.5 items-center active:bg-hovered duration-200 rounded-md"
           >

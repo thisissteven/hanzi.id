@@ -70,10 +70,19 @@ export function AnalysisDisplay({
 
       <Divider />
 
-      <div className="mx-2 sm:mx-4 flex justify-between">
+      <div className="sm:mx-4 flex justify-between">
         <button
           onClick={() => {
-            router.push("?filter=true", undefined, { shallow: true });
+            router.push(
+              {
+                query: {
+                  ...router.query,
+                  filter: true,
+                },
+              },
+              undefined,
+              { shallow: true }
+            );
           }}
           className="px-2 flex py-2 gap-1.5 items-center active:bg-hovered duration-200 rounded-md"
         >
@@ -82,7 +91,16 @@ export function AnalysisDisplay({
         </button>
         <button
           onClick={() => {
-            router.push("?flashcards=true", undefined, { shallow: true });
+            router.push(
+              {
+                query: {
+                  ...router.query,
+                  flascards: true,
+                },
+              },
+              undefined,
+              { shallow: true }
+            );
           }}
           className="px-2 flex py-2 gap-1.5 items-center active:bg-hovered duration-200 rounded-md"
         >

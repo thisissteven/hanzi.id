@@ -2,7 +2,7 @@ import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import React from "react";
 import { cn } from "@/utils";
 import HanziWriter from "hanzi-writer";
-import { LucidePlay, LucideRotateCcw } from "lucide-react";
+import { LucideEye, LucidePlay, LucideRotateCcw } from "lucide-react";
 import { useWindowSize } from "@/hooks";
 import { useLocale } from "@/locales/use-locale";
 
@@ -12,6 +12,7 @@ export function HanziStrokeQuiz({ quiz, onClose }: { quiz?: string | null; onClo
   const latestQuiz = React.useRef(quiz) as React.MutableRefObject<string | undefined>;
 
   const writerRef = React.useRef() as React.MutableRefObject<HanziWriter | null>;
+  const outlineRef = React.useRef(true) as React.MutableRefObject<boolean>;
 
   const { width } = useWindowSize();
 
@@ -101,6 +102,26 @@ export function HanziStrokeQuiz({ quiz, onClose }: { quiz?: string | null; onClo
                     <div id="quiz-target"></div>
                   </div>
                   <div className="flex flex-row sm:flex-col gap-2">
+                    <button
+                      onClick={() => {
+                        const isOutlineVisible = outlineRef.current;
+
+                        if (isOutlineVisible) {
+                          writerRef.current?.hideOutline();
+                          outlineRef.current = false;
+                        } else {
+                          writerRef.current?.showOutline();
+                          outlineRef.current = true;
+                        }
+                      }}
+                      className="relative flex gap-2 items-center text-secondary rounded-md border border-secondary/10 p-2.5 active:bg-hovered duration-200 bg-softblack h-fit"
+                    >
+                      <LucideEye
+                        size={20}
+                        strokeWidth={1.5}
+                        className="shrink-0 duration-200 group-hover:text-sky-400"
+                      />
+                    </button>
                     <button
                       onClick={() => {
                         writerRef.current?.animateCharacter();

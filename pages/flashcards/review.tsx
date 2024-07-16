@@ -70,7 +70,7 @@ export default function FlashcardReview() {
         <ReviewResultsModal />
 
         <main className="max-w-[960px] mx-auto sm:px-8 pb-4">
-          <div className="max-sm:sticky top-0 sm:h-[11.25rem] flex flex-col justify-end bg-black z-20 max-md:px-4 border-b-[1.5px] border-b-subtle">
+          <div className="max-sm:sticky top-0 flex flex-col justify-end bg-black z-20 max-md:px-4 border-b-[1.5px] border-b-subtle">
             <AnimatePresence mode="wait">
               <motion.div
                 initial={{ opacity: 0 }}
@@ -79,7 +79,7 @@ export default function FlashcardReview() {
                 transition={{ type: "tween", duration: 0.2 }}
                 className="w-fit"
               >
-                <BackRouteButton className="max-md:my-3 mb-2" />
+                <BackRouteButton className="my-3" />
               </motion.div>
             </AnimatePresence>
           </div>

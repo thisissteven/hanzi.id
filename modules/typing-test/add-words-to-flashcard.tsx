@@ -100,7 +100,16 @@ export function AddWordsToFlashcard({
       <button
         disabled={added}
         onClick={() => {
-          router.push("?addWordsToFlashcard=true", undefined, { shallow: true });
+          router.push(
+            {
+              query: {
+                ...router.query,
+                addWordsToFlashcard: true,
+              },
+            },
+            undefined,
+            { shallow: true }
+          );
         }}
         className="px-4 py-2 active:bg-hovered duration-200 rounded-md flex items-center gap-2 focus:bg-subtle/50 focus:outline-none outline-transparent text-secondary active:text-white border border-secondary/20 disabled:pointer-events-none disabled:opacity-50"
       >

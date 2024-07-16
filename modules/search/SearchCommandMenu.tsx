@@ -30,7 +30,18 @@ export function SearchCommandMenu() {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
-        router.push(router.asPath + "?search=true", undefined, { shallow: true });
+        router.push(
+          {
+            query: {
+              ...router.query,
+              search: true,
+            },
+          },
+          undefined,
+          {
+            shallow: true,
+          }
+        );
       }
     };
 

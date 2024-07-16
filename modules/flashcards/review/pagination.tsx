@@ -1,5 +1,4 @@
 import React from "react";
-import { CardStatus } from "./content";
 import { useLocale } from "@/locales/use-locale";
 import { useReview } from "./provider";
 

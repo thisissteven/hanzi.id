@@ -16,7 +16,7 @@ export function FlashcardReviewContent({
   onCardClick: (card: FlashcardedResultStrict) => void;
 }) {
   return (
-    <div className="max-sm:px-2 flex flex-col items-center justify-center min-h-[calc(100dvh-5.5rem)] md:min-h-[calc(100dvh-12.5rem)]">
+    <div className="max-sm:px-2 flex flex-col items-center justify-center min-h-[calc(100dvh-5.5rem)]">
       <ReviewProvider length={words.length}>
         <ReviewResult />
         <CardContainer onCardClick={onCardClick} words={words} />

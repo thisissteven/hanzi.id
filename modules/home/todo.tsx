@@ -36,7 +36,18 @@ export function HomeTodo() {
 
         <button
           onClick={() => {
-            router.push("?search=true");
+            router.push(
+              {
+                query: {
+                  ...router.query,
+                  search: true,
+                },
+              },
+              undefined,
+              {
+                shallow: true,
+              }
+            );
           }}
           className="relative flex gap-2 items-center text-secondary sm:flex-1 rounded-md border border-secondary/10 p-2.5 sm:max-w-xs active:bg-hovered duration-200 bg-softblack"
         >
