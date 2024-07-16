@@ -1,4 +1,4 @@
-import { BackRouteButton, usePreferences } from "@/components";
+import { BackRouteButton, Divider, usePreferences } from "@/components";
 import { useLocale } from "@/locales/use-locale";
 import { Layout } from "@/modules/layout";
 import { motion } from "framer-motion";
@@ -8,7 +8,11 @@ import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 
 export type PremadeFlashcards = {
-  [key: string]: string[];
+  bookName: string;
+  chapterName: string;
+  categorized: {
+    [key: string]: string[];
+  };
 };
 
 const description = {
@@ -54,7 +58,7 @@ export default function PremadeFlashcards() {
     }
   );
 
-  const flashcards = data ? Object.entries(data) : [];
+  const flashcards = data ? Object.entries(data.categorized) : [];
 
   return (
     <Layout>
@@ -66,7 +70,16 @@ export default function PremadeFlashcards() {
             </div>
           </div>
 
-          <ul>
+          {data && (
+            <>
+              <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{data?.chapterName}</h1>
+              <p className="mx-4 mt-1 text-secondary">{data?.bookName}</p>
+
+              <Divider />
+            </>
+          )}
+
+          <ul className="-mt-4">
             {flashcards?.map(([category, hanziList]) => {
               return (
                 <motion.li

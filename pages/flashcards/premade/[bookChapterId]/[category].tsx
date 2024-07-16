@@ -1,33 +1,14 @@
 import React from "react";
-import { AudioProvider, Flashcard, Layout, useFlashcard } from "@/modules/layout";
-import { AlertModal, BackRouteButton, createSuccessToast, LoadMore, usePreferences } from "@/components";
-import { LucideTrash2 } from "lucide-react";
+import { AudioProvider, Flashcard, Layout } from "@/modules/layout";
+import { BackRouteButton, LoadMore, usePreferences } from "@/components";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 
-import {
-  CardDetailsModal,
-  FlashcardProvider,
-  FlashcardSettingsModal,
-  FooterButtons,
-  VirtualizedCards,
-} from "@/modules/flashcards";
+import { CardDetailsModal, FlashcardProvider, FlashcardSettingsModal, VirtualizedCards } from "@/modules/flashcards";
 import { useLocale } from "@/locales/use-locale";
 import { FlashcardedResult } from "@/pages/api/flashcard/en";
 import { PremadeFlashcards } from ".";
-
-function exportToPleco(words: string[], filename: string) {
-  const element = document.createElement("a");
-  const file = new Blob(
-    [`// ${filename}`, ...words].map((str) => str + "\n"),
-    { type: "text/plain" }
-  );
-  element.href = URL.createObjectURL(file);
-  element.download = `${filename}.txt`;
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-}
+import { Stat } from "@/modules/tools";
 
 export default function PremadeFlashcardsDetailsPage() {
   const router = useRouter();
@@ -49,7 +30,7 @@ export default function PremadeFlashcardsDetailsPage() {
     }
   );
 
-  const flashcards: Array<[string, string[]]> = data ? Object.entries(data) : [];
+  const flashcards: Array<[string, string[]]> = data ? Object.entries(data.categorized) : [];
   const flashcardItem = flashcards.find(([category]) => category === router.query.category);
 
   return (
@@ -65,8 +46,9 @@ export default function PremadeFlashcardsDetailsPage() {
           </div>
           {flashcardItem && (
             <DisplayFlashcard
+              category={flashcardItem[0]}
               flashcard={{
-                chapter: router.query.category as string,
+                chapter: `${data?.bookName}-${data?.chapterName}`,
                 words: flashcardItem[1],
               }}
             />
@@ -87,15 +69,13 @@ const chunkArray = (array: string[], size: number) => {
 
 const CHUNK_SIZE = 50;
 
-function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
+function DisplayFlashcard({ flashcard, category }: { flashcard: Flashcard; category: string }) {
   const [bookName, chapterName] = flashcard.chapter.split("-");
 
   const [loadingBatch, setLoadingBatch] = React.useState(-1);
   const [cards, setCards] = React.useState<FlashcardedResult[]>([]);
 
   const [details, setDetails] = React.useState<FlashcardedResult>();
-
-  const { t } = useLocale();
 
   const chunkedCards = React.useMemo(() => {
     const cards = chunkArray(flashcard.words, CHUNK_SIZE);
@@ -134,13 +114,21 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
               setDetails(undefined);
               router.back();
             }}
-            withoutFlashcardButton
           />
         </FlashcardProvider>
       </AudioProvider>
       <FlashcardSettingsModal flashcard={flashcard} />
-      <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
-      <p className="mx-4 mt-1 text-secondary">{bookName}</p>
+
+      <div className="flex flex-wrap justify-between items-end gap-2">
+        <div className="">
+          <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary line-clamp-1">{chapterName}</h1>
+          <p className="mx-4 mt-1 text-secondary line-clamp-2">{bookName}</p>
+        </div>
+
+        <div className="px-2 md:pr-0">
+          <Stat>{category}</Stat>
+        </div>
+      </div>
 
       <div className="min-h-[calc(100dvh-22rem)]">
         <VirtualizedCards

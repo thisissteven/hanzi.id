@@ -13,12 +13,10 @@ export function CardDetailsModal({
   chapterName,
   details,
   onClose,
-  withoutFlashcardButton = false,
 }: {
   chapterName: string;
   details?: FlashcardedResult;
   onClose: () => void;
-  withoutFlashcardButton?: boolean;
 }) {
   const latestDetails = React.useRef(details) as React.MutableRefObject<FlashcardedResult | undefined>;
 
@@ -98,10 +96,7 @@ export function CardDetailsModal({
                           <AudioButton text={hanzi ?? ""} size="normal" />
                         </div>
                       )}
-
-                      {!withoutFlashcardButton && (
-                        <AddOrRemoveFromFlashcard key={hanzi} chapterName={chapterName} word={hanzi} />
-                      )}
+                      <AddOrRemoveFromFlashcard key={hanzi} chapterName={chapterName} word={hanzi} />
                     </div>
 
                     {entries.length > 1 && (

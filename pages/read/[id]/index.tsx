@@ -197,7 +197,7 @@ function BookDetails() {
                               }}
                               className={cn(
                                 "flex duration-200 items-center gap-x-2 leading-6 text-sm rounded-full px-4 py-2 font-medium ring-1 ring-inset justify-center",
-                                "ring-neutral-400/20 text-neutral-400 active:bg-neutral-400/20 bg-neutral-400/10"
+                                "ring-pink-400/20 text-pink-400 active:bg-pink-400/20 bg-pink-400/10"
                               )}
                             >
                               <LucideLanguages size={20} className="mt-0.5" />
