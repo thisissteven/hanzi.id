@@ -33,8 +33,8 @@ export function FlashcardSettingsModal({ flashcard }: { flashcard: Flashcard }) 
       const end = Math.min(i + numOfCards, words.length);
       categories.push(`${start}-${end}`);
     }
-    setSelectedCategory(categories[0]);
-    return [...categories, t.random];
+    setSelectedCategory(t.random);
+    return [t.random, ...categories];
   }, [numOfCards, t.random, words.length]);
 
   return (

@@ -40,6 +40,7 @@ export function AddWordsToFlashcard({
               onChange={(e) => setWrongOnly(e.target.checked)}
               id="wrong-only"
               type="checkbox"
+              autoComplete="off"
             />
             <label htmlFor="wrong-only" className="text-sm">
               {t.onlyAddWrongWords}
