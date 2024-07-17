@@ -212,5 +212,6 @@
   "youtubePlaceholder": "Enter youtube video URL...",
   "youtubeErrorToast": "Please enter a valid youtube URL.",
   "subtitlesErrorToast": "No subtitles found for this video.",
-  "translationErrorToast": "No translation found for this video."
+  "translationErrorToast": "No translation found for this video.",
+  "lastWatched": "Last Watched"
 }
