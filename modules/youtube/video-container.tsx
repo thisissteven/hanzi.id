@@ -205,6 +205,7 @@ export function VideoContainer() {
     if (videoId) {
       dismissToast("youtube-error");
     } else {
+      setLastTime(0);
       if (lastWatchedRef.current.length > 0) {
         setLastWatched(lastWatchedRef.current);
       }
