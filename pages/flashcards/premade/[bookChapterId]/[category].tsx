@@ -1,6 +1,6 @@
 import React from "react";
 import { AudioProvider, Flashcard, Layout } from "@/modules/layout";
-import { BackRouteButton, LoadMore, usePreferences } from "@/components";
+import { BackRouteButton, createSuccessToast, LoadMore, usePreferences } from "@/components";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 
@@ -87,7 +87,7 @@ function DisplayFlashcard({ flashcard, category }: { flashcard: Flashcard; categ
 
   const isEnd = loadingBatch === chunkedCards.maxBatch;
 
-  const { locale } = useLocale();
+  const { t, locale } = useLocale();
   const { data, isValidating } = useSWRImmutable<FlashcardedResult[]>(
     !isEnd && loadingBatch > -1 ? `flashcard/${locale}?text=${chunkedCards.data[loadingBatch].join("-")}` : undefined,
     async (url: string) => {
@@ -146,6 +146,34 @@ function DisplayFlashcard({ flashcard, category }: { flashcard: Flashcard; categ
             }
           }}
         />
+      </div>
+
+      <div className="sticky bottom-2 mt-6 max-md:mx-4 flex flex-col md:flex-row justify-end gap-2 pb-2">
+        <button
+          type="button"
+          onClick={() => {
+            const flashcards = JSON.parse(localStorage.getItem("flashcard-data") || "[]");
+            const isChapterExist = flashcards.find(
+              (flashcard: any) => flashcard.chapter === `${bookName}-${chapterName}`
+            );
+            if (!isChapterExist) {
+              localStorage.setItem("flashcard-data", JSON.stringify([...flashcards, flashcard]));
+            } else {
+              const set = new Set([...isChapterExist.words, ...flashcard.words]);
+              const combinedWords = Array.from(set);
+              const updatedFlashcards = flashcards.map((flashcard: any) =>
+                flashcard.chapter === `${bookName}-${chapterName}` ? { ...flashcard, words: combinedWords } : flashcard
+              );
+              localStorage.setItem("flashcard-data", JSON.stringify(updatedFlashcards));
+            }
+            createSuccessToast(t.wordsAdded, {
+              id: "add-to-flashcard-success",
+            });
+          }}
+          className="shrink-0 rounded-md font-medium max-md:w-full text-white p-3 md:py-2.5 md:px-4 duration-200 bg-emerald-600 active:bg-emerald-700 disabled:opacity-50 flex items-center justify-center gap-2"
+        >
+          {t.addAllToFlashcard}
+        </button>
       </div>
     </>
   );

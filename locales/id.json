@@ -169,6 +169,7 @@
   "flashcardExists": "Kartu pengingat dengan judul tersebut sudah ada.",
   "cancel": "Batal",
   "addToFlashcard": "Tambah ke Kartu Pengingat",
+  "addAllToFlashcard": "Tambah Semua ke Kartu Pengingat",
   "onlyAddWrongWords": "Tambahkan hanya kata yang salah",
   "addTheFollowingWordsToFlashcard": "Tambahkan kata-kata berikut ke kartu pengingat?",
   "exampleSentences": "Kalimat Contoh",
