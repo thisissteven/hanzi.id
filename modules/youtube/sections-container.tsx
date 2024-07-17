@@ -5,12 +5,15 @@ import { cn } from "@/utils";
 import React from "react";
 import { AudioButton } from "../hsk";
 import { AddOrRemoveFromFlashcard } from "../speech";
+import { useWindowSize } from "@/hooks";
 
 export function SectionsContainer({
+  isPlaying,
   sections,
   children,
   flashcardName,
 }: {
+  isPlaying: boolean;
   sections: SegmentedResult[];
   children: React.ReactNode;
   flashcardName: string;
@@ -41,6 +44,8 @@ export function SectionsContainer({
 
   const currentHanzi = isSimplified ? currentSection?.simplified : currentSection?.traditional;
 
+  const { width } = useWindowSize();
+
   return (
     <div>
       <p className="text-2xl text-center">
@@ -70,7 +75,8 @@ export function SectionsContainer({
                 className={cn(
                   "underline-offset-4 cursor-pointer border-b-[1.5px] border-softblack",
                   "relative rounded-b-md rounded-t pb-0.5 box-clone active:bg-indigo-300/20",
-                  activeIndex === index && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
+                  activeIndex === index && !isPlaying && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30",
+                  isPlaying && "pointer-events-none"
                 )}
               >
                 {isSimplified ? section.simplified : section.traditional}
@@ -80,10 +86,17 @@ export function SectionsContainer({
           );
         })}
       </p>
+
       {children}
 
       {activeIndex >= 0 && (
-        <div className="mt-4">
+        <div
+          className="mt-4 mx-auto duration-200"
+          style={{
+            maxWidth: width > 768 ? "940px" : "calc(100dvw - 2rem)",
+            opacity: isPlaying ? 0 : 1,
+          }}
+        >
           <div className="relative">
             <span className="text-sm text-secondary">{t.definition}:</span>
 

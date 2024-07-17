@@ -188,11 +188,13 @@ export function VideoContainer() {
           value={youtubeUrl}
           onChange={(e) => setYoutubeUrl(e.target.value)}
           placeholder={t.youtubePlaceholder}
-          className="bg-transparent pl-3 pr-10 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 text-secondary focus:text-white transition-shadow duration-200 placeholder:text-secondary/50 focus:outline-none w-full"
+          className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 text-secondary focus:text-white transition-shadow duration-200 placeholder:text-secondary/50 focus:outline-none w-full"
         />
-        <div className="absolute right-3 top-1/2 -translate-y-1/2 text-secondary p-2.5 bg-black h-fit">
-          {isLoading && <LoadingBar visible />}
-        </div>
+        {isLoading && (
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 text-secondary p-2.5 bg-black h-fit">
+            <LoadingBar visible />
+          </div>
+        )}
       </div>
 
       <div
@@ -203,14 +205,12 @@ export function VideoContainer() {
       </div>
 
       <div className="mt-4 px-2">
-        {isPlaying && (
-          <React.Fragment>
-            <p className="text-2xl text-center">{currentSub?.text}</p>
-            <p className="text-xl text-center text-secondary">{currentTranslation?.text}</p>
-          </React.Fragment>
-        )}
-        {sections && !isPlaying && (
-          <SectionsContainer sections={sections} flashcardName={`${videoId}-${playerRef.current?.getIframe().title}`}>
+        {sections && (
+          <SectionsContainer
+            isPlaying={isPlaying}
+            sections={sections}
+            flashcardName={`${videoId}-${playerRef.current?.getIframe().title}`}
+          >
             <p className="text-xl text-center text-secondary">{currentTranslation?.text}</p>
           </SectionsContainer>
         )}
