@@ -1,5 +1,9 @@
 import { toast } from "sonner";
 
+export const dismissToast = (id: string) => {
+  toast.dismiss(id);
+};
+
 export function createSuccessToast(
   message: string,
   {

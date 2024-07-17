@@ -20,6 +20,10 @@
       "title": "Fitur Tambahan",
       "description": "Fitur lainnya terkait karakter Cina."
     },
+    "youtube": {
+      "title": "Bahasa Cina + Youtube",
+      "description": "Subtitle ganda secara real-time dari video Youtube."
+    },
     "explore": {
       "title": "Jelajahi",
       "description": "Baca dan dengarkan buku bahasa Cina dengan terjemahan."
@@ -198,5 +202,9 @@
   "add": "Tambah +",
   "reviewMode": "Mode Ulasan",
   "reviewModes": ["Definisi Kata", "Menulis Karakter"],
-  "seeVocabularies": "Lihat Kosakata"
+  "seeVocabularies": "Lihat Kosakata",
+  "youtubePlaceholder": "Masukkan URL video youtube...",
+  "youtubeErrorToast": "Harap masukkan URL youtube yang valid.",
+  "subtitlesErrorToast": "Subtitle tidak ditemukan untuk video ini.",
+  "translationErrorToast": "Terjemahan tidak ditemukan untuk video ini."
 }

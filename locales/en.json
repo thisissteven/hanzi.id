@@ -16,6 +16,10 @@
       "title": "Learn HSK 1-6",
       "description": "Old HSK vocabulary lists and practice exams."
     },
+    "youtube": {
+      "title": "Chinese + Youtube",
+      "description": "Realtime dual-subtitle from Youtube videos."
+    },
     "tools": {
       "title": "Tools",
       "description": "Chinese character tools and resources."
@@ -204,5 +208,9 @@
   "add": "Add +",
   "reviewMode": "Review Mode",
   "reviewModes": ["Word Definition", "Practice Writing"],
-  "seeVocabularies": "See Vocabularies"
+  "seeVocabularies": "See Vocabularies",
+  "youtubePlaceholder": "Enter youtube video URL...",
+  "youtubeErrorToast": "Please enter a valid youtube URL.",
+  "subtitlesErrorToast": "No subtitles found for this video.",
+  "translationErrorToast": "No translation found for this video."
 }

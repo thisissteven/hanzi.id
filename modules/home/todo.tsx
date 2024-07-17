@@ -6,6 +6,7 @@ import {
   KeyboardIcon,
   LibraryBigIcon,
   LightbulbIcon,
+  LucideTvMinimalPlay,
   PickaxeIcon,
   SearchIcon,
 } from "lucide-react";
@@ -85,6 +86,24 @@ export function HomeTodo() {
         >
           <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-amber-500/10 px-2 py-1 font-medium text-amber-500 ring-1 ring-inset ring-amber-500/20">
             {t.oldHSK}
+          </div>
+        </Button>
+
+        <Button
+          path="/youtube"
+          className="relative hover:bg-sky-200/5"
+          icon={
+            <LucideTvMinimalPlay
+              size={48}
+              strokeWidth={1.5}
+              className="shrink-0 duration-200 group-hover:text-sky-400"
+            />
+          }
+          title={t.home.youtube.title}
+          description={t.home.youtube.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-emerald-500/10 px-2 py-1 font-medium text-emerald-500 ring-1 ring-inset ring-emerald-500/20">
+            {t.new}
           </div>
         </Button>
 
