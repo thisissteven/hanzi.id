@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { SegmentedResult, segmentFnId } from "../../segment/id";
 
 const getSubtitles = async ({ videoID, lang = "en" }: { videoID: string; lang?: string }) => {
   const response = await fetch(`https://youtube.com/watch?v=${videoID}`);
@@ -63,15 +64,26 @@ export type Subtitles = Array<{
   text: string;
 }>;
 
+export type SubtitleResponse = {
+  subtitles: Subtitles;
+  sections: SegmentedResult[][];
+};
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const subtitles = await getSubtitles({ videoID: req.query.videoID as string, lang: req.query.lang as string });
+    const videoID = req.query.videoID as string;
+    const lang = req.query.lang as string;
+    const subtitles = (await getSubtitles({ videoID, lang })) as Subtitles;
+
+    const isZh = lang.includes("zh");
+
+    const sections = isZh ? subtitles.map((sub) => segmentFnId(sub.text)) : [];
 
     if (subtitles.length === 0) {
       throw new Error();
     }
 
-    res.status(200).json(subtitles);
+    res.status(200).json({ subtitles, sections });
   } catch (err) {
     res.status(400).json({
       error: "not-found",

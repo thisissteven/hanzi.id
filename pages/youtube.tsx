@@ -1,176 +1,13 @@
 import React from "react";
-import useSWRImmutable from "swr/immutable";
-import { Subtitles } from "./api/subtitles";
-import { useLocale } from "@/locales/use-locale";
-import { BackRouteButton, createErrorToast, dismissToast, LoadingBar, usePreferences } from "@/components";
-import { Layout } from "@/modules/layout";
-import { useWindowSize } from "@/hooks";
-import { cn } from "@/utils";
-import getYoutubeVideoId from "get-video-id";
-
-function getVideoId(url: string, errorMessage: string) {
-  try {
-    const videoId = getYoutubeVideoId(url);
-    if (!videoId.id) {
-      createErrorToast(errorMessage, {
-        id: "youtube-error",
-        position: "bottom-center",
-      });
-    }
-    return videoId.id;
-  } catch {
-    createErrorToast(errorMessage, {
-      id: "youtube-error",
-      position: "bottom-center",
-    });
-  }
-}
-
-const NINE_PER_SIXTEEN = 0.5625;
+import { BackRouteButton } from "@/components";
+import { AudioProvider, Layout } from "@/modules/layout";
+import { VideoContainer } from "@/modules/youtube";
+import { FlashcardProvider } from "@/modules/flashcards";
 
 export default function Youtube() {
-  const [youtubeUrl, setYoutubeUrl] = React.useState("");
-  const playerRef = React.useRef<YT.Player | null>(null);
-
-  const { width } = useWindowSize();
-
-  const [isRendered, setIsRendered] = React.useState(false);
-  const [elapsedTime, setElapsedTime] = React.useState(0);
-
-  React.useEffect(() => {
-    if (isRendered) {
-      const offset = width < 768 ? 0 : 64;
-      const maxWidth = Math.min(960 - offset, width - offset);
-      const height = maxWidth * NINE_PER_SIXTEEN;
-
-      const player = new YT.Player("player", {
-        width: maxWidth,
-        height,
-        videoId: undefined,
-      });
-
-      player.addEventListener("onReady", () => {
-        playerRef.current = player;
-      });
-
-      // This is the source "window" that will emit the events.
-      var iframeWindow = player.getIframe().contentWindow;
-
-      // So we can compare against new updates.
-      var lastTimeUpdate = 0;
-
-      // Listen to events triggered by postMessage,
-      // this is how different windows in a browser
-      // (such as a popup or iFrame) can communicate.
-      // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
-      window.addEventListener("message", function (event) {
-        // Check that the event was sent from the YouTube IFrame.
-        if (event.source === iframeWindow) {
-          var data = JSON.parse(event.data);
-
-          // The "infoDelivery" event is used by YT to transmit any
-          // kind of information change in the player,
-          // such as the current time or a playback quality change.
-          if (data.event === "infoDelivery" && data.info && data.info.currentTime) {
-            // currentTime is emitted very frequently,
-            // but we only care about whole second changes.
-            var time = Math.round(data.info.currentTime * 10) / 10;
-
-            if (time !== lastTimeUpdate) {
-              lastTimeUpdate = time;
-              setElapsedTime(time);
-            }
-          }
-        }
-      });
-    }
-
-    return () => {
-      if (playerRef.current) {
-        playerRef.current.destroy();
-      }
-    };
-  }, [isRendered, width]);
-
-  React.useEffect(() => {
-    if (width && !isRendered) {
-      setIsRendered(true);
-    }
-
-    if (playerRef.current) {
-      const offset = width < 768 ? 0 : 64;
-      const maxWidth = Math.min(960 - offset, width - offset);
-      const height = maxWidth * NINE_PER_SIXTEEN;
-      playerRef.current.setSize(maxWidth, height);
-    }
-  }, [isRendered, width]);
-
-  const { t, locale } = useLocale();
-  const { isSimplified } = usePreferences();
-
-  const videoId = youtubeUrl ? getVideoId(youtubeUrl, t.youtubeErrorToast) : null;
-
-  React.useEffect(() => {
-    if (videoId) {
-      dismissToast("youtube-error");
-    }
-  }, [videoId]);
-
-  const {
-    data: translation,
-    isLoading: isLoadingTranslation,
-    error: translationError,
-  } = useSWRImmutable<Subtitles>(videoId ? `/subtitles?videoID=${videoId}&lang=${locale}` : undefined);
-
-  const {
-    data: subtitles,
-    isLoading: isLoadingSubtitles,
-    error: subtitlesError,
-  } = useSWRImmutable<Subtitles>(
-    videoId ? `/subtitles?videoID=${videoId}&lang=${isSimplified ? "zh-CN" : "zh-TW"}` : undefined
-  );
-
-  const currentSub = subtitles?.find((subtitle) => {
-    return subtitle.start <= elapsedTime && subtitle.start + subtitle.duration >= elapsedTime;
-  });
-
-  const currentTranslation = translation?.find((subtitle) => {
-    return subtitle.start <= elapsedTime && subtitle.start + subtitle.duration >= elapsedTime;
-  });
-
-  const isLoading = isLoadingSubtitles || isLoadingTranslation;
-
-  React.useEffect(() => {
-    if (!isLoading && videoId && playerRef.current) {
-      playerRef.current.loadVideoById(videoId);
-    } else if (!videoId) {
-      playerRef.current?.pauseVideo();
-    }
-  }, [isLoading, videoId]);
-
-  React.useEffect(() => {
-    if (subtitlesError) {
-      if (subtitlesError?.response?.data?.error === "not-found")
-        createErrorToast(t.subtitlesErrorToast, {
-          id: "subtitles-error",
-          position: "bottom-center",
-        });
-    }
-  }, [subtitlesError, t.subtitlesErrorToast]);
-
-  React.useEffect(() => {
-    if (translationError) {
-      if (translationError?.response?.data?.error === "not-found")
-        createErrorToast(t.translationErrorToast, {
-          id: "translation-error",
-          position: "bottom-center",
-        });
-    }
-  }, [translationError, t.translationErrorToast]);
-
   return (
     <Layout>
-      <div className="min-h-dvh">
+      <div className="min-h-[200dvh]">
         <main className="max-w-[960px] mx-auto md:px-8 pb-4">
           <div className="max-md:sticky top-0 flex flex-col justify-end bg-black z-10 max-md:px-2 pb-2 border-b-[1.5px] border-b-subtle">
             <div className="w-fit">
@@ -178,30 +15,11 @@ export default function Youtube() {
             </div>
           </div>
 
-          <div className="relative mt-4 px-2 flex items-center gap-2">
-            <input
-              type="text"
-              value={youtubeUrl}
-              onChange={(e) => setYoutubeUrl(e.target.value)}
-              placeholder={t.youtubePlaceholder}
-              className="bg-transparent pl-3 pr-10 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 text-secondary focus:text-white transition-shadow duration-200 placeholder:text-secondary/50 focus:outline-none w-full"
-            />
-            <div className="absolute right-2 top-1/2 -translate-y-1/2 text-secondary p-2.5 bg-black h-fit">
-              {isLoading && <LoadingBar visible />}
-            </div>
-          </div>
-
-          <div
-            aria-hidden={!videoId}
-            className={cn("mt-4 duration-200", videoId ? "opacity-100" : "opacity-0 pointer-events-none")}
-          >
-            <div id="player"></div>
-          </div>
-
-          <div className="mt-4 px-2">
-            <p className="text-2xl text-center">{currentSub?.text}</p>
-            <p className="text-xl text-center text-secondary">{currentTranslation?.text}</p>
-          </div>
+          <AudioProvider>
+            <FlashcardProvider>
+              <VideoContainer />
+            </FlashcardProvider>
+          </AudioProvider>
         </main>
       </div>
     </Layout>

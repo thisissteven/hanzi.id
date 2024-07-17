@@ -34,11 +34,10 @@ type TokenizerResult = Array<{
 }>;
 
 // const punctuations = /([\u4e00-\u9fa5]+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
-const punctuations = /([\u4e00-\u9fa5]+|\d+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
+// const punctuations = /([\u4e00-\u9fa5]+|\d+|[^a-zA-Z0-9\u4e00-\u9fa5]+)/g;
+const punctuations = /([\u4e00-\u9fa5]+|\d+|[^a-zA-Z0-9\u4e00-\u9fa5]+|[a-zA-Z0-9]+)/g;
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<SegmentApiResponse>) {
-  const text = req.query.text as string;
-
+export function segmentFnId(text: string) {
   const splitted = text.match(punctuations) ?? [];
 
   const segmented = splitted.map((t) => {
@@ -79,6 +78,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Segmen
       };
     });
   });
+
+  return result;
+}
+
+export default function handler(req: NextApiRequest, res: NextApiResponse<SegmentApiResponse>) {
+  const text = req.query.text as string;
+
+  const result = segmentFnId(text);
 
   res.status(200).json({ result });
 }
