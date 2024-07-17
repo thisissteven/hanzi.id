@@ -56,6 +56,9 @@ importers:
       franc:
         specifier: ^6.2.0
         version: 6.2.0
+      get-video-id:
+        specifier: ^4.1.7
+        version: 4.1.7
       google-translate-api-browser:
         specifier: ^5.0.0
         version: 5.0.0
@@ -2503,6 +2506,10 @@ packages:
 
   get-tsconfig@4.7.5:
     resolution: {integrity: sha512-ZCuZCnlqNzjb4QprAzXKdpp/gh6KTxSJuw3IBsPnV/7fV4NxC9ckB+vPTt8w7fJA0TaSD7c55BR47JD6MEDyDw==}
+
+  get-video-id@4.1.7:
+    resolution: {integrity: sha512-bYHXe3BTbFbiViuNFyfFnZPnSDVWBu5N06p35LW7dD/ul4O1sdPSs3Brw8U/m5JlQUnkj3tht3luSz0k05vEYg==}
+    engines: {node: '>=16'}
 
   getpass@0.1.7:
     resolution: {integrity: sha512-0fzj9JxOLfJ+XGLhR8ze3unN0KZCgZwiSSDz168VERjK8Wl8kVSdcu2kspd4s4wtAa1y/qrVRiAA0WclVsu0ng==}
@@ -6908,6 +6915,10 @@ snapshots:
   get-tsconfig@4.7.5:
     dependencies:
       resolve-pkg-maps: 1.0.0
+
+  get-video-id@4.1.7:
+    dependencies:
+      '@babel/runtime': 7.24.7
 
   getpass@0.1.7:
     dependencies:

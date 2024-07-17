@@ -6,11 +6,18 @@ import { BackRouteButton, createErrorToast, dismissToast, LoadingBar, usePrefere
 import { Layout } from "@/modules/layout";
 import { useWindowSize } from "@/hooks";
 import { cn } from "@/utils";
+import getYoutubeVideoId from "get-video-id";
 
 function getVideoId(url: string, errorMessage: string) {
   try {
-    const urlObj = new URL(url);
-    return urlObj.searchParams.get("v");
+    const videoId = getYoutubeVideoId(url);
+    if (!videoId.id) {
+      createErrorToast(errorMessage, {
+        id: "youtube-error",
+        position: "bottom-center",
+      });
+    }
+    return videoId.id;
   } catch {
     createErrorToast(errorMessage, {
       id: "youtube-error",

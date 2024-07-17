@@ -30,6 +30,7 @@
     "cmdk": "^1.0.0",
     "framer-motion": "^11.2.10",
     "franc": "^6.2.0",
+    "get-video-id": "^4.1.7",
     "google-translate-api-browser": "^5.0.0",
     "hanzi-writer": "^3.7.0",
     "lodash.throttle": "^4.1.1",
