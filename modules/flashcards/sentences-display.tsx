@@ -22,7 +22,7 @@ export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: S
 
   if (lessons.length === 0) {
     return (
-      <div className="ml-3">
+      <div className="ml-3 sm:ml-4">
         <p className="text-lightgray">
           {t.noExampleSentencesFound} <span className="text-xl text-smokewhite">{hanzi}</span>
         </p>
