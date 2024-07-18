@@ -230,7 +230,11 @@ export function VideoContainer() {
     videoId ? `/subtitles/${locale}?videoID=${videoId}&lang=${isSimplified ? "zh-CN" : "zh-TW"}` : undefined
   );
 
-  const { sections, currentTranslation } = useSubtitlesTranslation({ subtitles, translation, elapsedTime });
+  const { sections, currentTranslation } = useSubtitlesTranslation({
+    subtitles,
+    translation,
+    elapsedTime: elapsedTime + 0.1,
+  });
 
   const isLoading = isLoadingSubtitles || isLoadingTranslation;
 
