@@ -77,72 +77,75 @@ export function VideoContainer() {
   React.useEffect(() => {
     let intervalId: number;
     if (isRendered) {
-      const offset = width < 768 ? 0 : 64;
-      const maxWidth = Math.min(960 - offset, width - offset);
-      const height = maxWidth * NINE_PER_SIXTEEN;
+      if (!playerRef.current) {
+        const offset = width < 768 ? 0 : 64;
+        const maxWidth = Math.min(960 - offset, width - offset);
+        const height = maxWidth * NINE_PER_SIXTEEN;
 
-      const player = new YT.Player("player", {
-        width: maxWidth,
-        height,
-        videoId: undefined,
-        playerVars:
-          lastTime === 0
-            ? undefined
-            : {
-                start: lastTime,
-              },
-      });
+        const player = new YT.Player("player", {
+          width: maxWidth,
+          height,
+          videoId: undefined,
+          playerVars:
+            lastTime === 0
+              ? undefined
+              : {
+                  start: lastTime,
+                },
+          events: {
+            onReady: () => {
+              playerRef.current = player;
+            },
+            onStateChange: (event) => {
+              try {
+                const target = event.target;
+                if (target) {
+                  const isPlaying = target?.getPlayerState() === YT.PlayerState.PLAYING;
+                  const isPaused = target?.getPlayerState() === YT.PlayerState.PAUSED;
 
-      player.addEventListener("onReady", () => {
-        playerRef.current = player;
-      });
+                  if (isPlaying && !isPaused) {
+                    setIsPlaying(true);
+                  } else {
+                    setIsPlaying(false);
+                  }
+                }
+              } catch {}
+            },
+          },
+        });
 
-      player.addEventListener("onStateChange", (event) => {
-        try {
-          const target = event.target;
-          if (target) {
-            const isPlaying = target?.getPlayerState() === YT.PlayerState.PLAYING;
-            const isPaused = target?.getPlayerState() === YT.PlayerState.PAUSED;
+        // This is the source "window" that will emit the events.
+        var iframeWindow = player.getIframe().contentWindow;
 
-            if (isPlaying && !isPaused) {
-              setIsPlaying(true);
-            } else {
-              setIsPlaying(false);
+        // So we can compare against new updates.
+        var lastTimeUpdate = 0;
+
+        // Listen to events triggered by postMessage,
+        // this is how different windows in a browser
+        // (such as a popup or iFrame) can communicate.
+        // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+        window.addEventListener("message", function (event) {
+          // Check that the event was sent from the YouTube IFrame.
+          if (event.source === iframeWindow) {
+            var data = JSON.parse(event.data);
+
+            // The "infoDelivery" event is used by YT to transmit any
+            // kind of information change in the player,
+            // such as the current time or a playback quality change.
+            if (data.event === "infoDelivery" && data.info && data.info.currentTime) {
+              // currentTime is emitted very frequently,
+              // but we only care about whole second changes.
+              var time = Math.round(data.info.currentTime * 10) / 10;
+
+              if (time !== lastTimeUpdate) {
+                lastTimeUpdate = time;
+                setElapsedTime(time);
+              }
             }
           }
-        } catch {}
-      });
-
-      // This is the source "window" that will emit the events.
-      var iframeWindow = player.getIframe().contentWindow;
-
-      // So we can compare against new updates.
-      var lastTimeUpdate = 0;
-
-      // Listen to events triggered by postMessage,
-      // this is how different windows in a browser
-      // (such as a popup or iFrame) can communicate.
-      // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
-      window.addEventListener("message", function (event) {
-        // Check that the event was sent from the YouTube IFrame.
-        if (event.source === iframeWindow) {
-          var data = JSON.parse(event.data);
-
-          // The "infoDelivery" event is used by YT to transmit any
-          // kind of information change in the player,
-          // such as the current time or a playback quality change.
-          if (data.event === "infoDelivery" && data.info && data.info.currentTime) {
-            // currentTime is emitted very frequently,
-            // but we only care about whole second changes.
-            var time = Math.round(data.info.currentTime * 10) / 10;
-
-            if (time !== lastTimeUpdate) {
-              lastTimeUpdate = time;
-              setElapsedTime(time);
-            }
-          }
-        }
-      });
+        });
+      } else {
+      }
     }
 
     intervalId = window.setInterval(() => {
@@ -230,7 +233,11 @@ export function VideoContainer() {
     return subtitle.start <= elapsedTime && subtitle.start + subtitle.duration >= elapsedTime && subtitle.text;
   });
 
-  const currentTranslation = index !== undefined ? translation?.subtitles[index] : null;
+  const translationIndex = translation?.subtitles.findIndex((subtitle) => {
+    return subtitle.start <= elapsedTime && subtitle.start + subtitle.duration >= elapsedTime && subtitle.text;
+  });
+
+  const currentTranslation = translationIndex !== undefined ? translation?.subtitles[translationIndex] : null;
 
   const sections = React.useMemo(() => {
     return index !== undefined ? subtitles?.sections[index] : null;
@@ -241,6 +248,7 @@ export function VideoContainer() {
   React.useEffect(() => {
     if (!isLoading && videoId && playerRef.current) {
       playerRef.current.loadVideoById(videoId, lastTime);
+      window.scrollTo({ top: 0 });
     } else if (!videoId) {
       playerRef.current?.pauseVideo();
     }
