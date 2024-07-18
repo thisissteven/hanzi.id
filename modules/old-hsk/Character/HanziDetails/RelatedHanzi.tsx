@@ -3,6 +3,7 @@ import { HanziApiResponse } from "../types";
 import { Popover, Drawer, usePreferences } from "@/components";
 import clsx from "clsx";
 import { useWindowSize } from "@/hooks";
+import { useLocale } from "@/locales/use-locale";
 
 export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: HanziApiResponse["related"] }) {
   const { width } = useWindowSize();
@@ -10,16 +11,20 @@ export function RelatedHanzi({ hanzi, related }: { hanzi: string; related: Hanzi
 
   const { isSimplified } = usePreferences();
 
+  const { t } = useLocale();
+
   const regex = new RegExp(`(${hanzi})`);
 
   if (!related) return null;
 
   return (
     <Drawer.NestedRoot direction={isMobile ? "bottom" : "right"}>
-      <Drawer.Trigger className="pl-4 text-sm underline underline-offset-2">see related</Drawer.Trigger>
+      <Drawer.Trigger className="pl-4 text-sm underline underline-offset-2">{t.seeRelated}</Drawer.Trigger>
       <Drawer.Content className={clsx("pt-4", isMobile ? "h-[95dvh] left-0" : "h-dvh rounded-none max-w-xl w-full")}>
         <div className="relative space-y-2 p-4 max-sm:pb-8 h-full overflow-y-auto scrollbar-none">
-          <p className="text-xl font-medium">Related to {hanzi}</p>
+          <p className="text-xl font-medium">
+            {t.relatedTo} {hanzi}
+          </p>
           {related.length === 0 && (
             <p>
               Related Hanzi for <span className="text-xl">{hanzi}</span> not found.

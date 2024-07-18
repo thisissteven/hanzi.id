@@ -108,8 +108,7 @@ function useRecentlySearched() {
   return { recentlySearched, updateRecentlySearched, clearRecentlySearched };
 }
 
-const regex =
-  /^[\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF0-9，。！？、；：“”‘’（）《》【】!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~ ]+$/;
+const regex = /^(?!^[A-Za-z]+$).*$/;
 
 function CommandMenuContent() {
   const listRef = React.useRef<HTMLDivElement>(null);

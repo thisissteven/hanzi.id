@@ -81,10 +81,12 @@ export function CommandMenuGroupCard({
                   className={cn(
                     "underline-offset-4 border-b-[1.5px] border-softblack",
                     "relative rounded-b-md rounded-t pb-0.5 box-clone",
-                    shouldHighlight && "cursor-pointer active:bg-indigo-300/20",
+                    shouldHighlight && !section.isPunctuation && "cursor-pointer active:bg-indigo-300/20",
                     activeIndex === index &&
                       shouldHighlight &&
-                      "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30"
+                      !section.isPunctuation &&
+                      "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30",
+                    section.isPunctuation && "border-transparent"
                   )}
                 >
                   {hanzi}

@@ -213,5 +213,11 @@
   "youtubeErrorToast": "Please enter a valid youtube URL.",
   "subtitlesErrorToast": "No subtitles found for this video.",
   "translationErrorToast": "No translation found for this video.",
-  "lastWatched": "Last Watched"
+  "lastWatched": "Last Watched",
+  "purpleCulture": "See sentences from purpleculture.net",
+  "noExampleSentencesFound": "No example sentences found for",
+  "seeRelated": "See related",
+  "relatedTo": "Related to",
+  "seeIdioms": "See Idioms",
+  "exampleIdiomsOf": "Example Idioms of"
 }

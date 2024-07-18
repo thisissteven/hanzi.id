@@ -207,5 +207,11 @@
   "youtubeErrorToast": "Harap masukkan URL youtube yang valid.",
   "subtitlesErrorToast": "Subtitle tidak ditemukan untuk video ini.",
   "translationErrorToast": "Terjemahan tidak ditemukan untuk video ini.",
-  "lastWatched": "Terakhir Ditonton"
+  "lastWatched": "Terakhir Ditonton",
+  "purpleCulture": "Lihat kalimat dari purpleculture.net",
+  "noExampleSentencesFound": "Tidak ditemukan contoh kalimat untuk",
+  "seeRelated": "Lihat terkait",
+  "relatedTo": "Terkait dengan",
+  "seeIdioms": "Lihat Idiom",
+  "exampleIdiomsOf": "Contoh Idiom dari"
 }

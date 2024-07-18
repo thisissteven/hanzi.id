@@ -3,6 +3,8 @@ import React from "react";
 import clsx from "clsx";
 import { AudioButton } from "../hsk";
 import { Sentences } from "./example-sentences";
+import { CopyToClipboard } from "../speech";
+import { useLocale } from "@/locales/use-locale";
 
 export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: Sentences }) {
   const [currentLevel, setCurrentLevel] = React.useState<string | null>(lessons?.[0]?.lessonInfo?.level?.toLowerCase());
@@ -16,11 +18,22 @@ export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: S
 
   const { isSimplified } = usePreferences();
 
+  const { t } = useLocale();
+
   if (lessons.length === 0) {
     return (
-      <p className="ml-3 sm:ml-4 text-lightgray">
-        No example sentences found for <span className="text-xl text-smokewhite">{hanzi}</span>
-      </p>
+      <div className="ml-3">
+        <p className="text-lightgray">
+          {t.noExampleSentencesFound} <span className="text-xl text-smokewhite">{hanzi}</span>
+        </p>
+        <a
+          className="text-sky-500 underline underline-offset-2"
+          href={`https://www.purpleculture.net/dictionary-details?word=${hanzi}`}
+          target="_blank"
+        >
+          {t.purpleCulture}
+        </a>
+      </div>
     );
   }
 
@@ -64,6 +77,11 @@ export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: S
                         );
                       return <React.Fragment key={index}>{part}</React.Fragment>;
                     })}
+                    <CopyToClipboard
+                      className="inline-flex align-middle max-sm:mb-0.5 active:bg-transparent md:w-9 md:h-9"
+                      text={isSimplified ? lesson.simplified : lesson.traditional}
+                      size={16}
+                    />
                     <AudioButton
                       size="small"
                       key={index}
