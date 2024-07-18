@@ -177,7 +177,7 @@ export default function FlashcardsPage() {
                         <div className="mt-1 flex gap-2 items-center">
                           <p className="text-secondary">{bookName}</p>
 
-                          <div className="inline-flex max-sm:hidden text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
+                          <div className="whitespace-nowrap inline-flex max-sm:hidden text-xs items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-2 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
                             {flashcard.words.length} 卡
                           </div>
                         </div>
@@ -188,7 +188,7 @@ export default function FlashcardsPage() {
                         aria-hidden="true"
                       />
 
-                      <div className="inline-flex sm:hidden text-sm items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-3 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
+                      <div className="inline-flex whitespace-nowrap sm:hidden text-sm items-center rounded-full backdrop-blur-sm bg-blue-500/10 dark:bg-blue-400/10 px-3 py-1 font-medium text-blue-500 dark:text-blue-400 ring-1 ring-inset ring-blue-500/20 dark:ring-blue-400/20 w-fit">
                         {flashcard.words.length} 卡
                       </div>
                     </Link>
