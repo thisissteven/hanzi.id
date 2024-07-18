@@ -100,6 +100,7 @@ export function VideoContainer() {
             onStateChange: (event) => {
               try {
                 const target = event.target;
+
                 if (target) {
                   const isPlaying = target?.getPlayerState() === YT.PlayerState.PLAYING;
                   const isPaused = target?.getPlayerState() === YT.PlayerState.PAUSED;
@@ -233,7 +234,7 @@ export function VideoContainer() {
   const { sections, currentTranslation } = useSubtitlesTranslation({
     subtitles,
     translation,
-    elapsedTime: elapsedTime + 0.1,
+    elapsedTime: elapsedTime + 0.125,
   });
 
   const isLoading = isLoadingSubtitles || isLoadingTranslation;

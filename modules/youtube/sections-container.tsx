@@ -60,6 +60,7 @@ export function SectionsContainer({
             nextIndex++;
           }
           if (section.isPunctuation && index > 0) return null;
+
           return (
             <span
               key={index}
@@ -76,12 +77,12 @@ export function SectionsContainer({
                   "underline-offset-4 cursor-pointer border-b-[1.5px] border-softblack",
                   "relative rounded-b-md rounded-t pb-0.5 box-clone active:bg-indigo-300/20",
                   activeIndex === index && !isPlaying && "bg-indigo-300/30 border-sky-300 active:bg-indigo-300/30",
-                  isPlaying && "pointer-events-none"
+                  isPlaying && "pointer-events-none border-transparent"
                 )}
               >
                 {isSimplified ? section.simplified : section.traditional}
               </span>
-              {additionalPunctuation}
+              {additionalPunctuation.trim()}
             </span>
           );
         })}
