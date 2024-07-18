@@ -9,6 +9,7 @@ import { SectionsContainer } from "@/modules/youtube";
 import { SubtitleResponse } from "@/pages/api/subtitles/en";
 import Image from "next/image";
 import { LucideX } from "lucide-react";
+import { useSubtitlesTranslation } from "./use-subtitles-translation";
 
 function getVideoId(url: string, errorMessage: string) {
   try {
@@ -229,19 +230,7 @@ export function VideoContainer() {
     videoId ? `/subtitles/${locale}?videoID=${videoId}&lang=${isSimplified ? "zh-CN" : "zh-TW"}` : undefined
   );
 
-  const index = subtitles?.subtitles.findIndex((subtitle) => {
-    return subtitle.start <= elapsedTime && subtitle.start + subtitle.duration >= elapsedTime && subtitle.text;
-  });
-
-  const translationIndex = translation?.subtitles.findIndex((subtitle) => {
-    return subtitle.start <= elapsedTime && subtitle.start + subtitle.duration >= elapsedTime && subtitle.text;
-  });
-
-  const currentTranslation = translationIndex !== undefined ? translation?.subtitles[translationIndex] : null;
-
-  const sections = React.useMemo(() => {
-    return index !== undefined ? subtitles?.sections[index] : null;
-  }, [index, subtitles]);
+  const { sections, currentTranslation } = useSubtitlesTranslation({ subtitles, translation, elapsedTime });
 
   const isLoading = isLoadingSubtitles || isLoadingTranslation;
 
