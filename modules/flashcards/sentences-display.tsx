@@ -59,7 +59,7 @@ export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: S
           })}
         </DragToScrollWrapper>
       )}
-      <ul className="relative space-y-2 px-4 mt-2">
+      <ul className="relative space-y-2 px-3 sm:px-4 mt-2">
         {currentLesson.map((lesson, index) => {
           const splitted = isSimplified ? lesson.simplified.split(regex) : lesson.traditional.split(regex);
 

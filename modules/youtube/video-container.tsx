@@ -302,6 +302,7 @@ export function VideoContainer() {
             {lastWatched.map((watched) => {
               return (
                 <div
+                  role="button"
                   key={watched.videoID}
                   className="p-4 flex flex-col gap-2 active:bg-hovered duration-200"
                   onClick={() => {
