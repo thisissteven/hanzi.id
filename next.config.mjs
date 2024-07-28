@@ -27,6 +27,12 @@ const nextConfig = {
         port: "",
         protocol: "https",
       },
+      {
+        hostname: "cdn.langeek.co",
+        pathname: "/**",
+        port: "",
+        protocol: "https",
+      },
     ],
   },
 
