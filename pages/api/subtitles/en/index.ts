@@ -88,6 +88,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   } catch (err) {
     res.status(400).json({
       error: "not-found",
+      details: err
     });
   }
 }

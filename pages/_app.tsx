@@ -85,10 +85,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
       <SWRConfig
         value={{
-          fetcher: (url) => {
-            if (url.includes("undefined")) return undefined;
-            return apiClient.get(url).then((res) => res.data);
-          },
+          fetcher,
         }}
       >
         <SessionProvider session={pageProps.session}>
@@ -131,3 +128,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
     </ThemeProvider>
   );
 }
+
+export const fetcher = (url: any) => {
+  if (url.includes("undefined")) return undefined;
+  return apiClient.get(url).then((res) => res.data);
+};

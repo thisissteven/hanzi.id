@@ -10,6 +10,7 @@ import { SubtitleResponse } from "@/pages/api/subtitles/en";
 import Image from "next/image";
 import { LucideX } from "lucide-react";
 import { useSubtitlesTranslation } from "./use-subtitles-translation";
+import { fetcher } from "@/pages/_app";
 
 function getVideoId(url: string, errorMessage: string) {
   try {
@@ -221,7 +222,13 @@ export function VideoContainer() {
     data: translation,
     isLoading: isLoadingTranslation,
     error: translationError,
-  } = useSWRImmutable<SubtitleResponse>(videoId ? `/subtitles/${locale}?videoID=${videoId}&lang=${locale}` : undefined);
+  } = useSWRImmutable<SubtitleResponse>(
+    videoId ? `/subtitles/${locale}?videoID=${videoId}&lang=${locale}` : undefined,
+    fetcher as any,
+    {
+      shouldRetryOnError: false,
+    }
+  );
 
   const {
     data: subtitles,
