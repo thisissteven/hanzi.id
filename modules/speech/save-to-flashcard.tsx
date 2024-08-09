@@ -82,7 +82,15 @@ export function SaveToFlashcard({ word }: { word?: string }) {
   );
 }
 
-export function AddOrRemoveFromFlashcard({ chapterName, word }: { chapterName: string; word?: string }) {
+export function AddOrRemoveFromFlashcard({
+  chapterName,
+  word,
+  possibleWords,
+}: {
+  chapterName: string;
+  word?: string;
+  possibleWords: string[];
+}) {
   const { flashcard, addToFlashcard, removeFromFlashcard } = useFlashcardContext();
 
   const currentFlashcard = React.useMemo(
@@ -92,7 +100,7 @@ export function AddOrRemoveFromFlashcard({ chapterName, word }: { chapterName: s
 
   if (!word || chapterName.includes("undefined")) return null;
 
-  const isSaved = Boolean(currentFlashcard && currentFlashcard.words.includes(word));
+  const isSaved = Boolean(currentFlashcard && possibleWords.some((hanzi) => currentFlashcard.words.includes(hanzi)));
 
   const Icon = isSaved ? CircleCheckIcon : CirclePlusIcon;
   return (
@@ -101,9 +109,9 @@ export function AddOrRemoveFromFlashcard({ chapterName, word }: { chapterName: s
       className="group relative flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full transition-colors duration-200 active:bg-hovered"
       onClick={() => {
         if (isSaved) {
-          removeFromFlashcard(chapterName, word);
+          removeFromFlashcard(chapterName, possibleWords);
         } else {
-          addToFlashcard(chapterName, word);
+          addToFlashcard(chapterName, possibleWords);
         }
       }}
       aria-label={isSaved ? "remove from flashcard" : "save to flashcard"}

@@ -4,8 +4,8 @@ import { Flashcard } from "../layout";
 const FlashcardContext = React.createContext(
   {} as {
     flashcard: Array<Flashcard>;
-    addToFlashcard: (chapterName: string, word: string) => void;
-    removeFromFlashcard: (chapterName: string, word: string) => void;
+    addToFlashcard: (chapterName: string, possibleWords: string[]) => void;
+    removeFromFlashcard: (chapterName: string, possibleWords: string[]) => void;
   }
 );
 
@@ -26,11 +26,11 @@ export function FlashcardProvider({ children }: { children: React.ReactNode }) {
 export function useFlashcardList() {
   const [flashcard, setFlashcard] = React.useState<Array<Flashcard>>([]);
 
-  const addToFlashcard = React.useCallback((chapterName: string, word: string) => {
+  const addToFlashcard = React.useCallback((chapterName: string, possibleWords: string[]) => {
     setFlashcard((prev) => {
       const flashcardItem = prev.find((f) => f.chapter === chapterName);
       if (flashcardItem) {
-        const newWords = [...flashcardItem.words, word];
+        const newWords = [...flashcardItem.words, ...possibleWords];
         const newFlashcard = prev.map((f) => {
           if (f.chapter === chapterName) {
             return {
@@ -48,7 +48,7 @@ export function useFlashcardList() {
           ...prev,
           {
             chapter: chapterName,
-            words: [word],
+            words: [...possibleWords],
           },
         ];
 
@@ -58,11 +58,11 @@ export function useFlashcardList() {
     });
   }, []);
 
-  const removeFromFlashcard = React.useCallback((chapterName: string, word: string) => {
+  const removeFromFlashcard = React.useCallback((chapterName: string, possibleWords: string[]) => {
     setFlashcard((prev) => {
       const flashcardItem = prev.find((f) => f.chapter === chapterName);
       if (flashcardItem) {
-        const newWords = flashcardItem.words.filter((w) => w !== word);
+        const newWords = flashcardItem.words.filter((w) => !possibleWords.includes(w));
         const newFlashcard = prev.map((f) => {
           if (f.chapter === chapterName) {
             return {

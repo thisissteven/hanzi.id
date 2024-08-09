@@ -32,8 +32,10 @@ export function VirtualizedCards({
             const index = item.index;
             const card = cards[index];
 
-            const pinyin = card?.entries?.map((entry) => entry.pinyin).join("/");
-            const translations = card?.entries?.[0].english.join(", ");
+            if (!card.entries || card.entries.length === 0) return null;
+
+            const pinyin = card.entries.map((entry) => entry.pinyin).join("/");
+            const translations = card.entries[0].english.join(", ");
 
             return (
               <VirtualizedList.Item key={item.key} virtualizer={virtualizer} item={item}>

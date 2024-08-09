@@ -2,6 +2,12 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { segmentFnEn } from "../../segment/en";
 import { SegmentedResult } from "../../segment/id";
 
+export const config = {
+  maxDuration: 15,
+};
+
+export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
+
 const getSubtitles = async ({ videoID, lang = "en" }: { videoID: string; lang?: string }) => {
   const response = await fetch(`https://youtube.com/watch?v=${videoID}`);
 
@@ -88,7 +94,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   } catch (err) {
     res.status(400).json({
       error: "not-found",
-      details: err
+      details: err,
     });
   }
 }

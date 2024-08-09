@@ -50,6 +50,16 @@ export function CardDetailsModal({
   const hanzi = isSimplified
     ? details?.simplified ?? latestDetails.current?.simplified
     : details?.traditional ?? latestDetails.current?.traditional;
+
+  const possibleWords = Array.from(
+    new Set([
+      details?.simplified,
+      details?.traditional,
+      latestDetails.current?.simplified,
+      latestDetails.current?.traditional,
+    ])
+  ).filter((item) => item !== undefined);
+
   const isIdiom = hanzi && hanzi.length >= 3;
 
   const entries = details?.entries ?? latestDetails.current?.entries ?? [];
@@ -96,7 +106,12 @@ export function CardDetailsModal({
                           <AudioButton text={hanzi ?? ""} size="normal" />
                         </div>
                       )}
-                      <AddOrRemoveFromFlashcard key={hanzi} chapterName={chapterName} word={hanzi} />
+                      <AddOrRemoveFromFlashcard
+                        key={hanzi}
+                        chapterName={chapterName}
+                        word={hanzi}
+                        possibleWords={possibleWords}
+                      />
                     </div>
 
                     {entries.length > 1 && (

@@ -3,7 +3,7 @@ import { Flashcard, Layout, useFlashcardList } from "@/modules/layout";
 import { BackRouteButton, createErrorToast, createSuccessToast, Divider, RouteDialog, Textarea } from "@/components";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ChevronRightIcon, Divide } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 import { useLocale } from "@/locales/use-locale";
 import { useRouter } from "next/router";
 

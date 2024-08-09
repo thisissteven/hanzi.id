@@ -44,6 +44,10 @@ export function SectionsContainer({
 
   const currentHanzi = isSimplified ? currentSection?.simplified : currentSection?.traditional;
 
+  const possibleWords = Array.from(new Set([currentSection?.simplified, currentSection?.traditional])).filter(
+    (item) => item !== undefined
+  );
+
   const { width } = useWindowSize();
 
   return (
@@ -120,7 +124,12 @@ export function SectionsContainer({
                 </div>
               )}
 
-              <AddOrRemoveFromFlashcard key={currentHanzi} chapterName={flashcardName} word={currentHanzi} />
+              <AddOrRemoveFromFlashcard
+                key={currentHanzi}
+                chapterName={flashcardName}
+                word={currentHanzi}
+                possibleWords={possibleWords}
+              />
             </div>
 
             {currentEntries.length > 1 && (
