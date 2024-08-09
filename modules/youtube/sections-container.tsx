@@ -128,7 +128,7 @@ export function SectionsContainer({
                 key={currentHanzi}
                 chapterName={flashcardName}
                 word={currentHanzi}
-                possibleWords={possibleWords}
+                possibleWords={possibleWords as string[]}
               />
             </div>
 

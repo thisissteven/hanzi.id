@@ -110,7 +110,7 @@ export function CardDetailsModal({
                         key={hanzi}
                         chapterName={chapterName}
                         word={hanzi}
-                        possibleWords={possibleWords}
+                        possibleWords={possibleWords as string[]}
                       />
                     </div>
 
