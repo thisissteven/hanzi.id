@@ -3,8 +3,6 @@ import { segmentFnEn } from "../../segment/en";
 import { SegmentedResult } from "../../segment/id";
 import axios from "axios";
 
-import fs from "fs";
-
 export const config = {
   maxDuration: 15,
 };
@@ -13,6 +11,8 @@ export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs"
 
 const getSubtitles = async ({ videoID, lang = "en" }: { videoID: string; lang?: string }) => {
   const { data } = await axios.get(`https://youtube.com/watch?v=${videoID}`);
+
+  console.log(data);
 
   // Check if the video page contains captions
   if (!data.includes("captionTracks")) {
