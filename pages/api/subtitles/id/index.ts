@@ -3,7 +3,9 @@ import { SegmentedResult, segmentFnId } from "../../segment/id";
 import axios from "axios";
 
 const getSubtitles = async ({ videoID, lang = "en" }: { videoID: string; lang?: string }) => {
-  const { data } = await axios.get(`https://youtube.com/watch?v=${videoID}`);
+  const { data } = await axios.get(`https://youtube.com/watch?v=${videoID}`, {
+    withCredentials: false,
+  });
 
   // Check if the video page contains captions
   if (!data.includes("captionTracks")) {
