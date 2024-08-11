@@ -2,12 +2,6 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { SegmentedResult, segmentFnId } from "../../segment/id";
 import axios from "axios";
 
-export const config = {
-  maxDuration: 15,
-};
-
-export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
-
 const getSubtitles = async ({ videoID, lang = "en" }: { videoID: string; lang?: string }) => {
   const { data } = await axios.get(`https://youtube.com/watch?v=${videoID}`);
 
