@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import axios from "axios";
-import fs from "fs";
 
 const userAgents = [
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
@@ -17,12 +16,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       },
     });
 
-    fs.writeFileSync("data.html", data);
-
     res.status(200).json(data);
   } catch (err) {
     res.status(400).json({
       error: "not-found",
+      err,
     });
   }
 }
