@@ -21,7 +21,6 @@ import { SessionProvider } from "next-auth/react";
 import { AuthProvider } from "@/modules/auth";
 import { Toaster } from "sonner";
 
-import { Analytics } from "@vercel/analytics/react";
 import { SearchCommandMenu } from "@/modules/search";
 
 import posthog from "posthog-js";
@@ -80,8 +79,6 @@ export default function App({ Component, pageProps, router }: AppProps) {
       <Seo />
 
       <Toaster position="top-center" />
-
-      {process.env.NODE_ENV === "production" && <Analytics />}
 
       <SWRConfig
         value={{
