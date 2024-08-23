@@ -6,6 +6,7 @@ import {
   KeyboardIcon,
   LibraryBigIcon,
   LightbulbIcon,
+  LucidePodcast,
   LucideTvMinimalPlay,
   PickaxeIcon,
   SearchIcon,
@@ -90,17 +91,13 @@ export function HomeTodo() {
         </Button>
 
         <Button
-          path="/youtube"
+          path="/podcast"
           className="relative hover:bg-sky-200/5"
           icon={
-            <LucideTvMinimalPlay
-              size={48}
-              strokeWidth={1.5}
-              className="shrink-0 duration-200 group-hover:text-sky-400"
-            />
+            <LucidePodcast size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
           }
-          title={t.home.youtube.title}
-          description={t.home.youtube.description}
+          title={t.home.podcast.title}
+          description={t.home.podcast.description}
         />
 
         {isAdmin && (
