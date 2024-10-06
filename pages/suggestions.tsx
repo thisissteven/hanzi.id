@@ -4,7 +4,7 @@ import { BackRouteButton, createErrorToast, createSuccessToast, Textarea } from 
 import { cn, useMutation } from "@/utils";
 import { useLocale } from "@/locales/use-locale";
 
-export default function GetStartedPage() {
+export default function SuggestionsPage() {
   const [category, setCategory] = React.useState(0);
 
   const { trigger, status } = useMutation("/suggestions");

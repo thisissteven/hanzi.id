@@ -43,6 +43,10 @@
     "suggestions": {
       "title": "Saran",
       "description": "Fitur baru, perbaikan, atau buku yang ingin Anda tambahkan ke situs."
+    },
+    "teleprompter": {
+      "title": "Teleprompter",
+      "description": "Tingkatkan kecepatan membaca bahasa Cina Anda dengan teleprompter."
     }
   },
   "startReading": "Mulai Membaca",
@@ -59,6 +63,14 @@
     "submitLoading": "Mengirim...",
     "submit": "Kirim"
   },
+  "teleprompter": {
+    "submit": "Mulai",
+    "placeholder": "Masukkan teks bahasa Cina di sini...",
+    "desiredReadingSpeed": "Kecepatan Membaca (CPM):",
+    "readingSpeedInfo": "Rata-rata kecepatan membaca adalah 259 karakter per menit. Sesuaikan kecepatan sesuai preferensi Anda."
+  },
+  "pause": "Jeda",
+  "resume": "Lanjutkan",
   "sentence": "Kalimat",
   "definition": "Definisi",
   "translation": "Terjemahan",

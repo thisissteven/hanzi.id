@@ -2,12 +2,12 @@ import React from "react";
 import { Button } from "./buttons";
 import {
   BookAIcon,
+  ClapperboardIcon,
   FilePlus2Icon,
   KeyboardIcon,
   LibraryBigIcon,
   LightbulbIcon,
   LucidePodcast,
-  LucideTvMinimalPlay,
   PickaxeIcon,
   SearchIcon,
 } from "lucide-react";
@@ -87,6 +87,20 @@ export function HomeTodo() {
         >
           <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-amber-500/10 px-2 py-1 font-medium text-amber-500 ring-1 ring-inset ring-amber-500/20">
             {t.oldHSK}
+          </div>
+        </Button>
+
+        <Button
+          path="/teleprompter"
+          className="hover:bg-sky-200/5 relative"
+          icon={
+            <ClapperboardIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
+          }
+          title={t.home.teleprompter.title}
+          description={t.home.teleprompter.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-emerald-500/10 px-2 py-1 font-medium text-emerald-500 ring-1 ring-inset ring-emerald-500/20">
+            {t.new}
           </div>
         </Button>
 

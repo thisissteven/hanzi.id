@@ -43,6 +43,10 @@
     "suggestions": {
       "title": "Suggestions",
       "description": "New features, improvements, or books you would like to be added to the site."
+    },
+    "teleprompter": {
+      "title": "Teleprompter",
+      "description": "Improve your Chinese reading speed with a teleprompter."
     }
   },
   "startReading": "Start Reading",
@@ -59,6 +63,14 @@
     "submitLoading": "Sending...",
     "submit": "Send"
   },
+  "teleprompter": {
+    "submit": "Start",
+    "placeholder": "Enter Chinese text here...",
+    "desiredReadingSpeed": "Desired Reading Speed (CPM):",
+    "readingSpeedInfo": "The average reading speed is 259 characters per minute. Adjust the speed to your preference."
+  },
+  "pause": "Pause",
+  "resume": "Resume",
   "sentence": "Sentence",
   "definition": "Definition",
   "translation": "Translation",

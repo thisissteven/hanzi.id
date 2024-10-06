@@ -47,9 +47,14 @@ const config: Config = {
             opacity: "0",
           },
         },
+        teleprompter: {
+          "0%": { transform: "translateY(256px)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
       },
       animation: {
         blink: "blink 1s infinite 1s",
+        teleprompter: "teleprompter linear infinite",
       },
     },
   },
