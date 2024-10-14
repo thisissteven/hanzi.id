@@ -3,6 +3,21 @@ import React from "react";
 import { Home } from "@/modules/home";
 import { Layout } from "@/modules/layout";
 import { useLocale } from "@/locales/use-locale";
+import { CoffeeIcon } from "lucide-react";
+
+function ArrowRight() {
+  return (
+    <svg
+      viewBox="0 0 5 8"
+      className="mt-[2px] h-2 w-[5px] fill-lightgray/50 group-hover:fill-lightgray/80 duration-200"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      aria-hidden="true"
+    >
+      <path d="M.2.24A.75.75 0 0 1 1.26.2l3.5 3.25a.75.75 0 0 1 0 1.1L1.26 7.8A.75.75 0 0 1 .24 6.7L3.148 4 .24 1.3A.75.75 0 0 1 .2.24Z"></path>
+    </svg>
+  );
+}
 
 function HanziIdRedirect() {
   const { t } = useLocale();
@@ -25,15 +40,26 @@ function HanziIdRedirect() {
         <circle cx="1" cy="1" r="1"></circle>
       </svg>
       <span className="font-medium">{t.banner}</span>
-      <svg
-        viewBox="0 0 5 8"
-        className="mt-[2px] h-2 w-[5px] fill-lightgray/50 group-hover:fill-lightgray/80 duration-200"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        aria-hidden="true"
-      >
-        <path d="M.2.24A.75.75 0 0 1 1.26.2l3.5 3.25a.75.75 0 0 1 0 1.1L1.26 7.8A.75.75 0 0 1 .24 6.7L3.148 4 .24 1.3A.75.75 0 0 1 .2.24Z"></path>
+      <ArrowRight />
+    </a>
+  );
+}
+
+function TrakteerRedirect() {
+  const { t } = useLocale();
+
+  return (
+    <a
+      target="_blank"
+      href="https://trakteer.id/hanzi.id"
+      className="group whitespace-nowrap -my-2 items-center gap-2 rounded-full px-3 py-2 text-sm ring-1 ring-inset ring-white/[0.08] hover:bg-black/50 hover:ring-white/[0.13] sm:flex md:ml-8 flex"
+    >
+      <CoffeeIcon className="w-4 h-4 text-red-400" />
+      <svg width="2" height="2" aria-hidden="true" className="fill-white">
+        <circle cx="1" cy="1" r="1"></circle>
       </svg>
+      <span className="font-medium">{t.support}</span>
+      <ArrowRight />
     </a>
   );
 }
@@ -42,10 +68,11 @@ export default function Index() {
   return (
     <Layout>
       <div className="min-h-dvh">
-        <div className="mt-8 md:mt-12 w-fit mx-auto">
+        <div className="mt-8 md:mt-12 flex flex-wrap max-md:gap-6 justify-center w-fit mx-auto">
           <HanziIdRedirect />
+          <TrakteerRedirect />
         </div>
-        <main className="max-w-[960px] mx-auto px-4 md:px-8 pt-16 pb-6">
+        <main className="max-w-[960px] mx-auto px-4 md:px-8 pt-12 pb-6">
           <Home key="home" />
         </main>
       </div>
