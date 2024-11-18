@@ -46,16 +46,16 @@ export const useSmoothScroll = (virtualizer: Virtualizer<Window, Element>, easeI
         additionalOffset = 0,
       }: { align?: "start" | "center" | "end" | "auto"; duration?: number; additionalOffset?: number } = {}
     ) => {
-      const start = virtualizer.scrollOffset;
+      const start = virtualizer.scrollOffset ?? 0;
       const startTime = (scrollingRef.current = Date.now());
-      const [, align] = virtualizer.getOffsetForIndex(index, initialAlign);
+      const [, align] = virtualizer.getOffsetForIndex(index, initialAlign) ?? [0, "start"];
 
       const run = () => {
         if (scrollingRef.current !== startTime) return;
         const now = Date.now();
         const elapsed = now - startTime;
         const progress = easeInOut(Math.min(elapsed / duration, 1), easeInOutType);
-        const [offset] = virtualizer.getOffsetForIndex(index, align);
+        const [offset] = virtualizer.getOffsetForIndex(index, align) ?? [0, "start"];
         const interpolated = start + (offset - start) * progress;
 
         if (elapsed < duration) {
