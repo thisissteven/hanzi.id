@@ -2,7 +2,7 @@ import React from "react";
 import { usePreferences } from "@/components";
 import { CharacterCard } from "./character-card";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { useWindowSize } from "@/hooks";
+import { useSmoothScroll, useWindowSize } from "@/hooks";
 import useIsMobile from "@/hooks/useIsMobile";
 import { FlashcardedResultStrict } from "@/pages/api/flashcard/en";
 import { useReview } from "./provider";
@@ -49,18 +49,14 @@ export function CardContainer({
 
   const { currentIndex, reviewResult, flipped } = useReview();
 
+  const smoothScrollToIndex = useSmoothScroll(rowVirtualizer as any, "quad");
+
   React.useEffect(() => {
-    if (cardRefs.current) {
-      const currentCard = cardRefs.current[currentIndex];
-      if (currentCard) {
-        currentCard.scrollIntoView({
-          behavior: "smooth",
-          block: "nearest",
-          inline: "center",
-        });
-      }
-    }
-  }, [currentIndex]);
+    smoothScrollToIndex(currentIndex, {
+      align: "start",
+      duration: 300,
+    });
+  }, [currentIndex, smoothScrollToIndex]);
 
   return (
     <div className="mt-4 w-full overflow-x-hidden flex gap-2 scrollbar-none" ref={containerRef}>
