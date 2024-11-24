@@ -94,7 +94,7 @@ export default function FlashcardReview() {
             ) : (
               <Layout key="content">
                 <FlashcardReviewContent
-                  words={data}
+                  words={data.filter((card) => card.entries && card.entries.length > 0)}
                   onCardClick={(card) => {
                     setDetails(card);
                     router.push({ query: { ...router.query, open: true } }, undefined, { shallow: true });
