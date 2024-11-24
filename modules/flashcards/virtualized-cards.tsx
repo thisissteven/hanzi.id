@@ -32,7 +32,12 @@ export function VirtualizedCards({
             const index = item.index;
             const card = cards[index];
 
-            if (!card.entries || card.entries.length === 0) return null;
+            if (!card.entries || card.entries.length === 0)
+              return (
+                <div key={item.key} className="h-[92px]">
+                  -
+                </div>
+              );
 
             const pinyin = card.entries.map((entry) => entry.pinyin).join("/");
             const translations = card.entries[0].english.join(", ");

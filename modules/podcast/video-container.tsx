@@ -1,16 +1,14 @@
-import React from "react";
-import useSWRImmutable from "swr/immutable";
-import { useLocale } from "@/locales/use-locale";
-import { createErrorToast, dismissToast, LoadingBar, usePreferences } from "@/components";
+import { createErrorToast, dismissToast, usePreferences } from "@/components";
 import { useWindowSize } from "@/hooks";
+import { useLocale } from "@/locales/use-locale";
+import { SectionsContainer } from "@/modules/youtube";
+import { fetcher } from "@/pages/_app";
+import { SubtitleResponse } from "@/pages/api/subtitles/en";
 import { cn } from "@/utils";
 import getYoutubeVideoId from "get-video-id";
-import { SectionsContainer } from "@/modules/youtube";
-import { SubtitleResponse } from "@/pages/api/subtitles/en";
-import Image from "next/image";
-import { LucideX } from "lucide-react";
+import React from "react";
+import useSWRImmutable from "swr/immutable";
 import { useSubtitlesTranslation } from "./use-subtitles-translation";
-import { fetcher } from "@/pages/_app";
 
 function getVideoId(url: string, errorMessage: string) {
   try {

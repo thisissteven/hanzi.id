@@ -5,6 +5,7 @@ import {
   ClapperboardIcon,
   FilePlus2Icon,
   KeyboardIcon,
+  LanguagesIcon,
   LibraryBigIcon,
   LightbulbIcon,
   LucidePodcast,
@@ -91,18 +92,28 @@ export function HomeTodo() {
         </Button>
 
         <Button
-          path="/teleprompter"
+          path="/flashcards/radicals"
           className="hover:bg-sky-200/5 relative"
           icon={
-            <ClapperboardIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
+            <LanguagesIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
           }
-          title={t.home.teleprompter.title}
-          description={t.home.teleprompter.description}
+          title={t.home.radicals.title}
+          description={t.home.radicals.description}
         >
           <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-emerald-500/10 px-2 py-1 font-medium text-emerald-500 ring-1 ring-inset ring-emerald-500/20">
             {t.new}
           </div>
         </Button>
+
+        <Button
+          path="/teleprompter"
+          className="relative hover:bg-sky-200/5"
+          icon={
+            <ClapperboardIcon size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
+          }
+          title={t.home.teleprompter.title}
+          description={t.home.teleprompter.description}
+        />
 
         <Button
           path="/podcast"

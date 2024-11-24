@@ -1,80 +1,40 @@
 import React from "react";
-import { AudioProvider, Flashcard, Layout, useFlashcard } from "@/modules/layout";
-import { AlertModal, BackRouteButton, createSuccessToast, LoadMore } from "@/components";
-import { LucideTrash2 } from "lucide-react";
+import { AudioProvider, Flashcard, Layout } from "@/modules/layout";
+import { BackRouteButton, createSuccessToast, LoadMore, usePreferences } from "@/components";
 import { useRouter } from "next/router";
 import useSWRImmutable from "swr/immutable";
 
-import {
-  CardDetailsModal,
-  FlashcardProvider,
-  FlashcardSettingsModal,
-  FooterButtons,
-  VirtualizedCards,
-} from "@/modules/flashcards";
+import { CardDetailsModal, FlashcardProvider, FlashcardSettingsModal, VirtualizedCards } from "@/modules/flashcards";
 import { useLocale } from "@/locales/use-locale";
-import { FlashcardedResult } from "../api/flashcard/en";
+import { FlashcardedResult } from "@/pages/api/flashcard/en";
 
-function exportToPleco(words: string[], filename: string) {
-  const element = document.createElement("a");
-  const file = new Blob(
-    [`// ${filename}`, ...words].map((str) => str + "\n"),
-    { type: "text/plain" }
-  );
-  element.href = URL.createObjectURL(file);
-  element.download = `${filename}.txt`;
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-}
+export type RadicalFlashcard = {
+  radical: string;
+  description: string;
+  hanzis: string[];
+};
 
-export default function FlashcardsDetailsPage() {
+export default function RadicalFlashcardsDetailsPage() {
   const router = useRouter();
-  const id = router.query.id as string;
-  const { flashcardItem, removeFlashcard } = useFlashcard(id);
 
-  const [openAlert, setOpenAlert] = React.useState(false);
+  const radical = router.query.radical as string;
 
-  React.useEffect(() => {
-    if (openAlert) {
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.scrollbarGutter = "stable";
+  const { locale } = useLocale();
+
+  const { data } = useSWRImmutable<RadicalFlashcard>(
+    radical ? `/api/flashcard/radicals/${locale}/${radical}` : null,
+    async (_: string) => {
+      const contentUrl = `https://content.hanzi.id/radicals/list/${locale}/${radical}.json`;
+      const response = await fetch(contentUrl);
+      const data = await response.json();
+      return data;
     }
+  );
 
-    const timeout = setTimeout(() => {
-      if (!openAlert) {
-        document.body.style.overflowY = "scroll";
-        document.documentElement.style.scrollbarGutter = "";
-      }
-    }, 200);
-
-    return () => clearTimeout(timeout);
-  }, [openAlert]);
-
-  const { t } = useLocale();
+  const flashcardItem = data ? data.hanzis : undefined;
 
   return (
     <Layout>
-      <AlertModal
-        open={openAlert}
-        onClose={(value) => setOpenAlert(value)}
-        alertProps={{
-          cancelText: t.flashcard.cancelText,
-          confirmText: t.flashcard.confirmText,
-          title: t.flashcard.title,
-          description: t.flashcard.description,
-        }}
-        callback={() => {
-          // Delete flashcard
-          removeFlashcard();
-          setOpenAlert(false);
-          createSuccessToast(t.flashcard.successToast, {
-            id: "delete-flashcard-success",
-            duration: 5000,
-          });
-          router.back();
-        }}
-      />
       <div className="min-h-dvh">
         <main className="max-w-[960px] mx-auto md:px-8">
           <div className="max-md:sticky top-0 h-[11.25rem] flex flex-col justify-end bg-black z-10 max-md:px-2 pb-2 border-b-[1.5px] border-b-subtle">
@@ -82,15 +42,16 @@ export default function FlashcardsDetailsPage() {
               <div className="w-fit">
                 <BackRouteButton defaultBack />
               </div>
-              <button
-                onClick={() => setOpenAlert(true)}
-                className="mt-4 p-2 rounded-md duration-200 active:bg-hovered text-secondary flex items-center gap-2"
-              >
-                <LucideTrash2 />
-              </button>
             </div>
           </div>
-          {flashcardItem && <DisplayFlashcard flashcard={flashcardItem} />}
+          {flashcardItem && (
+            <DisplayFlashcard
+              flashcard={{
+                chapter: `${data?.radical}-${data?.description}`,
+                words: flashcardItem,
+              }}
+            />
+          )}
         </main>
       </div>
     </Layout>
@@ -115,8 +76,6 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   const [details, setDetails] = React.useState<FlashcardedResult>();
 
-  const { t } = useLocale();
-
   const chunkedCards = React.useMemo(() => {
     const cards = chunkArray(flashcard.words, CHUNK_SIZE);
     return {
@@ -127,7 +86,7 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
 
   const isEnd = loadingBatch === chunkedCards.maxBatch;
 
-  const { locale } = useLocale();
+  const { t, locale } = useLocale();
   const { data, isValidating } = useSWRImmutable<FlashcardedResult[]>(
     !isEnd && loadingBatch > -1 ? `flashcard/${locale}?text=${chunkedCards.data[loadingBatch].join("-")}` : undefined,
     async (url: string) => {
@@ -158,8 +117,13 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
         </FlashcardProvider>
       </AudioProvider>
       <FlashcardSettingsModal flashcard={flashcard} />
-      <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary">{chapterName}</h1>
-      <p className="mx-4 mt-1 text-secondary">{bookName}</p>
+
+      <div className="flex flex-wrap justify-between items-end gap-2">
+        <div className="">
+          <h1 className="mx-4 mt-4 text-2xl font-semibold text-primary line-clamp-1">{chapterName}</h1>
+          <p className="mx-4 mt-1 text-secondary line-clamp-2">{bookName}</p>
+        </div>
+      </div>
 
       <div className="min-h-[calc(100dvh-22rem)]">
         <VirtualizedCards
@@ -179,16 +143,33 @@ function DisplayFlashcard({ flashcard }: { flashcard: Flashcard }) {
         />
       </div>
 
-      {cards.length > 0 && (
-        <FooterButtons
-          onExport={() => {
-            exportToPleco(flashcard.words, flashcard.chapter);
-            createSuccessToast(t.exportSuccessful, {
-              id: "export-pleco-success",
+      <div className="sticky bottom-2 mt-6 max-md:mx-4 flex flex-col md:flex-row justify-end gap-2 pb-2">
+        <button
+          type="button"
+          onClick={() => {
+            const flashcards = JSON.parse(localStorage.getItem("flashcard-data") || "[]");
+            const isChapterExist = flashcards.find(
+              (flashcard: any) => flashcard.chapter === `${bookName}-${chapterName}`
+            );
+            if (!isChapterExist) {
+              localStorage.setItem("flashcard-data", JSON.stringify([...flashcards, flashcard]));
+            } else {
+              const set = new Set([...isChapterExist.words, ...flashcard.words]);
+              const combinedWords = Array.from(set);
+              const updatedFlashcards = flashcards.map((flashcard: any) =>
+                flashcard.chapter === `${bookName}-${chapterName}` ? { ...flashcard, words: combinedWords } : flashcard
+              );
+              localStorage.setItem("flashcard-data", JSON.stringify(updatedFlashcards));
+            }
+            createSuccessToast(t.wordsAdded, {
+              id: "add-to-flashcard-success",
             });
           }}
-        />
-      )}
+          className="shrink-0 rounded-md font-medium max-md:w-full text-white p-3 md:py-2.5 md:px-4 duration-200 bg-emerald-600 active:bg-emerald-700 disabled:opacity-50 flex items-center justify-center gap-2"
+        >
+          {t.addAllToFlashcard}
+        </button>
+      </div>
     </>
   );
 }

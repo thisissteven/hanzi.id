@@ -20,6 +20,10 @@
       "title": "Fitur Tambahan",
       "description": "Fitur lainnya terkait karakter Cina."
     },
+    "radicals": {
+      "title": "Radikal Mandarin",
+      "description": "Radikal mandarin dan contoh karakternya."
+    },
     "podcast": {
       "title": "Podcast Bahasa Cina",
       "description": "Subtitle ganda secara real-time dari podcast."
@@ -227,5 +231,9 @@
   "seeIdioms": "Lihat Idiom",
   "exampleIdiomsOf": "Contoh Idiom dari",
   "banner": "kamus bergambar",
-  "support": "Soal HSK"
+  "support": "Soal HSK",
+  "radicals": {
+    "title": "Radikal Mandarin",
+    "description": "Radikal mandarin dan contoh karakternya."
+  }
 }

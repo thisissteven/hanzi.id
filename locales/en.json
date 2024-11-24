@@ -16,6 +16,10 @@
       "title": "Learn HSK 1-6",
       "description": "Old HSK vocabulary lists and practice exams."
     },
+    "radicals": {
+      "title": "Chinese Radicals",
+      "description": "Chinese radicals and their corresponding characters."
+    },
     "podcast": {
       "title": "Chinese Podcast",
       "description": "Realtime dual-subtitle from podcasts."
@@ -233,5 +237,9 @@
   "seeIdioms": "See Idioms",
   "exampleIdiomsOf": "Example Idioms of",
   "banner": "images dictionary",
-  "support": "HSK Test Papers"
+  "support": "HSK Test Papers",
+  "radicals": {
+    "title": "Chinese Radicals",
+    "description": "Chinese radicals and their corresponding characters."
+  }
 }
