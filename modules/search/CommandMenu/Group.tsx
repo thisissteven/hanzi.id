@@ -97,7 +97,7 @@ export function CommandMenuGroupCard({
           })}
         </p>
         <div className="mt-2 flex justify-end">
-          <AudioButton speed={1.2} size={"normal"} text={sentence} />
+          <AudioButton speed={1} size={"normal"} text={sentence} />
         </div>
       </div>
 

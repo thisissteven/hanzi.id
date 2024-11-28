@@ -269,7 +269,7 @@ export function DefinitionModal({
                 </p>
                 <div key={sentence} className="mt-2 pr-2 flex justify-end items-center gap-1 md:gap-2">
                   <CopyToClipboard text={sentence} size={width < 768 ? 20 : 26} />
-                  <AudioButton speed={1.2} size={width < 768 ? "normal" : "large"} text={sentence} />
+                  <AudioButton speed={1} size={width < 768 ? "normal" : "large"} text={sentence} />
                 </div>
               </div>
 

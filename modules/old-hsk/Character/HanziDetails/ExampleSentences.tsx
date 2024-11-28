@@ -92,7 +92,7 @@ export function ExampleSentences({ hanzi, lessons }: { hanzi: string; lessons: H
                       size="small"
                       key={lesson.audioUrl}
                       text={isSimplified ? lesson.simplified : lesson.traditional}
-                      speed={1.3}
+                      speed={1}
                     />
                   </div>
                 </Popover.Trigger>

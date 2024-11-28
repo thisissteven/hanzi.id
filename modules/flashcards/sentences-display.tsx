@@ -86,7 +86,7 @@ export function SentencesDisplay({ hanzi, lessons }: { hanzi: string; lessons: S
                       size="small"
                       key={index}
                       text={isSimplified ? lesson.simplified : lesson.traditional}
-                      speed={1.3}
+                      speed={1}
                     />
                   </div>
                 </Popover.Trigger>

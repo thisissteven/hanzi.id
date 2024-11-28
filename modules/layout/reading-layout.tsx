@@ -103,7 +103,7 @@ export function useFlashcard(name: string) {
 export function ReadingProvider({ children }: { children: React.ReactNode }) {
   const [blurred, setBlurred] = React.useState(true);
   const [fontSize, setFontSize] = React.useState<(typeof fontSizeMap)[FontSize]>(fontSizeMap.xl);
-  const [speed, setSpeed] = React.useState(1.2);
+  const [speed, setSpeed] = React.useState(1);
   const [flashcard, setFlashcard] = React.useState<Array<Flashcard>>([]);
 
   const toggleBlur = React.useCallback(() => {
