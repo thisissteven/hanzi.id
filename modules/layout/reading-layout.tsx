@@ -1,31 +1,37 @@
 import { SpeechProvider } from "@/utils";
-import { Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon } from "lucide-react";
+import { Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon, Heading5Icon } from "lucide-react";
 import React from "react";
 import { AudioProvider } from "./hsk-layout";
 
-type FontSize = "base" | "lg" | "xl" | "2xl";
+type FontSize = "sm" | "base" | "lg" | "xl" | "2xl";
 
 export const fontSizeMap = {
-  base: {
+  sm: {
     className: "text-base md:text-lg",
+    icon: <Heading5Icon size={20} />,
+    iconLarge: <Heading4Icon size={22} />,
+    name: "sm",
+  },
+  base: {
+    className: "text-lg md:text-xl tracking-wide",
     icon: <Heading4Icon size={20} />,
     iconLarge: <Heading4Icon size={22} />,
     name: "base",
   },
   lg: {
-    className: "text-lg md:text-xl tracking-wide",
+    className: "text-xl md:text-2xl tracking-wider",
     icon: <Heading3Icon size={20} />,
     iconLarge: <Heading3Icon size={22} />,
     name: "lg",
   },
   xl: {
-    className: "text-xl md:text-2xl tracking-wider",
+    className: "text-2xl md:text-3xl leading-10 tracking-wide",
     icon: <Heading2Icon size={20} />,
     iconLarge: <Heading2Icon size={22} />,
     name: "xl",
   },
   "2xl": {
-    className: "text-2xl md:text-3xl leading-10 tracking-wide",
+    className: "text-3xl md:text-4xl leading-10 tracking-wide",
     icon: <Heading1Icon size={20} />,
     iconLarge: <Heading1Icon size={22} />,
     name: "2xl",
@@ -43,7 +49,9 @@ const ReadingContext = React.createContext(
     };
     speed: number;
     flashcard: Array<Flashcard>;
+    mode: "normal" | "flash";
     toggleBlur: () => void;
+    changeMode: (mode: "normal" | "flash") => void;
     changeFontSize: (fontSize: FontSize) => void;
     changeSpeed: (speed: number) => void;
     addToFlashcard: (chapterName: string, word: string) => void;
@@ -105,6 +113,7 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
   const [fontSize, setFontSize] = React.useState<(typeof fontSizeMap)[FontSize]>(fontSizeMap.xl);
   const [speed, setSpeed] = React.useState(1);
   const [flashcard, setFlashcard] = React.useState<Array<Flashcard>>([]);
+  const [mode, setMode] = React.useState<"normal" | "flash">("normal");
 
   const toggleBlur = React.useCallback(() => {
     setBlurred((prev) => {
@@ -204,6 +213,8 @@ export function ReadingProvider({ children }: { children: React.ReactNode }) {
           fontSize,
           speed,
           flashcard,
+          mode,
+          changeMode: setMode,
           toggleBlur,
           changeFontSize,
           changeSpeed,

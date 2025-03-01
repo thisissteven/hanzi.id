@@ -7,9 +7,10 @@ type VirtualizedListProps<T> = {
   //   estimateSize?: (index: number) => number;
   //   overscan?: number;
   virtualizer: Virtualizer<Window, Element>;
+  className?: string;
 };
 
-export function VirtualizedList<T>({ children, virtualizer }: VirtualizedListProps<T>) {
+export function VirtualizedList<T>({ children, virtualizer, className }: VirtualizedListProps<T>) {
   const listRef = React.useRef<HTMLDivElement | null>(null);
 
   const items = virtualizer.getVirtualItems();
@@ -17,7 +18,7 @@ export function VirtualizedList<T>({ children, virtualizer }: VirtualizedListPro
   const translateY = items[0]?.start ?? 0;
 
   return (
-    <div ref={listRef}>
+    <div ref={listRef} className={className}>
       <div
         style={{
           height: virtualizer.getTotalSize(),

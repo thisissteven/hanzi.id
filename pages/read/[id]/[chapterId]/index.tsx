@@ -15,6 +15,7 @@ import React from "react";
 import { useLastRead } from "@/modules/home/explore";
 import { useLocale } from "@/locales/use-locale";
 import { useSmoothScroll } from "@/hooks";
+import { ChangeMode } from "@/modules/speech/buttons/change-mode";
 
 export default function Read() {
   const router = useRouter();
@@ -150,6 +151,7 @@ export default function Read() {
                 </div>
                 <div className="flex gap-2 max-[810px]:-mr-0 -mr-2">
                   <ToggleBlur isPlaying={playbackState === "playing"} />
+                  <ChangeMode />
                   <ChangeFontSize />
                   <ChangeSpeed />
                 </div>

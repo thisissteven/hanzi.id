@@ -2,16 +2,15 @@ import { VirtualizedList } from "@/components";
 
 import React from "react";
 import { Line } from "./line";
-import { CurrentSentence } from "./current-sentence";
 import { cn, useDebounce } from "@/utils";
 import { Virtualizer } from "@tanstack/react-virtual";
 import useIsMobile from "@/hooks/useIsMobile";
 import { useReading } from "../layout";
 import { useRouter } from "next/router";
 import { toast } from "sonner";
-import { FlashSentence } from "./flash-sentence";
+import { CurrentSentenceOld } from "./current-sentence-old";
 
-export function TextContainer({
+export function TextContainerOld({
   sentences,
   currentSentenceIdx,
   toSentence,
@@ -34,7 +33,7 @@ export function TextContainer({
 
   const isPaused = useDebounce(paused, 200);
 
-  const { blurred, fontSize, mode } = useReading();
+  const { blurred, fontSize } = useReading();
 
   React.useEffect(() => {
     if (isPaused) {
@@ -61,12 +60,7 @@ export function TextContainer({
           )}
         ></div>
 
-        <VirtualizedList
-          virtualizer={virtualizer}
-          className={cn(
-            mode === "normal" || (mode === "flash" && paused) ? "opacity-100" : "opacity-0 pointer-events-none"
-          )}
-        >
+        <VirtualizedList virtualizer={virtualizer}>
           {(items, virtualizer) => {
             if (!sentences) return null;
 
@@ -121,9 +115,7 @@ export function TextContainer({
                   >
                     {index === currentSentenceIdx ? (
                       <>
-                        <CurrentSentence
-                          mode={mode}
-                          isPlaying={!paused}
+                        <CurrentSentenceOld
                           sentence={sentence}
                           currentSentenceIdx={currentSentenceIdx}
                           wordRange={currentWordRange}
@@ -146,16 +138,6 @@ export function TextContainer({
             });
           }}
         </VirtualizedList>
-
-        {mode === "flash" && !paused && (
-          <FlashSentence
-            mode={mode}
-            isPlaying={!paused}
-            sentence={sentences[currentSentenceIdx]}
-            currentSentenceIdx={currentSentenceIdx}
-            wordRange={currentWordRange}
-          />
-        )}
       </ul>
     </div>
   );

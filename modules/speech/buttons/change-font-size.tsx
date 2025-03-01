@@ -15,7 +15,7 @@ export function ChangeFontSize() {
         align="center"
         className="mr-2 md:mr-12 text-xs sm:text-sm leading-5 text-smokewhite p-1.5 w-fit"
       >
-        <ul className="grid grid-cols-4 gap-1.5 place-items-center">
+        <ul className="grid grid-cols-5 gap-1.5 place-items-center">
           {Object.values(fontSizeMap).map(({ className, icon, name }) => {
             const active = fontSize.name === name;
             return (

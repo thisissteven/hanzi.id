@@ -1,15 +1,13 @@
-import { cn, useScrollWhenSpeaking } from "@/utils";
+import { useScrollWhenSpeaking } from "@/utils";
 import React from "react";
 
 type CurrentSentenceProps = {
   sentence: string;
   wordRange: number[];
   currentSentenceIdx: number;
-  mode: "normal" | "flash";
-  isPlaying: boolean;
 };
 
-export function CurrentSentence({ sentence, wordRange, currentSentenceIdx, mode, isPlaying }: CurrentSentenceProps) {
+export function CurrentSentenceOld({ sentence, wordRange, currentSentenceIdx }: CurrentSentenceProps) {
   const [start, end] = wordRange;
 
   const ref = useScrollWhenSpeaking([currentSentenceIdx]);
@@ -28,9 +26,7 @@ export function CurrentSentence({ sentence, wordRange, currentSentenceIdx, mode,
       >
         {currentWord}
       </span>
-      <span className={cn(isPlaying && "opacity-30", start !== 0 && "opacity-30", "duration-200")}>
-        {sentence.slice(end)}
-      </span>
+      {sentence.slice(end)}
     </span>
   );
 }

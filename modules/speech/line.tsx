@@ -9,7 +9,15 @@ type LineProps = {
   children: React.ReactNode;
 } & React.ComponentPropsWithoutRef<"li">;
 
-export function Line({ index, paused = false, sentences, currentSentenceIndex, children, ...rest }: LineProps) {
+export function Line({
+  index,
+  paused = false,
+  sentences,
+  currentSentenceIndex,
+  children,
+  className,
+  ...rest
+}: LineProps) {
   const { blurred } = useReading();
 
   const shouldBlur = index < currentSentenceIndex && !paused;
@@ -34,7 +42,8 @@ export function Line({ index, paused = false, sentences, currentSentenceIndex, c
         isNotYetRevealed && !blurred && "opacity-30",
         isRevealed && "cursor-default hover:blur-0 hover:opacity-50 hover:delay-0 hover:duration-200",
         isPausedAndNotYetRevealed &&
-          "opacity-30 duration-1000 cursor-default hover:opacity-50 hover:delay-0 hover:duration-200"
+          "opacity-30 duration-1000 cursor-default hover:opacity-50 hover:delay-0 hover:duration-200",
+        className
       )}
       {...rest}
     >
