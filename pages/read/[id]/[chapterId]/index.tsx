@@ -16,6 +16,7 @@ import { useLastRead } from "@/modules/home/explore";
 import { useLocale } from "@/locales/use-locale";
 import { useSmoothScroll } from "@/hooks";
 import { ChangeMode } from "@/modules/speech/buttons/change-mode";
+import { ChangeVoice } from "@/modules/speech/buttons/change-voice";
 
 export default function Read() {
   const router = useRouter();
@@ -24,7 +25,17 @@ export default function Read() {
   const chapterId = router.query.chapterId as string;
   const sentenceIndex = router.query.sentenceIndex as string;
 
-  const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
+  const {
+    sentences,
+    currentSentenceIdx,
+    currentWordRange,
+    playbackState,
+    play,
+    pause,
+    toSentence,
+    changeVoice,
+    voices,
+  } = useSpeech();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -151,6 +162,7 @@ export default function Read() {
                 </div>
                 <div className="flex gap-2 max-[810px]:-mr-0 -mr-2">
                   <ToggleBlur isPlaying={playbackState === "playing"} />
+                  <ChangeVoice voices={voices} changeVoice={changeVoice} />
                   <ChangeMode />
                   <ChangeFontSize />
                   <ChangeSpeed />

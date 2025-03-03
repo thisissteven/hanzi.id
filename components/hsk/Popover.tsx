@@ -89,7 +89,7 @@ Popover.Item = function PopoverItem({ children, onSelect, className }: PopoverIt
   const { closePopover } = usePopover();
 
   return (
-    <li>
+    <li className="list-none">
       <button
         className={cn(popoverItemClassName, className)}
         value={children?.toString()}

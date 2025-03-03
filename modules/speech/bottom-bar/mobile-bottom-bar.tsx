@@ -60,7 +60,7 @@ export function MobileBottomBar({
   const width = (currentSentenceIdx / (sentences.length - 1)) * 100;
 
   return (
-    <div className="fixed bottom-2 px-2 w-full">
+    <div className="fixed bottom-2 pb-safe px-2 w-full">
       <div className="bg-subtle/50 backdrop-blur-md h-16 rounded-lg w-full p-2 pb-2.5 duration-200 overflow-hidden">
         <div className="flex h-full items-center gap-3">
           <div className="relative shrink-0 rounded overflow-hidden h-full aspect-square ring-4 ring-subtle/20">

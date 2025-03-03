@@ -95,6 +95,10 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: none;
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 @keyframes pulse {

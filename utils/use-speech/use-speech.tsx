@@ -25,6 +25,7 @@ const useSpeechManager = (
   const [currentSentenceIdx, setCurrentSentenceIdx] = useState(0);
   const [currentWordRange, setCurrentWordRange] = useState([0, 0]);
   const [playbackState, setPlaybackState] = useState<PlayingState>("paused");
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
 
   const isMobile = useIsMobile();
 
@@ -48,6 +49,15 @@ const useSpeechManager = (
 
     if (typeof window !== "undefined") {
       const voices = speechSynthesis.getVoices() ?? [];
+
+      setVoices(
+        voices.filter((voice) => voice.lang === localeMapping[locale] || voice.voiceURI.includes(localeMapping[locale]))
+      );
+
+      const voice =
+        voices.find(
+          (voice) => voice.lang === localeMapping[locale] || voice.voiceURI.includes(localeMapping[locale])
+        ) ?? voices[0];
 
       return createSpeechEngine({
         onBoundary: (e: SpeechSynthesisEvent) => {
@@ -110,7 +120,7 @@ const useSpeechManager = (
             );
           }
         },
-        voice: voices.find((voice) => voice.lang === localeMapping[locale]) ?? voices[0],
+        voice,
         rate: rate,
         isMobile,
       });
@@ -131,6 +141,10 @@ const useSpeechManager = (
 
   const play = () => {
     speechEngine?.play();
+  };
+
+  const changeVoice = (voice: SpeechSynthesisVoice) => {
+    speechEngine?.changeVoice(voice);
   };
 
   const pause = () => {
@@ -171,6 +185,8 @@ const useSpeechManager = (
     play,
     pause,
     toSentence,
+    changeVoice,
+    voices,
     sentences,
   };
 };

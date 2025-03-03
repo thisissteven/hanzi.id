@@ -92,12 +92,19 @@ const createSpeechEngine = (options: SpeechEngineOptions) => {
     window.speechSynthesis.cancel();
   };
 
+  const changeVoice = (voice: SpeechSynthesisVoice) => {
+    if (state.utterance) {
+      state.utterance.voice = voice;
+    }
+  };
+
   return {
     state,
     play,
     pause,
     cancel,
     load,
+    changeVoice,
   };
 };
 
