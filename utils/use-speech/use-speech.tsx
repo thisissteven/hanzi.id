@@ -1,8 +1,5 @@
-import { useState, useEffect, useRef, useMemo } from "react";
-import { createSpeechEngine, PlayingState } from "./speech";
-import { franc } from "franc";
+import { PlayingState } from "./speech";
 import { toast } from "sonner";
-import useIsMobile from "@/hooks/useIsMobile";
 import React from "react";
 import { useParagraphs } from "./use-paragraphs";
 import { useReading } from "@/modules/layout";
@@ -11,187 +8,19 @@ import { useChapterById } from "@/modules/speech";
 import { useBookDetails } from "@/pages/read/[id]";
 import { useLocale } from "@/locales/use-locale";
 import { usePreferences } from "@/components";
+import { useSpeechManager } from "./use-speech-manager";
 
-const useSpeechManager = (
-  sentences: Array<string>,
-  {
-    rate,
-    onEndCallback,
-  }: {
-    rate: number;
-    onEndCallback: () => void;
-  }
-) => {
-  const [currentSentenceIdx, setCurrentSentenceIdx] = useState(0);
-  const [currentWordRange, setCurrentWordRange] = useState([0, 0]);
-  const [playbackState, setPlaybackState] = useState<PlayingState>("paused");
-  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
-
-  const isMobile = useIsMobile();
-
-  const lastChar = useRef({
-    index: 0,
-    sentence: sentences[0],
-  });
-  const currentCharIndex = useRef(0);
-  const isPlaying = useRef(false);
-
-  const speechEngine = useMemo(() => {
-    if (typeof window !== "undefined") window.speechSynthesis.cancel();
-
-    const localeMapping = {
-      eng: "en-US", // English
-      cmn: "zh-CN", // Simplified Chinese (Mandarin)
-      und: "zh-CN", // Simplified Chinese (Mandarin)
-    } as const;
-    const sentenceToUse = sentences.find((sentence) => sentence.length > 0) ?? "";
-    const locale = franc(sentenceToUse) as keyof typeof localeMapping;
-
-    if (typeof window !== "undefined") {
-      const voices = speechSynthesis.getVoices() ?? [];
-
-      setVoices(
-        voices.filter((voice) => voice.lang === localeMapping[locale] || voice.voiceURI.includes(localeMapping[locale]))
-      );
-
-      const voice =
-        voices.find(
-          (voice) => voice.lang === localeMapping[locale] || voice.voiceURI.includes(localeMapping[locale])
-        ) ?? voices[0];
-
-      return createSpeechEngine({
-        onBoundary: (e: SpeechSynthesisEvent) => {
-          if (e.name === "word") {
-            const previousIndex = lastChar.current.sentence.length - e.utterance.text.length;
-            const inconsistent = lastChar.current.sentence.length - e.utterance.text.length !== lastChar.current.index;
-            const offsetIndex = inconsistent ? previousIndex - e.charLength - 1 : lastChar.current.index;
-
-            const wordStart = e.charIndex + offsetIndex;
-            const wordEnd = e.charIndex + e.charLength + offsetIndex;
-
-            setCurrentWordRange([wordStart, wordEnd]);
-
-            currentCharIndex.current = wordStart;
-          }
-        },
-        onEnd: (e) => {
-          // handle pause + different chrome behavior
-          if (e.charIndex !== e.utterance.text.length && e.charIndex !== 0 && e.charLength !== 0) {
-            return;
-          }
-
-          currentCharIndex.current = 0;
-          lastChar.current.index = 0;
-          setCurrentWordRange([0, 0]);
-          setCurrentSentenceIdx((prev) => {
-            if (prev < sentences.length - 1) {
-              lastChar.current.sentence = sentences[prev + 1];
-              return prev + 1;
-            }
-
-            // end
-            setPlaybackState("paused");
-            isPlaying.current = false;
-            onEndCallback();
-            return prev;
-          });
-        },
-        onStateUpdate: (state: PlayingState) => {
-          if (state === "playing") {
-            setPlaybackState("playing");
-            isPlaying.current = true;
-          }
-          if (state === "audio-error" && !isMobile) {
-            setTimeout(() => {
-              setPlaybackState("paused");
-              isPlaying.current = false;
-            }, 500);
-            toast.custom(
-              (t) => (
-                <div className="font-sans mx-auto select-none w-fit pointer-events-none rounded-full bg-[#232323] whitespace-nowrap py-3 px-6 flex items-center gap-3">
-                  <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-rose-500 indicator"></div>
-                  <span className="shrink-0">Audio source not found.</span>
-                </div>
-              ),
-              {
-                id: "audio-source-not-found",
-                duration: 5000,
-              }
-            );
-          }
-        },
-        voice,
-        rate: rate,
-        isMobile,
-      });
-    }
-
-    return null;
-  }, [isMobile, onEndCallback, rate, sentences]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && speechEngine) {
-      speechEngine.cancel();
-      speechEngine.load(sentences[currentSentenceIdx]);
-      if (isPlaying.current) {
-        speechEngine.play();
-      }
-    }
-  }, [currentSentenceIdx, sentences, speechEngine]);
-
-  const play = () => {
-    speechEngine?.play();
-  };
-
-  const changeVoice = (voice: SpeechSynthesisVoice) => {
-    speechEngine?.changeVoice(voice);
-  };
-
-  const pause = () => {
-    setPlaybackState("paused");
-    isPlaying.current = false;
-    speechEngine?.pause();
-
-    const remainingText = sentences[currentSentenceIdx].slice(currentCharIndex.current);
-    if (remainingText) {
-      speechEngine?.cancel();
-      speechEngine?.load(remainingText);
-
-      lastChar.current = {
-        index: currentCharIndex.current,
-        sentence: sentences[currentSentenceIdx],
-      };
-    }
-  };
-
-  const toSentence = React.useCallback(
-    (index: number) => {
-      setCurrentWordRange([0, 0]);
-      currentCharIndex.current = 0;
-      lastChar.current = {
-        index: 0,
-        sentence: sentences[index],
-      };
-
-      setCurrentSentenceIdx(index);
-    },
-    [sentences]
-  );
-
-  return {
-    currentSentenceIdx,
-    currentWordRange,
-    playbackState,
-    play,
-    pause,
-    toSentence,
-    changeVoice,
-    voices,
-    sentences,
-  };
+type SpeechContextValues = {
+  currentSentenceIdx: number;
+  currentWordRange: [number, number];
+  playbackState: PlayingState;
+  play: () => void;
+  pause: () => void;
+  toSentence: (index: number) => void;
+  sentences: Array<string>;
 };
 
-const SpeechContext = React.createContext({} as ReturnType<typeof useSpeechManager>);
+const SpeechContext = React.createContext({} as SpeechContextValues);
 
 export const useSpeech = () => {
   return React.useContext(SpeechContext);
@@ -267,6 +96,7 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
   const value = useSpeechManager(sentences, {
     rate: speed,
     onEndCallback,
+    baseUrl: (index: number) => `books/${bookId}/${chapterId}/audio/${index}.json`,
   });
 
   const lastChapterId = React.useRef(chapterId);
@@ -279,5 +109,10 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
     }
   }, [chapterId]);
 
-  return <SpeechContext.Provider value={value}>{children}</SpeechContext.Provider>;
+  return (
+    <SpeechContext.Provider value={value}>
+      <audio ref={value.audioRef} />
+      {children}
+    </SpeechContext.Provider>
+  );
 }

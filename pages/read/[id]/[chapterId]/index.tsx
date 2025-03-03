@@ -25,17 +25,7 @@ export default function Read() {
   const chapterId = router.query.chapterId as string;
   const sentenceIndex = router.query.sentenceIndex as string;
 
-  const {
-    sentences,
-    currentSentenceIdx,
-    currentWordRange,
-    playbackState,
-    play,
-    pause,
-    toSentence,
-    changeVoice,
-    voices,
-  } = useSpeech();
+  const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
 
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -104,7 +94,7 @@ export default function Read() {
   return (
     <Layout>
       <div className="min-h-dvh bg-black">
-        <DefinitionModal
+        {/* <DefinitionModal
           onClose={() => router.back()}
           getDefinitionUrl={(locale) =>
             `https://content.hanzi.id/books/${bookId}/${chapterId}/${locale}/${sentenceIndex}.json`
@@ -120,7 +110,7 @@ export default function Read() {
             const index = Math.min(sentences.length - 1, parseInt(sentenceIndex) + 1);
             return `/read/${bookId}/${chapterId}?sentence=${sentences[index]}&sentenceIndex=${index}`;
           }}
-        />
+        /> */}
 
         <style jsx>{`
           #container {
@@ -162,10 +152,9 @@ export default function Read() {
                 </div>
                 <div className="flex gap-2 max-[810px]:-mr-0 -mr-2">
                   <ToggleBlur isPlaying={playbackState === "playing"} />
-                  <ChangeVoice voices={voices} changeVoice={changeVoice} />
-                  <ChangeMode />
+                  {/* <ChangeMode /> */}
                   <ChangeFontSize />
-                  <ChangeSpeed />
+                  {/* <ChangeSpeed /> */}
                 </div>
               </div>
             </div>
