@@ -100,24 +100,18 @@ export const useSpeechManager = (
     const fps = 30;
     const interval = 1000 / fps; // ~33.33ms per frame
 
-    // Normalize timing data based on playback rate
-    const normalizedTimings = data.timing.map((word) => ({
-      ...word,
-      normalizedTime: word.time / audio.playbackRate, // Adjust timing for speed
-    }));
-
     const updateWordHighlight = (currentTime: number) => {
       if (!audio) return;
 
       if (currentTime - lastUpdateTime >= interval) {
         lastUpdateTime = currentTime;
-        const adjustedTime = (audio.currentTime * 1000) / audio.playbackRate; // Normalize current time
+        const adjustedTime = audio.currentTime * 1000; // Normalize current time
 
-        const currentWord = normalizedTimings.find((word, index) => {
-          const nextWord = normalizedTimings[index + 1];
+        const currentWord = data.timing.find((word, index) => {
+          const nextWord = data.timing[index + 1];
           return (
-            (adjustedTime >= word.normalizedTime && nextWord && adjustedTime < nextWord.normalizedTime) ||
-            (adjustedTime >= word.normalizedTime && index === normalizedTimings.length - 1) // Last word case
+            (adjustedTime >= word.time && nextWord && adjustedTime < nextWord.time) ||
+            (adjustedTime >= word.time && index === data.timing.length - 1) // Last word case
           );
         });
 
@@ -129,9 +123,14 @@ export const useSpeechManager = (
       animationFrameId = requestAnimationFrame(updateWordHighlight);
     };
 
-    animationFrameId = requestAnimationFrame(updateWordHighlight);
+    const timeoutId = setTimeout(() => {
+      animationFrameId = requestAnimationFrame(updateWordHighlight);
+    }, 200 / rateRef.current);
 
-    return () => cancelAnimationFrame(animationFrameId);
+    return () => {
+      clearTimeout(timeoutId);
+      cancelAnimationFrame(animationFrameId);
+    };
   }, [data]); // Re-run when audio data or rate changes
 
   useEffect(() => {
