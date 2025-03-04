@@ -34,7 +34,7 @@ export const useSpeechManager = (
 
   const playbackStateRef = useRef(playbackState);
   const rateRef = useRef(rate);
-  const lastHighlightedWord = useRef<[number, number]>([0, 0]);
+  const lastHighlightedWord = useRef<[number, number] | null>([0, 0]);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -45,9 +45,9 @@ export const useSpeechManager = (
       const audio = audioRef.current;
 
       audio.onended = async () => {
+        lastHighlightedWord.current = null;
         await new Promise((resolve) => setTimeout(resolve, 300 / rateRef.current));
         setCurrentWordRange([0, 0]);
-        lastHighlightedWord.current = [0, 0];
         setCurrentSentenceIdx((prev) => {
           if (prev < sentences.length - 1) {
             return prev + 1;
@@ -122,8 +122,8 @@ export const useSpeechManager = (
 
           // Only update state if it's actually different
           if (
-            !lastHighlightedWord.current ||
-            lastHighlightedWord.current[0] < newRange[0] ||
+            lastHighlightedWord.current &&
+            lastHighlightedWord.current[0] < newRange[0] &&
             lastHighlightedWord.current[1] < newRange[1]
           ) {
             setCurrentWordRange(newRange);
@@ -141,7 +141,7 @@ export const useSpeechManager = (
     // Start animation after slight delay
     const timeoutId = setTimeout(() => {
       animationFrameId = requestAnimationFrame(updateWordHighlight);
-    }, 200 / rateRef.current);
+    }, 300 / rateRef.current);
 
     return () => {
       clearTimeout(timeoutId);
@@ -156,7 +156,6 @@ export const useSpeechManager = (
     const src = `data:audio/mpeg;base64,${data.mp3}`;
 
     if (audio.src !== src) {
-      lastHighlightedWord.current = [0, 0];
       audio.src = src;
       audio.load();
     }
@@ -165,6 +164,7 @@ export const useSpeechManager = (
       audio.playbackRate = rateRef.current;
 
       if (playbackStateRef.current === "playing") {
+        lastHighlightedWord.current = [0, 0];
         audio.play();
       }
     };
