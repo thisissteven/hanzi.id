@@ -128,20 +128,23 @@ export const useSpeechManager = (
   }, [data]); // Re-run when audio data or rate changes
 
   useEffect(() => {
-    if (data && audioRef.current) {
-      const audio = audioRef.current;
-      const src = `data:audio/mpeg;base64,${data.mp3}`;
+    if (!audioRef.current || !data) return;
+
+    const audio = audioRef.current;
+    const src = `data:audio/mpeg;base64,${data.mp3}`;
+
+    if (audio.src !== src) {
       audio.src = src;
       audio.load();
-
-      audio.onloadeddata = () => {
-        audio.playbackRate = rateRef.current;
-
-        if (playbackStateRef.current === "playing") {
-          audio.play();
-        }
-      };
     }
+
+    audio.onloadeddata = () => {
+      audio.playbackRate = rateRef.current;
+
+      if (playbackStateRef.current === "playing") {
+        audio.play();
+      }
+    };
   }, [data]);
 
   useEffect(() => {
