@@ -42,6 +42,10 @@ export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
     const utterance = new SpeechSynthesisUtterance(text);
 
     utterance.lang = isMobile ? "zh_CN" : "zh-CN";
+
+    const voices = window.speechSynthesis.getVoices();
+    utterance.voice =
+      voices.find((voice) => voice.lang === utterance.lang || voice.voiceURI.includes(utterance.lang)) ?? voices[0];
     utterance.rate = speed;
 
     utterance.onstart = () =>

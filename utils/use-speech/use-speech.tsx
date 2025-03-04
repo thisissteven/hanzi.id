@@ -9,6 +9,7 @@ import { useBookDetails } from "@/pages/read/[id]";
 import { useLocale } from "@/locales/use-locale";
 import { usePreferences } from "@/components";
 import { useSpeechManager } from "./use-speech-manager";
+import Link from "next/link";
 
 type SpeechContextValues = {
   currentSentenceIdx: number;
@@ -75,14 +76,12 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
           <div className="border border-secondary/10 font-sans mx-auto min-w-[300px] select-none w-fit rounded-full bg-black whitespace-nowrap py-2 pl-6 pr-2 flex items-center gap-3">
             <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
             <span className="shrink-0 flex-1">{t.nextChapter}</span>
-            <button
+            <Link
               className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
-              onClick={() => {
-                router.replace(`/read/${bookId}/${nextChapterId.id}`);
-              }}
+              href={`/read/${bookId}/${nextChapterId.id}`}
             >
               &#x2192;
-            </button>
+            </Link>
           </div>
         ),
         {
@@ -91,12 +90,17 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
         }
       );
     }
-  }, [bookId, nextChapterId, router, t.nextChapter]);
+  }, [bookId, nextChapterId, t.nextChapter]);
+
+  const baseUrl = React.useCallback(
+    (index: number) => `books/${bookId}/${chapterId}/audio/${index}.json`,
+    [bookId, chapterId]
+  );
 
   const value = useSpeechManager(sentences, {
     rate: speed,
     onEndCallback,
-    baseUrl: (index: number) => `books/${bookId}/${chapterId}/audio/${index}.json`,
+    baseUrl,
   });
 
   const lastChapterId = React.useRef(chapterId);

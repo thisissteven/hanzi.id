@@ -31,9 +31,42 @@ export const useSpeechManager = (
   const [currentSentenceIdx, setCurrentSentenceIdx] = useState(0);
   const [currentWordRange, setCurrentWordRange] = useState<[number, number]>([0, 0]);
   const [playbackState, setPlaybackState] = useState<"playing" | "paused">("paused");
+
+  const playbackStateRef = useRef(playbackState);
+  const rateRef = useRef(rate);
+
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Fetch the current sentence audio
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      audioRef.current = new Audio();
+
+      const audio = audioRef.current;
+
+      audio.onended = async () => {
+        await new Promise((resolve) => setTimeout(resolve, 300 / rateRef.current));
+        setCurrentWordRange([0, 0]);
+        setCurrentSentenceIdx((prev) => {
+          if (prev < sentences.length - 1) {
+            return prev + 1;
+          } else {
+            setPlaybackState("paused");
+            playbackStateRef.current = "paused";
+            onEndCallback();
+            return prev;
+          }
+        });
+      };
+    }
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.onended = null;
+        audioRef.current.ontimeupdate = null;
+      }
+    };
+  }, [onEndCallback, sentences.length]);
+
   const key = baseUrl(currentSentenceIdx);
   const { data } = useSWRImmutable<Response>(
     key.includes("undefined") ? undefined : key,
@@ -41,83 +74,98 @@ export const useSpeechManager = (
       const contentUrl = `https://content.hanzi.id/${baseUrl(currentSentenceIdx)}`;
       const response = await fetch(contentUrl);
       return response.json();
+    },
+    {
+      onSuccess: async (_, key) => {
+        const nextSentenceIndex = key.split("/").pop()?.split(".")[0] ?? "0";
+        const nextKey = baseUrl(parseInt(nextSentenceIndex));
+        if (nextKey) {
+          preload(nextKey, async (_: string) => {
+            const contentUrl = `https://content.hanzi.id/${baseUrl(currentSentenceIdx)}`;
+            const response = await fetch(contentUrl);
+            return response.json();
+          });
+        }
+      },
     }
-    // {
-    //   onSuccess: async () => {
-    //     // Prefetch the next sentence to minimize loading time
-    //     const nextKey = baseUrl(currentSentenceIdx + 1);
-    //     if (nextKey) {
-    //       preload(nextKey, async (_: string) => {
-    //         const contentUrl = `https://content.hanzi.id/${baseUrl(currentSentenceIdx)}`;
-    //         const response = await fetch(contentUrl);
-    //         return response.json();
-    //       });
-    //     }
-    //   },
-    // }
   );
 
   useEffect(() => {
+    if (!audioRef.current || !data) return;
+
+    const audio = audioRef.current;
+    audio.playbackRate = rateRef.current;
+    let animationFrameId: number;
+
+    // Normalize timing data based on playback rate
+    const normalizedTimings = data.timing.map((word) => ({
+      ...word,
+      normalizedTime: word.time / audio.playbackRate, // Adjust timing for speed
+    }));
+
+    const updateWordHighlight = () => {
+      if (!audio) return;
+      const adjustedTime = (audio.currentTime * 1000) / audio.playbackRate; // Normalize current time
+
+      const currentWord = normalizedTimings.find((word, index) => {
+        const nextWord = normalizedTimings[index + 1];
+        return (
+          (adjustedTime >= word.normalizedTime && nextWord && adjustedTime < nextWord.normalizedTime) ||
+          (adjustedTime >= word.normalizedTime && index === normalizedTimings.length - 1) // Last word case
+        );
+      });
+
+      if (currentWord) {
+        setCurrentWordRange([currentWord.start, currentWord.end]);
+      }
+
+      animationFrameId = requestAnimationFrame(updateWordHighlight);
+    };
+
+    animationFrameId = requestAnimationFrame(updateWordHighlight);
+
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [data]); // Re-run when audio data or rate changes
+
+  useEffect(() => {
     if (data && audioRef.current) {
+      const audio = audioRef.current;
       const src = `data:audio/mpeg;base64,${data.mp3}`;
-      audioRef.current.src = src;
-      audioRef.current.load();
+      audio.src = src;
+      audio.load();
+
+      audio.onloadeddata = () => {
+        audio.playbackRate = rateRef.current;
+
+        if (playbackStateRef.current === "playing") {
+          audio.play();
+        }
+      };
     }
   }, [data]);
 
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.onplay = () => setPlaybackState("playing");
-      audioRef.current.onpause = () => setPlaybackState("paused");
-
-      audioRef.current.onended = () => {
-        setCurrentWordRange([0, 0]); // Reset word range
-        if (currentSentenceIdx < sentences.length - 1) {
-          setCurrentSentenceIdx((prev) => prev + 1);
-        } else {
-          onEndCallback();
-        }
-      };
-
-      audioRef.current.ontimeupdate = () => {
-        if (!data) return;
-        const currentTime = audioRef.current!.currentTime * 1000; // Convert to ms
-        const currentWord = data.timing.find((word) => currentTime >= word.time && currentTime < word.time + 200);
-        if (currentWord) {
-          setCurrentWordRange([currentWord.start, currentWord.end]);
-        }
-      };
+    if (rateRef.current !== rate) {
+      rateRef.current = rate;
     }
-  }, [data, currentSentenceIdx, sentences.length, onEndCallback]);
-
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.oncanplaythrough = () => {
-        if (playbackState === "playing") {
-          audioRef.current?.play();
-        }
-      };
-    }
-  }, [currentSentenceIdx, playbackState]);
+  }, [rate]);
 
   const play = () => {
     audioRef.current?.play();
+    setPlaybackState("playing");
+    playbackStateRef.current = "playing";
   };
 
   const pause = () => {
     audioRef.current?.pause();
+    setPlaybackState("paused");
+    playbackStateRef.current = "paused";
   };
 
   const toSentence = useCallback((index: number) => {
     setCurrentSentenceIdx(index);
-    setCurrentWordRange([0, 0]); // Reset word range
+    setCurrentWordRange([0, 0]);
   }, []);
-
-  useEffect(() => {
-    if (playbackState === "playing" && audioRef.current?.paused) {
-      audioRef.current?.play();
-    }
-  }, [currentSentenceIdx, playbackState]);
 
   return {
     currentSentenceIdx,
