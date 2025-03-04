@@ -156,6 +156,7 @@ export const useSpeechManager = (
     const src = `data:audio/mpeg;base64,${data.mp3}`;
 
     if (audio.src !== src) {
+      lastHighlightedWord.current = [0, 0];
       audio.src = src;
       audio.load();
     }
