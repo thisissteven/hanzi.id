@@ -34,6 +34,7 @@ export const useSpeechManager = (
 
   const playbackStateRef = useRef(playbackState);
   const rateRef = useRef(rate);
+  const lastHighlightedWord = useRef<[number, number] | null>(null);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -98,31 +99,45 @@ export const useSpeechManager = (
     let animationFrameId: number;
     let lastUpdateTime = 0;
     const fps = 30;
-    const interval = 1000 / fps; // ~33.33ms per frame
+    const interval = 1000 / fps;
 
     const updateWordHighlight = (currentTime: number) => {
       if (!audio) return;
 
       if (currentTime - lastUpdateTime >= interval) {
         lastUpdateTime = currentTime;
-        const adjustedTime = audio.currentTime * 1000; // Normalize current time
+        const adjustedTime = audio.currentTime * 1000;
 
         const currentWord = data.timing.find((word, index) => {
           const nextWord = data.timing[index + 1];
           return (
             (adjustedTime >= word.time && nextWord && adjustedTime < nextWord.time) ||
-            (adjustedTime >= word.time && index === data.timing.length - 1) // Last word case
+            (adjustedTime >= word.time && index === data.timing.length - 1)
           );
         });
 
         if (currentWord) {
-          setCurrentWordRange([currentWord.start, currentWord.end]);
+          const newRange: [number, number] = [currentWord.start, currentWord.end];
+
+          // Only update state if it's actually different
+          if (
+            !lastHighlightedWord.current ||
+            lastHighlightedWord.current[0] !== newRange[0] ||
+            lastHighlightedWord.current[1] !== newRange[1]
+          ) {
+            setCurrentWordRange(newRange);
+            lastHighlightedWord.current = newRange;
+          }
         }
       }
 
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
       animationFrameId = requestAnimationFrame(updateWordHighlight);
     };
 
+    // Start animation after slight delay
     const timeoutId = setTimeout(() => {
       animationFrameId = requestAnimationFrame(updateWordHighlight);
     }, 200 / rateRef.current);
@@ -131,7 +146,7 @@ export const useSpeechManager = (
       clearTimeout(timeoutId);
       cancelAnimationFrame(animationFrameId);
     };
-  }, [data]); // Re-run when audio data or rate changes
+  }, [data]);
 
   useEffect(() => {
     if (!audioRef.current || !data) return;
