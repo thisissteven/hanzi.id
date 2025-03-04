@@ -45,7 +45,7 @@ export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
 
     const voices = window.speechSynthesis.getVoices();
     utterance.voice =
-      voices.find((voice) => voice.lang === utterance.lang || voice.voiceURI.includes(utterance.lang)) ?? voices[0];
+      voices.find((voice) => voice.lang === utterance.lang || voice.voiceURI.includes("zh-CN")) ?? voices[0];
     utterance.rate = speed;
 
     utterance.onstart = () =>
