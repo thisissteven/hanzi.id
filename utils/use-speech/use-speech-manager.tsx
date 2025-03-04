@@ -34,7 +34,7 @@ export const useSpeechManager = (
 
   const playbackStateRef = useRef(playbackState);
   const rateRef = useRef(rate);
-  const lastHighlightedWord = useRef<[number, number] | null>(null);
+  const lastHighlightedWord = useRef<[number, number]>([0, 0]);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -47,7 +47,7 @@ export const useSpeechManager = (
       audio.onended = async () => {
         await new Promise((resolve) => setTimeout(resolve, 300 / rateRef.current));
         setCurrentWordRange([0, 0]);
-        lastHighlightedWord.current = null;
+        lastHighlightedWord.current = [0, 0];
         setCurrentSentenceIdx((prev) => {
           if (prev < sentences.length - 1) {
             return prev + 1;
@@ -190,7 +190,7 @@ export const useSpeechManager = (
   const toSentence = useCallback((index: number) => {
     setCurrentSentenceIdx(index);
     setCurrentWordRange([0, 0]);
-    lastHighlightedWord.current = null;
+    lastHighlightedWord.current = [0, 0];
   }, []);
 
   return {
