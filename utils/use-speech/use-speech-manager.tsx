@@ -47,6 +47,7 @@ export const useSpeechManager = (
       audio.onended = async () => {
         await new Promise((resolve) => setTimeout(resolve, 300 / rateRef.current));
         setCurrentWordRange([0, 0]);
+        lastHighlightedWord.current = null;
         setCurrentSentenceIdx((prev) => {
           if (prev < sentences.length - 1) {
             return prev + 1;
@@ -122,8 +123,8 @@ export const useSpeechManager = (
           // Only update state if it's actually different
           if (
             !lastHighlightedWord.current ||
-            lastHighlightedWord.current[0] !== newRange[0] ||
-            lastHighlightedWord.current[1] !== newRange[1]
+            lastHighlightedWord.current[0] < newRange[0] ||
+            lastHighlightedWord.current[1] < newRange[1]
           ) {
             setCurrentWordRange(newRange);
             lastHighlightedWord.current = newRange;
@@ -189,6 +190,7 @@ export const useSpeechManager = (
   const toSentence = useCallback((index: number) => {
     setCurrentSentenceIdx(index);
     setCurrentWordRange([0, 0]);
+    lastHighlightedWord.current = null;
   }, []);
 
   return {
