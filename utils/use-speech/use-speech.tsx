@@ -77,10 +77,10 @@ function SpeechContextProvider({ children }: { children: React.ReactNode }) {
             <div className="shrink-0 mt-0.5 w-2 h-2 rounded-full bg-sky-400 indicator-blue"></div>
             <span className="shrink-0 flex-1">{t.nextChapter}</span>
             <Link
-              className="px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
+              className="block px-2 pt-0.5 pb-1.5 w-16 h-10 shrink-0 rounded-full text-sm bg-sky-500/10 active:bg-sky-500/20 transition text-blue-300 font-medium"
               href={`/read/${bookId}/${nextChapterId.id}`}
             >
-              &#x2192;
+              <div className="grid place-items-center h-full">&#x2192;</div>
             </Link>
           </div>
         ),
