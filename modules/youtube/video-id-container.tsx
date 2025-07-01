@@ -11,6 +11,7 @@ import { useSearchParams } from "next/navigation";
 import { useYouTubeHistory } from "./hooks/useYoutubeHistory";
 import { ReactPlayerContext } from "./transcripts/provider/react-player";
 import clsx from "clsx";
+import { useWindowSize } from "@/hooks";
 
 export function VideoIdContainer() {
   return (
@@ -79,6 +80,8 @@ function TranscriptComponent() {
     },
     [setDrawerOpen]
   );
+
+  const { width } = useWindowSize();
 
   return (
     <ReactPlayerContext.Provider
@@ -167,8 +170,7 @@ function TranscriptComponent() {
         <div
           className="max-sm:hidden sticky top-0 max-md:border-l-0 max-md:rounded-none max-md:shadow-none md:top-2 xl:top-4 w-full max-w-xs lg:max-w-sm p-0 overflow-hidden"
           style={{
-            height: `calc(100vh - 68px)`,
-            // maxHeight: "100vh",
+            maxHeight: width < 1080 ? "100dvh" : "calc(100dvh - 68px)",
           }}
         >
           <SubtitleTabs setPlaying={setPlaying} getCurrentTime={getCurrentTime} onTimestampClick={onTimestampClick} />

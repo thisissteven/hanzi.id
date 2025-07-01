@@ -22,7 +22,7 @@ const PlaylistCard = ({
     : "https://placehold.co/320x180";
 
   return (
-    <button onClick={() => onPlaylistClicked(playlist.diocoPlaylistId)} className="active:opacity-80 transition">
+    <button onClick={() => onPlaylistClicked(playlist.diocoPlaylistId)} className="active:opacity-80 transition w-full">
       <div className="overflow-hidden">
         <div className="relative rounded-full overflow-hidden aspect-square">
           <Image
@@ -88,14 +88,14 @@ export function VideoChannels() {
 
   return (
     <div>
-      <div className="mt-4 px-3">{isLoadingPlaylists && !isLoadingDocs && <p>Loading...</p>}</div>
+      <div className="px-3">{isLoadingPlaylists && !isLoadingDocs && <p className="mt-4">Loading...</p>}</div>
 
       {selectedPlaylistId && (
         <div className="relative overflow-y-auto scrollbar h-[calc(100vh-108px-33px)]">
-          <div className="sticky top-0 z-50">
+          <div className="sticky top-0 z-50 bg-black">
             <button
               onClick={() => setSelectedPlaylistId(undefined)}
-              className="flex items-center gap-2 px-4 py-2 bg-black/50 backdrop-blur-sm rounded-br-xl group"
+              className="flex items-center gap-2 px-4 py-3 rounded-br-xl group"
             >
               <div className="w-8 h-8 relative overflow-hidden rounded-full group-active:opacity-80">
                 {doc && (
@@ -110,7 +110,7 @@ export function VideoChannels() {
               <p className="font-medium text-smokewhite group-active:opacity-80">Back to Channel List</p>
             </button>
           </div>
-          <div className="mt-4 px-3">{isLoadingDocs && <p>Loading...</p>}</div>
+          <div className="px-3">{isLoadingDocs && <p className="mt-4">Loading...</p>}</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:max-md:px-3">
             {docs?.data?.docs_metadata?.map((doc) => {
               return <YoutubeCard key={doc.diocoDocId} doc={doc} />;
@@ -120,7 +120,7 @@ export function VideoChannels() {
       )}
 
       {!selectedPlaylistId && (
-        <div className="max-sm:-mt-4 max-sm:p-3 grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(120px,1fr))] place-items-start gap-8 sm:max-md:px-3">
+        <div className="mt-4 max-sm:p-3 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] place-items-start gap-8 sm:max-md:px-3">
           {playlists?.data?.playlists?.map((playlist) => {
             return (
               <PlaylistCard
