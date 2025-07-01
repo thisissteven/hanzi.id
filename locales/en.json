@@ -24,6 +24,10 @@
       "title": "Chinese Podcast",
       "description": "Realtime dual-subtitle from podcasts."
     },
+    "youtube": {
+      "title": "Chinese YouTube",
+      "description": "Realtime dual-subtitle from YouTube videos."
+    },
     "tools": {
       "title": "Tools",
       "description": "Chinese character tools and resources."
@@ -55,6 +59,9 @@
   },
   "startReading": "Start Reading",
   "continueReading": "Continue Reading",
+  "youtube": {
+    "buttons": ["All", "Channels", "Watch History"]
+  },
   "suggestions": {
     "buttons": ["New feature", "Improvements", "Request a book"],
     "successToast": "Message sent successfully!",

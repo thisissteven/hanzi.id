@@ -28,6 +28,10 @@
       "title": "Podcast Bahasa Cina",
       "description": "Subtitle ganda secara real-time dari podcast."
     },
+    "youtube": {
+      "title": "YouTube Bahasa Cina",
+      "description": "Subtitle ganda secara real-time dari video YouTube."
+    },
     "explore": {
       "title": "Jelajahi",
       "description": "Baca dan dengarkan buku bahasa Cina dengan terjemahan."
@@ -55,6 +59,9 @@
   },
   "startReading": "Mulai Membaca",
   "continueReading": "Lanjutkan Membaca",
+  "youtube": {
+    "buttons": ["Semua", "Saluran", "Riwayat Tonton"]
+  },
   "suggestions": {
     "buttons": ["Fitur baru", "Saran perbaikan", "Tambah buku"],
     "successToast": "Pesan berhasil dikirim!",

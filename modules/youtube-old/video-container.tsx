@@ -1,14 +1,16 @@
-import { createErrorToast, dismissToast, usePreferences } from "@/components";
-import { useWindowSize } from "@/hooks";
-import { useLocale } from "@/locales/use-locale";
-import { SectionsContainer } from "@/modules/youtube-old";
-import { fetcher } from "@/pages/_app";
-import { SubtitleResponse } from "@/pages/api/subtitles/en";
-import { cn } from "@/utils";
-import getYoutubeVideoId from "get-video-id";
 import React from "react";
 import useSWRImmutable from "swr/immutable";
+import { useLocale } from "@/locales/use-locale";
+import { createErrorToast, dismissToast, LoadingBar, usePreferences } from "@/components";
+import { useWindowSize } from "@/hooks";
+import { cn } from "@/utils";
+import getYoutubeVideoId from "get-video-id";
+import { SectionsContainer } from "@/modules/youtube-old";
+import { SubtitleResponse } from "@/pages/api/subtitles/en";
+import Image from "next/image";
+import { LucideX } from "lucide-react";
 import { useSubtitlesTranslation } from "./use-subtitles-translation";
+import { fetcher } from "@/pages/_app";
 
 function getVideoId(url: string, errorMessage: string) {
   try {
@@ -60,7 +62,8 @@ function convertSeconds(seconds: number) {
   return `${minutes}:${remainingSeconds < 10 ? `0${remainingSeconds}` : remainingSeconds}`;
 }
 
-export function VideoContainer({ videoId }: { videoId: string }) {
+export function VideoContainer() {
+  const [youtubeUrl, setYoutubeUrl] = React.useState("");
   const [lastTime, setLastTime] = React.useState(0);
   const playerRef = React.useRef<YT.Player | null>(null);
 
@@ -202,6 +205,8 @@ export function VideoContainer({ videoId }: { videoId: string }) {
   const { t, locale } = useLocale();
   const { isSimplified } = usePreferences();
 
+  const videoId = youtubeUrl ? getVideoId(youtubeUrl, t.youtubeErrorToast) : null;
+
   React.useEffect(() => {
     if (videoId) {
       dismissToast("youtube-error");
@@ -218,7 +223,7 @@ export function VideoContainer({ videoId }: { videoId: string }) {
     isLoading: isLoadingTranslation,
     error: translationError,
   } = useSWRImmutable<SubtitleResponse>(
-    videoId ? `https://content.hanzi.id/subtitles/${videoId}/${locale}.json` : undefined,
+    videoId ? `/subtitles/${locale}?videoID=${videoId}&lang=${locale}` : undefined,
     fetcher as any,
     {
       shouldRetryOnError: false,
@@ -230,7 +235,7 @@ export function VideoContainer({ videoId }: { videoId: string }) {
     isLoading: isLoadingSubtitles,
     error: subtitlesError,
   } = useSWRImmutable<SubtitleResponse>(
-    videoId ? `https://content.hanzi.id/subtitles/${videoId}/${isSimplified ? "zh-CN" : "zh-TW"}.json` : undefined
+    videoId ? `/subtitles/${locale}?videoID=${videoId}&lang=${isSimplified ? "zh-CN" : "zh-TW"}` : undefined
   );
 
   const { sections, currentTranslation } = useSubtitlesTranslation({
@@ -272,6 +277,74 @@ export function VideoContainer({ videoId }: { videoId: string }) {
 
   return (
     <React.Fragment>
+      <div className="relative mt-4 px-2 flex items-center gap-2">
+        <input
+          type="text"
+          value={youtubeUrl}
+          onChange={(e) => setYoutubeUrl(e.target.value)}
+          placeholder={t.youtubePlaceholder}
+          className="bg-transparent px-3 py-2 rounded-md border border-subtle ring-offset-black ring-smoke focus:ring-offset-2 focus:ring-2 text-secondary focus:text-white transition-shadow duration-200 placeholder:text-secondary/50 focus:outline-none w-full"
+        />
+        {isLoading ? (
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 text-secondary p-2.5 bg-black h-fit">
+            <LoadingBar visible />
+          </div>
+        ) : youtubeUrl ? (
+          <div
+            role="button"
+            onClick={() => {
+              setYoutubeUrl("");
+            }}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-secondary p-2.5 bg-black h-fit"
+          >
+            <LucideX className="h-4 w-4" />
+          </div>
+        ) : null}
+      </div>
+
+      {!videoId && lastWatched && (
+        <div className="mt-4">
+          <span className="px-4 text-secondary text-sm">{t.lastWatched}</span>
+          <div className="mt-2 grid sm:grid-cols-2">
+            {lastWatched.map((watched) => {
+              return (
+                <div
+                  role="button"
+                  key={watched.videoID}
+                  className="p-4 flex flex-col gap-2 active:bg-hovered duration-200"
+                  onClick={() => {
+                    setYoutubeUrl(`https://www.youtube.com/watch?v=${watched.videoID}`);
+                    setLastTime(watched.timeElapsed);
+                  }}
+                >
+                  <div className="relative">
+                    <Image
+                      width={480}
+                      height={360}
+                      src={watched.thumbnail}
+                      alt={watched.title}
+                      className="w-full aspect-video shrink-0 object-cover"
+                    />
+                    <div
+                      className="absolute bottom-0 h-1 left-0 bg-red-500"
+                      style={{
+                        width: `${watched.percentage}%`,
+                      }}
+                    ></div>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <p className="text-sm font-medium text-secondary">{watched.title}</p>
+                    <p className="text-xs text-secondary">
+                      {watched.prettyTime} / {watched.prettyDuration}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       <div
         aria-hidden={!videoId}
         className={cn("mt-4 duration-200", videoId ? "opacity-100" : "opacity-0 pointer-events-none")}

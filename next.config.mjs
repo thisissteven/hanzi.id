@@ -28,6 +28,12 @@ const nextConfig = {
         protocol: "https",
       },
       {
+        hostname: "api-cdn.dioco.io",
+        pathname: "/**",
+        port: "",
+        protocol: "https",
+      },
+      {
         hostname: "cdn.langeek.co",
         pathname: "/**",
         port: "",

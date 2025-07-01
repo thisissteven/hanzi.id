@@ -8,7 +8,7 @@ import {
   LanguagesIcon,
   LibraryBigIcon,
   LightbulbIcon,
-  LucidePodcast,
+  LucideVideo,
   PickaxeIcon,
   SearchIcon,
 } from "lucide-react";
@@ -80,7 +80,7 @@ export function HomeTodo() {
         </Button>
 
         <Button
-          className="relative hover:bg-sky-200/5 disabled:pointer-events-none disabled:opacity-50"
+          className="relative hover:bg-sky-200/5"
           icon={<div className="w-12 shrink-0 text-3xl font-bold text-amber-500">2.0</div>}
           path="/old-hsk/1"
           title={t.home.oldHSK.title}
@@ -88,6 +88,20 @@ export function HomeTodo() {
         >
           <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-amber-500/10 px-2 py-1 font-medium text-amber-500 ring-1 ring-inset ring-amber-500/20">
             {t.oldHSK}
+          </div>
+        </Button>
+
+        <Button
+          path="/youtube"
+          className="relative hover:bg-sky-200/5"
+          icon={
+            <LucideVideo size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-green-400" />
+          }
+          title={t.home.youtube.title}
+          description={t.home.youtube.description}
+        >
+          <div className="absolute top-2 right-2 inline-flex text-xs items-center rounded-md backdrop-blur-sm bg-green-500/10 px-2 py-1 font-medium text-green-500 ring-1 ring-inset ring-green-500/20">
+            {t.new}
           </div>
         </Button>
 
@@ -109,16 +123,6 @@ export function HomeTodo() {
           }
           title={t.home.teleprompter.title}
           description={t.home.teleprompter.description}
-        />
-
-        <Button
-          path="/podcast"
-          className="relative hover:bg-sky-200/5"
-          icon={
-            <LucidePodcast size={48} strokeWidth={1.5} className="shrink-0 duration-200 group-hover:text-sky-400" />
-          }
-          title={t.home.podcast.title}
-          description={t.home.podcast.description}
         />
 
         {isAdmin && (

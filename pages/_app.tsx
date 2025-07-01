@@ -14,6 +14,7 @@ import {
   OldHSKLayout,
   ReadingLayout,
   ToolsLayout,
+  YoutubeLayout,
 } from "@/modules/layout";
 import React from "react";
 
@@ -45,6 +46,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   const isHsk = router.pathname.startsWith("/hsk");
   const isOldHsk = router.pathname.startsWith("/old-hsk");
   const isReading = router.pathname.startsWith("/read");
+  const isYoutube = router.pathname.startsWith("/youtube");
 
   React.useEffect(() => {
     const timeout = setTimeout(() => {
@@ -112,6 +114,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
                       <OldHSKLayout key="old-hsk">
                         <Component key={router.pathname} {...pageProps} />
                       </OldHSKLayout>
+                    ) : isYoutube ? (
+                      <YoutubeLayout key="youtube">
+                        <Component key={router.pathname} {...pageProps} />
+                      </YoutubeLayout>
                     ) : (
                       <Component key={router.pathname} {...pageProps} />
                     )}

@@ -20,3 +20,6 @@ export * from "./hanzi-stroke-simulator";
 export * from "./hanzi-stroke-quiz";
 export * from "./route-dialog";
 export * from "./counting-numbers";
+export * from "./tabs";
+export * from "./select";
+export * from "./switch";
