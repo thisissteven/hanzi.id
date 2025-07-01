@@ -123,7 +123,6 @@ export const useSpeechManager = (
           // Only update state if it's actually different
           if (
             lastHighlightedWord.current &&
-            lastHighlightedWord.current[0] < newRange[0] &&
             lastHighlightedWord.current[1] < newRange[1]
           ) {
             setCurrentWordRange(newRange);
