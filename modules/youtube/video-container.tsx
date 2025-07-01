@@ -68,20 +68,8 @@ export function VideoContainer() {
   const { isSimplified } = usePreferences();
   const lang = isSimplified ? "zh-CN" : "zh-TW";
 
-  const [selectedPlaylistId, setSelectedPlaylistId] = usePersistedState<string | undefined>(
-    "selectedPlaylistId",
-    undefined
-  );
+  const [selectedPlaylistId, _] = usePersistedState<string | undefined>("selectedPlaylistId", undefined);
   const [vocabRange] = useState<number[]>([0, 100000]);
-
-  const { data: playlists, isLoading: isLoadingPlaylists } = useQuery({
-    queryKey: ["playlists", lang],
-    queryFn: () => fetchMediaPlaylists({ freq95: { min: vocabRange[0], max: vocabRange[1] }, lang_G: lang }),
-    staleTime: Infinity,
-    refetchOnMount: false,
-    refetchOnWindowFocus: false,
-    refetchOnReconnect: false,
-  });
 
   const { data: docs, isLoading: isLoadingDocs } = useQuery({
     queryKey: ["docs", selectedPlaylistId, vocabRange, lang],
@@ -104,10 +92,10 @@ export function VideoContainer() {
   });
 
   return (
-    <div className="max-sm:-mt-4 space-y-4">
+    <div>
       <div className="mt-4 px-3">{isLoadingDocs && <p>Loading...</p>}</div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:max-md:px-3">
+      <div className="max-sm:-mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:max-md:px-3">
         {docs?.data?.docs_metadata.map((doc) => {
           return <YoutubeCard key={doc.diocoDocId} doc={doc} />;
         })}

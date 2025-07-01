@@ -41,7 +41,7 @@ export const SubtitleSettingsProvider: React.FC<{ children: React.ReactNode }> =
   const [colorMode, setColorMode] = usePersistedState<ColorMode>("colorMode", "text");
   const [audioOnly, setAudioOnly] = usePersistedState<boolean>("audioOnly", false);
   const [showPinyin, setShowPinyin] = usePersistedState<boolean>("showPinyin", true);
-  const [showTranslation, setShowTranslation] = usePersistedState<boolean>("showTranslation", false);
+  const [showTranslation, setShowTranslation] = usePersistedState<boolean>("showTranslation", true);
 
   const params = useParams();
   const videoId = params?.id as string;

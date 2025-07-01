@@ -150,10 +150,17 @@ function TranscriptComponent() {
           </div>
 
           {/* Right Panel (md+ only) */}
-          {/* <div className="hidden sm:block max-md:rounded-none max-md:shadow-none md:mt-3 xl:mt-6">
-            <p>Right Panel</p>
-            <p>Reserved for future features.</p>
-          </div> */}
+          <div className="hidden sm:block m-3">
+            <p>Subtitles API:</p>
+            <a
+              href="https://www.languagereactor.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400"
+            >
+              Language Reactor
+            </a>
+          </div>
         </div>
 
         {/* Right Column (md+): Subtitles */}

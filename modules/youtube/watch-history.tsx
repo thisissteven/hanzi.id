@@ -21,7 +21,7 @@ function formatTime(seconds: number): string {
 }
 
 export function WatchHistory() {
-  const isSimplified = usePreferences();
+  const { isSimplified } = usePreferences();
   const lang = isSimplified ? "zh-CN" : "zh-TW";
 
   const { getHistory } = useYouTubeHistory();
@@ -31,7 +31,7 @@ export function WatchHistory() {
   }, [getHistory, lang]);
 
   return (
-    <div className="max-sm:-mt-4 sm:mt-4 space-y-4">
+    <div className="sm:mt-4 space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:max-md:px-3">
         {history.length === 0 ? (
           <p className="text-sm">You have watched 0 videos.</p>

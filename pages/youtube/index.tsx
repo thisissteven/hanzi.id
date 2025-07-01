@@ -6,11 +6,13 @@ import { useLocale } from "@/locales/use-locale";
 import { cn } from "@/utils";
 import { WatchHistory } from "@/modules/youtube/watch-history";
 import { usePersistedState } from "@/modules/youtube/hooks/usePersistedState";
+import { VideoChannels } from "@/modules/youtube/video-channels";
 
 export default function Youtube() {
   const [category, setCategory] = usePersistedState("youtube-category", 0);
 
   const { t } = useLocale();
+
   return (
     <Layout>
       <div>
@@ -45,7 +47,7 @@ export default function Youtube() {
           </div>
 
           {category === 0 && <VideoContainer />}
-          {category === 1 && null}
+          {category === 1 && <VideoChannels />}
           {category === 2 && <WatchHistory />}
         </main>
       </div>

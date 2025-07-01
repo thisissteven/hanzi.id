@@ -116,7 +116,7 @@ export function DictEntry({
   const isDesktop = viewport.width > 640;
   const height =
     isDesktop || !limitHeight || videoSize === "full-screen"
-      ? `${viewport.height}px`
+      ? `${viewport.height + 4}px`
       : videoSize === "half-screen"
       ? `${viewport.height * 0.5}px`
       : `${viewport.height - (viewport.width * 9) / 16}px`;
@@ -149,10 +149,10 @@ export function DictEntry({
           className={cn(
             "bg-black rounded-none transition-transform focus:outline-none p-0",
             isDesktop ? "right-0 top-0 bottom-0" : "bottom-0 left-0 right-0",
-            "fixed z-40 flex flex-col h-full w-full"
+            "fixed z-40 flex flex-col h-full w-full overflow-hidden"
           )}
           style={{
-            maxHeight: height + 4,
+            maxHeight: height,
             maxWidth: width,
           }}
         >
