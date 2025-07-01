@@ -31,10 +31,10 @@ export function WatchHistory() {
   }, [getHistory, lang]);
 
   return (
-    <div className="sm:mt-4 space-y-4">
+    <div className="mt-4 space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:max-md:px-3">
         {history.length === 0 ? (
-          <p className="text-sm">You have watched 0 videos.</p>
+          <p className="max-sm:px-3">You have watched 0 videos.</p>
         ) : (
           history.map((metadata) => {
             return (

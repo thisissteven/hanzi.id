@@ -1,14 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { DocsMetadaum, fetchMediaDocs, fetchMediaPlaylists, formatTime, Playlist } from "./utils/media";
+import { DocsMetadaum, fetchMediaDocs, fetchMediaPlaylists, Playlist } from "./utils/media";
 import Image from "next/image";
-import Link from "next/link";
+import { BackRouteButton, Button, usePreferences } from "@/components";
+import { YoutubeCard } from "./youtube-card";
 import { usePersistedState } from "./hooks/usePersistedState";
-import { usePreferences } from "@/components";
 
-const PlaylistCard = ({ playlist }: { playlist: Playlist }) => {
+const PlaylistCard = ({
+  playlist,
+  onPlaylistClicked,
+}: {
+  playlist: Playlist;
+  onPlaylistClicked: (id: string) => void;
+}) => {
   const [error, setError] = useState(false);
 
   const thumbnail = !error
@@ -16,7 +22,7 @@ const PlaylistCard = ({ playlist }: { playlist: Playlist }) => {
     : "https://placehold.co/320x180";
 
   return (
-    <button className="active:opacity-80 transition">
+    <button onClick={() => onPlaylistClicked(playlist.diocoPlaylistId)} className="active:opacity-80 transition">
       <div className="overflow-hidden">
         <div className="relative rounded-full overflow-hidden aspect-square">
           <Image
@@ -38,9 +44,7 @@ const PlaylistCard = ({ playlist }: { playlist: Playlist }) => {
           <p className="font-medium text-smokewhite line-clamp-2">
             {playlist.title_translation?.translation || playlist.title}
           </p>
-          <p className="text-sm text-secondary">
-            共 {playlist.count} 部影片 • 符合篩選：{playlist.satisfiesFiltersCount} 部
-          </p>
+          <p className="text-sm text-secondary">共 {playlist.satisfiesFiltersCount} 部</p>
         </div>
       </div>
     </button>
@@ -52,7 +56,7 @@ export function VideoChannels() {
   const lang = isSimplified ? "zh-CN" : "zh-TW";
 
   const [selectedPlaylistId, setSelectedPlaylistId] = usePersistedState<string | undefined>(
-    "selectedPlaylistId",
+    "selected-playlist-id",
     undefined
   );
   const [vocabRange] = useState<number[]>([0, 100000]);
@@ -66,15 +70,68 @@ export function VideoChannels() {
     refetchOnReconnect: false,
   });
 
+  const { data: docs, isLoading: isLoadingDocs } = useQuery({
+    queryKey: ["docs", selectedPlaylistId, vocabRange, lang],
+    queryFn: () => {
+      if (selectedPlaylistId) {
+        return fetchMediaDocs({
+          diocoPlaylistId: selectedPlaylistId,
+          freq95: { min: vocabRange[0], max: vocabRange[1] },
+          lang_G: lang,
+        });
+      }
+    },
+    enabled: typeof selectedPlaylistId === "string",
+  });
+
+  const doc = docs?.data.docs_metadata[0];
+
   return (
     <div>
-      <div className="mt-4 px-3">{isLoadingPlaylists && <p>Loading...</p>}</div>
+      <div className="mt-4 px-3">{isLoadingPlaylists && !isLoadingDocs && <p>Loading...</p>}</div>
 
-      <div className="max-sm:-mt-4 max-sm:p-3 grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(120px,1fr))] place-items-start gap-8 sm:max-md:px-3">
-        {playlists?.data?.playlists?.map((playlist) => {
-          return <PlaylistCard key={playlist.diocoPlaylistId} playlist={playlist} />;
-        })}
-      </div>
+      {selectedPlaylistId && (
+        <div className="relative overflow-y-auto scrollbar h-[calc(100vh-108px-33px)]">
+          <div className="sticky top-0 z-50">
+            <button
+              onClick={() => setSelectedPlaylistId(undefined)}
+              className="flex items-center gap-2 px-4 py-2 bg-black/50 backdrop-blur-sm rounded-br-xl group"
+            >
+              <div className="w-8 h-8 relative overflow-hidden rounded-full group-active:opacity-80">
+                {doc && (
+                  <Image
+                    src={`https://api-cdn.dioco.io/mmd_ytChannelThumb/88/${doc.info.channelId}`}
+                    width={100}
+                    height={100}
+                    alt="avatar"
+                  />
+                )}
+              </div>
+              <p className="font-medium text-smokewhite group-active:opacity-80">Back to Channel List</p>
+            </button>
+          </div>
+          <div className="mt-4 px-3">{isLoadingDocs && <p>Loading...</p>}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:max-md:px-3">
+            {docs?.data?.docs_metadata?.map((doc) => {
+              return <YoutubeCard key={doc.diocoDocId} doc={doc} />;
+            })}
+          </div>
+        </div>
+      )}
+
+      {!selectedPlaylistId && (
+        <div className="max-sm:-mt-4 max-sm:p-3 grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(120px,1fr))] place-items-start gap-8 sm:max-md:px-3">
+          {playlists?.data?.playlists?.map((playlist) => {
+            return (
+              <PlaylistCard
+                key={playlist.diocoPlaylistId}
+                playlist={playlist}
+                onPlaylistClicked={setSelectedPlaylistId}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

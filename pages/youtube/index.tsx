@@ -9,7 +9,7 @@ import { usePersistedState } from "@/modules/youtube/hooks/usePersistedState";
 import { VideoChannels } from "@/modules/youtube/video-channels";
 
 export default function Youtube() {
-  const [category, setCategory] = usePersistedState("youtube-category", 0);
+  const [category, setCategory] = usePersistedState<number | undefined>("youtube-category", undefined);
 
   const { t } = useLocale();
 
