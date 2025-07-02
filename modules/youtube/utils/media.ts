@@ -14,6 +14,7 @@ interface FetchMediaParams {
   sortBy?: string;
   duration?: DurationRange;
   lang_G?: string;
+  target?: string;
 }
 
 interface FetchMediaDocsParams extends FetchMediaParams {
@@ -134,10 +135,11 @@ export async function fetchMediaPlaylists({
   sortBy = "date",
   duration = { min: null, max: null },
   lang_G = "es",
+  target = "en",
 }: FetchMediaParams): Promise<{ data: { playlists: Playlist[] } }> {
   const payload = {
     auth: null,
-    translationLang_G: "en",
+    translationLang_G: target,
     freq95,
     lang_G,
     filters: {
@@ -170,10 +172,11 @@ export async function fetchMediaDocs({
   duration = { min: null, max: null },
   forceIncludeDiocoDocId = null,
   lang_G = "es",
+  target = "en",
 }: FetchMediaDocsParams): Promise<{ data: Data }> {
   const payload = {
     auth: null,
-    translationLang_G: "en",
+    translationLang_G: target,
     freq95,
     lang_G,
     filters: {

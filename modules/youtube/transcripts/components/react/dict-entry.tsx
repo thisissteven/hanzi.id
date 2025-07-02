@@ -11,6 +11,7 @@ import { CopyButton } from "./copy-button";
 import { Divider } from "@/components";
 import { LucideVolume2, LucideX } from "lucide-react";
 import { cn } from "@/utils";
+import { useLocale } from "@/locales/use-locale";
 
 function SentencesExamples({ word }: { word: string }) {
   const { subtitles, subsTranslations } = useSubtitleSettings();
@@ -139,6 +140,8 @@ export function DictEntry({
 
   const [word, transliteration] = token.split(",");
 
+  const { t } = useLocale();
+
   return (
     <Drawer.Root open={drawerOpen} onOpenChange={setDrawerOpen} direction={isDesktop ? "right" : "bottom"}>
       <Drawer.Portal>
@@ -183,7 +186,7 @@ export function DictEntry({
 
             {/* Definitions */}
             {isLoading ? (
-              "Loading..."
+              t.loading
             ) : (
               <>
                 <div className="mb-4 space-y-2">

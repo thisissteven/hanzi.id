@@ -1,5 +1,6 @@
 "use client";
 
+import { useLocale } from "@/locales/use-locale";
 import { DictEntry, getDictTTS, getFullDict, getSentenceTTS } from "../../utils/cdn";
 import { useQuery } from "@tanstack/react-query";
 import { createContext, SetStateAction, useContext, useState } from "react";
@@ -25,15 +26,17 @@ export const DictEntryProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const [sentenceParams, setSentenceParams] = useState<string>("");
   const [token, setToken] = useState<string>("");
 
+  const { locale } = useLocale();
+
   const { data: dictEntry, isLoading } = useQuery({
-    queryKey: ["dictEntry", dictParams],
+    queryKey: ["dictEntry", dictParams, locale],
     queryFn: () => {
       const [form, pos, lang] = dictParams.split(",");
       return getFullDict({
         form,
         lemma: "",
         sl: lang,
-        tl: "en",
+        tl: locale,
         pos: pos.toUpperCase(),
         pow: "n",
       });
@@ -42,7 +45,7 @@ export const DictEntryProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     refetchOnMount: false,
     refetchOnWindowFocus: false,
     refetchOnReconnect: false,
-    enabled: dictParams.length > 0,
+    enabled: dictParams.length > 0 && typeof locale === "string",
   });
 
   const { data: audio } = useQuery({

@@ -6,6 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams, useSearchParams } from "next/navigation";
 import { createContext, useContext } from "react";
 import { useParsedSubsData } from "../components/hook";
+import { useLocale } from "@/locales/use-locale";
 
 type ColorBy = "none" | "pos" | "freq";
 type ColorMode = "text" | "underline";
@@ -48,13 +49,15 @@ export const SubtitleSettingsProvider: React.FC<{ children: React.ReactNode }> =
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") ?? "es";
 
+  const { locale } = useLocale();
+
   const {
     data: subsData,
     isLoading: isSubsDataLoading,
     isError: isSubsDataError,
   } = useQuery({
     queryKey: ["subsData", videoId],
-    queryFn: () => getYoutubeSubsData(videoId as string),
+    queryFn: () => getYoutubeSubsData(videoId),
     enabled: typeof videoId === "string" && !!videoId,
   });
 
@@ -64,8 +67,8 @@ export const SubtitleSettingsProvider: React.FC<{ children: React.ReactNode }> =
     isError: isSubsTranslationsError,
   } = useQuery({
     queryKey: ["subsTranslations", videoId],
-    queryFn: () => getYoutubeSubsTranslations(videoId as string),
-    enabled: typeof videoId === "string" && !!videoId,
+    queryFn: () => getYoutubeSubsTranslations(videoId, locale),
+    enabled: typeof videoId === "string" && !!videoId && typeof locale === "string",
   });
 
   const { subtitles } = useParsedSubsData(subsData);
