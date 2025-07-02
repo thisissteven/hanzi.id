@@ -15,6 +15,7 @@ function DrawerContent({ children, className, ...props }: DrawerContentProps) {
     <VaulDrawer.Portal>
       <VaulDrawer.Overlay className="fixed z-[998] inset-0 bg-black/10 backdrop-blur-sm" />
       <VaulDrawer.Content
+        onOpenAutoFocus={(e) => e.preventDefault()}
         className={cn(
           "p-3 pt-4 focus:outline-none z-[998] text-light-smokewhite bg-black rounded-t-[10px] fixed bottom-0 right-0",
           className

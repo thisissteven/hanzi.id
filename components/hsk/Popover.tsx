@@ -48,6 +48,9 @@ Popover.Content = function PopoverContent({
   return (
     <RadixPopover.Portal>
       <RadixPopover.Content
+        onFocusOutside={(e) => {
+          e.preventDefault();
+        }}
         side="bottom"
         sideOffset={4}
         align={align}
