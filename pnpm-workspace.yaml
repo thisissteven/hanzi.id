@@ -4,3 +4,5 @@ allowBuilds:
   canvas: true
   prisma: true
   tesseract.js: true
+packages:
+  - '.'
