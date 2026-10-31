@@ -9,7 +9,7 @@ export function BackRouteButton({ defaultBack = false, className }: { defaultBac
   const router = useRouter();
   const { t } = useLocale();
 
-  const ref = React.useRef() as React.MutableRefObject<HTMLButtonElement>;
+  const ref = React.useRef<HTMLButtonElement>(null!);
 
   return (
     <button
@@ -35,7 +35,7 @@ export function BackRouteButton({ defaultBack = false, className }: { defaultBac
 export function ReplaceRouteButton({ children, path }: { children: React.ReactNode; path: string }) {
   const router = useRouter();
 
-  const ref = React.useRef() as React.MutableRefObject<HTMLButtonElement>;
+  const ref = React.useRef<HTMLButtonElement>(null!);
 
   return (
     <button
@@ -65,7 +65,7 @@ export function RouteButton({
 }) {
   const router = useRouter();
 
-  const ref = React.useRef() as React.MutableRefObject<HTMLButtonElement>;
+  const ref = React.useRef<HTMLButtonElement>(null!);
 
   return (
     <button
@@ -97,7 +97,7 @@ export function CustomRouteButton({
 }: React.ComponentPropsWithoutRef<"button"> & { path: string }) {
   const router = useRouter();
 
-  const ref = React.useRef() as React.MutableRefObject<HTMLButtonElement>;
+  const ref = React.useRef<HTMLButtonElement>(null!);
 
   return (
     <button

@@ -21,7 +21,7 @@ export const FileConverterPDF = ({
     if (pdfjs) {
       const loadTask = async () => {
         whileLoading(true, 0);
-        const pdf = await pdfjs.getDocument(pdfUrl).promise;
+        const pdf = await pdfjs.getDocument({ url: pdfUrl }).promise;
         const urls = [];
         for (let i = 1; i <= Math.min(pdf.numPages, 10); i++) {
           const page = await pdf.getPage(i);
@@ -35,6 +35,7 @@ export const FileConverterPDF = ({
           if (!context) return;
 
           const renderContext = {
+            canvas,
             canvasContext: context,
             viewport: viewport,
           };

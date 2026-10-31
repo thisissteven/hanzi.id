@@ -16,7 +16,7 @@ export function CardContainer({
 }) {
   const { isSimplified } = usePreferences();
 
-  const containerRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+  const containerRef = React.useRef<HTMLDivElement>(null!);
   const cardRefs = React.useRef([]) as React.MutableRefObject<(HTMLDivElement | null)[]>;
 
   const { width } = useWindowSize();

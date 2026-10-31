@@ -7,7 +7,7 @@ export const config = {
   maxDuration: 15,
 };
 
-export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
+export const runtime = "nodejs";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<FlashcardedResult[]>) {
   const text = req.query.text as string;

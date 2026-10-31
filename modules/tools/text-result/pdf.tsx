@@ -34,6 +34,7 @@ export function TextResultPDF({ isLoading, pdfUrl }: { isLoading: boolean; pdfUr
       canvas.width = viewport.width;
       if (!context) return;
       const renderContext = {
+        canvas,
         canvasContext: context,
         viewport: viewport,
       };
@@ -107,7 +108,7 @@ export function TextResultPDF({ isLoading, pdfUrl }: { isLoading: boolean; pdfUr
                 if (!pdfUrl) return;
                 if (pdfjs && pdfUrl) {
                   setIsGeneratingText(true);
-                  const pdf = await pdfjs.getDocument(pdfUrl).promise;
+                  const pdf = await pdfjs.getDocument({ url: pdfUrl }).promise;
                   const numOfPages = pdf.numPages;
                   const workersToCreate = Math.min(Math.floor(Math.max(numOfPages / 10, 1)), 10);
                   const workers = await Promise.all(

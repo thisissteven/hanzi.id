@@ -26,7 +26,7 @@ export default function Read() {
 
   const { sentences, currentSentenceIdx, currentWordRange, playbackState, play, pause, toSentence } = useSpeech();
 
-  const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+  const ref = React.useRef<HTMLDivElement>(null!);
 
   const virtualizer = useWindowVirtualizer({
     count: sentences.length,

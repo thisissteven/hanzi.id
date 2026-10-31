@@ -73,7 +73,7 @@ function BookDetails() {
 
   const [isInteracted, setIsInteracted] = React.useState(false);
 
-  const divRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+  const divRef = React.useRef<HTMLDivElement>(null!);
 
   return (
     <div className="mt-8 pb-8 max-md:px-4">

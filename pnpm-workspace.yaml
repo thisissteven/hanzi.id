@@ -1,0 +1,6 @@
+allowBuilds:
+  '@prisma/client': true
+  '@prisma/engines': true
+  canvas: true
+  prisma: true
+  tesseract.js: true

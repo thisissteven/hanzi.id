@@ -2,7 +2,7 @@ import * as React from "react";
 
 export function useDebouncedCallback() {
   const isFirstTime = React.useRef(true);
-  const timeoutId = React.useRef<NodeJS.Timeout>();
+  const timeoutId = React.useRef<NodeJS.Timeout>(null!);
 
   const debounce = React.useCallback((fn: (...args: unknown[]) => unknown, ms = 300) => {
     return function (this: unknown, ...args: unknown[]) {

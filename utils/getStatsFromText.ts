@@ -4,12 +4,15 @@ import { readingTime } from "reading-time-estimator";
 export function getStatsFromText(text: string) {
   const localeMapping = {
     eng: "en", // English
-    cmn: "cn", // Simplified Chinese (Mandarin)
-    und: "cn", // Simplified Chinese (Mandarin)
+    cmn: "zh-cn", // Simplified Chinese (Mandarin)
+    und: "zh-cn", // Simplified Chinese (Mandarin)
   } as const;
   const locale = franc(text) as keyof typeof localeMapping;
 
-  const result = readingTime(text, 150, localeMapping[locale] || "en");
+  const result = readingTime(text, {
+    wordsPerMinute: 150,
+    language: localeMapping[locale] || "en",
+  });
   return result;
 }
 
@@ -31,12 +34,15 @@ export function countCharacters(characters: string) {
 export function getCharactersFromText(text: string) {
   const localeMapping = {
     eng: "en", // English
-    cmn: "cn", // Simplified Chinese (Mandarin)
-    und: "cn", // Simplified Chinese (Mandarin)
+    cmn: "zh-cn", // Simplified Chinese (Mandarin)
+    und: "zh-cn", // Simplified Chinese (Mandarin)
   } as const;
   const locale = franc(text) as keyof typeof localeMapping;
 
-  const result = readingTime(text, 150, localeMapping[locale] || "en");
+  const result = readingTime(text, {
+    wordsPerMinute: 150,
+    language: localeMapping[locale] || "en",
+  });
 
   const sorted = countCharacters(text);
 

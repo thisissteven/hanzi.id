@@ -5,7 +5,7 @@ import * as React from "react";
 import { toast } from "sonner";
 
 function isOpera() {
-  var userAgent = navigator.userAgent.toLowerCase();
+  let userAgent = navigator.userAgent.toLowerCase();
   return userAgent.includes("opera") || userAgent.includes("opr");
 }
 

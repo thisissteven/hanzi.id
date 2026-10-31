@@ -32,7 +32,7 @@ export function CommandMenuSearch({
   isWriting: boolean;
   setIsWriting: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  const ref = React.useRef() as React.MutableRefObject<HTMLInputElement>;
+  const ref = React.useRef<HTMLInputElement>(null!);
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {

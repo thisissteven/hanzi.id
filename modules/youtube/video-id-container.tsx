@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import ReactPlayer from "react-player/youtube";
+import ReactPlayer from "react-player";
 import { SubtitleSettings } from "./transcripts/components/react/settings";
 import { SubtitleSettingsProvider, useSubtitleSettings } from "./transcripts/provider/subtitle-settings";
 import { SubtitleTabs } from "./transcripts/components/react/tabs";
@@ -24,7 +24,7 @@ export function VideoIdContainer() {
 }
 
 function TranscriptComponent() {
-  const playerRef = useRef<ReactPlayer>(null);
+  const playerRef = useRef<HTMLVideoElement>(null);
   const subtitleSettingsRef = useRef<HTMLDivElement>(null);
 
   // const [currentTime, setCurrentTime] = useState(0);
@@ -34,8 +34,7 @@ function TranscriptComponent() {
 
   const getCurrentTime = useCallback(() => {
     if (!playerRef.current) return null;
-    const seconds = playerRef.current.getCurrentTime();
-    return seconds;
+    return playerRef.current.currentTime;
   }, []);
 
   const { updateHistory } = useYouTubeHistory();
@@ -55,7 +54,7 @@ function TranscriptComponent() {
           if (end) {
             const duration = end - start;
             setPlaying(() => {
-              playerRef.current?.seekTo(start / 1000, "seconds");
+              if (playerRef.current) playerRef.current.currentTime = start / 1000;
               toStopAfterRef.current = duration;
               return true; // drawer is open, autoplay timestamp
             });
@@ -67,7 +66,7 @@ function TranscriptComponent() {
         setPlaying((prevPlaying: boolean) => {
           const wasPlaying = prevPlaying;
 
-          playerRef.current?.seekTo(start / 1000, "seconds");
+          if (playerRef.current) playerRef.current.currentTime = start / 1000;
 
           if (wasPlaying || wasPlaying == null) {
             return true;
@@ -109,14 +108,14 @@ function TranscriptComponent() {
           >
             <ReactPlayer
               ref={playerRef}
-              url={`https://www.youtube.com/watch?v=${videoId}`}
+              src={`https://www.youtube.com/watch?v=${videoId}`}
               playing={playing}
               width="100%"
               height="100%"
               controls={drawerOpen ? false : true}
               onReady={() => {
-                if (lastWatched) {
-                  playerRef?.current?.seekTo(lastWatched);
+                if (lastWatched && playerRef.current) {
+                  playerRef.current.currentTime = lastWatched;
                   setPlaying(true);
                 }
               }}
@@ -145,9 +144,13 @@ function TranscriptComponent() {
                 }
               }}
               onPause={() => setPlaying(false)}
-              onProgress={async ({ playedSeconds }: { playedSeconds: number }) => {
-                await updateHistory(videoId, lang, playedSeconds, playerRef.current?.getDuration() as number);
-                // 	setCurrentTime(playedSeconds);
+              onTimeUpdate={async (event) => {
+                await updateHistory(
+                  videoId,
+                  lang,
+                  event.currentTarget.currentTime,
+                  event.currentTarget.duration
+                );
               }}
             />
           </div>

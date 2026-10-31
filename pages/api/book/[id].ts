@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { prisma, requestHandler } from "@/utils";
-import { Prisma } from "@prisma/client";
+import { requestHandler } from "@/utils/request-handler";
+import { prisma } from "@/utils/prisma";
 
 async function getBookById(id: string) {
   return prisma.book.findUnique({
@@ -28,7 +28,7 @@ async function getBookById(id: string) {
   });
 }
 
-export type GetBookByIdResponse = Prisma.PromiseReturnType<typeof getBookById>;
+export type GetBookByIdResponse = Awaited<ReturnType<typeof getBookById>>;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await requestHandler(req, res, {

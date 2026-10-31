@@ -118,10 +118,10 @@ export function VideoContainer() {
         });
 
         // This is the source "window" that will emit the events.
-        var iframeWindow = player.getIframe().contentWindow;
+        let iframeWindow = player.getIframe().contentWindow;
 
         // So we can compare against new updates.
-        var lastTimeUpdate = 0;
+        let lastTimeUpdate = 0;
 
         // Listen to events triggered by postMessage,
         // this is how different windows in a browser
@@ -130,7 +130,7 @@ export function VideoContainer() {
         window.addEventListener("message", function (event) {
           // Check that the event was sent from the YouTube IFrame.
           if (event.source === iframeWindow) {
-            var data = JSON.parse(event.data);
+            let data = JSON.parse(event.data);
 
             // The "infoDelivery" event is used by YT to transmit any
             // kind of information change in the player,
@@ -138,7 +138,7 @@ export function VideoContainer() {
             if (data.event === "infoDelivery" && data.info && data.info.currentTime) {
               // currentTime is emitted very frequently,
               // but we only care about whole second changes.
-              var time = Math.round(data.info.currentTime * 10) / 10;
+              let time = Math.round(data.info.currentTime * 10) / 10;
 
               if (time !== lastTimeUpdate) {
                 lastTimeUpdate = time;

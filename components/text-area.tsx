@@ -18,7 +18,7 @@ export function Textarea({
   preventHeightChange = false,
   ...rest
 }: TextareaProps) {
-  const textAreaRef = React.useRef() as React.MutableRefObject<HTMLTextAreaElement>;
+  const textAreaRef = React.useRef<HTMLTextAreaElement>(null!);
 
   React.useEffect(() => {
     const textArea = textAreaRef.current;
@@ -74,7 +74,7 @@ export const FormTextarea = React.forwardRef(function FormTextarea(
   { className, placeholderClassName, minHeight = "136px", onEscape = (_) => {}, onChange, ...rest }: TextareaProps,
   ref: React.Ref<HTMLTextAreaElement>
 ) {
-  const textAreaRef = React.useRef() as React.MutableRefObject<HTMLTextAreaElement>;
+  const textAreaRef = React.useRef<HTMLTextAreaElement>(null!);
   const [focused, setFocused] = React.useState(false);
 
   React.useEffect(() => {

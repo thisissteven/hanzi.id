@@ -29,10 +29,10 @@ export function TypingTestContent({
     settings: { showPinyin, time },
   } = useTypingTestSettings();
 
-  const currentWordRef = React.useRef() as React.MutableRefObject<HTMLLIElement | null>;
-  const caretRef = React.useRef() as React.MutableRefObject<HTMLDivElement | null>;
-  const inputRef = React.useRef() as React.MutableRefObject<HTMLInputElement | null>;
-  const overlayRef = React.useRef() as React.MutableRefObject<HTMLDivElement | null>;
+  const currentWordRef = React.useRef<HTMLLIElement | null>(null!);
+  const caretRef = React.useRef<HTMLDivElement | null>(null!);
+  const inputRef = React.useRef<HTMLInputElement | null>(null!);
+  const overlayRef = React.useRef<HTMLDivElement | null>(null!);
 
   React.useEffect(() => {
     if (testStatus === "waiting for you") {

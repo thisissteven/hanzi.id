@@ -11,7 +11,7 @@ export function Controls({ wordsLength }: { wordsLength: number }) {
 
   const router = useRouter();
 
-  const timeout = React.useRef<NodeJS.Timeout>();
+  const timeout = React.useRef<NodeJS.Timeout>(null!);
 
   return (
     <div className="mt-4 flex flex-wrap gap-2 w-full max-w-80 mx-auto">

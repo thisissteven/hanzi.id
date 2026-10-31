@@ -62,7 +62,6 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   React.useEffect(() => {
     document.body.style.overflowY = "scroll";
-    document.documentElement.style.scrollbarGutter = "";
   }, [router.pathname]);
 
   React.useEffect(() => {

@@ -28,7 +28,7 @@ export function TextContainer({
   virtualizer: Virtualizer<Window, Element>;
   pause: () => void;
 }) {
-  const highlightRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+  const highlightRef = React.useRef<HTMLDivElement>(null!);
 
   const isMobile = useIsMobile();
 

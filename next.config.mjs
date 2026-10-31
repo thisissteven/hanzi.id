@@ -7,6 +7,7 @@ const withPWA = withPWAInit({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  serverExternalPackages: ["pg", "@prisma/adapter-pg", "@prisma/client"],
   i18n: {
     locales: ["en", "id"],
     defaultLocale: "en",
@@ -42,7 +43,17 @@ const nextConfig = {
     ],
   },
 
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+        dns: false,
+      };
+    }
+
     // load worker files as a urls with `file-loader`
     config.module.rules.unshift({
       test: /pdf\.worker\.(min\.)?js/,

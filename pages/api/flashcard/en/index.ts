@@ -6,7 +6,7 @@ export const config = {
   maxDuration: 15,
 };
 
-export const runtime = process.env.NODE_ENV === "production" ? "edge" : "nodejs";
+export const runtime = "nodejs";
 
 export interface FlashcardedResultStrict {
   simplified: string;

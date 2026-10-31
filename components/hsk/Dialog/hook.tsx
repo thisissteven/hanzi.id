@@ -5,13 +5,13 @@ type DialogState = "initial" | "animate" | "exit";
 export type DialogStateReturnType = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  overlayRef: React.RefObject<HTMLDivElement>;
-  contentRef: React.RefObject<HTMLDivElement>;
+  overlayRef: React.RefObject<HTMLDivElement | null>;
+  contentRef: React.RefObject<HTMLDivElement | null>;
 };
 
 export function useDialogState() {
   const [open, setOpen] = React.useState(false);
-  const timeoutRef = React.useRef<NodeJS.Timeout>();
+  const timeoutRef = React.useRef<NodeJS.Timeout>(null!);
 
   const overlayRef = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);

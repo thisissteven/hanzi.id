@@ -67,8 +67,8 @@ export function HandwritingComponent({
 
         // Additional configuration if needed
         hwCanvasRef.current.setOptions({
-          width: canvasRef.current.width,
-          height: canvasRef.current.height,
+          width: canvas.width,
+          height: canvas.height,
           language: isSimplified ? "zh_CN" : "zh_TW", // Adjust language as per your needs
           numOfWords: 100, // Example: Limit recognition to single word
           numOfReturn: 8, // Example: Limit to 5 recognition results

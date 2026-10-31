@@ -6,8 +6,8 @@ import { cn } from "@/utils/cn";
 
 type DialogContextProps = {
   canEscape: boolean;
-  overlayRef: React.RefObject<HTMLDivElement>;
-  contentRef: React.RefObject<HTMLDivElement>;
+  overlayRef: React.RefObject<HTMLDivElement | null>;
+  contentRef: React.RefObject<HTMLDivElement | null>;
   closeDialog: () => void;
   needAuth?: boolean;
 };

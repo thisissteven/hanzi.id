@@ -35,7 +35,7 @@ export function TextMarquee({
   const [shouldAnimate, setShouldAnimate] = React.useState(true);
   const [scope, animate] = useAnimate();
 
-  const ref = React.useRef() as React.MutableRefObject<HTMLParagraphElement>;
+  const ref = React.useRef<HTMLParagraphElement>(null!);
 
   React.useEffect(() => {
     if (ref.current !== undefined) {

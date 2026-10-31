@@ -124,7 +124,7 @@ function CommandMenuContent() {
 
   const { locale } = useLocale();
 
-  const timeoutRef = React.useRef<NodeJS.Timeout>();
+  const timeoutRef = React.useRef<NodeJS.Timeout>(null!);
 
   const { data: searchResult, isLoading } = useSWRImmutable<TranslateApiResponse>(
     keyword ? `translate/${locale}?text=${keyword}` : null,

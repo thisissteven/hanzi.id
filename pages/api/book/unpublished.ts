@@ -1,7 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { getStatsFromText, prisma, requestHandler } from "@/utils";
-import { Prisma } from "@prisma/client";
+import { getStatsFromText } from "@/utils";
+import { requestHandler } from "@/utils/request-handler";
+import { prisma } from "@/utils/prisma";
+import { Prisma } from "@/generated/prisma/client";
 import { getParagraphs } from "@/utils/use-speech/paragraph-utils";
 
 export function getCursor(previousCursor?: string | null) {
@@ -69,9 +71,9 @@ async function getAllBooks() {
   });
 }
 
-// export type GetAllBooksResponse = Prisma.PromiseReturnType<typeof getPaginatedBooks>;
+// export type GetAllBooksResponse = Awaited<ReturnType<typeof getPaginatedBooks>>;
 
-export type GetAllBooksResponse = Prisma.PromiseReturnType<typeof getAllBooks>;
+export type GetAllBooksResponse = Awaited<ReturnType<typeof getAllBooks>>;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await requestHandler(req, res, {

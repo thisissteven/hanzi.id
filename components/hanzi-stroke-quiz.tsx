@@ -11,7 +11,7 @@ const maxWidth = 300;
 export function HanziStrokeQuiz({ quiz, onClose }: { quiz?: string | null; onClose: () => void }) {
   const latestQuiz = React.useRef(quiz) as React.MutableRefObject<string | undefined>;
 
-  const writerRef = React.useRef() as React.MutableRefObject<HanziWriter | null>;
+  const writerRef = React.useRef<HanziWriter | null>(null);
   const outlineRef = React.useRef(true) as React.MutableRefObject<boolean>;
 
   const { width } = useWindowSize();

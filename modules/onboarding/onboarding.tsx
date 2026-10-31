@@ -44,7 +44,7 @@ export function Onboarding({ onContinue }: { onContinue: () => void }) {
 
   const isEnd = currentSentenceIndex >= t.onboarding.length;
 
-  const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+  const ref = React.useRef<HTMLDivElement>(null!);
 
   return (
     <Layout>

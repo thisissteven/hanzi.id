@@ -1,7 +1,7 @@
 import React from "react";
 
 export function useDragToScroll() {
-  const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+  const ref = React.useRef<HTMLDivElement>(null!);
   const [isDragging, setIsDragging] = React.useState(false);
 
   const onMouseDown = () => {
