@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import { SubtitleSettings } from "./transcripts/components/react/settings";
 import { SubtitleSettingsProvider, useSubtitleSettings } from "./transcripts/provider/subtitle-settings";
 import { SubtitleTabs } from "./transcripts/components/react/tabs";
-import { DictEntryProvider, useDictEntry } from "./transcripts/provider/dict-entry";
+import { DictEntryProvider, useDictEntryActions } from "./transcripts/provider/dict-entry";
 import { DictEntry } from "./transcripts/components/react/dict-entry";
 import { useSearchParams } from "next/navigation";
 import { useYouTubeHistory } from "./hooks/useYoutubeHistory";
@@ -43,7 +43,7 @@ function TranscriptComponent() {
   const lang = searchParams.get("lang") ?? "es";
   const lastWatched = parseInt(searchParams.get("last_watched") ?? "0");
 
-  const { drawerOpen, setDrawerOpen } = useDictEntry();
+  const { setDrawerOpen } = useDictEntryActions();
 
   const toStopAfterRef = useRef(0);
   const appliedLastWatchedRef = useRef<{ videoId: string; time: number } | null>(null);
@@ -83,12 +83,10 @@ function TranscriptComponent() {
 
   const { width } = useWindowSize();
 
+  const playerContextValue = useMemo(() => ({ onTimestampClick }), [onTimestampClick]);
+
   return (
-    <ReactPlayerContext.Provider
-      value={{
-        onTimestampClick,
-      }}
-    >
+    <ReactPlayerContext.Provider value={playerContextValue}>
       <DictEntry lang={lang} withExamplesFromSubtitles limitHeight />
 
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row md:gap-3 xl:gap-6 p-0 sm:p-0 md:p-3 xl:p-6">
@@ -113,7 +111,7 @@ function TranscriptComponent() {
               playing={playing}
               width="100%"
               height="100%"
-              controls={drawerOpen ? false : true}
+              controls
               onReady={() => {
                 if (!lastWatched || !Number.isFinite(lastWatched)) return;
                 if (appliedLastWatchedRef.current?.videoId === videoId && appliedLastWatchedRef.current?.time === lastWatched) {

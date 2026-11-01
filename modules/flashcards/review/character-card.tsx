@@ -1,5 +1,5 @@
 import React from "react";
-import { CardStatus } from "./content";
+import type { CardStatus } from "./content";
 import { cn } from "@/utils";
 
 export type Locale = "en" | "id";
@@ -21,7 +21,7 @@ export function CharacterCard({
   className: string;
   status: CardStatus;
   isFlipped: boolean;
-  onCardClick: () => void;
+  onCardClick?: () => void;
 }) {
   return (
     <>
@@ -58,30 +58,32 @@ export function CharacterCard({
 
             <div className="absolute left-4 top-4 text-sm">{index + 1}</div>
 
-            <div className="absolute top-2 right-2 transition p-2 pb-0.5 rounded-md text-lightgray/50 active:bg-zinc">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onCardClick();
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+            {onCardClick && (
+              <div className="absolute top-2 right-2 transition p-2 pb-0.5 rounded-md text-lightgray/50 active:bg-zinc">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onCardClick();
+                  }}
                 >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 16v-4" />
-                  <path d="M12 8h.01" />
-                </svg>
-              </button>
-            </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </button>
+              </div>
+            )}
 
             <div className="absolute right-4 bottom-4 text-sm">
               <span

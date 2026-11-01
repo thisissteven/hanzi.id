@@ -3,21 +3,25 @@
 import { useLocale } from "@/locales/use-locale";
 import { DictEntry, getDictTTS, getFullDict, getSentenceTTS } from "../../utils/cdn";
 import { useQuery } from "@tanstack/react-query";
-import { createContext, SetStateAction, useContext, useState } from "react";
+import { createContext, SetStateAction, useContext, useMemo, useState } from "react";
 
-interface DictEntryContextType {
-  drawerOpen: boolean;
+interface DictEntryActionsContextType {
   setDrawerOpen: React.Dispatch<SetStateAction<boolean>>;
-  token: string;
   setToken: (value: string) => void;
   setDictParams: (value: string) => void;
   setSentenceParams: (value: string) => void;
+}
+
+interface DictEntryContextType extends DictEntryActionsContextType {
+  drawerOpen: boolean;
+  token: string;
   isLoading: boolean;
   dictEntry?: DictEntry;
   audio?: string;
   sentenceAudio?: string;
 }
 
+const DictEntryActionsContext = createContext<DictEntryActionsContextType | undefined>(undefined);
 const DictEntryContext = createContext<DictEntryContextType | undefined>(undefined);
 
 export const DictEntryProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -75,23 +79,27 @@ export const DictEntryProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     enabled: sentenceParams.length > 0,
   });
 
+  const actions = useMemo(
+    () => ({ setDrawerOpen, setToken, setDictParams, setSentenceParams }),
+    []
+  );
+
   return (
-    <DictEntryContext.Provider
-      value={{
-        drawerOpen,
-        setDrawerOpen,
-        dictEntry: dictEntry?.data,
-        isLoading,
-        audio,
-        setDictParams,
-        token,
-        setToken,
-        setSentenceParams,
-        sentenceAudio,
-      }}
-    >
-      {children}
-    </DictEntryContext.Provider>
+    <DictEntryActionsContext.Provider value={actions}>
+      <DictEntryContext.Provider
+        value={{
+          ...actions,
+          drawerOpen,
+          dictEntry: dictEntry?.data,
+          isLoading,
+          audio,
+          token,
+          sentenceAudio,
+        }}
+      >
+        {children}
+      </DictEntryContext.Provider>
+    </DictEntryActionsContext.Provider>
   );
 };
 
@@ -99,6 +107,14 @@ export function useDictEntry() {
   const context = useContext(DictEntryContext);
   if (!context) {
     throw new Error("useDictEntry must be used within a DictEntryProvider");
+  }
+  return context;
+}
+
+export function useDictEntryActions() {
+  const context = useContext(DictEntryActionsContext);
+  if (!context) {
+    throw new Error("useDictEntryActions must be used within a DictEntryProvider");
   }
   return context;
 }

@@ -6,11 +6,11 @@ import { freqColorMap, posColorMap } from "../../components/constants";
 import { JSX, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSubtitleSettings } from "../../provider/subtitle-settings";
 import { useParsedSubsData } from "../hook";
-import { useDictEntry } from "../../provider/dict-entry";
+import { useDictEntryActions } from "../../provider/dict-entry";
 import { useSearchParams } from "next/navigation";
 import { LockWindowScroll } from "./lock-window-scroll";
 import { CopyButton } from "./copy-button";
-import { Button } from "@/components";
+import { FlashcardTab } from "./flashcard-tab";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/tabs";
 import { cn } from "@/utils";
 
@@ -25,7 +25,7 @@ function OpenDictEntry({
 }: {
   children: (update: (value: string, token: string) => void) => ReactNode;
 }): JSX.Element | null {
-  const { setDictParams, setDrawerOpen, setToken } = useDictEntry();
+  const { setDictParams, setDrawerOpen, setToken } = useDictEntryActions();
   return (
     <>
       {children((value, token) => {
@@ -119,6 +119,7 @@ export function SubtitleTabs({ getCurrentTime, onTimestampClick, setPlaying }: S
           Transcripts
         </TabsTrigger>
         <TabsTrigger value="words">Words</TabsTrigger>
+        <TabsTrigger value="flashcard">Flashcard</TabsTrigger>
 
         <LockWindowScroll />
       </TabsList>
@@ -234,6 +235,15 @@ export function SubtitleTabs({ getCurrentTime, onTimestampClick, setPlaying }: S
           ))}
           {isLoading && <p className="mt-2">Vocabularies categorized by levels will show here.</p>}
           {isError && <p className="mt-2 text-red-500">Failed to fetch vocabularies.</p>}
+        </TabsContent>
+
+        {/* Flashcard */}
+        <TabsContent
+          value="flashcard"
+          forceMount
+          className="h-full mt-0 max-h-[calc(100%-48px)] overflow-y-auto scrollbar sm:max-xl:px-2 pt-2 xl:pr-4 pb-4"
+        >
+          <FlashcardTab setPlaying={setPlaying} />
         </TabsContent>
       </div>
     </Tabs>
