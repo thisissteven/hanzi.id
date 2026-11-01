@@ -8,13 +8,13 @@ import { PreferencesProvider, Seo } from "@/components";
 import { apiClient } from "@/utils";
 import { AnimatePresence } from "framer-motion";
 import {
-  ConfettiProvider,
-  HSKLayout,
-  NewReadingLayout,
-  OldHSKLayout,
-  ReadingLayout,
-  ToolsLayout,
-  YoutubeLayout,
+	ConfettiProvider,
+	HSKLayout,
+	NewReadingLayout,
+	OldHSKLayout,
+	ReadingLayout,
+	ToolsLayout,
+	YoutubeLayout,
 } from "@/modules/layout";
 import React from "react";
 
@@ -30,108 +30,92 @@ import { PostHogProvider } from "posthog-js/react";
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
 if (typeof window !== "undefined") {
-  // checks that we are client-side
-  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY as string, {
-    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
-    person_profiles: "always", // or 'always' to create profiles for anonymous users as well
-    loaded: (posthog) => {
-      if (process.env.NODE_ENV === "development") posthog.debug(); // debug mode in development
-    },
-  });
+	// checks that we are client-side
+	posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY as string, {
+		api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
+		person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+		loaded: (posthog) => {
+			if (process.env.NODE_ENV === "development") posthog.debug(); // debug mode in development
+		},
+	});
 }
 
 export default function App({ Component, pageProps, router }: AppProps) {
-  const isNewReading = router.pathname.startsWith("/new");
-  const isTools = router.pathname.startsWith("/tools");
-  const isHsk = router.pathname.startsWith("/hsk");
-  const isOldHsk = router.pathname.startsWith("/old-hsk");
-  const isReading = router.pathname.startsWith("/read");
-  const isYoutube = router.pathname.startsWith("/youtube");
+	const isNewReading = router.pathname.startsWith("/new");
+	const isTools = router.pathname.startsWith("/tools");
+	const isHsk = router.pathname.startsWith("/hsk");
+	const isOldHsk = router.pathname.startsWith("/old-hsk");
+	const isReading = router.pathname.startsWith("/read");
+	const isYoutube = router.pathname.startsWith("/youtube");
 
-  React.useEffect(() => {
-    const timeout = setTimeout(() => {
-      if (isHsk) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflowY = "scroll";
-      }
-    }, 200);
+	React.useEffect(() => {
+		// Track page views
+		const handleRouteChange = () => posthog?.capture("$pageview");
+		router.events.on("routeChangeComplete", handleRouteChange);
 
-    return () => clearTimeout(timeout);
-  }, [isHsk]);
+		return () => {
+			router.events.off("routeChangeComplete", handleRouteChange);
+		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
-  React.useEffect(() => {
-    document.body.style.overflowY = "scroll";
-  }, [router.pathname]);
+	return (
+		<ThemeProvider forcedTheme="dark" attribute="class">
+			<Seo />
 
-  React.useEffect(() => {
-    // Track page views
-    const handleRouteChange = () => posthog?.capture("$pageview");
-    router.events.on("routeChangeComplete", handleRouteChange);
+			<Toaster position="top-center" />
 
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  return (
-    <ThemeProvider forcedTheme="dark" attribute="class">
-      <Seo />
-
-      <Toaster position="top-center" />
-
-      <SWRConfig
-        value={{
-          fetcher,
-        }}
-      >
-        <SessionProvider session={pageProps.session}>
-          <PreferencesProvider>
-            <SearchCommandMenu />
-            <AuthProvider>
-              <ConfettiProvider>
-                <PostHogProvider client={posthog}>
-                  <AnimatePresence mode="wait">
-                    {isNewReading ? (
-                      <NewReadingLayout key="new-reading">
-                        <Component key={router.pathname} {...pageProps} />
-                      </NewReadingLayout>
-                    ) : isTools ? (
-                      <ToolsLayout key="tools">
-                        <Component key={router.pathname} {...pageProps} />
-                      </ToolsLayout>
-                    ) : isReading ? (
-                      <ReadingLayout key="reading">
-                        <Component key={router.pathname} {...pageProps} />
-                      </ReadingLayout>
-                    ) : isHsk ? (
-                      <HSKLayout key="hsk">
-                        <Component key={router.pathname} {...pageProps} />
-                      </HSKLayout>
-                    ) : isOldHsk ? (
-                      <OldHSKLayout key="old-hsk">
-                        <Component key={router.pathname} {...pageProps} />
-                      </OldHSKLayout>
-                    ) : isYoutube ? (
-                      <YoutubeLayout key="youtube">
-                        <Component key={router.pathname} {...pageProps} />
-                      </YoutubeLayout>
-                    ) : (
-                      <Component key={router.pathname} {...pageProps} />
-                    )}
-                  </AnimatePresence>
-                </PostHogProvider>
-              </ConfettiProvider>
-            </AuthProvider>
-          </PreferencesProvider>
-        </SessionProvider>
-      </SWRConfig>
-    </ThemeProvider>
-  );
+			<SWRConfig
+				value={{
+					fetcher,
+				}}
+			>
+				<SessionProvider session={pageProps.session}>
+					<PreferencesProvider>
+						<SearchCommandMenu />
+						<AuthProvider>
+							<ConfettiProvider>
+								<PostHogProvider client={posthog}>
+									<AnimatePresence mode="wait">
+										{isNewReading ? (
+											<NewReadingLayout key="new-reading">
+												<Component key={router.pathname} {...pageProps} />
+											</NewReadingLayout>
+										) : isTools ? (
+											<ToolsLayout key="tools">
+												<Component key={router.pathname} {...pageProps} />
+											</ToolsLayout>
+										) : isReading ? (
+											<ReadingLayout key="reading">
+												<Component key={router.pathname} {...pageProps} />
+											</ReadingLayout>
+										) : isHsk ? (
+											<HSKLayout key="hsk">
+												<Component key={router.pathname} {...pageProps} />
+											</HSKLayout>
+										) : isOldHsk ? (
+											<OldHSKLayout key="old-hsk">
+												<Component key={router.pathname} {...pageProps} />
+											</OldHSKLayout>
+										) : isYoutube ? (
+											<YoutubeLayout key="youtube">
+												<Component key={router.pathname} {...pageProps} />
+											</YoutubeLayout>
+										) : (
+											<Component key={router.pathname} {...pageProps} />
+										)}
+									</AnimatePresence>
+								</PostHogProvider>
+							</ConfettiProvider>
+						</AuthProvider>
+					</PreferencesProvider>
+				</SessionProvider>
+			</SWRConfig>
+		</ThemeProvider>
+	);
 }
 
 export const fetcher = (url: any) => {
-  if (url.includes("undefined")) return undefined;
-  return apiClient.get(url).then((res) => res.data);
+	if (url.includes("undefined")) return undefined;
+	return apiClient.get(url).then((res) => res.data);
 };

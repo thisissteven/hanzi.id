@@ -46,6 +46,7 @@ function TranscriptComponent() {
   const { drawerOpen, setDrawerOpen } = useDictEntry();
 
   const toStopAfterRef = useRef(0);
+  const appliedLastWatchedRef = useRef<{ videoId: string; time: number } | null>(null);
 
   const onTimestampClick = useCallback(
     (start: number, end?: number) => {
@@ -114,10 +115,15 @@ function TranscriptComponent() {
               height="100%"
               controls={drawerOpen ? false : true}
               onReady={() => {
-                if (lastWatched && playerRef.current) {
-                  playerRef.current.currentTime = lastWatched;
-                  setPlaying(true);
+                if (!lastWatched || !Number.isFinite(lastWatched)) return;
+                if (appliedLastWatchedRef.current?.videoId === videoId && appliedLastWatchedRef.current?.time === lastWatched) {
+                  return;
                 }
+                if (!playerRef.current) return;
+
+                appliedLastWatchedRef.current = { videoId, time: lastWatched };
+                playerRef.current.currentTime = lastWatched;
+                setPlaying(true);
               }}
               onPlay={() => {
                 setPlaying(true);
