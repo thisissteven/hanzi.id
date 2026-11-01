@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import { SubtitleSettings } from "./transcripts/components/react/settings";
 import { SubtitleSettingsProvider, useSubtitleSettings } from "./transcripts/provider/subtitle-settings";
 import { SubtitleTabs } from "./transcripts/components/react/tabs";
-import { DictEntryProvider, useDictEntryActions } from "./transcripts/provider/dict-entry";
+import { DictEntryProvider } from "./transcripts/provider/dict-entry";
 import { DictEntry } from "./transcripts/components/react/dict-entry";
 import { useSearchParams } from "next/navigation";
 import { useYouTubeHistory } from "./hooks/useYoutubeHistory";
@@ -43,43 +43,25 @@ function TranscriptComponent() {
   const lang = searchParams.get("lang") ?? "es";
   const lastWatched = parseInt(searchParams.get("last_watched") ?? "0");
 
-  const { setDrawerOpen } = useDictEntryActions();
-
-  const toStopAfterRef = useRef(0);
+  const chunkRef = useRef<{ start: number; end: number; armed: boolean } | null>(null);
   const appliedLastWatchedRef = useRef<{ videoId: string; time: number } | null>(null);
 
-  const onTimestampClick = useCallback(
-    (start: number, end?: number) => {
-      setDrawerOpen((prevDrawerOpen) => {
-        if (prevDrawerOpen) {
-          if (end) {
-            const duration = end - start;
-            setPlaying(() => {
-              if (playerRef.current) playerRef.current.currentTime = start / 1000;
-              toStopAfterRef.current = duration;
-              return true; // drawer is open, autoplay timestamp
-            });
-          }
-          return true;
-        }
+  useEffect(() => {
+    chunkRef.current = null;
+  }, [videoId]);
 
-        // drwaer not open, proceed as usual
-        setPlaying((prevPlaying: boolean) => {
-          const wasPlaying = prevPlaying;
+  const onTimestampClick = useCallback((start: number, end?: number) => {
+    if (playerRef.current) playerRef.current.currentTime = start / 1000;
 
-          if (playerRef.current) playerRef.current.currentTime = start / 1000;
+    if (end) {
+      chunkRef.current = { start: start / 1000, end: end / 1000, armed: false };
+      setPlaying(true);
+      return;
+    }
 
-          if (wasPlaying || wasPlaying == null) {
-            return true;
-          }
-
-          return false;
-        });
-        return prevDrawerOpen; // drawer not open, do nothing
-      });
-    },
-    [setDrawerOpen]
-  );
+    chunkRef.current = null;
+    setPlaying((prevPlaying: boolean) => (prevPlaying === false ? false : true));
+  }, []);
 
   const { width } = useWindowSize();
 
@@ -138,23 +120,24 @@ function TranscriptComponent() {
                     behavior: "smooth",
                   });
                 }
-
-                if (toStopAfterRef.current) {
-                  setTimeout(() => {
-                    setPlaying(false);
-                  }, toStopAfterRef.current - 300);
-
-                  toStopAfterRef.current = 0;
-                }
               }}
               onPause={() => setPlaying(false)}
               onTimeUpdate={async (event) => {
-                await updateHistory(
-                  videoId,
-                  lang,
-                  event.currentTarget.currentTime,
-                  event.currentTarget.duration
-                );
+                const { currentTime, duration } = event.currentTarget;
+
+                const chunk = chunkRef.current;
+                if (chunk) {
+                  if (!chunk.armed) {
+                    if (currentTime >= chunk.start - 0.5 && currentTime < chunk.end) {
+                      chunk.armed = true;
+                    }
+                  } else if (currentTime >= chunk.end - 0.05) {
+                    chunkRef.current = null;
+                    setPlaying(false);
+                  }
+                }
+
+                await updateHistory(videoId, lang, currentTime, duration);
               }}
             />
           </div>

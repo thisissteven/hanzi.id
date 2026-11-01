@@ -5,6 +5,7 @@ import useSWRImmutable from "swr/immutable";
 import * as PopoverPrimitive from "@radix-ui/react-popover";
 import { useSubtitleSettings } from "../../provider/subtitle-settings";
 import { useDictEntryActions } from "../../provider/dict-entry";
+import { usePersistedState } from "../../../hooks/usePersistedState";
 import { useParsedSubsData } from "../hook";
 import type { Token } from "../types";
 import { getTransliteration } from "../utils";
@@ -104,8 +105,10 @@ export const FlashcardTab = memo(function FlashcardTab({
     [ranges, categorizedGroups]
   );
 
-  const [selectedLevel, setSelectedLevel] = useState<string>();
-  const [wordCount, setWordCount] = useState<number>(10);
+  const [selectedLevel, setSelectedLevel] = usePersistedState<string>("yt_flashcard_level", "");
+  const [storedWordCount, setStoredWordCount] = usePersistedState<number | null>("yt_flashcard_word_count", 10);
+
+  const wordCount = storedWordCount === null ? Infinity : storedWordCount;
 
   const [reviewing, setReviewing] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
@@ -241,7 +244,7 @@ export const FlashcardTab = memo(function FlashcardTab({
                   label: value === Infinity ? t.all : String(value),
                 }))}
                 onChange={(value) => {
-                  setWordCount(value);
+                  setStoredWordCount(value);
                   resetReview();
                 }}
               />
